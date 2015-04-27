@@ -3,10 +3,24 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    <script>
 
+        function loaded(){
+            try{
+                var HomeLogo=window.localStorage.getItem("HomeLogo");
+
+                if(HomeLogo==null){
+                    window.location.href="welcome.html";
+
+                }
+            }catch(e){
+                alert("设备不支持！");
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="loaded()">
 <div class="box">
     <header>
         <div class="header-1">
@@ -182,7 +196,7 @@
                 </a>
             </li>
             <li >
-                <a href="71.html">
+                <a href="1.html">
                 <hr  size="50" color="#CCCCCC">
                     <div class="div19">
                         <span><img src="image/14-1.png"></span><img src="image/14-02.png">
