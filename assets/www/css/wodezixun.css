@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height:700px;
+    background-color: #EDEDED;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.div1 img{
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+}
+.div2{
+    width: auto;
+    height: auto;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 0.85em;
+    font-family: "微软雅黑";
+    color: #FFFFFF;
+    margin-left: 33%;
+}
+.div3{
+    width: auto;
+    height: auto;
+    float: right;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.div4{
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+}
+.div5{
+    width:60px ;
+    height: 60px;
+    float: left;
+   margin-left: 5%;
+    margin-top: 20px;
+}
+.div5 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+}
+.div6{
+     width: 60%;
+     height: auto;
+     margin-top: 30px;
+     margin-left: 5%;
+     float: left;
+ }
+.div6 p{
+    font-family: "微软雅黑";
+    font-size: 0.85em;
+}
+.div7{
+    width: 60%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 5%;
+    float: left;
+}
+.div7 p{
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+    color: #737373;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #CCCCCC;
+}
+footer ul {
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    float: left;
+}
+footer ul li{
+    width: 33.1%;
+    height: 50px;
+    float: left;
+    border-right: 1px solid #CCCCCC;
+}
+.li-1{
+    background:url("../image/57.png")no-repeat 50% 20%;
+
+}
+.li-2{
+    background: url("../image/58.png")no-repeat 50% 20%;
+
+}
+.li-3{
+    background: url("../image/59.png")no-repeat 50% 20%;
+}
+.div9 p{
+    font-family: "微软雅黑";
+    font-size: 0.85em;
+    color: #737373;
+    text-align: center;
+    line-height: 70px;
+}

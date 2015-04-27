@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.div1 img{
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+}
+.div2{
+    width: auto;
+    height: auto;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 0.85em;
+    font-family: "微软雅黑";
+    color: #FFFFFF;
+    margin-left: 33%;
+}
+.div3{
+    width: 10%;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+    margin-right: 7%;
+}
+.div3 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.div3 ul{
+    list-style: none;
+    display: none;
+   position: absolute;
+    float: right;
+    right: 4px;
+    top: 40px;
+
+}
+.div3 ul li{
+    float: none;
+}
+.div3 ul li a{
+    text-decoration: none;
+
+}
+.div3 ul li a p{
+    width: 80px;
+    height: 30px;
+    background-color:#f5f5f5;
+    font-family: "微软雅黑";
+    font-size: 0.65em;
+    border-top: 1px solid #CCCCCC;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+}
+.div3:hover ul{
+    display: block;
+}
+section{
+    width: 100%;
+    height: 800px;
+    background: #EDEDED;
+}
+.div4{
+    width: 100%;
+    height: 120px;
+    background: #FFFFFF;
+
+}
+.div4-1{
+    float: left;
+    z-index: 1;
+    width: 80%;
+    height: 30px;
+}
+.input{
+   float: left;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    border-radius: 20px;
+
+}
+.div5{
+    width:30px;
+    height: 30px;
+    z-index: 2;
+    float: left;
+}
+.div5 img{
+    margin-top: 23px;
+    margin-left: -30%;
+
+}
+.div6{
+    float: left;
+    width: 100%;
+    height:40px ;
+    margin-top: 25px;
+
+    text-align: center;
+}
+.div6 p{
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+    color: #737373;
+}
+.div6 ul{
+    width:90%;
+    height: 60px;
+    list-style: none;
+    margin-left: 10%;
+}
+.div6 ul li{
+    width: 22%;
+    height: 50%;
+    float: left;
+}
+.div6 a{
+    text-decoration: none;
+}
+
+.div7{
+     width: 100%;
+     height: 40px;
+     float: left;
+     background: #FFFFFF;
+     margin-top: 5px;
+    border-bottom: 1px solid #CCCCCC;
+ }
+.div8{
+    width: auto;
+    height: auto;
+    line-height: 40px;
+    font-family: "微软雅黑";
+    font-size:0.85em ;
+    float: left;
+    margin-left: 3%;
+
+}
+.div9{
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+   float: left;
+    overflow: hidden;
+    border-bottom: 1px solid #CCCCCC;
+}
+.div9 ul{
+ list-style: none;
+    width: 100%;
+    margin-left: 5%;
+
+}
+.div9 ul li{
+    width: 25%;
+    height: 60px;
+    margin-top: 10px;
+    float: left;
+
+}
+.div10{
+    color: #FFFFFF;
+    font-size:0.85em ;
+    font-family: "微软雅黑";
+    text-align: center;
+    margin-top: 10px;
+}
+.div11{
+    width: 100%;
+    height: 140px;
+    float: left;
+    background-color: #FFFFFF;
+}
+.div11-left{
+    width: 50%;
+    height: 180px;
+    float: left;
+}
+.div16{
+    width:100% ;
+    height: 120px;
+    margin-top: 10px;
+    border-right: 1px solid #737373;
+}
+.div16-1{
+    width:100% ;
+    height: 120px;
+    margin-top: 10px;
+}
+.div11-right{
+    width: 50%;
+    height: 180px;
+    float: right;
+}
+.div12{
+    width: 100%;
+    height: 40px;
+
+}
+.div12 p{
+    font-family: "微软雅黑";
+    font-size: 0.85em;
+    line-height: 40px;
+    margin-left: 10%;
+}
+.div13{
+    width: 30%;
+    height: 70px;
+
+    margin-left: 10%;
+    float: left;
+}
+.div13 img{
+    width: auto;
+    height: 70px;
+    max-width: 100%;
+}
+.div14{
+    width: 50%;
+    height: auto;
+    float: right;
+
+    margin-right: 10%;
+ }
+.div14 p{
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+}
+.div15{
+    width: 50%;
+    height:60px;
+    float: right;
+    margin-right: 10%;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+.div15 p{
+    height: 60px;
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+    color: #CCCCCC;
+    overflow: hidden;
+}
+
+.div17{
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+}
+.div17 p{
+    width: auto;
+    height: auto;
+    font-family: "微软雅黑";
+    font-size: 0.85em;
+    line-height: 40px;
+    margin-left: 5%;
+}
+.div18{
+    width: 100%;
+    height: 80px;
+    float: left;
+    background-color: #FFFFFF;
+}
+.div19{
+    width:auto;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 5%;
+    float: left;
+}
+.div19 img{
+   max-width: 100%;
+    height: 60px;
+    width: auto;
+}
+.div20{
+    width: auto;
+    height: auto;
+    margin-left: 25%;
+   margin-top: 20px;
+}
+.div20 p{
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+}
+.div21{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-top: 5px;
+}
+.div21 p{
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+    color: #CCCCCC;
+}
+.div22{
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+}
+.div23{
+    width: 20%;
+    height: 80px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 5%;
+}
+.div23 img{
+    width: auto;
+    height: 80px;
+    max-width: 100%;
+}
+.div24{
+     width: auto;
+     height: auto;
+     margin-left: 30%;
+     margin-top: 10px;
+
+ }
+.div24 p{
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+
+}
+.div25{
+    width: auto;
+    height: 18px;
+    margin-left: 30%;
+    margin-top: 5px;
+}
+.div25 p{
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+    color: #CCCCCC;
+    overflow: hidden;
+}
+.div26{
+    margin-top: 15px;
+    float: left;
+    margin-left: 10%;
+}
+.div27{
+  margin-top: 17px;
+    margin-left: 5px;
+    float: left;
+}
+.div27 p{
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+}
+.div28{
+    margin-top: 15px;
+   float: left;
+    margin-left: 20%;
+}
+
+.blue{
+    background-color: #5856D9;
+}
+
+.violet{
+    background-color: #753DC6;
+}
+
+.green{
+    background-color: #56CC53;
+}
+.yellow {
+    background-color: #FF9D00;
+}
+.red{
+    background-color: #E60011;
+}
+.cyan{
+    background-color: #367AFC;
+}

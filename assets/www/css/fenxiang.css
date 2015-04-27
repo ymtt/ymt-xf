@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+header{
+
+    width: 100%;
+    height: 40px;
+    background-color: #05A0D7;
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    width:auto ;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    padding-left: 5%;
+}
+.div1 img{
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+}
+.div2{
+    width: 60%;
+    color:#FFFFFF;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.85em;
+    font-family: "微软雅黑";
+    float: left;
+    margin-left: 5%;
+}
+
+.div3{
+    width:auto;
+    height:auto;
+    float: right;
+    margin-right: 5%;
+    margin-top: 8px;
+}
+.div4{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.div4 p{
+    font-family: "微软雅黑";
+    font-size: 0.95em;
+    line-height: 30px;
+    margin-left: 5%;
+    color: #737373;
+}
+section{
+    width: 100%;
+    height:600px;
+    float: left;
+}
+.div5{
+    width: 100%;
+    height: 260px;
+    float: left;
+    margin-top: 10px;
+
+}
+.div5 p{
+    width: 90%;
+    height: 250px;
+    margin-left: 5%;
+    text-indent: 20px;
+    font-family: "微软雅黑";
+    font-size:0.75em ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.div6{
+    width: 30%;
+    height: 40px;
+    background-color: #05A0D7;
+    margin-left: 20%;
+    float: left;
+}
+.div6 p{
+    width: auto;
+    height: auto;
+    line-height: 40px;
+    font-family: "微软雅黑";
+    font-size: 1em ;
+    text-align: center;
+    color: #FFFFFF;
+}
+.div7{
+    width: 40%;
+    height: 20px;
+    margin-left: 55%;
+    float: left;
+}
+.div7 p{
+    width: auto;
+    height: auto;
+    font-size: 0.85em;
+    font-family: "微软雅黑";
+    line-height: 20px;
+    color: #05A0D7;
+}
+.div8{
+    width: 40%;
+    height: 100px;
+    float: left;
+    margin-left: 5%;
+}
+.div8 p{
+    width: auto;
+    height: auto;
+    font-size: 0.75em;
+    font-family: "微软雅黑";
+    line-height: 20px;
+}
+.div9{
+    width: 96%;
+    height: 60px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+.div9 input{
+    width: 100%;
+    font-size: 0.75em;
+    font-family: "微软雅黑";
+    padding-bottom:40px;
+    border: 1px solid #CCCCCC;
+}
+.div10{
+    width: 20%;
+    height: 40px;
+    float: right;
+    margin-right: 5%;
+    background-color: #05A0D7;
+    margin-top: 10px;
+}
+.div10 p{
+    width: auto;
+    height: auto;
+    font-size: 0.95em;
+    font-family: "微软雅黑";
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.div11{
+    width: 100%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.div11 p{
+    width: auto;
+    height: auto;
+    font-size: 0.85em;
+    font-family: "微软雅黑";
+    line-height: 20px;
+    margin-left: 8%;
+    color: #737373;
+}
+.div12{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+.div12 ul{
+    list-style: none;
+    width: 88%;
+    height: 40px;
+    margin-left: 6%;
+}
+.div12 ul li{
+    width: 18%;
+    height: 20px;
+    margin-left: 2%;
+    float: left;
+}
+.div13 p{
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+    color: #05A0D7;
+}

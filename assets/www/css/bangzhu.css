@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height:auto;
+    background-color: #FFFFFF;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.div1 {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.div1 img {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+}
+
+.div2 {
+    width: auto;
+    height: auto;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1em;
+    font-family: "微软雅黑";
+    color: #FFFFFF;
+    margin-left: 33%;
+}
+.div3{
+    width: 100%;
+    height: 80px;
+    background-color: #CCCCCC;
+    float: left;
+}
+.div4{
+    width: 60%;
+    height: 40px;
+    background-color: #FFFFFF;
+    margin-left: 20%;
+    margin-top: 20px;
+    float: left;
+}
+.div5{
+    width: 30%;
+    height: auto;
+    float: left;
+}
+.div5 img{
+    width: 40%;
+    height: 20px;
+    max-width: 100%;
+    margin-top: 12px;
+    margin-left: 60%;
+}
+.div6{
+    width: 70%;
+    height: auto;
+    float: left;
+}
+.div6 p{
+    font-size: 0.85em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 40px;
+    margin-left: 5px;
+    color: #737373;
+}
+.div7{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+.div8{
+    width: 10%;
+    height: auto;
+    float: left;
+}
+.div8 img{
+    width: 12px;
+    height: 12px;
+    max-width: 100%;
+    margin-left: 50%;
+    margin-top: 14px;
+}
+.div9{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.div9 p {
+    float: left;
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    line-height: 40px;
+}
+.div10{
+    width: 90%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.div10 ul {
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+.div10 ul li{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+}
+.div11{
+    width: 100%;
+    height: 30px;
+}
+.div11 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.65em;
+    line-height: 30px;
+    color: #737373;
+}
