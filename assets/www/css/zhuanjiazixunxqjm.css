@@ -64,10 +64,11 @@ a {
     margin-top: -75px;
     filter:alpha(Opacity=80);
     -moz-opacity:0.75;opacity: 0.8;
+    overflow: hidden;
 }
 .div4 img{
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height:100%;
     border-radius: 80px;
 }
 .div5{

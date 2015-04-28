@@ -83,7 +83,7 @@ a{
 section{
     width: 100%;
     height: 800px;
-    background: #EDEDED;
+    background: #DCDCDC;
 }
 .div4{
     width: 100%;
@@ -151,7 +151,7 @@ section{
      height: 40px;
      float: left;
      background: #FFFFFF;
-     margin-top: 5px;
+     margin-top: 10px;
     border-bottom: 1px solid #CCCCCC;
  }
 .div8{

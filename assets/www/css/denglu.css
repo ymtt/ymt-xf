@@ -110,20 +110,19 @@ input{
       margin-left: 30%;
       margin-top: 5px;
   }
-.div6{
-      width: 90%;
+
+button{
+    width: 90%;
     height: 30px;
-    background-color: #05A0D7;
-    float: left;
-    margin-left: 5%;
-    margin-top:10px ;
-  }
-.div6 p{
     font-family: "方正兰亭纤黑_GBK";
     font-size: 0.9em;
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
+    background: #05A0D7;
+    margin-left: 5%;
+    margin-top:10px ;
+    border: 0;
 }
 .div7{
     float: left;

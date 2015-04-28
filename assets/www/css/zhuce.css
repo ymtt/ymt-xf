@@ -201,6 +201,7 @@ button{
     margin-top:10px ;
     color: #FFFFFF;
     font-size: 0.9em;
+    border: 0;
 }
 footer{
     width: 94%;
