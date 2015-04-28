@@ -5,8 +5,28 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" media="screen" href="css/denglu.css" type="text/css"  />
+    <link rel="stylesheet" media="screen" href="denglu.css" type="text/css"  />
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+             $('#button').click(function () {
+                     var username = $('#username').val();
+                     var pwd = $('#password').val();
+                     var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.LoginAction';
+                     $.ajax({
+                         type: 'get',
+                         datatype: 'json',
+                         url: url,
+                         data:{"loginname":username,"pwd":pwd,"t":"app"},
+                         success: function (data) {
+                            var json = eval("(" +data+ ")");
+                            alert(json.result);
+                         }
+                     })
+                })
+         })
+    </script>
 </head>
-
 <body>
 <header>
     <div class="div1"><a href="index.html"><img src="image/return.png"></a></div>
@@ -19,15 +39,16 @@
     <div class="div4-1">
     <img src="image/61.png">
     </div>
-    <input type="text">
+    <input id="username" type="text"x-webkit-speech placeholder="请输入用户名：">
 </div>
 <div class="div5">
     <div class="div5-1">
     <img src="image/62.png">
     </div>
-    <input type="password">
+    <input id="password" type="password" placeholder="请输入密码：">
 </div>
-   <button >登录</button>
+    <button id="button">登录</button>
+</div>
 <div class="div7">
     <a href="zhuce.html">
     <p>注册</p>
