@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="css/zhuce.css" type="text/css" rel="stylesheet" media="screen">
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+    </script>
 </head>
 <header>
     <div class="div1"><a href="denglu.html"><img src="image/return.png"></a></div>
-    <div class="div2"><p>注册</p></div>
+    <div class="div2"><button id="submit">注册</button></div>
 </header>
-<form>
+<form action="http://120.24.172.105:8000/fw?controller=com.xfsm.action.RegAction" method="post" id="regform" name="regform">
 <div class="div3">
     <div class="div3-1">
         <p>+86</p>
     </div>
-
-    <input type="text" placeholder="请输入你的手机号">
+    <input type="text" placeholder="请输入你的手机号" id="phone" name="phone">
 </div>
 <div class="div4">
     <div class="div4-1">
         <img src="image/61.png">
     </div>
-    <input type="text" placeholder="4-20位字符">
+    <input type="text" placeholder="4-20位字符" id="loginname" name="loginname">
 </div>
 <div class="div5">
     <div class="div5-1">
         <img src="image/62.png">
     </div>
-    <input type="password" placeholder="6-18位字母和数字的组合">
+    <input type="password" placeholder="6-18位字母和数字的组合" id="pwd" name="pwd">
 </div>
 <div class="div6">
     <div class="div6-1">
         <img src="image/62.png">
     </div>
-    <input type="password" placeholder="请再次输入">
+    <input type="password" placeholder="请再次输入" id="repass">
 </div>
-</form>
+
 <div class="div7">
     <p class="p1">注：</p>
     <p class="p2">
@@ -53,6 +56,7 @@
     <p>《消防通安全协议》</p>
 </div>
     <button type="submit">注册</button>
+</form>
 <footer>
     <ul>
         <li class="li-1">
@@ -77,6 +81,5 @@
         </li>
     </ul>
 </footer>
-
 </body>
 </html>
