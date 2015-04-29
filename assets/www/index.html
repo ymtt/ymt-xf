@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
-
+    <script>
+        function loaded(){
+            try{
+                var HomeLogo=window.localStorage.getItem("HomeLogo");
+                if(HomeLogo==null){
+                    window.location.href="welcome.html";
+                }
+            }catch(e){
+                alert("设备不支持！");
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="loaded()">
 <div class="box">
     <header>
         <div class="header-1">
