@@ -7,6 +7,8 @@
     <link rel="stylesheet" media="screen" href="css/denglu.css" type="text/css"  />
     <link rel="stylesheet" media="screen" href="denglu.css" type="text/css"  />
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/base64encode.js" type="text/javascript"></script>
+    <script src="js/cookie.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
              $('#button').click(function () {
@@ -20,7 +22,11 @@
                          data:{"loginname":username,"pwd":pwd,"t":"app"},
                          success: function (data) {
                             var json = eval("(" +data+ ")");
-                            alert(json.result);
+                            //base64编码
+                            var x=base64encode(utf16to8(data));
+                           alert(x);
+                            //base64解码
+                            alert(utf8to16(base64decode(x)));
                          }
                      })
                 })
