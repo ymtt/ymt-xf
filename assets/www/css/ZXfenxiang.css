@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body html{
+    width: 100%;
+    height: auto;
+}
+.zz-1{
+    position: absolute;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7) ;
+    display: none;
+}
+header{
+
+    width: 100%;
+    height: 40px;
+    background-color: #05A0D7;
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    width:auto ;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    padding-left: 5%;
+}
+.div1 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.div2{
+    width: 30%;
+    color:#FFFFFF;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.85em;
+    font-family: "微软雅黑";
+    float: left;
+    margin-left: 25%;
+}
+
+.div3{
+    width:auto;
+    height:auto;
+    float: right;
+    margin-right: 5%;
+    margin-top: 8px;
+}
+.div3 img{
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+}
+
+section{
+    width: 100%;
+    height:600px;
+    float: left;
+}
+.div5{
+    width: 100%;
+    height: 260px;
+    float: left;
+    margin-top: 10px;
+
+}
+.div5 p{
+    width: 90%;
+    height: 250px;
+    margin-left: 5%;
+    text-indent: 20px;
+    font-family: "微软雅黑";
+    font-size:0.75em ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.div6{
+    width: 90%;
+    height: 40px;
+    background-color: #05A0D7;
+    margin-left: 5%;
+    float: left;
+}
+.div6 p{
+    width: auto;
+    height: auto;
+    line-height: 40px;
+    font-family: "微软雅黑";
+    font-size: 1em ;
+    text-align: center;
+    color: #FFFFFF;
+}
+.div7{
+    width: 90%;
+    height: 20px;
+    margin-left: 5%;
+    float: left;
+}
+.div7 p{
+    width: auto;
+    height: auto;
+    font-size: 0.85em;
+    font-family: "微软雅黑";
+    line-height: 20px;
+    color: #05A0D7;
+}
+.div8{
+    width: 90%;
+    height: 100px;
+    float: left;
+    margin-left: 5%;
+}
+.div8 p{
+    width: auto;
+    height: auto;
+    font-size: 0.75em;
+    font-family: "微软雅黑";
+    line-height: 20px;
+}
+.div9{
+    width: 100%;
+    height: 40px;
+   border-bottom: 3px solid #ECECEC;
+    border-top: 3px solid #ECECEC;
+    float: left;
+}
+.div10{
+    width: 10%;
+    height: 40px;
+    margin-left: 40%;
+    float: left;
+}
+.div10 img{
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 8px;
+}
+.div10-1{
+    width: 20%;
+    height: 40px;
+    float: left;
+}
+.div10-1 p{
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 40px;
+
+}
+.div11{
+    width: 100%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.div11 p{
+    width: auto;
+    height: auto;
+    font-size: 0.85em;
+    font-family: "微软雅黑";
+    line-height: 20px;
+    margin-left: 8%;
+    color: #737373;
+}
+.div12{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+.div12 ul{
+    list-style: none;
+    width: 88%;
+    height: 40px;
+    margin-left: 6%;
+}
+.div12 ul li{
+    width: 18%;
+    height: 20px;
+    margin-left: 2%;
+    float: left;
+}
+.div13 p{
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    font-family: "微软雅黑";
+    font-size: 0.75em;
+    color: #05A0D7;
+}
+.zz-2{
+    display: none;
+    position: absolute;
+    top: 60%;  width: 100%; height: 40%;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+.div14{
+    width:100% ;
+    height:100%;
+
+}
+.div14 ul{
+    width: 100%;
+    height: 80%;
+    list-style: none;
+    border-bottom: 5px solid #ECECEC;
+}
+.div14 ul li {
+    width: 20%;
+    height: 50%;
+    float: left;
+}
+.div15{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.div15 img{
+    width: 70%;
+    height:auto;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.div16{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+.div16 p {
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 20px;
+    text-align: center;
+    color: #737373;
+}
+.div17{
+    width: 100%;
+    height: 20%;
+}
+.div17 input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    color: #737373;
+    background-color: #ffffff;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 100%;
+    text-align: center;
+}

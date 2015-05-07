@@ -5,7 +5,7 @@ margin: 0;
 html body{
     width: 100%;
     height:614px;
-background-color: #EDEDED;
+background-color: #ECECEC;
 }
 a{
     text-decoration: none;
@@ -22,28 +22,38 @@ header{
     background-color: #05A0D7;
 }
 .header-1{
-    width: 100%;
+    width: 50%;
    height:auto;
-    overflow: hidden;
+    float: left;
+    margin-left: 5%;
+    margin-top: 3px;
 }
-.header-2 img{
+.header-1 img{
+    width: 45%;
+    height: auto;
+    max-width: 100%;
+}
+.header-2 {
     float: right;
     max-width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-right: 2%;
 }
 section{
-    width: 100%;
-    height:197px;
+    width: 98%;
+    height:190px;
     background: #EDEDED;
     float: left;
-    border-bottom: 2px solid #CCCCCC;
+    border: 1px solid #ECECEC;
+    margin-left: 1%;
+    margin-top: 3px;
+
 }
 .section-1{
     width: 100%;
-    height:197px;
+    height:190px;
     background: #FFFFFF;
-
+    border-radius: 10px;
 }
 .section-1 ul{
      list-style: none;
@@ -88,10 +98,13 @@ section{
     max-width: 70%;
 }
 .div3{
-    width: 100%;
-    height: 30px;
-    background-color: #FFFFFF;
+    width: 98%;
+    height:160px ;
+    margin-top: 5px;
     float: left;
+    margin-left: 1%;
+    border-radius: 10px;
+    background-color: #ffffff;
 }
 .div4{
     width: 50%;
@@ -125,20 +138,26 @@ section{
     width: 100%;
     height: 130px;
     float: left;
-    border-bottom: 2px solid #CCCCCC;
     background-color: #FFFFFF;
+    border-radius: 10px;
 }
-.div6 ul{
+.div6-1{
     width: 16%;
-    height: 110px;
+    height: 113px;
     list-style: none;
     float: left;
     margin-left: 2%;
-    margin-top: 7px;
+    margin-top: 6px;
+
 }
-.div6 ul li{
+.div6-1 ul{
     width: 100%;
-    height: 36px;
+    height: 100%;
+    border-radius: 5px;
+}
+.div6-1 ul li{
+    width: 100%;
+    height: 37px;
     float: left;
     background-color: #05A0D7;
 
@@ -169,6 +188,9 @@ section{
     height: 36px;
     background-color: #05A0D7;
 }
+.div8 table tr td{
+    border-radius: 5px;
+}
 .div8 table tr td p{
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
@@ -178,31 +200,32 @@ section{
 }
 .div9{
     width: 100%;
-    height: 162px;
+    height: 158px;
     float: left;
-    border-bottom: 1px solid #CCCCCC;
-    background-color: #FFFFFF;
 }
 .div10{
-    width: 50%;
-    height: 162px;
+    width: 48%;
+    height: 153px;
     float: left;
-}
-.div10 hr{
-    margin-left: 100%;
-    float: left;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 5px;
+    margin-left: 1%;
 }
 .div11{
-    width: 50%;
-    height: 162px;
+    width: 48%;
+    height: 153px;
     float: left;
+    border-radius: 10px;
+ background-color: #ffffff;
+    margin-top: 5px;
+    margin-left: 2%;
 }
 .div12{
     width: 100%;
     height:30px;
     float: left;
-    margin-top: -155px;
-  ;
+
 }
 .div12 p{
     width: auto;
@@ -216,8 +239,7 @@ section{
     width: 100%;
     height:30px;
     float: left;
-    margin-top: -125px;
-;
+
 }
 .div13 p{
     width: auto;
@@ -232,7 +254,6 @@ section{
     width: 40%;
     height:70px ;
     float: left;
-    margin-top: -85px;
     margin-left: 5%;
 }
 .div14 img{
@@ -244,7 +265,6 @@ section{
     width: 50%;
     height:70px ;
     float: right;
-    margin-top: -85px;
     margin-left: 5%;
 
 }
@@ -309,6 +329,7 @@ footer{
     height: 50px;
     float: left;
     background-color: #FFFFFF;
+    margin-top: 5px;
 }
 footer ul{
     width: 100%;
@@ -320,47 +341,73 @@ footer ul li{
     height: 50px;
     float: left;
 }
-footer ul li hr{
-    float: left;
+footer ul li a:hover p{
+    color: #05A0D7;
 }
 .div19{
     width: 100%;
-    height: 20px;
-
+   height: 50px;
+    background: url("../image/register_icon.png") no-repeat 50% 20%;
+    float: left;
 }
-.div20{
+.div19 p{
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 30px;
+    text-align: center;
+    color: #737373;
+}
+.div20 {
     width: 100%;
-    height: 20px;
+    height: 50px;
+    background: url("../image/suggest_icon.png") no-repeat 50% 20%;
+    float: left;
 }
 .div20 p{
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-    color: #737373;
+    margin-top: 30px;
     text-align: center;
-    line-height: 20px;
+    color: #737373;
 }
-footer a:hover p{
-    color: #05A0D7;
+.div21 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/help_icon.png") no-repeat 50% 20%;
+    float: left;
 }
-footer img{
-    display:block;
-    width:30%;
-    height: 20px;
-    margin-left:35%;
-    margin-top: 5px;
-
+.div21 p {
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 30px;
+    text-align: center;
+    color: #737373;
 }
-footer a span {
-    width: 20%;
-    height: 20px;
-    display:none;
-    margin-top: -5px;
-
+.div22 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/setting-up_icon.png") no-repeat 50% 20%;
+    float: left;
 }
-footer a:hover span{
-    display:block;
-    position: absolute;
-
+.div22 p {
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 30px;;
+    text-align: center;
+    color: #737373;
+}
+.div23 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/collect_icon.png") no-repeat 50% 20%;
+    float: left;
+}
+.div23 p {
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 30px;;
+    text-align: center;
+    color: #737373;
 }
 
 

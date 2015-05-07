@@ -5,7 +5,7 @@
 html,body{
     width: 100%;
     height:800px;
-    background-color: #CCCCCC;
+    background-color: #ECECEC;
 }
 header{
     width: 100%;
@@ -74,7 +74,7 @@ a{
 .div6 table{
     width: 100%;
     height: 270px;
-    border: 5px solid #CCCCCC;
+    border: 5px solid #ECECEC;
 }
 .div6 table tr{
     width: 100%;
@@ -84,7 +84,7 @@ a{
     width: 30%;
     height: 40px;
     background-color: #FFFFFF;
-    border: 5px solid #CCCCCC;
+    border: 5px solid #ECECEC;
 }
 .div6 tr td p{
     font-size: 0.85em;

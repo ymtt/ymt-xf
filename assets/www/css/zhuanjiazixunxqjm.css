@@ -149,10 +149,9 @@ a {
    width: 100%;
     height: 80px;
     float: left;
-    background-color:#000000 ;
+    background-color:rgba(0,0,0,0.35) ;
     margin-top: -80px;
-    filter:alpha(Opacity=80);
-    -moz-opacity:0.35;opacity: 0.35;
+
 }
 .div11 p{
     width: 100%;
@@ -160,7 +159,7 @@ a {
   font-size: 0.65em;
     font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .div6-1{
     width: 100%;

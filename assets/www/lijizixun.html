@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/lijizixun.css" type="text/css" rel="stylesheet" media="screen">
+    <script language="javascript" type="text/javascript">
+        function showdiv() {
+            document.getElementById("bg").style.display ="block";
+            document.getElementById("show").style.display ="block";
+        }
+        function hidediv() {
+            document.getElementById("bg").style.display ='none';
+            document.getElementById("show").style.display ='none';
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div>
+        <div class="div1"><a href="zhuanjiazixun.html"><img src="image/return_icon.png"></a></div>
+        <div class="div2"><p>立即咨询</p></div>
+  </div>
+</header>
+<section>
+    <div class="div3">
+        <p>向千万专家提问！</p>
+    </div>
+    <div class="div4">
+    <textarea type="text" placeholder="输入咨询标题......"></textarea>
+    </div>
+    <div class="div5">
+        <textarea placeholder="输入咨询内容......" type="text" ></textarea>
+    </div>
+    <div class="div6">
+     <p>+上传附件</p>
+    </div>
+    <div class="div7">
+        <input type="button" value="提交咨询" onclick="showdiv()">
+    </div>
+</section>
+<footer>
+    <div class="div11">
+        <p>热门话题</p>
+    </div>
+    <div class="div12">
+        <ul>
+            <li>
+                <div class="div13">
+                    <a href=""><p>消防部门</p></a>
+                </div>
+            </li>
+            <li>
+                <div class="div13">
+                    <a href=""><p>规范组</p></a>
+                </div>
+            </li>
+            <li>
+                <div class="div13">
+                    <a href=""><p>建委</p></a>
+                </div>
+            </li>
+            <li>
+                <div class="div13">
+                    <a href=""><p>科研院校</p></a>
+                </div>
+            </li>
+            <li>
+                <div class="div13">
+                    <a href=""><p>设计院</p></a>
+                </div>
+            </li>
+            <li>
+                <div class="div13">
+                    <a href=""><p>开发商</p></a>
+                </div>
+            </li>
+            <li>
+                <div class="div13">
+                    <a href=""><p>火灾</p></a>
+                </div>
+            </li>
+            <li>
+                <div class="div13">
+                    <a href=""><p>小区事故</p></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</footer>
+<div class="zz-1" id="bg"  >
+</div>
+<div class="zz-2" id="show">
+    <div class="div14">
+        <p>你的问题已收到！</p>
+    </div>
+    <div class="div15">
+        <p>系统已自动为你生成</p>
+    </div>
+    <div class="div16">
+        <p class="p1">用户名：</p> <p class="p2">02233</p>   <p class="p1">密码：</p> <p class="p2">23243</p>
+    </div>
+    <div class="div17">
+        <p>建议你<a href="">修改</a>账号密码</p>
+    </div>
+    <input type="button" value="确定"  onclick="hidediv()">
+    </div>
+</body>
+</html>
