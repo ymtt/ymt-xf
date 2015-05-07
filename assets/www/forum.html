@@ -5,12 +5,37 @@
     <title></title>
     <link type="text/css" rel="stylesheet" href="css/forum.css" media="screen">
     <script src="js/forum.js"></script>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+function getfans(){
+        var session=window.sessionStorage.getItem("session");
+        var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.UserAction';
+        $.ajax({
+            type:'get',
+            datatype:'json',
+            url:url,
+            data:{"SESSIONID":session,"t":"app"},
+            success:function(data){
+                var json=eval("("+data+")");
+                if(json.result=="Y"){
+                     $("#fans").html("<p>关注&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;&nbsp;"+json.attCount+"<br><br>粉丝&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;"+json.fansCount+"</p>");
+                }else{
+                    alert("网页出现错误！");
+                }
 
+            }
+        })
+}
+window.onload=function(){
+    getfans();
+}
+
+    </script>
 </head>
 <body>
 <header>
     <div class="div1">
-        <a href="index.html"><div class="div2"> <img src="image/return.png"></div></a>
+        <a href="index.html"><div class="div2"> <img src="image/return_icon"></div></a>
         <div class="div3"><img src="image/point.png">
             <ul>
                 <li><a href="" class=""><p>我的收藏</p></a></li>
@@ -18,7 +43,7 @@
                 <li><a href=""><p>问题申述</p></a></li>
             </ul>
         </div>
-        <a href=""><div class="div4"><a href="sousuo.html"><img src="image/search.png"></a></div></a>
+        <a href=""><div class="div4"><a href="sousuo.html"><img src="image/search_icon.png"></a></div></a>
         <div class="div5"><p>消防论坛</p></div>
     </div>
 </header>
@@ -28,9 +53,9 @@
 <div class="div7">
    <a href="gerenzhongxin.html"> <img src="image/14.png"> </a>
     </div>
-    <div class="div8">
-        <p>关注&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;&nbsp;234<br><br>
-            粉丝&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;4556</p>
+    <div class="div8" id="fans">
+        <!--<p>关注&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;&nbsp;234<br><br>
+            粉丝&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;4556</p>-->
 </div>
 <div class="div10" >
     <ul  class="nav_title">

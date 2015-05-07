@@ -9,7 +9,7 @@
     <script src="js/base64encode.js" type="text/javascript"></script>
     <script src="js/cookie.js" type="text/javascript"></script>
     <script type="text/javascript">
-        $(function () {
+        $(document).ready(function () {
              $('#button').click(function () {
                      var username = $('#username').val();
                      var pwd = $('#password').val();
@@ -23,9 +23,14 @@
                             var json = eval("(" +data+ ")");
                             //base64编码
                             var x=base64encode(utf16to8(data));
-                           alert(x);
-                            //base64解码
-                            alert(utf8to16(base64decode(x)));
+                           window.sessionStorage.setItem("session",json.sId);
+                           if(json.result=="Y"){
+                                 alert("登录成功");
+                                window.location.href="index.html";
+                           }else{
+                               alert("登录失败")
+                           }
+
                          }
                      })
                 })
