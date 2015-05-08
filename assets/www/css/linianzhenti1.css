@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height:700px;
+    background-color: #EDEDED;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+
+}
+.div1{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.div1 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.div2{
+    width: auto;
+    height: auto;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 0.85em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #FFFFFF;
+    margin-left: 33%;
+}
+.div3{
+    width: auto;
+    height: auto;
+    float: right;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+.divZ1{
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-bottom: 1px solid #ECECEC;
+}
+.divZ1 p{
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height:40px ;
+}
+section{
+    width: 100%;
+    height: 655px;
+    background-color: #FFFFFF;
+}
+.div4{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+    float: left;
+}
+.div5{
+    width: 15%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5px;
+    float: left;
+}
+.div5 img{
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+.div6{
+    width: 70%;
+    height: auto;
+    margin-left: 2%;
+    margin-top: 5px;
+    float: left;
+}
+.div6 p{
+    font-size: 0.85em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #000000;
+}
+.div7{
+    width: 65%;
+    height: auto;
+    margin-left: 22%;
+    margin-top: 5px;
+    float: left;
+}
+.div7 p{
+    font-size: 0.85em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #CCCCCC;
+}
+.div8{
+    width: 30%;
+    height: 30px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 20%;
+    background: url("../image/comment_collect_icon.png")no-repeat 30% 50%;
+}
+.div8 p{
+    float: right;
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 30px;
+    color: #000000;
+}
+.div9{
+    width: 30%;
+    height: 30px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 20%;
+    background: url("../image/comment_comment_icon.png")no-repeat 30% 50%;
+}
+.div9 p{
+    float: right;
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 30px;
+    color: #000000;
+}
+a{
+    text-decoration: none;
+}

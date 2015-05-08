@@ -4,8 +4,7 @@
 }
 html,body{
     width: 100%;
-    height:800px;
-    background-color: #ECECEC;
+    height:614px;
 }
 header{
     width: 100%;
@@ -21,7 +20,7 @@ header{
     margin-top: 10px;
 }
 .div1 img{
-    width: 80%;
+    width: 100%;
     height: auto;
     max-width: 100%;
 }
@@ -41,227 +40,80 @@ header{
     height: auto;
     float: right;
     margin-right: 15px;
-    margin-top: 5px;
-}
-nav{
-    width: 100%;
-    height: auto;
-}
-nav img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-section{
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
+    margin-top: 8px;
 }
 .div4{
-    width: 44%;
-    height: 100px;
+    width: 100%;
+    height: 60px;
     float: left;
-    margin-left: 5%;
-    margin-top: 20px;
-}
-.div4-1 img{
-     margin-left: 35%;
-    margin-top: 10px;
-    max-width: 50%;
+    border-bottom: 1px solid #ECECEC;
 }
 .div5{
-    width: 21%;
-    height: 100px;
-    float: left;
-    margin-left: 2%;
-    margin-top: 20px;
-}
-.div5-1 img{
-    margin-left: 25%;
-    margin-top: 10px;
-    max-width: 50%;
-}
-
-.div6{
-    width: 21%;
-    height: 100px;
-    float: left;
-    margin-left: 2%;
-    margin-top: 20px;
-}
-.div6-1 img{
-    margin-left:25%;
-    margin-top: 10px;
-    max-width: 50%;
-}
-
-.div7{
-    width: 21%;
-    height: 100px;
-    float: left;
-    margin-left: 5%;
-    margin-top: 20px;
-}
-.div7-1 img{
-    margin-left: 25%;
-    margin-top: 15px;
-    max-width: 50%;
-}
-
-.div8{
-    width: 21%;
-    height: 100px;
-    float: left;
-    margin-left: 2%;
-    margin-top: 20px;
-}
-.div8-1 img{
-    margin-left: 25%;
-    margin-top: 10px;
-    max-width: 50%;
-}
-
-.div9{
-    width: 44%;
-    height: 100px;
-    float: left;
-    margin-left: 2%;
-    margin-top: 20px;
-}
-.div9-1 img{
-    margin-left: 35%;
-    margin-top: 10px;
-    max-width: 50%;
-}
-
-.div10{
-    width: 28%;
-    height: 100px;
-    float: left;
-    margin-left: 5%;
-    margin-top: 20px;
-}
-.div10-1 img{
-    margin-left: 25%;
-    margin-top: 20px;
-    max-width: 50%;
-
-}
-
-.div11{
-    width: 28%;
-    height: 100px;
-    float: left;
-    margin-left: 2%;
-    margin-top: 20px;
-}
-.div11-1 img{
-    margin-left: 30%;
-    margin-top: 10px;
-    max-width: 50%;
-}
-
-.div12{
     width: 30%;
-    height: 100px;
-    float: left;
-    margin-left: 2%;
-    margin-top: 20px;
-}
-.div12-1 img{
-    margin-left: 25%;
-    margin-top: 30px;
-    max-width: 50%;
-}
-
-.div13{
-    width: 90%;
-    height: 80px;
-    float: left;
-    margin-top: 20px;
-    margin-left: 5%;
-}
-.div13-1{
-    width: 20%;
+    height: 40px;
     float: left;
     margin-top: 10px;
-    margin-left: 5%;
 }
-.div13-1 img{
-
-   max-width: 80%;
+.div5 img{
+    width: 30%;
+    height: auto;
+    max-width: 100%;
+    margin-left: 20%;
 }
-.div14{
-    text-align: center;
-    color:#FFFFFF;
-    font-family: "微软雅黑";
-    font-size: 0.85em;
-    margin-top: 5px;
+.div6{
+    width: 70%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
 }
-.div15{
-    width: 75%;
-    float: right;
-    font-family: "微软雅黑";
+.div6 p{
     font-size: 0.75em;
-    color: #FFFFFF;
-
-    margin-top: 20px;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 20px;
 }
-footer{
-    background-color: #05A0D7;
-    width: 100%;
-    height: 50px;
+.div7{
+    width: 70%;
+    height: 20px;
+    float: left;
 }
-ul{
+.red{
+    height: 20px;
+    color:red;
+    padding:0; margin:0;display: inline;
+    float: left;
+    font-size: 1em;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.s1{
+    height: 20px;
+    font-size: 0.75em;
+    float: left;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.div8{
     width: 100%;
+    height: auto;
+    float: left;
+}
+.div8 ul{
     list-style: none;
 }
-li{
-    width: 33.33%;
+.div8 ul li{
+    width: 45.5%;
+    height: 80px;
+    margin-left: 3%;
     float: left;
-
+    margin-top: 20px;
 }
-.div17{
-    width:25%;
-    margin-top: 10px;
-    float: left;
-    margin-left: 10%;
+.div9{
+    width: 100%;
+    height:80px ;
 }
-.div18{
-    float: left;
-    color: #FFFFFF;
-    font-family: "微软雅黑";
-    font-size: 0.85em;
-    margin-top: 15px;
-    margin-left: 5%;
-}
-a{
-    text-decoration: none;
-}
-.c1{
-    background-color: #EB7D4D;
-}
-.c2{
-    background-color:#0E9BFF ;
-}
-.c3{
-    background-color: #EBB424;
-}
-.c4{
-    background-color:#3F78E9 ;
-}
-.c5{
-    background-color:#FF9B00 ;
-}
-.c6{
-    background-color:#FF3C96 ;
-}
-.c7{
-    background-color: #9B24FF;
-}
-.c8{
-    background-color: #09A087;
-}
-.c9{
-    background-color: #246E35;
+.div9 img{
+    width: 100%;
+    height: 80px;
+    max-width: 100%;
 }
