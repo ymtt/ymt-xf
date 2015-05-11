@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/style1.css" media="screen">
+    <script type="text/javascript">
+        function loaded(){
+            try{
+                var HomeLogo=window.localStorage.getItem("HomeLogo");
+                if(HomeLogo==null){
+                    window.location.href="welcome.html";
+                }
+            }catch(e){
+                alert("设备不支持！");
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="loaded()">
 <header>
 <div class="div1"><a href=""><img src="image/75.png"></a></div>
 <div class="div3"><a href="sousuo.html"> <img src="image/search.png"></a></div>

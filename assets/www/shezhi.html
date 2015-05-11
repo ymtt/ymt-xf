@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="css/shezhi.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+           $(document).ready(function(){
+                        $(".div3:eq(2)").click(function(){
+                                $(".hidebg").css({"display":"block"});
+                                $("#showskin").show();
+                        });
+                        $("span:eq(0)").click(function(){
+                                 $(".hidebg").css({"display":"none"});
+                                $("#showskin").hide();
+                        });
+                        $(".submit:eq(0)").click(function(){
+                                window.localStorage.setItem("Index",$('input[name="skin"]:checked').val());
+                                 $(".hidebg").css({"display":"none"});
+                                $("#showskin").hide();
+                        });
+                });
+    </script>
+    <style type="text/css">
+        #showskin{
+            width:30%;
+            height:15%;
+            border:1px solid #000000;
+            background-color:#FFFFFF;
+            display: none;
+            z-index:999;
+            position:absolute;
+            left:35%;
+            top:20%;
+        }
+        .submit{
+            position:absolute;
+            left:35%;
+        }
+        .hidebg {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#000;
+        width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+        height:100%;
+        filter:alpha(opacity=60);  /*设置透明度为60%*/
+        opacity:0.6;  /*非IE浏览器下设置透明度为60%*/
+        display:none; /* http://www.jb51.net */
+        z-Index:888;}
+    </style>
 </head>
 <body>
+<div class="hidebg"></div>
 <header>
     <div class="div1"><a href="index.html"><img src="image/return.png"></a></div>
     <div class="div2"><p>设置</p></div>
@@ -13,56 +60,48 @@
 <section>
     <ul>
         <li>
-            <a href="">
-            <div class="div3">
+            <div class="div3" id="a">
                 <p>账号登陆</p>
             </div>
-            </a>
         </li>
         <li>
-            <a href="">
                 <div class="div3">
                     <p>修改登录密码</p>
                 </div>
-            </a>
         </li>
         <li>
-            <a href="">
                 <div class="div3">
                     <p>自定义皮肤</p>
                 </div>
-            </a>
         </li>
         <li>
-            <a href="">
                 <div class="div3">
                     <p>存储设置</p>
                 </div>
-            </a>
         </li>
         <li>
-            <a href="">
                 <div class="div3">
                     <p>推荐给好友</p>
                 </div>
-            </a>
         </li>
         <li>
-            <a href="">
                 <div class="div3">
                     <p>关于我们</p>
                 </div>
-            </a>
         </li>
         <li>
-            <a href="">
                 <div class="div3">
                     <p>软件卸载</p>
                 </div>
-            </a>
         </li>
     </ul>
 </section>
+<div id="showskin">
+    <h5>请选择皮肤         <span><a href="#">关闭</a></span></h5>
+    <p><input type="radio" name="skin" checked value="index.html" >默认</p>
+    <p><input type="radio" name="skin"  value="index1.html" >经典</p>
+    <span class="submit"><a href="#">确定</a></span>
+</div>
 <footer>
     <a href="denglu.html">
     <div class="div4">

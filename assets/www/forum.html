@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet" href="css/forum.css" media="screen">
     <script src="js/forum.js"></script>
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="cordova.js"></script>
     <script type="text/javascript">
 function getfans(){
         var session=window.sessionStorage.getItem("session");
@@ -20,7 +21,7 @@ function getfans(){
                 if(json.result=="Y"){
                      $("#fans").html("<p>关注&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;&nbsp;"+json.attCount+"<br><br>粉丝&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;"+json.fansCount+"</p>");
                 }else{
-                    alert("网页出现错误！");
+                    alert("对不起你还没有登陆！");
                 }
 
             }
@@ -29,7 +30,17 @@ function getfans(){
 window.onload=function(){
     getfans();
 }
-
+     $(document).ready(function(){
+              document.addEventListener("deviceready", onDeviceReady, false);
+     });
+      function onDeviceReady() {
+         //按钮事件
+        document.addEventListener("backbutton", eventBackButton, false); //返回键
+        document.addEventListener("menubutton", eventMenuButton, false); //菜单键
+      }
+      function eventBackButton(){
+            history.back();
+      }
     </script>
 </head>
 <body>

@@ -52,7 +52,7 @@
                 <img src="image/welcome_3.jpg" usemap="#planetmap"/>
                 <!--<button type="button" onClick="openurl('index.html')" class="btn bc">立即体验</button><a href="index.html">点击</a>-->
                 <map id="planetmap"  name="planetmap">
-                	<area shape="rect" coords="86,827,633,895" href="index.html" />
+                	<area shape="rect" coords="86,827,633,895" href="index.html" onclick="setIndex()"/>
 					<area shape="rect" coords="90,929,631,995" href="zhuce.html" />
                 </map>
                 </div>
@@ -60,16 +60,24 @@
         </div>
         <script src="js/swiper.min.js"></script>
     <script type="text/javascript">
-        function openurl(url){
-            window.location.href=url;
+       function setIndex(){
+            window.localStorage.setItem("Index","index.html");
         }
 
         var HomeLogo=window.localStorage.getItem("HomeLogo");
+        var Index=window.localStorage.getItem("Index");
+
         if(HomeLogo==null){
             window.localStorage.setItem("HomeLogo","HomeLogo_hide");
         }else{
-            window.location.href="index.html";
+             /*如果Index为"index"或者为空，跳转到index.html,如果为index1,则进入index1.html进入*/
+            if(Index=="index.html"){
+                window.location.href="index.html";
+            }else if(Index=="index1.html"){
+                window.location.href="index1.html";
+            }
         }
+
         var mySwiper=new Swiper('.swiper-container',{
             loop:true,
             preventClicks:false,

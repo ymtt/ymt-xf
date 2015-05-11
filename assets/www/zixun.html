@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="css/zixun.css" type="text/css" rel="stylesheet" media="screen">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+        var index=window.localStorage.getItem("Index");
+        $("#back").attr("href",index);
+     });
+    </script>
 </head>
 <body>
 <div>
 <header>
-    <div class="div1"><a href="index.html"><img src="image/return_icon.png"></a></div>
+    <div class="div1"><a href="#" id="back"><img src="image/return_icon.png"></a></div>
     <div class="div2"><p>资讯平台</p></div>
     <div class="div3"><img src="image/more_icon.png">
         <ul>
