@@ -131,3 +131,172 @@ section{
     float: left;
     border-top: 5px solid #ECECEC;
 }
+.KS{
+    width: 100%;
+    height: 60px;
+    float: left;
+    border-bottom: 1px solid #ECECEC;
+}
+.KS-1{
+    width: 100%;
+    height: 30px;
+    float: left;
+}
+.KS-1 p{
+   font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.85em;
+   line-height: 30px;
+    color: #000000;
+    margin-left: 5%;
+}
+.KS-2{
+    width: 100%;
+    height: 30px;
+    float: left;
+}
+.KS-2 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.75em;
+    line-height: 30px;
+    color: #737373;
+    margin-left: 5%;
+}
+.kc{
+    width: 100%;
+    height:auto ;
+    float: left;
+    margin-top: 5px;
+}
+.kc ul{
+    width: 100%;
+    height: auto;
+    float: left;
+    list-style: none;
+}
+.kc ul li{
+    width: 45.5%;
+    height: 80px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 3%;
+}
+.kc-1{
+    width: 100%;
+    height: 80px;
+    float: left;
+    overflow: hidden;
+}
+.kc-1 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.kc-2{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,0.5);
+    float: left;
+    margin-top: -30px;
+}
+.kc-2 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.75em;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+.xz{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.xz-1{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #ECECEC;
+}
+.xz-1 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    margin-left: 5%;
+    line-height: 30px;
+}
+.sc{
+    width: 100%;
+    height:auto;
+    float: left;
+}
+.sc-1{
+    width: 100%;
+    height: 40px;
+    float: left;
+    background-color: #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.sc-2 {
+    width: 20%;
+    height: 40px;
+    float: left;
+}
+.sc-2 img{
+    max-width: 100%;
+    margin-left: 30%;
+    margin-top: 5px;
+}
+.sc-3{
+    width: 80%;
+    height: 40px;
+    float: left;
+}
+.sc-3 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    line-height:40px;
+}
+.sc-4{
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-bottom: 1px solid #ECECEC;
+}
+.sc-5{
+    width: 15%;
+    height: 40px;
+    float: left;
+}
+.sc-5 p{
+    width: 20px;
+   height: 20px;
+    background-color: #05A0D7;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 20%;
+    text-align: center;
+}
+.sc-6{
+    width: 85%;
+    height: 20px;
+    float: left;
+}
+.sc-6 p{
+   font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.75em;
+    line-height: 20px;
+    color: #000000;
+}
+.sc-7{
+    width:85%;
+    height: 20px;
+    margin-left: 15%;
+    float: left;
+    margin-top: -20px;
+}
+.sc-7 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.7em;
+    line-height: 20px;
+    color: #737373;
+}
