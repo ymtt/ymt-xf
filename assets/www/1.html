@@ -1,98 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        #demo1 {display:none;}
-        #demo2{
-            display: none;
-        }
-    </style>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>无标题文档</title>
-    <style>
-        .btn1{
-            width: 100%;
-            height: 30px;
-            color: #000000;
-            border:1px solid #CCCCCC;
-            float: left;
-        }
-        p{
-            width: 10%;
-            height: 30px;
-            line-height: 30px;
-            float: left;
-            margin-top: -30px;
-            margin-left: 10%;
-
-        }
-        ul{
-            list-style: none;
-            float: left;
-        }
-    </style>
-    <script>
-       function a()
-        {
-
-                var oBtn = document.getElementById("btn1");
-                var oDemo = document.getElementById("demo1");
-
-                    if (oDemo.style.display == "block") {
-                        oBtn.style.background = "url(image/suggest_icon.png)no-repeat"
-                        oDemo.style.display = "none";
-                    }
-                    else {
-                        oBtn.style.background = "url(image/suggest1_icon.png)no-repeat"
-                        oDemo.style.display = "block";
-                    }
-
-
-        }
-    function b()
-        {
-
-            var oBtn1 = document.getElementById("btn2");
-            var oDemo1 = document.getElementById("demo2");
-
-                if (oDemo1.style.display == "block") {
-                    oBtn1.style.background = "url(image/suggest_icon.png)no-repeat"
-                    oDemo1.style.display = "none";
-                }
-                else {
-                    oBtn1.style.background = "url(image/suggest1_icon.png)no-repeat"
-                    oDemo1.style.display = "block";
-                }
-
-        }
-    </script>
-</head> <body>
-<input type="button" id="btn1"   class="btn1"onclick="a()">
-<p>按钮</p>
-<div id="demo1">
-    <ul>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-    </ul>
-</div>
-<input type="button" id="btn2"   class="btn1" onclick="b()">
-<p>按钮</p>
-
-<div id="demo2">
-    <ul>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-        <li>fafsa</li>
-    </ul>
-</div>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/main.css" rel="stylesheet"/>
+    <!--Plugins--->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/hammer.jquery.min.js"></script>
+    <script src="js/itemslide.min.js"></script>
+    <!--Scripts--->
+    <script src="js/sliding.js"></script>
+</head>
+<body>
+ <ul >
+     <li>
+         dasdasd
+         <div><img src="image/red-dot1_background-color.png"></div>
+         <div><img src="image/red-dot2_background-color.png"></div>
+     </li>
+     <li>
+         dasdasdfgyhd
+         <div><img src="image/red-dot2_background-color.png"></div>
+         <div><img src="image/red-dot1_background-color.png"></div>
+     </li>
+ </ul>
 </body>
 </html>

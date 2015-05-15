@@ -11,116 +11,134 @@
         $("#back").attr("href",index);
      });
     </script>
+    <script>
+        function  change_nav(heath_center) {
+            for (var i = 1; i <= 3; i++) {
+                if (i == heath_center) {
+                    document.getElementById("nav_item" + i).className = "nav_item";
+                    document.getElementById("nav_tab" + i).style.display = "";
+                    document.getElementById("p" + i).style.color = "#FFFFFF";
+                    document.getElementById("p" + i).style.background = "#05A0D7";
+                    document.getElementById("p" + i).style.borderRadius = "6px";
+                }
+                else {
+                    document.getElementById("nav_item" + i).className = "";
+                    document.getElementById("nav_tab" + i).style.display = "none";
+                    document.getElementById("p" + i).style.color = "";
+                    document.getElementById("p" + i).style.background = "";
+                    document.getElementById("p" + i).style.borderRadius = "";
+                }
+            }
+        }
+    </script>
 </head>
 <body>
-<div>
+
 <header>
     <div class="div1"><a href="#" id="back"><img src="image/return_icon.png"></a></div>
     <div class="div2"><p>资讯平台</p></div>
     <div class="div3"><img src="image/more_icon.png">
         <ul>
-            <li><a href=""><p>最近浏览</p></a></li>
-            <li><a href=""><p class="p1">历史记录</p></a></li>
+            <li><a href="ZXzuijinliulan.html"><p>最近浏览</p></a></li>
+            <li><a href="ZXlishijilu.html"><p class="p1">历史记录</p></a></li>
 
         </ul>
     </div>
 </header>
-    <nav>
-        <div class="nav-1">
-            <div class="nav-2"> <img src="image/z_search_gray_icon.png"></div>
-            <input type="text">
-        </div>
-        <div class="nav-3">
-            <ul>
-                <li>
-                    <a href="" >
-                        <div class="nav-4">
-                            <p>消防部门</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" >
-                        <div class="nav-4">
-                            <p>规范组</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" >
-                        <div class="nav-4">
-                            <p>建委</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" >
-                        <div class="nav-4">
-                            <p>科研院校</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" >
-                        <div class="nav-4">
-                            <p>设计院</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" >
-                        <div class="nav-4">
-                            <p>开发商</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" >
-                        <div class="nav-4">
-                            <p>设备商</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="" >
-                        <div class="nav-4">
-                            <p>服务商</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-<section>
- <div class="div4">
-     <ul>
-        <li> <a href="">
-             <div class="div5"><p>消防新闻</p></div>
-        </a>
+<nav>
+    <div class="nav-1">
+        <div class="nav-2"> <img src="image/z_search_gray_icon.png"></div>
+        <input type="text">
+    </div>
+    <div class="nav-3">
+        <ul>
+            <li>
+                <a href="" >
+                    <div class="nav-4">
+                        <p>消防部门</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" >
+                    <div class="nav-4">
+                        <p>规范组</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" >
+                    <div class="nav-4">
+                        <p>建委</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" >
+                    <div class="nav-4">
+                        <p>科研院校</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" >
+                    <div class="nav-4">
+                        <p>设计院</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" >
+                    <div class="nav-4">
+                        <p>开发商</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" >
+                    <div class="nav-4">
+                        <p>设备商</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" >
+                    <div class="nav-4">
+                        <p>服务商</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="div4">
+    <ul>
+        <li  class="nav_item1" id="nav_item1" onClick="change_nav(1)">
+            <div class="div5"><p id="p1" style="color: #ffffff ;background-color: #05A0D7;border-radius: 6px" >消防新闻</p></div>
+        </li >
+        <li class="nav_item1" id="nav_item2" onClick="change_nav(2)">
+            <div class="div5"><p id="p2">消防公告</p></div>
         </li>
-             <li class="li-1"> <a href="">
-                 <div class="div5"><p>消防公告</p></div>
-             </a>
-             </li>
-             <li class="li-1"><a href="">
-                 <div class="div5"><p>教育咨询</p></div>
-             </a>
-             </li>
-     </ul>
- </div>
+        <li  class="nav_item1" id="nav_item3" onClick="change_nav(3)">
+            <div class="div5"><p id="p3">教育咨询</p></div>
+        </li>
+    </ul>
+</div>
+<section class="nav_tab" id="nav_tab1" >
     <div class="div6">
-      <div class="div7"><p>图片资讯</p></div>
+        <div class="div7"><p>图片资讯</p></div>
     </div>
     <div class="div9">
         <ul>
             <li>
-                <a href=""><img src="image/07.png"> </a>
+                <a href="tupianzixun.html"><img src="image/07.png"> </a>
             </li>
             <li>
-            <a href=""><img src="image/08.png"> </a>
+                <a href="tupianzixun.html"><img src="image/08.png"> </a>
             </li>
             <li>
-                <a href=""><img src="image/09.png"> </a>
+                <a href="tupianzixun.html"><img src="image/09.png"> </a>
             </li>
         </ul>
     </div>
@@ -130,35 +148,157 @@
     </div>
 
     <div class="div10">
-        <a href="ZXfenxiang.html">
-        <div class="div11"><p>新修订《消防法》的宣传贯彻力度</p></div>
-         <div class="div12"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队与中国......
-        </p></div>
-        <div class="div13"></div>
+        <a href="shipinzixun.html">
+            <div class="div11"><p>新修订《消防法》的宣传贯彻力度</p></div>
+            <div class="div12"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                河北省保定市公安消防支队与中国......
+            </p></div>
+            <div class="div13">
+                <img src="image/08.png">
+            </div>
         </a>
     </div>
 
 
     <div class="div10">
-        <a href="ZXfenxiang.html">
-        <div class="div11"><p>新修订《消防法》的宣传贯彻力度</p></div>
-       <div class="div12"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队与中国......
-        </p></div>
-        <div class="div13"></div></a>
+        <a href="shipinzixun.html">
+            <div class="div11"><p>新修订《消防法》的宣传贯彻力度</p></div>
+            <div class="div12"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                河北省保定市公安消防支队与中国......
+            </p></div>
+            <div class="div13">
+                <img src="image/07.png">
+            </div>
+        </a>
     </div>
 
     <div class="div6">
         <div class="div7"><p>文字咨询</p></div>
     </div>
+    <div class="div14">
+        <a href="wenzizixun.html">
+            <div class="div15">
+                <p>新修订《消防法》的宣传贯彻力度</p>
+            </div>
+            <div class="div16">
+                <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                    河北省保定市公安消防支队与中国</p>
+            </div>
+            <div class="div17">
+                <div class="div18">
+                    <p>328</p>
+                </div>
+                <div class="div19">
+                    <img src="image/comment_comment_icon.png">
+                </div>
+            </div>
+        </a>
+    </div>
 </section>
-<div>
+<section class="nav_tab1" id="nav_tab2" style="display: none">
+    <div class="gg">
+        <a href="gonggaoXQ.html">
+            <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
+            <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                河北省保定市公安消防支队与中国......
+            </p>
+            </div>
+            <div class="gg-3">
+                <img src="image/07.png">
+            </div>
+            <div class="gg-3">
+                <img src="image/07.png">
+            </div>
+        </a>
+    </div>
+    <div class="gg">
+        <a href="gonggaoXQ.html">
+            <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
+            <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                河北省保定市公安消防支队与中国......
+            </p>
+            </div>
+            <div class="gg-3">
+                <img src="image/07.png">
+            </div>
+            <div class="gg-3">
+                <img src="image/07.png">
+            </div>
+            <div class="gg-3">
+                <img src="image/07.png">
+            </div>
+        </a>
+    </div>
+    <div class="gg">
+        <a href="gonggaoXQ.html">
+            <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
+            <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                河北省保定市公安消防支队与中国......
+            </p>
+            </div>
+            <div class="gg-3">
+                <img src="image/07.png">
+            </div>
 
-</div>
-<div>
+        </a>
+    </div>
+</section>
+<section class="nav_tab2" id="nav_tab3" style="display: none">
+    <div class="zx">
+        <a href="jiaoyuXQ.html">
+            <div class="zx-1">
+                <img src="image/08.png">
+            </div>
+            <div class="zx-2">
+                <p>
+                    加大新修订《消防法》的宣传
+                </p>
+            </div>
+            <div class="zx-3">
+                <p>
+                    为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                    河北省保定市公安消防支队与中国......
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="zx">
+        <a href="jiaoyuXQ.html">
+            <div class="zx-1">
+                <img src="image/08.png">
+            </div>
+            <div class="zx-2">
+                <p>
+                    加大新修订《消防法》的宣传
+                </p>
+            </div>
+            <div class="zx-3">
+                <p>
+                    为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                    河北省保定市公安消防支队与中国......
+                </p>
+            </div>
+        </a>
+    </div>
 
-</div>
-</div>
+    <div class="zx">
+        <a href="jiaoyuXQ.html">
+            <div class="zx-1">
+                <img src="image/08.png">
+            </div>
+            <div class="zx-2">
+                <p>
+                    加大新修订《消防法》的宣传
+                </p>
+            </div>
+            <div class="zx-3">
+                <p>
+                    为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                    河北省保定市公安消防支队与中国......
+                </p>
+            </div>
+        </a>
+    </div>
+</section>
 </body>
 </html>

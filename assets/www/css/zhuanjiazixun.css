@@ -33,24 +33,45 @@ a{
     float: left;
     line-height: 40px;
     text-align: center;
-    font-size: 0.85em;
-    font-family: "微软雅黑";
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
     margin-left: 33%;
 }
 .div3{
     width: 10%;
-    height: auto;
-    float: right;
-    margin-top: 3px;
-    margin-right: 7%;
+    height:40px;
+    float: left;
+    margin-left: 25%;
 }
-.div3 img{
+.div3-1{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #FF0000;
+    float: left;
+    margin-left: 60%;
+    margin-top: 5px;
+}
+.div3-1 p{
+    font-family:"方正兰亭纤黑_GBK";
+    font-size: 0.5em;
+    color: #ffffff;
+    text-align: center;
+    line-height: 10px;
+}
+.div3-2{
+    width: 90%;
+    height: auto;
+    float: left;
+}
+.div3-2 img{
     width: 100%;
     height: auto;
     max-width: 100%;
+    margin-top: -12px;
 }
-.div3 ul{
+.div3-2 ul{
     list-style: none;
     display: none;
    position: absolute;
@@ -59,25 +80,42 @@ a{
     top: 40px;
 
 }
-.div3 ul li{
+.div3-2 ul li{
     float: none;
 }
 .div3 ul li a{
     text-decoration: none;
 
 }
-.div3 ul li a p{
+.div3-2 ul li a .div3-3 p{
     width: 80px;
     height: 30px;
-    background-color:#f5f5f5;
-    font-family: "微软雅黑";
+    background-color: #ffffff;
+    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.65em;
     border-top: 1px solid #CCCCCC;
     color: #000000;
     text-align: center;
     line-height: 30px;
 }
-.div3:hover ul{
+.div3-4{
+    width: 10px;
+    height: 10px;
+    float: left;
+    border-radius: 10px;
+    background-color:#FF0000;
+    margin-left: 80%;
+    margin-top: 2px;
+    margin-bottom: -12px;
+}
+.div3-4 p{
+    font-family:"方正兰亭纤黑_GBK";
+    font-size: 0.5em;
+    color: #ffffff;
+    text-align: center;
+    line-height: 10px;
+}
+.div3-2:hover ul{
     display: block;
 }
 section{
@@ -145,6 +183,7 @@ input{
    float: left;
     margin-top: 5px;
     border-bottom: 1px solid #CCCCCC;
+    overflow: hidden;
 }
 .div9-1{
     width: 60%;
@@ -174,7 +213,7 @@ input{
 }
 .div9 ul{
  list-style: none;
-    width: 90%;
+    width: 95%;
     margin-left: 5%;
 
 }
@@ -186,11 +225,41 @@ input{
 
 }
 .div10{
+  width:55%;
+  height: auto;
+    float: left;
+}
+.div10 p{
     color: #FFFFFF;
-    font-size:0.85em ;
-    font-family: "微软雅黑";
-    text-align: center;
+    font-size:0.8em ;
+    font-family: "方正兰亭纤黑_GBK";
     margin-top: 10px;
+    margin-left: 10%;
+}
+.div10-1{
+    width:45%;
+    height: auto;
+    float: left;
+}
+.div10-1 p{
+    color: #FFFFFF;
+    font-size:0.65em ;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 12px;
+
+}
+.div10-2{
+    width:100%;
+    height: auto;
+    float: left;
+}
+.div10-2 p{
+    color: #FFFFFF;
+    font-size:0.8em ;
+    font-family: "方正兰亭纤黑_GBK";
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5%;
 }
 .div11{
     width: 100%;
@@ -315,6 +384,7 @@ input{
 .div20 p{
     font-family: "微软雅黑";
     font-size: 0.75em;
+    color: #000000;
 }
 .div21{
     width: auto;
@@ -337,14 +407,12 @@ input{
 }
 .div23{
     width: 20%;
-    height: 80px;
+    height: auto;
     margin-top: 10px;
     float: left;
     margin-left: 5%;
 }
 .div23 img{
-    width: auto;
-    height: 80px;
     max-width: 100%;
 }
 .div24{
@@ -357,6 +425,7 @@ input{
 .div24 p{
     font-family: "微软雅黑";
     font-size: 0.75em;
+    color: #000000;
 
 }
 .div25{
@@ -376,7 +445,7 @@ input{
  width: 60%;
     height: 20px;
     float: left;
-    margin-left: 10%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div26{
@@ -391,6 +460,7 @@ input{
     font-family: "微软雅黑";
     font-size: 0.75em;
     line-height: 18px;
+    color: #000000;
 }
 .div28{
     margin-top: 2px;

@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height:700px;
+
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    width:10%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.div1 img{
+    max-width: 100%;
+}
+.div2{
+    width: 20%;
+    height: 40px;
+    float: left;
+    margin-left: 25%;
+}
+.div2 p {
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 40px;
+    text-align:center;
+}
+.div3{
+    width: 10%;
+    height: 40px;
+    float: left;
+    margin-left: 25%;
+}
+.div3 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.85em;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+}
+section{
+    width: 100%;
+    height:auto;
+    float: left;
+    background-color: #EDEDED;
+}
+.div4{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.div5{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.div5 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+.div6{
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+}
+.div6 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.85em;
+    line-height: 100%;
+    text-align: center;
+    color: #737373;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.div7{
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.div7 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 5px;
+  margin-left: 20%;
+}
+.div8{
+    width: auto;
+    height: auto;
+    background-color: #05A0D7;
+    border-radius: 10px;
+    float: right;
+    margin-top: 10px;
+}
+.div8 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.85em;
+    line-height: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+footer{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+}
+.div9{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+.div10{
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.div10 img{
+  max-width: 100%;
+    margin-top: 5px;
+}
+.div11{
+    width:50%;
+    height: 20px;
+    float: left;
+}
+.div11 input{
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+.div12{
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.div12 img{
+    max-width: 100%;
+    margin-top: 5px;
+    margin-left: 30%;
+}
+.div13{
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.div13 img{
+    max-width: 100%;
+    margin-top: 5px;
+}
