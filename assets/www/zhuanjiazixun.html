@@ -2,8 +2,18 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>专家咨询</title>
     <link rel="stylesheet" type="text/css" href="css/zhuanjiazixun.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/promptumenu.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.promptu-menu.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            $('ul.promptu-menu').promptumenu({width:400, height:80, rows: 1, columns: 4, direction: 'horizontal', pages: true});
+            $('ul.promptu-menu2').promptumenu({width:400, height:80, rows: 1, columns: 4, direction: 'horizontal', pages: false});
+        });
+    </script>
     <script type="text/javascript">
         var i = 0 ;
         function change() {
@@ -124,7 +134,7 @@
             <p>更多专家</p>
             </a>
         </div>
-        <ul>
+        <ul class="promptu-menu">
             <li class="li blue">
                 <div class="div10"><p>星期一</p></div>
                 <div class="div10-1"><p>5月11日</p></div>
@@ -145,6 +155,38 @@
                 <div class="div10-1"><p>5月14日</p></div>
                 <div class="div10-2"><p>吴亦凡</p></div>
             </li>
+            <li class="li green">
+                <div class="div10"><p>星期三</p></div>
+                <div class="div10-1"><p>5月13日</p></div>
+                <div class="div10-2"><p>李成荣</p></div>
+            </li>
+            <li class="li blue">
+                <div class="div10"><p>星期一</p></div>
+                <div class="div10-1"><p>5月11日</p></div>
+                <div class="div10-2"><p>许大德</p></div>
+            </li>
+            <li class="li violet">
+                <div class="div10"><p>星期二</p></div>
+                <div class="div10-1"><p>5月12日</p></div>
+                <div class="div10-2"><p>左林</p></div>
+            </li>
+            <li class="li green">
+                <div class="div10"><p>星期三</p></div>
+                <div class="div10-1"><p>5月13日</p></div>
+                <div class="div10-2"><p>李成荣</p></div>
+            </li>
+            <li class="li yellow">
+                <div class="div10"><p>星期四</p></div>
+                <div class="div10-1"><p>5月14日</p></div>
+                <div class="div10-2"><p>吴亦凡</p></div>
+            </li>
+            <li class="li green">
+                <div class="div10"><p>星期三</p></div>
+                <div class="div10-1"><p>5月13日</p></div>
+                <div class="div10-2"><p>李成荣</p></div>
+            </li>
+
+
         </ul>
     </div>
     <div class="div11">
@@ -180,7 +222,7 @@
         <p>热点咨询</p>
     </div>
     <div class="div22">
-        <a href="">
+        <a href="redianzixun.html">
         <div class="div23"><img src="image/07.png"></div>
         <div class="div24"><p>新修订《消防法》的宣传贯彻力度</p></div>
         <div class="div25"><p>的宣传贯彻力度，在河北省保定市公安消防支队与中国......</p></div>

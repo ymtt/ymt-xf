@@ -16,27 +16,27 @@ a{
     text-decoration: none;
 }
 .div1{
-    width: auto;
+    width: 5%;
     height: auto;
     float: left;
     margin-left: 5%;
     margin-top: 10px;
 }
 .div1 img{
-    width: 80%;
+    width: 100%;
     height: auto;
     max-width: 100%;
 }
 .div2{
-    width: auto;
+    width: 30%;
     height: auto;
     float: left;
     line-height: 40px;
     text-align: center;
     font-size: 1em;
-    font-family: "微软雅黑";
+    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
-    margin-left: 33%;
+    margin-left: 25%;
 }
 section{
     width: 100%;

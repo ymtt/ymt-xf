@@ -20,7 +20,7 @@
     }
 
     .div1 {
-        width: auto;
+        width: 5%;
         height: auto;
         float: left;
         margin-left: 5%;
@@ -28,13 +28,13 @@
     }
 
     .div1 img {
-        width: 80%;
+        width: 100%;
         height: auto;
         max-width: 100%;
     }
 
     .div2 {
-        width: auto;
+        width: 20%;
         height: auto;
         float: left;
         line-height: 40px;
@@ -42,7 +42,7 @@
         font-size: 1em;
         font-family: "微软雅黑";
         color: #FFFFFF;
-        margin-left: 33%;
+        margin-left: 30%;
     }
 
     .div3 {
@@ -69,13 +69,11 @@
 .div4-1{
     width: 20%;
     height: 30px;
-    border-right: 1px solid #05A0D7;
+
     margin-top: 5px;
     float: left;
 }
 .div4-1 img{
-    width: 40% ;
-    height: auto;
     max-width: 100%;
     margin-left: 30%;
     margin-top: 5px;
@@ -99,13 +97,12 @@ input{
 .div5-1{
       width: 20%;
       height: 30px;
-      border-right: 1px solid #05A0D7;
+
       margin-top: 5px;
       float: left;
   }
 .div5-1 img{
-      width: 40% ;
-      height: auto;
+
       max-width: 100%;
       margin-left: 30%;
       margin-top: 5px;
@@ -180,8 +177,6 @@ button{
     height: auto;
 }
 .div11 img{
-    width: 40%;
-    height: auto;
     max-width: 100%;
 }
 footer{

@@ -2,36 +2,36 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>视频详情</title>
     <link rel="stylesheet" type="text/css" href="css/shipinXQ.css">
     <script>
-        function  change_nav(heath_center) {
-            for (var i = 1; i <= 4; i++) {
-                if (i == heath_center) {
-                    document.getElementById("nav_item" + i).className = "nav_item";
-                    document.getElementById("nav_tab" + i).style.display = "";
-                    document.getElementById("nav_item" + i).style.background= "#FFFFFF";
-                    document.getElementById("p" + i).style.color = "#05A0D7";
+    function  change_nav(heath_center) {
+        for (var i = 1; i <= 4; i++) {
+            if (i == heath_center) {
+                document.getElementById("nav_item" + i).className = "nav_item";
+                document.getElementById("nav_tab" + i).style.display = "";
+                document.getElementById("nav_item" + i).style.background= "#FFFFFF";
+                document.getElementById("p" + i).style.color = "#05A0D7";
 
-                }
-                else {
-                    document.getElementById("nav_item" + i).className = "";
-                    document.getElementById("nav_tab" + i).style.display = "none";
-                    document.getElementById("nav_item" + i).style.background= "";
-                    document.getElementById("p" + i).style.color = "";
+            }
+            else {
+                document.getElementById("nav_item" + i).className = "";
+                document.getElementById("nav_tab" + i).style.display = "none";
+                document.getElementById("nav_item" + i).style.background= "";
+                document.getElementById("p" + i).style.color = "";
 
-                }
             }
         }
-        function showdiv() {
-            document.getElementById("bg").style.display ="block";
-            document.getElementById("show").style.display ="block";
-        }
-        function hidediv() {
-            document.getElementById("bg").style.display ='none';
-            document.getElementById("show").style.display ='none';
-        }
-    </script>
+    }
+    function showdiv() {
+        document.getElementById("bg").style.display ="block";
+        document.getElementById("show").style.display ="block";
+    }
+    function hidediv() {
+        document.getElementById("bg").style.display ='none';
+        document.getElementById("show").style.display ='none';
+    }
+</script>
 </head>
 <body>
 <header>
@@ -40,11 +40,11 @@
     <div class="div3"><img src="image/share_icon.png" onclick="showdiv()">
     </div>
 </header>
-   <div class="div4">
-       <video src="image/HTML5 Tutorial - 1 - Introduction.mp4" controls="controls" width="100%" >
+<div class="div4">
+    <video src="image/HTML5 Tutorial - 1 - Introduction.mp4" controls="controls" width="100%" >
 
-       </video>
-   </div>
+    </video>
+</div>
 <nav>
     <ul>
         <li class="nav_item1" id="nav_item1" onClick="change_nav(1)" style="background: #ffffff;" >
@@ -69,32 +69,32 @@
         </li>
     </ul>
 </nav>
-    <section  class="nav_tab" id="nav_tab1">
-        <div class="jianj">
-            <p>《消防安全技术综合能力》</p>
-        </div>
-        <div class="jianj-1">
-            <p>类型： 建筑</p>
-        </div>
-        <div class="jianj-2">
-            <p>主讲： 孙皓月</p>
-        </div>
-        <div class="jianj-3">
-            <p>简介：为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队
-                为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队。</p>
-        </div>
-    </section>
-    <section  class="nav_tab" id="nav_tab2" style="display: none">
-        <div class="ml">
-            <img src="image/video_icon.png">
-        </div>
-        <div class="ml-1">
-            <p>【第一集】消防安全知识宣传</p>
-        </div>
-    </section>
-    <section  class="nav_tab" id="nav_tab3" style="display: none">
-        <div class="tj">
-            <a href="#">
+<section  class="nav_tab" id="nav_tab1">
+    <div class="jianj">
+        <p>《消防安全技术综合能力》</p>
+    </div>
+    <div class="jianj-1">
+        <p>类型： 建筑</p>
+    </div>
+    <div class="jianj-2">
+        <p>主讲： 孙皓月</p>
+    </div>
+    <div class="jianj-3">
+        <p>简介：为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队
+            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队。</p>
+    </div>
+</section>
+<section  class="nav_tab" id="nav_tab2" style="display: none">
+    <div class="ml">
+        <img src="image/video_icon.png">
+    </div>
+    <div class="ml-1">
+        <p>【第一集】消防安全知识宣传</p>
+    </div>
+</section>
+<section  class="nav_tab" id="nav_tab3" style="display: none">
+    <div class="tj">
+        <a href="#">
             <div class="tj-1">
                 <img src="image/shiping.png">
             </div>
@@ -107,85 +107,85 @@
             <div class="tj-2">
                 <p>集数： 2</p>
             </div>
-            </a>
+        </a>
+    </div>
+    <div class="tj">
+        <a href="#">
+            <div class="tj-1">
+                <img src="image/shiping.png">
+            </div>
+            <div class="tj-2">
+                <p>《消防安全技术综合能力》</p>
+            </div>
+            <div class="tj-2">
+                <p>类型： 建筑</p>
+            </div>
+            <div class="tj-2">
+                <p>集数： 2</p>
+            </div>
+        </a>
+    </div>
+    <div class="tj">
+        <a href="#">
+            <div class="tj-1">
+                <img src="image/shiping.png">
+            </div>
+            <div class="tj-2">
+                <p>《消防安全技术综合能力》</p>
+            </div>
+            <div class="tj-2">
+                <p>类型： 建筑</p>
+            </div>
+            <div class="tj-2">
+                <p>集数： 2</p>
+            </div>
+        </a>
+    </div>
+</section>
+<section  class="nav_tab" id="nav_tab4" style="display: none">
+    <div class="pl">
+        <div class="pl-1">
+            <img src="image/16.png">
         </div>
-        <div class="tj">
-            <a href="#">
-                <div class="tj-1">
-                    <img src="image/shiping.png">
-                </div>
-                <div class="tj-2">
-                    <p>《消防安全技术综合能力》</p>
-                </div>
-                <div class="tj-2">
-                    <p>类型： 建筑</p>
-                </div>
-                <div class="tj-2">
-                    <p>集数： 2</p>
-                </div>
-            </a>
+        <div class="pl-2">
+            <p>走向乌江的项羽</p>
         </div>
-        <div class="tj">
-            <a href="#">
-                <div class="tj-1">
-                    <img src="image/shiping.png">
-                </div>
-                <div class="tj-2">
-                    <p>《消防安全技术综合能力》</p>
-                </div>
-                <div class="tj-2">
-                    <p>类型： 建筑</p>
-                </div>
-                <div class="tj-2">
-                    <p>集数： 2</p>
-                </div>
-            </a>
+        <div class="pl-3">
+            <p>2015-03-08  来自手机</p>
         </div>
-    </section>
-    <section  class="nav_tab" id="nav_tab4" style="display: none">
-        <div class="pl">
-            <div class="pl-1">
-                <img src="image/16.png">
-            </div>
-            <div class="pl-2">
-                <p>走向乌江的项羽</p>
-            </div>
-            <div class="pl-3">
-                <p>2015-03-08  来自手机</p>
-            </div>
-            <div class="pl-4">
-                <p>这是重新成立新华的组织吗</p>
-            </div>
+        <div class="pl-4">
+            <p>这是重新成立新华的组织吗</p>
         </div>
-        <div class="pl">
-            <div class="pl-1">
-                <img src="image/21.png">
-            </div>
-            <div class="pl-2">
-                <p>大哇塞</p>
-            </div>
-            <div class="pl-3">
-                <p>2015-03-08  来自手机</p>
-            </div>
-            <div class="pl-4">
-                <p>怎么看都是中国军人最帅</p>
-            </div>
+    </div>
+    <div class="pl">
+        <div class="pl-1">
+            <img src="image/21.png">
         </div>
-        <div class="pl">
-            <div class="pl-1">
-                <img src="image/16.png">
-            </div>
-            <div class="pl-2">
-                <p>吃点大灰狼的外婆</p>
-            </div>
-            <div class="pl-3">
-                <p>2015-03-08  来自手机</p>
-            </div>
-            <div class="pl-4">
-                <p>这是重新成立新华的组织吗</p>
-            </div>
+        <div class="pl-2">
+            <p>大哇塞</p>
         </div>
-    </section>
+        <div class="pl-3">
+            <p>2015-03-08  来自手机</p>
+        </div>
+        <div class="pl-4">
+            <p>怎么看都是中国军人最帅</p>
+        </div>
+    </div>
+    <div class="pl">
+        <div class="pl-1">
+            <img src="image/16.png">
+        </div>
+        <div class="pl-2">
+            <p>吃点大灰狼的外婆</p>
+        </div>
+        <div class="pl-3">
+            <p>2015-03-08  来自手机</p>
+        </div>
+        <div class="pl-4">
+            <p>这是重新成立新华的组织吗</p>
+        </div>
+    </div>
+</section>
 <div class="zz-1" id="bg"  >
 </div>
 <div class="zz-2" id="show">

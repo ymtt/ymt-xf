@@ -197,7 +197,8 @@ section{
 }
 .zz-2{
     display: none;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     top: 60%;  width: 100%; height: 40%;
     background-color: white;
     z-index:1002;
@@ -205,7 +206,7 @@ section{
 }
 .div14{
     width:100% ;
-    height:100%;
+    height:auto;
 
 }
 .div14 ul{
@@ -249,12 +250,13 @@ section{
 }
 .div17 input{
     width: 100%;
-    height: 100%;
+    height: 30px;
     border: 0;
     color: #737373;
     background-color: #ffffff;
     font-size: 1em;
     font-family: "方正兰亭纤黑_GBK";
-    line-height: 100%;
+    line-height: 30px;
     text-align: center;
+    margin-top: 10px;
 }

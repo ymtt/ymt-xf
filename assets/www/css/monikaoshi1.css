@@ -180,9 +180,14 @@ footer{
     max-width: 100%;
 }
 .div15{
-    width:10%;
+    width:15%;
     height: auto;
     float: left;
+}
+.div15 p{
+    font-size: 0.85em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 50px;
 }
 .div15 button{
     background-color: #ffffff;
