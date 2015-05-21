@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/zhuanjiazixun.css" media="screen">
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="cordova.js"></script>
+    <script src="js/back.js"></script>
     <script type="text/javascript">
         var i = 0 ;
         function change() {
@@ -22,11 +25,14 @@
                 h1.src = 'image/comment_comment_icon.png' ; i = 0 ;
             }
         }
+         $(document).ready(function () {
+            back();
+        })
     </script>
 </head>
 <body>
 <header>
-    <div class="div1"><a href="index.html"><img src="image/return_icon.png"></a></div>
+    <div class="div1"><a a href="#" id="back"><img src="image/return_icon.png"></a></div>
     <div class="div2"><p>专家咨询</p></div>
     <div class="div3">
         <div class="div3-1">
@@ -39,15 +45,15 @@
             <li><a href="wodezixun.html">
                 <div class="div3-4"><p>4</p></div>
                 <div class="div3-3">
-                <p>我的咨询</p>
-                    </div>
-                </a>
-                </li>
+                    <p>我的咨询</p>
+                </div>
+            </a>
+            </li>
             <li><a href="lishizixun.html"><div class="div3-3"><p>历史咨询</p></div></a></li>
         </ul>
     </div>
-    </div>
-</header>
+</div>
+</header>;
 <section>
     <nav>
         <div class="nav-1">
@@ -180,12 +186,12 @@
         <p>热点咨询</p>
     </div>
     <div class="div22">
-        <a href="">
+        <a href="redianzixun.html">
         <div class="div23"><img src="image/07.png"></div>
         <div class="div24"><p>新修订《消防法》的宣传贯彻力度</p></div>
         <div class="div25"><p>的宣传贯彻力度，在河北省保定市公安消防支队与中国......</p></div>
-        </a>
         <div class="div25-1">
+        </a>
         <div class="div26"><img src="image/comment_collect_icon.png" id="h1" onclick="change()"></div>
         <div class="div27"><p>42354人</p></div>
         <div class="div28"><img src="image/comment_comment_icon.png" id="h2" onclick="change1()"></div>

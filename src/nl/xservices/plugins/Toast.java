@@ -31,6 +31,7 @@ public class Toast extends CordovaPlugin {
 
       if (this.isPaused) {
         return true;
+
       }
 
       final String message = args.getString(0);

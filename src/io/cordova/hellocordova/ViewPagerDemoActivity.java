@@ -28,6 +28,7 @@ public class ViewPagerDemoActivity extends Activity implements View.OnClickListe
     private int currentIndex;
 
     public ViewPagerDemoActivity() {
+
     }
 
 

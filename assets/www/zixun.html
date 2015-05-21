@@ -5,11 +5,25 @@
     <title></title>
     <link href="css/zixun.css" type="text/css" rel="stylesheet" media="screen">
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/getnews.js"></script>
+    <script src="cordova.js"></script>
     <script type="text/javascript">
      $(document).ready(function(){
         var index=window.localStorage.getItem("Index");
         $("#back").attr("href",index);
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+             getnews("xf_article_h_notice",CreateNoticeDom);
+             getnews("xf_article_h_edu",CreateEduDom);
      });
+     function onDeviceReady() {
+         //按钮事件
+        document.addEventListener("backbutton", eventBackButton, false); //返回键
+        document.addEventListener("menubutton", eventMenuButton, false); //菜单键
+      }
+      function eventBackButton(){
+            history.back();
+      }
     </script>
     <script>
         function  change_nav(heath_center) {
@@ -172,11 +186,12 @@
         </a>
     </div>
 
+    <!--文字资讯-->
     <div class="div6">
-        <div class="div7"><p>文字咨询</p></div>
+        <div class="div7"><p><a href="wenzizixun.html">文字咨询</a></p></div>
     </div>
     <div class="div14">
-        <a href="wenzizixun.html">
+        <a href="wenzizixunXQ.html">
             <div class="div15">
                 <p>新修订《消防法》的宣传贯彻力度</p>
             </div>
@@ -194,99 +209,41 @@
             </div>
         </a>
     </div>
+
 </section>
+
+<!--消防公告-->
 <section class="nav_tab1" id="nav_tab2" style="display: none">
-    <div class="gg">
-        <a href="gonggaoXQ.html">
-            <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
-            <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-                河北省保定市公安消防支队与中国......
-            </p>
-            </div>
-            <div class="gg-3">
-                <img src="image/07.png">
-            </div>
-            <div class="gg-3">
-                <img src="image/07.png">
-            </div>
-        </a>
-    </div>
-    <div class="gg">
-        <a href="gonggaoXQ.html">
-            <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
-            <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-                河北省保定市公安消防支队与中国......
-            </p>
-            </div>
-            <div class="gg-3">
-                <img src="image/07.png">
-            </div>
-            <div class="gg-3">
-                <img src="image/07.png">
-            </div>
-            <div class="gg-3">
-                <img src="image/07.png">
-            </div>
-        </a>
-    </div>
-    <div class="gg">
-        <a href="gonggaoXQ.html">
-            <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
-            <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-                河北省保定市公安消防支队与中国......
-            </p>
-            </div>
-            <div class="gg-3">
-                <img src="image/07.png">
-            </div>
 
+    <div class="gg">
+        <a href="gonggaoXQ.html">
+            <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
+            <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                河北省保定市公安消防支队与中国......
+            </p>
+            </div>
+            <span class="notice">
+                <img src="image/07.png">
+                <img src="image/07.png">
+                <img src="image/07.png">
+            </span>
         </a>
     </div>
+
 </section>
+<!--教育资讯-->
 <section class="nav_tab2" id="nav_tab3" style="display: none">
-    <div class="zx">
-        <a href="jiaoyuXQ.html">
-            <div class="zx-1">
-                <img src="image/08.png">
-            </div>
-            <div class="zx-2">
-                <p>
-                    加大新修订《消防法》的宣传
-                </p>
-            </div>
-            <div class="zx-3">
-                <p>
-                    为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-                    河北省保定市公安消防支队与中国......
-                </p>
-            </div>
-        </a>
-    </div>
-    <div class="zx">
-        <a href="jiaoyuXQ.html">
-            <div class="zx-1">
-                <img src="image/08.png">
-            </div>
-            <div class="zx-2">
-                <p>
-                    加大新修订《消防法》的宣传
-                </p>
-            </div>
-            <div class="zx-3">
-                <p>
-                    为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-                    河北省保定市公安消防支队与中国......
-                </p>
-            </div>
-        </a>
-    </div>
 
     <div class="zx">
         <a href="jiaoyuXQ.html">
             <div class="zx-1">
                 <img src="image/08.png">
             </div>
-            <div class="zx-2">
+            <div class="intro">
+                <span>加大新修订《消防法》的宣传</span>
+                <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                    河北省保定市公安消防支队与中国....</p>
+                <!--
                 <p>
                     加大新修订《消防法》的宣传
                 </p>
@@ -295,10 +252,11 @@
                 <p>
                     为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
                     河北省保定市公安消防支队与中国......
-                </p>
+                </p>-->
             </div>
         </a>
     </div>
+
 </section>
 </body>
 </html>

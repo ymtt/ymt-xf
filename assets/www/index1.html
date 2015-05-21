@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/style1.css" media="screen">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="cordova.js"></script>
     <script type="text/javascript">
+
+         $(document).ready(function(){
+              document.addEventListener("deviceready", onDeviceReady, false);
+         });
+
         function loaded(){
             try{
                 var HomeLogo=window.localStorage.getItem("HomeLogo");
@@ -14,6 +21,36 @@
             }catch(e){
                 alert("设备不支持！");
             }
+        }
+
+        function onDeviceReady() {
+             //按钮事件
+            document.addEventListener("backbutton", eventBackButton, false); //返回键
+            document.addEventListener("menubutton", eventMenuButton, false); //菜单键
+            }
+
+           //返回键
+            function eventBackButton(){
+                //confirm("再点击一次退出!");
+                window.plugins.toast.showShortCenter('再点击一次退出!');
+                document.removeEventListener("backbutton", eventBackButton, false); //注销返回键
+                document.addEventListener("backbutton", exitApp, false);//绑定退出事件
+                //3秒后重新注册
+                var intervalID = window.setInterval(
+                    function() {
+                       window.clearInterval(intervalID);
+                       document.removeEventListener("backbutton", exitApp, false);//注销绑定事件
+                       document.addEventListener("backbutton", eventBackButton, false); //返回键
+                    },
+                    3000
+                 );
+            }
+        function exitApp(){
+                navigator.app.exitApp();
+        }
+        //菜单键
+        function eventMenuButton(){
+            window.plugins.toast.showShortCenter('点击了 菜单 按钮!');
         }
     </script>
 </head>
@@ -60,7 +97,7 @@
         <table>
             <tr>
                 <td> <a href="gaoceng.html"><p>高层</p></a></td>
-                <td><a href=""><p>超高层</p></a></td>
+                <td><a href="shezhi.html"><p>超高层</p></a></td>
                 <td><a href=""><p>商业综合</p></a></td>
                 <td><a href=""><p>文体</p></a></td>
             </tr>

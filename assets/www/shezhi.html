@@ -5,27 +5,67 @@
     <title></title>
     <link href="css/shezhi.css" rel="stylesheet" type="text/css" media="screen">
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="cordova.js"></script>
     <script type="text/javascript">
            $(document).ready(function(){
+
                         $(".div3:eq(2)").click(function(){
                                 $(".hidebg").css({"display":"block"});
                                 $("#showskin").show();
                         });
                         $("span:eq(0)").click(function(){
                                  $(".hidebg").css({"display":"none"});
-                                $("#showskin").hide();
+                                 $("#showskin").hide();
                         });
+
+
+                        var isClick=false;
+                        var index="";
+
                         $(".submit:eq(0)").click(function(){
+                                //移除以前的Index记录
+                                window.localStorage.removeItem("Index");
+                                //设置新的Index记录为选定值
                                 window.localStorage.setItem("Index",$('input[name="skin"]:checked').val());
-                                 $(".hidebg").css({"display":"none"});
+                                //获取新的Index
+                                index=window.localStorage.getItem("Index");
+                                //设置返回链接的href为新index
+                                $("#back").attr("href",index);
+                                //设置按钮被点击标记
+                                isClick=true;
+                                //隐藏透明层
+                                $(".hidebg").css({"display":"none"});
+                                //隐藏弹出框
                                 $("#showskin").hide();
                         });
+
+                        //如果没有被点击
+                        if(isClick==false){
+                            //获取值，此值为旧值
+                            index=window.localStorage.getItem("Index");
+                            $("#back").attr("href",index);
+                        }
+                         document.addEventListener("deviceready", onDeviceReady, false);
+
+                         function onDeviceReady() {
+                             //按钮事件
+                            document.addEventListener("backbutton", eventBackButton, false); //返回键
+                            document.addEventListener("menubutton", eventMenuButton, false); //菜单键
+                          }
+                          function eventBackButton(){
+                                //手机返回键监听
+                                window.location.href=index;
+                          }
+
                 });
     </script>
     <style type="text/css">
         #showskin{
+            padding-top:15px;
+            text-align:center;
             width:30%;
             height:15%;
+            border-radius:20px;
             border:1px solid #000000;
             background-color:#FFFFFF;
             display: none;
@@ -35,6 +75,7 @@
             top:20%;
         }
         .submit{
+            padding-top:15px;
             position:absolute;
             left:35%;
         }
@@ -47,14 +88,14 @@
         height:100%;
         filter:alpha(opacity=60);  /*设置透明度为60%*/
         opacity:0.6;  /*非IE浏览器下设置透明度为60%*/
-        display:none; /* http://www.jb51.net */
+        display:none;
         z-Index:888;}
     </style>
 </head>
 <body>
 <div class="hidebg"></div>
 <header>
-    <div class="div1"><a href="index.html"><img src="image/return.png"></a></div>
+    <div class="div1"><a href="#" id="back"><img src="image/return.png"></a></div>
     <div class="div2"><p>设置</p></div>
 </header>
 <section>

@@ -1,419 +1,447 @@
 *{
-    margin: 0;
-    padding:0;
-}
-html body{
-    width: 100%;
-    height: 100%;
-    background-color: #ECECEC;
-}
-header{
-    width: 100%;
-    height: 40px;
-    background: #05A0D7;
-
+     margin: 0;
+     padding:0;
  }
-a{
-    text-decoration: none;
-}
-.div1{
-    width: auto;
-    height: auto;
-    float: left;
-   margin-left: 5%;
-    margin-top: 10px;
-}
-.div1 img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-.div2{
-    width: auto;
-    height: auto;
-    float: left;
-    line-height: 40px;
-    text-align: center;
-    font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
-    color: #FFFFFF;
-    margin-left: 33%;
-}
-.div3{
-    width: 10%;
-    height: auto;
-    float: right;
-  margin-top: 2px;
-    margin-right: 7%;
-}
-.div3 img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-.div3 ul{
-    list-style: none;
-    display: none;
-    position: absolute;
-    float: right;
-    right: 4px;
-    top: 40px;
-
-}
-.div3 ul li{
-    float: none;
-}
-.div3 ul li a{
-    text-decoration: none;
-
-}
-.div3 ul li a p{
-    width: 80px;
-    height: 30px;
-    background-color:#ffffff;
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.65em;
-    border: 1px solid #CCCCCC;
-    color: #CCCCCC;
-    text-align: center;
-    line-height: 30px;
-}
-.div3 ul li a .p1{
-    border-top:0 ;
-}
-.div3:hover ul{
-    display: block;
-}
-nav{
-    width: 100%;
-    height: 80px;
-    background-color: #ffffff;
-}
-.nav-1{
-    width: 80%;
-    height: 20px;
-    margin-top: 5px;
-    border: 1px solid #ECECEC;
-    margin-left: 10%;
-}
-.nav-2{
-    width: 10%;
-    height: 20px;
-    float: left;
-    margin-top: 2px;
-    margin-left: 5%;
-}
-input{
-    width: 85%;
-    border: 0;
-    height: 20px;
-    float: left;
-}
-.nav-3{
-    width: 100%;
-    height: 38px;
-    float: left;
-}
-.nav-3 ul {
-    width: 80%;
-    height: 38px;
-    margin-left: 10%;
-    list-style: none;
-}
-.nav-3 ul li {
-    width: 20%;
-    height: 19px;
-    float: left;
-    margin-top: 7px;
-}
-.nav-4{
-    width: 100%;
-    height: 19px;
-}
-.nav-4 p{
-    font-size: 0.65em;
-    color: #CCCCCC;
-    line-height: 15px;
-    text-align: center;
-}
-
-
-.div4{
-    width: 100%;
-    height:40px ;
-    background: #FFFFFF;
-  float: left;
-    margin-top: 10px;
+ html body{
+     width: 100%;
+     height: 100%;
+     background-color: #ECECEC;
  }
-.div4 ul{
-   list-style: none;
-    width: 100%;
-    height: 40px;
-
-}.div4 ul li{
-    width: 33.3%;
-    height: 40px;
-    float: left;
- }
-section{
-    width: 100%;
-    height: 800px;
-    background: #ECECEC;
-}
-.div5{
-    width: 100%;
-    height: 30px;
-}
- .div5 p{
-     width: 60%;
-     height:20px ;
-     font-family: "方正兰亭纤黑_GBK";
-     font-size: 0.75em;
-     color: #CCCCCC;
-     line-height: 20px;
-     text-align: center;
-     margin-top: 10px;
-     margin-left: 20%;
- }
- .div6{
+ header{
      width: 100%;
      height: 40px;
-     float: left;
-     background: #FFFFFF;
-     margin-top: 10px;
-     border-bottom: 1px solid #CCCCCC;
+     background: #05A0D7;
+
+  }
+ a{
+     text-decoration: none;
  }
- .div7{
+ .div1{
      width: auto;
      height: auto;
-     line-height: 40px;
-     font-family: "方正兰亭纤黑_GBK";
-     font-size:0.85em ;
      float: left;
-     margin-left: 3%;
+    margin-left: 5%;
+     margin-top: 10px;
  }
- .div9{
+ .div1 img {
      width: 100%;
-     height:140px;
-     background: #FFFFFF;
-     float: left;
-
- }
- .div9 ul{
-     width: 100%;
-     height: 125px;
-     margin-top: 20px;
-     list-style: none;
- }
- .div9 ul li{
-     width: 30%;
-     height: 100px;
-     margin-left: 3%;
-     float: left;
- }
- .div9 ul li img {
-     width: 100%;
-     height: 100px;
+     height: auto;
      max-width: 100%;
  }
- .div10{
+ .div2{
+     width: auto;
+     height: auto;
+     float: left;
+     line-height: 40px;
+     text-align: center;
+     font-size: 1em;
+     font-family: "方正兰亭纤黑_GBK";
+     color: #FFFFFF;
+     margin-left: 33%;
+ }
+ .div3{
+     width: 10%;
+     height: auto;
+     float: right;
+   margin-top: 2px;
+     margin-right: 7%;
+ }
+ .div3 img{
      width: 100%;
-     height:auto;
+     height: auto;
+     max-width: 100%;
+ }
+ .div3 ul{
+     list-style: none;
+     display: none;
+     position: absolute;
+     float: right;
+     right: 4px;
+     top: 40px;
+
+ }
+ .div3 ul li{
+     float: none;
+ }
+ .div3 ul li a{
+     text-decoration: none;
+
+ }
+ .div3 ul li a p{
+     width: 80px;
+     height: 30px;
+     background-color:#ffffff;
+     font-family: "方正兰亭纤黑_GBK";
+     font-size: 0.65em;
+     border: 1px solid #CCCCCC;
+     color: #CCCCCC;
+     text-align: center;
+     line-height: 30px;
+ }
+ .div3 ul li a .p1{
+     border-top:0 ;
+ }
+ .div3:hover ul{
+     display: block;
+ }
+ nav{
+     width: 100%;
+     height: 80px;
+     background-color: #ffffff;
+ }
+ .nav-1{
+     width: 80%;
+     height: 20px;
+     margin-top: 5px;
+     border: 1px solid #ECECEC;
+     margin-left: 10%;
+ }
+ .nav-2{
+     width: 10%;
+     height: 20px;
+     float: left;
+     margin-top: 2px;
+     margin-left: 5%;
+ }
+ input{
+     width: 85%;
+     border: 0;
+     height: 20px;
+     float: left;
+ }
+ .nav-3{
+     width: 100%;
+     height: 38px;
+     float: left;
+ }
+ .nav-3 ul {
+     width: 80%;
+     height: 38px;
+     margin-left: 10%;
+     list-style: none;
+ }
+ .nav-3 ul li {
+     width: 20%;
+     height: 19px;
+     float: left;
+     margin-top: 7px;
+ }
+ .nav-4{
+     width: 100%;
+     height: 19px;
+ }
+ .nav-4 p{
+     font-size: 0.65em;
+     color: #CCCCCC;
+     line-height: 15px;
+     text-align: center;
+ }
+
+
+ .div4{
+     width: 100%;
+     height:40px ;
      background: #FFFFFF;
+   float: left;
+     margin-top: 10px;
+  }
+ .div4 ul{
+    list-style: none;
+     width: 100%;
+     height: 40px;
+
+ }.div4 ul li{
+     width: 33.3%;
+     height: 40px;
+     float: left;
+  }
+ section{
+     width: 100%;
+     height: 800px;
+     background: #ECECEC;
+ }
+ .div5{
+     width: 100%;
+     height: 30px;
+ }
+  .div5 p{
+      width: 60%;
+      height:20px ;
+      font-family: "方正兰亭纤黑_GBK";
+      font-size: 0.75em;
+      color: #CCCCCC;
+      line-height: 20px;
+      text-align: center;
+      margin-top: 10px;
+      margin-left: 20%;
+  }
+  .div6{
+      width: 100%;
+      height: 40px;
+      float: left;
+      background: #FFFFFF;
+      margin-top: 10px;
+      border-bottom: 1px solid #CCCCCC;
+  }
+  .div7{
+      width: auto;
+      height: auto;
+      line-height: 40px;
+      font-family: "方正兰亭纤黑_GBK";
+      font-size:0.85em ;
+      float: left;
+      margin-left: 3%;
+  }
+  .div9{
+      width: 100%;
+      height:140px;
+      background: #FFFFFF;
+      float: left;
+
+  }
+  .div9 ul{
+      width: 100%;
+      height: 125px;
+      margin-top: 20px;
+      list-style: none;
+  }
+  .div9 ul li{
+      width: 30%;
+      height: 100px;
+      margin-left: 3%;
+      float: left;
+  }
+  .div9 ul li img {
+      width: 100%;
+      height: 100px;
+      max-width: 100%;
+  }
+  .div10{
+      width: 100%;
+      height:auto;
+      background: #FFFFFF;
+      float: left;
+      border-bottom: 1px solid #CCCCCC;
+  }
+  .div11{
+      width: 95%;
+      height: 30px;
+      float: left;
+  }
+  .div11 p{
+      line-height: 30px;
+      font-size: 0.75em;
+      font-family: "方正兰亭纤黑_GBK";
+      margin-left: 5%;
+      color: #000000;
+  }
+  .div12{
+      width:95% ;
+      height:40px;
+      overflow: hidden;
+      float: left;
+  }
+  .div12 p{
+      font-family: "方正兰亭纤黑_GBK";
+      font-size: 0.65em;
+      margin-left: 5%;
+      line-height: 20px;
+      color: #737373;
+  }
+  .div13{
+    width: 25%;
+      height: auto;
+      float: left;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  .div13 img{
+      max-width: 100%;
+      margin-left: 30%;
+  }
+ .div14{
+     width: 100%;
+     height: auto;
      float: left;
      border-bottom: 1px solid #CCCCCC;
+    background-color: #ffffff;
  }
- .div11{
+ .div15{
+     width: 95%;
+     height: 30px;
+     float: left;
+     margin-left: 5%;
+ }
+ .div15 p{
+     font-family: "方正兰亭纤黑_GBK";
+     font-size: 0.85em;
+     line-height: 30px;
+     color: #000000;
+ }
+ .div16{
+     width:90% ;
+     height : 40px;
+     float: left;
+     overflow: hidden;
+     margin-left: 5%;
+ }
+ .div16 p{
+     font-family: "方正兰亭纤黑_GBK";
+     font-size: 0.75em;
+     line-height: 20px;
+     color: #000000;
+ }
+ .div17{
+     width: 100%;
+     height: 30px;
+     float: left;
+ }
+ .div18{
+     width: 10%;
+     height: 30px;
+     float: left;
+     margin-left: 75%;
+ }
+ .div18 p{
+     font-family: "方正兰亭纤黑_GBK";
+     font-size: 0.8em;
+     line-height: 30px;
+     color: #737373;
+ }
+ .div19{
+     width: 10%;
+     height: 30px;
+     float: left;
+     margin-top: 8px;
+ }
+ .div19 img{
+     max-width: 100%;
+ }
+
+ .nav_tab1{
+     width: 100%;
+     height: auto;
+     float: left;
+     margin-top: 10px;
+ }
+ .gg{
+     width: 100%;
+     height: auto;
+     float: left;
+     background-color: #ffffff;
+     border-bottom: 1px solid #CCCCCC;
+ }
+ .gg-1{
      width: 95%;
      height: 30px;
      float: left;
  }
- .div11 p{
+ .gg-1 p{
      line-height: 30px;
      font-size: 0.75em;
      font-family: "方正兰亭纤黑_GBK";
      margin-left: 5%;
      color: #000000;
  }
- .div12{
+ .gg-2{
      width:95% ;
      height:40px;
-     overflow: hidden;
      float: left;
+     overflow: hidden;
  }
- .div12 p{
+ .gg-2 p{
      font-family: "方正兰亭纤黑_GBK";
      font-size: 0.65em;
      margin-left: 5%;
      line-height: 20px;
      color: #737373;
  }
- .div13{
-   width: 25%;
+ .gg-3{
+     width: 25%;
      height: auto;
-     float: left;
+     float:left;
      margin-bottom: 10px;
      margin-top: 10px;
+     margin-left: 3%;
  }
- .div13 img{
+ .gg-3 img{
      max-width: 100%;
-     margin-left: 30%;
+     margin-left: 20%;
  }
-.div14{
-    width: 100%;
-    height: auto;
-    float: left;
-    border-bottom: 1px solid #CCCCCC;
-   background-color: #ffffff;
-}
-.div15{
-    width: 95%;
-    height: 30px;
-    float: left;
-    margin-left: 5%;
-}
-.div15 p{
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.85em;
-    line-height: 30px;
-    color: #000000;
-}
-.div16{
-    width:90% ;
-    height : 40px;
-    float: left;
-    overflow: hidden;
-    margin-left: 5%;
-}
-.div16 p{
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.75em;
-    line-height: 20px;
-    color: #000000;
-}
-.div17{
-    width: 100%;
-    height: 30px;
-    float: left;
-}
-.div18{
-    width: 10%;
-    height: 30px;
-    float: left;
-    margin-left: 75%;
-}
-.div18 p{
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.8em;
-    line-height: 30px;
-    color: #737373;
-}
-.div19{
-    width: 10%;
-    height: 30px;
-    float: left;
-    margin-top: 8px;
-}
-.div19 img{
-    max-width: 100%;
-}
-
-.nav_tab1{
-    width: 100%;
-    height: auto;
-    float: left;
-    margin-top: 10px;
-}
-.gg{
-    width: 100%;
-    height: auto;
-    float: left;
-    background-color: #ffffff;
-    border-bottom: 1px solid #CCCCCC;
-}
-.gg-1{
-    width: 95%;
-    height: 30px;
-    float: left;
-}
-.gg-1 p{
-    line-height: 30px;
-    font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
-    margin-left: 5%;
-    color: #000000;
-}
-.gg-2{
-    width:95% ;
-    height:40px;
-    float: left;
-    overflow: hidden;
-}
-.gg-2 p{
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.65em;
-    margin-left: 5%;
-    line-height: 20px;
-    color: #737373;
-}
-.gg-3{
-    width: 25%;
-    height: auto;
-    float: left;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 3%;
-}
-.gg-3 img{
-    max-width: 100%;
-    margin-left: 20%;
-}
-.nav_tab2{
-    width: 100%;
-    height: auto;
-    float: left;
-    margin-top: 10px;
-}
-.zx{
-    width: 100%;
-    height: auto;
-    float: left;
-    border-bottom: 1px solid #CCCCCC;
-    background-color: #ffffff;
-}
-.zx-1{
-    width: 20%;
-    height: auto;
-    float: left;
-    margin-left: 5%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-.zx-1 img{
-    max-width: 100%;
-}
-.zx-2{
-    width: 70%;
-    height: 30px;
-    float: left;
-    margin-left: 2%;
-}
-.zx-2 p{
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.85em;
-    line-height: 30px;
-    color: #000000;
-}
-.zx-3{
-    width: 70%;
-    height: 60px;
-    float: left;
-    margin-left: 2%;
-    overflow: hidden;
-}
-.zx-3 p{
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.75em;
-    line-height: 20px;
-    color: #737373;
-}
+ .nav_tab2{
+     width: 100%;
+     height: auto;
+     float: left;
+     margin-top: 10px;
+ }
+ .zx{
+     width: 100%;
+     height: auto;
+     float: left;
+     border-bottom: 1px solid #CCCCCC;
+     background-color: #ffffff;
+ }
+ .zx-1{
+     width: 20%;
+     height: auto;
+     float: left;
+     margin-left: 5%;
+     margin-top: 20px;
+     margin-bottom: 30px;
+     margin-right:5%;
+ }
+ .zx-1 img{
+     max-width: 100%;
+ }
+ .zx-2{
+     width: 70%;
+     height: 30px;
+     float: left;
+     margin-left: 2%;
+ }
+ .zx-2 p{
+     font-family: "方正兰亭纤黑_GBK";
+     font-size: 0.85em;
+     line-height: 30px;
+     color: #000000;
+ }
+ .intro{
+        width:100%;
+        height:auto;
+        font-family: "方正兰亭纤黑_GBK";
+        font-size: 0.85em;
+        line-height: 30px;
+        color: #000000;
+ }
+ .intro span{
+ }
+ .intro p{
+        font-family: "方正兰亭纤黑_GBK";
+        font-size: 0.75em;
+        color:#737373;
+        line-height: 20px;
+ }
+ .zx-3{
+     width: 70%;
+     height: 60px;
+     float: left;
+     margin-left: 2%;
+     overflow: hidden;
+ }
+ .zx-3 p{
+     font-family: "方正兰亭纤黑_GBK";
+     font-size: 0.75em;
+     line-height: 20px;
+     color: #737373;
+ }
+ .notice{
+     width:100%;
+     height:100%;
+     margin-left:8%;
+ }
+ .notice img{
+     width:25%;
+     margin-top:10px;
+     margin-bottom:10px;
+     margin-right:1.3%;
+ }

@@ -39,7 +39,7 @@
                 var intervalID = window.setInterval(
                     function() {
                        window.clearInterval(intervalID);
-                       document.removeEventListener("backbutton", exitApp, false);//注销绑定事件
+                       document.removeEventListener("backbutton", exitApp, false);//注销退出事件
                        document.addEventListener("backbutton", eventBackButton, false); //返回键
                     },
                     3000
