@@ -2,8 +2,9 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>会话详情</title>
     <link rel="stylesheet" type="text/css" href="css/huihuaXQ.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
 </head>
 <body>
 <header>
@@ -105,12 +106,102 @@
             <img src="image/the-recording_icon.png">
         </div>
         <div class="div13">
-            <img src="image/more-choice_icon.png" onclick="">
+            <img src="image/more-choice_icon.png" onclick="a()">
         </div>
     </div>
-    <div class="div14">
+        <div class="device" id="devices" style="display: none">
+            <a class="arrow-left" href="#"></a>
+            <a class="arrow-right" href="#"></a>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
 
-    </div>
+                        <div class="div15">
+                            <img src="image/picture_icon.png">
+                        </div>
+
+                        <div class="div16">
+                            <img src="image/speech-input_icon.png">
+                        </div>
+
+                        <div class="div16">
+                            <img src="image/small-video_icon.png">
+                        </div>
+
+                        <div class="div16">
+                            <img src="image/video-chat_icon.png">
+                        </div>
+
+                        <div class="div15">
+                            <img src="image/my-collection_icon.png">
+                        </div>
+
+                        <div class="div16">
+                            <img src="image/chatting-records_icon.png">
+                        </div>
+
+                        <div class="div16">
+                            <img src="image/taking-pictures_icon.png">
+                        </div>
+
+                        <div class="div16">
+                            <img src="image/upload-file_icon.png">
+                        </div>
+                        <div class="div17">
+                            <div class="div18">
+                                <img src="image/red-dot1_background-color.png">
+                            </div>
+                            <div class="div19">
+                                <img src="image/red-dot2_background-color.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="div15">
+                            <img src="image/business-card_icon.png">
+                        </div>
+
+                        <div class="div16">
+                            <img src="image/location_icon.png">
+                        </div>
+                        <div class="div20">
+                            <div class="div18">
+                                <img src="image/red-dot2_background-color.png">
+                            </div>
+                            <div class="div19">
+                                <img src="image/red-dot1_background-color.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/idangerous.swiper.min.js"></script>
+        <script>
+            var mySwiper = new Swiper('.swiper-container',{
+                pagination: '.pagination',
+                loop:true,
+                grabCursor: true,
+                paginationClickable: true
+            })
+            $('.arrow-left').on('click', function(e){
+                e.preventDefault()
+                mySwiper.swipePrev()
+            })
+            $('.arrow-right').on('click', function(e){
+                e.preventDefault()
+                mySwiper.swipeNext()
+            })
+            function a() {
+                if(devices.style.display=="block"){
+                    devices.style.display='none';
+                }else{
+                    devices.style.display='block';
+                }
+            }
+        </script>
 </footer>
 </body>
 </html>

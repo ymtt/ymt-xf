@@ -17,19 +17,19 @@ a{
     text-decoration: none;
 }
 .div1{
-    width: auto;
+    width: 5%;
     height: auto;
     float: left;
     margin-left: 5%;
     margin-top: 10px;
 }
 .div1 img{
-    width: 80%;
+    width: 100%;
     height: auto;
     max-width: 100%;
 }
 .div2{
-    width: auto;
+    width: 30%;
     height: auto;
     float: left;
     line-height: 40px;
@@ -37,14 +37,17 @@ a{
     font-size: 1em;
     font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
-    margin-left: 33%;
+    margin-left: 25%;
 }
 .div3{
-    width: auto;
+    width: 10%;
     height: auto;
     float: right;
     margin-right: 15px;
-    margin-top: 5px;
+    margin-top: 7px;
+}
+.div3 img{
+    max-width: 100%;
 }
 .div4{
     width: 100%;

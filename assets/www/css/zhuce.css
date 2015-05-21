@@ -20,7 +20,7 @@ a {
 }
 
 .div1 {
-    width: auto;
+    width: 5%;
     height: auto;
     float: left;
     margin-left: 5%;
@@ -28,124 +28,141 @@ a {
 }
 
 .div1 img {
-    width: 80%;
+    width: 100%;
     height: auto;
     max-width: 100%;
 }
 
 .div2 {
-    width: auto;
+    width: 20%;
     height: auto;
     float: left;
     line-height: 40px;
     text-align: center;
     font-size: 1em;
-    font-family: "微软雅黑";
+    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
-    margin-left: 33%;
+    margin-left: 30%;
 }
 .div3{
-    width: 80%;
+    width: 90%;
     height: 40px;
     float: left;
     border: 1px solid #05A0D7;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 20px;
     background-color: #FFFFFF;
 }
 .div3-1{
     width: 20%;
     height: 30px;
-    border-right: 1px solid #05A0D7;
     margin-top: 5px;
     float: left;
 }
-.div3-1 p{
-    width: 100%;
-     text-align: center;
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 1.5em;
-    color: #05A0D7;
-
+.div3-1 img{
+  max-width: 100%;
+    margin-left: 40%;
+    margin-top: 7px;
 }
 .div4{
-    width: 80%;
+    width: 90%;
     height: 40px;
     float: left;
     border-bottom: 1px solid #05A0D7;
     border-left: 1px solid #05A0D7;
     border-right: 1px solid #05A0D7;
-    margin-left: 10%;
+    margin-left: 5%;
     background-color: #FFFFFF;
 }
 .div4-1{
     width: 20%;
     height: 30px;
-    border-right: 1px solid #05A0D7;
     margin-top: 5px;
     float: left;
 }
 .div4-1 img{
-    width: 40% ;
-    height: auto;
     max-width: 100%;
-    margin-left: 30%;
-    margin-top: 5px;
+    margin-left: 40%;
+    margin-top: 7px;
 }
 input{
+    width: 54%;
     margin-top: 5px;
     border: 0;
     height: 30px;
-    margin-left: 1%;
+    float: left;
 }
 .div5 {
-    width: 80%;
+    width: 90%;
     height: 40px;
     float: left;
     border-bottom: 1px solid #05A0D7;
     border-left: 1px solid #05A0D7;
     border-right: 1px solid #05A0D7;
-    margin-left: 10%;
+    margin-left: 5%;
     background-color: #FFFFFF;
 }
 .div5-1{
     width: 20%;
     height: 30px;
-    border-right: 1px solid #05A0D7;
-    margin-top: 5px;
+    margin-top: 7px;
     float: left;
 }
 .div5-1 img{
-    width: 40% ;
-    height: auto;
     max-width: 100%;
-    margin-left: 30%;
+    margin-left: 40%;
     margin-top: 5px;
 }
 .div6 {
-    width: 80%;
+    width: 90%;
     height: 40px;
     float: left;
     border-bottom: 1px solid #05A0D7;
     border-left: 1px solid #05A0D7;
     border-right: 1px solid #05A0D7;
-    margin-left: 10%;
+    margin-left: 5%;
     background-color: #FFFFFF;
 }
 .div6-1{
     width: 20%;
     height: 30px;
-    border-right: 1px solid #05A0D7;
     margin-top: 5px;
     float: left;
 }
-.div6-1 img{
-    width: 40% ;
-    height:auto;
+.div6-1 p{
+    font-size: 0.85em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 30px;
+    text-align: center;
+    color: #05A0D7;
+}
+button{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.yz {
+    width: 90%;
+    height: 40px;
+    float: left;
+    border-bottom: 1px solid #05A0D7;
+    border-left: 1px solid #05A0D7;
+    border-right: 1px solid #05A0D7;
+    margin-left: 5%;
+    background-color: #FFFFFF;
+}
+.yz-1{
+    width: 20%;
+    height: 30px;
+    margin-top: 7px;
+    float: left;
+}
+.yz-1 img{
     max-width: 100%;
-    margin-left: 30%;
+    margin-left: 40%;
     margin-top: 5px;
 }
+
 .div7{
     width: 94%;
     height:40px ;
@@ -170,6 +187,10 @@ input{
     float: left;
     margin-top:20px ;
     margin-left: 10%;
+}
+.div8 input{
+    width: auto;
+    height: auto;
 }
 .div9{
     margin-left: 5px;
