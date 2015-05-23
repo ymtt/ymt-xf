@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height:auto;
+    background-color: #FFFFFF;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    width: 5%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.div1 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.div2{
+    width: auto;
+    height: auto;
+    float: left;
+    line-height: 40px;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #FFFFFF;
+    margin-left: 30%;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.div3{
+    width: 90%;
+    height: 30px;
+    float: left;
+    margin-left: 5%;
+}
+.div3 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    line-height: 30px;
+}
+.div4{
+ width: 90%;
+  height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 20px;
+    text-indent: 25px;
+}
+.div4 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.85em;
+    line-height: 150%;
+}

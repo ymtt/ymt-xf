@@ -2,30 +2,27 @@
     margin: 0;
     padding: 0;
 }
-html,body{
-    width: 100%;
-    height:614px;
-    background: url("../image/background1.png")no-repeat;
-}
-header{
-    width: 100%;
-    height: 50px;
-    background: #05A0D7;
-    float: left;
-}
 a{
     text-decoration: none;
 }
 .div1{
-    width: 10%;
-    height: 40px;
-    float: left;
-    margin-left: 5%;
-    margin-top: 15px;
+    width: 40%;
+    height: auto;
+    position: absolute;
 }
 .div1 img{
-    width: 70%;
+    width: 50%;
+    max-width:100%;
+    margin-left: 60%;
+}
+.div2{
+    width: auto;
     height: auto;
+    position: absolute;
+    left: 80%;
+    top: 10px;
+}
+.div2 img{
     max-width: 100%;
 }
 
@@ -112,7 +109,7 @@ a{
 }
 .div9 ul{
     width: 16%;
-    height: 116px;
+    height: auto;
     list-style: none;
     float: left;
  margin-top: 2px;
@@ -141,19 +138,27 @@ a{
 }
 .div11 table{
     width: 100%;
-    height: 100px;
+    height: auto;
+
 }
 .div11 table tr{
     width: auto;
-    height: 37px;
+
     background-color: #05A0D7;
+    margin-top: 20px;
+}
+.div11 table tr td{
+    width: 25%;
+    height: auto;
+    margin-top: 5px;
+    border: 2px solid #FFFFFF;
 }
 .div11 table tr td p{
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-    line-height: 37px;
     text-align: center;
     color: #FFFFFF;
+    margin-top: 6px;
 }
 section{
     width: 100%;
@@ -274,4 +279,92 @@ section ul li{
     width: 100%;
     height: 80px;
     max-width: 100%;
+}
+.zc{
+    width: 56px;
+    height: 56px;
+    float: left;
+    border-radius: 56px;
+    background-color: #FFFFFF;
+    margin-left: 100px;
+    margin-top: 75px;
+}
+.zc img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 3px;
+    margin-top:3px;
+}
+.zc-1{
+    width: 60%;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20%;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.zc-1 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    line-height: 30px;
+    text-align: center;
+    color:  #FFFFFF;
+}
+.zc-2{
+    width: 75%;
+    height: auto;
+    float: left;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+.zc-2 ul{
+    width: 100%;
+    height: auto;
+    float:left;
+    list-style: none;
+}
+.zc-2 ul li{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+.zc-3{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.zc-3 img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.zc-4{
+    width: 80%;
+    height: 40px;
+    float: left;
+}
+.zc-4 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.zc-5{
+    width: 80%;
+    height: 90px;
+   float: left;
+    margin-left: 20%;
+    left: 20%;
+    margin-top: 50px;
+}
+.zc-6{
+    width: 100%;
+    height: 30px;
+   float: left;
+}
+.zc-6 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    color: #FFFFFF;
+    line-height: 30px;
 }

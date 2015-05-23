@@ -4,7 +4,7 @@
 }
 html,body{
     width: 100%;
-    height:500px;
+    height:auto;
     background-color: #FFFFFF;
 }
 header{
@@ -12,6 +12,9 @@ header{
     height: 40px;
     background: #05A0D7;
     float: left;
+}
+a{
+    text-decoration: none;
 }
 .div1{
     width: 5%;
@@ -30,71 +33,109 @@ header{
     height: auto;
     float: left;
     line-height: 40px;
-    text-align: center;
-    font-size: 0.85em;
-    font-family: "微软雅黑";
-    color: #FFFFFF;
-    margin-left: 33%;
-}
-.div3{
-    width: 100%;
-    height: 240px;
-    float: left;
-}
-ul{
-    width: 100%;
-    height: 240px;
-    list-style: none;
-}
-ul li{
-    width: 30%;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 2.5%;
-    float: left;
-}
-.div4{
-    width: 100%;
-    height: 40px;
-    border-radius: 8px;
-}.div4 p{
-    font-size: 0.85em;
-    font-family: "微软雅黑";
-    color: #FFFFFF;
-    line-height: 40px;
-    text-align: center;
- }
- a{
-     text-decoration: none;
- }
 
-.c1{
-    background-color: #FF469B;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #FFFFFF;
+    margin-left: 30%;
 }
-.c2{
-    background-color: #497FEA;
+section{
+    width: 100%;
+    height: auto;
+    float: left;
 }
-.c3{
-    background-color:#FF3C96 ;
+#demo1 {
+    display:block;
 }
-.c4{
-    background-color: #FF9D00;
+#demo2{
+    display: none;
 }
-.c5{
-    background-color:#FF4198 ;
- }
-.c6{
-    background-color: #20D7D0;
+#demo3{
+    display: none;
 }
-.c7{
-    background-color:#FF2ED5;
+#demo4{
+    display: none;
 }
-.c8{
-    background-color: #9921FF;
+#demo5{
+    display: none;
 }
-.c9{
-    background-color:#149651 ;
+.btn{
+    width: 100%;
+    height: 40px;
+    background-color: #05A0D7;
+    float: left;
+    margin-top: 20px;
 }
-.c10{
-    background-color:#497FEA ;
+.btn_1{
+    width: 100%;
+    height: 40px;
+    background-color: #05A0D7;
+    float: left;
 }
+.btn1{
+    width: 100%;
+    height: 40px;
+    border:0;
+    border-bottom: 1px solid #FFFFFF;
+    float: left;
+
+}
+.btn2{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    float: left;
+}
+input{
+    background-color: #05A0D7;
+}
+.btn3{
+    width: 60%;
+    height: 40px;
+    float: left;
+    margin-left: 5%;
+    margin-top: -40px;
+}
+.btn3 button{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    background-color: #05A0D7;
+    color: #FFFFFF;
+}
+.demo1 ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    float: left;
+}
+.demo1 ul li{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+}
+.demo1 ul li a:hover p{
+    color:#05A0D7 ;
+}
+.dome_1{
+    width: 100%;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+}
+.dome_1 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.9em;
+    line-height: 30px;
+    color: #000000;
+    margin-left: 5%;
+}
+
+

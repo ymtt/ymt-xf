@@ -78,7 +78,7 @@ a{
     float: right;
     right: 4px;
     top: 40px;
-
+     z-index: 9999;
 }
 .div3-2 ul li{
     float: none;
@@ -114,6 +114,62 @@ a{
     color: #ffffff;
     text-align: center;
     line-height: 10px;
+}
+.div4{
+    width: 10px;
+    height: 10px;
+    float: left;
+    border-radius: 10px;
+    background-color:#FF0000;
+    margin-left: 80%;
+    margin-top: 2px;
+    margin-bottom: -12px;
+}
+.div4 p{
+    font-family:"方正兰亭纤黑_GBK";
+    font-size: 0.5em;
+    color: #ffffff;
+    text-align: center;
+    line-height: 10px;
+}
+.div4-1 p{
+    width: 80px;
+    height: 30px;
+    background-color: #ffffff;
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.65em;
+    border-top: 1px solid #CCCCCC;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+}
+.div5{
+    width: 10px;
+    height: 10px;
+    float: left;
+    border-radius: 10px;
+    background-color:#FF0000;
+    margin-left: 80%;
+    margin-top: 2px;
+    margin-bottom: -12px;
+}
+.div5 p{
+    font-family:"方正兰亭纤黑_GBK";
+    font-size: 0.5em;
+    color: #ffffff;
+    text-align: center;
+    line-height: 10px;
+}
+.div5-1 p{
+    width: 80px;
+    height: 30px;
+    background-color: #ffffff;
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.65em;
+    border-top: 1px solid #CCCCCC;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
 }
 .div3-2:hover ul{
     display: block;

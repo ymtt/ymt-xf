@@ -2,555 +2,100 @@
     margin: 0;
     padding: 0;
 }
-body html{
+html,body{
     width: 100%;
-    height: 100%;
-
+    height:auto;
 }
 header{
-
     width: 100%;
     height: 40px;
-    background-color: #05A0D7;
-
+    background: #05A0D7;
+    float: left;
 }
 a{
     text-decoration: none;
 }
 .div1{
+    width: 5%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.div1 img{
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-width: 100%;
 }
 .div2{
-    width:auto ;
-    height: 20%;
-    float: left;
-    margin-top: 10px;
-  padding-left: 5%;
-}
-.div2 img {
-    width: 80%;
+    width: 30%;
     height: auto;
-    max-width: 100%;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #FFFFFF;
+    margin-left: 25%;
 }
 .div3{
-    width:auto;
-    height: 20%;
+    width: 10%;
+    height: auto;
     float: right;
-   padding-right: 2%;
-    margin-top: 10px;
+    margin-right: 15px;
+    margin-top: 7px;
 }
 .div3 img{
-    width: 80%;
-    height: auto;
     max-width: 100%;
 }
-.div3 ul{
-    list-style: none;
-    display: none;
-    position: absolute;
-    float: right;
-    right: 4px;
-    top: 40px;
-
-}
-.div3 ul li{
-    float: none;
-}
-.div3 ul li a{
-    text-decoration: none;
-
-}
-.div3 ul li a p{
-    width: 80px;
-    height: 30px;
-    background-color:#f5f5f5;
-    font-family: "微软雅黑";
-    font-size: 0.65em;
-    border-top: 1px solid #CCCCCC;
-    color: #000000;
-    text-align: center;
-    line-height: 30px;
-}
-.div3:hover ul{
-    display: block;
-}
 .div4{
-    width: auto;
-    height: 20%;
-    float: right;
-   padding-right:10%;
-    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    float: left;
 }
 .div5{
     width: 100%;
-    color:#FFFFFF;
-    text-align: center;
-    line-height: 40px;
-    font-size: 0.85em;
-    font-family: "微软雅黑";
+    height: 30px;
+    float: left;
+    background-color: deepskyblue;
+}
+.div5 p{
+    width: 95%;
+    margin-left: 5%;
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
 }
 .div6{
     width: 100%;
     height: auto;
     float: left;
-    overflow: hidden;
 }
-.div6 img{
-    max-width: 100%;
-}
-.div7{
-    width: auto;
+.div6 ul{
+    width: 100%;
     height: auto;
-    float: left;
-    margin-top: -100px;
-    margin-left: 30%;
-}
-.div8{
-    width: 30%;
-    height: 60px;
-    font-family: "微软雅黑";
-    font-size: 0.85em;
-    color: #FFFFFF;
-   float: left;
-    margin-top: -95px;
-    margin-left: 55%;
-
-}
-.tab-content{
-    width: 100%;
-    height: 600px;
-    background: #ECECEC;
-    float: left;
-}
-section{
-    width: 100%;
-    height: 600px;
-    background: #ECECEC;
-    float: left;
-}
-.div9{
-    width: 100%;
-    height: 310px;
-    background: #FFFFFF;
-    float: left;
-}
-.div10{
-    width: 100%;
-    height: 40px;
-    border-bottom: 5px solid #ECECEC;
-    float: left;
-}
-.div10 ul{
-    width: 100%;
-    height: 30px;
     list-style: none;
-    margin-top: 10px;
 }
-.div10 ul li{
-    width: 20%;
-    height:20px;
-    float: left;
-}
-.div11 p{
-    width: 100%;
-    height: 100%;
-    font-size: 0.85em;
-    line-height: 20px;
-    font-family: "方正兰亭纤黑_GBK";
-    color: #000000;
-    text-align: center;
-    border-right: 1px solid #CCCCCC;
-}
-.div11{
-    width: 100%;
-    height: 20px;
-}
-.div11 .p1{
-    border: 0;
-}
-.div12{
-    width: 100%;
-    height:310px ;
-    background: #FFFFFF;
-    float: left;
-}
-.div13{
-    width:15%;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 5%;
-    float: left;
-}
-.div13 img{
-    width: 40px;
-    height: 40px;
-    max-width: 100%;
-    border-radius: 20px;
-
-}
-.div14{
-    width: auto;
-    height: 20px;
-    font-family: "微软雅黑";
-    font-size: 0.85em;
-    padding-top: 20px;
-    margin-left:5%;
-
-}
-.div14 p{
-    color: #05A0D7;
-}
-.div15{
-    width: auto;
-    height: auto;
-    font-family: "微软雅黑";
-    padding-top: 5px;
-
-    float: left;
-}
-.div15 p{
-    color: #05A0D7;
-    font-size: 0.45em
-}
-.div16{
-    width: auto;
-    height: auto;
-    font-family: "微软雅黑";
-    font-size: 0.45em;
-    padding-top: 5px;
-    margin-left: 5%;
-    float: left;
-}
-.div17{
-    width: 80%;
-    height: 100px;
-    margin-top:10px;
-    margin-left:5%;
-   font-family: "微软雅黑";
-   font-size:0.85em ;
-    color: #737373;
-    letter-spacing: 3px;
-  float: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.div18{
-    width: auto;
-    height: 85px;
-    margin-left: 5%;
-    float: left;
-}
-.div18 img{
-    width: auto;
-    height:85px;
-    max-width: 100%;
-
-}
-.div19{
-    width: 100%;
-    height: 30px;
-    border-top: 1px solid #CCCCCC;
-    margin-top: 5%;
-    float: left;
-}
-.div19 ul{
-    width: 80%;
-    height: 100%;
-    list-style: none;
-    margin-left: 20%;
-}
-.div19 ul li{
-    width: 33.33%;
-    height: 100%;
-    float: left;
-margin-top: 2px;
-
-}
-.li-1{
-    width: 100%;
-    height: 100%;
-
-}
-
-.div21 {
-  width: 50%;
-    height:30px ;
-    float: left;
-}
-.div21 img{
-    width: 40%;
-    height: auto;
-    max-width: 100%;
-    margin-top: 5px;
-    margin-left: 30%;
-}
-.div21-1{
-    width: 50%;
-    height: 30px;
-    float: left;
-}
-.div21-1 p{
-    width: 100%;
-    height: 100%;
-    font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 30px;
-    border-right: 1px solid #CCCCCC;
-}
-.div22 {
-    width: 50%;
-    height:30px ;
-    float: left;
-}
-.div22 img{
-    width: 40%;
-    height: auto;
-    max-width: 100%;
-    margin-left: 30%;
-    margin-top: 5px;
-}
-.div22-1{
-    width: 50%;
-    height: 30px;
-    float: left;
-}
-.div22-1 p{
-    width: 100%;
-    height: 100%;
-    font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
-  line-height: 30px;
-    border-right: 1px solid #CCCCCC;
-}
-.div23 {
-    width: 50%;
-    height:30px ;
-    float: left;
-}
-.div23 img{
-    width: 40%;
-    height: auto;
-    max-width: 100%;
-    margin-top: 5px;
-    margin-left: 30%;
-}
-.div23-1{
-    width: 50%;
-    height: 30px;
-    float: left;
-
-}
-.div23-1 p{
-    width: 100%;
-    height: 100%;
-    font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 30px;
-    border:0;
-}
-.div24{
-    width: 95%;
-    height: 85px;
-    margin-left:5%;
-    float: left;
-}
-table{
-    width: 50%;
-    height: 80px;
-}
-table img{
-    width: 100%;
-    height: 40px;
-    max-width: 100%;
-
-}
-.div25{
-    width:15%;
-    height: 40px;
-    margin-left: 5%;
-    float: left;
-    margin-top: 20px;
-}
-.div25 img{
-    width: 40px;
-    height: 40px;
-    max-width: 100%;
-    border-radius: 20px;
-}
-
-.div26{
-    width: 100%;
-    height: 315px;
-    background:#CCCCCC;
-    float: left;
-    margin-top: 5px;
-}
-.div27{
-    width: auto;
-    height: 20px;
-    font-family: "微软雅黑";
-    font-size: 0.85em;
-    margin-left:5%;
-    margin-top: 20px;
-}
-.div27 p{
-    color: #05A0D7;
-}
-.div28{
-    width: auto;
-    height: auto;
-    font-family: "微软雅黑";
-    padding-top: 5px;
-
-    float: left;
-}
-.div28 p{
-    color: #05A0D7;
-    font-size: 0.45em
-}
-.div29{
-    width: auto;
-    height: auto;
-    font-family: "微软雅黑";
-    font-size: 0.45em;
-    padding-top: 5px;
-    margin-left: 5%;
-    float: left;
-}
-.fate{
-    width: 100%;
-    height: 600px;
-    float: left;
-    background-color: #ffffff;
-}
-.fate ul{
-    width: 100%;
-    height: 200px;
-    list-style: none;
-    margin-top: 80px;
-}
-.fate ul li{
-    width: 25%;
-    height: 100px;
-    float: left;
-    margin-left: 8%;
-}
-.fate-1{
-    width: 100%;
-    height: 100px;
-}
-.fate-1 img{
-    width: 80%;
-    height: auto;
-}
-.huiFu{
-    width: 100%;
-    height: 600px;
-    float: left;
-
-}
-.huiFu-1{
+.div6 ul li{
     width: 100%;
     height: 30px;
     float: left;
     border-bottom: 1px solid #CCCCCC;
-    background-color: #ffffff;
 }
-.huiFu-2{
-    width: 25%;
-    height: 30px;
+span{
+    width: 95%;
     float: left;
-}
-.huiFu-2 p{
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
-   color: #05A0D7;
-    margin-left: 20%;
+    margin-left: 5%;
     line-height: 30px;
+    font-size: 0.8em;
+    color: #000000;
 }
-.huiFu-3{
-    width: 75%;
-    height: 30px;
-    float: left;
-    overflow: hidden;
-}
-.huiFu-3 p{
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 30px;
-}
-.div17-1{
-    width: 70%;
-    height:100px;
+span p{
     float: right;
-    margin-top: 14px;
-}
-.div17-1 p{
-    font-family: "方正兰亭纤黑_GBK";
-    font-size:0.85em ;
-    color: #737373;
-    letter-spacing: 3px;
-    float: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.div18-1{
-    width: 25%;
-    height: 100px;
-    float: left;
-    margin-left: 5%;
-    margin-top: 10px;
-}
-.div18-1 img{
-    width: 95%;
-    height: 85px;
-    max-width: 100%;
-}
-.huiFu-4{
-    width: 100%;
-    height: 120px;
-    float: left;
-}
-.huiFu-4 a{
-    color: #05A0D7;
-}
-.huiFu-4 p{
-    width: auto;
-    height: 40px;
-   font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
+    margin-right: 5%;
     line-height: 30px;
-    margin-left: 5%;
-}
-.div30{
-    width: 100%;
-    height: 20px;
-    float: left;
-    margin-top: 10px;
-}
-.div30 p{
-    width: 95%;
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 20px;
-    margin-left: 5%;
-}
-.div30 a{
-    color: #05A0D7;
-}
-.zhuTi-1{
-    width: 90%;
-    height: 80px;
-    margin-left:5%;
-    float: left;
-}
-.zhuTi-1 p{
-    font-family: "微软雅黑";
-    font-size:0.85em ;
-    color: #737373;
-    letter-spacing: 3px;
-    float: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.8em;
+    color: #000000;
 }

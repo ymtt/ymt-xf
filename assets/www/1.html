@@ -1,36 +1,188 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html ng-app="ionic">
+<head>
     <meta charset="UTF-8">
-    <title></title>
-    <script type="text/javascript" src="../JS文件/jquery.js"></script>
-    <script type="text/javascript" src="../JS文件/SelectMenu2.js" charset=“utf-8”></script>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+    <script src="js/ionic.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ionic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.css">
 </head>
 <body>
-<form action="#">
-    <br />
-    <br />
-    <br />
-    <div class="CarInfo">
+<ion-side-menus>
+    <ion-side-menu-content>
+        <ion-header-bar class="bar-calm">
+            <a menu-toggle="left" class="button icon ion-navicon-round"></a>
+            <div class="div1"><img src="image/main interface_logo.png"></div>
+            <a href="sousuo.html"><div class="div2">
+                <img src="image/search_icon.png">
+            </div></a>
 
-<span class="CarType">车类型：
-<select >
-    <option value="请选择" selected="selected">请选择</option>
-    <option value="宝马">宝马</option>
-    <option value="奔驰">奔驰</option>
-</select>
-</span>
+        </ion-header-bar>
+        <ion-content class="positive-bg">
+            <div class="div4">
+                <img src="image/22.png">
+            </div>
+            <div class="div5">
+                <p>为进一步提高工作效率，同时加大新修订与中国加大新修订与</p>
+            </div>
+            <div class="div6">
+                <div class="div7"><p>咨询分类</p></div>
+                <div class="div8"><a href="zixunfenlei.html"><p>显示全部</p></a></div>
+            </div>
+            <div class="div9">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="div10">
+                                <p>建筑</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="div10">
+                                <p>专业</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="div10">
+                                <p>关键词</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="div11">
+                    <table>
+                        <tr>
+                            <td> <a href="gaoceng.html"><p>高层</p></a></td>
+                            <td><a href=""><p>超高层</p></a></td>
+                            <td><a href=""><p>商业综合</p></a></td>
+                            <td><a href=""><p>文体</p></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><p>建筑定性</p></a></td>
+                            <td><a href=""><p>防火区分</p></a></td>
+                            <td><a href=""><p>平面布置</p></a></td>
+                            <td><a href=""><p>疏散避难</p></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><p>防火分隔</p></a></td>
+                            <td><a href=""><p>防烟分区</p></a></td>
+                            <td><a href=""><p>疏散距离</p></a></td>
+                            <td><a href=""><p>疏散宽度</p></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <section>
+                <ul>
+                    <li>
+                        <div class="div12">
+                            <a href="zixun.html"> <img src="image/76.png"></a>
+                        </div>
+                        <div class="div13">
+                            <a href="zhuanjiazixun.html"><img src="image/77.png"></a>
+                        </div>
+                        <div class="div14">
+                            <a href=""> <img src="image/24.png"></a>
+                        </div>
+                        <div class="div15">
+                            <p>认识身边的消防标志</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="div16">
+                            <a href="">  <img src="image/08.png"></a>
+                        </div>
+                        <div class="div17">
+                            <p>几种常见的消防设施及标识</p>
+                        </div>
+                        <div class="div18">
+                            <a href="education.html"> <img src="image/78.png"></a>
+                        </div>
+                        <div class="div19">
+                            <a href="knowledge.html"><img src="image/79.png"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="div16" >
+                            <a href="">  <img src="image/07.png"></a>
+                        </div>
+                        <div class="div17 red">
+                            <p>高层被困</p>
+                        </div>
+                        <div class="div18">
+                            <a href="forum.html"> <img src="image/80.png"></a>
+                        </div>
+                        <div class="div19">
+                            <a href="more.html"><img src="image/81.png"></a>
+                        </div>
+                    </li>
+                </ul>
+                </section>
+        </ion-content>
+    </ion-side-menu-content>
 
-<span class="CarColor" style="display:none">车颜色：
-<select>
-</select>
-</span>
+    <ion-side-menu side="left" width="250">
+        <ion-content class="calm-bg">
+            <div class="zc">
+             <img src="image/16.png">
+            </div>
+            <div class="zc-1">
+                <p>张三</p>
+            </div>
+            <div class="zc-2">
+                <ul>
+                    <li>
+                        <a href="zhuce.html">
+                        <div class="zc-3"><img src="image/3_register_icon.png"></div>
+                        <div class="zc-4"><p>注册</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bangzhu.html">
+                        <div class="zc-3"><img src="image/3_help_icon.png"></div>
+                        <div class="zc-4"><p>帮助</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <div class="zc-3"><img src="image/3_suggest_icon.png"></div>
+                        <div class="zc-4"><p>建议</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shezhi.html">
+                        <div class="zc-3"><img src="image/3_setting-up_icon.png"></div>
+                        <div class="zc-4"><p>设置</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <div class="zc-3"><img src="image/3_collect_icon.png"></div>
+                        <div class="zc-4"><p>收藏</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="denglu.html">
+                        <div class="zc-3"><img src="image/3_landfall_icon.png"></div>
+                        <div class="zc-4"><p>登录</p></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="zc-5">
+                <div class="zc-6"><p>咨询热线：400-028-0028</p></div>
+                <div class="zc-6"><p>咨询QQ：436456</p></div>
+                <div class="zc-6"><p>网址链接：www.xxf3.com</p></div>
+            </div>
+        </ion-content>
+    </ion-side-menu>
 
-<span class="CarWheel" style="display:none">车轮：
-<select>
-</select>
-</span>
-    </div>
-</form>
+</ion-side-menus>
 </body>
-</html></SPAN>
+</html>
+

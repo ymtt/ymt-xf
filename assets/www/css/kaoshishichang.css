@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height:auto;
+    background-color: #FFFFFF;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    width: 5%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.div1 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.div2{
+    width: auto;
+    height: auto;
+    float: left;
+    line-height: 40px;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #FFFFFF;
+    margin-left: 30%;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.div3{
+    width: 90%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.div3 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.8em;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+.div4{
+   width: 100%;
+    height: 40px;
+    float: left;
+    border-top: 5px solid #cccccc;
+}
+.div4 p{
+    font-size: 0.9em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    background-color: #05A0D7;
+    float: left;
+
+}
+#demo2{
+    display: none;
+}
+#demo3{
+    display: none;
+}
+.btn1{
+    width: 100%;
+    height: 40px;
+    border:0;
+    border-bottom: 1px solid #FFFFFF;
+    float: left;
+
+}
+.btn2{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    float: left;
+}
+input{
+    background-color: #05A0D7;
+}
+.btn3{
+    width: 60%;
+    height: 40px;
+    float: left;
+    margin-left: 5%;
+    margin-top: -40px;
+}
+.btn3 button{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    background-color: #05A0D7;
+    color: #FFFFFF;
+}
+.demo1 ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    float: left;
+}
+.demo1 ul li{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.demo2{
+    width: 30%;
+    height: 40px;
+    float: left;
+}
+.demo2 p{
+    font-size: 0.8em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 40px;
+    margin-left: 15%;
+}
+.demo3{
+    width: 65%;
+    height:auto;
+    float: left;
+}
+.demo3 p{
+    font-size: 0.8em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 150%;
+    color:#737373;
+    margin-top: 10px;
+}
+.demo4{
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+}
+

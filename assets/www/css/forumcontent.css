@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height:auto;
+    background: #ffffff;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    width: 5%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.div1 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.div2{
+    width: 30%;
+    height: auto;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #FFFFFF;
+    margin-left: 25%;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    border-top: 5px solid #CCCCCC;
+    background: #ffffff;
+}
+.div3{
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+}
+.div3 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-left: 30%;
+}
+.div4{
+    width: 80%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.div4 p{
+    font-size: 0.8em;
+    line-height: 20px;
+    margin-left: 5%;
+    color: #05A0D7;
+}
+span{
+   width: 35%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.65em;
+    color: #05A0D7;
+    margin-left: 5%;
+    float: left;
+}
+span p{
+    float: right;
+    color: #000000;
+}
+.div5{
+    width: 90%;
+    height:auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+    overflow:  hidden;
+}
+.div5 p{
+    font-size: 0.8em;
+    line-height: 150%;
+}
+.div6{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.div6 img{
+    max-width: 100%;
+}
+.div7{
+    width: 100%;
+    height: auto;
+    float: left;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 5px;
+}
+.div7 ul{
+    width: 70%;
+    height: auto;
+    float: left;
+    margin-left: 30%;
+    list-style: none;
+}
+.div7 ul li{
+    width: 33.33%;
+    height: 30px;
+    float: left;
+}
+.div8{
+    width: 100%;
+    height: 20px;
+    background: url("../image/forwarding_icon.png")no-repeat 10% 50%;
+}
+.div8 p{
+    font-size: 0.8em;
+    line-height: 20px;
+    text-align: center;
+    border-right: 1px solid #CCCCCC;
+    margin-top: 5px;
+}
+.div9{ width: 100%;
+    height: 20px;
+    border-right: 1px solid #CCCCCC;
+    background: url("../image/comment_collect_icon.png")no-repeat 10% 50%;
+}
+.div9 p{
+
+    font-size: 0.8em;
+    line-height: 20px;
+    margin-left: 40%;
+
+    margin-top: 5px;
+}
+.div10{
+    width: 100%;
+    height: 20px;
+    background: url("../image/comment_comment_icon.png")no-repeat 10% 50%;
+}
+.div10 p{
+    font-size: 0.8em;
+    line-height: 20px;
+    margin-left: 40%;
+    margin-top: 5px;
+}
+.div11{
+    width: 95%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.div11 p{
+    font-size: 0.85em;
+    line-height: 20px;
+}
+.div11 a{
+    color: #05A0D7;
+}
+footer{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+}
+input{
+    width: 75%;
+    height: 30px;
+    border: 0;
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+    margin-left: 5%;
+}
+.div12{
+ width: 20%;
+ height: 30px;
+ float: left;
+}
+.div12 p{
+  font-size: 0.85em;
+  line-height: 30px;
+    text-align: center;
+}

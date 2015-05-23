@@ -17,7 +17,7 @@ a{
     text-decoration: none;
 }
 .div1{
-    width: auto;
+    width: 5%;
     height: auto;
     float: left;
     margin-left: 5%;
@@ -29,7 +29,7 @@ a{
     max-width: 100%;
 }
 .div2{
-    width: auto;
+    width: 20%;
     height: auto;
     float: left;
     line-height: 40px;
@@ -37,7 +37,7 @@ a{
     font-size: 0.85em;
     font-family: "微软雅黑";
     color: #FFFFFF;
-    margin-left: 33%;
+    margin-left: 30%;
 }
 .div3{
     width: auto;
