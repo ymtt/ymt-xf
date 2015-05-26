@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="css/forumlist.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/forumlist.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            getSubjectList();
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -12,22 +19,26 @@
     <button><a href="fatie.html">发帖</a></button>
 </header>
 <section>
-    <ul>
-        <li>
+    <ul id="list">
+
+        <!--<li>
             <a href="forumcontent.html">
-            <p>affffffffff</p>
+             <p>affffffffff</p>
             </a>
         </li>
+
         <li>
             <a href="forumcontent.html">
             <p>消防</p>
             </a>
         </li>
+
         <li>
             <a href="forumcontent.html">
             <p>消防主题</p>
             </a>
         </li>
+
         <li>
             <a href="forumcontent.html">
             <p>消防器材</p>
@@ -52,7 +63,8 @@
             <a href="forumcontent.html">
             <p>消防设施</p>
             </a>
-        </li>
+        </li>-->
+
     </ul>
 </section>
 </body>

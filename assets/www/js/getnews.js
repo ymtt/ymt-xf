@@ -32,8 +32,17 @@ function getnews(type,func){
             }
 }
 
+
+//保存点击的公告的id
 function Tonews(id){
-    alert(id);
+    window.localStorage.setItem("noticeid",id);
+    window.location.href="gonggaoXQ.html";
+}
+//保存点击的资讯的id
+function Toinfo(id){
+   window.localStorage.setItem("noticeid",id);
+   window.location.href="jiaoyuXQ.html";
+   //alert(id);
 }
 
 function CreateNoticeDom(title,content,id){
@@ -42,9 +51,10 @@ function CreateNoticeDom(title,content,id){
                $(".notice").html("<img src='image/07.png'>");
                $(".notice").append("<img src='image/08.png'>");
  }
- function CreateEduDom(title,content){
-        $("#nav_tab3").append("<div class='zx'><a href='jiaoyuXQ.html'><div class='zx-1'><img src='image/08.png'></div><div class='intro'><span>"+title+
+
+ function CreateEduDom(title,content,id){
+        $("#nav_tab3").append("<div class='zx'><a href='javascript:Toinfo("+"\""+id+"\""+")'><div class='zx-1'><img src='image/08.png'></div><div class='intro'><span>"+title+
             "</span><p>"+content+
             "</p></div></a></div>"
-        );
+  );
  }

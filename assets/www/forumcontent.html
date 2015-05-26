@@ -2,17 +2,25 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
     <link href="css/forumcontent.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/forumcontent.js"></script>
     <script src="js/forum.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function(){
+            getThreadContent();
+        });
+    </script>
 </head>
 <body>
 <header>
-    <a href="forumlist.html"><div class="div1"><img src="image/return_icon.png"></div></a>
+    <div class="div1"><a href="forumlist.html"><img src="image/return_icon.png"></a></div>
     <div class="div2"><p>论坛</p></div>
 </header>
 <section>
-    <div class="div3">
+    <!--<div class="div3">
         <img src="image/16.png">
     </div>
     <div class="div4">
@@ -21,35 +29,9 @@
     <span>2015-03-10<p>来自手机</p></span>
     <div class="div5">
         <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-            为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-            河北省保定市公安消防支队
-
-        </p>
+           </p>
     </div>
+
     <div class="div6">
         <img src="image/08.png">
     </div>
@@ -77,12 +59,12 @@
         <p><a href="">我</a>回复<a href="">我id卡刷的话：</a>谢谢 </p>
         <p><a href="">我id卡刷的话</a>回复<a href="">我：</a>不客气 </p>
         <p><a href="">显示更多</a> </p>
-
-    </div>
+    </div>-->
 </section>
+
 <footer>
-    <input type="text" placeholder="发表评论">
-    <div class="div12"><button>发表</button></div>
+    <input type="text" placeholder="发表评论" id="msg">
+    <div class="div12"><a href="javascript:ReplyPost($('#msg').val())">发表</a></div>
 </footer>
 </body>
 </html>
