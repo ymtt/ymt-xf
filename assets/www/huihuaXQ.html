@@ -5,10 +5,20 @@
     <title>会话详情</title>
     <link rel="stylesheet" type="text/css" href="css/huihuaXQ.css">
     <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <script>
+        function m(devices) {
+            var h= document.getElementById("devices")
+            if(h.style.display=="block"){
+                h.style.display='none';
+            }else{
+                h.style.display='block';
+            }
+        }
+    </script>
 </head>
 <body>
 <header>
-    <div class="div1"><a href="zhuanjiazixun.html"><img src="image/return_icon.png"></a></div>
+    <a href="zhuanjiazixun.html"><div class="div1"><img src="image/return_icon.png"></div></a>
     <div class="div2"><p>我的咨询</p></div>
     <div class="div3"><p>预约</p></div>
 </header>
@@ -106,10 +116,10 @@
             <img src="image/the-recording_icon.png">
         </div>
         <div class="div13">
-            <img src="image/more-choice_icon.png" onclick="a()">
+            <img src="image/more-choice_icon.png" onclick="m()" >
         </div>
     </div>
-        <div class="device" id="devices" style="display: none">
+        <div class="device"  id="devices" style="display: block">
             <a class="arrow-left" href="#"></a>
             <a class="arrow-right" href="#"></a>
             <div class="swiper-container">
@@ -177,31 +187,25 @@
             </div>
             <div class="pagination"></div>
         </div>
-        <script src="js/jquery-1.10.1.min.js"></script>
-        <script src="js/idangerous.swiper.min.js"></script>
-        <script>
-            var mySwiper = new Swiper('.swiper-container',{
-                pagination: '.pagination',
-                loop:true,
-                grabCursor: true,
-                paginationClickable: true
-            })
-            $('.arrow-left').on('click', function(e){
-                e.preventDefault()
-                mySwiper.swipePrev()
-            })
-            $('.arrow-right').on('click', function(e){
-                e.preventDefault()
-                mySwiper.swipeNext()
-            })
-            function a() {
-                if(devices.style.display=="block"){
-                    devices.style.display='none';
-                }else{
-                    devices.style.display='block';
-                }
-            }
-        </script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/idangerous.swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container',{
+            pagination: '.pagination',
+            loop:true,
+            grabCursor: true,
+            paginationClickable: true
+        })
+        $('.arrow-left').on('click', function(e){
+            e.preventDefault()
+            mySwiper.swipePrev()
+        })
+        $('.arrow-right').on('click', function(e){
+            e.preventDefault()
+            mySwiper.swipeNext()
+        })
+
+    </script>
 </footer>
 </body>
 </html>

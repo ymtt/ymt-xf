@@ -34,10 +34,15 @@ header{
     max-width: 100%;
 }
 .header-2 {
+    width: 10%;
+    height: auto;
     float: right;
+    margin-right:5%;
+}
+.header-2 img{
     max-width: 100%;
     margin-top: 10px;
-    margin-right: 2%;
+    margin-left: 20%;
 }
 section{
     width: 98%;

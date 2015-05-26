@@ -19,32 +19,31 @@
         text-decoration: none;
     }
 
-    .div1 {
-        width: 5%;
-        height: auto;
-        float: left;
-        margin-left: 5%;
-        margin-top: 10px;
-    }
+  .div1 {
+      width: 10%;
+      height: auto;
+      float: left;
+      margin-left: 3%;
+  }
 
-    .div1 img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
+  .div1 img {
+      max-width: 100%;
+      margin-left: 20%;
+      margin-top: 10px;
+  }
 
-    .div2 {
-        width: 20%;
-        height: auto;
-        float: left;
-        line-height: 40px;
-        text-align: center;
-        font-size: 1em;
-        font-family: "微软雅黑";
-        color: #FFFFFF;
-        margin-left: 30%;
-    }
+  .div2 {
+      width: 87%;
+      height: auto;
+      float: left;
 
+  }
+  .div2 p{
+      line-height: 40px;
+      font-size: 1em;
+      color: #FFFFFF;
+      margin-left: 32%;
+  }
     .div3 {
         width: 100%;
         height: auto;
@@ -182,9 +181,9 @@ button{
 footer{
     width: 94%;
     height: 50px;
-    float: left;
     margin-left: 3%;
-  margin-top: 140px;
+    position: fixed;
+    bottom: 20px;
 }
 footer ul{
     list-style: none;

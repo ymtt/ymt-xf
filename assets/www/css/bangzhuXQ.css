@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height:auto;
+    background-color: #FFFFFF;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.div1 {
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 3%;
+}
+
+.div1 img {
+    max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+
+}
+.div2{
+    width: 90%;
+    height: 30px;
+    float: left;
+    margin-left: 5%;
+}
+.div2 p{
+    font-size: 1em;
+    line-height: 30px;
+}
+.div3{
+    width: 90%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.div3 p{
+    font-size: 0.8em;
+    line-height: 20px;
+}
+.div4{
+    width: 90%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+.div4 p{
+    font-size: 0.8em;
+    line-height: 20px;
+}

@@ -16,17 +16,17 @@ header{
 a{
     text-decoration: none;
 }
-.div1{
-    width:auto ;
+.div1 {
+    width: 10%;
     height: auto;
     float: left;
-    margin-top: 10px;
-    padding-left: 5%;
+    margin-left: 3%;
 }
-.div1 img{
-    width: 100%;
-    height: auto;
+
+.div1 img {
     max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
 }
 .div2{
     width: 20%;
@@ -68,7 +68,6 @@ section{
     width: 100%;
     height: auto;
     float: left;
-    background-color: #000000;
 }
 .div6{
     width: 100%;
@@ -116,8 +115,8 @@ section{
     font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     line-height: 20px;
-    color: #ffffff;
-    margin-bottom: 100px;
+    color: #737373;
+    margin-bottom: 30px;
 }
 .zz-1{
     position: absolute;

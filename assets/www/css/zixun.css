@@ -16,29 +16,30 @@
  a{
      text-decoration: none;
  }
- .div1{
-     width: auto;
-     height: auto;
-     float: left;
-    margin-left: 5%;
-     margin-top: 10px;
- }
- .div1 img {
-     width: 100%;
-     height: auto;
-     max-width: 100%;
- }
- .div2{
-     width: auto;
-     height: auto;
-     float: left;
-     line-height: 40px;
-     text-align: center;
-     font-size: 1em;
-     font-family: "方正兰亭纤黑_GBK";
-     color: #FFFFFF;
-     margin-left: 33%;
- }
+.div1 {
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 3%;
+}
+
+.div1 img {
+    max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.div2 {
+    width: 70%;
+    height: auto;
+    float: left;
+
+}
+.div2 p{
+    line-height: 40px;
+    font-size: 1em;
+    color: #FFFFFF;
+    margin-left: 39%;
+}
  .div3{
      width: 10%;
      height: auto;
@@ -157,7 +158,7 @@
   }
  section{
      width: 100%;
-     height: 800px;
+     height: auto;
      background: #ECECEC;
  }
  .div5{
@@ -192,39 +193,38 @@
       float: left;
       margin-left: 3%;
   }
-   span{
+   .span-1{
        width:20%;
        height:auto;
        float: right;
        margin-top: 15px;
    }
-   span p{
+   .span-1 p{
        color: #000000;
        font-family: "方正兰亭纤黑_GBK";
        font-size: 0.8em;
    }
   .div9{
       width: 100%;
-      height:140px;
+      height:auto;
       background: #FFFFFF;
       float: left;
 
   }
   .div9 ul{
       width: 100%;
-      height: 125px;
+      height: auto;
       margin-top: 20px;
       list-style: none;
   }
   .div9 ul li{
       width: 30%;
-      height: 100px;
+      height: auto;
       margin-left: 3%;
       float: left;
+      margin-bottom: 10px;
   }
   .div9 ul li img {
-      width: 100%;
-      height: 100px;
       max-width: 100%;
   }
   .div10{
@@ -232,7 +232,7 @@
       height:auto;
       background: #FFFFFF;
       float: left;
-      border-bottom: 1px solid #CCCCCC;
+
   }
   .div11{
       width: 95%;
@@ -248,7 +248,7 @@
   }
   .div12{
       width:95% ;
-      height:40px;
+      height:auto;
       overflow: hidden;
       float: left;
   }
@@ -291,7 +291,7 @@
  }
  .div16{
      width:90% ;
-     height : 40px;
+     height :auto;
      float: left;
      overflow: hidden;
      margin-left: 5%;
@@ -321,7 +321,7 @@
  }
  .div19{
      width: 10%;
-     height: 30px;
+     height: auto;
      float: left;
      margin-top: 8px;
  }
@@ -349,14 +349,14 @@
  }
  .gg-1 p{
      line-height: 30px;
-     font-size: 0.75em;
+     font-size: 0.8em;
      font-family: "方正兰亭纤黑_GBK";
      margin-left: 5%;
      color: #000000;
  }
  .gg-2{
      width:95% ;
-     height:40px;
+     height:auto;
      float: left;
      overflow: hidden;
  }
@@ -367,18 +367,7 @@
      line-height: 20px;
      color: #737373;
  }
- .gg-3{
-     width: 25%;
-     height: auto;
-     float:left;
-     margin-bottom: 10px;
-     margin-top: 10px;
-     margin-left: 3%;
- }
- .gg-3 img{
-     max-width: 100%;
-     margin-left: 20%;
- }
+
  .nav_tab2{
      width: 100%;
      height: auto;
@@ -404,55 +393,41 @@
  .zx-1 img{
      max-width: 100%;
  }
- .zx-2{
-     width: 70%;
-     height: 30px;
-     float: left;
-     margin-left: 2%;
- }
- .zx-2 p{
-     font-family: "方正兰亭纤黑_GBK";
-     font-size: 0.85em;
-     line-height: 30px;
-     color: #000000;
- }
+
  .intro{
-        width:100%;
+        width:70%;
         height:auto;
         font-family: "方正兰亭纤黑_GBK";
         font-size: 0.85em;
         line-height: 30px;
         color: #000000;
+        float: left;
  }
  .intro span{
+   width: 100%;
+     float: left;
+     font-size: 0.8em;
+     line-height: 150%;
+     margin-top: 10px;
  }
  .intro p{
         font-family: "方正兰亭纤黑_GBK";
         font-size: 0.75em;
         color:#737373;
         line-height: 20px;
+        margin-bottom: 10px;
  }
- .zx-3{
-     width: 70%;
-     height: 60px;
-     float: left;
-     margin-left: 2%;
-     overflow: hidden;
- }
- .zx-3 p{
-     font-family: "方正兰亭纤黑_GBK";
-     font-size: 0.75em;
-     line-height: 20px;
-     color: #737373;
- }
+
  .notice{
-     width:100%;
-     height:100%;
-     margin-left:8%;
+     width:90%;
+     margin-left:5%;
+     float: left;
+
  }
  .notice img{
-     width:25%;
+     width:31%;
      margin-top:10px;
      margin-bottom:10px;
-     margin-right:1.3%;
+     float: left;
+     margin-left: 2%;
  }

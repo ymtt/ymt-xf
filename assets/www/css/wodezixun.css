@@ -16,40 +16,39 @@ header{
 a{
     text-decoration: none;
 }
-.div1{
-    width: 5%;
+.div1 {
+    width: 10%;
     height: auto;
     float: left;
-    margin-left: 5%;
+    margin-left: 3%;
+}
+
+.div1 img {
+    max-width: 100%;
+    margin-left: 20%;
     margin-top: 10px;
 }
-.div1 img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
 .div2{
-    width: 20%;
+    width: 72%;
     height: auto;
     float: left;
+}
+.div2 p{
     line-height: 40px;
-    text-align: center;
-    font-size: 0.85em;
-    font-family: "微软雅黑";
+    font-size: 1em;
     color: #FFFFFF;
-    margin-left: 30%;
+    margin-left: 39.5%;
 }
 .div3{
-    width: auto;
+    width: 10%;
     height: auto;
     float: right;
-    margin-right: 15px;
-    margin-top: 8px;
+    margin-right: 5%;
 }
 .div3 img{
-    width: 100%;
-    height: auto;
     max-width: 100%;
+    margin-top: 10px;
+    margin-left: 20%;
 }
 .nav_tab{
     width: 100%;

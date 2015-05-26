@@ -16,27 +16,29 @@ header{
 a{
     text-decoration: none;
 }
-.div1{
-    width:auto ;
+.div1 {
+    width: 10%;
     height: auto;
     float: left;
-    margin-top: 10px;
-    padding-left: 5%;
+    margin-left: 3%;
 }
-.div1 img{
-    width: 100%;
-    height: auto;
+
+.div1 img {
     max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
 }
-.div2{
-    width: 30%;
-    color:#FFFFFF;
-    text-align: center;
+.div2 {
+    width: 72%;
+    height: auto;
+    float: left;
+
+}
+.div2 p{
     line-height: 40px;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
-    float: left;
-    margin-left: 25%;
+    color: #FFFFFF;
+    margin-left: 39%;
 }
 .div3{
     width: 100%;
@@ -61,6 +63,7 @@ a{
     height: 60px;
     float: left;
     margin-left: 5%;
+    margin-bottom: 10px;
 }
 .div6{
     width: 20%;
@@ -72,7 +75,7 @@ a{
 }
 .div7 {
     width: 80%;
-    height: 60px;
+    height: auto;
     float: left;
     overflow: hidden;
 }
@@ -82,6 +85,7 @@ a{
     line-height: 20px;
     color: #737373;
     margin-left: 5%;
+
 }
 .div8{
     width: 100%;
@@ -91,7 +95,7 @@ a{
 }
 .div9{
     width: 90%;
-    height: 60px;
+    height: auto;
     float: left;
     overflow: hidden;
     margin-left: 5%;
@@ -101,4 +105,5 @@ a{
     font-size: 0.75em;
     line-height: 20px;
     color: #737373;
+    margin-bottom: 10px;
 }

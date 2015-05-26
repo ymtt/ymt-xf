@@ -14,17 +14,17 @@ header{
     background: #05A0D7;
 
 }
-.div1{
-    width: auto;
+.div1 {
+    width: 10%;
     height: auto;
     float: left;
-    margin-left: 5%;
-    margin-top:10px;
+    margin-left: 3%;
 }
-.div1 img{
-    width: 100%;
-    height: auto;
+
+.div1 img {
     max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
 }
 .div2{
     width: 40%;

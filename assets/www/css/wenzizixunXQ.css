@@ -15,17 +15,17 @@ header{
 a{
     text-decoration: none;
 }
-.div1{
-    width:auto ;
+.div1 {
+    width: 10%;
     height: auto;
     float: left;
-    margin-top: 10px;
-    padding-left: 5%;
+    margin-left: 3%;
 }
-.div1 img{
-    width: 100%;
-    height: auto;
+
+.div1 img {
     max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
 }
 .div2{
     width: 20%;

@@ -16,27 +16,29 @@ header{
 a{
     text-decoration: none;
 }
-.div1{
-    width: 5%;
+.div1 {
+    width: 10%;
     height: auto;
     float: left;
-    margin-left: 5%;
+    margin-left: 3%;
+}
+
+.div1 img {
+    max-width: 100%;
+    margin-left: 20%;
     margin-top: 10px;
 }
-.div1 img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-.div2{
-    width: auto;
-    height: auto;
-    float: left;
+.div2 {
+     width: 72%;
+     height: auto;
+     float: left;
+
+ }
+.div2 p{
     line-height: 40px;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
-    margin-left: 30%;
+    margin-left: 39%;
 }
 section{
     width: 100%;
