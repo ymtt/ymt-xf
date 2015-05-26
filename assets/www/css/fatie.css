@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+
+}
+a{
+    text-decoration: none;
+}
+.div1 {
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 3%;
+}
+
+.div1 img {
+    max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.div2 {
+    width: 72%;
+    height: auto;
+    float: left;
+
+}
+.div2 p{
+    line-height: 40px;
+    font-size: 1em;
+    color: #FFFFFF;
+    margin-left: 42%;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.div4{
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-bottom: 1px solid #ECECEC;
+}
+.div4 textarea{
+    width: 95%;
+    height: 40px;
+    border: 0;
+    margin-left: 5%;
+}
+.div5{
+    width: 100%;
+    height: 200px;
+    float: left;
+    border-bottom: 1px solid #ECECEC;
+}
+.div5 textarea{
+    width: 95%;
+    height: 200px;
+    border: 0;
+    margin-left: 5%;
+}
+.div6{
+    width: 20%;
+    height: 80px;
+    border: 1px solid #ECECEC;
+    float: left;
+    margin-top: 20px;
+}
+.div6 p{
+    line-height: 80px;
+    text-align: center;
+    font-size: 0.85em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #CCCCCC;
+}
+.div7{
+    width: 90%;
+    height: 30px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 60px;
+}
+.div7 input{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    background-color: #05A0D7;
+}

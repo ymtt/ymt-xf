@@ -28,7 +28,7 @@ a{
     margin-top: 10px;
 }
 .div2 {
-    width: 87%;
+    width: 72%;
     height: auto;
     float: left;
 
@@ -37,7 +37,18 @@ a{
     line-height: 40px;
     font-size: 1em;
     color: #FFFFFF;
-    margin-left: 37%;
+    margin-left: 39%;
+}
+button{
+    width: 15%;
+    height: 40px;
+    float: left;
+    background-color:#05A0D7;
+    border: 0;
+}
+button a{
+    text-decoration:none ;
+    color: #ffffff;
 }
 section{
     width: 100%;
