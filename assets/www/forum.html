@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <title>论坛</title>
     <link type="text/css" rel="stylesheet" href="css/forum.css" media="screen">
-    <script src="js/forum.js"></script>
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/forum.js"></script>
     <!--<script src="cordova.js"></script>-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            getForumList();
+            //CreateForumDom("1","0","新分区");
+        })
+    </script>
 </head>
 <body>
 <header>
@@ -16,10 +22,13 @@
 </header>
 
 <section>
+
     <div class="div4">
+        <!--板块名称-->
         <div class="div5">
-            <p>默认版块</p>
+            <p class="title">默认版块</p>
         </div>
+        <!--子版块-->
         <div class="div6">
             <ul>
                 <li>
@@ -27,25 +36,32 @@
                     <span>子版块<p>2015-03-04 10:00</p></span>
                     </a>
                 </li>
+
                 <li>
                     <a href="forumlist.html">
                     <span>子版块<p>2015-03-04 10:00</p></span>
                     </a>
                 </li>
+
                 <li>
                     <a href="forumlist.html">
                     <span>子版块<p>2015-03-04 10:00</p></span>
                     </a>
                 </li>
+
                 <li>
                     <a href="forumlist.html">
                     <span>子版块<p>2015-03-04 10:00</p></span>
                     </a>
                 </li>
+
             </ul>
         </div>
+
  </div>
-    <div class="div4">
+
+
+    <!--<div class="div4">
         <div class="div5">
             <p>默认版块</p>
         </div>
@@ -74,6 +90,7 @@
             </ul>
         </div>
     </div>
+
     <div class="div4">
         <div class="div5">
             <p>默认版块</p>
@@ -102,7 +119,9 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div>-->
+
+
 </section>
 </body>
 </html>
