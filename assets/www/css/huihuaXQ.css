@@ -4,7 +4,7 @@
 }
 html,body{
     width: 100%;
-    height:700px;
+    height:auto;
 
 }
 header{
@@ -273,4 +273,7 @@ footer{
     height: auto;
     float: left;
     margin-top: 80px;
+}
+#aaa{
+    display: none;
 }

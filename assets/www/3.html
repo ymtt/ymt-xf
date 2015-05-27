@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="ionic">
+<head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+    <script src="js/ionic.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ionic.min.css">
+    <link href="css/ionicons.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<ion-tabs class="tabs-positive tabs-icon-left">
+
+    <ion-tab  icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline">
+        <ion-view>
+            <ion-header-bar class="bar-positive">
+            </ion-header-bar>
+            <ion-content>
+                <p>home content</p>
+            </ion-content>
+        </ion-view>
+    </ion-tab>
+
+    <ion-tab title="About" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline" >
+        <ion-view>
+            <ion-header-bar  class="bar-positive">
+                <h1 class="title">about tab</h1>
+            </ion-header-bar>
+            <ion-content>
+                <p>about content</p>
+            </ion-content>
+        </ion-view>
+    </ion-tab>
+
+    <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline">
+        <ion-view>
+            <ion-header-bar  class="bar-positive">
+                <h1 class="title">settings tab</h1>
+            </ion-header-bar>
+            <ion-content>
+                <p>settings content</p>
+            </ion-content>
+        </ion-view>
+    </ion-tab>
+
+</ion-tabs>
+</body>
+</html>

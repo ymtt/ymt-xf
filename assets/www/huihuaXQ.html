@@ -5,13 +5,13 @@
     <title>会话详情</title>
     <link rel="stylesheet" type="text/css" href="css/huihuaXQ.css">
     <link rel="stylesheet" href="css/idangerous.swiper.css">
-    <script>
-        function m(devices) {
-            var h= document.getElementById("devices")
-            if(h.style.display=="block"){
-                h.style.display='none';
-            }else{
-                h.style.display='block';
+    <script type="text/javascript">
+        function showme(){
+            var div = document.getElementById("aaa");
+            if (div.style.display == "block") {
+                div.style.display = "none";
+            } else if (div.style.display == "none") {
+                div.style.display = "block"
             }
         }
     </script>
@@ -20,7 +20,7 @@
 <header>
     <a href="zhuanjiazixun.html"><div class="div1"><img src="image/return_icon.png"></div></a>
     <div class="div2"><p>我的咨询</p></div>
-    <div class="div3"><p>预约</p></div>
+    <a href=""><div class="div3"><p>预约</p></div></a>
 </header>
 <section>
 <div class="div4">
@@ -116,20 +116,18 @@
             <img src="image/the-recording_icon.png">
         </div>
         <div class="div13">
-            <img src="image/more-choice_icon.png" onclick="m()" >
+            <img src="image/more-choice_icon.png" onclick="showme()" >
         </div>
     </div>
-        <div class="device"  id="devices" style="display: block">
-            <a class="arrow-left" href="#"></a>
-            <a class="arrow-right" href="#"></a>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+    <div id="aaa" style="display:block">
+            <div class="swiper-container"  >
+                <div class="swiper-wrapper"  >
                     <div class="swiper-slide">
-
+                        <a href="">
                         <div class="div15">
                             <img src="image/picture_icon.png">
                         </div>
-
+                        </a>
                         <div class="div16">
                             <img src="image/speech-input_icon.png">
                         </div>
@@ -182,29 +180,18 @@
                                 <img src="image/red-dot1_background-color.png">
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                  </div>
             <div class="pagination"></div>
+        </div>
+  </div>
         </div>
     <script src="js/jquery-1.10.1.min.js"></script>
     <script src="js/idangerous.swiper.min.js"></script>
     <script>
         var mySwiper = new Swiper('.swiper-container',{
             pagination: '.pagination',
-            loop:true,
-            grabCursor: true,
-            paginationClickable: true
+             paginationClickable: true
         })
-        $('.arrow-left').on('click', function(e){
-            e.preventDefault()
-            mySwiper.swipePrev()
-        })
-        $('.arrow-right').on('click', function(e){
-            e.preventDefault()
-            mySwiper.swipeNext()
-        })
-
     </script>
 </footer>
 </body>

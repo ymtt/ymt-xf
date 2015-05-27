@@ -1,156 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title></title>
-    <head>
+<html ng-app="ionic">
+<head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+    <script src="js/ionic.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ionic.min.css">
     <script type="text/javascript">
         function showme(){
             var div = document.getElementById("aaa");
-            if (div.style.display == "block") {
-                div.style.display = "none";
-            } else if (div.style.display == "none") {
-                div.style.display = "block"
+            if (div.style.display == "none") {
+                div.style.display = "block";
+            } else if (div.style.display == "block") {
+                div.style.display = "none"
             }
         }
     </script>
-    <link rel="stylesheet" href="css/idangerous.swiper.css">
-    <style>
-        /* Demo Styles */
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 13px;
-            line-height: 1.5;
-        }
-        .swiper-container {
-            width: 100%;
-            height: 250px;
-            color: #fff;
-            text-align: center;
-        }
-        .red-slide {
-            background: #ca4040;
-        }
-        .blue-slide {
-            background: #4390ee;
-        }
-        .orange-slide {
-            background: #ff8604;
-        }
-        .green-slide {
-            background: #49a430;
-        }
-        .pink-slide {
-            background: #973e76;
-        }
-        .swiper-slide .title {
-            font-style: italic;
-            font-size: 42px;
-            margin-top: 80px;
-            margin-bottom: 0;
-            line-height: 45px;
-        }
-        .swiper-slide p {
-            font-style: italic;
-            font-size: 25px;
-        }
-        .pagination {
-            position: absolute;
-            z-index: 20;
-            left: 10px;
-            bottom: 10px;
-        }
-        .swiper-pagination-switch {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 8px;
-            background: #555;
-            margin-right: 5px;
-            opacity: 0.8;
-            border: 1px solid #fff;
-            cursor: pointer;
-        }
-        .swiper-active-switch {
-            background: #fff;
-        }
-        .swiper-dynamic-links {
-            text-align: center;
-        }
-        .swiper-dynamic-links a {
-            display: inline-block;
-            padding: 5px;
-            border-radius: 3px;
-            border: 1px solid #ccc;
-            margin: 5px;
-            font-size: 12px;
-            text-decoration: none;
-            color: #333;
-            background: #eee;
-        }
-    </style>
 </head>
 <body>
-<div><img src="image/2_expert-consultation_icon.png" onclick="showme()">
-<div class="swiper-container" id="aaa" style="display:block">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide blue-slide">
-            <div class="title"></div>
-        </div>
-        <div class="swiper-slide red-slide">
-            <div class="title">Slide 2</div>
-        </div>
-    </div>
-    <div class="pagination"></div>
+<div><img src="image/2_information-platform_icon.png" onclick="showme()"></div>
+<div id="aaa" style="display:block">
+    <ion-slide-box>
+        <ion-slide>
+            <div class="box positive-bg"><img src="image/07.png"></div>
+        </ion-slide>
+        <ion-slide>
+            <div class="box energized-bg"><img src="image/08.png"></div>
+        </ion-slide>
+        <ion-slide>
+            <div class="box balanced-bg"><img src="image/22.png"></div>
+        </ion-slide>
+    </ion-slide-box>
 </div>
-</div>
-<script src="js/jquery-1.10.1.min.js"></script>
-<script src="js/idangerous.swiper.min.js"></script>
-<script>
-    var mySwiper = new Swiper('.swiper-container',{
-        pagination: '.pagination',
-        paginationClickable: true
-    })
-
-    /* Dynamic Swiper Links*/
-    function randomColor () {
-        var colors = ('blue red green orange pink').split(' ');
-        return colors[ Math.floor( Math.random()*colors.length ) ]
-    }
-    var count = 4;
-    $('.sdl-append').click(function(e) {
-        e.preventDefault();
-        mySwiper.appendSlide('<div class="title">Slide '+(++count)+'</div>', 'swiper-slide '+randomColor()+'-slide')
-    });
-    $('.sdl-prepend').click(function(e) {
-        e.preventDefault();
-        mySwiper.prependSlide('<div class="title">Slide  '+(++count)+'</div>', 'swiper-slide '+randomColor()+'-slide')
-    });
-    $('.sdl-swap').click(function(e) {
-        e.preventDefault();
-        mySwiper
-                .getFirstSlide()
-                .insertAfter(1)
-    });
-    $('.sdl-insert').click(function(e) {
-        e.preventDefault();
-        mySwiper
-                .createSlide('<div class="title">Slide  '+(++count)+'</div>', 'swiper-slide '+randomColor()+'-slide')
-                .insertAfter(0)
-    });
-    $('.sdl-remove1').click(function(e) {
-        e.preventDefault();
-        mySwiper.removeSlide(0)
-    });
-    $('.sdl-removel').click(function(e) {
-        e.preventDefault();
-        mySwiper.removeLastSlide()
-    });
-    $('.sdl-remove2').click(function(e) {
-        e.preventDefault();
-        mySwiper.removeSlide(1)
-    });
-</script>
 </body>
 </html>
+
