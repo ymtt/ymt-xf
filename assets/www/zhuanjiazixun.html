@@ -15,25 +15,18 @@
              $('ul.promptu-menu').promptumenu({width:400, height:80, rows: 1, columns: 4, direction: 'horizontal', pages: true});
             $('ul.promptu-menu2').promptumenu({width:400, height:80, rows: 1, columns: 4, direction: 'horizontal', pages: false});
         })
-
-    
-        var i = 0 ;
-        function change() {
-            var h1 = document.getElementById('h1') ;
-            if(i == 0) {
-                h1.src = 'image/comment_collect1_icon.png' ; i = 1 ;
-            } else {
-                h1.src = 'image/comment_collect_icon.png' ; i = 0 ;
-            }
-        }
-        function change1() {
-            var h1 = document.getElementById('h2') ;
-            if(i == 0) {
-                h1.src = 'image/comment_comment1_icon.png' ; i = 1 ;
-            } else {
-                h1.src = 'image/comment_comment_icon.png' ; i = 0 ;
-            }
-        }
+         function a1(x) {
+             document.getElementsByClassName("ky-4")[x].style.backgroundImage = "url(image/comment_collect1_icon.png)";
+         }
+         function a2(x){
+             document.getElementsByClassName("ky-4")[x].style.backgroundImage= "";
+         }
+         function s1(x) {
+             document.getElementsByClassName("ky-5")[x].style.backgroundImage = "url(image/comment_comment1_icon.png)";
+         }
+         function s2(x){
+             document.getElementsByClassName("ky-5")[x].style.backgroundImage= "";
+         }
     </script>
 </head>
 <body>
@@ -226,12 +219,8 @@
         <div class="div24"><p>新修订《消防法》的宣传贯彻力度</p></div>
         <div class="div25"><p>的宣传贯彻力度，在河北省保定市公安消防支队与中国......</p></div>
         </a>
-        <div class="div25-1">
-        <div class="div26"><img src="image/comment_collect_icon.png" id="h1" onclick="change()"></div>
-        <div class="div27"><p>42354人</p></div>
-        <div class="div28"><img src="image/comment_comment_icon.png" id="h2" onclick="change1()"></div>
-        <div class="div27"><p>42354人</p></div>
-        </div>
+        <div class="ky-4" onmousemove="a1(0)" onmouseout="a2(0)"><p>42354人</p></div>
+        <div class="ky-5" onmousemove="s1(0)" onmouseout="s2(0)"><p>42354人</p></div>
     </div>
 </section>
 </body>

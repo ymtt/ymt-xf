@@ -1,46 +1,88 @@
-<!DOCTYPE html>
-<html ng-app="ionic">
+<html>
 <head>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
-    <script src="js/ionic.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/ionic.min.css">
-    <link href="css/ionicons.css" type="text/css" rel="stylesheet">
+    <title>无标题文档</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<style>
+    #idDiv{position:absolute; left:140px; top:200px; height:400; width:400;filter:progid:DXImageTransform.Microsoft.Matrix(enabled='false') ; }
+    #idDiv{position:absolute; left:140px; top:200px; height:400; width:400;filter:progid:DXImageTransform.Microsoft.Matrix(M11=1.0, sizingmethod="auto expand"); }
+</style>
+<script>
+    var sFilter="filter : progid:DXImageTransform.Microsoft.Matrix(";
+    var fM11,fM12,fM21,fM22,fDx,fDy,sType,sMethod;
+    var oDiv,oCodeDiv,oTxtRotation,oBtnRotation;
+    var i=0;
+
+    function rdl_SetRotation(deg) {
+        var deg2rad=Math.PI*2/360;
+        rad=deg*deg2rad;
+        costheta = Math.cos(rad);
+        sintheta = Math.sin(rad);
+        with (oDiv.filters.item(0)) {
+            M11=costheta;M12=-sintheta;M21=sintheta;M22=costheta;
+        }
+        rdl_UpdateMatrix();
+    }
+
+    function rdl_DoAnimation(){
+        oDiv.onfilterchange=rdl_DoAnimation;
+        i+=5;
+        if (i>359) {
+            i=0;
+            oDiv.onfilterchange=null;
+        }
+        rdl_SetRotation(i);
+    }
+
+    function rdl_UpdateMatrix() {
+        with (oDiv.filters.item(0)) {
+            fM11=Math.round(M11*10)/10;fM12=Math.round(M12*10)/10;fM21=Math.round(M21*10)/10;fM22=Math.round(M22*10)/10;
+            fDx=Math.round(Dx*10)/10;fDy=Math.round(Dy*10)/10;sType=FilterType;sMethod=SizingMethod;
+        }
+        oCodeDiv.innerText=sFilter+"SizingMethod="+sMethod+",FilterType="+sType+",Dx="+fDx+",Dy="+fDy+",M11="+fM11+",M12="+fM12+",M21="+fM21+",M22="+fM22+");";
+    }
+
+    function rdl_Load(e){
+        oDiv=document.all("idDiv");
+        oCodeDiv=document.all("idCodeDiv");
+        oTxtRotation=document.all("idTxtRotation");
+        oBtnRotation=document.all("idBtnRotation");
+        var oSelType=document.all("idSelType");
+        var oSelSize=document.all("idSelSize");
+        oSelType.onchange=new Function("with (this) oDiv.filters.item(0).filtertype=options(selectedIndex).value;rdl_UpdateMatrix();");
+        oSelSize.onchange=new Function("with (this) oDiv.filters.item(0).SizingMethod=options(selectedIndex).value;rdl_UpdateMatrix();");
+        oTxtRotation.onclick=new Function("if (this.value.length>4) this.value=0;");
+        oBtnRotation.onclick=new Function("rdl_SetRotation(oTxtRotation.value);");
+        rdl_UpdateMatrix();
+    }
+
+    function rdl_DoHFlip(e){
+        with (oDiv.filters.item(0)) {M11=0-M11;M12=0-M12;}
+        rdl_UpdateMatrix();
+    }
+
+    function rdl_DoVFlip(e){
+        with (oDiv.filters.item(0)) {M21=0-M21;M22=0-M22;}
+        rdl_UpdateMatrix();
+    }
+
+    window.onload=rdl_Load;
+</script>
 </head>
 <body>
-<ion-tabs class="tabs-positive tabs-icon-left">
+<div id=idParentDiv><div id=idDiv>
+    <img src="http://t3.baidu.com/it/u=1557755265,3956708856&fm=0&gp=0.jpg" align="right"><h2 >Matrix Filter</h2><b>Written by Rain1977.<br>All rights reserved . Terms of Use .</b>
+</div></div>
 
-    <ion-tab  icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline">
-        <ion-view>
-            <ion-header-bar class="bar-positive">
-            </ion-header-bar>
-            <ion-content>
-                <p>home content</p>
-            </ion-content>
-        </ion-view>
-    </ion-tab>
-
-    <ion-tab title="About" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline" >
-        <ion-view>
-            <ion-header-bar  class="bar-positive">
-                <h1 class="title">about tab</h1>
-            </ion-header-bar>
-            <ion-content>
-                <p>about content</p>
-            </ion-content>
-        </ion-view>
-    </ion-tab>
-
-    <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline">
-        <ion-view>
-            <ion-header-bar  class="bar-positive">
-                <h1 class="title">settings tab</h1>
-            </ion-header-bar>
-            <ion-content>
-                <p>settings content</p>
-            </ion-content>
-        </ion-view>
-    </ion-tab>
-
-</ion-tabs>
+<br>
+<table><tr>
+    <td><input type=button value=左右反转 onclick="rdl_DoHFlip();"><input type=button value="上下反转" onclick="rdl_DoVFlip();"></td>
+    <td ><input id=idTxtRotation type=text value="输入角度数字" size=14></input>&nbsp;<input id=idBtnRotation type=button value="旋转"></td>
+    <td ><select id=idSelSize><option value="auto expand">auto expand</option><option value="clip to original">clip to original</option></select></td>
+    <td ><select id=idSelType><option value="bilinear">Bilinear</option><option value="nearest">Nearest Neighbour</option></select></td>
+    <td><input type=button value="动画" onclick="rdl_DoAnimation();"></td>
+</tr></table>
+<br>
+<div id=idCodeDiv>filter</div>
 </body>
 </html>

@@ -4,7 +4,7 @@
 }
 html,body{
     width: 100%;
-    height:700px;
+    height:auto;
 
 }
 header{
@@ -230,59 +230,6 @@ footer ul li{
     line-height: 30px;
     color: #000000;
 }
-.yy1{
-    width: 100%;
-    height: 80px;
-    float: left;
-    margin-top: 20px;
-}
-.yy1 ul{
-
-    list-style: none;
-}
-.yy1 ul li{
-    width: 100%;
-    height: 600px;
-    float: left;
-}
-.yy1 .yy_1{
-    width: 100%;
-    height: 40px;
-    border-top:1px solid #ECECEC;
-    border-bottom: 1px solid #ECECEC;
-    background-image: url("../image/the-triangle1_icon.png");
-    background-repeat: no-repeat;
-    background-position: 10% 50%;
-    background-color: #CCCCCC;
-    float: left;
-}
-.yy_1 p{
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 40px;
-    margin-left: 20%;
-}
-.yy1 .yy_2{
-    width: 100%;
-    height: 40px;
-    border-bottom: 1px solid #ECECEC;
-    background-image: url("../image/the-triangle1_icon.png") ;
-    background-repeat: no-repeat;
-    background-position: 10% 50%;
-    background-color: #CCCCCC;
-    float: left;
-}
-.yy_2 p{
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 40px;
-    margin-left: 20%;
-}
-.yy3{
-    width: 100%;
-    height: 600px;
-    float: left;
-}
 #demo1 {
     display:none;
 }
@@ -411,6 +358,8 @@ input{
     background-color: #ffffff;
     line-height: 30px;
 }
-
+.nav_tab{
+    margin-bottom: 60px;
+}
 
 

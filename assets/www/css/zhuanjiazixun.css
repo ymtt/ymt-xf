@@ -463,7 +463,7 @@ input{
 }
 .div23{
     width: 20%;
-    height: auto;
+    height: 100px;
     margin-top: 10px;
     float: left;
     margin-left: 5%;
@@ -497,31 +497,33 @@ input{
     overflow: hidden;
     float: left;
 }
-.div25-1{
- width: 60%;
-    height: 20px;
-    float: left;
-    margin-left: 40%;
+.ky-4{
+    width: 30%;
+    height: 30px;
     margin-top: 10px;
-}
-.div26{
     float: left;
-    margin-left: 10%;
+    background: url("../image/comment_collect_icon.png")no-repeat 30% 50%;
 }
-.div27{
-    margin-left: 5px;
-    float: left;
-}
-.div27 p{
-    font-family: "微软雅黑";
+.ky-4 p{
+    float: right;
     font-size: 0.75em;
-    line-height: 18px;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 30px;
     color: #000000;
 }
-.div28{
-    margin-top: 2px;
-   float: left;
-    margin-left: 20%;
+.ky-5{
+    width: 30%;
+    height: 30px;
+    margin-top: 10px;
+    float: left;
+    background: url("../image/comment_comment_icon.png")no-repeat 30% 50%;
+}
+.ky-5 p{
+    float: right;
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 30px;
+    color: #000000;
 }
 
 .blue{
