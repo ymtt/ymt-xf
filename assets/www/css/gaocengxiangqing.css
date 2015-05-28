@@ -77,13 +77,13 @@ section{
     font-size: 0.85em;
     margin-left: 5%;
     color: #737373;
+    margin-bottom: 10px;
 }
 footer{
     width: 100%;
     height: auto;
     float: left;
-    position: fixed;
-    bottom: 0;
+    background-color: #ffffff;
     border-top: 5px solid #CCCCCC;
 }
 .div11{

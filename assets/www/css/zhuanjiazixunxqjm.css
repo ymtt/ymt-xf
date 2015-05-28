@@ -115,7 +115,7 @@ span button{
 
 }
 .div7{
-    width: 20%;
+    width: 25%;
     height: 40px;
     float: left;
     margin-left: 2%;
@@ -130,7 +130,7 @@ span button{
     color: #737373;
 }
 .div8{
-    width: 75%;
+    width: 70%;
     height: auto;
     float: left;
 }
@@ -144,7 +144,7 @@ span button{
     margin-bottom: 30px;
 }
 .div9{
-    width: 75%;
+    width: 70%;
     height: 100px;
     float: left;
 }
@@ -192,7 +192,7 @@ span button{
     border-bottom: 1px solid #CCCCCC;
 }
 .div12{
-    width: 75%;
+    width: 70%;
     height: 200px;
     float: left;
 }.div12 ul{
@@ -223,6 +223,7 @@ span button{
      background-color: #05A0D7;
      filter:alpha(Opacity=80);
      -moz-opacity:0.8;opacity: 0.8;
+     overflow: hidden;
  }
  .div14 p{
      width: 100%;
