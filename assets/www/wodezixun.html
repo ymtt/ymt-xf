@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title>我的咨询</title>
     <link href="css/wodezixun.css" type="text/css" rel="stylesheet" media="screen" >
+    <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/wodezixun.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            expertslist();
+            //CreateExpertsList("222","隔壁老王","你好");
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -12,7 +19,9 @@
     <div class="div2"><p>我的咨询</p></div>
     <div class="div3"><a href="sousuo.html"> <img src="image/search_icon.png"></a></div>
 </header>
+
 <section  class="nav_tab" id="nav_tab1">
+
     <div class="hh1">
         <a href="huihuaXQ.html">
         <div class="hh2">
@@ -23,59 +32,9 @@
         <div class="hh5"><p>谢谢时代精神，同时加大修订</p></div>
         </a>
     </div>
-    <div class="hh1">
-        <a href="huihuaXQ.html">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>李成荣</p></div>
-            <div class="hh4"><p>4</p></div>
-            <div class="hh5"><p>谢谢时代精神，同时加大修订</p></div>
-        </a>
-    </div>
-    <div class="hh1">
-        <a href="">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>李成荣</p></div>
-            <div class="hh4"><p>4</p></div>
-            <div class="hh5"><p>谢谢时代精神，同时加大修订</p></div>
-        </a>
-    </div>
-    <div class="hh1">
-        <a href="">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>李成荣</p></div>
-            <div class="hh4"><p>4</p></div>
-            <div class="hh5"><p>谢谢时代精神，同时加大修订</p></div>
-        </a>
-    </div>
-    <div class="hh1">
-        <a href="">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>李成荣</p></div>
-            <div class="hh4"><p>4</p></div>
-            <div class="hh5"><p>谢谢时代精神，同时加大修订</p></div>
-        </a>
-    </div>
-
-    <div class="hh1">
-        <a href="">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>李成荣</p></div>
-            <div class="hh4"><p>4</p></div>
-            <div class="hh5"><p>谢谢时代精神，同时加大修订</p></div>
-        </a>
-    </div>
 
 </section>
+
 <section  class="nav_tab" id="nav_tab2" style="display: none">
 <div class="div4">
     <div class="div5">
@@ -120,6 +79,7 @@
     <div class="div7"><button>取消关注</button></div>
     </div>
 </section>
+
 <section  class="nav_tab" id="nav_tab3" style="display: none">
     <div class="btn">
     <input type="button" id="btn1"  style="background: url(image/the-triangle1_icon.png)no-repeat 10% 50%" class="btn1" onclick="a()">

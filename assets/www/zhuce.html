@@ -13,28 +13,29 @@
 
     $(document).ready(function () {
              $('#submitform').click(function () {
-                     var ajaxURL="http://120.24.172.105:8000/fw?controller=com.xfsm.action.RegAction"
-                       var x=$("form").serialize();
-                       alert("提示："+$("#regform").serialize());
-                       $.ajax({
-                            type:"POST",
-                            dataType:"html",
-                            url:ajaxURL,
-                            data:$("form").serialize(),
-                            success:function(result){
-                                 var json = eval("(" +result+ ")");
-                                 /*alert(json.result);*/
-                                 if(json.result=="Y"){
-                                    window.location.href="denglu.html";
-                                 }else{
-                                    alert(json.result);
-                                 }
-                            },error:function(XMLHttpRequest,textStatus,errorThrown){
-                               /* var errdata = eval("(" +data+ ")");
-                                alert("error:"+errdata.result);*/
-                                alert(textStatus+errorThrown);
-                            }
-                       });
+                    var ajaxURL="http://120.24.172.105:8000/fw?controller=com.xfsm.action.RegAction"
+                    var loginname=$("#loginname").val();
+                    var pwd=$("#pwd").val();
+                    var phone=$("#phone").val();
+                    //alert($("#regform").serialize());
+                   $.ajax({
+                        type:'post',
+                        dataType:'html',
+                        url:ajaxURL,
+                        data:{"loginname":loginname,"pwd":pwd,"t":"002","phone":phone},
+                       //data:$("#regform").serialize();
+                        success:function(result){
+                            var json = eval("(" +result+ ")");
+                            if(json.result=="Y"){
+                                window.location.href="denglu.html";
+                             }else{
+                                alert("错误提示："+json.result);
+                             }
+                        },error:function(error){
+                            var last=JSON.stringify(error);
+                            alert("失败提示："+last);
+                        }
+                    });
               })
     })
     /*手机号码验证*/
@@ -78,13 +79,13 @@
     <div class="div3-1">
         <img src="image/z_user-name_icon.png">
     </div>
-    <input type="text" placeholder="输入用户名" required="" name="login_name">
+    <input type="text" placeholder="输入用户名" required="" name="login_name" id="loginname">
 </div>
 <div class="div4">
     <div class="div4-1">
         <img src="image/z_password_icon.png">
     </div>
-    <input type="password" placeholder="输入密码" required="" name="pwd">
+    <input type="password" placeholder="输入密码" required="" name="pwd" id="pwd">
 </div>
 <div class="div5">
     <div class="div5-1">
@@ -96,7 +97,7 @@
         <div class="div6-1">
             <p>+86</p>
         </div>
-        <input type="password" placeholder="输入你的手机号" required="">
+        <input type="password" placeholder="输入你的手机号" required="" id="phone">
         <input type="button" value="获取验证码" style="background-color: #05A0D7;color: #ffffff;width: 25%">
     </div>
     <div class="yz">

@@ -18,10 +18,15 @@ function getnews(type,func){
                                 var title=list[key]['article_title'];
                                 var hitnum=list[key]['hitnum'];
                                 var id=list[key]['id'];
+
                                 if(hitnum==null){
                                     hitnum=0;
                                 }
-                                func(title,title,id);
+
+                                   func(title,title,id);
+
+
+                               //func(title,title,id);
                             });
                         }else{
                             alert("获取新闻出现错误！");

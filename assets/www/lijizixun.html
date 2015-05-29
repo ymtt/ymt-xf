@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>立即咨询</title>
     <link href="css/lijizixun.css" type="text/css" rel="stylesheet" media="screen">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/lijizixun.js"></script>
     <script language="javascript" type="text/javascript">
         function showdiv() {
             document.getElementById("bg").style.display ="block";
@@ -13,6 +15,26 @@
             document.getElementById("bg").style.display ='none';
             document.getElementById("show").style.display ='none';
         }
+
+        $(document).ready(function(){
+
+        });
+
+        //立即咨询(提问)
+        function subs(){
+            //标题
+            var tit=document.getElementById("title").value;
+            //内容
+            var content=document.getElementById("content").value;
+            //问题类型
+            var points="gg1";
+            //专家id
+            var expert="admin2";
+
+            clickconsultation(tit,content,points,expert);
+
+        }
+
     </script>
 </head>
 <body>
@@ -27,16 +49,16 @@
         <p>向千万专家提问！</p>
     </div>
     <div class="div4">
-    <textarea type="text" placeholder="输入咨询标题......"></textarea>
+    <textarea type="text" placeholder="输入咨询标题......"  id="title">ddddx</textarea>
     </div>
     <div class="div5">
-        <textarea placeholder="输入咨询内容......" type="text" ></textarea>
+        <textarea placeholder="输入咨询内容......" type="text" id="content"></textarea>
     </div>
     <div class="div6">
      <p>+上传附件</p>
     </div>
     <div class="div7">
-        <input type="button" value="提交咨询" onclick="showdiv()">
+        <input type="button" value="提交咨询" onclick="subs()">
     </div>
 </section>
 <footer>

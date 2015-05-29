@@ -27,13 +27,16 @@
                             //base64编码
                             var x=base64encode(utf16to8(data));
                            window.sessionStorage.setItem("session",json.sId);
+                           window.localStorage.getItem("user",username);
+                           alert(json.sId);
                            if(json.result=="Y"){
                                  alert("登录成功");
                                  window.location.href="index.html";
                            }else{
-                               alert("登录失败")
+                               alert("登录失败"+json.result);
                            }
-
+                         },error:function(error){
+                            alert(JSON.stringify(error));
                          }
                      })
                 })

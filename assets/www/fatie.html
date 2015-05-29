@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="css/fatie.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/forumcontent.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        });
+        function sendpost(){
+            var title=$("#title").val();
+            var content=$("#content").val();
+            ReplyThread(title,content);
+            //alert(title+content);
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -14,16 +27,16 @@
 </header>
 <section>
     <div class="div4">
-        <textarea type="text" placeholder="输入标题......"></textarea>
+        <textarea type="text" placeholder="输入标题......" id="title"></textarea>
     </div>
     <div class="div5">
-        <textarea placeholder="输入内容......" type="text" ></textarea>
+        <textarea placeholder="输入内容......" type="text"  id="content"></textarea>
     </div>
     <div class="div6">
         <p>+上传附件</p>
     </div>
     <div class="div7">
-        <input type="button" value="发帖" onclick="showdiv()">
+        <input type="button" value="发帖" onclick="sendpost()">
     </div>
 </section>
 </body>
