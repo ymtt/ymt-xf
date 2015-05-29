@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html body{
+    width: 100%;
+    height:auto;
+    background-color: #ECECEC;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+header{
+    width: 100%;
+    height:40px;
+    float: left;
+    background-color: #05A0D7;
+}
+.header-1{
+    width: 50%;
+    height:auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 3px;
+}
+.header-1 img{
+    width: 45%;
+    height: auto;
+    max-width: 100%;
+}
+.header-2 {
+    width: 10%;
+    height: auto;
+    float: right;
+    margin-right:5%;
+}
+.header-2 img{
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+section{
+    width: 98%;
+    height:190px;
+    background: #EDEDED;
+    float: left;
+    margin-left: 1%;
+    margin-top: 5px;
+
+}
+.section-1{
+    width: 100%;
+    height:190px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.section-1 ul{
+    list-style: none;
+    width: 100%;
+    height: 150px;
+}
+.section-1 ul li{
+    width: 33%;
+    height: auto;
+    float: left;
+    margin-bottom: 10px;
+}
+.div1{
+    width: 60%;
+    height: auto;
+    margin-left: 31%;
+    margin-top: 15px;
+}
+.div1 img{
+    max-width: 60%;
+}
+.div2{
+    width: 100%;
+    height: 20px;
+}
+.div2 p{
+    width: 100%;
+    height: 20px;
+    font-size: 0.65em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 20px;
+    text-align: center;
+    color: #737373;
+
+}
+.div3{
+    width: 98%;
+    height:180px ;
+    margin-top: 5px;
+    float: left;
+    margin-left: 1%;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.div4{
+    width: 50%;
+    height: 30px;
+    float: left;
+}
+.div4 p{
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+    line-height: 30px;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #737373;
+}
+.div5{
+    width: 50%;
+    height: 30px;
+    float: right;
+}
+.div5 p{
+    width: auto;
+    height: auto;
+    margin-left:45% ;
+    line-height: 30px;
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #737373;
+}
+.div6{
+    width: 100%;
+    height:auto;
+    float: left;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+.div6-1{
+    width: 16%;
+    height: auto;
+    list-style: none;
+    float: left;
+    margin-left: 2%;
+    margin-top: 3px;
+}
+.div6-1 ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.div6-1 ul li{
+    width: 100%;
+    height:38px;
+    float: left;
+    background-color: #05A0D7;
+    border-radius: 5px;
+    margin-bottom: 2px ;
+
+}
+.div7{
+    width: 100%;
+    height: 38px;
+}
+.div7 p{
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.div8{
+    width: 82%;
+    height: auto;
+    float: left;
+}
+.div8 table{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+.div8 table tr{
+    width: auto;
+    height: 38px;
+    background-color: #05A0D7;
+}
+.div8 table tr td{
+    border-radius: 5px;
+}
+.div8 table tr td p{
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.div9{
+    width: 100%;
+    height: 148px;
+    float: left;
+}
+.div10{
+    width: 48%;
+    height: 143px;
+    float: left;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 5px;
+    margin-left: 1%;
+}
+.div11{
+    width: 48%;
+    height: 143px;
+    float: left;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 5px;
+    margin-left: 2%;
+}
+.div12{
+    width: 100%;
+    height:30px;
+    float: left;
+
+}
+.div12 p{
+    width: auto;
+    height: auto;
+    line-height: 30px;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-left: 5%;
+}
+.div13{
+    width: 100%;
+    height:20px;
+    float: left;
+
+}
+.div13 p{
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-left: 5%;
+    color: #CCCCCC;
+}
+.div14{
+    width: 40%;
+    height:auto ;
+    float: left;
+    margin-left: 5%;
+}
+.div14 img{
+    max-width: 100%;
+}
+.div15{
+    width: 50%;
+    height:auto;
+    float: right;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.div15 p{
+    width: auto;
+    height:68px;
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+
+    text-overflow: ellipsis;
+    color: #CCCCCC;
+    margin-right: 5%;
+    text-indent: 12px;
+}
+.div16{
+    width: 100%;
+    height:30px;
+    float: left;
+
+}
+.div16 p{
+    width: auto;
+    height: auto;
+    line-height: 30px;
+    font-size: 1em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-left: 5%;
+}
+.div17{
+    width: 40%;
+    height:auto ;
+    float: left;
+    margin-top:10px;
+    margin-left: 5%;
+}
+.div17 img{
+    max-width: 100%;
+}
+.div18{
+    width: 50%;
+    height:auto ;
+    float: right;
+    margin-top: 10px;
+    margin-left: 5%;
+
+}
+.div18 p{
+    width: auto;
+    height:68px;
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #CCCCCC;
+    margin-right: 5%;
+    text-indent: 12px;
+
+}
+footer{
+    width: 100%;
+    height: 50px;
+    float: left;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+}
+footer ul{
+    width: 100%;
+    height: 50px;
+    list-style: none;
+}
+footer ul li{
+    width: 20%;
+    height: 50px;
+    float: left;
+}
+footer ul li a:hover p{
+    color: #05A0D7;
+}
+.div19{
+    width: 100%;
+    height: 50px;
+    background: url("../image/register_icon.png") no-repeat 50% 20%;
+    float: left;
+}
+.div19 p{
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 32px;
+    text-align: center;
+    color: #737373;
+}
+.div20 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/suggest_icon.png") no-repeat 50% 20%;
+    float: left;
+}
+.div20 p{
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 32px;
+    text-align: center;
+    color: #737373;
+}
+.div21 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/help_icon.png") no-repeat 50% 20%;
+    float: left;
+}
+.div21 p {
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 32px;
+    text-align: center;
+    color: #737373;
+}
+.div22 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/setting-up_icon.png") no-repeat 50% 20%;
+    float: left;
+}
+.div22 p {
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 32px;;
+    text-align: center;
+    color: #737373;
+}
+.div23 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/collect_icon.png") no-repeat 50% 20%;
+    float: left;
+}
+.div23 p {
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    margin-top: 32px;;
+    text-align: center;
+    color: #737373;
+}
