@@ -55,6 +55,7 @@ a{
     height: auto;
     float: left;
     background-color: #ffffff;
+    margin-bottom: 60px;
 }
 .div4{
     width: 100%;
@@ -358,8 +359,6 @@ input{
     background-color: #ffffff;
     line-height: 30px;
 }
-.nav_tab{
-    margin-bottom: 60px;
-}
+
 
 

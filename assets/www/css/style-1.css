@@ -1,11 +1,11 @@
 *{
- padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
 html body{
     width: 100%;
     height:auto;
-background-color: #ECECEC;
+    background-color: #ECECEC;
 }
 a{
     text-decoration: none;
@@ -17,13 +17,13 @@ a{
 }
 header{
     width: 100%;
-   height:40px;
+    height:40px;
     float: left;
     background-color: #05A0D7;
 }
 .header-1{
     width: 50%;
-   height:auto;
+    height:auto;
     float: left;
     margin-left: 5%;
     margin-top: 3px;
@@ -46,7 +46,7 @@ header{
 }
 section{
     width: 98%;
-    height:130px;
+    height:150px;
     background: #EDEDED;
     float: left;
     margin-left: 1%;
@@ -55,26 +55,25 @@ section{
 }
 .section-1{
     width: 100%;
-    height:130px;
+    height:150px;
     background: #FFFFFF;
     border-radius: 10px;
 }
 .section-1 ul{
-     list-style: none;
+    list-style: none;
     width: 100%;
     height: 150px;
- }
+}
 .section-1 ul li{
     width: 33%;
-    height: 40%;
+    height: auto;
     float: left;
-
-
+    margin-bottom: 10px;
 }
 .div1{
-    width: 50%;
+    width: 60%;
     height: auto;
-    margin-left: 34%;
+    margin-left: 31%;
     margin-top: 5px;
 }
 .div1 img{
@@ -82,8 +81,7 @@ section{
 }
 .div2{
     width: 100%;
-    height: 20px
-
+    height: 20px;
 }
 .div2 p{
     width: 100%;
@@ -93,10 +91,11 @@ section{
     line-height: 20px;
     text-align: center;
     color: #737373;
+
 }
 .div3{
     width: 98%;
-    height:130px ;
+    height:150px ;
     margin-top: 5px;
     float: left;
     margin-left: 1%;
@@ -133,14 +132,14 @@ section{
 }
 .div6{
     width: 100%;
-    height: 100px;
+    height:auto;
     float: left;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
 .div6-1{
     width: 16%;
-    height: 90px;
+    height: auto;
     list-style: none;
     float: left;
     margin-left: 2%;
@@ -153,7 +152,7 @@ section{
 }
 .div6-1 ul li{
     width: 100%;
-    height:28px;
+    height:35px;
     float: left;
     background-color: #05A0D7;
     border-radius: 5px;
@@ -162,28 +161,28 @@ section{
 }
 .div7{
     width: 100%;
-    height: 28px;
+    height: 35px;
 }
 .div7 p{
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-    line-height: 28px;
+    line-height: 35px;
     text-align: center;
     color: #FFFFFF;
 }
 .div8{
     width: 82%;
-    height: 90px;
+    height: auto;
     float: left;
 }
 .div8 table{
     width: 100%;
-    height: 90px;
+    height: auto;
 
 }
 .div8 table tr{
     width: auto;
-    height: 28px;
+    height: 35px;
     background-color: #05A0D7;
 }
 .div8 table tr td{
@@ -192,18 +191,18 @@ section{
 .div8 table tr td p{
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-    line-height: 28px;
+    line-height: 35px;
     text-align: center;
     color: #FFFFFF;
 }
 .div9{
     width: 100%;
-    height: 108px;
+    height: 128px;
     float: left;
 }
 .div10{
     width: 48%;
-    height: 103px;
+    height: 123px;
     float: left;
     border-radius: 10px;
     background-color: #ffffff;
@@ -212,10 +211,10 @@ section{
 }
 .div11{
     width: 48%;
-    height: 103px;
+    height: 123px;
     float: left;
     border-radius: 10px;
- background-color: #ffffff;
+    background-color: #ffffff;
     margin-top: 5px;
     margin-left: 2%;
 }
@@ -340,7 +339,7 @@ footer ul li a:hover p{
 }
 .div19{
     width: 100%;
-   height: 40px;
+    height: 40px;
     background: url("../image/register_icon.png") no-repeat 50% 20%;
     float: left;
 }
@@ -403,5 +402,3 @@ footer ul li a:hover p{
     text-align: center;
     color: #737373;
 }
-
-

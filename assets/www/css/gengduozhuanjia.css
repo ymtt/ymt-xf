@@ -105,14 +105,14 @@ input{
 }
 .div5 ul li{
     width:45.5%;
-    height:240px;
+    height:auto;
     float: left;
     margin-left: 3%;
     margin-top: 5px;
 }
 .div6{
     width: 100%;
-
+    height: auto;
 }
 .div6 img{
     max-width: 100%;
