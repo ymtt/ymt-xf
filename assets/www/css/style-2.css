@@ -178,8 +178,7 @@ section{
 .div8 table{
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
-
+    float: left;
 }
 .div8 table tr{
     width: auto;
@@ -201,11 +200,10 @@ section{
     width: 100%;
     height: auto;
     float: left;
-   margin-top: 5px;
 }
 .div10{
     width: 48%;
-    height: 138px;
+    height: 143px;
     float: left;
     border-radius: 10px;
     background-color: #ffffff;
@@ -214,7 +212,7 @@ section{
 }
 .div11{
     width: 48%;
-    height: 138px;
+    height: 143px;
     float: left;
     border-radius: 10px;
     background-color: #ffffff;
