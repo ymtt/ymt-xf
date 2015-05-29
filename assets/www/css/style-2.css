@@ -199,12 +199,13 @@ section{
 }
 .div9{
     width: 100%;
-    height: 148px;
+    height: auto;
     float: left;
+   margin-top: 5px;
 }
 .div10{
     width: 48%;
-    height: 143px;
+    height: 138px;
     float: left;
     border-radius: 10px;
     background-color: #ffffff;
@@ -213,7 +214,7 @@ section{
 }
 .div11{
     width: 48%;
-    height: 143px;
+    height: 138px;
     float: left;
     border-radius: 10px;
     background-color: #ffffff;
