@@ -6,6 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/huihuaXQ.css">
     <link rel="stylesheet" href="css/idangerous.swiper.css">
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/huihua.js"></script>
+    <style>
+        #ss2{
+            display:none;
+        }
+    </style>
     <script type="text/javascript">
         function showme(){
             var div = document.getElementById("aaa");
@@ -15,20 +21,41 @@
                 div.style.display = "block"
             }
         }
+        
         $(document).ready(function(){
+            //获得所有消息
+            getmsg();
+
+            //发送消息
+            //sendmsgs("内容有点长，有点多");
+
+            //轮询获得消息
+            setInterval('getQQUnreadmsg()',5000);
+
+            //绑定点击发送事件
+             $("#send").click(function(){
+                var s=$("#text1").val();
+                sendmsgs(s);
+            });
+
+            //随时检查文本框值有无改变，从而改变按钮
             setInterval('a()',100);
+
         });
-        function a(){
-            var s=$("#ss").val();
-            if(s==""||s==null){
+
+         function a(){
+             var s=$("#text1").val();
+             if(s==""||s==null){
                 $("#ss1").css("display","block");
                 $("#ss2").css("display","none");
-            }else if(s!=""||s!=null){
-
+             }else{
                 $("#ss1").css("display","none");
                 $("#ss2").css("display","block");
             }
-        }
+         }
+
+
+
     </script>
 </head>
 <body>
@@ -38,14 +65,14 @@
     <a href="#"><div class="div3"><p>预约</p></div></a>
 </header>
 <section>
-<div class="div4">
-    <div class="div5">
-        <img src="image/16.png">
+    <div class="div4">
+        <div class="div5">
+            <img src="image/16.png">
+        </div>
+        <div class="div6">
+            <p>你好！</p>
+        </div>
     </div>
-    <div class="div6">
-        <p>你好！</p>
-    </div>
-</div>
     <div class="div4">
         <div class="div7">
             <img src="image/16.png">
@@ -124,8 +151,8 @@
         <div class="div10">
             <img src="image/the-keyboard_icon.png">
         </div>
-        <div class="div11">
-            <input type="text"onblur="a()"  id="ss">
+        <div class="div11" id="ss">
+            <input type="text" id="text1">
         </div>
         <div class="div12">
             <img src="image/the-recording_icon.png">
@@ -134,75 +161,75 @@
             <img src="image/more-choice_icon.png" onclick="showme()">
         </div>
         <div class="div14" id="ss2">
-            <button >发送</button>
+            <button id="send">发送</button>
         </div>
     </div>
     <div id="aaa" style="display:block">
-            <div class="swiper-container"  >
-                <div class="swiper-wrapper"  >
-                    <div class="swiper-slide">
-                        <a href="">
+        <div class="swiper-container"  >
+            <div class="swiper-wrapper"  >
+                <div class="swiper-slide">
+                    <a href="">
                         <div class="div15">
                             <img src="image/picture_icon.png">
                         </div>
-                        </a>
-                        <div class="div16">
-                            <img src="image/speech-input_icon.png">
-                        </div>
+                    </a>
+                    <div class="div16">
+                        <img src="image/speech-input_icon.png">
+                    </div>
 
-                        <div class="div16">
-                            <img src="image/small-video_icon.png">
-                        </div>
+                    <div class="div16">
+                        <img src="image/small-video_icon.png">
+                    </div>
 
-                        <div class="div16">
-                            <img src="image/video-chat_icon.png">
-                        </div>
+                    <div class="div16">
+                        <img src="image/video-chat_icon.png">
+                    </div>
 
-                        <div class="div15">
-                            <img src="image/my-collection_icon.png">
-                        </div>
+                    <div class="div15">
+                        <img src="image/my-collection_icon.png">
+                    </div>
 
-                        <div class="div16">
-                            <img src="image/chatting-records_icon.png">
-                        </div>
+                    <div class="div16">
+                        <img src="image/chatting-records_icon.png">
+                    </div>
 
-                        <div class="div16">
-                            <img src="image/taking-pictures_icon.png">
-                        </div>
+                    <div class="div16">
+                        <img src="image/taking-pictures_icon.png">
+                    </div>
 
-                        <div class="div16">
-                            <img src="image/upload-file_icon.png">
+                    <div class="div16">
+                        <img src="image/upload-file_icon.png">
+                    </div>
+                    <div class="div17">
+                        <div class="div18">
+                            <img src="image/red-dot1_background-color.png">
                         </div>
-                        <div class="div17">
-                            <div class="div18">
-                                <img src="image/red-dot1_background-color.png">
-                            </div>
-                            <div class="div19">
-                                <img src="image/red-dot2_background-color.png">
-                            </div>
+                        <div class="div19">
+                            <img src="image/red-dot2_background-color.png">
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="div15">
-                            <img src="image/business-card_icon.png">
-                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="div15">
+                        <img src="image/business-card_icon.png">
+                    </div>
 
-                        <div class="div16">
-                            <img src="image/location_icon.png">
+                    <div class="div16">
+                        <img src="image/location_icon.png">
+                    </div>
+                    <div class="div20">
+                        <div class="div18">
+                            <img src="image/red-dot2_background-color.png">
                         </div>
-                        <div class="div20">
-                            <div class="div18">
-                                <img src="image/red-dot2_background-color.png">
-                            </div>
-                            <div class="div19">
-                                <img src="image/red-dot1_background-color.png">
-                            </div>
+                        <div class="div19">
+                            <img src="image/red-dot1_background-color.png">
                         </div>
-                  </div>
-            <div class="pagination"></div>
+                    </div>
+                </div>
+                <div class="pagination"></div>
+            </div>
         </div>
-  </div>
-        </div>
+    </div>
 
     <script src="js/idangerous.swiper.min.js"></script>
     <script>

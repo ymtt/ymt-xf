@@ -1,4 +1,4 @@
-function getnews(type,func){
+function getnews(type,func,start,end,wh){
             var session=window.sessionStorage.getItem("session");
             var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
             if(session==null){
@@ -19,15 +19,32 @@ function getnews(type,func){
                                 var hitnum=list[key]['hitnum'];
                                 var id=list[key]['id'];
 
+
                                 if(hitnum==null){
                                     hitnum=0;
                                 }
 
-                                   func(title,title,id);
 
+                                if(key>=start&&key<end){
+                                    func(title,title,id);
+                                }else if(key>=end){
+                                    switch(wh){
+                                        case "notice":
+                                             CreateNoticeMore();
+                                        break;
+                                        case "edu":
+                                            CreateEduMore();
+                                        break;
+                                    }
+                                    return false;
+                                }
+                                if(start>size){
+                                    alert("没有更多了");
+                                    return false;
+                                }
 
-                               //func(title,title,id);
                             });
+
                         }else{
                             alert("获取新闻出现错误！");
                             window.location.href="denglu.html";
@@ -56,6 +73,15 @@ function CreateNoticeDom(title,content,id){
                $(".notice").html("<img src='image/07.png'>");
                $(".notice").append("<img src='image/08.png'>");
  }
+
+//加载更多公告
+ function CreateNoticeMore(){
+    $("#nav_tab2").append("<div class='gg'><a href='javascript:addn()' class='nmore'>点击加载更多</a></div>");
+ }
+ //加载更多教育新闻
+  function CreateEduMore(){
+     $("#nav_tab3").append("<div class='gg'><a href='javascript:adde()' class='emore'>点击加载更多</a></div>");
+  }
 
  function CreateEduDom(title,content,id){
         $("#nav_tab3").append("<div class='zx'><a href='javascript:Toinfo("+"\""+id+"\""+")'><div class='zx-1'><img src='image/08.png'></div><div class='intro'><span>"+title+

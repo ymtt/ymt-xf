@@ -27,7 +27,8 @@
                             //base64编码
                             var x=base64encode(utf16to8(data));
                            window.sessionStorage.setItem("session",json.sId);
-                           window.localStorage.getItem("user",username);
+                           window.localStorage.setItem("user",username);
+                           window.localStorage.setItem("userrole",json.role);
                            alert(json.sId);
                            if(json.result=="Y"){
                                  alert("登录成功");
@@ -45,7 +46,7 @@
 </head>
 <body>
 <header>
-    <a href="" id="back"><div class="div1"><img src="image/return_icon.png"></div></a>
+    <a href="#" id="back"><div class="div1"><img src="image/return_icon.png"></div></a>
     <div class="div2"><p>账号登陆</p></div>
 </header>
 <div class="div3">
