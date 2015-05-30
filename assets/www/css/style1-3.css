@@ -101,14 +101,14 @@ a{
 }
 .div9{
     width: 94%;
-    height: 135px;
+    height: 155px;
     float: left;
     background-color: #FFFFFF;
     margin-left: 3%;
 }
 .div9 ul{
     width: 16%;
-    height: 112px;
+    height: 130px;
     list-style: none;
     float: left;
     margin-top: 2px;
@@ -116,41 +116,37 @@ a{
 }
 .div9 ul li{
     width: 100%;
-    height: 38px;
+    height: 44px;
     float: left;
 
 }
 .div10{
     width: 100%;
-    height: 30px;
+    height: 40px;
 }
 .div10 p{
     font-size: 0.85em;
     font-family: "方正兰亭纤黑_GBK";
-    line-height: 30px;
+    line-height: 40px;
     text-align: center;
     color: #FFFFFF;
 }
 .div11{
     width: 84%;
-    height: 117px;
+    height: auto;
     float: left;
 }
 .div11 table{
     width: 100%;
     height: auto;
-
 }
 .div11 table tr{
     width: auto;
-
     background-color: #05A0D7;
-    margin-top: 20px;
 }
 .div11 table tr td{
     width: 25%;
     height: auto;
-    margin-top: 5px;
     border: 2px solid #FFFFFF;
 }
 .div11 table tr td p{
@@ -158,7 +154,7 @@ a{
     font-family: "方正兰亭纤黑_GBK";
     text-align: center;
     color: #FFFFFF;
-    margin-top: 6px;
+    margin-top: 12px;
 }
 section{
     width: 100%;
@@ -173,35 +169,35 @@ section ul{
 }
 section ul li{
     width: 100%;
-    height: 90px;
+    height: 95px;
     margin-top: 10px;
     float: left;
 }
 .div12{
     width: 22%;
-    height: 90px;
+    height: 95px;
     margin-left: 3%;
     float: left;
 }
 .div12 img{
     width: 100%;
-    height: 90px;
+    height: 95px;
     max-width: 100%;
 }
 .div13{
     width: 22%;
-    height: 90px;
+    height: 95px;
     margin-left: 2%;
     float: left;
 }
 .div13 img{
     width: 100%;
-    height: 90px;
+    height: 95px;
     max-width: 100%;
 }
 .div14{
     width: 46%;
-    height: 90px;
+    height: 95px;
     margin-right: 3%;
     float: right;
     overflow: hidden;
@@ -229,7 +225,7 @@ section ul li{
 }
 .div16{
     width: 46%;
-    height: 90px;
+    height: 95px;
     margin-left: 3%;
     float: left;
     overflow: hidden;
@@ -244,7 +240,7 @@ section ul li{
     height: 20px;
     float: left;
     margin-left:-46%;
-    margin-top: 70px;
+    margin-top: 75px;
     background: #09A087;
     filter:alpha(Opacity=80);
     -moz-opacity:0.7;opacity: 0.7;
@@ -266,33 +262,33 @@ section ul li{
 }
 .div18 img{
     width: 100%;
-    height: 90px;
+    height: 95px;
     max-width: 100%;
 }
 .div19{
     width: 22%;
-    height: 90px;
+    height: 95px;
     margin-left: 2%;
     float: left;
 }
 .div19 img{
     width: 100%;
-    height: 90px;
+    height: 95px;
     max-width: 100%;
 }
 .zc{
-    width: 52px;
-    height: 52px;
+    width: 58px;
+    height: 58px;
     float: left;
-    border-radius: 52px;
+    border-radius: 58px;
     background-color: #FFFFFF;
     margin-left: 100px;
     margin-top: 65px;
 }
 .zc img{
-    width: 46px;
-    height: 46px;
-    border-radius: 46px;
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
     margin-left: 3px;
     margin-top:3px;
 }
@@ -306,7 +302,7 @@ section ul li{
 }
 .zc-1 p{
     font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 30px;
     text-align: center;
     color:  #FFFFFF;
@@ -345,14 +341,14 @@ section ul li{
 }
 .zc-4 p{
     font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 40px;
     color: #FFFFFF;
 }
 .zc-5{
     width: 80%;
     height: 90px;
-   float: left;
+    float: left;
     margin-left: 20%;
     left: 20%;
     margin-top: 50px;
@@ -360,11 +356,11 @@ section ul li{
 .zc-6{
     width: 100%;
     height: 30px;
-   float: left;
+    float: left;
 }
 .zc-6 p{
     font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.9em;
+    font-size: 1em;
     color: #FFFFFF;
     line-height: 30px;
 }
