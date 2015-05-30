@@ -50,7 +50,7 @@ section{
     background: #EDEDED;
     float: left;
     margin-left: 1%;
-    margin-top: 5px;
+    margin-top: 8px;
 
 }
 .section-1{
@@ -96,7 +96,7 @@ section{
 .div3{
     width: 98%;
     height:180px ;
-    margin-top: 5px;
+    margin-top: 8px;
     float: left;
     margin-left: 1%;
     border-radius: 10px;
@@ -207,7 +207,7 @@ section{
     float: left;
     border-radius: 10px;
     background-color: #ffffff;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 1%;
 }
 .div11{
@@ -216,7 +216,7 @@ section{
     float: left;
     border-radius: 10px;
     background-color: #ffffff;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 2%;
 }
 .div12{
@@ -324,7 +324,7 @@ footer{
     height: 50px;
     float: left;
     background-color: #FFFFFF;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 footer ul{
     width: 100%;
