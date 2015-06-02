@@ -23,14 +23,14 @@
         }
         
         $(document).ready(function(){
-            //获得所有消息
-            getmsg();
+                //获得所有消息
+                getmsg("getQQAllMsg");
 
-            //发送消息
-            //sendmsgs("内容有点长，有点多");
+
+
 
             //轮询获得消息
-            setInterval('getQQUnreadmsg()',5000);
+            setInterval('getunreadmsg()',5000);
 
             //绑定点击发送事件
              $("#send").click(function(){
@@ -39,9 +39,15 @@
             });
 
             //随时检查文本框值有无改变，从而改变按钮
-            setInterval('a()',100);
+            setInterval('a()',1000);
 
         });
+
+          //读取未读消息
+          function getunreadmsg(){
+                //临时写成全部消息
+                getmsg("getQQAllMsg");
+          }
 
          function a(){
              var s=$("#text1").val();
