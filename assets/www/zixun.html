@@ -6,16 +6,30 @@
     <link href="css/zixun.css" type="text/css" rel="stylesheet" media="screen">
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/getnews.js"></script>
-    <script src="cordova.js"></script>
+   <!--<script src="cordova.js"></script>-->
     <script type="text/javascript">
+        var noticestart=0
+        var noticeend=10;
+        var edustart=0;
+        var eduend=10;
      $(document).ready(function(){
         var index=window.localStorage.getItem("Index");
         $("#back").attr("href",index);
+
         document.addEventListener("deviceready", onDeviceReady, false);
+
+            hotzixun("xf_article_h_news","read");
+
+             hotzixun("xf_article_h_news","new");
+
             //消防公告
-             getnews("xf_article_h_notice",CreateNoticeDom);
+             //setInterval("dsad()",50);
+             //初始加载10条
+             getnews("xf_article_h_notice",CreateNoticeDom,noticestart,noticeend,"notice");
              //教育新闻
-             getnews("xf_article_h_edu",CreateEduDom);
+             getnews("xf_article_h_edu",CreateEduDom,edustart,eduend,"edu");
+             var s={'sss':'cccc'};
+             //CreateNewZixun("国家主席习近平近日访问火星","就两星和平发展做出重要讲话","77",s);
      });
       function onDeviceReady() {
          //按钮事件
@@ -46,6 +60,11 @@
             }
         }
     </script>
+    <style>
+        .loading{
+            margin-left:35%;
+        }
+    </style>
 </head>
 <body>
 
@@ -159,12 +178,14 @@
             </li>
         </ul>
     </div>
-    
-    <div class="div6">
-        <div class="div7"><p>视屏资讯</p></div>
+    <!--热点资讯-->
+    <div class="loading">
+        <img src="image/loading.gif">
+    </div>
+    <!--<div class="div6">
+        <div class="div7"><p>热点资讯</p></div>
         <span class="span-1"><a href="shipinzixun.html"> <p>更多</p></a></span>
     </div>
-
     <div class="div10">
         <a href="shipinzixunXQ.html">
             <div class="div11"><p>新修订《消防法》的宣传贯彻力度</p></div>
@@ -175,15 +196,12 @@
                 <img src="image/08.png">
             </div>
         </a>
-    </div>
-
-
-
-    <div class="div6">
-        <div class="div7"><p>文字咨询</p></div>
+    </div>-->
+    <!--最新资讯-->
+    <!--<div class="div6">
+        <div class="div7"><p>最新咨询</p></div>
         <span class="span-1"><a href="wenzizixun.html"> <p>更多</p></a></span>
     </div>
-    
     <div class="div14">
         <a href="wenzizixunXQ.html">
             <div class="div15">
@@ -202,26 +220,29 @@
                 </div>
             </div>
         </a>
-    </div>
+    </div>-->
 </section>
 
 <!--消防公告-->
 <section class="nav_tab1" id="nav_tab2" style="display: none">
 
-    <div class="gg">
-        <a href="gonggaoXQ.html">
-            <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
-            <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-                河北省保定市公安消防支队与中国......
-            </p>
-            </div>
-            <span class="notice">
-                <img src="image/07.png">
-                <img src="image/07.png">
-                <img src="image/07.png">
-            </span>
-        </a>
+    <!-- <div class="gg">
+         <a href="gonggaoXQ.html">
+             <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
+             <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                 河北省保定市公安消防支队与中国......
+             </p>
+             </div>
+             <span class="notice">
+                 <img src="image/07.png">
+                 <img src="image/07.png">
+                 <img src="image/07.png">
+             </span>
+         </a>
+        <a href="javascript:adds()">点击加载更多</a>
     </div>
+    -->
+
 
 </section>
 
@@ -252,5 +273,6 @@
     </div>
 
 </section>
+<script src="js/loadmorenews.js"></script>
 </body>
 </html>

@@ -5,50 +5,13 @@
     <title>文字资讯</title>
     <link href="css/wenzizixun.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/wenzizixun.js"></script>
     <script>
         $(document).ready(function(){
             getnews("xf_article_h_news");
-            //CreateXfnewsDom("世界反法西斯胜利","世界反法西斯胜利","78");
+           // var s={"xxxxx":"cccccc"};
+           //CreateXfnewsDom("世界反法西斯胜利","世界反法西斯胜利","78",ddddddd);
         });
-        
-        function CreateXfnewsDom(title,content,hitnum){
-                $("section").append("<div class='div3'><a href='wenzizixunXQ.html'><div class='div4'><p>"+title+
-                    "</p></div><div class='div5'><p>"+content+
-                    "</p></div></a><div class='div6'><div class='div7'><p>"+hitnum+
-                    "</p></div><div class='div8'><img src='image/comment_comment_icon.png'></div></div></div>");
-        }
-        function getnews(type){
-            var session=window.sessionStorage.getItem("session");
-            var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
-            if(session==null){
-                alert("请登录后进行查看");
-            }else{
-               $.ajax({
-                    type:'get',
-                    datatype:'json',
-                    url:url,
-                    data:{"SESSIONID":session,"m":"list","type":type,"order":"new","start":"1"},
-                    success:function(data){
-                        var json=eval("("+data+")");
-                        if(json.result=="Y"){
-                            var size=json.datas['size'];
-                            var list=json.datas['listData'];
-                            $.each(list,function(key){
-                                var title=list[key]['article_title'];
-                                var hitnum=list[key]['hitnum'];
-                                if(hitnum==null){
-                                    hitnum=0;
-                                }
-                                CreateXfnewsDom(title,title,hitnum);
-                            });
-                        }else{
-                            alert("获取新闻出现错误！");
-                            window.location.href="denglu.html";
-                        }
-                    }
-                })
-            }
-        }
     </script>
 </head>
 <body>

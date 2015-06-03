@@ -2,6 +2,32 @@
 <head>
     <title>无标题文档</title>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <style>
+        #bbb{
+            display:none;
+        }
+    </style>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        setInterval('a()',100);
+    });
+
+    function a(){
+             var s=$("#test1").val();
+             if(s==""||s==null){
+                $("#aaa").css("display","block");
+                $("#bbb").css("display","none");
+             }else{
+                $("#aaa").css("display","none");
+                $("#bbb").css("display","block");
+             }
+     }
+
+
+
+    </script>
 </head>
 <style>
     #idDiv{position:absolute; left:140px; top:200px; height:400; width:400;filter:progid:DXImageTransform.Microsoft.Matrix(enabled='false') ; }
@@ -84,5 +110,16 @@
 </tr></table>
 <br>
 <div id=idCodeDiv>filter</div>
+
+<input id="test1"  type="text"/>
+
+<div id="aaa">
+    这里有个a
+</div>
+<div id="bbb">
+    这里有个b
+</div>
+
+
 </body>
 </html>
