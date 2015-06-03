@@ -1,188 +1,139 @@
 <!DOCTYPE html>
-<html ng-app="ionic">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
-    <script src="js/ionic.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/ionic.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style1.css">
-    <link rel="stylesheet" type="text/css" href="css/ionicons.css">
-</head>
+    <title></title>
+    <style>
+        body {
+            -webkit-text-size-adjust: none;
+
+        }
+        .pages h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+        #menu {
+            background-color: #5a5959;
+            float: left;
+            height: 100%;
+            width: 165px;
+        }
+        #menu h3 {
+            font-family: arial;
+            font-size: 12px;
+            color: #fff;
+            margin: 0;
+            padding: 4px 0 4px 10px;
+            background: -webkit-gradient(linear,left top,left bottom,color-stop(5%,rgba(90,89,89,1)),color-stop(85%,rgba(66,65,65,1)));
+            border-top: solid #6b6b6b 1px;
+            border-bottom: solid #3d3d3d 1px;
+            text-shadow: 0 -1px 1px #333;
+        }
+        #menu ul {
+            margin: 0;
+            padding: 0;
+            width: inherit;
+        }
+        #menu ul li a:link,
+        #menu ul li a:visited {
+            border-bottom: solid #333 1px;
+            box-shadow: 0 1px 0 #727272;
+            color: #fff;
+            display: block;
+            font-family: arial;
+            font-size: 14px;
+            padding: 10px 0 10px 10px;
+            text-decoration: none;
+            text-shadow: 0 1px 1px #000;
+            width: 165px;
+        }
+        #menu ul li a:hover,
+        #menu ul li a:active {
+            background-color: #716f6f;
+        }
+        .ui-body-c {
+            background-color: #fff;
+            line-height: 18px;
+        }
+        .active {
+            background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(30,29,29,1)),color-stop(21%,rgba(56,55,55,1)));
+            color: #fff;
+            text-shadow: 0 1px 1px #000;
+        }
+    </style>
+    <script>
+        $(document).bind("mobileinit", function () {
+            $.mobile.pushStateEnabled = true;
+        });
+        $(function () {
+            var menuStatus;
+            var show = function() {
+                if(menuStatus) {
+                    return;
+                }
+                $('#menu').show();
+                $.mobile.activePage.animate({
+                    marginLeft: "165px"
+                }, 300, function () {
+                    menuStatus = true
+                });
+            };
+            var hide = function() {
+                if(!menuStatus) {
+                    return;
+                }
+                $.mobile.activePage.animate({
+                    marginLeft: "0px"
+                }, 300, function () {
+                    menuStatus = false
+                    $('#menu').hide();
+                });
+            };
+            var toggle = function() {
+                if (!menuStatus) {
+                    show();
+                } else {
+                    hide();
+                }
+                return false;
+            };
+            // Show/hide the menu
+            $("a.showMenu").click(toggle);
+            $('#menu, .pages').live("swipeleft", hide);
+            $('.pages').live("swiperight", show);
+            $('div[data-role="page"]').live('pagebeforeshow', function (event, ui) {
+                menuStatus = false;
+                $(".pages").css("margin-left", "0");
+            });
+            // Menu behaviour
+            $("#menu li a").click(function () {
+                var p = $(this).parent();
+                p.siblings().removeClass('active');
+                p.addClass('active');
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 <body>
-<ion-side-menus>
-    <ion-side-menu-content>
-        <ion-header-bar class="bar-calm">
-            <a menu-toggle="left" class="button icon ion-navicon-round"></a>
-            <div class="div1"><img src="image/main interface_logo.png"></div>
-            <a href="sousuo.html"><div class="div2">
-                <img src="image/search_icon.png">
-            </div></a>
-
-        </ion-header-bar>
-        <ion-content class="positive-bg">
-            <div class="div4">
-                <img src="image/22.png">
-            </div>
-            <div class="div5">
-                <p>为进一步提高工作效率，同时加大新修订与中国加大新修订与</p>
-            </div>
-            <div class="div6">
-                <div class="div7"><p>咨询分类</p></div>
-                <div class="div8"><a href="zixunfenlei.html"><p>显示全部</p></a></div>
-            </div>
-            <div class="div9">
-                <ul>
-                    <li>
-                        <a href="">
-                            <div class="div10">
-                                <p>建筑</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="div10">
-                                <p>专业</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div class="div10">
-                                <p>关键词</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <div class="div11">
-                    <table>
-                        <tr>
-                            <td> <a href="gaoceng.html"><p>高层</p></a></td>
-                            <td><a href=""><p>超高层</p></a></td>
-                            <td><a href=""><p>商业综合</p></a></td>
-                            <td><a href=""><p>文体</p></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href=""><p>建筑定性</p></a></td>
-                            <td><a href=""><p>防火区分</p></a></td>
-                            <td><a href=""><p>平面布置</p></a></td>
-                            <td><a href=""><p>疏散避难</p></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href=""><p>防火分隔</p></a></td>
-                            <td><a href=""><p>防烟分区</p></a></td>
-                            <td><a href=""><p>疏散距离</p></a></td>
-                            <td><a href=""><p>疏散宽度</p></a></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <section>
-                <ul>
-                    <li>
-                        <div class="div12">
-                            <a href="zixun.html"> <img src="image/76.png"></a>
-                        </div>
-                        <div class="div13">
-                            <a href="zhuanjiazixun.html"><img src="image/77.png"></a>
-                        </div>
-                        <div class="div14">
-                            <a href=""> <img src="image/24.png"></a>
-                        </div>
-                        <div class="div15">
-                            <p>认识身边的消防标志</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="div16">
-                            <a href="">  <img src="image/08.png"></a>
-                        </div>
-                        <div class="div17">
-                            <p>几种常见的消防设施及标识</p>
-                        </div>
-                        <div class="div18">
-                            <a href="education.html"> <img src="image/78.png"></a>
-                        </div>
-                        <div class="div19">
-                            <a href="knowledge.html"><img src="image/79.png"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="div16" >
-                            <a href="">  <img src="image/07.png"></a>
-                        </div>
-                        <div class="div17 red">
-                            <p>高层被困</p>
-                        </div>
-                        <div class="div18">
-                            <a href="forum.html"> <img src="image/80.png"></a>
-                        </div>
-                        <div class="div19">
-                            <a href="more.html"><img src="image/81.png"></a>
-                        </div>
-                    </li>
-                </ul>
-                </section>
-        </ion-content>
-    </ion-side-menu-content>
-
-    <ion-side-menu side="left" width="250">
-        <ion-content class="calm-bg">
-            <div class="zc">
-             <img src="image/16.png">
-            </div>
-            <div class="zc-1">
-                <p>张三</p>
-            </div>
-            <div class="zc-2">
-                <ul>
-                    <li>
-                        <a href="zhuce.html">
-                        <div class="zc-3"><img src="image/3_register_icon.png"></div>
-                        <div class="zc-4"><p>注册</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="bangzhu.html">
-                        <div class="zc-3"><img src="image/3_help_icon.png"></div>
-                        <div class="zc-4"><p>帮助</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                        <div class="zc-3"><img src="image/3_suggest_icon.png"></div>
-                        <div class="zc-4"><p>建议</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="shezhi.html">
-                        <div class="zc-3"><img src="image/3_setting-up_icon.png"></div>
-                        <div class="zc-4"><p>设置</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                        <div class="zc-3"><img src="image/3_collect_icon.png"></div>
-                        <div class="zc-4"><p>收藏</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="denglu.html">
-                        <div class="zc-3"><img src="image/3_landfall_icon.png"></div>
-                        <div class="zc-4"><p>登录</p></div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="zc-5">
-                <div class="zc-6"><p>咨询热线：400-028-0028</p></div>
-                <div class="zc-6"><p>咨询QQ：436456</p></div>
-                <div class="zc-6"><p>网址链接：www.xxf3.com</p></div>
-            </div>
-        </ion-content>
-    </ion-side-menu>
-
-</ion-side-menus>
+<div id="menu" style="display: none;">
+    <h3>Menu</h3>
+    <ul>
+        <li class="active"><a href="#home" class="contentLink">Home </a></li>
+        <li><a href="#home" class="contentLink">About </a></li>
+        <li><a href="#home" class="contentLink">Portfolio </a></li>
+        <li><a href="#home" class="contentLink">Contact </a></li>
+    </ul>
+</div>
+<div data-role="page" class="pages" id="home">
+    <div data-role="header">
+        <a href="#" class="showMenu">Menu</a>
+        <h1>FB Style Menu</h1>
+    </div><!-- /header -->
+    <div data-role="content">
+        <p><strong>Note: You can swipe right/left to show/close menu.</strong></p>
+    </div><!-- /content -->
+</div><!-- /page -->
 </body>
 </html>
-

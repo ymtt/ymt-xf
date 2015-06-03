@@ -199,7 +199,8 @@ nav ul li{
 .pl-5 p{
     font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
-    line-height: 30px;
+    line-height: 20px;
+    margin-bottom: 10px;
 }
 .pl-7{
     width: 100%;
@@ -245,4 +246,5 @@ nav ul li{
     font-size: 0.85em;
     line-height: 20px;
     margin-left: 20%;
+    margin-bottom: 10px;
 }

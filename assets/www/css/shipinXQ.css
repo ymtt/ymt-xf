@@ -7,7 +7,7 @@ body html{
     height: auto;
 }
 .zz-1{
-    position: absolute;
+    position: fixed;
     z-index: 1001;
     width: 100%;
     height: 100%;
@@ -222,7 +222,7 @@ nav ul li{
     color: #05A0D7;
 }
 .pl-3{
-    width: 80%;
+    width: 50%;
     height: 20px;
     float: left;
 }
@@ -242,10 +242,23 @@ nav ul li{
     font-family: "方正兰亭纤黑_GBK";
     line-height: 40px;
 }
-
+.pl-5{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #05A0D7;
+    float: right;
+    margin-right: 5%;
+    margin-top: -20px;
+}
+.pl-5 img{
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 13px;
+}
 .zz-2{
     display: none;
-    position: absolute;
+    position: fixed;;
      width: 100%; height:205px;
     background-color: white;
     z-index:1002;
@@ -304,4 +317,39 @@ nav ul li{
     line-height: 100%;
     text-align: center;
 }
+.zz-3{
+    position: fixed;;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7) ;
+    display: none;
+     bottom: 0;
+}
+.zz-4{
+    display: none;
+    position: absolute;
+    width: 60%; height:auto; top: 40%;left: 20%;
+    background-color: white;
+    z-index:1002;
 
+}
+.div10{
+    width:100% ;
+    height:auto;
+    float: left;
+
+}
+
+.div11{
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+}
+.div11 p{
+    font-size: 0.8em;
+    line-height: 40px;
+    margin-left: 10%;
+    color: #737373;
+}

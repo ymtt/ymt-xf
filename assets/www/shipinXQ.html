@@ -4,34 +4,8 @@
     <meta charset="UTF-8">
     <title>视频详情</title>
     <link rel="stylesheet" type="text/css" href="css/shipinXQ.css">
-    <script>
-    function  change_nav(heath_center) {
-        for (var i = 1; i <= 4; i++) {
-            if (i == heath_center) {
-                document.getElementById("nav_item" + i).className = "nav_item";
-                document.getElementById("nav_tab" + i).style.display = "";
-                document.getElementById("nav_item" + i).style.background= "#FFFFFF";
-                document.getElementById("p" + i).style.color = "#05A0D7";
-
-            }
-            else {
-                document.getElementById("nav_item" + i).className = "";
-                document.getElementById("nav_tab" + i).style.display = "none";
-                document.getElementById("nav_item" + i).style.background= "";
-                document.getElementById("p" + i).style.color = "";
-
-            }
-        }
-    }
-    function showdiv() {
-        document.getElementById("bg").style.display ="block";
-        document.getElementById("show").style.display ="block";
-    }
-    function hidediv() {
-        document.getElementById("bg").style.display ='none';
-        document.getElementById("show").style.display ='none';
-    }
-</script>
+    <script src="js/shipinXQ.js"></script>
+    <!--<script src="cordova.js"></script>-->
 </head>
 <body>
 <header>
@@ -143,7 +117,7 @@
     </div>
 </section>
 <section  class="nav_tab" id="nav_tab4" style="display: none">
-    <div class="pl">
+    <div class="pl"  ontouchstart="gtouchstart(1)" ontouchmove="gtouchmove(1)" ontouchend="gtouchend(1)" id="h1">
         <div class="pl-1">
             <img src="image/16.png">
         </div>
@@ -157,12 +131,17 @@
             <p>这是重新成立新华的组织吗</p>
         </div>
     </div>
-    <div class="pl">
+    <div class="pl"  ontouchstart="gtouchstart(2)" ontouchmove="gtouchmove(2)" ontouchend="gtouchend(2)" id="h2">
         <div class="pl-1">
             <img src="image/21.png">
         </div>
         <div class="pl-2">
             <p>大哇塞</p>
+        </div>
+        <div class="pl-5">
+            <a href="xiepinglun.html">
+            <img src="image/Write_comments_on-_icon1.png">
+                </a>
         </div>
         <div class="pl-3">
             <p>2015-03-08  来自手机</p>
@@ -171,7 +150,7 @@
             <p>怎么看都是中国军人最帅</p>
         </div>
     </div>
-    <div class="pl">
+    <div class="pl"  ontouchstart="gtouchstart(3)" ontouchmove="gtouchmove(3)" ontouchend="gtouchend(3)" id="h3">
         <div class="pl-1">
             <img src="image/16.png">
         </div>
@@ -275,6 +254,27 @@
         </ul>
         <div class="div9">
             <input type="button" value="取消" onclick="hidediv()">
+        </div>
+    </div>
+</div>
+<div class="zz-3" id="bg1"  onclick="a()" >
+</div>
+<div class="zz-4" id="show1">
+    <div class="div10">
+        <div class="div11">
+            <a href="">
+                <p>回复</p>
+            </a>
+        </div>
+        <div class="div11">
+            <a href="">
+                <p>复制</p>
+            </a>
+        </div>
+        <div class="div11">
+            <a href="">
+                <p>举报</p>
+            </a>
         </div>
     </div>
 </div>

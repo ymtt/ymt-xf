@@ -26,27 +26,32 @@ header{
     margin-top: 10px;
 }
 .div2{
-    width: auto;
+    width: 72%;
     height: auto;
     float: left;
+}
+.div2 p{
     line-height: 40px;
-    text-align: center;
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
     color: #FFFFFF;
-    margin-left: 33%;
+    margin-left: 39.5%;
 }
 .div3{
-    width: auto;
+    width: 10%;
     height: auto;
     float: right;
-    margin-right: 15px;
-    margin-top: 8px;
+    margin-right: 5%;
+}
+.div3 img{
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 20%;
 }
 .divZ1{
-    width: 100%;
+    width: 95%;
     height: 40px;
     float: left;
+    margin-left: 5%;
     border-bottom: 1px solid #ECECEC;
 }
 .divZ1 p{
@@ -122,7 +127,7 @@ section{
     height: 30px;
     margin-top: 10px;
     float: left;
-    margin-left: 20%;
+    margin-left: 10%;
     background: url("../image/comment_comment_icon.png")no-repeat 30% 50%;
 }
 .div9 p{

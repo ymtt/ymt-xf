@@ -60,7 +60,7 @@ a{
 }
 .div5{
     width: 90%;
-    height: 60px;
+    height: auto;
     float: left;
     margin-left: 5%;
     margin-bottom: 10px;
@@ -77,7 +77,7 @@ a{
     width: 80%;
     height: auto;
     float: left;
-    overflow: hidden;
+
 }
 .div7 p{
     font-family: "方正兰亭纤黑_GBK";
@@ -97,7 +97,6 @@ a{
     width: 90%;
     height: auto;
     float: left;
-    overflow: hidden;
     margin-left: 5%;
 }
 .div9 p{

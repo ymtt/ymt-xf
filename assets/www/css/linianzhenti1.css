@@ -48,9 +48,10 @@ header{
     margin-left: 20%;
 }
 .divZ1{
-    width: 100%;
+    width:95%;
     height: 40px;
     float: left;
+    margin-left: 5%;
     border-bottom: 1px solid #ECECEC;
 }
 .divZ1 p{
@@ -126,7 +127,7 @@ section{
     height: 30px;
     margin-top: 10px;
     float: left;
-    margin-left: 15%;
+    margin-left: 10%;
     background: url("../image/comment_comment_icon.png")no-repeat 30% 50%;
 }
 .div9 p{

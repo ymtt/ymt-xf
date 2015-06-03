@@ -227,7 +227,7 @@ button{
 footer{
     width: 94%;
     height: 50px;
-  position: fixed;
+    position: absolute;
     bottom: 20px;
 
     margin-left: 3%;

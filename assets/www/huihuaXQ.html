@@ -6,14 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/huihuaXQ.css">
     <link rel="stylesheet" href="css/idangerous.swiper.css">
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/huihua.js"></script>
-    <style>
-        #ss2{
-            display:none;
-        }
-    </style>
     <script type="text/javascript">
-        function showme(){
+        function s(){
             var div = document.getElementById("aaa");
             if (div.style.display == "block") {
                 div.style.display = "none";
@@ -21,13 +15,9 @@
                 div.style.display = "block"
             }
         }
-        
         $(document).ready(function(){
-                //获得所有消息
-                getmsg("getQQAllMsg");
-
-
-
+            //获得所有消息
+            getmsg("getQQAllMsg");
 
             //轮询获得消息
             setInterval('getunreadmsg()',5000);
@@ -39,29 +29,30 @@
             });
 
             //随时检查文本框值有无改变，从而改变按钮
-            setInterval('a()',1000);
-
+            
+        
+            setInterval('a()',100);
         });
-
-          //读取未读消息
+        
+        
+        //读取未读消息
           function getunreadmsg(){
                 //临时写成全部消息
                 getmsg("getQQAllMsg");
           }
-
-         function a(){
-             var s=$("#text1").val();
-             if(s==""||s==null){
+        
+        
+        function a(){
+            var s=$("#ss").val();
+            if(s==""||s==null){
                 $("#ss1").css("display","block");
                 $("#ss2").css("display","none");
-             }else{
+            }else if(s!=""||s!=null){
+
                 $("#ss1").css("display","none");
                 $("#ss2").css("display","block");
             }
-         }
-
-
-
+        }
     </script>
 </head>
 <body>
@@ -71,14 +62,14 @@
     <a href="#"><div class="div3"><p>预约</p></div></a>
 </header>
 <section>
-    <div class="div4">
-        <div class="div5">
-            <img src="image/16.png">
-        </div>
-        <div class="div6">
-            <p>你好！</p>
-        </div>
+<div class="div4">
+    <div class="div5">
+        <img src="image/16.png">
     </div>
+    <div class="div6">
+        <p>你好！</p>
+    </div>
+</div>
     <div class="div4">
         <div class="div7">
             <img src="image/16.png">
@@ -157,92 +148,161 @@
         <div class="div10">
             <img src="image/the-keyboard_icon.png">
         </div>
-        <div class="div11" id="ss">
-            <input type="text" id="text1">
+        <div class="div11">
+            <input type="text"onblur="a()"  id="ss">
         </div>
         <div class="div12">
             <img src="image/the-recording_icon.png">
         </div>
         <div class="div13" id="ss1">
-            <img src="image/more-choice_icon.png" onclick="showme()">
+            <img src="image/more-choice_icon.png" onclick="s()">
         </div>
         <div class="div14" id="ss2">
-            <button id="send">发送</button>
+            <button >发送</button>
         </div>
     </div>
-    <div id="aaa" style="display:block">
-        <div class="swiper-container"  >
-            <div class="swiper-wrapper"  >
-                <div class="swiper-slide">
-                    <a href="">
-                        <div class="div15">
-                            <img src="image/picture_icon.png">
-                        </div>
-                    </a>
-                    <div class="div16">
-                        <img src="image/speech-input_icon.png">
-                    </div>
-
-                    <div class="div16">
-                        <img src="image/small-video_icon.png">
-                    </div>
-
-                    <div class="div16">
-                        <img src="image/video-chat_icon.png">
-                    </div>
-
+    <div class="m-slider" id="d1" style="display:none">
+        <ul class="cnt" id="slider">
+            <li>
+                <a href="">
                     <div class="div15">
-                        <img src="image/my-collection_icon.png">
+                        <img src="image/picture_icon.png">
                     </div>
+                </a>
+                <div class="div16">
+                    <img src="image/speech-input_icon.png">
+                </div>
 
-                    <div class="div16">
-                        <img src="image/chatting-records_icon.png">
-                    </div>
+                <div class="div16">
+                    <img src="image/small-video_icon.png">
+                </div>
 
-                    <div class="div16">
-                        <img src="image/taking-pictures_icon.png">
-                    </div>
+                <div class="div16">
+                    <img src="image/video-chat_icon.png">
+                </div>
 
-                    <div class="div16">
-                        <img src="image/upload-file_icon.png">
+                <div class="div15">
+                    <img src="image/my-collection_icon.png">
+                </div>
+
+                <div class="div16">
+                    <img src="image/chatting-records_icon.png">
+                </div>
+
+                <div class="div16">
+                    <img src="image/taking-pictures_icon.png">
+                </div>
+
+                <div class="div16">
+                    <img src="image/upload-file_icon.png">
+                </div>
+                <div class="div17">
+                    <div class="div18">
+                        <img src="image/red-dot1_background-color.png">
                     </div>
-                    <div class="div17">
-                        <div class="div18">
-                            <img src="image/red-dot1_background-color.png">
-                        </div>
-                        <div class="div19">
-                            <img src="image/red-dot2_background-color.png">
-                        </div>
+                    <div class="div19">
+                        <img src="image/red-dot2_background-color.png">
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="div15">
-                        <img src="image/business-card_icon.png">
-                    </div>
+            </li>
+            <li>
+                <div class="div15">
+                    <img src="image/business-card_icon.png">
+                </div>
 
-                    <div class="div16">
-                        <img src="image/location_icon.png">
+                <div class="div16">
+                    <img src="image/location_icon.png">
+                </div>
+                <div class="div20">
+                    <div class="div18">
+                        <img src="image/red-dot2_background-color.png">
                     </div>
-                    <div class="div20">
-                        <div class="div18">
-                            <img src="image/red-dot2_background-color.png">
-                        </div>
-                        <div class="div19">
-                            <img src="image/red-dot1_background-color.png">
-                        </div>
+                    <div class="div19">
+                        <img src="image/red-dot1_background-color.png">
                     </div>
                 </div>
-                <div class="pagination"></div>
-            </div>
+            </li>
+        </ul>
+        <div class="icons" id="icons">
+            <span class="curr">1</span>
+            <span>2</span>
+
         </div>
     </div>
-
-    <script src="js/idangerous.swiper.min.js"></script>
     <script>
-        var mySwiper = new Swiper('.swiper-container',{
-            pagination: '.pagination',
-             paginationClickable: true
-        })
+        var slider = {
+            //判断设备是否支持touch事件
+            touch:('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch,
+            slider:document.getElementById('slider'),
+
+            //事件
+            events:{
+                index:0,     //显示元素的索引
+                slider:this.slider,     //this为slider对象
+                icons:document.getElementById('icons'),
+                icon:this.icons.getElementsByTagName('span'),
+                handleEvent:function(event){
+                    var self = this;     //this指events对象
+                    if(event.type == 'touchstart'){
+                        self.start(event);
+                    }else if(event.type == 'touchmove'){
+                        self.move(event);
+                    }else if(event.type == 'touchend'){
+                        self.end(event);
+                    }
+                },
+                //滑动开始
+                start:function(event){
+                    var touch = event.targetTouches[0];     //touches数组对象获得屏幕上所有的touch，取第一个touch
+                    startPos = {x:touch.pageX,y:touch.pageY,time:+new Date};    //取第一个touch的坐标值
+                    isScrolling = 0;   //这个参数判断是垂直滚动还是水平滚动
+                    this.slider.addEventListener('touchmove',this,false);
+                    this.slider.addEventListener('touchend',this,false);
+                },
+                //移动
+                move:function(event){
+                    //当屏幕有多个touch或者页面被缩放过，就不执行move操作
+                    if(event.targetTouches.length > 1 || event.scale && event.scale !== 1) return;
+                    var touch = event.targetTouches[0];
+                    endPos = {x:touch.pageX - startPos.x,y:touch.pageY - startPos.y};
+                    isScrolling = Math.abs(endPos.x) < Math.abs(endPos.y) ? 1:0;    //isScrolling为1时，表示纵向滑动，0为横向滑动
+                    if(isScrolling === 0){
+                        event.preventDefault();      //阻止触摸事件的默认行为，即阻止滚屏
+                        this.slider.className = 'cnt';
+                        this.slider.style.left = -this.index*400 + endPos.x + 'px';
+                    }
+                },
+                //滑动释放
+                end:function(event){
+                    var duration = +new Date - startPos.time;    //滑动的持续时间
+                    if(isScrolling === 0){    //当为水平滚动时
+                        this.icon[this.index].className = '';
+                        if(Number(duration) > 10){
+                            //判断是左移还是右移，当偏移量大于10时执行
+                            if(endPos.x > 10){
+                                if(this.index !== 0) this.index -= 1;
+                            }else if(endPos.x < -10){
+                                if(this.index !== this.icon.length-1) this.index += 1;
+                            }
+                        }
+                        this.icon[this.index].className = 'curr';
+                        this.slider.className = 'cnt f-anim';
+                        this.slider.style.left = -this.index*400 + 'px';
+                    }
+                    //解绑事件
+                    this.slider.removeEventListener('touchmove',this,false);
+                    this.slider.removeEventListener('touchend',this,false);
+                }
+            },
+
+            //初始化
+            init:function(){
+                var self = this;     //this指slider对象
+                if(!!self.touch) self.slider.addEventListener('touchstart',self.events,false);    //addEventListener第二个参数可以传一个对象，会调用该对象的handleEvent属性
+            }
+        };
+
+        slider.init();
     </script>
 </footer>
 </body>
