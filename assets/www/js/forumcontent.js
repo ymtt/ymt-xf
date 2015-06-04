@@ -16,10 +16,11 @@ function getThreadContent(){
                          $.each(list,function(key){
                             var author=list[key]['author'];
                             var message=list[key]['message'];
+                            var dateline=list[key]['dateline'];
                             if(key=="0"){
                                 CreateContentDom(author,message);
                             }else{
-                                CreateReplyDom(author,message);
+                                CreateReplyDom(author,message,TimestampConversion(dateline));
                             }
 
                             //alert(list[key]['message']);
@@ -33,15 +34,35 @@ function getThreadContent(){
            }
  };
 
+//时间戳转换
+function TimestampConversion(dateline){
+    var t = new Date(parseInt(dateline)*1000);
+    if(t!=null||t!=""){
+        var Y=t.getFullYear()+"-";
+        var M=(t.getMonth()+1 < 10 ? '0'+(t.getMonth()+1) : t.getMonth()+1) + '-';
+        var D=(t.getDate() < 10 ? '0'+t.getDate() : t.getDate()) + '\t';
+        var h=(t.getHours() < 10 ? '0'+t.getHours() : t.getHours()) + ':';
+        var m=(t.getMinutes() < 10 ? '0'+t.getMinutes() : t.getMinutes()) + ':';
+        var s=(t.getSeconds() < 10 ? '0'+t.getSeconds() : t.getSeconds());
+        //var res=+(t.getMonth()+1)+"-"+t.getDate()+" "+t.getHours()+":"+t.getMinutes()+":"+t.getSeconds();
+        return Y+M+D+h+m+s;
+    }else{
+        return "";
+    }
+}
+
+
+
 //添加主内容
  function CreateContentDom(author,message){
-    $("section").append("<div class='div3'><img src='image/16.png'></div><div class='div4'><p>"+author+"</p></div><div class='div5'><p>"+message+"</p></div><div class='div6'><img src='image/08.png'></div><div class='div7'></div><div class='div11'></div>");
-    $(".div7").html("dddd");
+    $("section").append("<div class='div3'><img src='image/16.png'></div><div class='div4'><p>"+author+"</p></div><div class='div5'><p>"+message+"</p></div><div class='div6'></div><div class='div7'></div><div class='div11'></div>");
+    //追加图片
+    //$(".div6").html("<img src='image/08.png'>");
  }
 
 //添加回复的内容
- function CreateReplyDom(author,message){
-    $(".div11").append("<p><a href=''>"+author+"：</a>"+message+"</p>");
+ function CreateReplyDom(author,message,dateline){
+    $(".div11").append("<p><a href='javascript:void(0)'>"+author+"：</a>"+message+"<span style='float:right;'>"+dateline+"</span>"+"</p>");
  }
 
 //回帖
@@ -85,7 +106,7 @@ function getThreadContent(){
               type:'post',
               datatype:'json',
               url:url,
-              data:{"subject":title,"msg":content,"user":"admin","fid":fid},
+              data:{"subject":title,"msg":content,"user":user,"fid":fid},
               success:function(data){
                   var json=eval("("+data+")");
                   var list=json.data;

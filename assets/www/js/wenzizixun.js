@@ -7,14 +7,11 @@ function CreateXfnewsDom(title,content,hitnum,id){
 function getnews(type){
 var session=window.sessionStorage.getItem("session");
 var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
-if(session==null){
-    alert("请登录后进行查看");
-}else{
-   $.ajax({
+    $.ajax({
         type:'get',
         datatype:'json',
         url:url,
-        data:{"SESSIONID":session,"m":"list","type":type,"order":"new","start":"1"},
+        data:{"m":"list","type":type,"order":"new","start":"1"},
         success:function(data){
             var json=eval("("+data+")");
             if(json.result=="Y"){
@@ -36,8 +33,7 @@ if(session==null){
                 window.location.href="denglu.html";
             }
         }
-    })
-}
+        })
 }
 
 function Towenzizixun(id,url){

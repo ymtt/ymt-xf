@@ -13,6 +13,8 @@
         var edustart=0;
         var eduend=10;
      $(document).ready(function(){
+
+
         var index=window.localStorage.getItem("Index");
         $("#back").attr("href",index);
 
@@ -28,7 +30,7 @@
              getnews("xf_article_h_notice",CreateNoticeDom,noticestart,noticeend,"notice");
              //教育新闻
              getnews("xf_article_h_edu",CreateEduDom,edustart,eduend,"edu");
-             var s={'sss':'cccc'};
+             //var s={'sss':'cccc'};
              //CreateNewZixun("国家主席习近平近日访问火星","就两星和平发展做出重要讲话","77",s);
      });
       function onDeviceReady() {
@@ -249,7 +251,7 @@
 <!--教育资讯-->
 <section class="nav_tab2" id="nav_tab3" style="display: none">
 
-    <div class="zx">
+    <!--<div class="zx">
         <a href="jiaoyuXQ.html">
             <div class="zx-1">
                 <img src="image/08.png">
@@ -258,19 +260,9 @@
                 <span>加大新修订《消防法》的宣传</span>
                 <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
                     河北省保定市公安消防支队与中国....</p>
-                <!--
-                <p>
-                    加大新修订《消防法》的宣传
-                </p>
-            </div>
-            <div class="zx-3">
-                <p>
-                    为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
-                    河北省保定市公安消防支队与中国......
-                </p>-->
             </div>
         </a>
-    </div>
+    </div>-->
 
 </section>
 <script src="js/loadmorenews.js"></script>

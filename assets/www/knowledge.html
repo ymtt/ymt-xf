@@ -12,6 +12,9 @@
          $(document).ready(function () {
             back();
          })
+         function getknowledge(method){
+            getnews("xf_article_h_know",method,kystart,kyend,false);
+         }
     </script>
 </head>
 <body>
@@ -97,7 +100,7 @@
     </nav>
     <div class="div4">
         <ul>
-            <li class="nav_item1" id="nav_item1" onClick="change_nav(1)">
+            <li class="nav_item1" id="nav_item1" onClick="change_nav(1);">
                 <div class="div5">
                     <p id="p1" style="background-color: #05A0D7;color: #ffffff;border-radius: 6px">机构</p>
                 </div>
@@ -112,7 +115,7 @@
                     <p id="p3">系统</p>
                 </div>
             </li>
-            <li class="nav_item1" id="nav_item4" onClick="change_nav(4)">
+            <li class="nav_item1" id="nav_item4" onClick="getknowledge(CreateKnowledge);change_nav(4)">
                 <div class="div5">
                     <p id="p4">科研</p>
                 </div>
@@ -255,6 +258,7 @@
 </div>
 </section>
 <section  class="nav_tab" id="nav_tab4" style="display: none">
+
     <div class="ky">
         <a href="keyanXQ.html">
         <div class="ky-1">
@@ -270,6 +274,7 @@
         <div class="ky-4" onmousemove="a1(0)" onmouseout="a2(0)"><p>42354人</p></div>
         <div class="ky-5" onmousemove="s1(0)" onmouseout="s2(0)"><p>42354人</p></div>
     </div>
+
     <div class="ky">
         <a href="keyanXQ.html">
         <div class="ky-1">
@@ -285,6 +290,7 @@
         <div class="ky-4" onmousemove="a1(1)" onmouseout="a2(1)"><p>42354人</p></div>
         <div class="ky-5" onmousemove="s1(1)" onmouseout="s2(1)"><p>42354人</p></div>
     </div>
+
     <div class="ky">
         <a href="keyanXQ.html">
         <div class="ky-1">
@@ -300,6 +306,7 @@
         <div class="ky-4" onmousemove="a1(2)" onmouseout="a2(2)"><p>42354人</p></div>
         <div class="ky-5" onmousemove="s1(2)" onmouseout="s2(2)"><p>42354人</p></div>
     </div>
+
 </section>
 <section  class="nav_tab" id="nav_tab5" style="display: none">
     <div class="ky">

@@ -2,58 +2,58 @@
 function getnews(type,func,start,end,wh){
             var session=window.sessionStorage.getItem("session");
             var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
-            if(session==null){
-                alert("请登录后进行查看");
-            }else{
-               $.ajax({
-                    type:'get',
-                    datatype:'json',
-                    url:url,
-                    data:{"SESSIONID":session,"m":"list","type":type,"order":"new","start":"1"},
-                    success:function(data){
-                        var json=eval("("+data+")");
-                        if(json.result=="Y"){
-                            var size=json.datas['size'];
-                            var list=json.datas['listData'];
-                            $.each(list,function(key){
-                                var title=list[key]['article_title'];
-                                var content=list[key]['content'];
-                                var hitnum=list[key]['hitnum'];
-                                var id=list[key]['id'];
+            $.ajax({
+               type:'get',
+               datatype:'json',
+               url:url,
+               data:{"m":"list","type":type,"order":"new","start":"1"},
+               success:function(data){
+                   var json=eval("("+data+")");
+                   if(json.result=="Y"){
+                       var size=json.datas['size'];
+                       var list=json.datas['listData'];
+                       $.each(list,function(key){
+                           var title=list[key]['article_title'];
+                           var content=list[key]['content'];
+
+                           var hitnum=list[key]['hitnum'];
+                           //文章id
+                           var id=list[key]['id'];
+                           var obj=JSON.stringify(list[key]);
+
+                           if(hitnum==null){
+                               hitnum=0;
+                           }
 
 
-                                if(hitnum==null){
-                                    hitnum=0;
-                                }
+                           if(key>=start&&key<end){
+                                //加载列表
+                               func(title,title,id);
+                               window.localStorage.setItem(id,obj);
+                           }else if(key>=end){
+                               switch(wh){
+                                   case "notice":
+                                        CreateNoticeMore();
+                                   break;
+                                   case "edu":
+                                       CreateEduMore();
+                                   break;
+                               }
+                               return false;
+                           }
+                           if(start>size){
+                               alert("没有更多了");
+                               return false;
+                           }
 
+                       });
 
-                                if(key>=start&&key<end){
-                                    func(title,title,id);
-                                }else if(key>=end){
-                                    switch(wh){
-                                        case "notice":
-                                             CreateNoticeMore();
-                                        break;
-                                        case "edu":
-                                            CreateEduMore();
-                                        break;
-                                    }
-                                    return false;
-                                }
-                                if(start>size){
-                                    alert("没有更多了");
-                                    return false;
-                                }
-
-                            });
-
-                        }else{
-                            alert("获取新闻出现错误！");
-                            window.location.href="denglu.html";
-                        }
-                    }
-                })
-            }
+                   }else{
+                       alert("获取新闻出现错误！");
+                       window.location.href="denglu.html";
+                   }
+               }
+           })
 }
 
 
@@ -69,14 +69,23 @@ function Toinfo(id){
    //alert(id);
 }
 
+//加载公告列表的实现方法，点击之后id被保存
 function CreateNoticeDom(title,content,id){
                $("#nav_tab2").append("<div class='gg'><a href='javascript:Tonews("+"\""+id+"\""+")'><div class='gg-1'><p>"+title+
                "</p></div><div class='gg-2'><p>"+content+"</p></div><span class='notice'></span></a></div>");
-               $(".notice").html("<img src='image/07.png'>");
-               $(".notice").append("<img src='image/08.png'>");
+              // $(".notice").html("<img src='image/07.png'>");
+               //$(".notice").append("<img src='image/08.png'>");
  }
+ //加载教育资讯列表，并保存id
+  function CreateEduDom(title,content,id){
+         $("#nav_tab3").append("<div class='zx'><a href='javascript:Toinfo("+"\""+id+"\""+")'><div class='zx-1'></div><div class='intro'><span>"+title+
+             "</span><p>"+content+
+             "</p></div></a></div>"
+         );
+         //$(".zx-1").html("<img src='image/08.png'>");
+  }
 
-//加载更多公告
+//加载更多公告,loadmorenews
  function CreateNoticeMore(){
     $("#nav_tab2").append("<div class='gg'><a href='javascript:addn()' class='nmore'>点击加载更多</a></div>");
  }
@@ -85,52 +94,43 @@ function CreateNoticeDom(title,content,id){
      $("#nav_tab3").append("<div class='gg'><a href='javascript:adde()' class='emore'>点击加载更多</a></div>");
   }
 
- function CreateEduDom(title,content,id){
-        $("#nav_tab3").append("<div class='zx'><a href='javascript:Toinfo("+"\""+id+"\""+")'><div class='zx-1'><img src='image/08.png'></div><div class='intro'><span>"+title+
-            "</span><p>"+content+
-            "</p></div></a></div>"
-  );
- }
+
 
  //热点资讯,zixuntype:new表示最新资讯，read表示热点资讯
  function hotzixun(type,zixuntype){
          var session=window.sessionStorage.getItem("session");
          var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
-         if(session==null){
-            alert("登录后进行查看");
-         }else{
-            $.ajax({
-                type:'get',
-                dataType:'json',
-                url:url,
-                data:{"SESSIONID":session,"m":"list","type":type,"order":zixuntype,"start":"1","pagesize":"1"},
-                success:function(data){
-                    $(".loading").remove();
-                    var list=data.datas['listData'];
-                    $.each(list,function(key){
-                        var title=list[key]['article_title'];
-                        var content=list[key]['content'];
-                        var pl=list[key]['hitnum'];
-                        var id=list[key]['id'];
-                        var obj=JSON.stringify(list[key]);
-                        if(key==0){
-                            if(zixuntype=="read"){
-                                CreateHotZixun(title,content,id);
-                                //将id和对象转换成的字符串对应，并存储到localstorage
-                                window.localStorage.setItem(id,obj);
-                            }else if(zixuntype=="new"){
-                                CreateNewZixun(title,content,pl,id);
-                                window.localStorage.setItem(id,obj);
-                            }
-                        }else{
-                            return false;
+        $.ajax({
+            type:'get',
+            dataType:'json',
+            url:url,
+            data:{"SESSIONID":session,"m":"list","type":type,"order":zixuntype,"start":"1","pagesize":"1"},
+            success:function(data){
+                $(".loading").remove();
+                var list=data.datas['listData'];
+                $.each(list,function(key){
+                    var title=list[key]['article_title'];
+                    var content=list[key]['content'];
+                    var pl=list[key]['hitnum'];
+                    var id=list[key]['id'];
+                    var obj=JSON.stringify(list[key]);
+                    if(key==0){
+                        if(zixuntype=="read"){
+                            CreateHotZixun(title,content,id);
+                            //将id和对象转换成的字符串对应，并存储到localstorage
+                            window.localStorage.setItem(id,obj);
+                        }else if(zixuntype=="new"){
+                            CreateNewZixun(title,content,pl,id);
+                            window.localStorage.setItem(id,obj);
                         }
-                    });
-                },error:function(error){
-                    alert("错误！");
-                }
-            });
-         }
+                    }else{
+                        return false;
+                    }
+                });
+            },error:function(error){
+                alert("错误！");
+            }
+        });
  }
  function CreateHotZixun(title,content,id){
        $("#nav_tab1").append("<div class='div6'><div class='div7'><p>热点资讯</p></div><span class='span-1'><a href='shipinzixun.html'><p>更多</p></a></span></div><div class='div10'><a href='javascript:Towenzizixun("+"\""+id+"\""+",\"wenzizixunXQ.html\""+")'><div class='div11'><p>"+title+
