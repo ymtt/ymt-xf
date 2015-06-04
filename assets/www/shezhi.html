@@ -9,7 +9,8 @@
     <script type="text/javascript">
            $(document).ready(function(){
 
-                        $(".div3:eq(2)").click(function(){
+                        //选择所有class=div3中第三个，序号从上到下从0开始
+                        /*$(".div3:eq(2)").click(function(){
                                 $(".hidebg").css({"display":"block"});
                                 $("#showskin").show();
                         });
@@ -55,8 +56,14 @@
                           function eventBackButton(){
                                 //手机返回键监听
                                 window.location.href=index;
-                          }
+                          }*/
 
+                        index=window.localStorage.getItem("Index");
+                        $("#back").attr("href",index);
+                        //点击自定义皮肤，eq(2)表示第三个元素
+                        $(".div3:eq(2)").click(function(){
+                                window.location.href="pifu.html";
+                        });
                 });
     </script>
     <style type="text/css">
@@ -112,11 +119,9 @@
                 </div>
         </li>
         <li>
-            <a href="pifu.html">
                 <div class="div3">
                     <p>自定义皮肤</p>
                 </div>
-                </a>
         </li>
         <li>
                 <div class="div3">
