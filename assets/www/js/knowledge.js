@@ -83,7 +83,9 @@ function getnews(type,func,kystart,kyend,bo){
 }
 
 function CreateKnowledge(title,content,id){
-    $("#nav_tab4").append(title+"|"+content+"|"+id+"<br>");
+    $("#nav_tab4").append("<div class='ky'><a href='keyanXQ.html'><div class='ky-1'><p>"+title+
+    "</p></div><div class='ky-2'><img src='image/knowledge_01.png'></div><div class='ky-3'><p>"+content+
+    "</p></div></a><div class='ky-4' onmousemove='a1(0)' onmouseout='a2(0)'><p>42354人</p></div><div class='ky-5' onmousemove='s1(0)' onmouseout='s2(0)'><p>42354人</p></div></div>");
 }
 
 function addkmore(obj){

@@ -78,11 +78,17 @@ function CreateNoticeDom(title,content,id){
  }
  //加载教育资讯列表，并保存id
   function CreateEduDom(title,content,id){
-         $("#nav_tab3").append("<div class='zx'><a href='javascript:Toinfo("+"\""+id+"\""+")'><div class='zx-1'></div><div class='intro'><span>"+title+
+        /* $("#nav_tab3").append("<div class='zx'><a href='javascript:Toinfo("+"\""+id+"\""+")'><div class='zx-1'></div><div class='intro'><span>"+title+
              "</span><p>"+content+
              "</p></div></a></div>"
          );
-         //$(".zx-1").html("<img src='image/08.png'>");
+         //$(".zx-1").html("<img src='image/08.png'>");*/
+
+
+         $("#nav_tab3").append("<div class='gg'><a href='javascript:Tonews("+"\""+id+"\""+")'><div class='gg-1'><p>"+title+
+               "</p></div><div class='gg-2'><p>"+content+"</p></div><span class='notice'></span></a></div>");
+
+
   }
 
 //加载更多公告,loadmorenews
@@ -149,4 +155,41 @@ function Towenzizixun(id,url){
     window.localStorage.setItem("wenziid",id);
     window.location.href=url;
     //alert(JSON.stringify(o));
+}
+/*图片新闻列表*/
+function getpicnews(){
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
+    var srcs='http://g.hiphotos.baidu.com/image/pic/item/63d0f703918fa0ec56c59e0f249759ee3d6ddbb6.jpg';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        data:{"m":"list","type":"xf_article_h_news_photo","order":"new","start":"1"},
+        success:function(data){
+            //alert(data.datas['listData'][0]['id']);
+            var list=data.datas['listData'];
+            $.each(list,function(key){
+                //新闻id
+                var id=list[key]['id'];
+                //新闻id对应的对象字符串
+                var obj=JSON.stringify(list[key]);
+                window.localStorage.setItem(id,obj);
+                if(key>=3){
+                    return false;
+                }else{
+                $(".div9 ul").append("<li><a href='javascript:;' onclick='Totupian("+"\""+id+"\""+")'><img src='"+srcs+"''></a></li>");
+                }
+
+            });
+        },error:function(error){
+            alert(JSON.stringify(error));
+        }
+    });
+}
+function Totupian(id){
+    //保存点击的那一个新闻id
+    window.localStorage.setItem("picnewsid",id);
+    //跳转到tupianXQ.html
+    window.location.href="tupianXQ.html";
+    //alert(id);
 }
