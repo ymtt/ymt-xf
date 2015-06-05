@@ -185,7 +185,7 @@ button{
 }
 .div8{
     float: left;
-    margin-top:20px ;
+    margin-top:10px ;
     margin-left: 10%;
 }
 .div8 input{
@@ -195,7 +195,7 @@ button{
 .div9{
     margin-left: 5px;
     float: left;
-    margin-top:20px ;
+    margin-top:10px ;
 }
 .div9 p{
     font-size: 0.75em;
@@ -205,7 +205,7 @@ button{
 .div10{
 
     float: left;
-    margin-top:20px ;
+    margin-top:10px ;
 }
 .div10 p{
     font-size: 0.75em;
@@ -213,16 +213,17 @@ button{
     line-height: 20px;
     color: #05A0D7;
 }
-button{
+#submitform{
     width: 90%;
     height: 30px;
     background-color: #05A0D7;
     float: left;
     margin-left: 5%;
-    margin-top:10px ;
+    margin-top:30px ;
     color: #FFFFFF;
     font-size: 0.9em;
     border: 0;
+
 }
 footer{
     width: 94%;

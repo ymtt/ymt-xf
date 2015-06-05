@@ -3,217 +3,43 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script src="cordova.js"></script>
-    <script type="text/javascript">
-        var timeOutEvent=0;//定时器
-        //开始按
-        function gtouchstart(i){
-            timeOutEvent = setTimeout("longPress()",500);//这里设置定时器，定义长按500毫秒触发长按事件，时间可以自己改，个人感觉500毫秒非常合适
-            if(i!=0) {
-                document.getElementById("p"+i).style.backgroundColor = "#EDEDED";
-            }
-            return false;
-
-        };
-        //手释放，如果在500毫秒内就释放，则取消长按事件，此时可以执行onclick应该执行的事件
-        function gtouchend(i){
-            clearTimeout(timeOutEvent);//清除定时器
-            if(timeOutEvent!=0){
-                //这里写要执行的内容（尤如onclick事件）
-                if(i!=0) {
-                    document.getElementById("p"+i).style.backgroundColor = "#FFFFFF";
+    <script type=”text/javascript” src=”http://www.netcu.de/templates/netcu/js/jquery-1.4.2.min.js”></script>
+    <script type=”text/javascript” src=”http://www.netcu.de/templates/netcu/js/jquery.touchwipe.js”></script>
+    <script type=”text/javascript”>
+                var MyMar = setInterval(Marquee, 3000);
+                var pic_width = 320
+                a = 0
+                function Marquee(){
+                a++
+                if(a>2){a=0}
+                $(".focus_pic .kd").css("-webkit-transform","translateX(-"+a*pic_width+"px)")
                 }
-            }
-            return false;
-        };
-        //如果手指有移动，则取消所有事件，此时说明用户只是要移动而不是长按
-        function gtouchmove(i){
-            clearTimeout(timeOutEvent);//清除定时器
-            timeOutEvent = 0;
-            if(i!=0) {
-                document.getElementById("p"+i).style.backgroundColor = "#FFFFFF";
-            }
-        };
+                $(".focus_pic .kd").touchwipe( {
+                wipeLeft:function(){
+                if(a>1){ return(false)}else {
+                $(".focus_pic .kd").css("-webkit-transform","translateX(-"+(a+1)*pic_width+"px)");
+                a=a+1
+                }},
+                wipeRight:function(){
+                if(a<0){ return(false)}else{
+                $(".focus_pic .kd").css("-webkit-transform","translateX(-"+(a-1)*pic_width+"px)");
+                a=a-1
+                }
+                },
+                min_move_x: 20,
+                min_move_y: 20,
+                preventDefaultEvents: true
+                });
+</script>
 
-        //真正长按后应该执行的内容
-        function longPress(){
-            timeOutEvent = 0;
-            document.getElementById("bg").style.display ="block";
-            document.getElementById("show").style.display ="block";
-                document.getElementById("p1").style.backgroundColor = "#FFFFFF";
-            document.getElementById("p2").style.backgroundColor = "#FFFFFF";
-            document.getElementById("p3").style.backgroundColor = "#FFFFFF";
-        }
-        function a(){
-            document.getElementById("bg").style.display="none";
-            document.getElementById("show").style.display ="none";
-
-        }
-    </script>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .pl{
-            width: 100%;
-            height: auto;
-            float: left;
-            margin-top: 10px;
-            border-bottom: 1px solid #CCCCCC;
-            background-color: #ffffff;
-        }
-        .pl-1{
-            width: 15%;
-            height: auto;
-            float: left;
-            margin-left: 5%;
-
-        }
-        .pl-1 img{
-            width: 40px;
-            height: 40px;
-            border-radius: 40px;
-            max-width: 100%;
-        }
-        .pl-2{
-            width: 80%;
-            height: 20px;
-            float: left;
-        }
-        .pl-2 p{
-            font-size: 1em;
-            font-family: "方正兰亭纤黑_GBK";
-            line-height: 20px;
-            color: #05A0D7;
-        }
-        .pl-3{
-            width: 80%;
-            height: 20px;
-            float: left;
-        }
-        .pl-3 p{
-            font-size: 0.7em;
-            font-family: "方正兰亭纤黑_GBK";
-            line-height: 20px;
-            color: #737373;
-        }
-        .pl-4{
-            width: 80%;
-            height: auto;
-            float: left;
-        }
-        .pl-4 p{
-            font-size: 1em;
-            font-family: "方正兰亭纤黑_GBK";
-            line-height: 20px;
-            margin-bottom: 10px;
-        }
-        .zz-1{
-            position: absolute;
-            z-index: 1001;
-            width: 100%;
-            height: 100%;
-            background-color:rgba(0,0,0,0.7) ;
-            display: none;
-
-        }
-        .zz-2{
-            display: none;
-            position: absolute;
-            width: 60%; height:auto; top: 40%;left: 20%;
-            background-color: white;
-            z-index:1002;
-
-        }
-        .div6{
-            width:100% ;
-            height:auto;
-            float: left;
-
-        }
-
-   .div7{
-       width: 100%;
-       height: 40px;
-       float: left;
-       border-bottom: 1px solid #CCCCCC;
-   }
-        .div7 p{
-            font-size: 0.8em;
-            line-height: 40px;
-            margin-left: 10%;
-            color: #737373;
-        }
-        a{
-
-            text-decoration: none;
-        }
-    </style>
-</head>
+    </head>
 <body>
-<div class="pl"  ontouchstart="gtouchstart(1)" ontouchmove="gtouchmove(1)" ontouchend="gtouchend(1)" id="p1">
-    <div class="pl-1">
-        <img src="image/16.png">
-    </div>
-    <div class="pl-2">
-        <p>走向乌江的项羽</p>
-    </div>
-    <div class="pl-3">
-        <p>2015-03-08  来自手机</p>
-    </div>
-    <div class="pl-4">
-        <p>这是重新成立新华的组织吗</p>
+<div class=”focus_pic”>
+    <div class=”kd”>
+        <a href=”#”><img src=”http://www.zb580.tv/upload/2013/2/19/logo.jpg” alt=”" /></a>
+        <a href=”#”><img src=”http://www.zb580.tv/upload/2013/3/22/ylss–logo.jpg” alt=”" /></a>
+        <a href=”#”><img src=”http://www.zb580.tv/upload/2012/12/14/shn–logo(1).jpg” alt=”" /></a>
     </div>
 </div>
-<div class="pl"  ontouchstart="gtouchstart(2)" ontouchmove="gtouchmove(2)" ontouchend="gtouchend(2)" id="p2">
-    <div class="pl-1">
-        <img src="image/21.png">
-    </div>
-    <div class="pl-2">
-        <p>大哇塞</p>
-    </div>
-    <div class="pl-3">
-        <p>2015-03-08  来自手机</p>
-    </div>
-    <div class="pl-4">
-        <p>怎么看都是中国军人最帅</p>
-    </div>
-</div>
-<div class="pl" ontouchstart="gtouchstart(3)" ontouchmove="gtouchmove(3)" ontouchend="gtouchend(3)" id="p3">
-    <div class="pl-1">
-        <img src="image/16.png">
-    </div>
-    <div class="pl-2">
-        <p>吃点大灰狼的外婆</p>
-    </div>
-    <div class="pl-3">
-        <p>2015-03-08  来自手机</p>
-    </div>
-    <div class="pl-4">
-        <p>这是重新成立新华的组织吗</p>
-    </div>
-</div>
-<div class="zz-1" id="bg"  onclick="a()" >
-</div>
-<div class="zz-2" id="show">
-    <div class="div6">
-     <div class="div7">
-         <a href="">
-         <p>回复</p>
-             </a>
-     </div>
-        <div class="div7">
-            <a href="">
-                <p>复制</p>
-            </a>
-        </div>
-        <div class="div7">
-            <a href="">
-                <p>举报</p>
-            </a>
-        </div>
-</div>
-    </div>
 </body>
 </html>

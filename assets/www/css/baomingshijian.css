@@ -87,7 +87,7 @@ footer{
 }
 .div5{
     width: 100%;
-    height: 50px;
+    height: auto;
     float: left;
     border-bottom: 1px solid #cccccc;
 }

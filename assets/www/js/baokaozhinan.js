@@ -66,19 +66,3 @@ function d()
     }
 
 }
-function f()
-{
-
-    var oBtn2 = document.getElementById("btn5");
-    var oDemo2 = document.getElementById("demo5");
-
-    if (oDemo2.style.display == "block") {
-        oBtn2.style.background = "url(image/the-arrow_icon_right.png)no-repeat 80% 50%"
-        oDemo2.style.display = "none";
-    }
-    else {
-        oBtn2.style.background = "url(image/the-arrow_icon.png)no-repeat 80% 50%"
-        oDemo2.style.display = "block";
-    }
-
-}
