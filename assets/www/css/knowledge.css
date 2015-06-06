@@ -211,6 +211,7 @@ section{
     height: auto;
     float: left;
     border-bottom: 1px solid #CCCCCC;
+    overflow: hidden;
 }
 .ky-1{
     width: 95%;
@@ -226,7 +227,7 @@ section{
 }
 .ky-2{
     width: 10%;
-    height: 20px;
+    height: auto;
     float: left;
     margin-left: 5%;
 }
@@ -237,13 +238,14 @@ section{
 }
 .ky-3{
     width: 80%;
-    height: auto;
+    height: 60px;
     float: left;
 }
 .ky-3 p{
   font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     color: #CCCCCC;
+    line-height: 20px;
 }
 .ky-4{
     width: 30%;
