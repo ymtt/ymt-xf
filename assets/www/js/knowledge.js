@@ -57,13 +57,17 @@ function getnews(type,func,kystart,kyend,bo){
                            var list=json.datas['listData'];
                            $.each(list,function(key){
                                var title=list[key]['article_title'];
+                               var content=list[key]['content'];
                                var hitnum=list[key]['hitnum'];
                                var id=list[key]['id'];
+                               var obj=JSON.stringify(list[key]);
+
                                if(hitnum==null){
                                    hitnum=0;
                                }
                                if(key>=kystart&&key<kyend){
-                                  func(title,title,id);
+                                  func(title,content,id);
+                                  window.localStorage.setItem(id,obj);
                                }else if(key>kyend){
                                   //每次ajax数据加载完，添加一个加载更多按钮
                                   $("#nav_tab4").append("<a href='javascript:void(0)' onclick='addkmore(this)'>加载更多</a>");
@@ -83,7 +87,7 @@ function getnews(type,func,kystart,kyend,bo){
 }
 
 function CreateKnowledge(title,content,id){
-    $("#nav_tab4").append("<div class='ky'><a href='keyanXQ.html'><div class='ky-1'><p>"+title+
+    $("#nav_tab4").append("<div class='ky'><a href='javascript:ToKeyanXQ("+"\""+id+"\""+")'><div class='ky-1'><p>"+title+
     "</p></div><div class='ky-2'><img src='image/knowledge_01.png'></div><div class='ky-3'><p>"+content+
     "</p></div></a><div class='ky-4' onmousemove='a1(0)' onmouseout='a2(0)'><p>42354人</p></div><div class='ky-5' onmousemove='s1(0)' onmouseout='s2(0)'><p>42354人</p></div></div>");
 }
@@ -95,4 +99,10 @@ function addkmore(obj){
     getnews("xf_article_h_know",CreateKnowledge,kystart,kyend,true);
     //移除加载更多标签
     $(obj).remove();
+}
+
+//跳转
+function ToKeyanXQ(id){
+    window.localStorage.setItem("keyanid",id);
+    window.location.href="keyanXQ.html";
 }

@@ -21,11 +21,11 @@
             getmsg("getQQAllMsg");
 
             //轮询获得消息
-            setInterval('getunreadmsg()',5000);
+            setInterval('getunreadmsg()',1000);
 
             //绑定点击发送事件
-             $("#send").click(function(){
-                var s=$("#text1").val();
+             $("#ss2").click(function(){
+                var s=$("#ss").val();
                 sendmsgs(s);
             });
 
@@ -39,7 +39,7 @@
         //读取未读消息
           function getunreadmsg(){
                 //临时写成全部消息
-                getmsg("getQQAllMsg");
+                getmsg("getQQUnreadMsg");
           }
         
         

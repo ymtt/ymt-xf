@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <title>科研详情</title>
     <link rel="stylesheet" href="css/keyanXQ.css" type="text/css" media="screen">
-    <script language="javascript" type="text/javascript">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/kyxq.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            getkyobj();
+        });
         function showdiv() {
             document.getElementById("bg").style.display ="block";
             document.getElementById("show").style.display ="block";
@@ -15,7 +20,7 @@
         }
     </script>
 </head>
-<body>
+<body onload="">
 
 <header>
     <a href="knowledge.html"><div class="div1"> <img src="image/return_icon.png"></div></a>
