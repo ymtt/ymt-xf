@@ -5,7 +5,7 @@
     <title>设置</title>
     <link href="css/shezhi.css" rel="stylesheet" type="text/css" media="screen">
     <script src="js/jquery-1.11.2.min.js"></script>
-    <!--<script src="cordova.js"></script>-->
+    <script src="cordova.js"></script>
     <script type="text/javascript">
            $(document).ready(function(){
 
@@ -63,6 +63,11 @@
                         //点击自定义皮肤，eq(2)表示第三个元素
                         $(".div3:eq(2)").click(function(){
                                 window.location.href="pifu.html";
+                        });
+
+                        //推荐好友
+                        $(".div3:eq(4)").click(function(){
+                                window.plugins.socialsharing.share('新消防真TM是太好用了','分享标题',['http://e.hiphotos.baidu.com/image/pic/item/f703738da9773912274dc116fb198618367ae25a.jpg','http://c.hiphotos.baidu.com/image/pic/item/5ab5c9ea15ce36d3ef1cabf738f33a87e850b1d8.jpg'],'http://www.baidu.com');
                         });
                 });
     </script>
