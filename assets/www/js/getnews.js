@@ -14,7 +14,8 @@ function getnews(type,func,start,end,wh){
                        var list=json.datas['listData'];
                        $.each(list,function(key){
                            var title=list[key]['article_title'];
-                           var content=list[key]['content'];
+                           //用正则表达书过滤
+                           var content=list[key]['content'].replace(/[^\u4e00-\u9fa5，\。\'?!]/gi,"");
 
                            var hitnum=list[key]['hitnum'];
                            //文章id
@@ -28,7 +29,7 @@ function getnews(type,func,start,end,wh){
 
                            if(key>=start&&key<end){
                                 //加载列表
-                               func(title,title,id);
+                               func(title,content,id);
                                window.localStorage.setItem(id,obj);
                            }else if(key>=end){
                                switch(wh){
@@ -146,8 +147,7 @@ function CreateNoticeDom(title,content,id){
  function CreateNewZixun(title,content,pl,id){
       $("#nav_tab1").append("<div class='div6'><div class='div7'><p>最新咨询</p></div><span class='span-1'><a href='wenzizixun.html'><p>更多</p></a></span></div><div class='div14'><a href='javascript:Towenzizixun("+"\""+id+"\""+",\"wenzizixunXQ.html\""+")'><div class='div15'><p>"+title+
       "</p></div><div class='div16'><p>"+content+
-      "</p></div><div class='div17'><div class='div18'><p>"+pl+
-      "</p></div><div class='div19'><img src='image/comment_comment_icon.png'/></div></div></a></div>");
+      "</p></div></a></div>");
  }
 
 function Towenzizixun(id,url){

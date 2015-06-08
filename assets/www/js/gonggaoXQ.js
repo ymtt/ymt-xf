@@ -24,6 +24,7 @@ function getNotice(){
            }
            //alert(noticeid);
  };
+
 //gonggaoXQ.html和jiaoyuXQ.html共用js,不再请求ajax,采用取出保存在localstorage里的数据，加载到页面
 function getzs(){
             //取出点击之后存储的id
@@ -32,7 +33,7 @@ function getzs(){
              var str=window.localStorage.getItem(id);
              //将对象字符串转换成对象
              var obj=JSON.parse(str);
-             $(".div6 p").html(obj.article_title);
+             $(".div6 p").html((obj.article_title).substring(0,18));
              $(".div7 p").html(obj.source+"  "+obj.create_time);
              $(".div10 p").html(obj.content);
 }

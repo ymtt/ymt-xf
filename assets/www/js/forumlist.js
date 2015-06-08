@@ -14,7 +14,7 @@ function getSubjectList(){
                          var json=eval("("+data+")");
                          var list=json.data;
                          $.each(list,function(key){
-                            var subject=list[key]['threadSubject'];
+                            var subject=(list[key]['threadSubject']).substring(0,12);
                             var threadTid=list[key]['threadTid'];
                             CreateForumList(subject,threadTid);
                          });
