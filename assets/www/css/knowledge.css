@@ -10,19 +10,20 @@ header{
     width: 100%;
     height: 40px;
     background: #05A0D7;
-
+    position: fixed;
+    top: 0;
 }
 a{
     text-decoration: none;
 }
-.div1 {
+.div1-1 {
     width: 10%;
     height: auto;
     float: left;
     margin-left: 3%;
 }
 
-.div1 img {
+.div1-1 img {
     max-width: 100%;
     margin-left: 20%;
     margin-top: 10px;
@@ -87,6 +88,8 @@ nav{
     height: 80px;
     background-color: #ffffff;
     border-bottom: 1px solid #ECECEC;
+    margin-top: 40px;
+    float: left;
 }
 .nav-1{
     width: 80%;
@@ -349,4 +352,448 @@ section{
     color: #ffffff;
     text-align: center;
 }
+#div1 {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 0;
+    top: 300px;
+    overflow: hidden;
+    outline: 0;
+    z-index: 500;
+}
+#div1 img{
+    max-width: 100%;
+}
+.div7{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    z-index: 50;
+    display: none;
+}
+.div8{
+    width: 80%;
+    height:50%;
+    z-index: 500;
+    position: fixed;
+    left: 10%;
+    top: 25%;
+    display: none;
+}
+.div9 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.div9 img{
+    max-width: 100%;
+}
+.div10 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+}
+.div10 img{
+    max-width: 100%;
+}
+.div11 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.div11 img{
+    max-width: 100%;
+}
+.div12 {
+    width: 20%;
+    height:20%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.div12 img{
+    max-width: 100%;
+}
+.div13 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+.div13 img{
+    max-width: 100%;
+}
+.div14 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
+.div14 img{
+    max-width: 100%;
+}
+.div15 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+}
+.div15 img{
+    max-width: 100%;
+}
+.div16 {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left:75%;
+}
+.div16 img{
+    max-width: 100%;
+}
+.div17 {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left:65%;
+}
+.div17 img{
+    max-width: 100%;
+}
+hr{
+    width: 2px;
+    height: 15px;
+    background: #000000;
+    margin-left: -5%;
+    border: 0;
+    margin-top: 300px;
+    float: left;
+}
+.s1{
+    width: 10%;
+    height:200px;
+    float: left;
+    background-color: #0c63ee;
+    margin-left: 2%;
+    margin-top: 100px;
+}
+.s1 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    padding:30%;
+    margin-top: 12px;
 
+}
+.s2{
+    width: 10%;
+    height:200px;
+    float: left;
+    background-color: #0c63ee;
+    margin-top: 315px;
+    margin-left: -10%;
+}
+.s2 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    padding:30%;
+    margin-top: 15px;
+}
+.h1{
+    width: 25px;
+    height: 2px;
+    background: #000000;
+    margin-left:0;
+    border: 0;
+    margin-top: 400px;
+    float: left;
+}
+.h2{
+    width: 2px;
+    height: 547px;
+    background: #000000;
+    margin-left:0;
+    border: 0;
+    margin-top: 20px;
+    float: left;
+}
+.h3{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:0;
+    border: 0;
+    margin-top: 20px;
+    float: left;
+}
+.h4{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 45px;
+    float: left;
+}
+.h5{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 70px;
+    float: left;
+}
+.h6{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 95px;
+    float: left;
+}
+.h7{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 120px;
+    float: left;
+}
+.h8{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 145px;
+    float: left;
+}
+.h9{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 170px;
+    float: left;
+}
+.h10{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 195px;
+    float: left;
+}
+.h11{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 220px;
+    float: left;
+}
+.h12{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 245px;
+    float: left;
+}
+.h13{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 270px;
+    float: left;
+}
+.h14{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 295px;
+    float: left;
+}
+.h15{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 320px;
+    float: left;
+}
+.h16{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 345px;
+    float: left;
+}
+.h17{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 370px;
+    float: left;
+}
+.h18{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 395px;
+    float: left;
+}
+.h19{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 420px;
+    float: left;
+}
+.h20{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top:465px;
+    float: left;
+}
+.h21{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top:490px;
+    float: left;
+}
+.h22{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top:515px;
+    float: left;
+}
+.h23{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top:540px;
+    float: left;
+}
+.h24{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top:565px;
+    float: left;
+}
+.s3{
+    width: 40%;
+    height:20px;
+    float: left;
+    background-color: #0c63ee;
+    margin-top: 10px;
+
+}
+.s3 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-left: 10%;
+}
+.s4{
+    width: 40%;
+    height:20px;
+    float: left;
+    background-color: #0c63ee;
+    margin-top: 5px;
+
+}
+.s4 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-left: 10%;
+}
+.s4{
+    width: 40%;
+    height:20px;
+    float: left;
+    background-color: #0c63ee;
+    margin-top: 5px;
+
+}
+.s4 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-left: 10%;
+}
+.s5{
+    width: 50%;
+    height:20px;
+    float: left;
+    background-color: #11c1f3;
+    margin-top: 25px;
+
+}
+.s5 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-left: 10%;
+}
+.s6{
+    width: 50%;
+    height:20px;
+    float: left;
+    background-color: #11c1f3;
+    margin-top: 5px;
+
+}
+.s6 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-left: 10%;
+}

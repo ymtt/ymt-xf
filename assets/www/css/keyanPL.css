@@ -12,7 +12,7 @@ header{
     height: 40px;
     background: #05A0D7;
     position: fixed;
-
+    top: 0;
 }
 a{
     text-decoration: none;

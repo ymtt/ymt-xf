@@ -11,6 +11,8 @@ header{
     width: 100%;
     height: 40px;
     background-color: #05A0D7;
+    position: fixed;
+    top: 0;
 }
 a{
     text-decoration: none;
@@ -67,6 +69,7 @@ section{
     width: 100%;
     height: auto;
     float: left;
+    margin-top: 40px;
 }
 .div6{
     width: 100%;

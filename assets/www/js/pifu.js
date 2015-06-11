@@ -9,4 +9,8 @@ $(document).ready(function(){
             window.localStorage.setItem("Index","index1.html");
             window.location.href="index1.html";
     });
+    $(".div3:eq(2)").click(function(){
+        window.localStorage.setItem("Index","index2.html");
+        window.location.href="index2.html";
+    });
 });

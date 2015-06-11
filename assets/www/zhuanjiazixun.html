@@ -9,11 +9,21 @@
     <script type="text/javascript" src="js/jquery.promptu-menu.js"></script>
     <!--<script src="cordova.js"></script>-->
     <script src="js/back.js"></script>
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+
+        });
+    </script>
     <script type="text/javascript">
          $(document).ready(function () {
-            back();
+             back();
              $('ul.promptu-menu').promptumenu({width:400, height:80, rows: 1, columns: 4, direction: 'horizontal', pages: true});
-             $('ul.promptu-menu2').promptumenu({width:400, height:80, rows: 1, columns: 4, direction: 'horizontal', pages: false});
         })
          function a1(x) {
              document.getElementsByClassName("ky-4")[x].style.backgroundImage = "url(image/comment_collect1_icon.png)";
@@ -28,6 +38,7 @@
              document.getElementsByClassName("ky-5")[x].style.backgroundImage= "";
          }
     </script>
+
     <style>
         .user{
             display:none;
@@ -54,6 +65,7 @@
         });
 
     </script>
+
 </head>
 <body>
 <header>
@@ -167,11 +179,6 @@
         <div class="div9-1">
            <p>最近一周值守专家</p>
         </div>
-        <div class="div9-2">
-            <a href="gengduozhuangjia.html">
-            <p>更多专家</p>
-            </a>
-        </div>
         <ul class="promptu-menu">
             <li class="li blue">
                 <div class="div10"><p>星期一</p></div>
@@ -211,10 +218,13 @@
         </ul>
     </div>
     <div class="div11">
+        <div class="div12">
+            <div class="div12-1"><p>资深专家</p></div>
+           <a href="gengduozhuangjia.html"><div class="div12-2"><p>更多专家</p></div></a>
+        </div>
         <div class="div11-left">
             <div class="div16">
                 <a href="zhuanjiazixunxqjm.html">
-             <div class="div12"><p>今日值守专家</p></div>
              <div class="div13"><img src="image/25.png"></div>
             <div class="div14"><p> 姓名 ： 李成儒</p></div>
             <div class="div15"><p>生日：1986年9月  职业：消防队指导代......</p></div></a>
@@ -222,10 +232,10 @@
         </div>
         <div class="div11-right">
             <div class="div16-1">
-            <div class="div12"><p>明日值守专家</p></div>
+                <a href="zhuanjiazixunxqjm.html">
             <div class="div13"><img src="image/26.png"></div>
             <div class="div14"><p> 姓名 ： 张三</p></div>
-            <a href=""><div class="div15"><p>生日：1986年9月  职业：消防队指导代......</p></div></a>
+            <div class="div15"><p>生日：1986年9月  职业：消防队指导代......</p></div></a>
             </div>
         </div>
     </div>

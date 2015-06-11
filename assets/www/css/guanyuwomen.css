@@ -12,7 +12,8 @@ header{
     width: 100%;
     height: 40px;
     background: #05A0D7;
-
+    position: fixed;
+   top: 0;
 }
 .div1 {
     width: 10%;
@@ -42,6 +43,7 @@ section{
     height: auto;
     float: left;
     background-color: #ffffff;
+    margin-top: 40px;
 }
 span{
     width: 95%;

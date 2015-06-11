@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body html{
+    width: 100%;
+    height: auto;
+
+}
+
+header{
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: #05A0D7;
+    position: fixed;
+    top: 0;
+}
+a{
+    text-decoration: none;
+}
+.div1 {
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 3%;
+}
+
+.div1 img {
+    max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.div2{
+    width: 70%;
+    height: 40px;
+    float: left;
+
+}
+.div2 p{
+;font-size: 1em;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+}
+.ss{
+    width: 100%;
+    height: auto;
+    float: left;
+    border-bottom: 1px solid #cccccc;
+}
+.div3{
+    width: 95%;
+    height: 30px;
+    float: left;
+    margin-left: 5%;
+}
+.div3 p{
+    font-size: 0.85em;
+    line-height: 30px;
+}
+.div4{
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.div4 img{
+    max-width: 100%;
+}
+.div5{
+    width: 65%;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+}
+.div5 p{
+    font-size: 0.75em;
+    line-height: 20px;
+     color: #737373;
+    margin-bottom: 10px;
+}
+.ss1{
+    width: 100%;
+    height: auto;
+    float: left;
+    border-bottom:  1px solid #cccccc;
+}
+.div6{
+    width: 95%;
+    height: 30px;
+    float: left;
+    margin-left: 5%;
+
+}
+.div6 p{
+    font-size: 0.9em;
+    line-height: 30px;
+}
+.div7{
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.div7 img{
+    max-width: 100%;
+}
+.div8{
+    width: 75%;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+}
+.div8 p{
+    font-size: 0.75em;
+    line-height: 20px;
+    color: #737373;
+    margin-bottom: 10px;
+}

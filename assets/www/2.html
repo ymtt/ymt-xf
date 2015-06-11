@@ -1,45 +1,235 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <script type=”text/javascript” src=”http://www.netcu.de/templates/netcu/js/jquery-1.4.2.min.js”></script>
-    <script type=”text/javascript” src=”http://www.netcu.de/templates/netcu/js/jquery.touchwipe.js”></script>
-    <script type=”text/javascript”>
-                var MyMar = setInterval(Marquee, 3000);
-                var pic_width = 320
-                a = 0
-                function Marquee(){
-                a++
-                if(a>2){a=0}
-                $(".focus_pic .kd").css("-webkit-transform","translateX(-"+a*pic_width+"px)")
-                }
-                $(".focus_pic .kd").touchwipe( {
-                wipeLeft:function(){
-                if(a>1){ return(false)}else {
-                $(".focus_pic .kd").css("-webkit-transform","translateX(-"+(a+1)*pic_width+"px)");
-                a=a+1
-                }},
-                wipeRight:function(){
-                if(a<0){ return(false)}else{
-                $(".focus_pic .kd").css("-webkit-transform","translateX(-"+(a-1)*pic_width+"px)");
-                a=a-1
-                }
-                },
-                min_move_x: 20,
-                min_move_y: 20,
-                preventDefaultEvents: true
-                });
-</script>
 
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #fd {
+            width: 40px;
+            height: 40px;
+            position:fixed;
+             right: 0;
+            top: 300px;
+            overflow: hidden;
+            outline: 0;
+            z-index: 500;
+        }
+        #fd img{
+            max-width: 100%;
+        }
+        .fd1{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.2);
+            z-index: 50;
+            display: none;
+        }
+        .fd2{
+            width: 80%;
+            height:50%;
+            z-index: 500;
+            position: fixed;;
+            left: 10%;
+            top: 25%;
+          display: none;
+        }
+        .fd3 {
+              width: 20%;
+             height: 20%;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+        .fd3 img{
+            max-width: 100%;
+        }
+        .fd4 {
+                width: 20%;
+                height: 20%;
+                position: absolute;
+                top: 5%;
+                left: 40%;
+            }
+        .fd4 img{
+            max-width: 100%;
+        }
+        .fd5 {
+            width: 20%;
+            height: 20%;
+            position: absolute;
+            top: 15%;
+            left: 15%;
+        }
+        .fd5 img{
+            max-width: 100%;
+        }
+        .fd6 {
+            width: 20%;
+            height:20%;
+            position: absolute;
+            top: 40%;
+            left: 5%;
+        }
+        .fd6 img{
+            max-width: 100%;
+        }
+        .fd7 {
+            width: 20%;
+            height: 20%;
+            position: absolute;
+            top: 65%;
+            left: 15%;
+        }
+        .fd7 img{
+            max-width: 100%;
+        }
+        .fd8 {
+              width: 20%;
+              height: 20%;
+              position: absolute;
+              top: 75%;
+              left: 40%;
+          }
+        .fd8 img{
+            max-width: 100%;
+        }
+        .fd9 {
+            width: 20%;
+            height: 20%;
+            position: absolute;
+            top: 65%;
+            left: 65%;
+        }
+        .fd9 img{
+            max-width: 100%;
+        }
+        .fd10 {
+            width: 20%;
+            height: auto;
+            position: absolute;
+            top: 40%;
+            left:75%;
+        }
+        .fd10 img{
+            max-width: 100%;
+        }
+        .fd11 {
+            width: 20%;
+            height: auto;
+            position: absolute;
+            top: 15%;
+            left:65%;
+        }
+        .fd11 img{
+            max-width: 100%;
+        }
+        hr{
+            width: 1px;
+            height: 100px;
+            background: #000000;
+            margin-top: 20px;
+            margin-left: 100px;
+            border: 0;
+        }
+        .h1{
+            width: 10%;
+            height:200px;
+            float: left;
+            background-color: #05A0D7;
+            margin-left: 2%;
+        }
+        .h1 p{
+            color: #FFFFFF;
+            font-size: 0.8em;
+            padding:30%;
+            margin-top: 30px;
+
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
 <body>
-<div class=”focus_pic”>
-    <div class=”kd”>
-        <a href=”#”><img src=”http://www.zb580.tv/upload/2013/2/19/logo.jpg” alt=”" /></a>
-        <a href=”#”><img src=”http://www.zb580.tv/upload/2013/3/22/ylss–logo.jpg” alt=”" /></a>
-        <a href=”#”><img src=”http://www.zb580.tv/upload/2012/12/14/shn–logo(1).jpg” alt=”" /></a>
-    </div>
+
+<div id="fd">
+    <img src="image/float_logo_icon.png" onclick="a()">
 </div>
+
+<div class="fd1" id="fd1"></div>
+
+<div class="fd2" id="fd2">
+
+    <div class="fd3">
+        <img src="image/float_logo_icon.png" onclick="s()">
+    </div>
+
+    <div class="fd4">
+        <a href="zixun.html">
+        <img src="image/float_Information-platform_icon.png">
+            </a>
+    </div>
+    <div class="fd5">
+        <a href="gerenzhongxin.html">
+        <img src="image/float_Personal-center_icon.png">
+            </a>
+    </div>
+    <div class="fd6">
+        <a href="education.html">
+        <img src="image/float_education-platform_icon.png">
+            </a>
+    </div>
+    <div class="fd7">
+        <a href="zixunfenlei.html">
+        <img src="image/float_consulting-Classification_icon.png">
+            </a>
+    </div>
+    <div class="fd8">
+        <a href="knowledge.html">
+        <img src="image/float_Knowledge-platform_icon.png">
+            </a>
+    </div>
+    <div class="fd9">
+        <a href="forum.html">
+        <img src="image/float_forum_icon.png">
+            </a>
+    </div>
+    <div class="fd10">
+        <a href="more.html">
+        <img src="image/float_more_icon.png">
+            </a>
+    </div>
+    <div class="fd11">
+        <a href="zhuanjiazixun.html">
+    <img src="image/float_expert-consultation_icon.png">
+            </a>
+</div>
+</div>
+<hr/>
+<div class="h1">
+    <p>中华人民共和国</p>
+</div>
+<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $('#fd').drag({
+        before: function(e) {
+        },
+        process: function(e) {
+        },
+        end: function(e) {
+        }
+    });
+    $().append("")
+</script>
 </body>
-</html>
+
+</html>  

@@ -8,6 +8,9 @@ html,body{
     background-color: #ffffff;
 
 }
+a{
+    text-decoration: none;
+}
 .div1{
     width:414px;
     height:700px;

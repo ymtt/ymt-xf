@@ -8,7 +8,8 @@ body html{
 }
 
 header{
-    float: left;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 40px;
     background-color: #05A0D7;
@@ -39,6 +40,12 @@ a{
     font-size: 1em;
     color: #FFFFFF;
     margin-left: 39%;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
 }
 .div3{
     width: 100%;

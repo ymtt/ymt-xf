@@ -3,11 +3,23 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>知识平台</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link href="css/knowledge.css" type="text/css" rel="stylesheet" media="screen">
+  <link href="css/fd.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <!--<script src="cordova.js"></script>-->
     <script src="js/back.js"></script>
     <script src="js/knowledge.js"></script>
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+        });
+
+    </script>
     <script type="text/javascript">
          $(document).ready(function () {
             back();
@@ -16,11 +28,13 @@
             getnews("xf_article_h_know",method,kystart,kyend,false);
          }
     </script>
+
 </head>
 <body>
+
 <header>
     <div>
-        <a href="#" id="back"><div class="div1"><img src="image/return_icon.png"></div></a>
+        <a href="#" id="back"><div class="div1-1"><img src="image/return_icon.png"></div></a>
         <div class="div2"><p>知识平台</p></div>
         <div class="div3">
             <img src="image/more_icon1.png">
@@ -32,6 +46,7 @@
         </div>
     </div>
 </header>
+
     <nav>
         <div class="nav-1">
             <div class="nav-2"> <img src="image/z_search_gray_icon.png"></div>
@@ -132,8 +147,116 @@
             </li>
         </ul>
     </div>
+
 <section  class="nav_tab" id="nav_tab1">
-25464
+    <div class="s1">
+        <p>中华人民共和国公安部</p>
+    </div>
+    <hr/>
+    <div class="s2">
+        <p>公安部消防局第七章</p>
+    </div>
+    <hr class="h1"/>
+    <hr class="h2"/>
+    <hr class="h3"/>
+    <hr class="h4"/>
+    <hr class="h5"/>
+    <hr class="h6"/>
+    <hr class="h7"/>
+    <hr class="h8"/>
+    <hr class="h9"/>
+    <hr class="h10"/>
+    <hr class="h11"/>
+    <hr class="h12"/>
+    <hr class="h13"/>
+    <hr class="h14"/>
+    <hr class="h15"/>
+    <hr class="h16"/>
+    <hr class="h17"/>
+    <hr class="h18"/>
+    <hr class="h19"/>
+    <hr class="h20"/>
+    <hr class="h21"/>
+    <hr class="h22"/>
+    <hr class="h23"/>
+    <hr class="h24"/>
+
+    <div class="s3">
+        <p>办公室</p>
+    </div>
+    <div class="s4">
+        <p>政治部</p>
+    </div>
+    <div class="s4">
+        <p>纪检监察处</p>
+    </div>
+    <div class="s4">
+        <p>政策研究处</p>
+    </div>
+    <div class="s4">
+        <p>防火监督处</p>
+    </div>
+    <div class="s4">
+        <p>社会消防指导处</p>
+    </div>
+    <div class="s4">
+        <p>作战训练处</p>
+    </div>
+    <div class="s4">
+        <p>信息通信处</p>
+    </div>
+    <div class="s4">
+        <p>科技处</p>
+    </div>
+    <div class="s4">
+        <p>法规标准处</p>
+    </div>
+    <div class="s4">
+        <p>警务处</p>
+    </div>
+    <div class="s4">
+        <p>宣传处</p>
+    </div>
+    <div class="s4">
+        <p>后勤处</p>
+    </div>
+    <div class="s4">
+        <p>装备处</p>
+    </div>
+    <div class="s4">
+        <p>财务处</p>
+    </div>
+    <div class="s4">
+        <p>审计处</p>
+    </div>
+    <div class="s4">
+        <p>管理处</p>
+    </div>
+    <div class="s5">
+        <a href="">
+            <p>公安部四川消防研究所</p>
+        </a>
+    </div>
+    <div class="s6">
+        <a href="">
+            <p>公安部沈阳消防研究所</p>
+        </a>
+    </div>
+    <div class="s6">
+        <a href="">
+            <p>公安部上海消防研究所</p>
+        </a>
+    </div>
+    <div class="s6">
+        <a href="">
+            <p>公安部天津消防研究所</p>
+        </a>
+    </div>
+    <div class="s6">
+        <a href="">
+            <p>各省总部</p>
+        </a>
+    </div>
 </section>
 <section  class="nav_tab" id="nav_tab2" style="display: none">
 6666
@@ -431,5 +554,6 @@
      </div>
  </div>
 </section>
+
 </body>
 </html>

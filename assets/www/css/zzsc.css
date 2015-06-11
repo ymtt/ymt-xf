@@ -403,6 +403,8 @@ input,select,button{
 	line-height:36px;
     border-bottom: 1px solid #CCCCCC;
     background-color: #ffffff;
+    position: fixed;
+    top: 0;
 }
 .searchbox .form div {
 

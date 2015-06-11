@@ -11,6 +11,8 @@ header{
     width: 100%;
     height: 40px;
     background: #05A0D7;
+    position: fixed;
+    top: 0;
 }
 a{
     text-decoration: none;
@@ -41,8 +43,9 @@ a{
 }
 section{
     width: 100%;
-    height:210px;
+    height:auto;
     float: left;
+    margin-top: 40px;
 }
 ul{
     width: 100%;

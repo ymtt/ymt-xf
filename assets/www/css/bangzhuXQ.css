@@ -13,6 +13,8 @@ header {
     width: 100%;
     height: 40px;
     background: #05A0D7;
+    position: fixed;
+    top: 0;
 }
 
 a {
@@ -35,7 +37,7 @@ section{
     width: 100%;
     height: auto;
     float: left;
-
+  margin-top: 40px;
 }
 .div2{
     width: 90%;

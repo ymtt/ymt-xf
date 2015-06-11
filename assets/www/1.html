@@ -1,41 +1,397 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Animated Circular Portfolio with jQuery by http://www.codefans.net</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="Animated Circular Portfolio with jQuery" />
-        <meta name="keywords" content="jquery, animate, circle, round, portfolio, design, tutorial"/>
-        <link href="css/default.css" rel="stylesheet" type="text/css" />
-        <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-        <script src="js/mobilyblocks.js" type="text/javascript"></script>
-        <script>
-            $(function(){
-                $('.nature').mobilyblocks({
-                    trigger: 'hover', //触发的方式
-                    direction: 'counter', //动画方向
-                    duration:500,  //动画持续时间
-                    zIndex:50,  //z-inde值
-                    widthMultiplier:1.15  //宽度的倍数
-                });
-            });
-        </script>
-      </head>
-    <body>
-    <div class="nature">
-        <h1>主菜单</h1>
-        <ul class="reset">
-            <li><a href="http://www.jqcool.net">jQ酷</a></li>
-            <li><a href="http://www.jqcool.net/jquery-download">jqeury下载</a></li>
-            <li><a href="http://www.jqcool.net/plug">jquery插件</a></li>
-            <li><a href="http://www.jqcool.net/jquery-course">jquery教程</a></li>
-            <li><a href="http://www.jqcool.net/adminnote">站长随记</a></li>
-            <li><a href="http://www.jqcool.net/guestbook">留言</a></li>
-            <li><a href="http://www.jqcool.net">jQ大神</a></li>
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta http-equiv="Content-Type" Content="text/html; charset=utf-8;">
+    <title>公安部四川消防研究所</title>
+     <style>
+     *{
+         margin: 0;
+         padding: 0;
+     }
+     html,body{
+         width: 100%;
+         height: 100%;
+     }
+     header{
+         width: 100%;
+         height: 40px;
+         background: #05A0D7;
+         position: fixed;
+         top: 0;
+     }
+     a{
+         text-decoration: none;
+     }
+     .div1-1 {
+         width: 10%;
+         height: auto;
+         float: left;
+         margin-left: 3%;
+     }
 
-        </ul>
-    </div>
-    </body>
-    </html>
+     .div1-1 img {
+         max-width: 100%;
+         margin-left: 20%;
+         margin-top: 10px;
+     }
+     .div2 {
+         width: 70%;
+         height: auto;
+         float: left;
+
+     }
+     .div2 p{
+         line-height: 40px;
+         font-size: 1em;
+         color: #FFFFFF;
+         margin-left: 20%;
+     }
+     section{
+         width: 100%;
+         height: auto;
+         float: left;
+         margin-top: 40px;
+     }
+         hr{
+             width: 2px;
+             height: 15px;
+             background: #000000;
+             margin-left: -5%;
+             border: 0;
+             margin-top: 300px;
+             float: left;
+         }
+         .s2{
+             width: 10%;
+             height:200px;
+             float: left;
+             background-color: #0c63ee;
+             margin-top: 150px;
+             margin-left: 2%;
+         }
+         .s2 p{
+             color: #FFFFFF;
+             font-size: 0.8em;
+             padding:30%;
+             margin-top: 15px;
+         }
+         .h1{
+             width: 25px;
+             height: 2px;
+             background: #000000;
+             margin-left:0;
+             border: 0;
+             margin-top: 245px;
+             float: left;
+         }
+         .h2{
+             width: 2px;
+             height: 507px;
+             background: #000000;
+             margin-left:0;
+             border: 0;
+             margin-top: 20px;
+             float: left;
+         }
+         .h3{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:0;
+             border: 0;
+             margin-top: 20px;
+             float: left;
+         }
+         .h4{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 45px;
+             float: left;
+         }
+         .h5{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 70px;
+             float: left;
+         }
+         .h6{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 95px;
+             float: left;
+         }
+         .h7{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 120px;
+             float: left;
+         }
+         .h8{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 145px;
+             float: left;
+         }
+         .h9{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 170px;
+             float: left;
+         }
+         .h10{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 195px;
+             float: left;
+         }
+         .h11{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 220px;
+             float: left;
+         }
+         .h12{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 245px;
+             float: left;
+         }
+         .h13{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 300px;
+             float: left;
+         }
+         .h14{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 345px;
+             float: left;
+         }
+         .h15{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 390px;
+             float: left;
+         }
+         .h16{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 435px;
+             float: left;
+         }
+         .h17{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 480px;
+             float: left;
+         }
+         .h18{
+             width: 10px;
+             height: 2px;
+             background: #000000;
+             margin-left:-10px;
+             border: 0;
+             margin-top: 525px;
+             float: left;
+         }
+
+         .s3{
+             width: 40%;
+             height:20px;
+             float: left;
+             background-color: #0c63ee;
+             margin-top: 10px;
+
+         }
+         .s3 p{
+             color: #FFFFFF;
+             font-size: 0.8em;
+             margin-top: 2px;
+             margin-left: 10%;
+         }
+         .s4{
+             width: 40%;
+             height:20px;
+             float: left;
+             background-color: #0c63ee;
+             margin-top: 5px;
+
+         }
+         .s4 p{
+             color: #FFFFFF;
+             font-size: 0.8em;
+             margin-top: 2px;
+             margin-left: 10%;
+         }
+         .s4{
+             width: 40%;
+             height:20px;
+             float: left;
+             background-color: #0c63ee;
+             margin-top: 5px;
+
+         }
+         .s4 p{
+             color: #FFFFFF;
+             font-size: 0.8em;
+             margin-top: 2px;
+             margin-left: 10%;
+         }
+         .s5{
+             width: 50%;
+             height:40px;
+             float: left;
+             background-color: #0c63ee;
+             margin-top: 25px;
+
+         }
+         .s5 p{
+             color: #FFFFFF;
+             font-size: 0.8em;
+             margin-top: 5px;
+             margin-left: 10%;
+         }
+         .s6{
+             width: 50%;
+             height:40px;
+             float: left;
+             background-color: #0c63ee;
+             margin-top: 5px;
+
+         }
+         .s6 p{
+             color: #FFFFFF;
+             font-size: 0.8em;
+             margin-top: 5px;
+             margin-left: 10%;
+         }
+
+     </style>
+   </head>
+ <body>
+ <header>
+         <a href="#" id="back"><div class="div1-1"><img src="image/return_icon.png"></div></a>
+         <div class="div2"><p>公安部四川消防研究所</p></div>
+  </header>
+ <section>
+ <div class="s2">
+     <p>公安部四川消防研究所</p>
+ </div>
+ <hr class="h1"/>
+ <hr class="h2"/>
+ <hr class="h3"/>
+ <hr class="h4"/>
+ <hr class="h5"/>
+ <hr class="h6"/>
+ <hr class="h7"/>
+ <hr class="h8"/>
+ <hr class="h9"/>
+ <hr class="h10"/>
+ <hr class="h11"/>
+ <hr class="h12"/>
+ <hr class="h13"/>
+ <hr class="h14"/>
+ <hr class="h15"/>
+ <hr class="h16"/>
+ <hr class="h17"/>
+ <hr class="h18"/>
+
+
+ <div class="s3">
+     <p>办公室</p>
+ </div>
+ <div class="s4">
+     <p>政治处</p>
+ </div>
+ <div class="s4">
+     <p>科技处</p>
+ </div>
+ <div class="s4">
+     <p>财务处</p>
+ </div>
+ <div class="s4">
+     <p>企业管理处</p>
+ </div>
+ <div class="s4">
+     <p>审计处</p>
+ </div>
+ <div class="s4">
+     <p>作战训练处</p>
+ </div>
+ <div class="s4">
+     <p>消防规范研究室</p>
+ </div>
+ <div class="s4">
+     <p>消防防火室</p>
+ </div>
+ <div class="s4">
+     <p>火灾物件中心</p>
+ </div>
+ <div class="s5">
+     <p>国家防火建筑材料质量监督检验中心</p>
+ </div>
+ <div class="s6">
+     <p>公安部消防局四川火灾物证鉴定中心</p>
+ </div>
+ <div class="s6">
+     <p>公安部消防局四川司法鉴定中心</p>
+ </div>
+ <div class="s6">
+     <p>四川法斯特消防安全性能评估有限公司</p>
+ </div>
+ <div class="s6">
+     <p>四川天府防火材料有限公司</p>
+ </div>
+ <div class="s6">
+     <p>四川天府消防工程有限公司</p>
+ </div>
+
+     </section>
+ </body>
+</html>
 
 
 

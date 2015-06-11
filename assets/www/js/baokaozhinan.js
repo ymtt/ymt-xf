@@ -50,7 +50,7 @@ function c()
     }
 
 }
-function d()
+function f()
 {
 
     var oBtn2 = document.getElementById("btn4");

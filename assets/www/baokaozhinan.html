@@ -5,6 +5,17 @@
     <title>报考指南</title>
     <link href="css/baokaozhinan.css" type="text/css" rel="stylesheet" media="screen">
     <script src="js/baokaozhinan.js"></script>
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+        });
+
+    </script>
 </head>
 <body>
 <header>
@@ -36,13 +47,6 @@
                 <a href="kaoshishijian.html">
                     <div class="dome_1">
                         <p>考试时间</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <div class="dome_1">
-                        <p>报名科目</p>
                     </div>
                 </a>
             </li>
@@ -120,13 +124,6 @@
             <li>
                 <a href="">
                     <div class="dome_1">
-                        <p>报名科目</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <div class="dome_1">
                         <p>考试时长</p>
                     </div>
                 </a>
@@ -198,13 +195,6 @@
             <li>
                 <a href="">
                     <div class="dome_1">
-                        <p>报名科目</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <div class="dome_1">
                         <p>考试时长</p>
                     </div>
                 </a>
@@ -248,7 +238,7 @@
     </div>
     <div class="btn_1">
         <input type="button" id="btn4"  style="background: url(image/the-arrow_icon_right.png)no-repeat 80% 50%" class="btn2" onclick="d()">
-        <div class="btn3"><button onclick="d()">中级消防构建筑员</button></div>
+        <div class="btn3"><button onclick="f()">中级消防构建筑员</button></div>
     </div>
     <div id="demo4" class="demo1">
         <ul>
@@ -273,13 +263,7 @@
                     </div>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <div class="dome_1">
-                        <p>报名科目</p>
-                    </div>
-                </a>
-            </li>
+
             <li>
                 <a href="">
                     <div class="dome_1">

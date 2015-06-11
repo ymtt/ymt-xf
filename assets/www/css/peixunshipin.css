@@ -13,7 +13,8 @@ header{
     width: 100%;
     height: 40px;
     background: #05A0D7;
-    float: left;
+    position: fixed;
+    top: 0;
 }
 .div1 {
     width: 10%;
@@ -54,6 +55,12 @@ header{
     float: right;
     margin-right: 15px;
     margin-top: 8px;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
 }
 .div5{
     width: 100%;

@@ -4,14 +4,15 @@
 }
 html,body{
     width: 100%;
-    height:700px;
+    height:auto;
 
 }
 header{
     width: 100%;
     height: 40px;
     background: #05A0D7;
-    float: left;
+    position: fixed;
+    top: 0;
 }
 a{
     text-decoration: none;
@@ -55,6 +56,8 @@ a{
     height: auto;
     float: left;
     background-color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 .div4{
     width: 100%;
@@ -116,7 +119,7 @@ footer ul {
     float: left;
 }
 footer ul li{
-    width: 33.33%;
+    width: 50%;
     height: 60px;
     float: left;
 }

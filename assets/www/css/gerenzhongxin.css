@@ -11,7 +11,8 @@ header{
     width: 100%;
     height: 40px;
     background: #05A0D7;
-    float: left;
+    position: fixed;
+    top: 0;
 }
 a{
     text-decoration: none;
@@ -46,6 +47,12 @@ a{
     margin-right: 15px;
     margin-top: 5px;
 }
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+}
 .div4{
     width: 100%;
     height: 100px;
@@ -56,16 +63,22 @@ a{
     height: 100px;
     max-width: 100%;
 }
+
 .div5 {
-    width:20% ;
-    height: auto;
-    float: left;
-    margin-top: -60px;
+      width: 60px;
+      height: 60px;
+      float: left;
+    border-radius: 60px;
+    background-color:rgba(255,255,255,0.5) ;
+    margin-top: -40px;
     margin-left: 40%;
 }
 .div5 img{
-    width: 100%;
-    height: auto;
+    width: 54px;
+    height: 54px;
+    border-radius: 54px;
+    margin-top: 3px;
+    margin-left: 3px;
 }
 .div6{
    width: 100%;
@@ -93,79 +106,56 @@ a{
 }
 .div8{
     width: 100%;
-    height: 40px;
+    height: 30px;
     float: left;
+    border-bottom: 1px solid #cccccc;
+
 }
-.div8 ul {
-    list-style:none;
-}
-.div8 ul li {
-    width: 20%;
-    height: 40px;
-    float: left;
-}
-.div8 a:hover p{
-    text-decoration: underline;
-    color: #05A0D7;
+.div8 p{
+    line-height: 30px;
+    font-size: 1em;
+    margin-left: 5%;
 }
 .div9{
     width: 100%;
-    height: 40px;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #cccccc;
 }
 .div9 p{
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    color:#000000 ;
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
-    border-right: 1px solid #CCCCCC;
-    margin-top: 10px;
-}
-.div9-1{
-    width: 100%;
-    height: 40px;
-}
-.div9-1 p{
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    color:#000000 ;
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
-    margin-top: 10px;
+    line-height: 30px;
+    margin-left: 5%;
+    color: #737373;
 }
 .div10{
     width: 100%;
-    height: 80px;
+    height: 30px;
     float: left;
-    background-color: #EDEDED;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 5px solid #cccccc;
+}
+.div10 p{
+    font-size: 0.85em;
+    line-height: 30px;
+    margin-left: 5%;
+    color: #737373;
 }
 .div11{
     width: 100%;
-    height: 30px;
+    height: 40px;
     float: left;
+    border-bottom: 1px solid #cccccc;
+    background-color: #EDEDED;
 }
 .div11 p{
-    width: 90%;
-    height: 30px;
-    line-height: 30px;
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.85em;
-    margin-left: 15px;
-}
-.div12{
-    width: 100%;
-    height: 50px;
+    line-height: 40px;
     float: left;
+    font-size: 1em;
+    margin-left: 5%;
 }
-.div12 p{
-    width: 95%;
-    line-height: 20px;
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.75em;
-    margin-left: 15px;
+
+.div11 img{
+  float: left;
+    margin-left: 60%;
+    margin-top: 10px;
 }

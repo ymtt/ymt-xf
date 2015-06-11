@@ -5,7 +5,7 @@
 
 html, body {
     width: 100%;
-    height:614px;
+    height:auto;
 
 }
 
@@ -13,6 +13,9 @@ header {
     width: 100%;
     height: 40px;
     background: #05A0D7;
+    position: fixed;
+    top: 0;
+
 }
 
 a {
@@ -43,6 +46,25 @@ a {
     color: #FFFFFF;
     margin-left: 30%;
 }
+.div18{
+    width: 20%;
+    height: 40px;
+    float: left;
+    margin-left: 17%;
+}
+.div18 p{
+    width:100%;
+    line-height: 40px;
+    font-size: 0.8em ;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #FFFFFF;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+}
 .div3{
     width: 100%;
     height: 100px;
@@ -54,21 +76,21 @@ a {
     max-width: 100%;
 }
 .div4 {
-    width: 80px;
-    height: 80px;
+    width: 86px;
+    height: 86px;
     float: left;
-    border: 3px solid #FFFFFF;
-    border-radius: 80px;
+    border-radius: 86px;
     margin-left: 10%;
     margin-top: -75px;
-    filter:alpha(Opacity=80);
-    -moz-opacity:0.75;opacity: 0.8;
+    background: rgba(255,255,255,0.5);
     overflow: hidden;
 }
 .div4 img{
-    width: 100%;
-    height:100%;
+    width: 80px;
+    height: 80px;
     border-radius: 80px;
+    margin-top: 3px;
+    margin-left: 3px;
 }
 .div5{
     width: 50%;
@@ -272,20 +294,7 @@ footer{
     max-width: 100%;
     margin-top: 10px;
 }
-.div18{
-    width: 20%;
-    height: 40px;
-    float: left;
-    margin-left: 5%;
-}
-.div18 p{
-   width:100%;
-    height: 40px;
-    line-height: 40px;
-    font-size: 0.85em ;
-    font-family: "方正兰亭纤黑_GBK";
-    color: #000000;
-}
+
 .div19{
     width:8% ;
     height: 30px;

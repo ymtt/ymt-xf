@@ -12,7 +12,8 @@ header{
     width: 100%;
     height: 40px;
     background: #05A0D7;
-
+   position: fixed;
+    top: 0;
 }
 .div1 {
     width: 10%;
@@ -57,7 +58,7 @@ section{
     width: 100%;
     height: 180px;
     float: left;
-
+   margin-top: 40px;
 }
 .div4{
     width: 100%;

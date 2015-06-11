@@ -232,6 +232,7 @@ section{
     font-size: 1em;
     font-family: "方正兰亭纤黑_GBK";
     margin-left: 5%;
+    color: #000000;
 }
 .div13{
     width: 100%;
@@ -279,7 +280,7 @@ section{
     width: 100%;
     height:30px;
     float: left;
-
+    color: #000000;
 }
 .div16 p{
     width: auto;

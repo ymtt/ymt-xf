@@ -7,7 +7,8 @@ body html{
     height: auto;
 }
 .zz-1{
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     z-index: 1001;
     width: 100%;
     height: 100%;
@@ -15,7 +16,8 @@ body html{
     display: none;
 }
 header{
-
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 40px;
     background-color: #05A0D7;
@@ -65,6 +67,7 @@ section{
     width: 100%;
     height:auto;
     float: left;
+    margin-top: 40px;
 }
 .div5{
     width: 100%;
@@ -128,6 +131,7 @@ section{
     border-bottom: 3px solid #ECECEC;
     border-top: 3px solid #ECECEC;
     float: left;
+    margin-bottom: 70px;
 }
 .div10{
     width: 10%;
@@ -152,6 +156,13 @@ section{
     font-family: "方正兰亭纤黑_GBK";
     line-height: 40px;
 
+}
+footer{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+   background-color: #FFFFFF;
 }
 .div11{
     width: 100%;
