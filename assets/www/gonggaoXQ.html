@@ -6,6 +6,7 @@
     <link href="css/gonggaoXQ.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/gonggaoXQ.js"></script>
+    <script src="cordova.js"></script>
     <script language="javascript" type="text/javascript">
         $(document).ready(function(){
             //向详情页插入数据
@@ -18,6 +19,9 @@
         function hidediv() {
             document.getElementById("bg").style.display ='none';
             document.getElementById("show").style.display ='none';
+        }
+        function share(){
+            window.plugins.socialsharing.share('新消防真TM是太好用了','分享标题',['http://e.hiphotos.baidu.com/image/pic/item/f703738da9773912274dc116fb198618367ae25a.jpg','http://c.hiphotos.baidu.com/image/pic/item/5ab5c9ea15ce36d3ef1cabf738f33a87e850b1d8.jpg'],'http://www.baidu.com');
         }
     </script>
 </head>
@@ -33,7 +37,7 @@
         </a>
     </div>
     <div class="div5">
-        <img src="image/share_icon.png" onclick="showdiv()">
+        <img src="image/share_icon.png" onclick="share()">
     </div>
 </header>
 <section>

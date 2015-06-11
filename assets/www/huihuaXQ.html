@@ -18,10 +18,10 @@
         }
         $(document).ready(function(){
             //获得所有消息
-            getmsg("getQQAllMsg");
+            getallmsg();
 
-            //轮询获得消息
-            setInterval('getunreadmsg()',1000);
+            //普通轮询获得消息
+            //setInterval('getunreadmsg()',500);
 
             //绑定点击发送事件
              $("#ss2").click(function(){
@@ -30,17 +30,19 @@
             });
 
             //随时检查文本框值有无改变，从而改变按钮
-            
-        
             setInterval('a()',100);
+
+
+
+           getunreadmsg({});
+           //alert(currentdatetotimestamp());
         });
         
         
-        //读取未读消息
-          function getunreadmsg(){
-                //临时写成全部消息
-                getmsg("getQQUnreadMsg");
-          }
+         //读取未读消息
+         //function getunreadmsg(){
+         //      getmsg("getQQUnreadMsg");
+         //}
         
         
         function a(){
@@ -63,86 +65,27 @@
     <a href="#"><div class="div3"><p>预约</p></div></a>
 </header>
 <section>
+
 <div class="div4">
     <div class="div5">
         <img src="image/16.png">
     </div>
     <div class="div6">
-        <p>你好！</p>
+        <p>专家！</p>
     </div>
 </div>
+
     <div class="div4">
         <div class="div7">
             <img src="image/16.png">
         </div>
         <div class="div8">
-            <p>你好！</p>
+            <p>用户！</p>
         </div>
     </div>
-    <div class="div4">
-        <div class="div5">
-            <img src="image/16.png">
-        </div>
-        <div class="div6">
-            <p>你好！</p>
-        </div>
-    </div>
-    <div class="div4">
-        <div class="div7">
-            <img src="image/16.png">
-        </div>
-        <div class="div8">
-            <p>你好！</p>
-        </div>
-    </div>
-    <div class="div4">
-        <div class="div5">
-            <img src="image/16.png">
-        </div>
-        <div class="div6">
-            <p>你好！</p>
-        </div>
-    </div>
-    <div class="div4">
-        <div class="div7">
-            <img src="image/16.png">
-        </div>
-        <div class="div8">
-            <p>你好！</p>
-        </div>
-    </div>
-    <div class="div4">
-        <div class="div5">
-            <img src="image/16.png">
-        </div>
-        <div class="div6">
-            <p>你好！</p>
-        </div>
-    </div>
-    <div class="div4">
-        <div class="div7">
-            <img src="image/16.png">
-        </div>
-        <div class="div8">
-            <p>你好！</p>
-        </div>
-    </div>
-    <div class="div4">
-        <div class="div5">
-            <img src="image/16.png">
-        </div>
-        <div class="div6">
-            <p>你好！</p>
-        </div>
-    </div>
-    <div class="div4">
-        <div class="div7">
-            <img src="image/16.png">
-        </div>
-        <div class="div8">
-            <p>你好！</p>
-        </div>
-    </div>
+
+
+
 </section>
 <footer>
     <div class="div9">
