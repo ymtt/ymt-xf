@@ -104,7 +104,7 @@ function getunreadmsg(data){
             success:function(result){
                 getunreadmsg(result);
                 //alert("SESSIONID:"+session+"\nqq_id:"+qq_id+"\nuserId:"+userId+"\ntime:"+time);
-            },
+            }
        });
 
 }

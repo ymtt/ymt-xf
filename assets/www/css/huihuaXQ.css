@@ -61,12 +61,13 @@ section{
     float: left;
     background-color: #EDEDED;
     margin-top: 40px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 .div4{
     width: 100%;
     height: auto;
     float: left;
+
 }
 .div5{
     width: 20%;
@@ -120,11 +121,9 @@ section{
 .div8 p{
     font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
-    line-height: 100%;
+    line-height: 20px;
     text-align: center;
     color: #ffffff;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 footer{
     width: 100%;

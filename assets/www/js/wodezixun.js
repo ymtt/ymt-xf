@@ -101,7 +101,7 @@ function expertslist(){
          },error:function(error){
              var json=JSON.stringify(error);
              alert("获取失败"+json);
-         },
+         }
      })
  }
 //添加列表到wodezixun.html页面
