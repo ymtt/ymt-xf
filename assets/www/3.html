@@ -1,146 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
 <head>
-    <meta http-equiv="Content-Type" Content="text/html; charset=utf-8;">
-    <title>移动端触摸滑动</title>
-    <meta name="author" content="rainna" />
-    <meta name="keywords" content="rainna's js lib" />
-    <meta name="description" content="移动端触摸滑动" />
-    <meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">
-    <!--<script src="cordova.js"></script>-->
-    <script type="text/javascript">
-            function a(){
-                var div = document.getElementById("d1");
-                if (div.style.display == "block") {
-                    div.style.display = "none";
-                } else if (div.style.display == "none") {
-                    div.style.display = "block"
-                }
-        }
+    <title>Excolo Slider - yet another jQuery slider/caroussel plugin</title>
+    <!--<link href="css/reset.css" rel="stylesheet" />-->
+
+    <link href="css/style-1.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.excoloSlider.js"></script>
+
+    <script>
+        $(function () {
+            $("#sliderA").excoloSlider();
+            $("#sliderB").excoloSlider();
+        });
     </script>
-    <style>
-        *{margin:0;padding:0;}
-        li{list-style:none;}
-
-        .m-slider{width:600px;margin:50px 20px;overflow:hidden;}
-        .m-slider .cnt{position:relative;left:0;width:3000px;}
-        .m-slider .cnt li{float:left;width:600px;}
-        .m-slider .cnt img{display:block;width:100%;height:450px;}
-        .m-slider .cnt p{margin:20px 0;}
-        .m-slider .icons{text-align:center;color:#000;}
-        .m-slider .icons span{margin:0 5px;}
-        .m-slider .icons .curr{color:red;}
-        .f-anim{-webkit-transition:left .2s linear;}
-    </style>
 </head>
-
 <body>
-<div>
-    <img src="image/2_expert-consultation_icon.png" onclick="a()">
-</div>
-<div class="m-slider" id="d1" style="display: none">
-    <ul class="cnt" id="slider">
-        <li>
-            <img src="http://imglf1.ph.126.net/qKodH3sZoVbPalKFtHS9mw==/6608946691259322175.jpg">
-            <p>20140813镜面的世界，终究只是倒影。看得到你的身影，却触摸不到你的未来</p>
-        </li>
-        <li>
-            <img src="http://imglf1.ph.126.net/40-jqH_j6EoCWnZOixY2pA==/4798022453110310215.jpg">
-            <p>20140812锡林浩特前往东乌旗S101必经之处，一条极美的铁路。铁路下面是个小型的盐沼，淡淡的有了一丝天空之境的感觉。可惜在此玩了一个小时也没有看见一列火车经过，只好继续赶往东乌旗。</p>
-        </li>
-        <li>
-            <img src="http://imglf0.ph.126.net/Jnmi2y51zVdjKAYlibtpFw==/3068640196117481166.jpg">
-            <p>20140811水的颜色为什么那么蓝，我也纳闷，反正自然饱和度和对比度拉完就是这个颜色的</p>
-        </li>
-        <li>
-            <img src="http://imglf1.ph.126.net/79GPsjhwiIj8e-0nP5MsEQ==/6619295294699949331.jpg">
-            <p>海洋星球3重庆天气热得我想卧轨自杀</p>
-        </li>
-        <li>
-            <img src="http://imglf1.ph.126.net/40-jqH_j6EoCWnZOixY2pA==/4798022453110310215.jpg">
-            <p>以上这些作品分别来自两位设计师作为观者，您能否通过设计风格进行区分</p>
-        </li>
-    </ul>
-    <div class="icons" id="icons">
-        <span class="curr">1</span>
-        <span>2</span>
+<header>
+<div class="header-1">
+      <img src="image/main interface_logo.png">
+                </div>
+                <div class="header-2">
+                    <a href="sousuo.html"> <img src="image/search_icon.png"></a>
+                </div>
+            </header>
+            <div id="sliderA" class="slider">
+            <section>
+                <div class="section-1">
+                    <ul>
+                        <li>
+                            <a href="zixun.html">
+                                <div class="div1" ><img src="image/2_information-platform_icon.png"></div>
+                                <div class="div2"><p>资讯平台</p></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="zhuanjiazixun.html">
+                                <div class="div1"> <img src="image/2_expert-consultation_icon.png"></div>
+                                <div class="div2"><p>专家咨询</p></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="education.html">
+                                <div class="div1"> <img src="image/2_education-platform_icon.png"></div>
+                                <div class="div2"><p>教育平台</p></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="knowledge.html">
+                                <div class="div1"><img src="image/2_knowledge-platform_icon.png"></div>
+                                <div class="div2"><p>知识平台</p></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forum.html">
+                                <div class="div1"><img src="image/2_forum_icon.png"></div>
+                                <div class="div2"><p>论坛</p></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="more.html">
+                                <div class="div1"><img src="image/2_more_icon.png"></div>
+                                <div class="div2"><p>更多</p></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <img src="image/banner1.png" />
+            <img src="image/banner2.png" />
+            <img src="image/banner3.png" />
+            <img src="image/banner.png" />
+            <img src="image/banner1.png" />
+            <img src="image/banner2.png" />
+            <img src="image/banner3.png" />
+                </div>
+<div class="div3">
+    <div class="div4"><p>咨询分类</p></div>
+    <div class="div5"><a href="zixunfenlei.html"><p>显示全部</p></a></div>
+    <div class="div6">
+        <div class="div6-1">
+            <ul>
+                <li>
+                    <a href="zixunfenlei.html">
+                        <div class="div7">
+                            <p>建筑</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="zixunfenlei.html">
+                        <div class="div7">
+                            <p>专业</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="zixunfenlei.html">
+                        <div class="div7">
+                            <p>关键词</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="div8">
+            <table>
+                <tr>
+                    <td> <a href="gaoceng.html"><p>高层</p></a></td>
+                    <td><a href="gaoceng.html"><p>超高层</p></a></td>
+                    <td><a href="gaoceng.html"><p>商业综合</p></a></td>
+                    <td><a href="gaoceng.html"><p>文体</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="gaoceng.html"><p>建筑定性</p></a></td>
+                    <td><a href="gaoceng.html"><p>防火区分</p></a></td>
+                    <td><a href="gaoceng.html"><p>平面布置</p></a></td>
+                    <td><a href="gaoceng.html"><p>疏散避难</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="gaoceng.html"><p>防火分隔</p></a></td>
+                    <td><a href="gaoceng.html"><p>防烟分区</p></a></td>
+                    <td><a href="gaoceng.html"><p>疏散距离</p></a></td>
+                    <td><a href="gaoceng.html"><p>疏散宽度</p></a></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </div>
-
-<script>
-    var slider = {
-        //判断设备是否支持touch事件
-        touch:('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch,
-        slider:document.getElementById('slider'),
-
-        //事件
-        events:{
-            index:0,     //显示元素的索引
-            slider:this.slider,     //this为slider对象
-            icons:document.getElementById('icons'),
-            icon:this.icons.getElementsByTagName('span'),
-            handleEvent:function(event){
-                var self = this;     //this指events对象
-                if(event.type == 'touchstart'){
-                    self.start(event);
-                }else if(event.type == 'touchmove'){
-                    self.move(event);
-                }else if(event.type == 'touchend'){
-                    self.end(event);
-                }
-            },
-            //滑动开始
-            start:function(event){
-                var touch = event.targetTouches[0];     //touches数组对象获得屏幕上所有的touch，取第一个touch
-                startPos = {x:touch.pageX,y:touch.pageY,time:+new Date};    //取第一个touch的坐标值
-                isScrolling = 0;   //这个参数判断是垂直滚动还是水平滚动
-                this.slider.addEventListener('touchmove',this,false);
-                this.slider.addEventListener('touchend',this,false);
-            },
-            //移动
-            move:function(event){
-                //当屏幕有多个touch或者页面被缩放过，就不执行move操作
-                if(event.targetTouches.length > 1 || event.scale && event.scale !== 1) return;
-                var touch = event.targetTouches[0];
-                endPos = {x:touch.pageX - startPos.x,y:touch.pageY - startPos.y};
-                isScrolling = Math.abs(endPos.x) < Math.abs(endPos.y) ? 1:0;    //isScrolling为1时，表示纵向滑动，0为横向滑动
-                if(isScrolling === 0){
-                    event.preventDefault();      //阻止触摸事件的默认行为，即阻止滚屏
-                    this.slider.className = 'cnt';
-                    this.slider.style.left = -this.index*600 + endPos.x + 'px';
-                }
-            },
-            //滑动释放
-            end:function(event){
-                var duration = +new Date - startPos.time;    //滑动的持续时间
-                if(isScrolling === 0){    //当为水平滚动时
-                    this.icon[this.index].className = '';
-                    if(Number(duration) > 10){
-                        //判断是左移还是右移，当偏移量大于10时执行
-                        if(endPos.x > 10){
-                            if(this.index !== 0) this.index -= 1;
-                        }else if(endPos.x < -10){
-                            if(this.index !== this.icon.length-1) this.index += 1;
-                        }
-                    }
-                    this.icon[this.index].className = 'curr';
-                    this.slider.className = 'cnt f-anim';
-                    this.slider.style.left = -this.index*600 + 'px';
-                }
-                //解绑事件
-                this.slider.removeEventListener('touchmove',this,false);
-                this.slider.removeEventListener('touchend',this,false);
-            }
-        },
-
-        //初始化
-        init:function(){
-            var self = this;     //this指slider对象
-            if(!!self.touch) self.slider.addEventListener('touchstart',self.events,false);    //addEventListener第二个参数可以传一个对象，会调用该对象的handleEvent属性
-        }
-    };
-
-    slider.init();
-</script>
+<div class="div9">
+    <div class="div10">
+        <a href="forum.html">
+            <div class="div12">
+                <p>热点话题</p>
+            </div>
+            <div class="div13">
+                <p>新修订《消防法》的宣传</p>
+            </div>
+            <div class="div14">
+                <img src="image/07.png">
+            </div>
+            <div class="div15">
+                <p>的宣传贯彻力度，在四川省保定市公安消防支队与中国</p>
+            </div>
+        </a>
+    </div>
+    <div class="div11">
+        <a href="forum.html">
+            <div class="div16">
+                <p>论坛</p>
+            </div>
+            <div class="div17">
+                <img src="image/08.png">
+            </div>
+            <div class="div18">
+                <p>的宣传贯彻力度，在四川省保定市公安消防支队与中国</p>
+            </div>
+        </a>
+    </div>
+</div>
+<footer >
+    <ul>
+        <li>
+            <a href="zhuce.html">
+                <div class="div19" id="div19" onmousemove="a1()" onmouseout="a2()">
+                    <p>注册</p>
+                </div>
+            </a>
+        </li>
+        <li >
+            <a href="3.html">
+                <div class="div20" id="div20" onmousemove="h1()" onmouseout="h2()">
+                    <p>建议</p>
+                </div>
+            </a>
+        </li>
+        <li >
+            <a href="bangzhu.html">
+                <div class="div21" id="div21" onmousemove="s1()" onmouseout="s2()">
+                    <p>帮助</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="shezhi.html">
+                <div class="div22" id="div22" onmousemove="d1()" onmouseout="d2()">
+                    <p>设置</p>
+                </div>
+            </a>
+        </li>
+        <li >
+            <a href="collect.html">
+                <div class="div23" id="div23" onmousemove="f1()" onmouseout="f2()">
+                    <p>收藏</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</footer>
 </body>
 </html>
