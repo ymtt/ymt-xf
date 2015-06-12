@@ -150,32 +150,32 @@
 //            }
 
             // Add data-attribute captions
-            $children.each(function () {
-                $innerBase = $(this);
-                caption = $innerBase.data('plugin-slide-caption');
-                if (caption === undefined)
-                    return;
-
-                if (this.tagName == "IMG")
-                {
-                    // If the slide is an image, wrap this image in a div and append the caption div.
-                    $innerBase.wrap("<div>");
-                    $innerBase.after("<div class='" + base.config.slideCaptionClass + "'>");
-                    $innerBase.next().append(caption);
-                } else {
-                    // For any other type of slide element, just append the caption div at the end. 
-                    $innerBase.append("<div class='" + base.config.slideCaptionClass + "'>");
-                    $innerBase.children().last().append(caption);
-                }
-                // Toogle on hover
-                if (base.config.captionAutoHide) {
-                    $("." + base.config.slideCaptionClass, base.$elem).hide();
-                    base.$elem.hover(
-		                function () { $("." + base.config.slideCaptionClass, base.$elem).fadeIn("fast") },
-		                function () { $("." + base.config.slideCaptionClass, base.$elem).fadeOut("fast") }
-	                );
-                }
-            });
+//            $children.each(function () {
+//                $innerBase = $(this);
+//                caption = $innerBase.data('plugin-slide-caption');
+//                if (caption === undefined)
+//                    return;
+//
+//                if (this.tagName == "IMG")
+//                {
+//                    // If the slide is an image, wrap this image in a div and append the caption div.
+//                    $innerBase.wrap("<div>");
+//                    $innerBase.after("<div class='" + base.config.slideCaptionClass + "'>");
+//                    $innerBase.next().append(caption);
+//                } else {
+//                    // For any other type of slide element, just append the caption div at the end.
+//                    $innerBase.append("<div class='" + base.config.slideCaptionClass + "'>");
+//                    $innerBase.children().last().append(caption);
+//                }
+//                // Toogle on hover
+//                if (base.config.captionAutoHide) {
+//                    $("." + base.config.slideCaptionClass, base.$elem).hide();
+//                    base.$elem.hover(
+//		                function () { $("." + base.config.slideCaptionClass, base.$elem).fadeIn("fast") },
+//		                function () { $("." + base.config.slideCaptionClass, base.$elem).fadeOut("fast") }
+//	                );
+//                }
+//            });
 
             // Add css styles
             $wrapper.children().addClass("slide").css({
@@ -225,7 +225,7 @@
                 });
                 $container.on("touchend", function (e) {
 					if ((base.actionClick.action==true)&&(base.actionClick.x==base.currClick.x)&&(base.actionClick.y==base.currClick.y)){
-                        var href=$container.find("."+base.config.activeSlideClass+" a, a."+base.config.activeSlideClass).attr("href");
+                        var href=$container.find("."+base.config.activeSlideClass+base.config.activeSlideClass).attr("href");
                         if ((href!=undefined)&&(href!="")){
                             window.location=href;
                         }
