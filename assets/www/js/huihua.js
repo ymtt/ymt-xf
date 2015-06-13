@@ -28,9 +28,9 @@ function getallmsg(){
                     var reply_role=list[key]['reply_role'];
                     var content=list[key]['content'];
                     if(reply_role=="002"){
-                        $("section").append("<div class='div4'><div class='div7'><img src='image/16.png'></div><div class='div8'><p>"+content+"</p></div></div>");
+                        $("section").prepend("<div class='div4'><div class='div7'><img src='image/16.png'></div><div class='div8'><p>"+content+"</p></div></div>");
                     }else{
-                        $("section").append("<div class='div4'><div class='div5'><img src='image/16.png'></div><div class='div6'><p>"+content+"</p></div></div>");
+                        $("section").prepend("<div class='div4'><div class='div5'><img src='image/16.png'></div><div class='div6'><p>"+content+"</p></div></div>");
                     }
                 });
         }
@@ -54,17 +54,17 @@ function sendmsgs(content){
         data:{"SESSIONID":session,"qq_id":qq_id,"content":content},
         success:function(data){
             //ajax成功
-            //alert("发送成功："+JSON.stringify(data));
+            alert("发送成功："+JSON.stringify(data));
             //$("section").append("<div class='div4'><div class='div7'><img src='image/16.png'></div><div class='div8'><p>"+content+"</p></div></div>");
         },error:function(error){
             //ajax失败
-            alert("发送失败："+JSON.stringify(error));
+            alert("发送失败："+JSON.stringify(error)+session+"/"+qq_id+"/"+content);
         }
     });
 }
 
 
-//长轮询获取未读消息
+
 
 
 
@@ -75,6 +75,9 @@ function currentdatetotimestamp(){
 }
 
 var time=currentdatetotimestamp();
+
+//长轮询获取未读消息
+
 function getunreadmsg(data){
         //取出保存的session
         var session=window.sessionStorage.getItem("session");

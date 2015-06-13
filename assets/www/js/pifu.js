@@ -4,11 +4,12 @@ $(document).ready(function(){
         window.localStorage.setItem("Index","index.html");
         window.location.href="index.html";
     });
-    //风格
+    //侧滑风格
     $(".div3:eq(1)").click(function(){
             window.localStorage.setItem("Index","index1.html");
             window.location.href="index1.html";
     });
+    //转盘风格
     $(".div3:eq(2)").click(function(){
         window.localStorage.setItem("Index","index2.html");
         window.location.href="index2.html";

@@ -34,8 +34,11 @@
                            }else{
                                  alert("登录失败"+json.result);
                            }
-                         },error:function(error){
-                            alert(JSON.stringify(error));
+                         },error:function(XMLHttpRequest,textStatus,errorThrown){
+                            //alert(JSON.stringify(error));
+                            alert(XMLHttpRequest.status);
+                            alert(XMLHttpRequest.readyState);
+                            alert(textStatus); //paser error;
                          }
                      })
                 })

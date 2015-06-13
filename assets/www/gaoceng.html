@@ -11,6 +11,7 @@
     <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/fd.js"></script>
+    <script src="js/zixunclass.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             h();
@@ -18,6 +19,27 @@
         });
 
     </script>
+    <script type="text/javascript">
+         $(document).ready(function () {
+            back();
+            getzixunlist(6,1);
+
+         })
+         
+        function a1(x) {
+            document.getElementsByClassName("ky-4")[x].style.backgroundImage = "url(image/comment_collect1_icon.png)";
+        }
+        function a2(x){
+            document.getElementsByClassName("ky-4")[x].style.backgroundImage= "";
+        }
+        function s1(x) {
+            document.getElementsByClassName("ky-5")[x].style.backgroundImage = "url(image/comment_comment1_icon.png)";
+        }
+        function s2(x){
+            document.getElementsByClassName("ky-5")[x].style.backgroundImage= "";
+        }
+    </script>
+    
 
 </head>
 <body>
