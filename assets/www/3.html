@@ -1,204 +1,215 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<meta charset="UTF-8">
+<!doctype html>
+<html>
 <head>
-    <title>Excolo Slider - yet another jQuery slider/caroussel plugin</title>
-    <!--<link href="css/reset.css" rel="stylesheet" />-->
+    <meta charset="utf-8">
+    <title>SlidesJS Standard Code Example</title>
+    <meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
+    <meta name="author" content="Nathan Searles">
 
-    <link href="css/style-1.css" rel="stylesheet">
+    <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+    <meta name="viewport" content="width=device-width">
+    <!-- End SlidesJS Required -->
 
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/jquery.excoloSlider.js"></script>
+    <!-- CSS for slidesjs.com example -->
+    <link href="css/style-2.css"rel="stylesheet">
+    <link rel="stylesheet" href="css/example.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- End CSS for slidesjs.com example -->
 
-    <script>
-        $(function () {
-            $("#sliderA").excoloSlider();
-            $("#sliderB").excoloSlider();
-        });
-    </script>
+    <!-- SlidesJS Optional:  �������ô����ӵ���ƣ����������CSS�� -->
+    <style>
+
+        #slides {
+            display: none
+        }
+
+        #slides .slidesjs-navigation {
+            margin-top:3px;
+        }
+
+        #slides .slidesjs-previous {
+            margin-right: 5px;
+            float: left;
+        }
+
+        #slides .slidesjs-next {
+            margin-right: 5px;
+            float: left;
+        }
+
+        .slidesjs-pagination {
+            margin: 6px 0 0;
+            float: right;
+            list-style: none;
+        }
+
+        .slidesjs-pagination li {
+            float: left;
+            margin: 0 1px;
+        }
+
+        .slidesjs-pagination li a {
+            display: block;
+            width: 13px;
+            height: 0;
+            padding-top: 13px;
+
+            background-position: 0 0;
+            float: left;
+            overflow: hidden;
+        }
+
+        .slidesjs-pagination li a.active,
+        .slidesjs-pagination li a:hover.active {
+            background-position: 0 -13px
+        }
+
+        .slidesjs-pagination li a:hover {
+            background-position: 0 -26px
+        }
+
+        #slides a:link,
+        #slides a:visited {
+            color: #333
+        }
+
+        #slides a:hover,
+        #slides a:active {
+            color: #9e2020
+        }
+
+        .navbar {
+            overflow: hidden
+        }
+    </style>
+    <!-- End SlidesJS Optional-->
+
+    <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+    <style>
+        #slides {
+            display: none
+        }
+
+        .container {
+            margin: 0 auto
+        }
+
+        /* For tablets & smart phones */
+        @media (max-width: 767px) {
+            body {
+
+            }
+            .container {
+                width: auto
+            }
+        }
+
+        /* For smartphones */
+        @media (max-width: 480px) {
+            .container {
+                width: auto
+            }
+        }
+
+        /* For smaller displays like laptops */
+        @media (min-width: 768px) and (max-width: 979px) {
+            .container {
+                width: 724px
+            }
+        }
+
+        /* For larger displays */
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px
+            }
+        }
+    </style>
+    <!-- SlidesJS Required: -->
 </head>
 <body>
-<header>
-<div class="header-1">
-      <img src="image/main interface_logo.png">
-                </div>
-                <div class="header-2">
-                    <a href="sousuo.html"> <img src="image/search_icon.png"></a>
-                </div>
-            </header>
-            <div id="sliderA" class="slider">
-            <section>
-                <div class="section-1">
-                    <ul>
-                        <li>
-                            <a href="zixun.html">
-                                <div class="div1" ><img src="image/2_information-platform_icon.png"></div>
-                                <div class="div2"><p>资讯平台</p></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="zhuanjiazixun.html">
-                                <div class="div1"> <img src="image/2_expert-consultation_icon.png"></div>
-                                <div class="div2"><p>专家咨询</p></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="education.html">
-                                <div class="div1"> <img src="image/2_education-platform_icon.png"></div>
-                                <div class="div2"><p>教育平台</p></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="knowledge.html">
-                                <div class="div1"><img src="image/2_knowledge-platform_icon.png"></div>
-                                <div class="div2"><p>知识平台</p></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="forum.html">
-                                <div class="div1"><img src="image/2_forum_icon.png"></div>
-                                <div class="div2"><p>论坛</p></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="more.html">
-                                <div class="div1"><img src="image/2_more_icon.png"></div>
-                                <div class="div2"><p>更多</p></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <img src="image/banner1.png" />
-            <img src="image/banner2.png" />
-            <img src="image/banner3.png" />
-            <img src="image/banner.png" />
-            <img src="image/banner1.png" />
-            <img src="image/banner2.png" />
-            <img src="image/banner3.png" />
-                </div>
-<div class="div3">
-    <div class="div4"><p>咨询分类</p></div>
-    <div class="div5"><a href="zixunfenlei.html"><p>显示全部</p></a></div>
-    <div class="div6">
-        <div class="div6-1">
-            <ul>
-                <li>
-                    <a href="zixunfenlei.html">
-                        <div class="div7">
-                            <p>建筑</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="zixunfenlei.html">
-                        <div class="div7">
-                            <p>专业</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="zixunfenlei.html">
-                        <div class="div7">
-                            <p>关键词</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="div8">
-            <table>
-                <tr>
-                    <td> <a href="gaoceng.html"><p>高层</p></a></td>
-                    <td><a href="gaoceng.html"><p>超高层</p></a></td>
-                    <td><a href="gaoceng.html"><p>商业综合</p></a></td>
-                    <td><a href="gaoceng.html"><p>文体</p></a></td>
-                </tr>
-                <tr>
-                    <td><a href="gaoceng.html"><p>建筑定性</p></a></td>
-                    <td><a href="gaoceng.html"><p>防火区分</p></a></td>
-                    <td><a href="gaoceng.html"><p>平面布置</p></a></td>
-                    <td><a href="gaoceng.html"><p>疏散避难</p></a></td>
-                </tr>
-                <tr>
-                    <td><a href="gaoceng.html"><p>防火分隔</p></a></td>
-                    <td><a href="gaoceng.html"><p>防烟分区</p></a></td>
-                    <td><a href="gaoceng.html"><p>疏散距离</p></a></td>
-                    <td><a href="gaoceng.html"><p>疏散宽度</p></a></td>
-                </tr>
-            </table>
-        </div>
+
+<!-- SlidesJS Required: Start Slides -->
+<!-- The container is used to define the width of the slideshow -->
+<div class="container">
+    <div id="slides">
+        <section>
+            <div class="section-1">
+                <ul>
+                    <li>
+                        <a href="zixun.html">
+                            <div class="div1" ><img src="image/2_information-platform_icon.png"></div>
+                            <div class="div2"><p>资讯平台</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="zhuanjiazixun.html">
+                            <div class="div1"> <img src="image/2_expert-consultation_icon.png"></div>
+                            <div class="div2"><p>专家咨询</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="education.html">
+                            <div class="div1"> <img src="image/2_education-platform_icon.png"></div>
+                            <div class="div2"><p>教育平台</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="knowledge.html">
+                            <div class="div1"><img src="image/2_knowledge-platform_icon.png"></div>
+                            <div class="div2"><p>知识平台</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forum.html">
+                            <div class="div1"><img src="image/2_forum_icon.png"></div>
+                            <div class="div2"><p>论坛</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="more.html">
+                            <div class="div1"><img src="image/2_more_icon.png"></div>
+                            <div class="div2"><p>更多</p></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <img src="image/banner.png">
+        <img src="image/banner1.png">
+        <img src="image/banner2.png">
+        <img src="image/banner3.png">
+        <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+        <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
     </div>
 </div>
-<div class="div9">
-    <div class="div10">
-        <a href="forum.html">
-            <div class="div12">
-                <p>热点话题</p>
-            </div>
-            <div class="div13">
-                <p>新修订《消防法》的宣传</p>
-            </div>
-            <div class="div14">
-                <img src="image/07.png">
-            </div>
-            <div class="div15">
-                <p>的宣传贯彻力度，在四川省保定市公安消防支队与中国</p>
-            </div>
-        </a>
-    </div>
-    <div class="div11">
-        <a href="forum.html">
-            <div class="div16">
-                <p>论坛</p>
-            </div>
-            <div class="div17">
-                <img src="image/08.png">
-            </div>
-            <div class="div18">
-                <p>的宣传贯彻力度，在四川省保定市公安消防支队与中国</p>
-            </div>
-        </a>
-    </div>
-</div>
-<footer >
-    <ul>
-        <li>
-            <a href="zhuce.html">
-                <div class="div19" id="div19" onmousemove="a1()" onmouseout="a2()">
-                    <p>注册</p>
-                </div>
-            </a>
-        </li>
-        <li >
-            <a href="3.html">
-                <div class="div20" id="div20" onmousemove="h1()" onmouseout="h2()">
-                    <p>建议</p>
-                </div>
-            </a>
-        </li>
-        <li >
-            <a href="bangzhu.html">
-                <div class="div21" id="div21" onmousemove="s1()" onmouseout="s2()">
-                    <p>帮助</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="shezhi.html">
-                <div class="div22" id="div22" onmousemove="d1()" onmouseout="d2()">
-                    <p>设置</p>
-                </div>
-            </a>
-        </li>
-        <li >
-            <a href="collect.html">
-                <div class="div23" id="div23" onmousemove="f1()" onmouseout="f2()">
-                    <p>收藏</p>
-                </div>
-            </a>
-        </li>
-    </ul>
-</footer>
+<!-- End SlidesJS Required: Start Slides -->
+
+<!-- SlidesJS Required: Link to jQuery -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<!-- End SlidesJS Required -->
+
+<!-- SlidesJS Required: Link to jquery.slides.js -->
+<script src="js/jquery.slides.min.js"></script>
+<!-- End SlidesJS Required -->
+
+<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+<script>
+    $(function() {
+        $('#slides').slidesjs({
+            width: 940,
+            height: 528,
+            navigation: false,
+            play: {
+                active: false,
+                auto: true,
+                interval: 4000,
+                swap: true
+            }
+        });
+    });
+</script>
+<!-- End SlidesJS Required -->
 </body>
 </html>
+

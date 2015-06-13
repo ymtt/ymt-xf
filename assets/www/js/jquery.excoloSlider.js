@@ -217,7 +217,7 @@
                 $container.on("touchmove", function (e) {
                     var eventData = e.originalEvent.touches[0];
                     e.preventDefault();
-					base.actionClick.action=false;
+//					base.actionClick.action=false;
                     base._onMove(eventData.pageX, eventData.pageY);
 					base.currClick.x=eventData.pageX;
                     base.currClick.y=eventData.pageY;
@@ -225,14 +225,14 @@
                 });
                 $container.on("touchend", function (e) {
 					if ((base.actionClick.action==true)&&(base.actionClick.x==base.currClick.x)&&(base.actionClick.y==base.currClick.y)){
-                        var href=$container.find("."+base.config.activeSlideClass+base.config.activeSlideClass).attr("href");
-                        if ((href!=undefined)&&(href!="")){
-                            window.location=href;
+//                        var href=$container.find(base.config.activeSlideClass+" a,"+base.config.activeSlideClass).attr("href");
+                       if ((href!=undefined)&&(href!="")){
+                           window.location=href;
                         }
 					}
-                    e.preventDefault();
+                   e.preventDefault();
                     base._onMoveEnd();
-                    return e.stopPropagation();
+                   return e.stopPropagation();
                 });
             }
             // Setup mouse event handlers
