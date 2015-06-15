@@ -65,43 +65,42 @@ a{
 }
 .div6{
     width: 94%;
-    height: 30px;
+    height: 20px;
     background-color: #FFFFFF;
     float: left;
-    margin-top: 5px;
     margin-left: 3%;
 }
 .div7{
     width: 50%;
-    height: 30px;
+    height: 20px;
     float: left;
 }
 .div7 p{
     width: auto;
     height: auto;
     margin-left: 5%;
-    line-height: 30px;
-    font-size: 1em;
+    line-height: 20px;
+    font-size: 0.85em;
     font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
 .div8{
     width: 50%;
-    height: 30px;
+    height: 20px;
     float: right;
 }
 .div8 p{
     width: auto;
     height: auto;
     margin-left:45% ;
-    line-height: 30px;
-    font-size: 0.75em;
+    line-height: 20px;
+    font-size: 0.7em;
     font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
 .div9{
     width: 94%;
-    height: 110px;
+    height: 105px;
     float: left;
     background-color: #FFFFFF;
     margin-left: 3%;
@@ -143,13 +142,14 @@ a{
 .div11 table tr{
     width: auto;
     background-color: #05A0D7;
+    height: 10px;
 }
 .div11 table tr td{
     width: 25%;
     border: 2px solid #FFFFFF;
 }
 .div11 table tr td p{
-    height: 20px;
+    height: 1px;
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
     text-align: center;
