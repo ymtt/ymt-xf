@@ -118,6 +118,8 @@ input{
     height: auto;
 }
 .div6 img{
+    width: 50%;
+    margin-left: 25%;
     max-width: 100%;
 }
 .div7{

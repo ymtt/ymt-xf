@@ -166,7 +166,7 @@ a{
 }
 section{
     width: 100%;
-    height: 270px;
+    height: auto;
     float: left
 }
 section ul{
@@ -177,42 +177,42 @@ section ul{
 }
 section ul li{
     width: 100%;
-    height: 90px;
-    margin-top: 10px;
+    height: 80px;
+    margin-top: 5px;
     float: left;
 }
 .div12{
     width: 22%;
-    height: 90px;
+    height: auto;
     margin-left: 3%;
     float: left;
 }
 .div12 img{
     width: 100%;
-    height: 90px;
+    height: 80px;
     max-width: 100%;
 }
 .div13{
     width: 22%;
-    height: 90px;
+    height: auto;
     margin-left: 2%;
     float: left;
 }
 .div13 img{
     width: 100%;
-    height: 90px;
+    height:80px;
     max-width: 100%;
 }
 .div14{
     width: 46%;
-    height: 90px;
+    height: 80px;
     margin-right: 3%;
     float: right;
     overflow: hidden;
 }
 .div14 img{
     width: 100%;
-    height: auto;
+    height:80px;
     max-width: 100%;
 }
 .div15{
@@ -233,14 +233,14 @@ section ul li{
 }
 .div16{
     width: 46%;
-    height: 90px;
+    height: auto;
     margin-left: 3%;
     float: left;
     overflow: hidden;
 }
 .div16 img{
     width: 100%;
-    height: auto;
+    height: 80px;
     max-width: 100%;
 }
 .div17{
@@ -248,7 +248,7 @@ section ul li{
     height: 20px;
     float: left;
     margin-left:-46%;
-    margin-top: 70px;
+    margin-top: 60px;
     background: #09A087;
     filter:alpha(Opacity=80);
     -moz-opacity:0.7;opacity: 0.7;
@@ -264,24 +264,24 @@ section ul li{
 }
 .div18{
     width: 22%;
-    height: 90px;
+    height: auto;
     margin-left: 3%;
     float: left;
 }
 .div18 img{
     width: 100%;
-    height: 90px;
+    height: 80px;
     max-width: 100%;
 }
 .div19{
     width: 22%;
-    height: 90px;
+    height: auto;
     margin-left: 2%;
     float: left;
 }
 .div19 img{
     width: 100%;
-    height: 90px;
+    height:80px;
     max-width: 100%;
 }
 .zc{

@@ -441,34 +441,22 @@ input{
     float: left;
     background-color: #FFFFFF;
 }
-.div19{
-    width:auto;
-    height: 60px;
-    margin-top: 10px;
-    margin-left: 5%;
-    float: left;
-}
-.div19 img{
-   max-width: 100%;
-    height: 60px;
-    width: auto;
-}
 .div20{
-    width: auto;
+    width: 90%;
     height: auto;
-    margin-left: 25%;
-   margin-top: 20px;
+    margin-left: 5%;
 }
 .div20 p{
     font-family: "微软雅黑";
     font-size: 0.75em;
     color: #000000;
+    line-height: 20px;
 }
 .div21{
-    width: auto;
+    width: 90%;
     height: 60px;
     overflow: hidden;
-    margin-left: 25%;
+    margin-left: 5%;
     margin-top: 5px;
 }
 .div21 p{
@@ -477,78 +465,7 @@ input{
     color: #CCCCCC;
     line-height: 20px;
 }
-.div22{
-    width: 100%;
-    height: auto;
-    background-color: #FFFFFF;
-    float: left;
-    border-bottom: 1px solid #CCCCCC;
-}
-.div23{
-    width: 20%;
-    height: 100px;
-    margin-top: 10px;
-    float: left;
-    margin-left: 5%;
-}
-.div23 img{
-    max-width: 100%;
-}
-.div24{
-     width: auto;
-     height: auto;
-     margin-left: 30%;
-     margin-top: 10px;
 
- }
-.div24 p{
-    font-family: "微软雅黑";
-    font-size: 0.75em;
-    color: #000000;
-
-}
-.div25{
-    width: auto;
-    height: 60px;
-    margin-left: 30%;
-    margin-top: 5px;
-}
-.div25 p{
-    font-family: "微软雅黑";
-    font-size: 0.75em;
-    color: #CCCCCC;
-    overflow: hidden;
-    float: left;
-    line-height: 20px;
-}
-.ky-4{
-    width: 30%;
-    height: 30px;
-    margin-top: 10px;
-    float: left;
-    background: url("../image/comment_collect_icon.png")no-repeat 30% 50%;
-}
-.ky-4 p{
-    float: right;
-    font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 30px;
-    color: #000000;
-}
-.ky-5{
-    width: 30%;
-    height: 30px;
-    margin-top: 10px;
-    float: left;
-    background: url("../image/comment_comment_icon.png")no-repeat 30% 50%;
-}
-.ky-5 p{
-    float: right;
-    font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 30px;
-    color: #000000;
-}
 
 .blue{
     background-color: #5856D9;

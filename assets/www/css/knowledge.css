@@ -281,6 +281,17 @@ section{
     line-height: 30px;
     color: #000000;
 }
+.ky-6{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+.ky-6 p{
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 20px;
+    color: #737373;
+}
 .sp{
     width: 100%;
     height: auto;
