@@ -56,6 +56,8 @@ function serachexpertlist(pagesize,start,kw){
                  var head_pic='http://120.24.172.105:8000/public/pub/upload/down.jsp?id='+list[key]['head_pic'];
                 //级别
                  var level=list[key]['level'];
+                //专家di
+                var expertid=list[key]['fk_user_id'];
 
                  if(level=="1"){
                     levelname="普通专家";
@@ -64,7 +66,7 @@ function serachexpertlist(pagesize,start,kw){
                  }else if(level=="3"){
                     levelname="国家级";
                  }
-                 CreateMoreExpert(head_pic,name,levelname,"0","0");
+                 CreateMoreExpert(expertid,head_pic,name,levelname,"0","0");
             });
         },
     });

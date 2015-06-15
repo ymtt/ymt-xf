@@ -106,3 +106,65 @@ function ToKeyanXQ(id){
     window.localStorage.setItem("keyanid",id);
     window.location.href="keyanXQ.html";
 }
+
+/***********规范************/
+function getguifan(m,pagesize,start,kw){
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.KnowAction&t=app&jl=';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        data:{"m":m,"pagesize":pagesize,"start":start,"kw":kw},
+        success:function(data){
+            var list=data.datas['listData'];
+            $.each(list,function(key){
+              //标题
+               var title=list[key]['article_title'];
+
+               //内容
+
+
+                var content=list[key]['content'];
+                if (typeof(content) == "undefined")
+                {
+                    cons="";
+                }else{
+                cons=content.replace(/<[^>]*>/gi,'');
+                }
+
+
+
+              var hitnum=list[key]['hitnum'];
+              //文章id
+              var id=list[key]['id'];
+              //文章的json字符串
+              var obj=JSON.stringify(list[key]);
+
+                if(m=="kywx"){
+                    //科研文献
+                    CreateGuiFan(m,title,cons,id);
+                }else if(m=="bzgf"){
+                    //标准规范
+                    CreateGuiFan(m,title,cons,id);
+                    //alert(content);
+                }else if(m=="spzl"){
+                    //视频资料
+                }
+            });
+
+        },
+    });
+}
+function CreateGuiFan(m,title,content,id){
+    var where;
+    if(m=="kywx"){
+        where="#nav_tab4";
+    }else if(m=="bzgf"){
+        where="#nav_tab5";
+    }else if(m=="spzl"){
+        where="#nav_tab6"
+    }
+    $(where).append("<div class='ky'><a href='javascript:ToKeyanXQ("+"\""+id+"\""+")'><div class='ky-1'><p>"+title+
+    "</p></div><div class='ky-2'><img src='image/knowledge_01.png'></div><div class='ky-3'><p>"+content+
+    "</p></div></a><div class='ky-4' onmousemove='a1(0)' onmouseout='a2(0)'><p>42354人</p></div><div class='ky-5' onmousemove='s1(0)' onmouseout='s2(0)'><p>42354人</p></div></div>");
+}

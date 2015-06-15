@@ -27,12 +27,13 @@
             //内容
             var content=document.getElementById("content").value;
             //问题类型
-            var points="gg1";
+            var points="j4";
             //专家id
-            var expert="admin2";
+            //var expert="admin2";
 
-            clickconsultation(tit,content,points,expert);
+            var expert= window.localStorage.getItem("clickexpert");
 
+           clickconsultation(tit,content,points,expert);
         }
 
     </script>
