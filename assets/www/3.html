@@ -1,215 +1,55 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <title>SlidesJS Standard Code Example</title>
-    <meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
-    <meta name="author" content="Nathan Searles">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <title>Responsive Hamburger Toggle Menu - Template Monster Demo</title>
+    <meta name="author" content="Jake Rocheleau">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
 
-    <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
-    <meta name="viewport" content="width=device-width">
-    <!-- End SlidesJS Required -->
-
-    <!-- CSS for slidesjs.com example -->
-    <link href="css/style-2.css"rel="stylesheet">
-    <link rel="stylesheet" href="css/example.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- End CSS for slidesjs.com example -->
-
-    <!-- SlidesJS Optional:  �������ô����ӵ���ƣ����������CSS�� -->
-    <style>
-
-        #slides {
-            display: none
-        }
-
-        #slides .slidesjs-navigation {
-            margin-top:3px;
-        }
-
-        #slides .slidesjs-previous {
-            margin-right: 5px;
-            float: left;
-        }
-
-        #slides .slidesjs-next {
-            margin-right: 5px;
-            float: left;
-        }
-
-        .slidesjs-pagination {
-            margin: 6px 0 0;
-            float: right;
-            list-style: none;
-        }
-
-        .slidesjs-pagination li {
-            float: left;
-            margin: 0 1px;
-        }
-
-        .slidesjs-pagination li a {
-            display: block;
-            width: 13px;
-            height: 0;
-            padding-top: 13px;
-
-            background-position: 0 0;
-            float: left;
-            overflow: hidden;
-        }
-
-        .slidesjs-pagination li a.active,
-        .slidesjs-pagination li a:hover.active {
-            background-position: 0 -13px
-        }
-
-        .slidesjs-pagination li a:hover {
-            background-position: 0 -26px
-        }
-
-        #slides a:link,
-        #slides a:visited {
-            color: #333
-        }
-
-        #slides a:hover,
-        #slides a:active {
-            color: #9e2020
-        }
-
-        .navbar {
-            overflow: hidden
-        }
-    </style>
-    <!-- End SlidesJS Optional-->
-
-    <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
-    <style>
-        #slides {
-            display: none
-        }
-
-        .container {
-            margin: 0 auto
-        }
-
-        /* For tablets & smart phones */
-        @media (max-width: 767px) {
-            body {
-
-            }
-            .container {
-                width: auto
-            }
-        }
-
-        /* For smartphones */
-        @media (max-width: 480px) {
-            .container {
-                width: auto
-            }
-        }
-
-        /* For smaller displays like laptops */
-        @media (min-width: 768px) and (max-width: 979px) {
-            .container {
-                width: 724px
-            }
-        }
-
-        /* For larger displays */
-        @media (min-width: 1200px) {
-            .container {
-                width: 1170px
-            }
-        }
-    </style>
-    <!-- SlidesJS Required: -->
 </head>
-<body>
 
-<!-- SlidesJS Required: Start Slides -->
-<!-- The container is used to define the width of the slideshow -->
-<div class="container">
-    <div id="slides">
-        <section>
-            <div class="section-1">
+<body>
+<div id="pgcontainer">
+    <header>
+        <div id="navbar">
+            <a href="#" class="menubtn">menu</a>
+            <!-- use captain icon for toggle menu -->
+            <div id="hamburgermenu">
                 <ul>
-                    <li>
-                        <a href="zixun.html">
-                            <div class="div1" ><img src="image/2_information-platform_icon.png"></div>
-                            <div class="div2"><p>资讯平台</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="zhuanjiazixun.html">
-                            <div class="div1"> <img src="image/2_expert-consultation_icon.png"></div>
-                            <div class="div2"><p>专家咨询</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="education.html">
-                            <div class="div1"> <img src="image/2_education-platform_icon.png"></div>
-                            <div class="div2"><p>教育平台</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="knowledge.html">
-                            <div class="div1"><img src="image/2_knowledge-platform_icon.png"></div>
-                            <div class="div2"><p>知识平台</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="forum.html">
-                            <div class="div1"><img src="image/2_forum_icon.png"></div>
-                            <div class="div2"><p>论坛</p></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="more.html">
-                            <div class="div1"><img src="image/2_more_icon.png"></div>
-                            <div class="div2"><p>更多</p></div>
-                        </a>
-                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-        </section>
-        <img src="image/banner.png">
-        <img src="image/banner1.png">
-        <img src="image/banner2.png">
-        <img src="image/banner3.png">
-        <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
-        <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <div id="content">
+        <h1>Here's A Basic Heading</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus massa vestibulum nisl pretium, dapibus dignissim orci ultricies. Duis eleifend sem vitae laoreet interdum. Praesent diam elit, consequat quis velit nec, fringilla auctor neque. Nullam nisi justo, cursus tincidunt metus a, imperdiet dictum lacus.</p>
+
+        <p>Cras sed faucibus ipsum. Curabitur rutrum mauris eu urna aliquam, vel luctus tortor posuere. Donec elit turpis, mollis non diam consequat, laoreet mattis velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum at nulla bibendum, ornare nunc accumsan, vestibulum libero. Cras luctus mauris quis diam cursus tristique.</p>
+
+        <p>Praesent ipsum purus, vestibulum id sapien ac, pretium venenatis justo. Phasellus sit amet quam eget eros egestas ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam placerat ultrices felis ut ullamcorper.</p>
+
+        <p>Maecenas molestie risus quis sagittis malesuada. Morbi eleifend adipiscing dapibus. Pellentesque quis arcu convallis, pellentesque libero vel, ultricies dui. Duis dapibus pellentesque facilisis. Praesent vitae nunc vehicula, placerat orci in, elementum turpis. Aenean porta turpis et iaculis venenatis.</p>
+
+        <p>Duis euismod massa elementum orci consequat, vel dictum sapien scelerisque. Mauris sollicitudin eu diam a auctor. Nulla faucibus elit eu diam luctus faucibus. Duis lorem lectus, dignissim vitae nulla vitae, aliquam dictum ipsum. Curabitur cursus massa in adipiscing congue. Fusce volutpat neque id ipsum blandit, a vestibulum lacus mollis.</p>
+
+        <p>Vivamus sit amet sapien et sem eleifend scelerisque ut et turpis. Fusce iaculis magna dui, quis tincidunt nunc fringilla ullamcorper.</p>
+
+        <p>Suspendisse sapien sem, laoreet euismod nisi sit amet, tincidunt placerat tellus. Nam nunc odio, fermentum vitae erat nec, bibendum aliquet mauris.</p>
+
+        <p>Integer malesuada nisl in porttitor accumsan. Integer dictum felis dolor, sit amet vestibulum libero tincidunt nec. Donec id quam at purus molestie gravida. Praesent quis consectetur tortor, id semper nunc. Morbi porta tempor risus nec tempor. </p>
     </div>
-</div>
-<!-- End SlidesJS Required: Start Slides -->
-
-<!-- SlidesJS Required: Link to jQuery -->
-<script src="js/jquery-2.1.1.min.js"></script>
-<!-- End SlidesJS Required -->
-
-<!-- SlidesJS Required: Link to jquery.slides.js -->
-<script src="js/jquery.slides.min.js"></script>
-<!-- End SlidesJS Required -->
-
-<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-<script>
-    $(function() {
-        $('#slides').slidesjs({
-            width: 940,
-            height: 528,
-            navigation: false,
-            play: {
-                active: false,
-                auto: true,
-                interval: 4000,
-                swap: true
-            }
-        });
-    });
-</script>
-<!-- End SlidesJS Required -->
+</div><!-- @end #pgcontainer -->
 </body>
 </html>
-

@@ -84,6 +84,7 @@ section{
     float: left;
     margin-left: 5%;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 .div6 p{
     font-family: "方正兰亭纤黑_GBK";

@@ -157,7 +157,7 @@ table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;borde
 ol,ul{list-style:none}blockquote,q{quotes:none}audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}script{display:none!important}
 html{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-:focus,a,a:active,a:focus,a:hover,button,button:focus{outline:0}
+:focus,a:active,a:focus,a:hover,button,button:focus{outline:0}
 a{-webkit-user-drag:none;-webkit-tap-highlight-color:transparent}
 a[href]:hover{cursor:pointer}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}code,kbd,pre,samp{font-size:1em;font-family:monospace,serif}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}sub,sup{position:relative;vertical-align:baseline;font-size:75%;line-height:0}sup{top:-.5em}sub{bottom:-.25em}fieldset{margin:0 2px;padding:.35em .625em .75em;border:1px solid silver}
 button,input,select,textarea{margin:0;outline-offset:0;outline-style:none;outline-width:0;-webkit-font-smoothing:inherit;background-image:none;}

@@ -44,7 +44,7 @@ a {
     font-size: 1em;
     font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
-    margin-left: 30%;
+    margin-left: 25%;
 }
 .div18{
     width: 20%;
@@ -166,118 +166,21 @@ span button{
     margin-bottom: 30px;
 }
 .div9{
-    width: 70%;
-    height: 100px;
+    width: 25%;
+    height: 40px;
     float: left;
-}
-.div9 ul{
-    list-style: none;
-    height:80px ;
-}
-.div9 ul li{
-    width: 23%;
-    height: 80px;
-    float:left ;
     margin-left: 2%;
 }
-.div10{
-    width: 100%;
-    height: 80px;
-    float: left;
-}
-.div10 img{
-    width: 100%;
-    height: 80px;
-    max-width: 100%;
-}
-.div11{
-   width: 100%;
-    height: 80px;
-    float: left;
-    background-color:rgba(0,0,0,0.35) ;
-    margin-top: -80px;
-
-}
-.div11 p{
-    width: 100%;
-  height: 40px;
-  font-size: 0.65em;
+.div9 p{
+    width: auto;
+    height: auto;
     font-family: "方正兰亭纤黑_GBK";
-    color: #FFFFFF;
-    margin-top: 40px;
+    font-size: 1em;
+    line-height: 40px;
+    margin-left: 5%;
+    color: #737373;
 }
-.div6-1{
-    width: 100%;
-    height: 200px;
-    float: left;
-    margin-top: 10px;
-    border-bottom: 1px solid #CCCCCC;
-}
-.div12{
-    width: 70%;
-    height: 200px;
-    float: left;
-}.div12 ul{
-     list-style: none;
-     height:180px ;
- }
- .div12 ul li{
-     width: 48%;
-     height: 80px;
-     float: left;
-     margin-left: 2%;
-     margin-top: 10px;
- }
- .div13{
-     width: 100%;
-     height: 80px;
- }
- .div13 img{
-     width: 100%;
-     height: 80px;
-     max-width: 100%;
- }
- .div14{
-     width:100%;
-     height: 20px;
-     float: left;
-     margin-top: -20px;
-     background-color: #05A0D7;
-     filter:alpha(Opacity=80);
-     -moz-opacity:0.8;opacity: 0.8;
-     overflow: hidden;
- }
- .div14 p{
-     width: 100%;
-     height: 20px;
-     font-family: "方正兰亭纤黑_GBK";
-     font-size: 0.65em;
-     color: #FFFFFF;
-     line-height: 20px;
 
- }
-
-.div15{
-    width: 46%;
-    height: 80px;
-    float: left;
-}
-.div15 img{
-    width: 100%;
-    height: 80px;
-    max-width: 100%;
-}
-.div16{
-    width:46%;
-    height: 80px;
-    float: left;
-    margin-left: 6%;
-}
-.div16 img{
-    width:100%;
-    height: 80px;
-    max-width: 100%;
-}
 footer{
     width: 100%;
     height: 40px;
