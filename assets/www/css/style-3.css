@@ -113,7 +113,7 @@ section{
     height: auto;
     margin-left: 5%;
     line-height: 30px;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
@@ -127,7 +127,7 @@ section{
     height: auto;
     margin-left:45% ;
     line-height: 30px;
-    font-size: 0.75em;
+    font-size: 0.7em;
     font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
@@ -229,7 +229,7 @@ section{
     width: auto;
     height: auto;
     line-height: 30px;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: "方正兰亭纤黑_GBK";
     margin-left: 5%;
     color: #000000;
@@ -244,7 +244,7 @@ section{
     width: auto;
     height: auto;
     line-height: 20px;
-    font-size: 0.75em;
+    font-size: 0.7em;
     font-family: "方正兰亭纤黑_GBK";
     margin-left: 5%;
     color: #CCCCCC;
@@ -286,7 +286,7 @@ section{
     width: auto;
     height: auto;
     line-height: 30px;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: "方正兰亭纤黑_GBK";
     margin-left: 5%;
     color: #000000;
@@ -312,7 +312,7 @@ section{
 .div18 p{
     width: auto;
     height:42px;
-    font-size: 0.75em;
+    font-size: 0.7em;
     font-family: "方正兰亭纤黑_GBK";
     overflow: hidden;
     text-overflow: ellipsis;
