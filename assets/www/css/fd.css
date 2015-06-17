@@ -1,6 +1,6 @@
 #fd {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     position:fixed;
     right: 0;
     top: 300px;
@@ -10,7 +10,7 @@
 }
 #fd img{
     max-width: 100%;
-margin-top: 40px;
+    margin-top: 20px;
 }
 .fd1{
     position:fixed;
