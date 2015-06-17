@@ -24,6 +24,7 @@ $('#valuelist li').click(function(){
 	$('#searchvalues').text(name);
 	$('#boults').text('▼');
 	$('#valuelist').hide();
+	window.localStorage.setItem("serachtype",$(this).attr('value'));
 })
 
 //搜索热门关键字代码

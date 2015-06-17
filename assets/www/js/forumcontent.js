@@ -77,7 +77,7 @@ function TimestampConversion(dateline){
              type:'post',
              datatype:'json',
              url:url,
-             data:{"tid":tid,"msg":msg,"user":user},
+             data:{"tid":tid,"msg":msg,"user":"admin"},
              success:function(data){
                  var json=eval("("+data+")");
                  var list=json.data;
@@ -106,7 +106,7 @@ function TimestampConversion(dateline){
               type:'post',
               datatype:'json',
               url:url,
-              data:{"subject":title,"msg":content,"user":user,"fid":fid},
+              data:{"subject":title,"msg":content,"user":"admin","fid":fid},
               success:function(data){
                   var json=eval("("+data+")");
                   var list=json.data;

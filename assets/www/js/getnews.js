@@ -117,7 +117,7 @@ function CreateNoticeDom(title,content,id){
                 var list=data.datas['listData'];
                 $.each(list,function(key){
                     var title=list[key]['article_title'];
-                    var content=list[key]['content'];
+                    var content=(list[key]['content']).replace(/<[^>]*>/gi,'');
                     var pl=list[key]['hitnum'];
                     var id=list[key]['id'];
                     var obj=JSON.stringify(list[key]);

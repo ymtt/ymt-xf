@@ -139,6 +139,7 @@ function getguifan(m,pagesize,start,kw){
               var id=list[key]['id'];
               //文章的json字符串
               var obj=JSON.stringify(list[key]);
+              window.localStorage.setItem(id,obj);
 
                 if(m=="kywx"){
                     //科研文献
@@ -155,6 +156,7 @@ function getguifan(m,pagesize,start,kw){
         },
     });
 }
+//规范和标准
 function CreateGuiFan(m,title,content,id){
     var where;
     if(m=="kywx"){
