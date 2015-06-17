@@ -73,20 +73,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index2.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index2.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="2242">
-              <caret line="7" column="124" selection-start-line="7" selection-start-column="124" selection-end-line="7" selection-end-column="124" />
+            <state vertical-scroll-proportion="0.14927049" vertical-offset="0" max-vertical-offset="2242">
+              <caret line="7" column="125" selection-start-line="7" selection-start-column="125" selection-end-line="7" selection-end-column="125" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style2.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style2.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14472252" vertical-offset="437" max-vertical-offset="4959">
+            <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="4959">
               <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding />
             </state>
@@ -97,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/css/style2-1.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="2622" max-vertical-offset="4959">
-              <caret line="173" column="20" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
+              <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -181,9 +181,9 @@
         <option value="$PROJECT_DIR$/zhuce.html" />
         <option value="$PROJECT_DIR$/css/sousuo.css" />
         <option value="$PROJECT_DIR$/css/style2-2.css" />
-        <option value="$PROJECT_DIR$/css/style2-1.css" />
         <option value="$PROJECT_DIR$/css/style2-3.css" />
         <option value="$PROJECT_DIR$/css/style2.css" />
+        <option value="$PROJECT_DIR$/css/style2-1.css" />
       </list>
     </option>
   </component>
@@ -353,7 +353,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="1936" height="1056" extended-state="1" />
+    <frame x="-6" y="0" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -740,14 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="2242">
-          <caret line="7" column="124" selection-start-line="7" selection-start-column="124" selection-end-line="7" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sousuo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.714286" vertical-offset="3226" max-vertical-offset="4522">
@@ -780,18 +772,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style2-1.css">
+    <entry file="file://$PROJECT_DIR$/css/style2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2622" max-vertical-offset="4959">
-          <caret line="173" column="20" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="4959">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style2.css">
+    <entry file="file://$PROJECT_DIR$/css/style2-1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14472252" vertical-offset="437" max-vertical-offset="4959">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2622" max-vertical-offset="4959">
+          <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14927049" vertical-offset="0" max-vertical-offset="2242">
+          <caret line="7" column="125" selection-start-line="7" selection-start-column="125" selection-end-line="7" selection-end-column="125" />
           <folding />
         </state>
       </provider>
