@@ -37,14 +37,14 @@ section{
 }
 .div2{
     width: 90%;
-    height: 40px;
+    height:auto;
     margin-left: 5%;
     float: left;
 }
 .div2 p{
     font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
-    line-height: 40px;
+    line-height: 20px;
     color: #000000;
 }
 .div3{

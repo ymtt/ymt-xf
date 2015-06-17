@@ -30,7 +30,7 @@ header{
     margin-top: 10px;
 }
 .div2 {
-    width: 87%;
+    width: 72%;
     height: auto;
     float: left;
 
@@ -39,13 +39,13 @@ header{
     line-height: 40px;
     font-size: 1em;
     color: #FFFFFF;
-    margin-left: 37%;
+    text-align: center;
 }
 .div3{
     width: 10%;
     height: auto;
     float: right;
-    margin-right: 15px;
+    margin-right: 5%;
     margin-top: 7px;
 }
 .div3 img{

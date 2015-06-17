@@ -46,7 +46,7 @@ header{
 }
 section{
     width: 98%;
-    height:230px;
+    height:210px;
     background: #EDEDED;
     float: left;
     margin-left: 1%;
@@ -55,7 +55,7 @@ section{
 }
 .section-1{
     width: 100%;
-    height:230px;
+    height:210px;
     background: #FFFFFF;
     border-radius: 10px;
 }
