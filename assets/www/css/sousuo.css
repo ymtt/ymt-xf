@@ -112,7 +112,7 @@ section{
     height: auto;
     float: left;
     margin-top: 40px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 .div12{
     width: 100%;
@@ -122,10 +122,10 @@ section{
 }
 span{
     width: 90%;
-    height: 30px;
+    height: auto;
     float: left;
     font-size: 1em;
-    line-height: 30px;
+    line-height: 20px;
     margin-left: 5%;
     color: #05A0D7;
 }

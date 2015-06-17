@@ -28,7 +28,7 @@ a{
     width: 320px;
 }
 .img2{
-    position: absolute;
+    position: fixed;
     width: 80px;
      top: 125px;
     z-index: 20;
