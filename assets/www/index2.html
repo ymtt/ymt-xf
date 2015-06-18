@@ -1,113 +1,201 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
-    <link rel="stylesheet" type="text/css" href="css/style2-1.css"  media="screen and (min-height:480px) and (max-height:568px)" >
-    <link rel="stylesheet" type="text/css" href="css/style2-2.css"  media="screen and (min-height:568px) and (max-height:667px)" >
-    <link rel="stylesheet" type="text/css" href="css/style2-3.css"  media="screen and (min-height:667px) and (max-height:736px)" >
-    <link rel="stylesheet" type="text/css" href="css/style2.css"  media="screen and (max-height:480px)" >
-    <script src="js/index.js"></script>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style2-1.css" media="screen and (min-height:480px) and (max-height:568px)">
+    <link rel="stylesheet" type="text/css" href="css/style2-2.css" media="screen and (min-height:568px) and (max-height:667px)">
+    <link rel="stylesheet" type="text/css" href="css/style2-3.css" media="screen and (min-height:667px) and (max-height:736px)">
+    <link rel="stylesheet" type="text/css" href="css/style2.css" media="screen and (max-height:480px)">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jQuery.roundrr.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/zepto.plugins.js"></script>
 </head>
-<body>
-<div class="div1">
-    <div class="div2">
-        <img src="image/2.png" class="img1">
-        <img src="image/1_main-interface_logo.png" class="img2">
-    </div>
-    <div class="div3">
-        <img src="image/1.png" class="img3">
-        <img src="image/1_middle_logo.png" class="img4">
-        <div class="div4">
-            <a href="zixun.html">
-            <img src="image/1_information-platform_icon.png" class="img5">
-            <p>资讯平台</p>
-                </a>
-        </div>
-        <div class="div5">
-            <a href="zhuanjiazixun.html">
-            <img src="image/1_expert-consultation_icon.png" class="img6">
-            <p>专家咨询</p>
-                </a>
-        </div>
-        <div class="div6">
-            <a href="education.html">
-            <img src="image/1_education-platform_icon.png" class="img7">
-            <p>教育平台</p>
-                </a>
-        </div>
-        <div class="div7">
-            <a href="zixunfenlei.html">
-            <img src="image/1_consulting-classification-_icon.png" class="img8">
-            <p>咨询分类</p>
-                </a>
-        </div>
-        <div class="div8">
-            <a href="knowledge.html">
-            <img src="image/1_knowledge-platform_icon.png" class="img9">
-            <p>知识平台</p>
-                </a>
-        </div>
-        <div class="div9">
-            <a href="forum.html">
-            <img src="image/1_forum_icon.png" class="img10">
-            <p>论坛</p>
-                </a>
-        </div>
-        <div class="div10">
-            <a href="more.html">
-            <img src="image/1_more_icon.png" class="img11">
-            <p>更多</p>
-                </a>
-        </div>
-        <div class="div11">
-            <a href="gerenzhongxin.html">
-            <img src="image/1_personal-center_icon.png" class="img12">
-            <p>个人中心</p>
-                </a>
-        </div>
-    </div>
+<style>
+    .my_class p {
+        font-size: 0.7em;
+        color: #fff;
+        text-align: center;
+        width: 50px
+    }
 
-<footer >
-    <ul>
-        <li>
-            <a href="zhuce.html">
-                <div class="div19" id="div19" onmousemove="a1()" onmouseout="a2()">
-                    <p>注册</p>
-                </div>
-            </a>
-        </li>
-        <li >
-            <a href="1.html">
-                <div class="div20" id="div20" onmousemove="h1()" onmouseout="h2()">
-                    <p>建议</p>
-                </div>
-            </a>
-        </li>
-        <li >
-            <a href="bangzhu.html">
-                <div class="div21" id="div21" onmousemove="s1()" onmouseout="s2()">
-                    <p>帮助</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="shezhi.html">
-                <div class="div22" id="div22" onmousemove="d1()" onmouseout="d2()">
-                    <p>设置</p>
-                </div>
-            </a>
-        </li>
-        <li >
-            <a href="index1.html">
-                <div class="div23" id="div23" onmousemove="f1()" onmouseout="f2()">
-                    <p>收藏</p>
-                </div>
-            </a>
-        </li>
-    </ul>
-</footer>
+    #container {
+        position: absolute;
+    }
+</style>
+
+<body>
+
+<div class="div1">
+    <div id="touch-box">
+        <div class="div2">
+            <img src="image/2.png" class="img1">
+            <img src="image/1_main-interface_logo.png" class="img2">
+        </div>
+        <div class="div3">
+            <img src="image/1.png" class="img3">
+            <img src="image/1_middle_logo.png" class="img4">
+        </div>
+        <div id="container">
+            <img src="image/1_information-platform_icon.png" class="img5">
+            <img src="image/1_expert-consultation_icon.png" class="img6">
+            <img src="image/1_education-platform_icon.png" class="img7">
+            <img src="image/1_consulting-classification-_icon.png" class="img8">
+            <img src="image/1_knowledge-platform_icon.png" class="img9">
+            <img src="image/1_forum_icon.png" class="img10">
+            <img src="image/1_more_icon.png" class="img11">
+            <img src="image/1_personal-center_icon.png" class="img12">
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <a href="javascript:allrun()">
+                    <div class="div19" id="div19">
+                        <p>注册</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:rstop()">
+                    <div class="div20" id="div20">
+                        <p>建议</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="bangzhu.html">
+                    <div class="div21" id="div21">
+                        <p>帮助</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="shezhi.html">
+                    <div class="div22" id="div22">
+                        <p>设置</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="index1.html">
+                    <div class="div23" id="div23">
+                        <p>收藏</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </footer>
 </div>
 </body>
+<script>
+    var w = $(".img3").width();
+    var cx = 0,
+            cy = 0;
+    var fx = 1;
+    var timeout = false,
+            fs = null;
+    if (w == 230) {
+        cx = 250;
+        cy = 40;
+        $('#container').css("top", 88);
+        $('#container').css("left", 95);
+    }
+    if (w == 270) {
+        cx = 300;
+        cy = 45;
+        $('#container').css("top", 128);
+        $('#container').css("left", 112);
+    }
+    if (w == 300) {
+        cx = 330;
+        cy = 50;
+        $('#container').css("top", 128);
+        $('#container').css("left", 122);
+    }
+
+    function gallery() {
+        this.inti.apply(this, arguments);
+    }
+    gallery.prototype = {
+        inti: function (id, divWidth, divHeight, imgWidth, imgHeight, speed) {
+            var that = this;
+            this.img = document.getElementById(id).getElementsByTagName("img");
+            this.count = this.img.length;
+            this.time = 0;
+            this.rate = speed || 0.15;
+            this.divWidth = divWidth || cx;
+            this.divHeight = divHeight || cx;
+            this.imgWidth = imgWidth || cy;
+            this.imgHeight = imgHeight || cy;
+            this.each(function (index) {
+                this.style.width = that.imgWidth + "px";
+                this.style.height = that.imgHeight + "px";
+                this.style.position = "absolute";
+            })
+            //            document.onmousemove = function (event) {
+            //                var event = event || window.event,
+            //                    positionX;
+            //                var positionX = that.getPageX(event);
+            //                that.rate = (positionX - document.body.clientWidth / 2) / (document.body.clientWidth / 2) * 0.25;
+            //            }
+            this.play(0);
+        },
+        play: function (tp) {
+            var that = this;
+            if (tp == 0) {
+                that.time += that.rate * 40 / 1000 * fx;
+                that.each(function (index) {
+                    this.style.left = (Math.sin(2 * Math.PI * that.time + 2 * Math.PI / that.count * index) + 1) * (that.divWidth - that.imgWidth) / 2 + "px";
+                    this.style.top = (Math.cos(2 * Math.PI * that.time + 2 * Math.PI / that.count * index) + 1) * (that.divHeight - that.imgHeight) / 2 + "px";
+
+                })
+            } else {
+                fs = setInterval(function () {
+                    that.time += that.rate * 50 / 1000 * fx;
+                    that.each(function (index) {
+                        this.style.left = (Math.sin(2 * Math.PI * that.time + 2 * Math.PI / that.count * index) + 1) * (that.divWidth - that.imgWidth) / 2 + "px";
+                        this.style.top = (Math.cos(2 * Math.PI * that.time + 2 * Math.PI / that.count * index) + 1) * (that.divHeight - that.imgHeight) / 2 + "px";
+
+                    })
+                }, 40);
+            }
+
+        },
+
+        getPageX: function (event) {
+            if (event.pageX) {
+                return event.pageX;
+            } else {
+                return event.clientX + document.documentElement.scrollLeft - document.documentElement.clientLeft;
+            }
+        },
+        each: function (fn) {
+            for (var i = 0; i < this.count; i++)
+                fn.call(this.img[i], i);
+        }
+    }
+    var c = new gallery("container");
+
+    $('#touch-box').on("swipedown", function () {
+        clearInterval(fs);
+        fx = 1;
+        c.play();
+    })
+    $('#touch-box').on("swipeup", function () {
+        clearInterval(fs);
+        fx = -1;
+        c.play();
+    })
+    $('body').on('click',function(){
+        clearInterval(fs);
+    })
+    $('#touch-box').on('click',function(){
+        clearInterval(fs);
+    })
+</script>
+
 </html>

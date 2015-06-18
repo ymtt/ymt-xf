@@ -46,7 +46,7 @@ header{
 }
 section{
     width: 100%;
-    height:170px;
+    height:165px;
     background: #EDEDED;
     float: left;
     margin-left: 1%;
@@ -55,7 +55,7 @@ section{
 }
 .section-1{
     width: 98%;
-    height:170px;
+    height:165px;
     background: #FFFFFF;
     border-radius: 10px;
 }
@@ -203,7 +203,7 @@ section{
 }
 .div10{
     width: 48%;
-    height: 143px;
+    height: 135px;
     float: left;
     border-radius: 10px;
     background-color: #ffffff;
@@ -212,7 +212,7 @@ section{
 }
 .div11{
     width: 48%;
-    height: 143px;
+    height: 135px;
     float: left;
     border-radius: 10px;
     background-color: #ffffff;
@@ -267,10 +267,10 @@ section{
 }
 .div15 p{
     width: auto;
-    height:68px;
+    height:60px;
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-
+    line-height: 20px;
     text-overflow: ellipsis;
     color: #CCCCCC;
     margin-right: 5%;
@@ -310,10 +310,11 @@ section{
 }
 .div18 p{
     width: auto;
-    height:68px;
+    height:60px;
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
     overflow: hidden;
+    line-height: 20px;
     text-overflow: ellipsis;
     color: #CCCCCC;
     margin-right: 5%;

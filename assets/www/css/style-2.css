@@ -267,10 +267,10 @@ section{
 }
 .div15 p{
     width: auto;
-    height:68px;
+    height:80px;
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-
+    line-height: 20px;
     text-overflow: ellipsis;
     color: #CCCCCC;
     margin-right: 5%;
@@ -310,7 +310,7 @@ section{
 }
 .div18 p{
     width: auto;
-    height:68px;
+    height:80px;
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
     overflow: hidden;
@@ -318,7 +318,7 @@ section{
     color: #CCCCCC;
     margin-right: 5%;
     text-indent: 12px;
-
+    line-height: 20px;
 }
 footer{
     width: 100%;

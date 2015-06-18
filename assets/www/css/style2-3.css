@@ -19,23 +19,25 @@ a{
 }
 .div2{
     width: 414px;
-    position: absolute;
+    position:fixed;
     top: 100px;
     z-index: 1;
     overflow: hidden;
 }
 .img1{
+
     width: 414px;
 }
 .img2{
-    position: absolute;
+    position: fixed;
     width: 100px;
-    top: 160px;
+    top: 260px;
+    left: 0;
     z-index: 20;
 
 }
 .div3{
-    position: absolute;
+    position:fixed;
     top:108px;
     left: 115px;
     z-index: 2;

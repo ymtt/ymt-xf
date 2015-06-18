@@ -10,7 +10,6 @@
         this.options = $.extend({}, $.fn.drag.defaults, options);
         this.init();
     }
-
     Drag.prototype = {
         constructor: Drag,
         init: function() {
