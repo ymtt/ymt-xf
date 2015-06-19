@@ -16,7 +16,8 @@ function getSubjectList(){
                          $.each(list,function(key){
                             var subject=(list[key]['threadSubject']).substring(0,12);
                             var threadTid=list[key]['threadTid'];
-                            CreateForumList(subject,threadTid);
+                            var forumname=list[0]['forumName'];
+                            CreateForumList(subject,threadTid,forumname);
                          });
                      },error:function(error){
                             var error=eval("("+error+")");
@@ -32,6 +33,7 @@ function getSubjectList(){
  }
 
  /*向页面插入数据*/
- function CreateForumList(subject,threadTid){
+ function CreateForumList(subject,threadTid,forumname){
    $("#list").append("<li><a href='javascript:threadTid("+"\""+threadTid+"\""+")'><p>"+subject+"</p></a></li>");
+   $(".div2 p").html(forumname);
  }

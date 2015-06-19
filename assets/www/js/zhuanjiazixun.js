@@ -70,10 +70,12 @@ function gethhotandnew(m,pagesize,start){
 }
 
 function CreateZuijin(article_title,content){
-    $(".div18").html("<a href='zuijinzixun.html'><div class='div20'><p>"+article_title+
+    $(".div18:eq(0)").html("<a href='zuijinzixun.html'><div class='div20'><p>"+article_title+
     "</p></div><div class='div21'><p>"+content+"....</p></div></a>");
 }
 function CreateHot(article_title,content){
-    $(".div22").html("<a href='redianzixun.html'><div class='div20'><p>"+article_title+
+    $(".div18:eq(1)").html("<a href='redianzixun.html'><div class='div20'><p>"+article_title+
     "</p></div><div class='div21'><p>"+content+"....</p></div></a>");
 }
+
+/********************/

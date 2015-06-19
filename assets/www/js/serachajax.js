@@ -36,7 +36,11 @@ function serachky(m,pagesize,start,kw){
                 var list=data.datas['listData'];
                 $.each(list,function(key){
                    //标题
+                   var reg=eval("/"+kw+"/gi");
+                   var toreplace="<font color=red>"+kw+"</font>";
                    var title=list[key]['article_title'];
+                   var t=title.replace(reg,toreplace);
+                   //alert(t);
                    //内容
                    var content=list[key]['content'];
                    var time=list[key]['create_time'];
@@ -46,6 +50,7 @@ function serachky(m,pagesize,start,kw){
                    }else{
                         cons=content.replace(/<[^>]*>/gi,'');
                    }
+
                   var hitnum=list[key]['hitnum'];
                   //文章id
                   var id=list[key]['id'];
@@ -54,7 +59,8 @@ function serachky(m,pagesize,start,kw){
 
                   window.localStorage.setItem(id,obj);
 
-                  CreateGuiFan(id,title,cons,time);
+                  CreateGuiFan(id,t,cons,time);
+
                   //alert(title+time);
                 });
 
@@ -63,9 +69,10 @@ function serachky(m,pagesize,start,kw){
 }
 
 function CreateGuiFan(id,title,content,time){
-    $("section").append("<div class='div12'><span><label>防火门</label>"+title+
+    $("section").append("<div class='div12'><span>"+title+
     "</span><div class='div13'><p>"+content+
     "</p></div><div class='div14'><p>"+time+
     "</p></div></div>");
    // $("section").append(title);
+   $()
 }
