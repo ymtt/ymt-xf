@@ -45,7 +45,7 @@ a{
     width: 10%;
     height:40px;
     float: left;
-    margin-left: 25%;
+    margin-left: 20%;
 }
 .div3-1{
     width: 10px;
@@ -53,7 +53,7 @@ a{
     border-radius: 10px;
     background-color: #FF0000;
     float: left;
-    margin-left: 60%;
+    margin-left: 18px;
     margin-top: 5px;
 }
 .div3-1 p{
@@ -69,10 +69,10 @@ a{
     float: left;
 }
 .div3-2 img{
-    width: 100%;
     height: auto;
     max-width: 100%;
-    margin-top: -12px;
+    margin-top: -8px;
+
 }
 .div3-2 ul{
     list-style: none;

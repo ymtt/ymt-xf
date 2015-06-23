@@ -34,7 +34,7 @@ a{
     width: 20%;
     height: auto;
     float: left;
-    margin-left: 60%;
+    margin-left: 55%;
 }
 .div3{
     width: 50%;
@@ -61,10 +61,10 @@ a{
     width: 7%;
     height: auto;
     float: left;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 .div5 img{
-    max-width: 60%;
+    max-width: 100%;
 }
 section{
     width: 100%;
@@ -73,12 +73,14 @@ section{
     margin-top: 40px;
 }
 .div6{
-    width: 100%;
+    width: 80%;
     height: auto;
     float: left;
     margin-top: 30px;
+    margin-left: 10%;
 }
 .div6 img{
+    width: 100%;
     max-width: 100%;
 }
 .div7{

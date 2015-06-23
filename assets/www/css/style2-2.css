@@ -8,6 +8,18 @@ html,body{
     background-color: #ffffff;
 
 }
+#container {
+    width:260px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+}
+#container {
+    width: 260px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -25,7 +37,7 @@ a{
     overflow: hidden;
 }
 .img1{
-    position: fixed;
+
     width: 375px;
 }
 .img2{

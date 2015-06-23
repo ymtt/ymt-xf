@@ -308,10 +308,10 @@ section ul li{
     color:  #FFFFFF;
 }
 .zc-2{
-    width: 75%;
+    width: 100%;
     height: auto;
     float: left;
-    margin-left: 25%;
+
     margin-top: 10px;
 }
 .zc-2 ul{
@@ -319,23 +319,35 @@ section ul li{
     height: auto;
     float:left;
     list-style: none;
+    background-color: #ff0000;
 }
 .zc-2 ul li{
     width: 100%;
     height: 40px;
     float: left;
+    background-color: #11c1f3;
+}
+.zc-7{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #11c1f3;
+}
+.zc-2 ul li a:hover{
+    background-color: #ff0000;
 }
 .zc-3{
     width: 20%;
     height: auto;
     float: left;
+    margin-left: 25%;
 }
 .zc-3 img{
     max-width: 100%;
     margin-top: 10px;
 }
 .zc-4{
-    width: 80%;
+    width: 55%;
     height: 40px;
     float: left;
 }

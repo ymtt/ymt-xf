@@ -19,18 +19,18 @@ function  change_nav(heath_center) {
         }
     }
 }
-function a1(x) {
-    document.getElementsByClassName("ky-4")[x].style.backgroundImage = "url(image/comment_collect1_icon.png)";
-}
-function a2(x){
-    document.getElementsByClassName("ky-4")[x].style.backgroundImage= "";
-}
-function s1(x) {
-    document.getElementsByClassName("ky-5")[x].style.backgroundImage = "url(image/comment_comment1_icon.png)";
-}
-function s2(x){
-    document.getElementsByClassName("ky-5")[x].style.backgroundImage= "";
-}
+//function a1(x) {
+//    document.getElementsByClassName("ky-4")[x].style.backgroundImage = "url(image/comment_collect1_icon.png)";
+//}
+//function a2(x){
+//    document.getElementsByClassName("ky-4")[x].style.backgroundImage= "";
+//}
+//function s1(x) {
+//    document.getElementsByClassName("ky-5")[x].style.backgroundImage = "url(image/comment_comment1_icon.png)";
+//}
+//function s2(x){
+//    document.getElementsByClassName("ky-5")[x].style.backgroundImage= "";
+//}
 
 
 /*
@@ -86,11 +86,11 @@ function getnews(type,func,kystart,kyend,bo){
 
 }
 
-function CreateKnowledge(title,content,id){
-    $("#nav_tab4").append("<div class='ky'><a href='javascript:ToKeyanXQ("+"\""+id+"\""+")'><div class='ky-1'><p>"+title+
-    "</p></div><div class='ky-2'><img src='image/knowledge_01.png'></div><div class='ky-3'><p>"+content+
-    "</p></div></a><div class='ky-4' onmousemove='a1(0)' onmouseout='a2(0)'><p>42354人</p></div><div class='ky-5' onmousemove='s1(0)' onmouseout='s2(0)'><p>42354人</p></div></div>");
-}
+//function CreateKnowledge(title,content,id){
+//    $("#nav_tab4").append("<div class='ky'><a href='javascript:ToKeyanXQ("+"\""+id+"\""+")'><div class='ky-1'><p>"+title+
+//    "</p></div><div class='ky-2'><img src='image/knowledge_01.png'></div><div class='ky-3'><p>"+content+
+//    "</p></div></a><div class='ky-4' onmousemove='a1(0)' onmouseout='a2(0)'><p>42354人</p></div><div class='ky-5' onmousemove='s1(0)' onmouseout='s2(0)'><p>42354人</p></div></div>");
+//}
 
 function addkmore(obj){
     kystart+=10;
@@ -168,5 +168,5 @@ function CreateGuiFan(m,title,content,id){
     }
     $(where).append("<div class='ky'><a href='javascript:ToKeyanXQ("+"\""+id+"\""+")'><div class='ky-1'><p>"+title+
     "</p></div><div class='ky-2'><img src='image/knowledge_01.png'></div><div class='ky-3'><p>"+content+
-    "</p></div></a><div class='ky-4' onmousemove='a1(0)' onmouseout='a2(0)'><p>42354人</p></div><div class='ky-5' onmousemove='s1(0)' onmouseout='s2(0)'><p>42354人</p></div></div>");
+    "</p></div></a></div>");
 }

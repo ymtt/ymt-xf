@@ -57,7 +57,10 @@ a{
     overflow:hidden ;
     margin-top: 40px;
 }
-
+.div4 img{
+    width: 100%;
+   max-width: 100%;
+}
 .div5{
     width: auto;
     height: auto;

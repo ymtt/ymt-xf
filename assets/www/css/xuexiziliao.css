@@ -110,7 +110,7 @@ section{
 }
 .div4{
     width: 90%;
-    height: 30px;
+    height:auto;
     float: left;
     margin-left: 5%;
 }
@@ -118,7 +118,7 @@ section{
     font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     color: #000000;
-    line-height: 30px;
+    line-height: 20px;
 }
 .div5{
     width: 10%;
@@ -127,7 +127,6 @@ section{
     margin-left: 5%;
 }
 .div5 img{
-    width: 80%;
     height: auto;
     max-width: 100%;
 }

@@ -6,14 +6,13 @@ a{
     text-decoration: none;
 }
 .div1{
-    width: 40%;
+    width: 100%;
     height: auto;
-    position: absolute;
+
 }
 .div1 img{
-    width: 50%;
-    max-width:100%;
-    margin-left: 60%;
+    max-width:60%;
+
 }
 .div2{
     width: auto;

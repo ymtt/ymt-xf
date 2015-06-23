@@ -8,6 +8,12 @@ html,body{
     background-color: #ffffff;
 
 }
+#container {
+    width: 225px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+}
 a{
     text-decoration: none;
 }
@@ -19,24 +25,24 @@ a{
 }
 .div2{
     width: 320px;
-    position: fixed;
+    position: absolute;
     top: 60px;
     z-index: 1;
     overflow: hidden;
 }
 .img1{
-    position: fixed;
+
     width: 320px;
 }
 .img2{
-    position: fixed;
+    position: absolute;
     width: 80px;
     top: 125px;
     left: 0;
     z-index: 20;
 }
 .div3{
-    position: fixed;;
+    position: absolute;
     top: 68px;
     left: 90px;
     z-index: 2;

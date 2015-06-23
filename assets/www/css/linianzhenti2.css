@@ -49,10 +49,10 @@ header{
     margin-left: 20%;
 }
 .divZ1{
-    width: 95%;
+    width: 100%;
     height: 40px;
     float: left;
-    margin-left: 5%;
+
     border-bottom: 1px solid #ECECEC;
     margin-top: 40px;
 }
@@ -60,6 +60,7 @@ header{
     font-size: 1em;
     font-family: "方正兰亭纤黑_GBK";
     line-height:40px ;
+    margin-left: 5%;
 }
 section{
     width: 100%;
@@ -81,7 +82,6 @@ section{
     float: left;
 }
 .div5 img{
-    width: 50%;
     height: auto;
     max-width: 100%;
 }

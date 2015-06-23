@@ -44,12 +44,10 @@ a{
     width: 10%;
     height: auto;
     float: right;
-    margin-top: 3px;
-    margin-right: 7%;
+    margin-top: 5px;
+    margin-right: 2%;
 }
 .div3 img{
-    width: 100%;
-    height: auto;
     max-width: 100%;
 }
 .div3 ul{
@@ -217,7 +215,7 @@ section{
 }
 .ky-1{
     width: 95%;
-    height: 30px;
+    height: auto;
     float: left;
     margin-left: 5%;
 }
@@ -225,7 +223,7 @@ section{
     font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     color: #000000;
-    line-height: 30px;
+    line-height: 20px;
 }
 .ky-2{
     width: 10%;
@@ -237,12 +235,14 @@ section{
     width: 80%;
     height: auto;
     max-width: 100%;
+    margin-top: 10px;
 }
 .ky-3{
     width: 80%;
     height: 60px;
     float: left;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 .ky-3 p{
   font-family: "方正兰亭纤黑_GBK";
@@ -310,7 +310,6 @@ section{
     margin-top: 5px;
 }
 .sp-2 img{
-    width: 40%;
     height: auto;
     max-width: 100%;
 }
@@ -334,7 +333,7 @@ section{
 .sp-4 ul li{
     width: 45.5%;
     height: 80px;
-    margin-top: 10px;
+
     float: left;
     margin-left: 3%;
 }
@@ -345,7 +344,6 @@ section{
     overflow: hidden;
 }
 .sp-5 img{
-    width: 100%;
     height: auto;
     max-width: 100%;
 }
@@ -739,7 +737,7 @@ hr{
     float: left;
 }
 .s3{
-    width: 40%;
+    width: 50%;
     height:20px;
     float: left;
     background-color: #0c63ee;
@@ -753,7 +751,7 @@ hr{
     margin-left: 10%;
 }
 .s4{
-    width: 40%;
+    width: 50%;
     height:20px;
     float: left;
     background-color: #0c63ee;
@@ -767,7 +765,7 @@ hr{
     margin-left: 10%;
 }
 .s4{
-    width: 40%;
+    width: 50%;
     height:20px;
     float: left;
     background-color: #0c63ee;
@@ -781,7 +779,7 @@ hr{
     margin-left: 10%;
 }
 .s5{
-    width: 50%;
+    width: 60%;
     height:20px;
     float: left;
     background-color: #11c1f3;
@@ -795,7 +793,7 @@ hr{
     margin-left: 10%;
 }
 .s6{
-    width: 50%;
+    width: 60%;
     height:20px;
     float: left;
     background-color: #11c1f3;
