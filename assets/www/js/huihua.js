@@ -8,7 +8,7 @@ function getallmsg(){
     var qq_id=window.localStorage.getItem("qq_id");
 
     //用户id
-   var userId=window.localStorage.setItem("userid");
+   var userId=window.localStorage.getItem("userid");
    //时间
    var time=currentdatetotimestamp();
     //得到某一条QQ消息的所有内容
@@ -94,8 +94,16 @@ function getunreadmsg(data){
        if(data.result=="Y"){
             var list=data.datas['listData'];
             $.each(list,function(key){
-                var html=list[key]['html'];
-                $("section").append(html);
+                var html=list[key]['html'].replace(/<[^>]*>/gi,'');
+               //alert(html);
+               var arr=new Array();
+
+               arr=html.split(":");
+
+                  var result=arr[3].substring(2,arr[3].length);
+
+               //alert(html);
+            $("section").append("<div class='div4'><div class='div5'><img src='image/16.png'></div><div class='div6'><p>"+result+"</p></div></div>");
             });
        }
 

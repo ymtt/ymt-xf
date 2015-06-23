@@ -22,12 +22,11 @@
                          data:{"loginname":username,"pwd":pwd,"t":"app"},
                          success: function (data) {
                            var json = eval("(" +data+ ")");
-                           alert(data);
                            window.sessionStorage.setItem("session",json.sId);
                            window.localStorage.setItem("user",username);
                            window.localStorage.setItem("userrole",json.role);
                            window.localStorage.setItem("userid",json.id);
-                           alert(json.sId);
+                           //alert(json.sId);
                            if(json.result=="Y"){
                                  alert("登录成功");
                                  window.location.href="index.html";
