@@ -70,10 +70,75 @@ function gethhotandnew(m,pagesize,start){
 }
 
 function CreateZuijin(article_title,content){
-    $(".div18").html("<a href='zuijinzixun.html'><div class='div20'><p>"+article_title+
+    $(".div18:eq(0)").html("<a href='zuijinzixun.html'><div class='div20'><p>"+article_title+
     "</p></div><div class='div21'><p>"+content+"....</p></div></a>");
 }
 function CreateHot(article_title,content){
-    $(".div22").html("<a href='redianzixun.html'><div class='div20'><p>"+article_title+
+    $(".div18:eq(1)").html("<a href='redianzixun.html'><div class='div20'><p>"+article_title+
     "</p></div><div class='div21'><p>"+content+"....</p></div></a>");
+}
+
+/*********值班表***********/
+function getRoat(){
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ExpertAction&m=duty';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        data:{},
+        success:function(data){
+            var myDate = new Date();
+            var week="星期"+myDate.getDay();
+            var list=data.datas['listData'];
+            setWeek(week);
+            $.each(list,function(key){
+                //星期数
+                var weeks=list[key]['day'];
+                //上午下午
+                var ampm=list[key]['flag'];
+                //姓名
+                var users=list[key]['users'];
+                if(weeks==week&&ampm=="上午"){
+                    //插入当天上午的人
+                    if(users!=null||users!=""){
+                        $(".div10-1 p").append(users[0]['name']+"&nbsp;&nbsp;");
+                    }
+                }else if(weeks==week&&ampm=="下午"){
+                    //插入当天下午的人
+                    if(null!=users||""!=users){
+                      $(".div10-3 p").append(users[0]['name']+"&nbsp;&nbsp;");
+                    }
+                }
+            });
+            //alert(week);
+
+        },
+    });
+}
+
+function setWeek(week){
+    switch(week)
+    {
+    case '星期1':
+      $(".div9-1 p").html("当天值班表(星期一)");
+      break;
+    case '星期2':
+      $(".div9-1 p").html("当天值班表(星期二)");
+      break;
+      case '星期3':
+      $(".div9-1 p").html("当天值班表(星期三)");
+      break;
+      case '星期4':
+      $(".div9-1 p").html("当天值班表(星期四)");
+      break;
+      case '星期5':
+      $(".div9-1 p").html("当天值班表(星期五)");
+      break;
+      case '星期6':
+      $(".div9-1 p").html("当天值班表(星期六)");
+      break;
+      case '星期0':
+      $(".div9-1 p").html("当天值班表(星期日)");
+      break;
+    }
 }

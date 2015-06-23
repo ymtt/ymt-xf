@@ -16,11 +16,11 @@ function expertlist(pagesize,start){
                 //级别
                  var level=list[key]['level'];
 
-                 if(level=="1"){
+                 if(level=="level1"){
                     levelname="普通专家";
-                 }else if(level=="2"){
+                 }else if(level=="level2"){
                     levelname="资深专家";
-                 }else if(level=="3"){
+                 }else if(level=="level3"){
                     levelname="国家级";
                  }
                  var expertid=list[key]['fk_user_id'];
@@ -59,14 +59,14 @@ function serachexpertlist(pagesize,start,kw){
                 //专家di
                 var expertid=list[key]['fk_user_id'];
 
-                 if(level=="1"){
+                if(level=="level1"){
                     levelname="普通专家";
-                 }else if(level=="2"){
+                 }else if(level=="level2"){
                     levelname="资深专家";
-                 }else if(level=="3"){
+                 }else if(level=="level3"){
                     levelname="国家级";
                  }
-                 CreateMoreExpert(expertid,head_pic,name,levelname,"0","0");
+                 CreateMoreExpert(expertid,head_pic,name,level,"0","0");
             });
         },
     });
