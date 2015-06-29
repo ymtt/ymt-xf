@@ -6,37 +6,6 @@
     <link href="css/lijizixun.css" type="text/css" rel="stylesheet" media="screen">
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/lijizixun.js"></script>
-    <script language="javascript" type="text/javascript">
-        function showdiv() {
-            document.getElementById("bg").style.display ="block";
-            document.getElementById("show").style.display ="block";
-        }
-        function hidediv() {
-            document.getElementById("bg").style.display ='none';
-            document.getElementById("show").style.display ='none';
-        }
-
-        $(document).ready(function(){
-
-        });
-
-        //立即咨询(提问)
-        function subs(){
-            //标题
-            var tit=document.getElementById("title").value;
-            //内容
-            var content=document.getElementById("content").value;
-            //问题类型
-            var points="j4";
-            //专家id
-            //var expert="admin2";
-
-            var expert= window.localStorage.getItem("clickexpert");
-
-           clickconsultation(tit,content,points,expert);
-        }
-
-    </script>
     <link href="css/fd.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
@@ -58,86 +27,54 @@
 </header>
 <section>
     <div class="div3">
-        <p>向千万专家提问！</p>
+        <div class="div4">
+            <p>一级问题分类</p>
+        </div>
+        <div class="div5">
+            <p>建筑消防</p>
+        </div>
+        <div class="div6">
+            <img src="image/the-arrow_icon_right2.png">
+        </div>
     </div>
-    <div class="div4">
-    <textarea type="text" placeholder="输入咨询标题......"  id="title"></textarea>
+    <div class="div3">
+        <div class="div4">
+            <p>二级问题分类</p>
+        </div>
+        <div class="div5">
+            <p style="color: #cccccc">请选择分类</p>
+        </div>
+        <div class="div6">
+            <img src="image/the-arrow_icon_right2.png">
+        </div>
     </div>
-    <div class="div5">
-        <textarea placeholder="输入咨询内容......" type="text" id="content"></textarea>
-    </div>
-    <div class="div6">
-     <p>+上传附件</p>
+    <div class="div3">
+        <div class="div4">
+            <p >值守专家</p>
+        </div>
+        <div class="div5">
+            <p style="color: #cccccc">请选择专家</p>
+        </div>
+        <div class="div6">
+            <img src="image/the-arrow_icon_right2.png">
+        </div>
     </div>
     <div class="div7">
+        <p>向千万专家提问！</p>
+    </div>
+    <div class="div8">
+    <textarea type="text" placeholder="输入咨询标题......"  id="title"></textarea>
+    </div>
+    <div class="div9">
+        <textarea placeholder="输入咨询内容......" type="text" id="content"></textarea>
+    </div>
+    <div class="div10">
+     <p>+上传附件</p>
+    </div>
+    <div class="div11">
         <input type="button" value="提交咨询" onclick="subs()">
     </div>
 </section>
-<footer>
-    <div class="div11">
-        <p>热门话题</p>
-    </div>
-    <div class="div12">
-        <ul>
-            <li>
-                <div class="div13">
-                    <a href=""><p>消防部门</p></a>
-                </div>
-            </li>
-            <li>
-                <div class="div13">
-                    <a href=""><p>规范组</p></a>
-                </div>
-            </li>
-            <li>
-                <div class="div13">
-                    <a href=""><p>建委</p></a>
-                </div>
-            </li>
-            <li>
-                <div class="div13">
-                    <a href=""><p>科研院校</p></a>
-                </div>
-            </li>
-            <li>
-                <div class="div13">
-                    <a href=""><p>设计院</p></a>
-                </div>
-            </li>
-            <li>
-                <div class="div13">
-                    <a href=""><p>开发商</p></a>
-                </div>
-            </li>
-            <li>
-                <div class="div13">
-                    <a href=""><p>火灾</p></a>
-                </div>
-            </li>
-            <li>
-                <div class="div13">
-                    <a href=""><p>小区事故</p></a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</footer>
-<div class="zz-1" id="bg"  >
-</div>
-<div class="zz-2" id="show">
-    <div class="div14">
-        <p>你的问题已收到！</p>
-    </div>
-    <div class="div15">
-        <p>系统已自动为你生成</p>
-    </div>
-    <div class="div16">
-        <p class="p1">用户名：</p> <p class="p2">02233</p>   <p class="p1">密码：</p> <p class="p2">23243</p>
-    </div>
-    <div class="div17">
-        <p>建议你<a href="">修改</a>账号密码</p>
-    </div>
-    <input type="button" value="确定"  onclick="hidediv()">
-    </div>
+
 </body>
 </html>

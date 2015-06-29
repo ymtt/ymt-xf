@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height:auto;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+    float: left;
+    position: fixed;
+    top: 0;
+}
+a{
+    text-decoration: none;
+}
+.div1 {
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 3%;
+}
+
+.div1 img {
+    max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.div2{
+    width: 72%;
+    height: auto;
+    float: left;
+}
+.div2 p{
+    line-height: 40px;
+    font-size: 1em;
+    color: #FFFFFF;
+    margin-left: 39.5%;
+}
+.div3{
+    width: 10%;
+    height: auto;
+    float: right;
+    margin-right: 5%;
+}
+.div3 img{
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+}
+.div4{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #cccccc;
+}
+.div5{
+    width: 30%;
+    height: auto;
+    float: left;
+}
+.div5 p{
+    font-size: 0.9em;
+    line-height: 30px;
+    margin-left: 15%;
+    color: #000000;
+}
+.div6{
+    width: 10%;
+    height: auto;
+    float: right;
+}
+.div6{
+    max-width: 100%;
+    margin-top: 5px;
+}
+.div7{
+    width: 100%;
+    height: auto;
+    float: left;
+    border-bottom: 1px solid #cccccc;
+}
+.div8{
+    width:20%;
+    height:auto;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.div8 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+.div9{
+    width: 75%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.div9 p{
+   line-height: 20px;
+    font-size: 0.9em;
+}
+.div10{
+    width: 20%;
+    height: 20px;
+    float: left;
+    margin-top: 5px;
+}
+.div10 p{
+    font-size: 0.8em;
+    line-height: 20px;
+    color: #ff0000;
+}
+.div11{
+    width: 25%;
+    height: 20px;
+    float: left;
+    margin-top: 5px;
+}
+.div11 p{
+    font-size: 0.8em;
+    line-height: 20px;
+}
+.div12{
+    width: 25%;
+    height: 20px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.div12 p{
+    font-size: 0.8em;
+    line-height: 20px;
+}
+label{
+    color: #ff0000;
+}

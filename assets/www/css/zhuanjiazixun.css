@@ -44,8 +44,8 @@ a{
 .div3{
     width: 10%;
     height:40px;
-    float: left;
-    margin-left: 20%;
+    float: right;
+    margin-right: 5%;
 }
 .div3-1{
     width: 10px;
@@ -118,34 +118,15 @@ a{
     text-align: center;
     line-height: 10px;
 }
-.div4{
-    width: 10px;
-    height: 10px;
-    float: left;
-    border-radius: 10px;
-    background-color:#FF0000;
-    margin-left: 80%;
-    margin-top: 2px;
-    margin-bottom: -12px;
-}
-.div4 p{
-    font-family:"方正兰亭纤黑_GBK";
-    font-size: 0.5em;
-    color: #ffffff;
-    text-align: center;
-    line-height: 10px;
-}
-.div4-1 p{
-    width: 80px;
+.div4 {
+    width:80px ;
     height: 30px;
-    background-color: #ffffff;
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 0.65em;
-    border-top: 1px solid #CCCCCC;
-    color: #000000;
-    text-align: center;
-    line-height: 30px;
+    float:right;
+    margin-top: -35px;
+    margin-right: 5%;
+    display: none;
 }
+
 .div5{
     width: 10px;
     height: 10px;
@@ -166,11 +147,9 @@ a{
 .div5-1 p{
     width: 80px;
     height: 30px;
-    background-color: #ffffff;
     font-family: "方正兰亭纤黑_GBK";
     font-size: 0.65em;
-    border-top: 1px solid #CCCCCC;
-    color: #000000;
+    color: #FFFFFF;
     text-align: center;
     line-height: 30px;
 }
@@ -186,29 +165,30 @@ section{
 }
 nav{
     width: 100%;
-    height: 80px;
+    height:auto;
     background-color: #ffffff;
 
     float: left;
 }
 .nav-1{
     width: 80%;
-    height: 20px;
+    height: 30px;
     margin-top: 5px;
     border: 1px solid #ECECEC;
     margin-left: 10%;
+    margin-bottom: 5px;
 }
 .nav-2{
     width: 10%;
-    height: 20px;
+    height: 30px;
     float: left;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-left: 5%;
 }
 input{
     width: 85%;
     border: 0;
-    height: 20px;
+    height: 30px;
     float: left;
 }
 .nav-3{
@@ -249,7 +229,7 @@ input{
 }
 .div9-1{
     width: 100%;
-    height: 20px;
+    height: 30px;
     float: left;
     margin-top: 5px;
     border-bottom: 1px solid #cccccc;
@@ -257,14 +237,14 @@ input{
 .div9-1 p{
     font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
-    line-height: 20px;
+    line-height: 30px;
     margin-left: 5%;
     color: #737373;
 }
 
 .div10{
   width:30%;
-  height:auto;
+  height:60px;
     float: left;
     border-right: 1px solid #cccccc;
 }
@@ -283,13 +263,13 @@ span{
 }
 .div9-2{
     width: 100%;
-    height: auto;
+    height: 60px;
     float: left;
     border-bottom: 1px solid #cccccc;
 }
 .div10-1{
     width:68%;
-    height: auto;
+    height: 60px;
     float: left;
 
 }
@@ -300,9 +280,9 @@ span{
 }
 .div10-2{
     width:30%;
-    height:auto;
+    height:60px;
     float: left;
-
+    border-right: 1px solid #cccccc;
 }
 .div10-2 p {
     line-height: 20px;
@@ -312,9 +292,9 @@ span{
 }
 .div10-3{
     width:68%;
-    height: auto;
+    height:60px;
     float: left;
-    border-left: 1px solid #cccccc ;
+
 }
 .div10-3 p{
     line-height: 20px;

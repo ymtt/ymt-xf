@@ -1,48 +1,125 @@
+<!DOCTYPE HTML>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <title>jQuery 模块拖动，拖动层效果</title>
-    <style type="text/css">
-        #div2
-        {
-            position:absolute;
-            width:40px;
-            height:40px;
-            text-align:center;
-            font-size:13px;
-            left:80px;
-            top:20px;
-        }
-        img{
-            max-width: 100%;
-        }
-    </style>
-    <script type="text/javascript" language="javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" language="javascript">
-        var _move=false;//移动标记
-        var _x,_y;//鼠标离控件左上角的相对位置
-        $(document).ready(function(){
-            $("#div2").click(function(){
-                //alert("click");//点击（松开后触发）
-            }).mousedown(function(e){
-                _move=true;
-                _x=e.pageX-parseInt($("#div2").css("left"));
-                _y=e.pageY-parseInt($("#div2").css("top"));
-            });
-            $(document).mousemove(function(e){
-                if(_move){
-                    var x=e.pageX-_x;//移动时根据鼠标位置计算控件左上角的绝对位置
-                    var y=e.pageY-_y;
-                    $("#div2").css({top:y,left:x});//控件新位置
-                }
-            }).mouseup(function(){
-                _move=false;
 
-            });
-        });
+<head>
+
+    <style>
+
+        body{font-family:arial;}
+
+        a{color:black;text-decoration:none;font:bold}
+
+        a:hover{color:#ffffff}
+
+        td.menu{background:#278acd}
+
+        table.nav
+
+        {
+
+            background:black;
+
+            position:relative;
+
+            font: bold 80% arial;
+
+            top:0px;
+
+            left:-135px;
+
+        }
+
+    </style>
+
+    <script type="text/javascript">
+
+        var i=-135
+
+        var intHide
+
+        var speed=3
+
+        function showmenu()
+
+        {
+
+            clearInterval(intHide)
+
+            intShow=setInterval("show()",10)
+
+        }
+
+        function hidemenu()
+
+        {
+
+            clearInterval(intShow)
+
+            intHide=setInterval("hide()",10)
+
+        }
+
+        function show()
+
+        {
+
+            if (i<-12)
+
+            {
+
+                i=i+speed
+
+                document.getElementById('myMenu').style.left=i
+
+            }
+
+        }
+
+        function hide()
+
+        {
+
+            if (i>-135)
+
+            {
+
+                i=i-speed
+
+                document.getElementById('myMenu').style.left=i
+
+            }
+
+        }
+
     </script>
+
 </head>
+
 <body>
-<div id="div2"><img src="image/1_middle_logo.png"></div>
+
+<table id="myMenu" class="nav" width="150" onmouseover="showmenu()" onmouseout="hidemenu()">
+
+    <tr><td class="menu" align="center"><a href="#">HOME</a></td>
+
+        <td rowspan="5" align="center" bgcolor="#257df8" >M<br />E<br />N<br />U</td></tr>
+
+    <tr><td class="menu" align="center"><a href="#">xxx</a></td></tr>
+
+    <tr><td class="menu" align="center"><a href="#">xxx</a></td></tr>
+
+    <tr><td class="menu" align="center"><a href="#">xxx</a></td></tr>
+
+    <tr><td class="menu" align="center"><a href="#">xxx</a></td></tr>
+
+</table>
+
+<p>濡傛灉涓嶄簡瑙ｄ唬鐮佸彲浠ュ皢浠ｇ爜澶嶅埗鍒拌浜嬫湰淇濆瓨锛岄噸鍛藉悕涓篨X.html
+
+</p><p>淇敼鐩稿簲鍙傛暟锛岃瀵熷氨鍙互鐭ユ檽浜�</p>
+
+<p> "speed" 鍙橀噺锛屾敼鍙樿彍鍗曠殑婊戝姩閫熷害銆�</p>
+
 </body>
+
 </html>
+

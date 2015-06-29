@@ -176,22 +176,22 @@ footer ul li{
 }
 .hh1{
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: #FFFFFF;
     border-bottom: 1px solid #CCCCCC;
     float: left;
 }
 .hh2{
-    width:60px ;
-    height: 60px;
+    width:40px ;
+    height: 40px;
     float: left;
     margin-left: 5%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .hh2 img{
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
 }
 .hh3{
     width: 60%;
@@ -223,15 +223,16 @@ footer ul li{
 }
 .hh5{
     width: 60%;
-    height: 30px;
+    height: auto;
     margin-left: 5%;
     float: left;
+    margin-bottom: 10px;
 }
 .hh5 p{
     font-family: "微软雅黑";
     font-size: 0.75em;
-    line-height: 30px;
-    color: #000000;
+    line-height: 20px;
+    color: #737373;
 }
 .yy1{
     width: 100%;
