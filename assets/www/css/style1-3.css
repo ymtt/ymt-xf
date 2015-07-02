@@ -11,6 +11,7 @@ a{
     position: absolute;
 }
 .div1 img{
+    width: 80px;
     max-width:100%;
     margin-left: 60%;
 }
@@ -18,12 +19,14 @@ a{
     width: auto;
     height: auto;
     position: absolute;
-    left: 80%;
-    top: 10px;
+    left: 90%;
+    top: 12px;
 }
 .div2 img{
+    width: 20px;
     max-width: 100%;
 }
+
 
 .div3{
     width: 10%;

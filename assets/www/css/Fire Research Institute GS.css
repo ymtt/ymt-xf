@@ -18,18 +18,18 @@ a{
 }
 .div1-1 {
     width: 10%;
-    height: auto;
+    height: 40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1-1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div2 {
-    width: 70%;
+    width: 80%;
     height: auto;
     float: left;
 
@@ -38,7 +38,7 @@ a{
     line-height: 40px;
     font-size: 1em;
     color: #FFFFFF;
-    margin-left: 35%;
+    text-align: center;
 }
 section{
     width: 100%;
@@ -56,7 +56,7 @@ hr{
     float: left;
 }
 .s2{
-    width: 10%;
+    width: 40px;
     height:200px;
     float: left;
     background-color: #0c63ee;
@@ -425,7 +425,7 @@ hr{
 }
 
 .s5{
-    width: 40%;
+    width: 50%;
     height:40px;
     float: left;
     background-color: #0c63ee;
@@ -437,9 +437,10 @@ hr{
     font-size: 0.8em;
     margin-top: 5px;
     margin-left: 10%;
+    line-height: 40px;
 }
 .s6{
-    width: 40%;
+    width: 50%;
     height:40px;
     float: left;
     background-color: #0c63ee;
@@ -451,4 +452,5 @@ hr{
     font-size: 0.8em;
     margin-top: 5px;
     margin-left: 10%;
+    line-height: 40px;
 }

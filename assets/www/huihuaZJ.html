@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>会话详情</title>
-    <link rel="stylesheet" type="text/css" href="css/huihuaXQ.css">
+    <link rel="stylesheet" type="text/css" href="css/huihuaZJ.css">
     <link rel="stylesheet" href="css/idangerous.swiper.css">
     <!--<script src="cordova.js"></script>-->
     <script src="js/jquery-1.11.2.min.js"></script>
@@ -62,7 +62,7 @@
 </head>
 <body>
 <header>
-    <a href="wodezixun.html"><div class="div1"><img src="image/return_icon.png"></div></a>
+    <a href="wodezixun.html"><div class="div1"><img src="image/icon_return.png"></div></a>
 
     <a href="ProblemContent.html"><div class="div3"><p>问题内容</p></div></a>
 </header>
@@ -95,16 +95,16 @@
 <footer>
     <div class="div9">
         <div class="div10">
-            <img src="image/the-keyboard_icon.png">
+            <img src="image/icon_keyboard.png">
         </div>
         <div class="div11">
             <input type="text"onblur="a()"  id="ss">
         </div>
         <div class="div12">
-            <img src="image/the-recording_icon.png">
+            <img src="image/icon_voice.png">
         </div>
         <div class="div13" id="ss1">
-            <img src="image/more-choice_icon.png" onclick="s()">
+            <img src="image/icon_other.png" onclick="s()">
         </div>
         <div class="div14" id="ss2">
             <button >发送</button>
@@ -115,67 +115,76 @@
             <li>
                 <a href="InvitedExperts.html">
                     <div class="div15">
-                        <img src="image/icon_add_members.png">
+                        <img src="image/icon_invite_experts_z.png">
+                        <div class="div15-1">
+                            <p>邀请专家</p>
+                        </div>
                     </div>
                 </a>
                 <div class="div16">
-                    <img src="image/speech-input_icon.png">
+                    <img src="image/icon_voice_1.png">
+                    <div class="div15-1">
+                        <p>语音输入</p>
+                    </div>
                 </div>
 
                 <div class="div16">
-                    <img src="image/small-video_icon.png">
+                    <img src="image/icon_video_1.png">
+                    <div class="div15-1">
+                        <p>小视频</p>
+                    </div>
                 </div>
 
                 <div class="div16">
-                    <img src="image/video-chat_icon.png">
+                    <img src="image/icon_video_chat.png">
+                    <div class="div15-1">
+                        <p>视频聊天</p>
+                    </div>
+                </div>
+
+                <div class="div16">
+                    <img src="image/icon_collect_z1.png">
+                    <div class="div15-1">
+                        <p>我的收藏</p>
+                    </div>
                 </div>
 
                 <div class="div15">
-                    <img src="image/my-collection_icon.png">
+                    <img src="image/icon_chat_record.png">
+                    <div class="div15-1">
+                        <p>聊天记录</p>
+                    </div>
                 </div>
 
                 <div class="div16">
-                    <img src="image/chatting-records_icon.png">
+                    <img src="image/icon_photograph.png">
+                    <div class="div15-1">
+                        <p>拍照</p>
+                    </div>
                 </div>
 
                 <div class="div16">
-                    <img src="image/taking-pictures_icon.png">
+                    <img src="image/icon_upload_files.png">
+                    <div class="div15-1">
+                        <p>上传文件</p>
+                    </div>
                 </div>
+                <div class="div16">
+                    <img src="image/icon_business_card.png">
+                <div class="div15-1">
+                    <p>名片</p>
+                </div>
+                    </div>
 
                 <div class="div16">
-                    <img src="image/upload-file_icon.png">
+                    <img src="image/icon_location.png">
+                <div class="div15-1">
+                    <p>位置</p>
                 </div>
-                <div class="div17">
-                    <div class="div18">
-                        <img src="image/red-dot1_background-color.png">
                     </div>
-                    <div class="div19">
-                        <img src="image/red-dot2_background-color.png">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="div15">
-                    <img src="image/business-card_icon.png">
-                </div>
-
-                <div class="div16">
-                    <img src="image/location_icon.png">
-                </div>
-                <div class="div20">
-                    <div class="div18">
-                        <img src="image/red-dot2_background-color.png">
-                    </div>
-                    <div class="div19">
-                        <img src="image/red-dot1_background-color.png">
-                    </div>
-                </div>
             </li>
         </ul>
         <div class="icons" id="icons">
-            <span class="curr">1</span>
-            <span>2</span>
-
         </div>
     </div>
     <script>
@@ -218,7 +227,7 @@
                     if(isScrolling === 0){
                         event.preventDefault();      //阻止触摸事件的默认行为，即阻止滚屏
                         this.slider.className = 'cnt';
-                        this.slider.style.left = -this.index*400 + endPos.x + 'px';
+                        this.slider.style.left = -this.index*100% + endPos.x + 'px';
                     }
                 },
                 //滑动释放
@@ -236,7 +245,7 @@
                         }
                         this.icon[this.index].className = 'curr';
                         this.slider.className = 'cnt f-anim';
-                        this.slider.style.left = -this.index*400 + 'px';
+                        this.slider.style.left = -this.index*100% + 'px';
                     }
                     //解绑事件
                     this.slider.removeEventListener('touchmove',this,false);

@@ -18,14 +18,14 @@ header{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height:40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div2{
@@ -40,21 +40,25 @@ header{
     margin-left:30%;
 }
 .div2-1{
-    width: 5%;
+    width: 10%;
     height: auto;
     float: left;
     margin-left: 20%;
 }
 .div2-1 img{
+    width: 20px;
     max-width: 100%;
     margin-top: 10px;
 }
 .div3{
-    width: 5%;
+    width: 10%;
     height: auto;
     float: right;
     margin-right: 15px;
-    margin-top: 8px;
+    margin-top: 10px;
+}
+.div3 img{
+    width: 20px;
 }
 section{
     width: 100%;
@@ -75,7 +79,7 @@ section{
     float: left;
 }
 .div6 img{
-
+   width: 30px;
     height: auto;
     max-width: 100%;
     margin-top: 3px;

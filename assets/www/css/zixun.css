@@ -19,38 +19,39 @@
  }
 .div1 {
     width: 10%;
-    height: auto;
+    height:40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div2 {
-    width: 70%;
+    width: 80%;
     height: auto;
     float: left;
 
 }
 .div2 p{
+    width: 100%;
     line-height: 40px;
     font-size: 1em;
     color: #FFFFFF;
-    margin-left: 39%;
+    text-align: center;
 }
  .div3{
      width: 10%;
-     height: auto;
+     height: 40px;
      float: right;
-   margin-top: 5px;
-     margin-right: 2%;
  }
  .div3 img{
+     width: 30px;
      height: auto;
      max-width: 100%;
+     margin-top: 5px;
  }
  .div3 ul{
      list-style: none;
@@ -84,60 +85,6 @@
  }
  .div3:hover ul{
      display: block;
- }
- nav{
-     width: 100%;
-     height: auto;
-     background-color: #ffffff;
-     margin-top: 40px;
-     float: left;
- }
- .nav-1{
-     width: 80%;
-     height: 20px;
-     margin-top: 5px;
-     border: 1px solid #ECECEC;
-     margin-left: 10%;
- }
- .nav-2{
-     width: 10%;
-     height: 20px;
-     float: left;
-     margin-top: 2px;
-     margin-left: 5%;
- }
- input{
-     width: 85%;
-     border: 0;
-     height: 20px;
-     float: left;
- }
- .nav-3{
-     width: 100%;
-     height: auto;
-     float: left;
- }
- .nav-3 ul {
-     width: 80%;
-     height: 38px;
-     margin-left: 10%;
-     list-style: none;
- }
- .nav-3 ul li {
-     width: 20%;
-     height: 19px;
-     float: left;
-     margin-top: 7px;
- }
- .nav-4{
-     width: 100%;
-     height: 19px;
- }
- .nav-4 p{
-     font-size: 0.65em;
-     color: #CCCCCC;
-     line-height: 15px;
-     text-align: center;
  }
 
 

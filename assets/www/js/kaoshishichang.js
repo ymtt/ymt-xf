@@ -7,13 +7,13 @@ function a()
     var oBtn = document.getElementById("btn1");
     var oDemo = document.getElementById("demo1");
 
-    if (oDemo.style.display == "block") {
-        oBtn.style.background = "url(image/the-arrow_icon_right.png)no-repeat 80% 50%"
-        oDemo.style.display = "none";
-    }
-    else {
+    if (oDemo.style.display == "none") {
         oBtn.style.background = "url(image/the-arrow_icon.png)no-repeat 80% 50%"
         oDemo.style.display = "block";
+    }
+    else {
+        oBtn.style.background = "url(image/the-arrow_icon_right.png)no-repeat 80% 50%"
+        oDemo.style.display = "none";
     }
 
 

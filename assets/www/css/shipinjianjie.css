@@ -27,14 +27,14 @@ a{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height:40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left:40%;
     margin-top: 10px;
 }
 .div2{
@@ -44,6 +44,7 @@ a{
     margin-top: 9px;
 }
 .div2 img{
+    width: 20px;
     max-width: 55%;
 }
 
@@ -51,10 +52,10 @@ a{
     width:10%;
     height:auto;
     float: right;
-    margin-right: 2%;
     margin-top: 9px;
 }
 .div3 img{
+    width: 20px;
     max-width: 50%;
 }
 
@@ -147,7 +148,7 @@ nav ul li{
     margin-left: 5%;
 }
 .ml img{
-
+    width: 20px;
     height: auto;
     margin-top: 5px;
     margin-left: 50%;
@@ -172,7 +173,7 @@ nav ul li{
 }
 .tj-1{
     width: 25%;
-    height:90px;
+    height:auto;
     float: left;
 }
 .tj-1 img{
@@ -274,11 +275,12 @@ nav ul li{
     width: 100%;
     height: auto;
     float: left;
+    text-align: center;
 }
 .div7 img{
+    width: 40px;
     max-width: 100%;
-    margin-top: 20px;
-    margin-left: 20%;
+    margin: 10px auto;
 }
 .div8{
     width: 100%;

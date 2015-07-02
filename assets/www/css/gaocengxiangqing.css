@@ -18,18 +18,18 @@ a{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height:40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left:40%;
     margin-top: 10px;
 }
 .div2 {
-    width: 62%;
+    width: 80%;
     height: auto;
     float: left;
 
@@ -45,9 +45,9 @@ a{
     height: auto;
     float: right;
     margin-top: 8px;
-    margin-right: 5%;
 }
 .div3 img{
+    width: 20px;
     max-width: 100%;
 }
 section{
@@ -145,7 +145,7 @@ footer{
     display: none;
     position: fixed;
     bottom: 0;
-    top: 60%;  width: 100%; height: auto;
+    width: 100%; height:210px;
     background-color: white;
     z-index:1002;
     overflow: auto;
@@ -170,13 +170,13 @@ footer{
     width: 100%;
     height: auto;
     float: left;
+    text-align: center;
 }
 .div15 img{
-    width: 70%;
+    width: 40px;
     height:auto;
     max-width: 100%;
-    margin-top: 20px;
-    margin-left: 20%;
+    margin: 10px auto;
 }
 .div16{
     width: 100%;

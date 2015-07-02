@@ -19,18 +19,18 @@ header{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height:40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left:40%;
     margin-top: 10px;
 }
 .div2 {
-    width: 72%;
+    width: 80%;
     height: auto;
     float: left;
 
@@ -45,10 +45,10 @@ header{
     width: 10%;
     height: auto;
     float: right;
-    margin-right: 5%;
     margin-top: 7px;
 }
 .div3 img{
+    width: 20px;
     max-width: 100%;
 }
 section{

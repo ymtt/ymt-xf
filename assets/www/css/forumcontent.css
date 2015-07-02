@@ -19,18 +19,18 @@ a{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height:40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div2 {
-    width: 87%;
+    width: 80%;
     height: auto;
     float: left;
 
@@ -39,7 +39,7 @@ a{
     line-height: 40px;
     font-size: 1em;
     color: #FFFFFF;
-    margin-left: 37%;
+    text-align: center;
 }
 section{
     width: 100%;

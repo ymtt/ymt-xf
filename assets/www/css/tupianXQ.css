@@ -20,14 +20,14 @@ a{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height:40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div2{
@@ -55,15 +55,17 @@ a{
     margin-top: 12px;
 }
 .div4 img{
+    width: 15px;
     max-width: 100%;
 }
 .div5{
     width: 7%;
     height: auto;
     float: left;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 .div5 img{
+    width: 20px;
     max-width: 100%;
 }
 section{
@@ -124,7 +126,7 @@ section{
     margin-bottom: 30px;
 }
 .zz-1{
-    position: absolute;
+    position: fixed;
     z-index: 1001;
     width: 100%;
     height: 100%;
@@ -160,11 +162,12 @@ section{
     width: 100%;
     height: auto;
     float: left;
+    text-align: center;
 }
 .div12 img{
+    width: 40px;
     max-width: 100%;
-    margin-top: 20px;
-    margin-left: 20%;
+    margin:10px auto;
 }
 .div13{
     width: 100%;

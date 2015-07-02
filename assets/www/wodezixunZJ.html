@@ -14,77 +14,121 @@
             h();
             d();
         });
+        function a()
+        {
+
+            var oBtn = document.getElementById("btn1");
+            var oDemo1 = document.getElementById("demo1");
+
+            if (oDemo1.style.display == "block") {
+                oBtn.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+                oDemo1.style.display = "none";
+            }
+            else {
+                oBtn.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+                oDemo1.style.display = "block";
+            }
+
+
+        }
+        function b()
+        {
+
+            var oBtn1 = document.getElementById("btn2");
+            var oDemo2 = document.getElementById("demo2");
+
+            if (oDemo2.style.display == "none") {
+                oBtn1.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+                oDemo2.style.display = "block";
+            }
+            else {
+                oBtn1.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+                oDemo2.style.display = "none";
+            }
+
+        }
 
     </script>
 </head>
 <body>
 <header>
-    <a href="zhuanjiazixun.html"><div class="div1"><img src="image/return_icon.png"></div></a>
+    <a href="zhuanjiazixun.html"><div class="div1"><img src="image/icon_return.png"></div></a>
     <div class="div2"><p>我的咨询</p></div>
-    <div class="div3"><a href="sousuo.html"> <img src="image/search_icon.png"></a></div>
+    <div class="div3"><a href="sousuo.html"> <img src="image/icon_search_1.png"></a></div>
 </header>
 <section  class="nav_tab" id="nav_tab1">
-    <div class="hh1">
-        <a href="huihuaXQ.html">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>梁冰</p></div>
-            <div class="hh4"><p>5</p></div>
-            <div class="hh5"><p>加油站属于消防重点单位把？<br>
-             那我想问非营业性的汽车加油站是消防重点......
-            </p></div>
-        </a>
-    </div>
-    <div class="hh1">
-        <a href="huihuaXQ.html">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>王小二</p></div>
-            <div class="hh4"><p>10</p></div>
-            <div class="hh5"><p>加油站属于消防重点单位把？</p></div>
-        </a>
-    </div>
-    <div class="hh1">
-        <a href="">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>冰心</p></div>
-            <div class="hh4"><p>2</p></div>
-            <div class="hh5"><p>我想说96119在国内不是市民举报有关单位或者部门存在消防隐患的问题？就在上......</p></div>
-        </a>
-    </div>
-    <div class="hh1">
-        <a href="">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>艾青</p></div>
-            <div class="hh5"><p>厂区内有综合楼和小办公楼，还有修车间，综合楼和修车间上消防栓，设消防水池，小......</p></div>
-        </a>
-    </div>
-    <div class="hh1">
-        <a href="">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>刘青</p></div>
-            <div class="hh5"><p>新修订《中华人民共和国消防法》规定，对火灾隐患经公安机关消防机构通知后不.......</p></div>
-        </a>
-    </div>
+    <div class="btn_1">
+        <input type="button" id="btn1" value="最近联系"  style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" class="btn2" onclick="a()">
 
-    <div class="hh1">
-        <a href="">
-            <div class="hh2">
-                <img src="image/25.png">
-            </div>
-            <div class="hh3"><p>闻一多</p></div>
-            <div class="hh5"><p>开启末端试水，喷淋泵自动开启；关闭后，喷淋泵到多少压力时停止？</p></div>
-        </a>
     </div>
+    <div id="demo1" class="demo1">
 
+</div>
+    <div class="btn_1">
+        <input type="button" id="btn2"  value="会话" style="background: url(image/the-arrow_icon1.png)no-repeat 80% 50%" class="btn2" onclick="b()">
+    </div>
+    <div id="demo2" class="demo1">
+        <div class="hh1">
+            <a href="huihuaZJ.html">
+                <div class="hh2">
+                    <img src="image/25.png">
+                </div>
+                <div class="hh3"><p>梁冰</p></div>
+                <div class="hh4"><p>5</p></div>
+                <div class="hh5"><p>加油站属于消防重点单位把？<br>
+                    那我想问非营业性的汽车加油站是消防重点......
+                </p></div>
+            </a>
+        </div>
+        <div class="hh1">
+            <a href="huihuaXQ.html">
+                <div class="hh2">
+                    <img src="image/25.png">
+                </div>
+                <div class="hh3"><p>王小二</p></div>
+                <div class="hh4"><p>10</p></div>
+                <div class="hh5"><p>加油站属于消防重点单位把？</p></div>
+            </a>
+        </div>
+        <div class="hh1">
+            <a href="">
+                <div class="hh2">
+                    <img src="image/25.png">
+                </div>
+                <div class="hh3"><p>冰心</p></div>
+                <div class="hh4"><p>2</p></div>
+                <div class="hh5"><p>我想说96119在国内不是市民举报有关单位或者部门存在消防隐患的问题？就在上......</p></div>
+            </a>
+        </div>
+        <div class="hh1">
+            <a href="">
+                <div class="hh2">
+                    <img src="image/25.png">
+                </div>
+                <div class="hh3"><p>艾青</p></div>
+                <div class="hh5"><p>厂区内有综合楼和小办公楼，还有修车间，综合楼和修车间上消防栓，设消防水池，小......</p></div>
+            </a>
+        </div>
+        <div class="hh1">
+            <a href="">
+                <div class="hh2">
+                    <img src="image/25.png">
+                </div>
+                <div class="hh3"><p>刘青</p></div>
+                <div class="hh5"><p>新修订《中华人民共和国消防法》规定，对火灾隐患经公安机关消防机构通知后不.......</p></div>
+            </a>
+        </div>
+
+        <div class="hh1">
+            <a href="">
+                <div class="hh2">
+                    <img src="image/25.png">
+                </div>
+                <div class="hh3"><p>闻一多</p></div>
+                <div class="hh5"><p>开启末端试水，喷淋泵自动开启；关闭后，喷淋泵到多少压力时停止？</p></div>
+            </a>
+        </div>
+        </div>
 </section>
 <!--<section  class="nav_tab" id="nav_tab2" style="display: none">-->
     <!--<div class="div4">-->

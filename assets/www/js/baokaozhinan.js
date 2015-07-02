@@ -7,13 +7,13 @@ function a()
     var oBtn = document.getElementById("btn1");
     var oDemo = document.getElementById("demo1");
 
-    if (oDemo.style.display == "block") {
-        oBtn.style.background = "url(image/the-arrow_icon_right.png)no-repeat 80% 50%"
-        oDemo.style.display = "none";
-    }
-    else {
+    if (oDemo.style.display == "none") {
         oBtn.style.background = "url(image/the-arrow_icon.png)no-repeat 80% 50%"
         oDemo.style.display = "block";
+    }
+    else {
+        oBtn.style.background = "url(image/the-arrow_icon_right.png)no-repeat 80% 50%"
+        oDemo.style.display = "none";
     }
 
 
@@ -53,16 +53,16 @@ function c()
 function f()
 {
 
-    var oBtn2 = document.getElementById("btn4");
-    var oDemo2 = document.getElementById("demo4");
+    var oBtn3 = document.getElementById("btn4");
+    var oDemo3 = document.getElementById("demo4");
 
-    if (oDemo2.style.display == "block") {
-        oBtn2.style.background = "url(image/the-arrow_icon_right.png)no-repeat 80% 50%"
-        oDemo2.style.display = "none";
+    if (oDemo3.style.display == "block") {
+        oBtn3.style.background = "url(image/the-arrow_icon_right.png)no-repeat 80% 50%"
+        oDemo3.style.display = "none";
     }
     else {
-        oBtn2.style.background = "url(image/the-arrow_icon.png)no-repeat 80% 50%"
-        oDemo2.style.display = "block";
+        oBtn3.style.background = "url(image/the-arrow_icon.png)no-repeat 80% 50%"
+        oDemo3.style.display = "block";
     }
 
 }

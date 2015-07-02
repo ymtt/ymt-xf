@@ -8,19 +8,20 @@ function  change_nav(heath_center) {
             document.getElementById("nav_item" + 1).className = "nav_item";
             document.getElementById("nav_tab" + 1).style.display = "";
             document.getElementById("p" + 1).style.color = "#05A0D7";
-            document.getElementById("img"+1).style.backgroundImage = "url(image/z_session1_icon.png)";
+            document.getElementById("img"+1).style.backgroundImage = "url(image/icon_dialogue_click.png)";
+
         }
         else {
             document.getElementById("nav_item" + 1).className = "";
             document.getElementById("nav_tab" + 1).style.display = "none";
             document.getElementById("p" + 1).style.color = "";
-            document.getElementById("img"+1).style.backgroundImage = "url(image/z_session_icon-.png)";
+            document.getElementById("img"+1).style.backgroundImage = "url(image/icon_dialogue.png)";
         }
     if (2 == heath_center) {
         document.getElementById("nav_item" + 2).className = "nav_item";
         document.getElementById("nav_tab" + 2).style.display = "";
         document.getElementById("p" + 2).style.color = "#05A0D7";
-        document.getElementById("img"+2).style.backgroundImage = "url(image/z_contacts1_icon.png)";
+        document.getElementById("img"+2).style.backgroundImage = "url(image/icon_concern_click.png)";
     }
     else {
         document.getElementById("nav_item" + 2).className = "";

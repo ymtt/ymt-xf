@@ -22,15 +22,13 @@ header{
     background-color: #05A0D7;
 }
 .header-1{
-    width: 50%;
+    width:28%;
    height:auto;
     float: left;
     margin-left: 5%;
     margin-top: 3px;
 }
 .header-1 img{
-
-    height: auto;
     max-width: 100%;
 }
 .header-2 {
@@ -40,7 +38,7 @@ header{
     margin-right:5%;
 }
 .header-2 img{
-    max-width: 100%;
+    max-width: 80%;
     margin-top: 10px;
     margin-left: 20%;
 }
@@ -340,68 +338,74 @@ footer ul li{
 footer ul li a:hover p{
     color: #05A0D7;
 }
+
 .div19{
     width: 100%;
-   height: 40px;
-    background: url("../image/register_icon.png") no-repeat 50% 20%;
+    height: 50px;
+    background: url("../image/icon_register.png") no-repeat 50% 10%;
     float: left;
+    background-size: 25% 35%;
 }
 .div19 p{
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-    margin-top: 28px;
+    margin-top: 25px;
     text-align: center;
     color: #737373;
 }
 .div20 {
     width: 100%;
-    height: 40px;
-    background: url("../image/suggest_icon.png") no-repeat 50% 20%;
+    height: 50px;
+    background: url("../image/icon_suggest.png") no-repeat 50% 10%;
     float: left;
+    background-size: 25% 35%;
 }
 .div20 p{
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-    margin-top: 28px;
+    margin-top: 25px;
     text-align: center;
     color: #737373;
 }
 .div21 {
     width: 100%;
-    height: 40px;
-    background: url("../image/help_icon.png") no-repeat 50% 20%;
+    height: 50px;
+    background: url("../image/icon_help.png") no-repeat 50% 10%;
     float: left;
+    background-size: 25% 35%;
 }
 .div21 p {
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-    margin-top: 28px;
+    margin-top:25px;
     text-align: center;
     color: #737373;
 }
 .div22 {
     width: 100%;
-    height: 40px;
-    background: url("../image/setting-up_icon.png") no-repeat 50% 20%;
+    height: 50px;
+    background: url("../image/icon_icon_setup.png") no-repeat 50% 10%;
     float: left;
+    background-size: 25% 35%;
 }
 .div22 p {
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-    margin-top: 28px;;
+    margin-top: 25px;
     text-align: center;
     color: #737373;
 }
 .div23 {
     width: 100%;
-    height: 40px;
-    background: url("../image/collect_icon.png") no-repeat 50% 20%;
+    height: 50px;
+    background: url("../image/icon_collect.png") no-repeat 50% 10%;
     float: left;
+    background-size: 25% 35%;
 }
 .div23 p {
     font-size: 0.75em;
     font-family: "方正兰亭纤黑_GBK";
-    margin-top: 28px;;
+    margin-top: 25px;;
     text-align: center;
     color: #737373;
 }

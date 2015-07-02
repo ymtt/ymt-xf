@@ -3,26 +3,26 @@
 $('#searchvalues').toggle(
 function(){
 	$('#valuelist').show();
-	$('#boults').text('▲');
+	$('#boults').text('∧');
 },function(){
 	$('#valuelist').hide();
-	$('#boults').text('▼');
+	$('#boults').text('∨');
 });
 
 $('#boults').toggle(
 function(){
 	$('#valuelist').show();
-	$('#boults').text('▲');
+	$('#boults').text('∧');
 },function(){
 	$('#valuelist').hide();
-	$('#boults').text('▼');
+	$('#boults').text('∨');
 });
 $('#valuelist li').click(function(){
 	var v = $(this).attr('title');
 	var name = $(this).text();
 	$('#typeid').val(v);
 	$('#searchvalues').text(name);
-	$('#boults').text('▼');
+	$('#boults').text('∨');
 	$('#valuelist').hide();
 	window.localStorage.setItem("serachtype",$(this).attr('value'));
 })

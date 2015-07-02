@@ -19,18 +19,18 @@ a{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height:40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div2{
-    width: 72%;
+    width: 80%;
     height: auto;
     float: left;
 }
@@ -38,15 +38,15 @@ a{
     line-height: 40px;
     font-size: 1em;
     color: #FFFFFF;
-    margin-left: 39.5%;
+    text-align: center;
 }
 .div3{
     width: 10%;
     height: auto;
     float: right;
-    margin-right: 5%;
 }
 .div3 img{
+    width: 20px;
     max-width: 100%;
     margin-top: 10px;
     margin-left: 20%;
@@ -114,6 +114,7 @@ section{
     margin-top: 10px;
 }
 .div9 img{
+    width: 30px;
     height: auto;
     max-width: 100%;
 }

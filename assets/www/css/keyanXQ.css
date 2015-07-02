@@ -26,18 +26,18 @@ a{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height:40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div2 {
-    width: 72%;
+    width: 80%;
     height: auto;
     float: left;
 
@@ -51,14 +51,13 @@ a{
 
 
 .div3{
-    width:auto;
+    width:10%;
     height:auto;
     float: right;
-    margin-right: 5%;
     margin-top: 8px;
 }
 .div3 img{
-    width: 80%;
+    width: 20px;
     height: auto;
     max-width: 100%;
 }
@@ -145,7 +144,7 @@ section{
     float: left;
 }
 .div10 img{
-    width: 50%;
+    width: 20px;
     height: auto;
     max-width: 100%;
     margin-top: 8px;
@@ -245,11 +244,12 @@ footer{
     width: 100%;
     height: auto;
     float: left;
+    text-align: center;
 }
 .div15 img{
+    width: 40px;
     max-width: 100%;
-    margin-top: 20px;
-    margin-left: 20%;
+    margin:10px auto;
 }
 .div16{
     width: 100%;
