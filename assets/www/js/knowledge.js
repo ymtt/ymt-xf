@@ -4,6 +4,9 @@
 function  change_nav(heath_center) {
     for (var i = 1; i <= 6; i++) {
         if (i == heath_center) {
+            //保存点击的选项卡
+            window.localStorage.setItem("change_navid",i);
+            //修改选项卡属性
             document.getElementById("nav_item" + i).className = "nav_item";
             document.getElementById("nav_tab" + i).style.display = "";
             document.getElementById("p" + i).style.color = "#FFFFFF";
@@ -106,6 +109,10 @@ function ToKeyanXQ(id){
     window.localStorage.setItem("keyanid",id);
     window.location.href="keyanXQ.html";
 }
+function ToSpzl(id){
+     window.localStorage.setItem("shipid",id);
+     window.location.href="shipinXQ.html";
+}
 
 /***********规范************/
 function getguifan(m,pagesize,start,kw){
@@ -118,22 +125,37 @@ function getguifan(m,pagesize,start,kw){
         success:function(data){
             var list=data.datas['listData'];
             $.each(list,function(key){
-              //标题
+
+               //标题
                var title=list[key]['article_title'];
-
                //内容
-
-
                 var content=list[key]['content'];
+
+                //如果没有找到内容，设置为空
                 if (typeof(content) == "undefined")
                 {
                     cons="";
                 }else{
+                    //如果有内容，清除样式
                 cons=content.replace(/<[^>]*>/gi,'');
                 }
 
 
+                /*
+                * 视频资料
+                *
+                */
+                if(m=="spzl"){
+                    //封面
+                    var cover="http://120.24.172.105:8000/public/pub/upload/down.jsp?id="+list[key]['cover'];
+                    //附件
+                    var attachment=list[key]['attachment'];
+                    //分类
+                    var classify=list[key]['classify'];
+                }
 
+
+              //点击次数
               var hitnum=list[key]['hitnum'];
               //文章id
               var id=list[key]['id'];
@@ -150,6 +172,7 @@ function getguifan(m,pagesize,start,kw){
                     //alert(content);
                 }else if(m=="spzl"){
                     //视频资料
+                    CreateVideo(classify,title,cover,id);
                 }
             });
 
@@ -169,4 +192,13 @@ function CreateGuiFan(m,title,content,id){
     $(where).append("<div class='ky'><a href='javascript:ToKeyanXQ("+"\""+id+"\""+")'><div class='ky-1'><p>"+title+
     "</p></div><div class='ky-2'><img src='image/knowledge_01.png'></div><div class='ky-3'><p>"+content+
     "</p></div></a></div>");
+}
+//视频资料
+function CreateVideo(classify,title,cover,id){
+        if(classify=="jxsp"){
+            $(".sp-4:eq(0) ul").append("<li><a href='javascript:ToSpzl("+"\""+id+"\""+")'><div class='sp-5'><img src='"+cover+"'></div><div class='sp-6'><p>"+title+"</p></div></a></li>");
+        }else if(classify=="syyz"){
+             $(".sp-4:eq(1) ul").append("<li><a href='javascript:ToSpzl("+"\""+id+"\""+")'><div class='sp-5'><img src='"+cover+"'></div><div class='sp-6'><p>"+title+"</p></div></a></li>");
+        }
+
 }

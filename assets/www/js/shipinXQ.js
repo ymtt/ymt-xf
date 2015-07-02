@@ -72,3 +72,13 @@ function a(){
     document.getElementById("show1").style.display ="none";
 
 }
+
+
+//获取保存在localStorage的视频信息
+function getspobj(){
+    var spid=window.localStorage.getItem("shipid");
+    var spstr=window.localStorage.getItem(spid);
+    var spobj=JSON.parse(spstr);
+    $(".jianj-3 p").html((spobj.content));
+    alert(spobj.id);
+ }

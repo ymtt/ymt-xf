@@ -35,15 +35,20 @@ function serachky(m,pagesize,start,kw){
                 //alert(JSON.stringify(data));
                 var list=data.datas['listData'];
                 $.each(list,function(key){
-                   //标题
+
+                   //关键词的正则表达式
                    var reg=eval("/"+kw+"/gi");
+                   //替换为
                    var toreplace="<font color=red>"+kw+"</font>";
+                   //标题原始内容
                    var title=list[key]['article_title'];
+                   //关键词使用正则表达式加红
                    var t=title.replace(reg,toreplace);
                    //alert(t);
                    //内容
                    var content=list[key]['content'];
                    var time=list[key]['create_time'];
+
                    if (typeof(content) == "undefined")
                    {
                         cons="";
@@ -59,7 +64,7 @@ function serachky(m,pagesize,start,kw){
 
                   window.localStorage.setItem(id,obj);
 
-                  CreateGuiFan(id,t,cons,time);
+                  CreateGuiFan(id,t,cons,time,m);
 
                   //alert(title+time);
                 });
@@ -68,11 +73,23 @@ function serachky(m,pagesize,start,kw){
         });
 }
 
-function CreateGuiFan(id,title,content,time){
-    $("section").append("<div class='div12'><span>"+title+
+function CreateGuiFan(id,title,content,time,m){
+    $("section").append("<a href='javascript:ToInfo("+"\""+m+"\","+"\""+id+"\""+")'><div class='div12'><span>"+title+
     "</span><div class='div13'><p>"+content+
     "</p></div><div class='div14'><p>"+time+
-    "</p></div></div>");
+    "</p></div></div><a>");
    // $("section").append(title);
-   $()
+}
+
+function ToInfo(m,id){
+       if(m=="kywx"){
+           window.localStorage.setItem("keyanid",id);
+           window.location.href="keyanXQ.html";
+       }else if(m=="bzgf"){
+           window.localStorage.setItem("keyanid",id);
+           window.location.href="keyanXQ.html";
+       }else if(m=="spzl"){
+            window.localStorage.setItem("shipid",id);
+            window.location.href="shipinXQ.html";
+       }
 }

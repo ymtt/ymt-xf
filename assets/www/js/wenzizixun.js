@@ -7,11 +7,12 @@ function CreateXfnewsDom(title,content,hitnum,id){
 function getnews(type){
 var session=window.sessionStorage.getItem("session");
 var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
+var order=window.localStorage.getItem("order");
     $.ajax({
         type:'get',
         datatype:'json',
         url:url,
-        data:{"m":"list","type":type,"order":"new","start":"1"},
+        data:{"m":"list","type":type,"order":order,"start":"1"},
         success:function(data){
             var json=eval("("+data+")");
             if(json.result=="Y"){
@@ -19,13 +20,15 @@ var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction'
                 var list=json.datas['listData'];
                 $.each(list,function(key){
                     var title=list[key]['article_title'];
+                    var content=(list[key]['content']).replace(/<[^>]*>/gi,'');
+                    var subcons=content.substring(0,60);
                     var hitnum=list[key]['hitnum'];
                     var obj=JSON.stringify(list[key]);
                     var id=list[key]['id'];
                     if(hitnum==null){
                         hitnum=0;
                     }
-                    CreateXfnewsDom(title,title,hitnum,id);
+                    CreateXfnewsDom(title,subcons,hitnum,id);
                     window.localStorage.setItem(id,obj);
                 });
             }else{
@@ -41,3 +44,4 @@ function Towenzizixun(id,url){
     window.location.href=url;
     //alert(JSON.stringify(o));
 }
+
