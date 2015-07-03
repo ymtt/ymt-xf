@@ -151,5 +151,105 @@ section{
     line-height: 30px;
     background-color: #05A0D7;
 }
+.zz-1{
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.4) ;
+    display: none;
+}
+.zz-2{
+    display: none;
+    position: fixed;
+    top: 35%;  width:80% ; height:auto;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+    margin-left: 10%;
+    border-radius: 5px;
+}
+.zz-3{
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.4) ;
+    display: none;
+}
+.zz-4{
+    display: none;
+    position: fixed;
+    top: 15%;  width:90% ; height:auto;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+.div12{
+     width: 100%;
+     height: auto;
+     float: left;
+     border-bottom: 1px solid #cccccc;
+ }
+.div12 p{
+    font-size: 0.8em;
+    line-height: 30px;
+    margin-left: 5%;
+}
+.div13{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #cccccc;
+}
+.div14{
+    width: 100%;
+    height: 30px;
+    float: left;
+}
+.div14 p{
+    line-height: 30px;
+    font-size: 0.9em;
+    margin-left: 5%;
+
+}
+.div15{
+    width: 25%;
+    height: 20px;
+    float: left;
+    margin-bottom: 10px;
+}
+.div15 p{
+    font-size:0.8em;
+    line-height: 20px;
+    color: #ff0000;
+    margin-left: 15%;
+}
+.div16{
+    width: 30%;
+    height: 20px;
+    float: left;
+}
+.div16 p{
+    font-size: 0.8em;
+    line-height: 20px;
+}
+label{
+    color: #ff0000;
+}
+.div17{
+    width: 30%;
+    height: 20px;
+    float: left;
+}
+.div17 p{
+    font-size: 0.8em;
+    line-height: 20px;
+}
 
 

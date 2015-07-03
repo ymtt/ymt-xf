@@ -33,13 +33,14 @@ header{
     margin: 0 auto;
 }
 .div5{
-    width: 9%;
+    width: 15%;
     height:60px;
     float: right;
 }
 .div5 p{
-  font-size: 1em;
+  font-size: 0.85em;
     line-height: 60px;
+    color: #000000;
 }
 .div6{
     width:96%;

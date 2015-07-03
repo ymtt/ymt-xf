@@ -5,7 +5,7 @@ function a1(){
     document.getElementById("div19").style.backgroundImage = "url(image/icon_register_click.png)";
 }
 function a2(){
-    document.getElementById("div19").style.backgroundImage = "url(image/register.png)";
+    document.getElementById("div19").style.backgroundImage = "";
 }
 function h1(){
     document.getElementById("div20").style.backgroundImage = "url(image/icon_suggest_click.png)";

@@ -20,7 +20,7 @@ function clickconsultation(title,content,points,expert){
                         alert("ajax失败");
                         var last=JSON.stringify(error);
                         alert(last);
-                    },
+                    }
                 });
                 alert("session不为空"+session);
          }

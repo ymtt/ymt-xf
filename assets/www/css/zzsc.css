@@ -386,6 +386,9 @@ input,select,button{
     float: right;
     border-radius: 5px;
 }
+.search-submit img{
+    width: 20px;
+}
 .search-option {
 	margin-left:3px;
 	margin-right:3px;
@@ -400,7 +403,7 @@ input,select,button{
 }
 
 .searchbox .form {
-    width: 86%;
+    width: 80%;
 	height:40px;
 	line-height:46px;
     margin-left: 2%;

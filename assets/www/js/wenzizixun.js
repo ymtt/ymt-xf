@@ -1,8 +1,7 @@
 function CreateXfnewsDom(title,content,hitnum,id){
                 $("section").append("<div class='div3'><a href='javascript:Towenzizixun("+"\""+id+"\""+",\"wenzizixunXQ.html\""+")'><div class='div4'><p>"+title+
                     "</p></div><div class='div5'><p>"+content+
-                    "</p></div></a><div class='div6'><div class='div7'><p>"+hitnum+
-                    "</p></div><div class='div8'><img src='image/comment_comment_icon.png'></div></div></div>");
+                    "</div>");
         }
 function getnews(type){
 var session=window.sessionStorage.getItem("session");
