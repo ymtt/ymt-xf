@@ -16,8 +16,15 @@
         $(document).ready(function(){
             h();
             d();
+            checksession();
         });
+        function checksession(){
+            var session=window.sessionStorage.getItem("session");
+            if(""==session||null==session){
+               window.location.href="denglu.html";
+            }
 
+        }
     </script>
 </head>
 <body>
@@ -59,8 +66,10 @@
     <img src="image/the-arrow_icon_right1.png">
 </div>
 <div class="div11">
+    <a href="wodezixun.html">
     <p>我的咨询</p>
     <img src="image/the-arrow_icon_right1.png">
+    </a>
 </div>
 <div class="div11">
     <p>我的设置</p>

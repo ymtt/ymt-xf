@@ -8,11 +8,13 @@
     <link href="css/fd.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="http://qzonestyle.gtimg.cn/open/qcloud/video/h5/h5connect.js"></script>-->
     <script src="js/fd.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             h();
             d();
+            getspobj();
         });
 
     </script>
@@ -26,8 +28,7 @@
     </div>
 </header>
 <div class="div4">
-    <video src="image/HTML5 Tutorial - 1 - Introduction.mp4" controls="controls" width="100%" >
-
+    <video src="http://www.w3school.com.cn/i/movie.ogg" controls="controls" width="100%" >
     </video>
 </div>
 <nav>
@@ -289,4 +290,15 @@
     </div>
 </div>
 </body>
+<!--<script type="text/javascript">
+            (function(){
+               var option ={"auto_play":"0","file_id":"16092504232103594603","app_id":"1251212786","width":720,"height":400};
+               /*调用播放器进行播放*/
+               new qcVideo.Player(
+                       /*代码中的id_video_container将会作为播放器放置的容器使用,可自行替换*/
+                       "id_video_container",
+                       option
+                   );
+             })()
+ </script>-->
 </html>

@@ -21,6 +21,10 @@
     <script src="js/zixunclass.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+            //获取点击的分类类型
+            var subclass=window.localStorage.getItem("zixunsubclass");
+            //设置标题
+            setTitle(subclass);
             h();
             d();
             getxq();

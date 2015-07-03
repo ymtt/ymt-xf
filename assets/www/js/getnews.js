@@ -140,21 +140,24 @@ function CreateNoticeDom(title,content,id){
         });
  }
  function CreateHotZixun(title,content,id){
-       $("#nav_tab1").append("<div class='div6'><div class='div7'><p>热点资讯</p></div><span class='span-1'><a href='shipinzixun.html'><p>更多</p></a></span></div><div class='div10'><a href='javascript:Towenzizixun("+"\""+id+"\""+",\"wenzizixunXQ.html\""+")'><div class='div11'><p>"+title+
+       $("#nav_tab1").append("<div class='div6'><div class='div7'><p>热点资讯</p></div><span class='span-1'><a href='wenzizixun.html' onclick='setorder(\"read\")'><p>更多</p></a></span></div><div class='div10'><a href='javascript:Towenzizixun("+"\""+id+"\""+",\"wenzizixunXQ.html\""+")'><div class='div11'><p>"+title+
        "</p></div><div class='div12'><p>"+content+"</p></div><div class='div13'></div></a></div>");
         //alert(title+content);
  }
  function CreateNewZixun(title,content,pl,id){
-      $("#nav_tab1").append("<div class='div6'><div class='div7'><p>最新咨询</p></div><span class='span-1'><a href='wenzizixun.html'><p>更多</p></a></span></div><div class='div14'><a href='javascript:Towenzizixun("+"\""+id+"\""+",\"wenzizixunXQ.html\""+")'><div class='div15'><p>"+title+
+      $("#nav_tab1").append("<div class='div6'><div class='div7'><p>最新咨询</p></div><span class='span-1'><a href='wenzizixun.html'  onclick='setorder(\"new\")'><p>更多</p></a></span></div><div class='div14'><a href='javascript:Towenzizixun("+"\""+id+"\""+",\"wenzizixunXQ.html\""+")'><div class='div15'><p>"+title+
       "</p></div><div class='div16'><p>"+content+
       "</p></div></a></div>");
  }
 
-function Towenzizixun(id,url){
+function Towenzizixun(id,url,order){
     //存储点击之后的id，在详情页取出并使用他来在localstorage根据id取出对象字符串
     window.localStorage.setItem("wenziid",id);
     window.location.href=url;
     //alert(JSON.stringify(o));
+}
+function setorder(order){
+    window.localStorage.setItem("order",order);
 }
 /*图片新闻列表*/
 function getpicnews(){

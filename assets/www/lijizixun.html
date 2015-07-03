@@ -6,6 +6,38 @@
     <link href="css/lijizixun.css" type="text/css" rel="stylesheet" media="screen">
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/lijizixun.js"></script>
+    <script language="javascript" type="text/javascript">
+
+
+        $(document).ready(function(){
+
+        });
+
+        //立即咨询(提问)
+        function subs(){
+            //取得Session
+            var session=window.sessionStorage.getItem("session");
+            //标题
+            var tit=document.getElementById("title").value;
+            //内容
+            var content=document.getElementById("content").value;
+            //问题类型
+            var points="j4";
+            //专家id
+            //var expert="admin2";
+
+            var expert= window.localStorage.getItem("clickexpert");
+
+            if(""==session||null==session){
+                   //Autoreg();
+                   window.location.href="denglu.html";
+            }else{
+                   clickconsultation(tit,content,points,expert);
+            }
+
+        }
+
+    </script>
     <link href="css/fd.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>

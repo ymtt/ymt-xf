@@ -19,6 +19,14 @@
     <script src="js/fd.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+            var order=window.localStorage.getItem("order");
+            if(order=="new"){
+                $(".div2 p").html("最新资讯");
+            }else if(order=="read"){
+                $(".div2 p").html("热点资讯");
+            }else{
+                $(".div2 p").html("");
+            }
             h();
             d();
         });
@@ -28,7 +36,7 @@
 <body>
 <header>
     <a href="zixun.html"><div class="div1"> <img src="image/icon_return.png"></div></a>
-    <div class="div2"><p>文字资讯</p></div>
+    <div class="div2"><p></p></div>
 </header>
 <section>
     <!--<div class="div3">

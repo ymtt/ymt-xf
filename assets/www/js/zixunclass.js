@@ -16,6 +16,7 @@ function getzixunlist(pagesize,start){
         data:{"pagesize":pagesize,"sid":session,"start":start,"jl":subclass},
         success:function(data){
             var list=data.datas['listData'];
+            //设置标题
             setTitle(subclass);
             $.each(list,function(key){
                 var article_title=(list[key]['article_title']).substring(0,20);

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/denglu3.css"  media="screen and (min-height:568px) and (max-height:667px)" >
     <link rel="stylesheet" type="text/css" href="css/denglu4.css"  media="screen and (min-height:667px) and (max-height:736px)" >
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/denglu.js"></script>
     <!--<script src="cordova.js"></script>-->
     <script src="js/back.js"></script>
    <script>
@@ -96,7 +97,7 @@
     <p>找回密码</p>
     </a>
 </div>
-<div class="fp" onclick="showdiv()">
+<div class="fp" onclick="Autoreg()">
     <p>自动分配账号</p>
 </div>
 <div class="div9">
@@ -156,8 +157,8 @@
         <p>系统已自动为你生成</p>
     </div>
     <div class="div16">
-        <p class="p1">用户名：<label>02233</label>
-        <p class="p1">密码：<label>23243</label>
+        <p class="p1" >用户名：<label id="autousername">02233</label>
+        <p class="p1">密码：<label id="autopwd">23243</label>
     </div>
     <div class="div17">
         <p>建议你<a href="changePassword.html">修改</a>账号密码</p>
