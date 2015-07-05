@@ -25,6 +25,14 @@
         var eduend=10;
      $(document).ready(function(){
 
+         var id=window.localStorage.getItem("change_navid");
+         if(""==id||null==id){
+             //没有点击过默认第一个
+             change_nav(1);
+         }else{
+             //重新加载时默认到之前点击的选项卡
+             change_nav(id);
+         }
 
         var index=window.localStorage.getItem("Index");
         $("#back").attr("href",index);
@@ -66,6 +74,8 @@
         function  change_nav(heath_center) {
             for (var i = 1; i <= 3; i++) {
                 if (i == heath_center) {
+                        //保存点击的选项卡
+                        window.localStorage.setItem("change_navid",i);
                     document.getElementById("nav_item" + i).className = "nav_item";
                     document.getElementById("nav_tab" + i).style.display = "";
                     document.getElementById("p" + i).style.color = "#FFFFFF";
@@ -102,13 +112,13 @@
 <header>
     <a href="#" id="back"><div class="div1"><img src="image/icon_return.png"></div></a>
     <div class="div2"><p>资讯平台</p></div>
-    <div class="div3"><img src="image/icon_more_1.png">
+    <!--<div class="div3"><img src="image/icon_more_1.png">-->
         <!--<ul>-->
             <!--<li><a href="ZXzuijinliulan.html"><p>最近浏览</p></a></li>-->
             <!--<li><a href="ZXlishijilu.html"><p class="p1">历史记录</p></a></li>-->
 
         <!--</ul>-->
-    </div>
+    <!--</div>-->
 </header>
 <!--<nav>-->
     <!--<div class="nav-1">-->

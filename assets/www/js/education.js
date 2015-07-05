@@ -21,4 +21,4 @@ function ShowCountDown(year,month,day,divname)
     "<p class='red'>"+minute+"</p><p class='s1'>分</p>"+
     "<p class='red'>"+second+"</p><p class='s1'>秒</p>";
     }
-window.setInterval(function(){ShowCountDown(2015,6,1,'divdown1');}, interval);
+window.setInterval(function(){ShowCountDown(2015,7,10,'divdown1');}, interval);

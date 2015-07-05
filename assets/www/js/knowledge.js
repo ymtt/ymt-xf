@@ -176,7 +176,7 @@ function getguifan(m,pagesize,start,kw){
                 }
             });
 
-        },
+        }
     });
 }
 //规范和标准

@@ -19,14 +19,14 @@ a{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height: 40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div2{
@@ -57,13 +57,14 @@ a{
     max-width: 100%;
 }
 .div5{
-    width: 7%;
+    width: 10%;
     height: auto;
-    float: left;
+    float: right;
     margin-top: 8px;
 }
 .div5 img{
-  max-width: 100%;
+    width: 20px;
+    max-width: 100%;
 }
 section{
     width: 100%;
