@@ -24,6 +24,13 @@ function getallmsg(){
             //ajax成功
              //alert("读取所有消息结果为"+JSON.stringify(data)+"qq_id为："+qq_id);
                 var list=data.datas['listData'];
+
+                var str=window.localStorage.getItem(qq_id);
+                 //将对象字符串转换成对象
+                 var obj=JSON.parse(str);
+                $("section").html("");
+                $(".div2 p").html(obj.msg_title);
+
                 $.each(list,function(key){
                     var reply_role=list[key]['reply_role'];
                     var content=list[key]['content'];
@@ -32,6 +39,7 @@ function getallmsg(){
                     }else{
                         $("section").prepend("<div class='div4'><div class='div5'><img src='image/16.png'></div><div class='div6'><p>"+content+"</p></div></div>");
                     }
+
                 });
         }
     });
@@ -55,7 +63,7 @@ function sendmsgs(content){
         success:function(data){
             //ajax成功
             alert("发送成功："+JSON.stringify(data));
-            //$("section").append("<div class='div4'><div class='div7'><img src='image/16.png'></div><div class='div8'><p>"+content+"</p></div></div>");
+            $("section").append("<div class='div4'><div class='div7'><img src='image/16.png'></div><div class='div8'><p>"+content+"</p></div></div>");
         },error:function(error){
             //ajax失败
             alert("发送失败："+JSON.stringify(error)+session+"/"+qq_id+"/"+content);

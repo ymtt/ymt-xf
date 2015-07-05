@@ -12,7 +12,7 @@ function expertlist(pagesize,start){
                 //姓名
                  var name=list[key]['user_name'];
                  //头像
-                 var head_pic='http://120.24.172.105:8000/public/pub/upload/down.jsp?id='+list[key]['head_pic'];
+                 var head_pic='http://120.24.172.105:8000/'+list[key]['head_pic'];
                 //级别
                  var level=list[key]['level'];
 
@@ -53,7 +53,7 @@ function serachexpertlist(pagesize,start,kw){
                 //姓名
                  var name=list[key]['user_name'];
                  //头像
-                 var head_pic='http://120.24.172.105:8000/public/pub/upload/down.jsp?id='+list[key]['head_pic'];
+                 var head_pic='http://120.24.172.105:8000/'+list[key]['head_pic'];
                 //级别
                  var level=list[key]['level'];
                 //专家di

@@ -34,48 +34,77 @@ function hidediv() {
             document.getElementById("bg").style.display ='none';
             document.getElementById("show").style.display ='none';
 }
-//注册随机用户
-function regsuiji(){
-    var username=generateMixed(6,3);
-    window.localStorage.setItem("reguser",username);
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.RegAction';
-     $.ajax({
-        type:'post',
-        dataType:'html',
-        url:ajaxURL,
-        data:{"loginname":username,"pwd":"123456789","t":"002"},
-       //data:$("#regform").serialize();
-        success:function(result){
-            var json = eval("(" +result+ ")");
-            if(json.result=="Y"){
-                showdiv();
-             }else{
-                alert("错误提示："+json.result);
-             }
-        },error:function(error){
-            var last=JSON.stringify(error);
-            alert("失败提示："+last);
-        }
+
+function getsubclass(pid){
+     var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.TypeAction&t=app&m=st&type=PUB_XXF_ZXFL&bt=tree';
+        $.ajax({
+            type:'get',
+            dataType:'json',
+            url:url,
+            success:function(data){
+            var list=data.listData;
+            $.each(list,function(key){
+                if(list[key].pid==pid){
+                   //alert(list[key].code);
+                   $("#show1").append("<div class='div12' id="+"\""+list[key].id+"\""+"  onclick='opt1("+"\""+"two"+"\""+",this)'><p value='"+list[key].id+"'>"+list[key].code+"</p></div>");
+                }
+            })
+            },
       });
 }
-var chars = ['0','1','2','3','4','5','6','7','8','9'];
-var zimu=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-function generateMixed(z,s) {
-    var res1 = "";
 
-    var res2 = "";
-
-    for(var i=0;i<s;i++) {
-     var id = Math.ceil(Math.random()*9);
-     res1 += chars[id];
-    }
-
-    for(var i=0;i<z;i++) {
-     var id = Math.ceil(Math.random()*25);
-     res2 += zimu[id];
-    }
-    return res2+res1;
+function getfaclass(){
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.TypeAction&t=app&m=st&type=PUB_XXF_ZXFL&bt=tree';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        success:function(data){
+        var list=data.listData;
+        $.each(list,function(key){
+            if(list[key].pid=="-1"){
+               //alert(list[key].code);
+               $("#show").append("<div class='div12' id="+"\""+list[key].id+"\""+"  onclick='opt("+"\""+"div5"+"\""+",this)'><p value='"+list[key].id+"'>"+list[key].code+"</p></div>");
+            }
+        })
+        },
+    });
 }
 
+//获取专家
+function expertlist(pagesize,start){
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        data:{"pagesize":pagesize,"start":start,"jl":"","kw":""},
+        success:function(data){
+            var list=data.datas['listData'];
+            $.each(list,function(key){
+                //姓名
+                 var name=list[key]['user_name'];
+                 //头像
+                 var head_pic='http://120.24.172.105:8000/'+list[key]['head_pic'];
+                //级别
+                 var level=list[key]['level'];
 
+                 if(level=="level1"){
+                    levelname="普通专家";
+                 }else if(level=="level2"){
+                    levelname="资深专家";
+                 }else if(level=="level3"){
+                    levelname="国家级";
+                 }
+                 var expertid=list[key]['fk_user_id'];
+                 var objstr=JSON.stringify(list[key]);
+                 window.localStorage.setItem(expertid,objstr);
+                 SelectedExpert(expertid,name,levelname,"0","0");
+            });
+        },
+    });
+}
 
+function SelectedExpert(id,name,expertlevel,consultnum,waitnum){
+    $("#show2").append("<div class='div13' onclick='selectedexpert("+"\""+id+"\""+","+"\""+name+"\""+")'><div class='div14'><p>"+name+"</p></div><div class='div15'><p>["+expertlevel+"]</p></div><div class='div16'><p>咨询人数<label>"+consultnum+"</label>人</p></div><div class='div17'><p>等待人数<label>"+waitnum+"</label>人</p></div></div>");
+}

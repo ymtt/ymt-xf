@@ -5,6 +5,7 @@
     <title>设置</title>
     <link href="css/shezhi.css" rel="stylesheet" type="text/css" media="screen">
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/shezhi.js"></script>
     <script src="cordova.js"></script>
     <script type="text/javascript">
            $(document).ready(function(){
@@ -72,6 +73,11 @@
                         //推荐好友
                         $(".div3:eq(4)").click(function(){
                                 window.plugins.socialsharing.share('新消防真TM是太好用了','分享标题',['http://e.hiphotos.baidu.com/image/pic/item/f703738da9773912274dc116fb198618367ae25a.jpg','http://c.hiphotos.baidu.com/image/pic/item/5ab5c9ea15ce36d3ef1cabf738f33a87e850b1d8.jpg'],'http://www.baidu.com');
+                        });
+
+                        $("#exit").click(function(){
+                            alert("xxxxx");
+                            exituser();
                         });
                 });
     </script>
@@ -183,7 +189,7 @@
     <span class="submit"><a href="#">确定</a></span>
 </div>
 <footer>
-    <a href="denglu.html">
+    <a href="javascript:;" id="exit">
     <div class="div4">
     <p>退出当前账号</p>
     </div>

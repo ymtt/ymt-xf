@@ -21,6 +21,8 @@ function Autoreg(){
                 var pwd=list[0].pwd;
                 $("#autousername").html(username);
                 $("#autopwd").html(pwd);
+
+                Login(username,pwd);
                 showdiv();
             }
         },error:function(error){

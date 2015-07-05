@@ -79,7 +79,7 @@ function  change_nav(heath_center) {
 
 /**********我咨询的专家列表*********/
 function expertslist(){
-     var session=window.localStorage.getItem("session");
+     var session=window.sessionStorage.getItem("session");
      var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
      $.ajax({
          type:'get',
@@ -91,12 +91,20 @@ function expertslist(){
              //alert("咨询列表获取成功"+result);
              var list=result.datas['listData'];
              $.each(list,function(key){
+
                 var fk_pro_id=list[key]['fk_pro_id'];
+
                 var msg_title=list[key]['msg_title'];
+
                 var id=list[key]['id'];
 
-                CreateExpertsList(id,fk_pro_id,msg_title);
+                var obj=JSON.stringify(list[key]);
 
+                window.localStorage.setItem(id,obj);
+
+                if(null!=null||list!=""){
+                    CreateExpertsList(id,fk_pro_id,msg_title);
+                }
              });
 
          },error:function(error){
@@ -114,4 +122,31 @@ function CreateExpertsList(id,fk_pro_id,msg_title){
 function tohuihua(id){
     window.localStorage.setItem("qq_id",id);
     window.location.href="huihuaXQ.html";
+}
+//获得我的关注
+function getfocus(){
+    var session=window.sessionStorage.getItem("session");
+    var url='http://120.24.172.105:8000/fw?t=app&controller=com.xfsm.action.ExpertAction&m=myFcous&start=1&pagesize=';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        data:{"sId":session},
+        success:function(data){
+            var list=data.datas['listData'];
+            $.each(list,function(key){
+                //专家头像
+                var head_pic='http://120.24.172.105:8000/'+list[key]['expert_head_pic']
+                //专家名字
+                var expert_name=list[key]['expert_name'];
+                CreateFocusList(head_pic,expert_name);
+                //alert(expert_name);
+            });
+            //alert(JSON.stringify(data));
+        },
+    });
+}
+//创建关注列表
+function CreateFocusList(head_pic,name){
+   $("#nav_tab2").append("<div class='div4'><div class='div5'><img src='"+head_pic+"'></div><div class='div6'><p>"+name+"</p></div><div class='div7'><button>取消关注</button></div></div>");
 }
