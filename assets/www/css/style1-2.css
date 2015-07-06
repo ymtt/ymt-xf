@@ -9,11 +9,11 @@ a{
     width: 40%;
     height: auto;
     position: absolute;
+    left: 40%;
 }
 .div1 img{
     width: 80px;
-    max-width:100%;
-    margin-left: 60%;
+    max-width:100%
 }
 .div2{
     width: auto;
@@ -341,7 +341,6 @@ section ul li{
     width: 20%;
     height: auto;
     float: left;
-    margin-left: 25%;
 }
 .zc-3 img{
     width: 20px;

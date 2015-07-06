@@ -54,78 +54,73 @@ section{
     width: 100%;
     height: auto;
     float: left;
-    margin-top: 40px;
 }
 .div4{
     width: 100%;
-    height: 70px;
+    height: auto;
     float: left;
-    background: #ededed;
+    margin-top: 40px;
+
 }
 .div4 ul{
-    width: 100%;
-    height: 70px;
-    float: left;
     list-style: none;
+    width:100%;
+    height: 30px;
 }
 .div4 ul li{
-    width: 33.33%;
-    height: 70px;
+    width:16.66%;
+    height: 30px;
     float: left;
-    text-align: center;
 }
 .div5{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-   margin: 10px auto;
-}
-.div5 p{
-    font-size: 0.7em;
-    line-height: 50px;
-    text-align: center;
-    color: #FFFFFF;
-}
-.div6{
     width: 100%;
-    height: auto;
+    height: 30px;
     float: left;
 }
-.div6 ul{
+.div5 p{
+    width: 100%;
+    height: 20px;
+    font-size:0.7em;
+    font-family: "方正兰亭纤黑_GBK";
+    line-height: 20px;
+    text-align: center;
+    border-right: 1px solid #ECECEC;
+    margin-top: 5px;
+}
+#p6{
+    border: 0;
+}
+ul{
     width: 100%;
     height: auto;
     list-style: none;
 }
-.div6 ul li{
+ul li{
     width: 100%;
-    height: 40px;
+    height: auto;
     float: left;
     border-bottom: 1px solid #cccccc;
 }
-.div7{
-    width: 15%;
+.div6{
+    width: 50%;
     height: auto;
     float: left;
 }
-.div6 ul li img{
-    width: 20px;
-    height: auto;
-    margin-top: 8px;
-    margin-left: 30%;
-}
-.div6 ul li p{
-    width:85% ;
+.div6 p{
     font-size: 0.8em;
-    line-height: 40px;
-    float: left;
+    line-height: 30px;
     color: #000000;
+    margin-left: 10%;
 }
-.red{
-    background-color: #FA6F86 ;
+.div7{
+    width: 50%;
+    height: auto;
+    float: left;
 }
-.green{
-    background-color: #4FC5C7;
-}
-.blue{
-    background-color: #05A0D8;
+.div7 p{
+    font-size: 0.7em;
+    line-height: 30px;
+    color: #737373;
+    float: right;
+    margin-right: 10%;
 }

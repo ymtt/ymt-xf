@@ -9,11 +9,11 @@ a{
     width: 40%;
     height: auto;
     position: absolute;
+    left: 40%;
 }
 .div1 img{
     width: 80px;
     max-width:100%;
-    margin-left: 60%;
 }
 .div2{
     width: auto;

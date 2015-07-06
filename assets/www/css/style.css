@@ -22,16 +22,14 @@ header{
     background-color: #05A0D7;
 }
 .header-1{
-    width: 50%;
+    width: 10%;
     height:auto;
     float: left;
     margin-left: 5%;
     margin-top: 3px;
 }
 .header-1 img{
-
-    height: auto;
-    max-width: 100%;
+    width:80px;
 }
 .header-2 {
     width: 10%;
@@ -40,7 +38,7 @@ header{
     margin-right:5%;
 }
 .header-2 img{
-    max-width: 100%;
+    width: 20px;
     margin-top: 10px;
     margin-left: 20%;
 }
@@ -48,9 +46,8 @@ section{
     width: 100%;
     height:auto;
     float: left;
-
     margin-top: 10px;
-   background-color: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 10px;
 }
 .section-1{
@@ -346,7 +343,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_register.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size: 20px;
 }
 .div19 p{
     font-size: 0.75em;
@@ -360,7 +357,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_suggest.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size:20px;
 }
 .div20 p{
     font-size: 0.75em;
@@ -374,7 +371,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_help.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size:20px;
 }
 .div21 p {
     font-size: 0.75em;
@@ -388,7 +385,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_icon_setup.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size:20px;
 }
 .div22 p {
     font-size: 0.75em;
@@ -402,7 +399,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_collect.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size:20px;
 }
 .div23 p {
     font-size: 0.75em;

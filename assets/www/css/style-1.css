@@ -344,7 +344,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_register.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size:20px;
 }
 .div19 p{
     font-size: 0.75em;
@@ -358,7 +358,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_suggest.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size: 20px;
 }
 .div20 p{
     font-size: 0.75em;
@@ -372,7 +372,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_help.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size:20px;
 }
 .div21 p {
     font-size: 0.75em;
@@ -386,7 +386,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_icon_setup.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size: 20px;
 }
 .div22 p {
     font-size: 0.75em;
@@ -400,7 +400,7 @@ footer ul li a:hover p{
     height: 50px;
     background: url("../image/icon_collect.png") no-repeat 50% 20%;
     float: left;
-    background-size: 30% 40%;
+    background-size:20px;
 }
 .div23 p {
     font-size: 0.75em;

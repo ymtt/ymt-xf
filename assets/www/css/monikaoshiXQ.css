@@ -124,7 +124,7 @@ li{
 }
 .div10{
     width: 100%;
-    height: 180px;
+    height: auto;
   float: left;
 }
 footer{
@@ -202,10 +202,11 @@ footer{
     color: #737373;
 }
 .zz-1{
-    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
     z-index: 1001;
     width: 100%;
-    height: 660px;
     background-color:rgba(0,0,0,0.7) ;
     display: none;
 }

@@ -182,12 +182,13 @@ section{
 .zz-4{
     display: none;
     position: fixed;
-    top: 15%;  width:90% ; height:auto;
+    left: 5%;top: 10%;
+    width: 90%;height: 80%;
     background-color: white;
-    z-index:1002;
-    overflow: auto;
-    margin-left: 5%;
     border-radius: 5px;
+    z-index:1002;
+    overflow:auto;
+
 }
 .div12{
      width: 100%;
