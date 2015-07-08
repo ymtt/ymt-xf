@@ -62,38 +62,117 @@ function CreateForumDom(fid,fup,name,type,data){
     }
 }
 
-function  change_nav(heath_center){
-    for(var i=1;i<=5;i++){
-    if(i==heath_center){
-    document.getElementById("nav_item"+i).className="nav_item";
-    document.getElementById("nav_tab"+i).style.display="";
-    document.getElementById("p"+i).style.color="#05A0D7";
-    document.getElementById("p"+i).style.textDecoration="underline"
+
+function a()
+{
+
+    var oBtn = document.getElementById("btn1");
+    var oDemo = document.getElementById("demo1");
+
+    if (oDemo.style.display == "none") {
+        oBtn.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+        oDemo.style.display = "block";
     }
-    else{
-    document.getElementById("nav_item"+i).className="";
-    document.getElementById("nav_tab"+i).style.display="none";
-     document.getElementById("p"+i).style.color="";
-        document.getElementById("p"+i).style.textDecoration=""
-    }
-    }
+    else {
+        oBtn.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+        oDemo.style.display = "none";
     }
 
-function h1(x) {
-    document.getElementsByClassName("div8")[x].style.backgroundImage = "url(image/forwarding_Press-the_icon.png)";
+
 }
-function h2(x){
-    document.getElementsByClassName("div8")[x].style.backgroundImage= "";
+function b()
+{
+
+    var oBtn1 = document.getElementById("btn2");
+    var oDemo1 = document.getElementById("demo2");
+
+    if (oDemo1.style.display == "block") {
+        oBtn1.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+        oDemo1.style.display = "none";
+    }
+    else {
+        oBtn1.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+        oDemo1.style.display = "block";
+    }
+
 }
-function a1(x) {
-    document.getElementsByClassName("div9")[x].style.backgroundImage = "url(image/comment_collect1_icon.png)";
+function c()
+{
+
+    var oBtn2 = document.getElementById("btn3");
+    var oDemo2 = document.getElementById("demo3");
+
+    if (oDemo2.style.display == "block") {
+        oBtn2.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+        oDemo2.style.display = "none";
+    }
+    else {
+        oBtn2.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+        oDemo2.style.display = "block";
+    }
+
 }
-function a2(x){
-    document.getElementsByClassName("div9")[x].style.backgroundImage= "";
+function f()
+{
+
+    var oBtn3 = document.getElementById("btn4");
+    var oDemo3 = document.getElementById("demo4");
+
+    if (oDemo3.style.display == "block") {
+        oBtn3.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+        oDemo3.style.display = "none";
+    }
+    else {
+        oBtn3.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+        oDemo3.style.display = "block";
+    }
+
 }
-function s1(x) {
-    document.getElementsByClassName("div10")[x].style.backgroundImage = "url(image/comment_comment1_icon.png)";
+function o()
+{
+
+    var oBtn3 = document.getElementById("btn5");
+    var oDemo3 = document.getElementById("demo5");
+
+    if (oDemo3.style.display == "block") {
+        oBtn3.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+        oDemo3.style.display = "none";
+    }
+    else {
+        oBtn3.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+        oDemo3.style.display = "block";
+    }
+
 }
-function s2(x){
-    document.getElementsByClassName("div10")[x].style.backgroundImage= "";
+function k()
+{
+
+    var oBtn3 = document.getElementById("btn6");
+    var oDemo3 = document.getElementById("demo6");
+
+    if (oDemo3.style.display == "block") {
+        oBtn3.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+        oDemo3.style.display = "none";
+    }
+    else {
+        oBtn3.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+        oDemo3.style.display = "block";
+    }
+
+}
+function j()
+{
+
+    var oBtn3 = document.getElementById("btn7");
+    var oDemo3 = document.getElementById("demo7");
+
+    if (oDemo3.style.display == "block") {
+        oBtn3.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+        oDemo3.style.display = "none";
+    }
+    else {
+        oBtn3.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+        oDemo3.style.display = "block";
+    }
+
 }

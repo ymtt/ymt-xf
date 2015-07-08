@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>最新回复</title>
+    <link href="css/Latest%20reply.css" type="text/css" rel="stylesheet">
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+        });
+    </script>
+    <script type="text/javascript">
+        function  change_nav(heath_center) {
+            for (var i = 1; i <= 6; i++) {
+                if (i == heath_center) {
+                    //保存点击的选项卡
+                    window.localStorage.setItem("change_navid",i);
+                    //修改选项卡属性
+                    document.getElementById("nav_item" + i).className = "nav_item";
+                    document.getElementById("nav_tab" + i).style.display = "";
+                    document.getElementById("p" + i).style.color = "#FFFFFF";
+                    document.getElementById("p" + i).style.background = "#05A0D7";
+                    document.getElementById("p" + i).style.borderRadius = "10px";
+                }
+                else {
+                    document.getElementById("nav_item" + i).className = "";
+                    document.getElementById("nav_tab" + i).style.display = "none";
+                    document.getElementById("p" + i).style.color = "";
+                    document.getElementById("p" + i).style.background = "";
+                    document.getElementById("p" + i).style.borderRadius = "";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <a href="forum.html"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <div class="div2"><p>最新回复</p></div>
+    <div class="div3"><a href="sousuo.html"> <img src="image/icon_search_1.png"></a></div>
+</header>
+
+    <div class="div4">
+        <ul>
+            <li class="nav_item1" id="nav_item1" onClick="change_nav(1);">
+                <div class="div5">
+                    <p id="p1">最新热门</p>
+                </div>
+            </li>
+            <li class="nav_item1" id="nav_item2" onClick="change_nav(2)">
+                <div class="div5">
+                    <p id="p2">最新精华</p>
+                </div>
+            </li>
+            <li class="nav_item1" id="nav_item3" onClick="change_nav(3)">
+                <div class="div5">
+                    <p id="p3"style="background-color: #05A0D7;color: #ffffff;border-radius: 10px">最新回复</p>
+                </div>
+            </li>
+            <li class="nav_item1" id="nav_item4" onClick="change_nav(4)">
+                <div class="div5">
+                    <p id="p4">最新发表</p>
+                </div>
+            </li>
+            <li class="nav_item1" id="nav_item5" onClick="change_nav(5)">
+                <div class="div5">
+                    <p id="p5">抢沙发</p>
+                </div>
+            </li>
+            <li class="nav_item1" id="nav_item6" onClick="change_nav(6)">
+                <div class="div5">
+                    <p id="p6">我的帖子</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+<section  class="nav_tab" id="nav_tab1" style="display: none">
+    11
+</section>
+<section  class="nav_tab" id="nav_tab2" style="display: none">
+    22
+</section>
+<section  class="nav_tab" id="nav_tab3">
+    <ul>
+    <li>
+        <a href="Novice%20answer.html">
+            <div class="div6">
+                <p>新手报道</p>
+            </div>
+            <div class="div7">
+                <p>2015-05-14  14:08</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="Novice%20answer.html">
+            <div class="div6">
+                <p>新手答疑</p>
+            </div>
+            <div class="div7">
+                <p>2015-05-14  14:08</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="Novice%20answer.html">
+            <div class="div6">
+                <p>如何成为一个万人迷？</p>
+            </div>
+            <div class="div7">
+                <p>2015-05-14  09:01</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="Novice%20answer.html">
+            <div class="div6">
+                <p>副检察长抢房不成 造假报复诬罪</p>
+            </div>
+            <div class="div7">
+                <p>2015-05-14  08:32</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="Novice%20answer.html">
+            <div class="div6">
+                <p>新手报道</p>
+            </div>
+            <div class="div7">
+                <p>2015-05-14  14:08</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="Novice%20answer.html">
+            <div class="div6">
+                <p>新手答疑</p>
+            </div>
+            <div class="div7">
+                <p>2015-05-14  14:08</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="Novice%20answer.html">
+            <div class="div6">
+                <p>如何成为一个万人迷？</p>
+            </div>
+            <div class="div7">
+                <p>2015-05-14  09:01</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="Novice%20answer.html">
+            <div class="div6">
+                <p>副检察长抢房不成 造假报复诬罪</p>
+            </div>
+            <div class="div7">
+                <p>2015-05-14  08:32</p>
+            </div>
+        </a>
+    </li>
+</ul>
+</section>
+<section  class="nav_tab" id="nav_tab4" style="display: none">
+    44
+</section>
+<section  class="nav_tab" id="nav_tab5" style="display: none">
+    55
+</section>
+<section  class="nav_tab" id="nav_tab6" style="display: none">
+    66
+</section>
+</body>
+</html>

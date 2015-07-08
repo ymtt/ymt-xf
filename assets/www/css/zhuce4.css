@@ -132,15 +132,14 @@ input{
     float: left;
 }
 .div6-1 p{
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.9em;
     line-height: 30px;
     text-align: center;
     color: #05A0D7;
     margin-left: 20%;
 }
 button{
-    width: 20%;
+    width: 30%;
     height: auto;
     float: left;
 }
@@ -202,7 +201,6 @@ button{
 }
 .div9 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
 }
 .div10{
@@ -212,21 +210,19 @@ button{
 }
 .div10 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     color: #05A0D7;
 }
 #submitform{
     width: 90%;
-    height: 30px;
+    height: 40px;
     background-color: #05A0D7;
     float: left;
     margin-left: 5%;
     margin-top:30px ;
     color: #FFFFFF;
-    font-size: 0.9em;
+    font-size: 1em;
     border: 0;
-
 }
 footer{
     width: 94%;
@@ -254,6 +250,5 @@ footer ul{
 }
 .div13 p{
     font-size: 0.5em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 25px;
 }

@@ -48,28 +48,28 @@ section{
 }
 .div3{
     width: 100%;
-    height: 30px;
+    height: 50px;
     float: left;
     border-bottom: 1px solid #cccccc;
 }
 .div4{
     width: 30%;
-    height: 30px;
+    height: 50px;
     float: left;
 }
 .div4 p{
-    line-height: 30px;
+    line-height: 50px;
     font-size: 0.8em;
     margin-left: 15%;
     color: #000000;
 }
 .div5{
     width: 30%;
-    height: 30px;
+    height: 50px;
     float: left;
 }
 .div5 p{
-    line-height: 30px;
+    line-height: 50px;
     font-size: 0.8em;
     color: #000000;
 }
@@ -84,46 +84,46 @@ section{
 }
 .div7{
     width: 100%;
-    height: 30px;
+    height: 50px;
     float: left;
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid #cccccc;
 }
 .div7 p{
-    width: auto;
-    height: 30px;
-    line-height: 30px;
-    font-family: "方正兰亭纤黑_GBK";
+    line-height: 50px;
     font-size: 1em;
     margin-left: 5%;
 }
 .div8{
     width: 100%;
-    height: 40px;
+    height: auto;
     float: left;
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid #d5d5d5;
 }
 .div8 textarea{
     width: 95%;
     height: 40px;
     border: 0;
     margin-left: 5%;
+    margin-top: 10px;
+
 }
 .div9{
     width: 100%;
-    height: 80px;
+    height: auto;
     float: left;
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid #d5d5d5;
 }
 .div9 textarea{
     width: 95%;
     height: 80px;
     border: 0;
     margin-left: 5%;
+   margin-top: 10px;
 }
 .div10{
-    width: 20%;
+    width: 80px;
     height: 80px;
-    border: 1px solid #ECECEC;
+    border: 1px dashed #cccccc;
     float: left;
     margin-top: 20px;
     margin-left: 5%;
@@ -132,19 +132,18 @@ section{
     line-height: 80px;
     text-align: center;
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #CCCCCC;
 }
 .div11{
     width: 90%;
-    height: 30px;
+    height: 40px;
     float: left;
     margin-left: 5%;
     margin-top: 60px;
 }
 .div11 input{
     width: 100%;
-    height: 30px;
+    height: 40px;
     border: 0;
     color: #ffffff;
     text-align: center;
@@ -198,7 +197,7 @@ section{
  }
 .div12 p{
     font-size: 0.8em;
-    line-height: 30px;
+    line-height: 50px;
     margin-left: 5%;
 }
 .div13{
@@ -214,7 +213,7 @@ section{
     float: left;
 }
 .div14 p{
-    line-height: 30px;
+    line-height: 50px;
     font-size: 0.9em;
     margin-left: 5%;
 
@@ -252,5 +251,4 @@ label{
     font-size: 0.8em;
     line-height: 20px;
 }
-
 

@@ -73,7 +73,7 @@
      width: 80px;
      height: 30px;
      background-color:#ffffff;
-     font-family: "方正兰亭纤黑_GBK";
+     font-family: SketchRockwell;
      font-size: 0.65em;
      border: 1px solid #CCCCCC;
      color: #CCCCCC;
@@ -117,7 +117,7 @@
   .div5 p{
       width: 60%;
       height:20px ;
-      font-family: "方正兰亭纤黑_GBK";
+      font-family: SketchRockwell;
       font-size: 0.75em;
       color: #CCCCCC;
       line-height: 20px;
@@ -137,7 +137,7 @@
       width: auto;
       height: auto;
       line-height: 40px;
-      font-family: "方正兰亭纤黑_GBK";
+      font-family: SketchRockwell;
       font-size:0.85em ;
       float: left;
       margin-left: 3%;
@@ -150,7 +150,7 @@
    }
    .span-1 p{
        color: #000000;
-       font-family: "方正兰亭纤黑_GBK";
+       font-family: SketchRockwell;
        font-size: 0.8em;
    }
   .div9{
@@ -192,7 +192,7 @@
   .div11 p{
       line-height: 30px;
       font-size: 0.75em;
-      font-family: "方正兰亭纤黑_GBK";
+      font-family: SketchRockwell;
       margin-left: 5%;
       color: #000000;
   }
@@ -204,7 +204,7 @@
       margin-bottom: 10px;
   }
   .div12 p{
-      font-family: "方正兰亭纤黑_GBK";
+      font-family: SketchRockwell;
       font-size: 0.65em;
       margin-left: 5%;
       line-height: 20px;
@@ -227,7 +227,7 @@
      margin-left: 5%;
  }
  .div15 p{
-     font-family: "方正兰亭纤黑_GBK";
+     font-family: SketchRockwell;
      font-size: 0.85em;
      line-height: 30px;
      color: #000000;
@@ -241,7 +241,7 @@
      margin-bottom: 10px;
  }
  .div16 p{
-     font-family: "方正兰亭纤黑_GBK";
+     font-family: SketchRockwell;
      font-size: 0.65em;
      line-height: 20px;
      color: #737373;
@@ -270,7 +270,7 @@
  .gg-1 p{
      line-height: 30px;
      font-size: 0.8em;
-     font-family: "方正兰亭纤黑_GBK";
+     font-family: SketchRockwell;
      margin-left: 5%;
      color: #000000;
  }
@@ -281,7 +281,7 @@
      overflow: hidden;
  }
  .gg-2 p{
-     font-family: "方正兰亭纤黑_GBK";
+     font-family: SketchRockwell;
      font-size: 0.65em;
      margin-left: 5%;
      line-height: 20px;
@@ -309,7 +309,7 @@
  .intro{
         width:90%;
         height:auto;
-        font-family: "方正兰亭纤黑_GBK";
+     font-family: SketchRockwell;
         font-size: 0.85em;
         line-height: 30px;
         color: #000000;
@@ -326,7 +326,7 @@
  .intro p{
         float: left;
         height: 60px;
-        font-family: "方正兰亭纤黑_GBK";
+     font-family: SketchRockwell;
         font-size: 0.75em;
         color:#737373;
         line-height: 20px;
@@ -346,3 +346,7 @@
      float: left;
      margin-left: 2%;
  }
+@font-face {
+    font-family: SketchRockwell; /*这里是说明调用来的字体名字*/
+    src: url('../font/fangzheng.TTF'); /*这里是字体文件路径*/
+}

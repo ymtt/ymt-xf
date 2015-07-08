@@ -5,7 +5,7 @@
     <title>论坛</title>
     <link type="text/css" rel="stylesheet" href="css/forum.css" media="screen">
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
-    <!--<script src="js/forum.js"></script>-->
+    <script src="js/forum.js"></script>
     <!--<script src="cordova.js"></script>-->
     <!--<script type="text/javascript">-->
         <!--$(document).ready(function () {-->
@@ -38,21 +38,28 @@
 <div class="div4 ">
     <ul>
         <li>
-            <a href="fatie.html">
+            <a href="fatie1.html">
     <div class="div5 red">
         <p>发帖</p>
     </div>
                 </a>
         </li>
         <li>
-            <a href="Latest%20reply.html">
+            <a href="">
+                <div class="div5 yellow">
+                    <p>精华热帖</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="Latest_reply.html">
             <div class="div5 green">
                 <p>最新回复</p>
             </div>
                 </a>
         </li>
         <li>
-            <a href="Hot%20topics.html">
+            <a href="Hot_topics.html">
             <div class="div5 blue">
                 <p>热门主题</p>
             </div>
@@ -61,65 +68,147 @@
     </ul>
 </div>
     <div class="div6">
-        <ul>
-            <li>
-                <a href="Novice%20area.html">
+                <button class="btn" onclick="a()" id="btn1" style="background: url(image/the-arrow_icon1.png)no-repeat 80% 50%" >
                     <div class="div7">
-                <img src="image/icon_x.png">
-                       </div>
-                <p>新手专区</p>
-                    </a>
-            </li>
-            <li>
-                <a href="Novice%20area.html">
-                    <div class="div7">
-                <img src="image/icon_x_1.png">
+                        <img src="image/icon_x.png">
                         </div>
-                <p>消防咨询</p>
-                    </a>
-            </li>
-            <li>
-                <a href="Novice%20area.html">
+                    <p>新手专区</p>
+                </button>
+                    <div id="demo1" class="demo1">
+                        <ul>
+                            <li>
+                                <a href="forumlist.html">
+                             <p>新手报到</p>
+                                    </a>
+                                </li>
+                            <li>
+                                <a href="forumlist.html">
+                             <p>新手答疑</p>
+                                    </a>
+                            </li>
+                        </ul>
+                       </div>
+                <button class="btn" onclick="b()" id="btn2" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
                     <div class="div7">
+                        <img src="image/icon_x_1.png">
+                    </div>
+                    <p>消防咨询</p>
+                    </button>
+                    <div id="demo2" class="demo1"  style="display: none">
+                        <ul>
+                            <li>
+                                <a href="forumlist.html">
+                                    <p>新手报到</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forumlist.html">
+                                    <p>新手答疑</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        <button class="btn" onclick="c()" id="btn3" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+            <div class="div7">
                 <img src="image/icon_x_2.png">
-                        </div>
-                <p>消防合作</p>
+            </div>
+            <p>消防合作</p>
+        </button>
+        <div id="demo3" class="demo1"  style="display: none">
+            <ul>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手报到</p>
                     </a>
-            </li>
-            <li>
-                <a href="Novice%20area.html">
-                    <div class="div7">
+                </li>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手答疑</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn" onclick="f()" id="btn4" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+            <div class="div7">
                 <img src="image/icon_x_3.png">
-                        </div>
-                <p>消防产品</p>
+            </div>
+            <p>消防产品</p>
+        </button>
+        <div id="demo4" class="demo1"  style="display: none">
+            <ul>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手报到</p>
                     </a>
-            </li>
-            <li>
-                <a href="Novice%20area.html">
-                    <div class="div7">
+                </li>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手答疑</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn" onclick="o()" id="btn5" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+            <div class="div7">
                 <img src="image/icon_x_4.png">
-                       </div>
-                <p>消防教育</p>
+            </div>
+            <p>消防教育</p>
+        </button>
+        <div id="demo5" class="demo1"  style="display: none">
+            <ul>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手报到</p>
                     </a>
-            </li>
-            <li>
-                <a href="Novice%20area.html">
-                    <div class="div7">
+                </li>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手答疑</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn" onclick="k()" id="btn6" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+            <div class="div7">
                 <img src="image/icon_e.png">
-                        </div>
-                <p>二手区</p>
+            </div>
+            <p>二手区</p>
+        </button>
+        <div id="demo6" class="demo1"  style="display: none">
+            <ul>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手报到</p>
                     </a>
-            </li>
-            <li>
-                <a href="Novice%20area.html">
-                    <div class="div7">
+                </li>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手答疑</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn" onclick="j()" id="btn7" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+            <div class="div7">
                 <img src="image/icon_g.png">
-                        </div>
-                <p>灌水区</p>
+            </div>
+            <p>灌水区</p>
+        </button>
+        <div id="demo7" class="demo1"  style="display: none">
+            <ul>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手报到</p>
                     </a>
-            </li>
-        </ul>
-    </div>
+                </li>
+                <li>
+                    <a href="forumlist.html">
+                        <p>新手答疑</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+       </div>
 </section>
 </body>
 </html>

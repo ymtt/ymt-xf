@@ -21,7 +21,6 @@ a{
     height:40px;
     float: left;
 }
-
 .div1 img {
     width: 20px;
     max-width: 100%;
@@ -69,7 +68,7 @@ section{
     list-style: none;
 }
 .div4 ul li{
-    width: 33.33%;
+    width: 25%;
     height: 70px;
     float: left;
     text-align: center;
@@ -91,33 +90,54 @@ section{
     height: auto;
     float: left;
 }
-.div6 ul{
-    width: 100%;
-    height: auto;
-    list-style: none;
-}
-.div6 ul li{
-    width: 100%;
-    height: 40px;
-    float: left;
-    border-bottom: 1px solid #cccccc;
-}
 .div7{
     width: 15%;
     height: auto;
     float: left;
 }
-.div6 ul li img{
+.div7 img{
     width: 20px;
-    height: auto;
-    margin-top: 8px;
-    margin-left: 30%;
+    margin-top: 5px;
 }
-.div6 ul li p{
-    width:85% ;
-    font-size: 0.8em;
+
+button{
+    border: 0;
+    border-bottom: 1px solid #cccccc;
+    font-size: 0.9em;
+    line-height: 30px;
+}
+button p{
+    width: 40%;
     line-height: 40px;
+}
+.btn{
+    width: 100%;
+    height: auto;
     float: left;
+}
+.demo1{
+    width: 100%;
+    height: auto;
+    background-color: #ededed;
+    float: left;
+}
+.demo1 ul{
+    width: 100%;
+    height: auto;
+    float: left;
+    list-style: none;
+}
+.demo1 ul li{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #cccccc;
+    float: left;
+}
+.demo1 ul li p{
+    width: 80%;
+    margin-left: 20%;
+    line-height: 30px;
+    font-size: 0.9em;
     color: #000000;
 }
 .red{
@@ -129,3 +149,6 @@ section{
 .blue{
     background-color: #05A0D8;
 }
+.yellow{
+ background-color: #F8A656;
+ }
