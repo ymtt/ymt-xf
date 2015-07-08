@@ -127,3 +127,21 @@ function getunreadmsg(data){
        });
 
 }
+
+//邀请专家
+function  Inviteexperts(curChatId,userId){
+    var url='120.24.172.105:8000/index/consult/chat_partial/addExportUser.jsp';
+    $.ajax({
+        type:'post',
+        dataType:'json',
+        url:url,
+        data:{"curChatId":curChatId,"userId":userId},
+        success:function(data){
+            alert(JSON.stringify(data));
+        },error:function(error){
+            alert(JSON.stringify(error))
+        }
+    });
+}
+
+

@@ -41,18 +41,23 @@
         }
     </style>
     <script type="text/javascript">
-        var role=window.localStorage.getItem("userrole");
-        if(role==""||role==null){
-            role="002";
-        }
+
         $(document).ready(function(){
             //var role="002";
+
+        var role=window.localStorage.getItem("userrole");
+        alert(role);
+        if(role==""||role==null||typeof(role)==undefined){
+            role="002";
+        }
             switch(role){
             case "002":
                 $(".user").css("display","block");
             break;
+            case "003":
             case "004":
-                $(".experts").css("display","block");
+                $(".div3").css("display","none");
+                $(".div4").css("display","block");
             break;
             }
         });

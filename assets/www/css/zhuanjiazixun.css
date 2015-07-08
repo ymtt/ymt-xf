@@ -45,7 +45,7 @@ a{
     width: 10%;
     height:40px;
     float: right;
-
+    display:block;
 }
 .div3-1{
     width: 10px;

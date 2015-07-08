@@ -8,3 +8,11 @@ function getkyobj(){
     }
     $(".div5 p").html(kyobj.content);
 }
+
+function downpdf(){
+    var kyid=window.localStorage.getItem("keyanid");
+    var kystr=window.localStorage.getItem(kyid);
+    var kyobj=JSON.parse(kystr);
+     var downloadurl='http://120.24.172.105:8000/public/pub/upload/down.jsp?ai='+kyobj.id+'&id='+kyobj.files;
+     return downloadurl;
+}

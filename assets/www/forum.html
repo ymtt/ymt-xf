@@ -5,7 +5,8 @@
     <title>论坛</title>
     <link type="text/css" rel="stylesheet" href="css/forum.css" media="screen">
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
-    <script src="js/forum.js"></script>
+    <script src="js/newforum.js"></script>
+    <!--<script src="js/forum.js"></script>-->
     <!--<script src="cordova.js"></script>-->
     <!--<script type="text/javascript">-->
         <!--$(document).ready(function () {-->
@@ -23,6 +24,9 @@
             h();
             d();
             back();
+            getForumList();
+
+
         });
 
     </script>
@@ -68,13 +72,15 @@
     </ul>
 </div>
     <div class="div6">
-                <button class="btn" onclick="a()" id="btn1" style="background: url(image/the-arrow_icon1.png)no-repeat 80% 50%" >
+
+                <!--<button class="btn" onclick="a(this,0)"  style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
                     <div class="div7">
                         <img src="image/icon_x.png">
                         </div>
                     <p>新手专区</p>
                 </button>
-                    <div id="demo1" class="demo1">
+
+                    <div  class="demo1" style="display: none">
                         <ul>
                             <li>
                                 <a href="forumlist.html">
@@ -87,14 +93,16 @@
                                     </a>
                             </li>
                         </ul>
-                       </div>
-                <button class="btn" onclick="b()" id="btn2" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+                    </div>
+
+                <button class="btn" onclick="a(this,1)"  style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
                     <div class="div7">
                         <img src="image/icon_x_1.png">
                     </div>
                     <p>消防咨询</p>
-                    </button>
-                    <div id="demo2" class="demo1"  style="display: none">
+                </button>
+
+                    <div  class="demo1"  style="display: none">
                         <ul>
                             <li>
                                 <a href="forumlist.html">
@@ -108,13 +116,15 @@
                             </li>
                         </ul>
                     </div>
-        <button class="btn" onclick="c()" id="btn3" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+
+        <button class="btn" onclick="a(this,2)"  style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
             <div class="div7">
                 <img src="image/icon_x_2.png">
             </div>
             <p>消防合作</p>
         </button>
-        <div id="demo3" class="demo1"  style="display: none">
+
+        <div  class="demo1"  style="display: none">
             <ul>
                 <li>
                     <a href="forumlist.html">
@@ -128,13 +138,15 @@
                 </li>
             </ul>
         </div>
-        <button class="btn" onclick="f()" id="btn4" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+
+        <button class="btn" onclick="a(this,3)"  style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
             <div class="div7">
                 <img src="image/icon_x_3.png">
             </div>
             <p>消防产品</p>
         </button>
-        <div id="demo4" class="demo1"  style="display: none">
+
+        <div  class="demo1"  style="display: none">
             <ul>
                 <li>
                     <a href="forumlist.html">
@@ -148,13 +160,13 @@
                 </li>
             </ul>
         </div>
-        <button class="btn" onclick="o()" id="btn5" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+        <button class="btn" onclick="a(this,4)"  style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
             <div class="div7">
                 <img src="image/icon_x_4.png">
             </div>
             <p>消防教育</p>
         </button>
-        <div id="demo5" class="demo1"  style="display: none">
+        <div class="demo1"  style="display: none">
             <ul>
                 <li>
                     <a href="forumlist.html">
@@ -168,13 +180,13 @@
                 </li>
             </ul>
         </div>
-        <button class="btn" onclick="k()" id="btn6" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+        <button class="btn" onclick="a(this,5)"  style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
             <div class="div7">
                 <img src="image/icon_e.png">
             </div>
             <p>二手区</p>
         </button>
-        <div id="demo6" class="demo1"  style="display: none">
+        <div class="demo1"  style="display: none">
             <ul>
                 <li>
                     <a href="forumlist.html">
@@ -188,13 +200,13 @@
                 </li>
             </ul>
         </div>
-        <button class="btn" onclick="j()" id="btn7" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
+        <button class="btn" onclick="a(this,6)" style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" >
             <div class="div7">
                 <img src="image/icon_g.png">
             </div>
             <p>灌水区</p>
         </button>
-        <div id="demo7" class="demo1"  style="display: none">
+        <div  class="demo1"  style="display: none">
             <ul>
                 <li>
                     <a href="forumlist.html">
@@ -207,7 +219,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div>-->
        </div>
 </section>
 </body>

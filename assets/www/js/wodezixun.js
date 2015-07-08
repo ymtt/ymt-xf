@@ -102,7 +102,7 @@ function expertslist(){
 
                 window.localStorage.setItem(id,obj);
 
-                if(null!=null||list!=""){
+                if(null!=list||list!=""){
                     CreateExpertsList(id,fk_pro_id,msg_title);
                 }
              });

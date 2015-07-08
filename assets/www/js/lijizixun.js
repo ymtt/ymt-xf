@@ -67,7 +67,7 @@ function getfaclass(){
                $("#show").append("<div class='div12' id="+"\""+list[key].id+"\""+"  onclick='opt("+"\""+"div5"+"\""+",this)'><p value='"+list[key].id+"'>"+list[key].code+"</p></div>");
             }
         })
-        },
+        }
     });
 }
 
