@@ -57,7 +57,6 @@ a{
     margin-top: 5px;
 }
 .div3-1 p{
-    font-family:"方正兰亭纤黑_GBK";
     font-size: 0.5em;
     color: #ffffff;
     text-align: center;
@@ -95,7 +94,6 @@ a{
     width: 80px;
     height: 30px;
     background-color: #ffffff;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.65em;
     border-top: 1px solid #CCCCCC;
     color: #000000;
@@ -113,7 +111,6 @@ a{
     margin-bottom: -12px;
 }
 .div3-4 p{
-    font-family:"方正兰亭纤黑_GBK";
     font-size: 0.5em;
     color: #ffffff;
     text-align: center;
@@ -139,7 +136,6 @@ a{
     margin-bottom: -12px;
 }
 .div5 p{
-    font-family:"方正兰亭纤黑_GBK";
     font-size: 0.5em;
     color: #ffffff;
     text-align: center;
@@ -148,7 +144,6 @@ a{
 .div5-1 p{
     width: 80px;
     height: 30px;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.65em;
     color: #FFFFFF;
     text-align: center;
@@ -240,7 +235,6 @@ input{
     border-bottom: 1px solid #cccccc;
 }
 .div9-1 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     line-height: 30px;
     margin-left: 5%;
@@ -256,7 +250,6 @@ input{
 .div10 p {
   line-height: 20px;
     font-size: 0.8em;
-    font-family: "方正兰亭纤黑_GBK";
     text-align: center;
 }
 span{
@@ -323,16 +316,14 @@ span{
     line-height: 40px
 }
 .div12-2{
-    width: 40%;
-    height: 40px;
+    width:auto;
     float: right;
-    margin-top: 5px;
+    margin-right: 5%;
+    margin-top: 10px;
 }
 .div12-2 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 40px;
-    margin-left: 50%;
+    line-height: 20px;
     color: #737373;
 }
 .div11{
@@ -382,7 +373,6 @@ span{
     margin-right: 10%;
  }
 .div14 p{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #000000;
 }
@@ -397,7 +387,6 @@ span{
 }
 .div15 p{
     height: 60px;
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #CCCCCC;
     overflow: hidden;
@@ -413,7 +402,6 @@ span{
 .div17 p{
     width: auto;
     height: auto;
-    font-family: "微软雅黑";
     font-size: 0.85em;
     line-height: 40px;
     margin-left: 5%;
@@ -430,7 +418,6 @@ span{
     margin-left: 5%;
 }
 .div20 p{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #000000;
     line-height: 20px;
@@ -443,7 +430,6 @@ span{
     margin-top: 5px;
 }
 .div21 p{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #CCCCCC;
     line-height: 20px;

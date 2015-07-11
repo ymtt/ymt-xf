@@ -61,11 +61,10 @@ a{
     width: 100%;
     height: 30px;
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
     line-height: 30px;
 }
-.div6{
+.div6-2{
     width: 94%;
     height: 40px;
     background-color: #FFFFFF;
@@ -84,7 +83,6 @@ a{
     margin-left: 5%;
     line-height: 40px;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
 .div8{
@@ -98,7 +96,6 @@ a{
     margin-left:45% ;
     line-height: 40px;
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
 .div9{
@@ -128,7 +125,6 @@ a{
 }
 .div10 p{
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 40px;
     text-align: center;
     color: #FFFFFF;
@@ -153,7 +149,6 @@ a{
 }
 .div11 table tr td p{
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     text-align: center;
     color: #FFFFFF;
     margin-top: 12px;
@@ -221,7 +216,6 @@ section ul li{
 }
 .div15 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #ffffff;
     line-height: 20px;
 }
@@ -249,7 +243,6 @@ section ul li{
 }
 .div17 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #ffffff;
     line-height: 20px;
 }
@@ -303,7 +296,6 @@ section ul li{
     border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 .zc-1 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     line-height: 30px;
     text-align: center;
@@ -343,7 +335,6 @@ section ul li{
     float: left;
 }
 .zc-4 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     line-height: 40px;
     color: #FFFFFF;
@@ -362,7 +353,6 @@ section ul li{
     float: left;
 }
 .zc-6 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     color: #FFFFFF;
     line-height: 30px;

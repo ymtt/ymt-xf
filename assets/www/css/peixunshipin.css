@@ -21,7 +21,6 @@ header{
     height:40px;
     float: left;
 }
-
 .div1 img {
     width: 20px;
     max-width: 100%;
@@ -35,7 +34,6 @@ header{
     line-height: 40px;
     text-align: center;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
     margin-left:30%;
 }
@@ -91,7 +89,6 @@ section{
 }
 .div7 p{
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 30px;
 
 }
@@ -136,5 +133,4 @@ section{
     line-height:20px;
     color: #ffffff;
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
 }

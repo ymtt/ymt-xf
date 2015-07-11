@@ -84,7 +84,6 @@ section{
     width: 100%;
     height: 20px;
     font-size: 0.65em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     text-align: center;
     color: #737373;
@@ -110,7 +109,6 @@ section{
     margin-left: 5%;
     line-height: 40px;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
 .div5{
@@ -124,7 +122,6 @@ section{
     margin-left:45% ;
     line-height: 40px;
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
 .div6{
@@ -162,7 +159,6 @@ section{
 }
 .div7 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 38px;
     text-align: center;
     color: #FFFFFF;
@@ -187,7 +183,6 @@ section{
 }
 .div8 table tr td p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 38px;
     text-align: center;
     color: #FFFFFF;
@@ -227,7 +222,6 @@ section{
     height: auto;
     line-height: 30px;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     margin-left: 5%;
     color: #000000;
 }
@@ -242,7 +236,6 @@ section{
     height: auto;
     line-height: 20px;
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     margin-left: 5%;
     color: #CCCCCC;
 }
@@ -266,7 +259,6 @@ section{
     width: auto;
     height:80px;
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     text-overflow: ellipsis;
     color: #CCCCCC;
@@ -284,7 +276,6 @@ section{
     height: auto;
     line-height: 30px;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     margin-left: 5%;
     color: #000000;
 }
@@ -310,7 +301,6 @@ section{
     width: auto;
     height:80px;
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     overflow: hidden;
     text-overflow: ellipsis;
     color: #CCCCCC;
@@ -347,7 +337,6 @@ footer ul li a:hover p{
 }
 .div19 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     margin-top: 32px;
     text-align: center;
     color: #737373;
@@ -361,7 +350,6 @@ footer ul li a:hover p{
 }
 .div20 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     margin-top: 32px;
     text-align: center;
     color: #737373;
@@ -375,7 +363,6 @@ footer ul li a:hover p{
 }
 .div21 p {
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     margin-top: 32px;
     text-align: center;
     color: #737373;
@@ -389,7 +376,6 @@ footer ul li a:hover p{
 }
 .div22 p {
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     margin-top: 32px;;
     text-align: center;
     color: #737373;
@@ -403,7 +389,6 @@ footer ul li a:hover p{
 }
 .div23 p {
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     margin-top: 32px;;
     text-align: center;
     color: #737373;

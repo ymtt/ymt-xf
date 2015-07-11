@@ -35,7 +35,6 @@ a{
     line-height: 40px;
     text-align: center;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
 }
 .div3{
@@ -83,7 +82,6 @@ section{
     float: left;
 }
 .div6 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     line-height: 30px;
     text-align: center;
@@ -96,7 +94,6 @@ section{
     border-bottom: 1px solid #CCCCCC;
 }
 .div7 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     line-height: 30px;
     text-align: center;
@@ -151,7 +148,6 @@ section{
     margin-left: 5%;
     color: #000000;
 }
-
 .div11 img{
   float: left;
     margin-left: 60%;

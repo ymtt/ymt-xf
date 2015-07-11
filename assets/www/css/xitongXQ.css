@@ -53,7 +53,6 @@ section{
     float: left;
 }
 .div3 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     float: left;
     margin-left: 5%;
@@ -66,7 +65,6 @@ section{
     margin-left: 5%;
 }
 .div4 p{
-   font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     text-indent: 2em;
     color: #737373;

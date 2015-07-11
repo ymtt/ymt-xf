@@ -81,7 +81,6 @@ section{
     float: left;
 }
 .div7 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 20px;
     color: #05A0D7;
@@ -92,7 +91,6 @@ section{
     float: left;
 }
 .div8 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.65em;
     line-height: 20px;
     color: #737373;
@@ -110,7 +108,6 @@ section{
 }
 .div10 p{
     font-size: 0.65em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     text-align: center;
 }
@@ -128,7 +125,6 @@ section{
     float: left;
 }
 .div12 p{
-    font-family:"方正兰亭纤黑_GBK";
     font-size: 0.85em;
     line-height: 20px;
     margin-left: 20%;
@@ -152,7 +148,6 @@ section{
     float: left;
 }
 .div15 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 30px;
     margin-left: 50%;
@@ -165,7 +160,6 @@ section{
 }
 .div16 p{
     font-size: 0.65em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 30px;
 }
 .div17{
@@ -174,7 +168,6 @@ section{
     float: left;
 }
 .div17 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     line-height: 20px;
     margin-left: 20%;

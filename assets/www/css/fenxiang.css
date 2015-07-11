@@ -40,7 +40,6 @@ a{
     text-align: center;
     line-height: 40px;
     font-size: 0.85em;
-    font-family: "微软雅黑";
     float: left;
     margin-left: 18%;
 }
@@ -77,7 +76,6 @@ a{
     width: 80px;
     height: 30px;
     background-color:#f5f5f5;
-    font-family: "微软雅黑";
     font-size: 0.65em;
     border-top: 1px solid #CCCCCC;
     color: #000000;
@@ -88,13 +86,13 @@ a{
     width: 80px;
     height: 30px;
     background-color:#f5f5f5;
-    font-family: "微软雅黑";
     font-size: 0.65em;
+    border: 0;
     border-top: 1px solid #CCCCCC;
     color: #000000;
     text-align: center;
     line-height: 30px;
-    border: 0;
+
 }
 .div3:hover ul{
     display: block;
@@ -106,7 +104,6 @@ a{
     border-bottom: 1px solid #CCCCCC;
 }
 .div4 p{
-    font-family: "微软雅黑";
     font-size: 0.95em;
     line-height: 30px;
     margin-left: 5%;
@@ -129,7 +126,6 @@ section{
     height: 250px;
     margin-left: 5%;
     text-indent: 20px;
-    font-family: "微软雅黑";
     font-size:0.75em ;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -145,7 +141,6 @@ section{
     width: auto;
     height: auto;
     line-height: 40px;
-    font-family: "微软雅黑";
     font-size: 1em ;
     text-align: center;
     color: #FFFFFF;
@@ -160,7 +155,6 @@ section{
     width: auto;
     height: auto;
     font-size: 0.85em;
-    font-family: "微软雅黑";
     line-height: 20px;
     color: #05A0D7;
 }
@@ -174,7 +168,6 @@ section{
     width: auto;
     height: auto;
     font-size: 0.75em;
-    font-family: "微软雅黑";
     line-height: 20px;
 }
 .div9{
@@ -187,7 +180,6 @@ section{
 .div9 input{
     width: 100%;
     font-size: 0.75em;
-    font-family: "微软雅黑";
     padding-bottom:40px;
     border: 1px solid #CCCCCC;
 }
@@ -203,7 +195,6 @@ section{
     width: auto;
     height: auto;
     font-size: 0.95em;
-    font-family: "微软雅黑";
     line-height: 40px;
     color: #FFFFFF;
     text-align: center;
@@ -218,7 +209,6 @@ section{
     width: auto;
     height: auto;
     font-size: 0.85em;
-    font-family: "微软雅黑";
     line-height: 20px;
     margin-left: 8%;
     color: #737373;
@@ -244,7 +234,6 @@ section{
     width: auto;
     height: auto;
     line-height: 20px;
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #05A0D7;
 }
@@ -291,7 +280,6 @@ section{
 }
 .div16 p {
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     text-align: center;
     color: #737373;
@@ -307,7 +295,6 @@ section{
     color: #737373;
     background-color: #ffffff;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 100%;
     text-align: center;
 }

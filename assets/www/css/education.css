@@ -79,7 +79,6 @@ section{
 }
 .div6 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
 }
 .div7{
@@ -100,7 +99,6 @@ section{
     height: 20px;
     font-size: 0.75em;
     float: left;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     letter-spacing: 2px;
 }

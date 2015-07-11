@@ -42,7 +42,6 @@ section{
     float: left;
 }
 .div2 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     line-height: 20px;
     color: #000000;
@@ -53,7 +52,6 @@ section{
     float: left;
 }
 .div3 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     color: #737373;
 }

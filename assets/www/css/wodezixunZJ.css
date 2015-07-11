@@ -86,7 +86,6 @@ a{
     float: left;
 }
 .div6 p {
-    font-family: "微软雅黑";
     font-size: 0.85em;
     line-height: 100px;
 }
@@ -97,7 +96,6 @@ a{
     float: left;
 }
 .div7 button{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #05A0D7;
     text-align: center;
@@ -139,7 +137,6 @@ footer ul li{
     margin-left: 5%;
 }
 .img1 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 60px;
     text-align: center;
@@ -155,7 +152,6 @@ footer ul li{
     background-position: 10% 50%;
 }
 .img2 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 60px;
     text-align: center;
@@ -170,7 +166,6 @@ footer ul li{
     margin-left: 5%;
 }
 .img3 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 60px;
     text-align: center;
@@ -202,7 +197,6 @@ footer ul li{
     margin-top: 20px;
 }
 .hh3 p {
-    font-family: "微软雅黑";
     font-size: 0.85em;
     line-height: 30px;
     color: #000000;
@@ -216,7 +210,6 @@ footer ul li{
     margin-top: 25px;
 }
 .hh4 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.5em;
     color: #ffffff;
     line-height: 15px;
@@ -230,7 +223,6 @@ footer ul li{
     margin-bottom: 10px;
 }
 .hh5 p{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     line-height: 20px;
     color: #737373;
@@ -262,8 +254,7 @@ footer ul li{
     float: left;
 }
 .yy_1 p{
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
+    font-size: 0.85em;;
     line-height: 40px;
     margin-left: 20%;
 }
@@ -279,7 +270,6 @@ footer ul li{
 }
 .yy_2 p{
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 40px;
     margin-left: 20%;
 }
@@ -340,7 +330,6 @@ input{
     line-height: 30px;
     border-bottom: 1px solid #CCCCCC;
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     border-top: 1px solid #CCCCCC;
     background-color: #ECECEC;
     border-left: 0;
@@ -354,7 +343,6 @@ span{
     background-color: #FF0000;
     color: #ffffff;
     font-size: 0.5em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 10px;
     text-align: center;
     margin-top: -20px;
@@ -398,7 +386,6 @@ span{
     float: left;
 }
 .dome_3 p {
-    font-family: "微软雅黑";
     font-size: 0.85em;
     line-height: 60px;
 }
@@ -409,7 +396,6 @@ span{
     float: left;
 }
 .dome_4 p{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #05A0D7;
     text-align: center;
@@ -424,7 +410,6 @@ span{
     float: left;
 }
 .dome_5 p{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #05A0D7;
     text-align: center;

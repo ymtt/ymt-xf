@@ -68,7 +68,7 @@ ul li{
     border-bottom: 1px solid #cccccc;
 }
 .div4{
-    width: 50%;
+    width: 100%;
     height: auto;
     float: left;
 }
@@ -79,14 +79,29 @@ ul li{
     margin-left: 10%;
 }
 .div5{
-    width: 50%;
+    width: 15%;
     height: auto;
     float: left;
+    margin-left: 55%;
 }
 .div5 p {
     font-size: 0.7em;
-    line-height: 30px;
     color: #737373;
-    float: right;
-    margin-right: 10%;
+    float: left;
+}
+.div5 img{
+    width: 15px;
+    margin-left: 3%;
+}
+.div6{
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-bottom: 10px;
+}
+.div6 p{
+    font-size: 0.7em;
+    color: #737373;
+    float: left;
+
 }

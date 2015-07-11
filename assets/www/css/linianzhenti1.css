@@ -57,7 +57,6 @@ header{
 }
 .divZ1 p{
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height:40px ;
     margin-left: 5%;
 }
@@ -71,6 +70,11 @@ section{
     height: 120px;
     border-bottom: 1px solid #CCCCCC;
     margin-top: 10px;
+    float: left;
+}
+.div4-1{
+    width: 100%;
+    height: auto;
     float: left;
 }
 .div5{
@@ -94,7 +98,6 @@ section{
 }
 .div6 p{
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #000000;
 }
 .div7{
@@ -106,39 +109,25 @@ section{
 }
 .div7 p{
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #CCCCCC;
-}
-.div8{
-    width: 30%;
-    height: 30px;
-    margin-top: 10px;
-    float: left;
-    margin-left: 20%;
-    background: url("../image/comment_collect_icon.png")no-repeat 30% 50%;
-}
-.div8 p{
-    float: right;
-    font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 30px;
-    color: #000000;
-}
-.div9{
-    width: 30%;
-    height: 30px;
-    margin-top: 10px;
-    float: left;
-    margin-left: 10%;
-    background: url("../image/comment_comment_icon.png")no-repeat 30% 50%;
-}
-.div9 p{
-    float: right;
-    font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
-    line-height: 30px;
-    color: #000000;
 }
 a{
     text-decoration: none;
+}
+.div8{
+    width:25px ;
+    margin-top: 10px;
+    float: left;
+    margin-left: 70%;
+}
+.div9{
+    width: 15%;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+}
+.div9 p{
+    font-size: 0.8em;
+    line-height: 25px;
+   text-align: center;
 }

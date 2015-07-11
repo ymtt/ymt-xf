@@ -64,17 +64,16 @@ section{
 }
 .div5{
     width: 100%;
-    height: 30px;
+    height: 40px;
     float: left;
     background-color: deepskyblue;
 }
 .div5 p{
     width: 95%;
     margin-left: 5%;
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     color: #FFFFFF;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
 }
 .div6{
@@ -99,7 +98,6 @@ section{
 }
 .div6 tr td p{
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 40px;
     text-align: center;
 }

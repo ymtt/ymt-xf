@@ -3,7 +3,7 @@
  */
 
     function  change_nav(heath_center) {
-        for (var i = 1; i <= 4; i++) {
+        for (var i = 1; i <= 3; i++) {
         if (i == heath_center) {
         document.getElementById("nav_item" + i).className = "nav_item";
         document.getElementById("nav_tab" + i).style.display = "";

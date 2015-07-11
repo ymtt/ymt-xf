@@ -40,7 +40,6 @@ a{
     float: left;
 }
 .div3 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     line-height: 40px;
     color: #ffffff;
@@ -95,7 +94,6 @@ video{
 .div11{
     width:100% ;
     height:auto;
-
 }
 .div11 ul{
     width: 100%;
@@ -127,7 +125,6 @@ video{
 }
 .div13 p {
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     text-align: center;
     color: #737373;
@@ -143,7 +140,6 @@ video{
     color: #737373;
     background-color: #ffffff;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 30px;
     text-align: center;
     margin-top: 10px;

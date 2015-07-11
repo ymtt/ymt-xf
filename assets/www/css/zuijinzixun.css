@@ -59,7 +59,6 @@ section{
     float: left;
 }
 .div4 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     line-height: 30px;
     color: #000000;
@@ -84,10 +83,8 @@ section{
     width: 80%;
     height: auto;
     float: left;
-
 }
 .div7 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 20px;
     color: #737373;
@@ -107,7 +104,6 @@ section{
     margin-left: 5%;
 }
 .div9 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 20px;
     color: #737373;

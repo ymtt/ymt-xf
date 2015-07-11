@@ -56,7 +56,6 @@ section{
     margin-top: 20px;
 }
 .div3 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     line-height: 130%;
 }
@@ -83,7 +82,6 @@ footer{
 }
 .div4 p{
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 40px;
     margin-left: 5%;
     margin-bottom: 5%;
@@ -96,7 +94,6 @@ footer{
 }
 .div5 p{
     font-size: 0.9em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     color: #737373;
     margin-left: 5%;

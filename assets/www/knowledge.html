@@ -44,6 +44,17 @@
          }*/
 
     </script>
+    <script type="text/javascript">
+        function change_pic(id){
+            var imgObj = document.getElementById(id);
+            if(imgObj.getAttribute("src",2)=="image/icon_collect_l.png"){
+                imgObj.src="image/icon_collect_click_l.png";
+            }else{
+                imgObj.src="image/icon_collect_l.png";
+            }
+        }
+
+    </script>
     <style>
         * {
         -webkit-touch-callout:none;
@@ -253,27 +264,27 @@
         <p>管理处</p>
     </div>
     <div class="s5">
-        <a href="Fire%20Research%20Institute%20SC.html">
+        <a href="Fire_Research_Institute_SC.html">
             <p>公安部四川消防研究所</p>
         </a>
     </div>
     <div class="s6">
-        <a href="Fire%20Research%20Institute%20SY.html">
+        <a href="Fire_Research_Institute_SY.html">
             <p>公安部沈阳消防研究所</p>
         </a>
     </div>
     <div class="s6">
-        <a href="Fire%20Research%20Institute%20SH.html">
+        <a href="Fire_Research_Institute_SH.html">
             <p>公安部上海消防研究所</p>
         </a>
     </div>
     <div class="s6">
-        <a href="Fire%20Research%20Institute%20TJ.html">
+        <a href="Fire_Research_Institute_TJ.html">
             <p>公安部天津消防研究所</p>
         </a>
     </div>
     <div class="s6">
-        <a href="Fire%20Research%20Institute%20GS.html">
+        <a href="Fire_Research_Institute_GS.html">
             <p>各省总部</p>
         </a>
     </div>
@@ -616,7 +627,7 @@
 </section>
 <section  class="nav_tab" id="nav_tab4" style="display: none">
 
-    <!--<div class="ky">
+    <div class="ky">
         <a href="guifanXQ.html">
             <div class="ky-1">
                 <p>《建筑设计防火规范》</p>
@@ -628,13 +639,15 @@
                 <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队</p>
             </div>
         </a>
-        <div class="ky-4" onmousemove="a1(3)" onmouseout="a2(3)"><p>42354人</p></div>
-        <div class="ky-5" onmousemove="s1(3)" onmouseout="s2(3)"><p>42354人</p></div>
-    </div>-->
+        <img src="image/icon_collect_l.png" id="div9" class="ky-4" onclick="change_pic('div9')">
+        <div class="ky-5">
+            <p>42354人</p>
+        </div>
+    </div>
 </section>
 <section  class="nav_tab" id="nav_tab5" style="display: none">
 
-   <!--<div class="ky">
+   <div class="ky">
         <a href="guifanXQ.html">
             <div class="ky-1">
                 <p>《建筑设计防火规范》</p>
@@ -646,41 +659,11 @@
                 <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队</p>
             </div>
         </a>
-            <div class="ky-4" onmousemove="a1(3)" onmouseout="a2(3)"><p>42354人</p></div>
-            <div class="ky-5" onmousemove="s1(3)" onmouseout="s2(3)"><p>42354人</p></div>
+       <img src="image/icon_collect_l.png" id="div10" class="ky-4" onclick="change_pic('div10')">
+       <div class="ky-5">
+           <p>42354人</p>
+       </div>
     </div>
-
-    <div class="ky">
-        <a href="guifanXQ.html">
-            <div class="ky-1">
-                <p>《建筑设计防火规范》</p>
-            </div>
-            <div class="ky-2">
-                <img src="image/knowledge_02.png">
-            </div>
-            <div class="ky-3">
-                <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队</p>
-            </div>
-        </a>
-            <div class="ky-4" onmousemove="a1(4)" onmouseout="a2(4)"><p>42354人</p></div>
-            <div class="ky-5" onmousemove="s1(4)" onmouseout="s2(4)"><p>42354人</p></div>
-    </div>
-
-    <div class="ky">
-        <a href="guifanXQ.html">
-            <div class="ky-1">
-                <p>《建筑设计防火规范》</p>
-            </div>
-            <div class="ky-2">
-                <img src="image/knowledge_01.png">
-            </div>
-            <div class="ky-3">
-                <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队</p>
-            </div>
-        </a>
-            <div class="ky-4" onmousemove="a1(5)" onmouseout="a2(5)"><p>42354人</p></div>
-            <div class="ky-5" onmousemove="s1(5)" onmouseout="s2(5)"><p>42354人</p></div>
-    </div>-->
 
 </section>
 <section  class="nav_tab" id="nav_tab6" style="display: none">
@@ -690,7 +673,7 @@
             <img src="image/icon_p3.png">
          </div>
          <div class="sp-3">
-             <p>最新视频</p>
+             <p>实验验证</p>
          </div>
          <div class="sp-4">
              <ul>

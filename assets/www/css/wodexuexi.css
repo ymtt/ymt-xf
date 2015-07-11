@@ -80,7 +80,6 @@ a{
     float: left;
 }
 .div6 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     line-height: 30px;
     text-align: center;
@@ -103,7 +102,7 @@ nav{
     height: 40px;
 
 }.div7 ul li{
-     width: 25%;
+     width: 33.33%;
      height: auto;
      float: left;
  }
@@ -115,7 +114,6 @@ nav{
 .div8 p{
     width: 80%;
     height: 20px;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     color: #000000;
     line-height: 20px;
@@ -127,7 +125,6 @@ nav{
 .div8-1{
     width: 80%;
     height: 20px;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     color: #000000;
     line-height: 20px;
@@ -155,7 +152,6 @@ section{
     margin-left: 5%;
 }
 .KS-1 p{
-   font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
    line-height: 20px;
     color: #000000;
@@ -168,7 +164,6 @@ section{
     margin-top: 5px;
 }
 .KS-2 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 20px;
     color: #737373;
@@ -212,7 +207,6 @@ section{
     margin-top: -30px;
 }
 .kc-2 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 30px;
     color: #ffffff;
@@ -230,7 +224,6 @@ section{
     border-bottom: 1px solid #ECECEC;
 }
 .xz-1 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     margin-left: 5%;
     line-height: 30px;
@@ -264,7 +257,6 @@ section{
     float: left;
 }
 .sc-3 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     line-height:40px;
 }
@@ -296,7 +288,6 @@ section{
     margin-left: 5%;
 }
 .sc-6 p{
-   font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 20px;
     color: #000000;
@@ -309,7 +300,6 @@ section{
 
 }
 .sc-7 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.7em;
     line-height: 20px;
     color: #737373;

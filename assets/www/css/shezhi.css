@@ -54,26 +54,25 @@ ul{
 }
 ul li{
     width: 100%;
-    height: 30px;
+    height: 40px;
     float: left;
     border-bottom: 1px solid #CCCCCC;
 }
 .div3{
     width: 100%;
-    height: 30px;
+    height: 40px;
 }
 .div3 p{
     width: 95%;
-    height: 30px;
-    line-height: 30px;
-    font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.95em;
     color: #000000;
     margin-left: 5%;
 }
 footer{
     width: 86%;
-    height: 30px;
+    height: 40px;
     margin-left: 7%;
     margin-top: 40px;
     float: left;
@@ -81,12 +80,11 @@ footer{
 }
 .div4{
     width: 100%;
-    height: 30px;
+    height:40px;
 }
 footer p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em ;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     color: #FFFFFF;
 }

@@ -46,7 +46,7 @@ header{
 }
 section{
     width: 100%;
-    height:165px;
+    height:155px;
     background: #EDEDED;
     float: left;
     margin-left: 1%;
@@ -54,20 +54,18 @@ section{
 }
 .section-1{
     width: 98%;
-    height:165px;
+    height:155px;
     background: #FFFFFF;
     border-radius: 10px;
 }
 .section-1 ul{
     list-style: none;
     width: 98%;
-    height: 150px;
 }
 .section-1 ul li{
     width: 32%;
-    height: auto;
+    height: 70px;
     float: left;
-    margin-bottom: 10px;
 }
 .div1{
     width: 60%;

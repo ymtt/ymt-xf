@@ -40,7 +40,6 @@ a{
     float: left;
 }
 .div3 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     line-height: 40px;
     color: #ffffff;
@@ -78,7 +77,6 @@ section{
     float: left;
 }
 .div6 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     line-height: 20px;
     margin-left: 5%;
@@ -89,7 +87,6 @@ section{
     float: left;
 }
 .div7 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.65em;
     line-height: 20px;
     margin-left: 5%;
@@ -102,7 +99,6 @@ section{
     margin-left: 5%;
 }
 .div10 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     color: #737373;
     margin-bottom: 10px;
@@ -134,7 +130,6 @@ section{
 }
 .div12-1 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 40px;
 
 }
@@ -155,7 +150,6 @@ footer{
     width: auto;
     height: auto;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     margin-left: 8%;
     color: #737373;
@@ -181,7 +175,6 @@ footer{
     width: auto;
     height: auto;
     line-height: 20px;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     color: #05A0D7;
 }
@@ -235,7 +228,6 @@ footer{
 }
 .div18 p {
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     text-align: center;
     color: #737373;
@@ -251,7 +243,6 @@ footer{
     color: #737373;
     background-color: #ffffff;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 30px;
     margin-top: 10px;
     text-align: center;

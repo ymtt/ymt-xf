@@ -85,7 +85,6 @@ a{
      float: left;
  }
 .div6 p {
-    font-family: "微软雅黑";
     font-size: 0.85em;
     line-height: 100px;
 }
@@ -96,7 +95,6 @@ a{
     float: left;
 }
 .div7 button{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #05A0D7;
     text-align: center;
@@ -139,7 +137,6 @@ footer ul li{
     background-size: 30px 30px;
 }
 .img1 p{
-   font-family: "方正兰亭纤黑";
     font-size: 0.75em;
     line-height: 60px;
     margin-left: 45%;
@@ -156,7 +153,6 @@ footer ul li{
     background-size: 30px 30px;
 }
 .img2 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 60px;
     margin-left: 40%;
@@ -171,7 +167,6 @@ footer ul li{
     margin-left: 5%;
 }
 .img3 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     line-height: 60px;
     margin-left: 40%;
@@ -216,7 +211,6 @@ footer ul li{
     margin-top: 25px;
 }
 .hh4 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.5em;
     color: #ffffff;
     line-height: 15px;
@@ -283,7 +277,6 @@ input{
     line-height: 30px;
     border-bottom: 1px solid #CCCCCC;
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     border-top: 1px solid #CCCCCC;
     background-color: #ECECEC;
     border-left: 0;
@@ -327,7 +320,6 @@ input{
     float: left;
 }
 .dome_3 p {
-    font-family: "微软雅黑";
     font-size: 0.85em;
     line-height: 60px;
 }
@@ -338,7 +330,6 @@ input{
     float: left;
 }
 .dome_4 p{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #05A0D7;
     text-align: center;
@@ -353,7 +344,6 @@ input{
     float: left;
 }
 .dome_5 p{
-    font-family: "微软雅黑";
     font-size: 0.75em;
     color: #05A0D7;
     text-align: center;

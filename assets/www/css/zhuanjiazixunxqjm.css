@@ -17,7 +17,6 @@ header {
     top: 0;
 
 }
-
 a {
     text-decoration: none;
 }
@@ -27,7 +26,6 @@ a {
     height: 40px;
     float: left;
 }
-
 .div1 img {
     width: 20px;
     max-width: 100%;
@@ -42,7 +40,6 @@ a {
     line-height: 40px;
     text-align: center;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
     margin-left: 25%;
 }
@@ -56,7 +53,6 @@ a {
     width:100%;
     line-height: 40px;
     font-size: 0.8em ;
-    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
 }
 section{
@@ -91,6 +87,7 @@ section{
     border-radius: 80px;
     margin-top: 3px;
     margin-left: 3px;
+    overflow: hidden;
 }
 .div5{
     width: 50%;
@@ -103,7 +100,6 @@ section{
     width: auto;
     height: auto;
     line-height: 30px;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     color: #FFFFFF;
 }
@@ -114,7 +110,6 @@ span{
     border: 1px solid #ffffff;
     margin-left: 40%;
     margin-top: -40px;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
 
 }
@@ -130,82 +125,44 @@ span button{
 }
 .div6{
     width: 100%;
+    height: 30px;
+    float: left;
+
+}
+.div6 p{
+   font-size: 0.9em;
+    line-height: 30px;
+    margin-left: 5%;
+}
+table{
+    width: 100%;
     height: auto;
     float: left;
-    margin-top: 10px;
-    border-bottom: 1px solid #CCCCCC;
-
+    border: 1px solid #cccccc;
+}
+td{
+    border: 1px solid #cccccc;
+}
+td p{
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 20px;
+}
+.p1{
+    width: 20%;
+}
+.p2{
+    width: 30%;
 }
 .div7{
-    width: 25%;
-    height: 40px;
+    width: 100%;
+    height: auto;
     float: left;
-    margin-left: 2%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc
 }
 .div7 p{
-    width: auto;
-    height: auto;
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 1em;
-    line-height: 40px;
+    font-size: 0.8em;
+    line-height: 20px;
     margin-left: 5%;
-    color: #737373;
 }
-.div8{
-    width: 70%;
-    height: auto;
-    float: left;
-}
-.div8 p{
-    width:100%;
-    height: auto;
-    font-size: 0.9em;
-    font-family: "方正兰亭纤黑_GBK";
-    color: #737373;
-    line-height: 18px;
-    margin-bottom: 30px;
-}
-.div9{
-    width: 25%;
-    height: 40px;
-    float: left;
-    margin-left: 2%;
-}
-.div9 p{
-    width: auto;
-    height: auto;
-    font-family: "方正兰亭纤黑_GBK";
-    font-size: 1em;
-    line-height: 40px;
-    margin-left: 5%;
-    color: #737373;
-}
-
-footer{
-    width: 100%;
-    height: 40px;
-    float: left;
-}
-.div17{
-    width:8% ;
-    height: 30px;
-    float: left;
-    margin-left: 10%;
-
-}
-.div17 img{
-    max-width: 100%;
-    margin-top: 10px;
-}
-
-.div19{
-    width:8% ;
-    height: 30px;
-    float: left;
-    margin-left: 20%;
-}
-.div19 img{
-    max-width: 100%;
-    margin-top: 10px;
-}
-

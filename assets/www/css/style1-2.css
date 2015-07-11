@@ -60,11 +60,10 @@ a{
     width: 100%;
     height: 30px;
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #FFFFFF;
     line-height: 30px;
 }
-.div6{
+.div6-2{
     width: 94%;
     height: 30px;
     background-color: #FFFFFF;
@@ -83,7 +82,6 @@ a{
     margin-left: 5%;
     line-height: 30px;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
 .div8{
@@ -97,7 +95,6 @@ a{
     margin-left:45% ;
     line-height: 30px;
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #737373;
 }
 .div9{
@@ -127,7 +124,6 @@ a{
 }
 .div10 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
@@ -147,7 +143,7 @@ a{
 }
 .div11 table tr td{
     width: 25%;
-    height: 10px;
+    height: 20px;
     border: 2px solid #FFFFFF;
 }
 .div11 table tr td p{
@@ -155,7 +151,7 @@ a{
     font-size: 0.75em;
     text-align: center;
     color: #FFFFFF;
-    line-height: 35px;
+    line-height: 10px;
 }
 section{
     width: 100%;
@@ -182,23 +178,23 @@ section ul li{
 }
 .div12 img{
     width: 100%;
-    height: 75px;
+    height: 70px;
     max-width: 100%;
 }
 .div13{
     width: 22%;
-    height: 75px;
+    height: 70px;
     margin-left: 2%;
     float: left;
 }
 .div13 img{
     width: 100%;
-    height: 75px;
+    height: 70px;
     max-width: 100%;
 }
 .div14{
     width: 46%;
-    height: 75px;
+    height: 70px;
     margin-right: 3%;
     float: right;
     overflow: hidden;
@@ -220,20 +216,19 @@ section ul li{
 }
 .div15 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #ffffff;
     line-height: 20px;
 }
 .div16{
     width: 46%;
-    height: 75px;
+    height: 70px;
     margin-left: 3%;
     float: left;
     overflow: hidden;
 }
 .div16 img{
     width: 100%;
-    height: 75px;
+    height: 70px;
     max-width: 100%;
 }
 .div17{
@@ -241,14 +236,13 @@ section ul li{
     height: 20px;
     float: left;
     margin-left:-46%;
-    margin-top: 55px;
+    margin-top: 50px;
     background: #09A087;
     filter:alpha(Opacity=80);
     -moz-opacity:0.7;opacity: 0.7;
 }
 .div17 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     color: #ffffff;
     line-height: 20px;
 }
@@ -257,24 +251,24 @@ section ul li{
 }
 .div18{
     width: 22%;
-    height: 75px;
+    height: 70px;
     margin-left: 2%;
     float: left;
 }
 .div18 img{
     width: 100%;
-    height: 75px;
+    height: 70px;
     max-width: 100%;
 }
 .div19{
     width: 22%;
-    height: 75px;
+    height: 70px;
     margin-left: 2%;
     float: left;
 }
 .div19 img{
     width: 100%;
-    height: 75px;
+    height: 70px;
     max-width: 100%;
 }
 .zc{
@@ -302,7 +296,6 @@ section ul li{
     border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 .zc-1 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     line-height: 30px;
     text-align: center;
@@ -353,7 +346,6 @@ section ul li{
     float: left;
 }
 .zc-4 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     line-height: 40px;
     color: #FFFFFF;
@@ -372,7 +364,6 @@ section ul li{
     float: left;
 }
 .zc-6 p {
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.85em;
     color: #FFFFFF;
     line-height: 30px;

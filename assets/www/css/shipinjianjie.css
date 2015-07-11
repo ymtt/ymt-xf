@@ -91,7 +91,6 @@ nav ul li{
 }
 .div5 p{
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     text-align: center;
     border-right: 1px solid #CCCCCC;
@@ -102,7 +101,6 @@ nav ul li{
     float: left;
 }
 .jianj p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em;
     line-height: 30px;
     margin-left: 5%;
@@ -113,7 +111,6 @@ nav ul li{
     float: left;
 }
 .jianj-1 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     line-height: 30px;
     margin-left: 5%;
@@ -124,7 +121,6 @@ nav ul li{
     float: left;
 }
 .jianj-2 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     line-height: 30px;
     margin-left: 5%;
@@ -135,7 +131,6 @@ nav ul li{
     float: left;
 }
 .jianj-3 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     line-height: 20px;
     margin-left: 5%;
@@ -160,7 +155,6 @@ nav ul li{
     float: left;
 }
 .ml-1 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     line-height: 30px;
 }
@@ -188,7 +182,6 @@ nav ul li{
     float: left;
 }
 .tj-2 p{
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.8em;
     line-height: 30px;
     margin-left: 5%;
@@ -221,7 +214,6 @@ nav ul li{
 }
 .pl-2 p{
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     color: #05A0D7;
 }
@@ -232,7 +224,6 @@ nav ul li{
 }
 .pl-3 p{
     font-size: 0.7em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     color: #737373;
 }
@@ -243,7 +234,6 @@ nav ul li{
 }
 .pl-4 p{
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 40px;
 }
 
@@ -289,7 +279,6 @@ nav ul li{
 }
 .div8 p {
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     text-align: center;
     color: #737373;
@@ -305,7 +294,6 @@ nav ul li{
     color: #737373;
     background-color: #ffffff;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 100%;
     text-align: center;
 }

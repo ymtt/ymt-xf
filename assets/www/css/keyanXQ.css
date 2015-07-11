@@ -79,7 +79,6 @@ section{
     width: 90%;
     margin-left: 5%;
     text-indent: 20px;
-    font-family: "微软雅黑";
     font-size:0.75em ;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -96,7 +95,6 @@ section{
     width: auto;
     height: auto;
     line-height: 40px;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 1em ;
     text-align: center;
     color: #FFFFFF;
@@ -111,7 +109,6 @@ section{
     width: auto;
     height: auto;
     font-size: 0.85em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     color: #05A0D7;
 }
@@ -125,7 +122,6 @@ section{
     width: auto;
     height: auto;
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
 }
 .div9{
@@ -156,7 +152,6 @@ section{
 }
 .div10-1 p{
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 40px;
     color:#000000 ;
 }
@@ -177,7 +172,6 @@ footer{
     width: auto;
     height: auto;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     margin-left: 8%;
     color: #737373;
@@ -203,7 +197,6 @@ footer{
     width: auto;
     height: auto;
     line-height: 20px;
-    font-family: "方正兰亭纤黑_GBK";
     font-size: 0.75em;
     color: #05A0D7;
 }
@@ -258,7 +251,6 @@ footer{
 }
 .div16 p {
     font-size: 0.75em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 20px;
     text-align: center;
     color: #737373;
@@ -274,7 +266,6 @@ footer{
     color: #737373;
     background-color: #ffffff;
     font-size: 1em;
-    font-family: "方正兰亭纤黑_GBK";
     line-height: 30px;
     text-align: center;
     margin-top: 10px;
