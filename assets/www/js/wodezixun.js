@@ -163,14 +163,18 @@ function CreateFocusList(head_pic,name,expert_id){
 function CancelFocus(expert_id){
     var session=window.sessionStorage.getItem("session");
     var user_id=window.localStorage.getItem("userid");
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.PersonalAction&expertID=xx&user_id=xx&method=cancel';
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.PersonalAction&method=cancel';
     $.ajax({
         type:'get',
         dataType:'json',
         url:url,
         data:{"sId":session,"expertID":expert_id,"user_id":user_id},
         success:function(data){
-            alert(JSON.stringify(data));
+            //alert(JSON.stringify(data));
+            //取消关注后重新加载当前网页
+            window.location.reload();
+            //加载后选中我的关注
+            change_nav(2);
         },
     });
 }
