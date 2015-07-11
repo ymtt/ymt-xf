@@ -4,21 +4,43 @@ function showexpert(){
     var obj=JSON.parse(strobj);
     //头像
     $(".div4").html("<img src='http://120.24.172.105:8000/"+obj.head_pic+"'>");
-    //名字
     $(".div2 p").html(obj.user_name);
-    $(".div5 p").html(obj.user_name);
-    //个人经历
-    $(".div8 p").html(obj.experience);
-    //擅长领域
-     $("#sc").html(obj.note);
-     //工作简历
-     $("#resume").html(obj.resume);
-     //期间
-    $("#work_time").html(obj.work_time);
-     //社会兼职
-     $("#social_part_time").html(obj.social_part_time);
-     //主要作品
-     $("#major_works").html(obj.major_works);
+    //政治面貌
+    $("#politics").html(obj.politics);
+    //所在地区
+    $("#addr").html(obj.addr);
+    //职位职称
+    $("#position_title").html(obj.position_title);
+    //从事专业年限
+    $("#pro_life").html(obj.pro_life);
+    //从事专业类别
+    $("#note").html(obj.note);
+    //最高学历
+    $("#education").html(obj.education);
+    //最高学位
+    $("#degree").html(obj.degree);
+    //执业资格
+    $("#qualification").html(obj.qualification);
+    //所属行业
+    $("#industry").html(obj.industry);
+    //申报方式
+    $("#reporting_methods").html(obj.reporting_methods);
+    //单位电话
+    $("#tel").html(obj.tel);
+    //工作单位地址
+    $("#work_addr").html(obj.work_addr);
+    //邮编
+    $("#work_zip_code").html(obj.work_zip_code);
+    //毕业院校及专业
+    $("#school").html(obj.school);
+    //工作单位名称
+    $("#work_name").html(obj.work_name);
+    //工作经历
+    $("#experience").html(obj.experience);
+    //工作实践经历
+    $("#work_experience").html(obj.work_experience);
+
+
 }
 
 //关注专家

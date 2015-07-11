@@ -2,7 +2,7 @@
 //获取QQ消息的所有内容,msgtype为QQUnreadMsg，，所有未读内容，msgtype为getQQAllMsg，，为所有消息内容
 function getallmsg(){
     //取出保存的session
-    var session=window.localStorage.getItem("session");
+    var session=window.sessionStorage.getItem("session");
 
     //获取qq_id，会话标识
     var qq_id=window.localStorage.getItem("qq_id");
@@ -30,7 +30,6 @@ function getallmsg(){
                  var obj=JSON.parse(str);
                 $("section").html("");
                 $(".div2 p").html(obj.msg_title);
-
                 $.each(list,function(key){
                     var reply_role=list[key]['reply_role'];
                     var content=list[key]['content'];
@@ -50,7 +49,7 @@ function getallmsg(){
 //发送消息
 function sendmsgs(content){
     //取出保存的session
-    var session=window.localStorage.getItem("session");
+    var session=window.sessionStorage.getItem("session");
     //获取qq_id，会话标识
     var qq_id=window.localStorage.getItem("qq_id");
     //得到某一条QQ消息的所有内容
@@ -62,7 +61,7 @@ function sendmsgs(content){
         data:{"SESSIONID":session,"qq_id":qq_id,"content":content},
         success:function(data){
             //ajax成功
-            alert("发送成功："+JSON.stringify(data));
+            alert("发送成功："+JSON.stringify(data)+""+session);
             $("section").append("<div class='div4'><div class='div7'><img src='image/16.png'></div><div class='div8'><p>"+content+"</p></div></div>");
         },error:function(error){
             //ajax失败

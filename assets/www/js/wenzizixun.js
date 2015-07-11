@@ -1,7 +1,7 @@
 function CreateXfnewsDom(title,content,hitnum,id){
                 $("section").append("<div class='div3'><a href='javascript:Towenzizixun("+"\""+id+"\""+",\"wenzizixunXQ.html\""+")'><div class='div4'><p>"+title+
                     "</p></div><div class='div5'><p>"+content+
-                    "</div><a href='javascript:getnews()'>加载更多</a>");
+                    "</div>");
         }
 function getnews(type){
 var session=window.sessionStorage.getItem("session");
@@ -11,7 +11,7 @@ var order=window.localStorage.getItem("order");
         type:'get',
         datatype:'json',
         url:url,
-        data:{"m":"list","type":type,"order":order,"start":"1","pagesize":"3"},
+        data:{"m":"list","type":type,"order":order,"start":"1"},
         success:function(data){
             var json=eval("("+data+")");
             if(json.result=="Y"){

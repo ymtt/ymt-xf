@@ -5,10 +5,9 @@
     <title>科研详情</title>
     <link rel="stylesheet" href="css/keyanXQ.css" type="text/css" media="screen">
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/kyxq.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            getkyobj();
+            document.addEventListener("deviceready",onDeviceReady,false);
         });
         function showdiv() {
             document.getElementById("bg").style.display ="block";
@@ -18,21 +17,65 @@
             document.getElementById("bg").style.display ='none';
             document.getElementById("show").style.display ='none';
         }
+
+
+      function onDeviceReady() {
+            alert('onDeviceReady2222');
+            try {
+              /*
+            window.requestFileSystem = window.requestFileSystem || window.webkitRequestFileSystem;
+            window.resolveLocalFileSystemURL = window.resolveLocalFileSystemURL                || window.ebkitResolveLocalFileSystemURL; //根据URL取得文件的读取权限
+            */
+
+            //查找是否有download这个文件夹，没有则创建，然后找到这个文件夹的绝对路径
+            window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {
+                fileSystem.root.getDirectory("download", {
+                    create: true,
+                    exclusive: false
+                }, function (entry) {
+                    //网上流传的资料中都是使用fullPath，在这里我获取到的是相对目录，在下载时使用会报错，所以换做了toURL()
+                    //这是一个全局全局变量，用以保存路径
+                    fullPath = entry.toURL();
+                    alert(fullPath.toString() + '创建文件夹成功');
+                    //console.log(fullPath);
+                }, function () {
+                    console.log('创建文件夹失败');
+                    alert('创建文件夹失败');
+                });
+            }, function () {
+                console.log('创建文件夹失败');
+                alert('创建文件夹失败');
+            });
+          }
+          catch (e) {
+            alert(e.name + ":" + e.message);
+          }
+        }
+
+
     </script>
     <link href="css/fd.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/fd.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/kyxq.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+            getkyobj();
             h();
             d();
-            /*$(".div6 p").click(function(){
+            $(".div6 p").click(function(){
+                if(downpdf()==null){
+                    alert("没有文件提供下载");
+                }else{
+                    /*window.location.href=downpdf();*/
+                    /*downloadfile(downpdf());*/
+                    httpheaderinfo(downpdf());
+                }
+            });
 
-                 window.location.href=downpdf();
-            });*/
-
-            $(".div6 p").html("<a href='"+downpdf()+"'>下载</a>");
+            /*$(".div6 p").html("<a href='"+downpdf()+"'>下载</a>");*/
         });
 
     </script>
@@ -60,7 +103,7 @@
     </div>
 
     <div class="div6">
-        <p><a href="javascript:;">下载</a></p>
+        <p>下载</p>
     </div>
     <div class="div7">
         <p>下载说明:</p>

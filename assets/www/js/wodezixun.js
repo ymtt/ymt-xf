@@ -91,7 +91,6 @@ function expertslist(){
              //alert("咨询列表获取成功"+result);
              var list=result.datas['listData'];
              $.each(list,function(key){
-
                 var fk_pro_id=list[key]['fk_pro_id'];
 
                 var msg_title=list[key]['msg_title'];
@@ -102,9 +101,14 @@ function expertslist(){
 
                 window.localStorage.setItem(id,obj);
 
-                if(null!=list||list!=""){
+                /*if(null!=list||list!=""||typeof (fk_pro_id)!=undefined){
                     CreateExpertsList(id,fk_pro_id,msg_title);
-                }
+                }*/
+                 if(typeof (fk_pro_id)=="undefined"){
+
+                 }else{
+                     CreateExpertsList(id,fk_pro_id,msg_title);
+                 }
              });
 
          },error:function(error){
@@ -134,12 +138,16 @@ function getfocus(){
         data:{"sId":session},
         success:function(data){
             var list=data.datas['listData'];
+            $("#nav_tab2").html("");
             $.each(list,function(key){
                 //专家头像
                 var head_pic='http://120.24.172.105:8000/'+list[key]['expert_head_pic']
                 //专家名字
                 var expert_name=list[key]['expert_name'];
-                CreateFocusList(head_pic,expert_name);
+                //专家id
+                var expert_id=list[key]['fk_expert_id'];
+
+                CreateFocusList(head_pic,expert_name,expert_id);
                 //alert(expert_name);
             });
             //alert(JSON.stringify(data));
@@ -147,6 +155,22 @@ function getfocus(){
     });
 }
 //创建关注列表
-function CreateFocusList(head_pic,name){
-   $("#nav_tab2").append("<div class='div4'><div class='div5'><img src='"+head_pic+"'></div><div class='div6'><p>"+name+"</p></div><div class='div7'><button>取消关注</button></div></div>");
+function CreateFocusList(head_pic,name,expert_id){
+   $("#nav_tab2").append("<div class='div4'><div class='div5'><img src='"+head_pic+"'></div><div class='div6'><p>"+name+"</p></div><div class='div7'><button  onclick=CancelFocus('"+expert_id+"')>取消关注</button></div></div>");
+}
+
+//取消关注
+function CancelFocus(expert_id){
+    var session=window.sessionStorage.getItem("session");
+    var user_id=window.localStorage.getItem("userid");
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.PersonalAction&expertID=xx&user_id=xx&method=cancel';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        data:{"sId":session,"expertID":expert_id,"user_id":user_id},
+        success:function(data){
+            alert(JSON.stringify(data));
+        },
+    });
 }

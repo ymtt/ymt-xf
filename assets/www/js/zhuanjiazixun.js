@@ -1,5 +1,4 @@
 /*****专家咨询******/
-
 function expertlist(pagesize,start){
     var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
     $.ajax({
@@ -11,21 +10,22 @@ function expertlist(pagesize,start){
             var list=data.datas['listData'];
             $.each(list,function(key){
                 //姓名
-                 var name=list[key]['user_name'];
+                 var name=list[key].user_name;
                  //履历
-                 var resume=(list[key]['resume']).substring(0,13);
+                 //var resume=(list[key].resume).substring(0,13);
+                var resume="";
                  //专家di
-                 var expertid=list[key]['fk_user_id'];
+                 var expertid=list[key].fk_user_id;
                  //头像
-                var head_pic='http://120.24.172.105:8000/'+list[key]['head_pic'];
-                 if(key=="0"){
+                var head_pic='http://120.24.172.105:8000/'+list[key].head_pic;
+
+                if(key=="0"){
                     CreateExpertzxleft(expertid,name,resume,head_pic);
                  }else if(key=="1"){
                     CreateExpertzxright(expertid,name,resume,head_pic);
                  }
-
             });
-        },
+        }
     });
 }
 //专家咨询页面专家
@@ -59,7 +59,7 @@ function gethhotandnew(m,pagesize,start){
                 var content=((list[key]['content']).replace(/<[^>]*>/gi,'')).substring(0,40);
                 if(m=="lastest"){
                      CreateZuijin(article_title,content);
-                }else if(m="hot"){
+                }else if(m=="hot"){
                      CreateHot(article_title,content);
                 }
 

@@ -79,6 +79,7 @@ function getspobj(){
     var spid=window.localStorage.getItem("shipid");
     var spstr=window.localStorage.getItem(spid);
     var spobj=JSON.parse(spstr);
+    $("#spzl").attr("src",spobj.attachment);
+    $(".jianj p").html((spobj.article_title));
     $(".jianj-3 p").html((spobj.content));
-    alert(spobj.id);
  }

@@ -8,27 +8,31 @@ function expertlist(pagesize,start){
         data:{"pagesize":pagesize,"start":start,"jl":"","kw":""},
         success:function(data){
             var list=data.datas['listData'];
+            var exarr=["普通专家","资深专家","国家级"];
             $.each(list,function(key){
                 //姓名
                  var name=list[key]['user_name'];
                  //头像
-                 var head_pic='http://120.24.172.105:8000/'+list[key]['head_pic'];
+                var head_pic='http://120.24.172.105:8000/'+list[key]['head_pic'];
                 //级别
                  var level=list[key]['level'];
 
                  if(level=="level1"){
-                    levelname="普通专家";
+                    levelname=exarr[0];
                  }else if(level=="level2"){
-                    levelname="资深专家";
+                    levelname=exarr[1];
                  }else if(level=="level3"){
-                    levelname="国家级";
+                    levelname=exarr[2];
+                 }else{
+                    levelname="外星人专家";
                  }
                  var expertid=list[key]['fk_user_id'];
                  var objstr=JSON.stringify(list[key]);
                  window.localStorage.setItem(expertid,objstr);
                  CreateMoreExpert(expertid,head_pic,name,levelname,"0","0");
+                 //alert(head_pic);
             });
-        },
+        }
     });
 }
 //添加专家列表
