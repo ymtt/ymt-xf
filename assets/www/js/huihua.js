@@ -1,3 +1,31 @@
+//获取一次数据并保存
+function Getexpert(){
+    var session=window.sessionStorage.getItem("session");
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        data:{"SESSIONID":session},
+        success:function(result){
+            var list=result.datas['listData'];
+            $.each(list,function(key){
+
+                var id=list[key]['id'];
+
+                var obj=JSON.stringify(list[key]);
+
+                window.localStorage.setItem(id,obj);
+            });
+
+        },error:function(error){
+            var json=JSON.stringify(error);
+            alert("获取失败"+json);
+        }
+    })
+}
+
+
 
 //获取QQ消息的所有内容,msgtype为QQUnreadMsg，，所有未读内容，msgtype为getQQAllMsg，，为所有消息内容
 function getallmsg(){
@@ -14,6 +42,9 @@ function getallmsg(){
     //得到某一条QQ消息的所有内容
 
 
+    //默认头像
+    var head_pic='http://120.24.172.105:8000/images/header.png';
+
     var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction';
     $.ajax({
         type:'get',
@@ -28,17 +59,23 @@ function getallmsg(){
                 var str=window.localStorage.getItem(qq_id);
                  //将对象字符串转换成对象
                  var obj=JSON.parse(str);
+                 var role=window.localStorage.getItem("userrole");
+
                 $("section").html("");
                 $(".div2 p").html(obj.msg_title);
                 $.each(list,function(key){
                     var reply_role=list[key]['reply_role'];
                     var content=list[key]['content'];
-                    if(reply_role=="002"){
-                        $("section").prepend("<div class='div4'><div class='div7'><img src='image/16.png'></div><div class='div8'><p>"+content+"</p></div></div>");
-                    }else{
-                        $("section").prepend("<div class='div4'><div class='div5'><img src='image/16.png'></div><div class='div6'><p>"+content+"</p></div></div>");
-                    }
+                    if(reply_role==role){
+                        /*如果是本人的消息，放在右边*/
+                        $("section").prepend("<div class='div4'><div class='div7'><img src='"+head_pic+"'></div><div class='div8'><p>"+content+"</p></div></div>");
+                    }else if(typeof (reply_role)=="undefined"){
+                        /*如果不知道是谁的消息*/
 
+                    }else{
+                        /*其余人的消息，放在左边*/
+                        $("section").prepend("<div class='div4'><div class='div5'><img src='"+head_pic+"'></div><div class='div6'><p>"+content+"</p></div></div>");
+                    }
                 });
         }
     });
@@ -48,6 +85,8 @@ function getallmsg(){
 
 //发送消息
 function sendmsgs(content){
+    //默认头像
+    var head_pic='http://120.24.172.105:8000/images/header.png';
     //取出保存的session
     var session=window.sessionStorage.getItem("session");
     //获取qq_id，会话标识
@@ -62,7 +101,7 @@ function sendmsgs(content){
         success:function(data){
             //ajax成功
             alert("发送成功："+JSON.stringify(data)+""+session);
-            $("section").append("<div class='div4'><div class='div7'><img src='image/16.png'></div><div class='div8'><p>"+content+"</p></div></div>");
+            $("section").append("<div class='div4'><div class='div7'><img src='"+head_pic+"'></div><div class='div8'><p>"+content+"</p></div></div>");
         },error:function(error){
             //ajax失败
             alert("发送失败："+JSON.stringify(error)+session+"/"+qq_id+"/"+content);
@@ -83,7 +122,7 @@ function currentdatetotimestamp(){
 
 var time=currentdatetotimestamp();
 
-//长轮询获取未读消息
+//轮询获取未读消息
 
 function getunreadmsg(data){
         //取出保存的session
@@ -93,6 +132,8 @@ function getunreadmsg(data){
         //用户id
        var userId=window.localStorage.getItem("user");
        //时间
+        //默认头像
+        var head_pic='http://120.24.172.105:8000/images/header.png';
 
 
        var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction';
@@ -109,8 +150,8 @@ function getunreadmsg(data){
 
                   var result=arr[3].substring(2,arr[3].length);
 
-               //alert(html);
-            $("section").append("<div class='div4'><div class='div5'><img src='image/16.png'></div><div class='div6'><p>"+result+"</p></div></div>");
+
+            $("section").append("<div class='div4'><div class='div5'><img src='"+head_pic+"'></div><div class='div6'><p>"+result+"</p></div></div>");
             });
        }
 
@@ -127,20 +168,6 @@ function getunreadmsg(data){
 
 }
 
-//邀请专家
-function  Inviteexperts(curChatId,userId){
-    var url='120.24.172.105:8000/index/consult/chat_partial/addExportUser.jsp';
-    $.ajax({
-        type:'post',
-        dataType:'json',
-        url:url,
-        data:{"curChatId":curChatId,"userId":userId},
-        success:function(data){
-            alert(JSON.stringify(data));
-        },error:function(error){
-            alert(JSON.stringify(error))
-        }
-    });
-}
+
 
 

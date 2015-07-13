@@ -1,4 +1,4 @@
-function expertslist(){
+function GetMyConversation(){
     var session=window.sessionStorage.getItem("session");
     var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
     $.ajax({
@@ -11,7 +11,10 @@ function expertslist(){
             //alert("咨询列表获取成功"+result);
             var list=result.datas['listData'];
             $.each(list,function(key){
-                var fk_pro_id=list[key]['fk_pro_id'];
+                //头像
+                var head_pic="http://120.24.172.105:8000/images/header.png";
+                var uname="流的滑";
+                var count=list[key]['count'];
 
                 var msg_title=list[key]['msg_title'];
 
@@ -24,10 +27,11 @@ function expertslist(){
                 /*if(null!=list||list!=""||typeof (fk_pro_id)!=undefined){
                  CreateExpertsList(id,fk_pro_id,msg_title);
                  }*/
-                if(typeof (fk_pro_id)=="undefined"){
+                if(typeof (id)=="undefined"){
 
                 }else{
-                    CreateExpertsList(id,fk_pro_id,msg_title);
+                    CreateMyconsulting(id,head_pic,uname,count,msg_title);
+                    //alert(id);
                 }
             });
 
@@ -37,7 +41,14 @@ function expertslist(){
         }
     })
 }
-/*添加我的咨询*/
- function CreateMyconsulting(){
+/*添加我的咨询列表*/
+ function CreateMyconsulting(id,head_pic,uname,count,msg){
+
+    $("#demo2").append("<div class='hh1'><a href='javascript:tohuihuazj("+"\""+id+"\""+")'><div class='hh2'><img src='"+head_pic+"'></div><div class='hh3'><p>"+uname+"</p></div><div class='hh4'><p>"+count+"</p></div><div class='hh5'><p>"+msg+"</p></div></a></div>");
 
  }
+//跳转到专家会话界面
+function tohuihuazj(id){
+    window.localStorage.setItem("qq_id",id);
+    window.location.href="huihuaZJ.html";
+}

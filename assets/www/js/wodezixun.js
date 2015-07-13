@@ -90,11 +90,15 @@ function expertslist(){
              //var json = eval("(" +result+ ")");
              //alert("咨询列表获取成功"+result);
              var list=result.datas['listData'];
+             $("#nav_tab1").html("");
              $.each(list,function(key){
-                var fk_pro_id=list[key]['fk_pro_id'];
+                //var fk_pro_id=list[key]['fk_pro_id'];
+                //默认头像
 
-                var msg_title=list[key]['msg_title'];
+                 var head_pic='http://120.24.172.105:8000/images/header.png';
 
+                var msg_title=(list[key]['msg_title']).substring(0,16);
+                var count=list[key]['count'];
                 var id=list[key]['id'];
 
                 var obj=JSON.stringify(list[key]);
@@ -104,10 +108,10 @@ function expertslist(){
                 /*if(null!=list||list!=""||typeof (fk_pro_id)!=undefined){
                     CreateExpertsList(id,fk_pro_id,msg_title);
                 }*/
-                 if(typeof (fk_pro_id)=="undefined"){
+                 if(typeof (id)=="undefined"){
 
                  }else{
-                     CreateExpertsList(id,fk_pro_id,msg_title);
+                     CreateExpertsList(id,"",msg_title,count,head_pic);
                  }
              });
 
@@ -118,8 +122,8 @@ function expertslist(){
      })
  }
 //添加列表到wodezixun.html页面
-function CreateExpertsList(id,fk_pro_id,msg_title){
-    $("#nav_tab1").append("<div class='hh1'><a href='javascript:tohuihua("+"\""+id+"\""+")'><div class='hh2'><img src='image/25.png'></div><div class='hh3'><p>"+fk_pro_id+"</p></div><div class='hh4'><p>4</p></div><div class='hh5'><p>"+msg_title+"</p></div></a></div>");
+function CreateExpertsList(id,fk_pro_id,msg_title,count,head_pic){
+    $("#nav_tab1").append("<div class='hh1'><a href='javascript:tohuihua("+"\""+id+"\""+")'><div class='hh2'><img src='"+head_pic+"'></div><div class='hh3'><p>"+fk_pro_id+"</p></div><div class='hh4'><p>"+count+"</p></div><div class='hh5'><p>"+msg_title+"</p></div></a></div>");
 }
 
 //设置会话id,点击之后执行跳转
