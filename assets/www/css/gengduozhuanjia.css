@@ -64,26 +64,13 @@ section{
     float: left;
     border-bottom: 1px solid #cccccc;
 }
-.div4-1{
-    width: 30%;
-    height: auto;
-    float: left;
-}
-.div4-1 p{
-    font-size: 0.9em;
+.div4 p{
+    font-size:1em;
     line-height: 30px;
-    margin-left: 15%;
+    margin-left: 5%;
     color: #000000;
 }
-.div4-2{
-    width: 10%;
-    height: auto;
-    float: right;
-}
-.div4-2 img{
-    max-width: 100%;
-    margin-top: 5px;
-}
+
 .div5{
     width: 100%;
     height: auto;

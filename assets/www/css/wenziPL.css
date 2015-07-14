@@ -19,14 +19,14 @@ a{
 }
 .div1 {
     width: 10%;
-    height: auto;
+    height: 40px;
     float: left;
-    margin-left: 3%;
 }
 
 .div1 img {
+    width: 20px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .div2{
@@ -172,4 +172,40 @@ section{
     line-height: 20px;
     margin-left: 20%;
     margin-bottom: 10px;
+}
+.zz-3{
+    position: fixed;;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7) ;
+    display: none;
+    bottom: 0;
+}
+.zz-4{
+    display: none;
+    position: absolute;
+    width: 60%; height:auto; top: 40%;left: 20%;
+    background-color: white;
+    z-index:1002;
+
+}
+.div18{
+    width:100% ;
+    height:auto;
+    float: left;
+
+}
+
+.div19{
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+}
+.div19 p{
+    font-size: 0.8em;
+    line-height: 40px;
+    margin-left: 10%;
+    color: #737373;
 }

@@ -100,12 +100,11 @@ section{
     border-bottom: 1px solid #d5d5d5;
 }
 .div8 textarea{
-    width: 95%;
+    width: 90%;
     height: 40px;
     border: 0;
-    margin-left: 5%;
+    margin-left:5%;
     margin-top: 10px;
-
 }
 .div9{
     width: 100%;
@@ -114,7 +113,7 @@ section{
     border-bottom: 1px solid #d5d5d5;
 }
 .div9 textarea{
-    width: 95%;
+    width: 90%;
     height: 80px;
     border: 0;
     margin-left: 5%;

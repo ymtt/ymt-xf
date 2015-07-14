@@ -10,28 +10,21 @@
     <link rel="stylesheet" type="text/css" href="css/zhuce4.css"  media="screen and (min-height:667px) and (max-height:736px)" >
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="js/zhuce.js" type="text/javascript"></script>
-
     <script type="text/javascript">
-
         var bphone;
         var bpass;
-
-
     $(document).ready(function () {
              /*$("#loginname").click(function(){
                 alert(check_username("loginname"));
              });*/
-
              $('#submitform').click(function () {
                     var ajaxURL="http://120.24.172.105:8000/fw?controller=com.xfsm.action.RegAction"
                     var loginname=$("#loginname").val();
                     var pwd=$("#pwd").val();
                     var phone=$("#phone").val();
                     //alert($("#regform").serialize());
-
                     //协议复选框
                     var confirmBox = document.getElementById("agreement");
-
                     if(confirmBox.checked){
                         if(checkalert()==true){
                             $.ajax({
@@ -56,14 +49,12 @@
                         }else{
                             alert(checkalert()[0]);
                         }
-
                     }else{
                         alert("请同意协议");
                         return false;
                     }
               })
     })
-
     </script>
 
 </head>

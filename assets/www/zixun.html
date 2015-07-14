@@ -24,40 +24,29 @@
         var edustart=0;
         var eduend=10;
      $(document).ready(function(){
-
          var id=window.localStorage.getItem("change_navid");
-
          if(""==id||null==id){
              //没有点击过默认第一个
-             change_nav(1);
+             change_nav(2);
          }else{
              //重新加载时默认到之前点击的选项卡
              change_nav(id);
          }
-
         var index=window.localStorage.getItem("Index");
         $("#back").attr("href",index);
-
-
         document.addEventListener("deviceready", onDeviceReady, false);
-
             //图片新闻
             getpicnews();
             //热点新闻
              hotzixun("xf_article_h_news","read");
              setTimeout("hotzixun('xf_article_h_news','new')",30);
             //最新资讯
-
-
             //消防公告
              //setInterval("dsad()",50);
-
              //初始加载10条，加载更多在loadmorenews.js
              getnews("xf_article_h_notice",CreateNoticeDom,noticestart,noticeend,"notice");
-
              //教育新闻
              getnews("xf_article_h_edu",CreateEduDom,edustart,eduend,"edu");
-
              //var s={'sss':'cccc'};
              //CreateNewZixun("国家主席习近平近日访问火星","就两星和平发展做出重要讲话","77",s);
      });
@@ -116,7 +105,6 @@
         <!--<ul>-->
             <!--<li><a href="ZXzuijinliulan.html"><p>最近浏览</p></a></li>-->
             <!--<li><a href="ZXlishijilu.html"><p class="p1">历史记录</p></a></li>-->
-
         <!--</ul>-->
     <!--</div>-->
 </header>
@@ -186,7 +174,6 @@
         <!--</ul>-->
     <!--</div>-->
 <!--</nav>-->
-
 <div class="div4">
     <ul>
         <li  class="nav_item1" id="nav_item1" onClick="change_nav(1)">
@@ -205,7 +192,6 @@
         <div class="div7"><p>图片资讯</p></div>
         <span class="span-1"><a href="tupianzixun.html"> <p>更多</p></a></span>
     </div>
-    
     <div class="div9">
         <ul>
             <!--<li>
@@ -257,7 +243,6 @@
         </a>
     </div>-->
 </section>
-
 <!--消防公告-->
 <section class="nav_tab1" id="nav_tab2" style="display: none">
 
@@ -277,13 +262,9 @@
         <a href="javascript:adds()">点击加载更多</a>
     </div>
     -->
-
-
 </section>
-
 <!--教育资讯-->
 <section class="nav_tab2" id="nav_tab3" style="display: none">
-
     <!--<div class="zx">
         <a href="jiaoyuXQ.html">
             <div class="zx-1">
@@ -296,7 +277,6 @@
             </div>
         </a>
     </div>-->
-
 </section>
 <script src="js/loadmorenews.js"></script>
 </body>

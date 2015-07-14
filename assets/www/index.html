@@ -29,7 +29,6 @@
          $(document).ready(function(){
               document.addEventListener("deviceready", onDeviceReady, false);
          });
-
         function loaded(){
             try{
                 var HomeLogo=window.localStorage.getItem("HomeLogo");
@@ -40,7 +39,6 @@
                 alert("设备不支持！");
             }
         }
-
         function onDeviceReady() {
              //按钮事件
             document.addEventListener("backbutton", eventBackButton, false); //返回键
@@ -66,8 +64,7 @@
         function exitApp(){
                 navigator.app.exitApp();
         }
-
-        //菜单键
+       //菜单键
         function eventMenuButton(){
             window.plugins.toast.showShortCenter('点击了 菜单 按钮!');
         }
@@ -76,7 +73,6 @@
 
     <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
     <style>
-
     </style>
 </head>
 <body onload="loaded()">

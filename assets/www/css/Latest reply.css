@@ -54,72 +54,62 @@ section{
     width: 100%;
     height: auto;
     float: left;
-}
-.div4{
-    width: 100%;
-    height: auto;
-    float: left;
     margin-top: 40px;
-
 }
-.div4 ul{
-    list-style: none;
-    width:100%;
-    height: 30px;
-}
-.div4 ul li{
-    width:16.66%;
-    height: 30px;
-    float: left;
-}
-.div5{
-    width: 100%;
-    height: 30px;
-    float: left;
-}
-.div5 p{
-    width: 100%;
-    height: 20px;
-    font-size:0.7em;
-    line-height: 20px;
-    text-align: center;
-    border-right: 1px solid #ECECEC;
-    margin-top: 5px;
-}
-#p6{
-    border: 0;
-}
-ul{
-    width: 100%;
-    height: auto;
-    list-style: none;
-}
-ul li{
+.div4 {
     width: 100%;
     height: auto;
     float: left;
     border-bottom: 1px solid #cccccc;
 }
+.div5{
+    width: 50%;
+    height: 30px;
+    float: left;
+}
+.div5 p{
+    margin-left: 10%;
+    font-size: 0.8em;
+    line-height: 30px;
+    color:#05A0D7;
+}
 .div6{
     width: 50%;
-    height: auto;
+    height: 30px;
     float: left;
 }
 .div6 p{
     font-size: 0.8em;
     line-height: 30px;
+    float: left;
+    margin-left: 60%;
     color: #000000;
-    margin-left: 10%;
+}
+.div6 img{
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 5%;
 }
 .div7{
-    width: 50%;
-    height: auto;
+    width: 100%;
+    height: 20px;
     float: left;
 }
 .div7 p{
-    font-size: 0.7em;
-    line-height: 30px;
+    font-size: 0.625em;
+    line-height: 20px;
+    margin-left: 5%;
     color: #737373;
-    float: right;
-    margin-right: 10%;
+}
+.div8{
+    width: 90%;
+    height: 60px;
+    float: left;
+    overflow: hidden;
+}
+.div8 p{
+    font-size: 0.8em;
+    line-height: 20px;
+    margin-left: 5%;
+    color: #000000;
 }

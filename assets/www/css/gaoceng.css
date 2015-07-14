@@ -79,7 +79,7 @@ section{
 }
 .div6{
     width: 90%;
-    height:60px;
+    height:40px;
     float: left;
     margin-left: 5%;
     margin-bottom: 10px;
@@ -89,4 +89,22 @@ section{
     font-size: 0.75em;
     color: #CCCCCC;
     line-height: 20px;
+}
+.ky-4{
+    width:25px ;
+    margin-top: 10px;
+    float: left;
+    margin-left: 70%;
+}
+.ky-5{
+    width: 15%;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ky-5 p{
+    font-size: 0.8em;
+    line-height: 25px;
+    text-align: center;
 }

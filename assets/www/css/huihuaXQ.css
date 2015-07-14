@@ -68,7 +68,7 @@ section{
     width: 100%;
     height: auto;
     float: left;
-
+    margin-top: 10px;
 }
 .div5{
     width: 20%;
@@ -79,7 +79,6 @@ section{
     width: 40px;
     height: 40px;
     border-radius: 40px;
-    margin-top: 15px;
     margin-left: 20%;
 }
 .div6{

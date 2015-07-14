@@ -13,16 +13,58 @@
             h();
             d();
         });
+    </script>
+    <script type="text/javascript">
+        function gtouchstart(i){
+            timeOutEvent = setTimeout("longPress()",500);//这里设置定时器，定义长按500毫秒触发长按事件，时间可以自己改，个人感觉500毫秒非常合适
+            if(i!=0) {
+                document.getElementById("h"+i).style.backgroundColor = "#EDEDED";
+            }
+            return false;
+        }
+        //手释放，如果在500毫秒内就释放，则取消长按事件，此时可以执行onclick应该执行的事件
+        function gtouchend(i){
+            clearTimeout(timeOutEvent);//清除定时器
+            if(timeOutEvent!=0){
+                //这里写要执行的内容（尤如onclick事件）
+                if(i!=0) {
+                    document.getElementById("h"+i).style.backgroundColor = "#FFFFFF";
+                }
+            }
+            return false;
+        };
+        //如果手指有移动，则取消所有事件，此时说明用户只是要移动而不是长按
+        function gtouchmove(i){
+            clearTimeout(timeOutEvent);//清除定时器
+            timeOutEvent = 0;
+            if(i!=0) {
+                document.getElementById("h"+i).style.backgroundColor = "#FFFFFF";
+            }
+        };
+
+        //真正长按后应该执行的内容
+        function longPress(){
+            timeOutEvent = 0;
+            document.getElementById("bg1").style.display ="block";
+            document.getElementById("show1").style.display ="block";
+            document.getElementById("h1").style.backgroundColor = "#FFFFFF";
+            document.getElementById("h2").style.backgroundColor = "#FFFFFF";
+            document.getElementById("h3").style.backgroundColor = "#FFFFFF";
+        }
+        function a(){
+            document.getElementById("bg1").style.display="none";
+            document.getElementById("show1").style.display ="none";
+
+        }
 
     </script>
 </head>
 <body>
 <header>
-    <a href="wenzizixunXQ.html"><div class="div1"> <img src="image/return_icon.png"></div></a>
-    <div class="div2"><img src="image/Write_comments_on-_icon1.png"></div>
+    <a href="forum.html"><div class="div1"> <img src="image/icon_return.png"></div></a>
 </header>
 <section>
-    <div class="div3">
+    <div class="div3" ontouchstart="gtouchstart(1)" ontouchmove="gtouchmove(1)" ontouchend="gtouchend(1)" id="h1">
         <div class="div4">
             <div class="div5">
                 <div class="div6">
@@ -35,20 +77,12 @@
                     <p>2015-3-10   来自手机</p>
                 </div>
             </div>
-            <div class="div9">
-                <div class="div10">
-                    <p>543</p>
-                </div>
-                <div class="div11">
-                    <img src="image/zan.png">
-                </div>
-            </div>
         </div>
         <div class="div12">
             <p>说了半天几点开始啊</p>
         </div>
     </div>
-    <div class="div3">
+    <div class="div3" ontouchstart="gtouchstart(2)" ontouchmove="gtouchmove(2)" ontouchend="gtouchend(2)" id="h2">
         <div class="div4">
             <div class="div5">
                 <div class="div6">
@@ -61,20 +95,12 @@
                     <p>2015-3-10   来自手机</p>
                 </div>
             </div>
-            <div class="div9">
-                <div class="div10">
-                    <p>543</p>
-                </div>
-                <div class="div11">
-                    <img src="image/zan.png">
-                </div>
-            </div>
         </div>
         <div class="div12">
             <p>不让说话</p>
         </div>
     </div>
-    <div class="div3">
+    <div class="div3" ontouchstart="gtouchstart(3)" ontouchmove="gtouchmove(3)" ontouchend="gtouchend(3)" id="h3">
         <div class="div4">
             <div class="div5">
                 <div class="div6">
@@ -87,20 +113,12 @@
                     <p>2015-3-10   来自手机</p>
                 </div>
             </div>
-            <div class="div9">
-                <div class="div10">
-                    <p>543</p>
-                </div>
-                <div class="div11">
-                    <img src="image/zan.png">
-                </div>
-            </div>
         </div>
         <div class="div12">
             <p>说了半天几点开始啊</p>
         </div>
     </div>
-    <div class="div3">
+    <div class="div3" ontouchstart="gtouchstart(4)" ontouchmove="gtouchmove(4)" ontouchend="gtouchend(4)" id="h4">
         <div class="div4">
             <div class="div5">
                 <div class="div6">
@@ -111,14 +129,6 @@
                 </div>
                 <div class="div8">
                     <p>2015-3-10   来自手机</p>
-                </div>
-            </div>
-            <div class="div9">
-                <div class="div10">
-                    <p>543</p>
-                </div>
-                <div class="div11">
-                    <img src="image/zan.png">
                 </div>
             </div>
         </div>
@@ -126,7 +136,7 @@
             <p>怎么看都是中国军人最帅</p>
         </div>
     </div>
-    <div class="div3">
+    <div class="div3" ontouchstart="gtouchstart(5)" ontouchmove="gtouchmove(5)" ontouchend="gtouchend(5)" id="h5">
         <div class="div4">
             <div class="div5">
                 <div class="div6">
@@ -137,14 +147,6 @@
                 </div>
                 <div class="div8">
                     <p>2015-3-10   来自手机</p>
-                </div>
-            </div>
-            <div class="div9">
-                <div class="div10">
-                    <p>543</p>
-                </div>
-                <div class="div11">
-                    <img src="image/zan.png">
                 </div>
             </div>
         </div>
@@ -179,5 +181,26 @@
         </div>
     </div>
 </section>
+<div class="zz-3" id="bg1"  onclick="a()" >
+</div>
+<div class="zz-4" id="show1">
+    <div class="div18">
+        <div class="div19">
+            <a href="">
+                <p>回复</p>
+            </a>
+        </div>
+        <div class="div19">
+            <a href="">
+                <p>复制</p>
+            </a>
+        </div>
+        <div class="div19">
+            <a href="">
+                <p>举报</p>
+            </a>
+        </div>
+    </div>
+</div>
 </body>
 </html>

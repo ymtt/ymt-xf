@@ -30,7 +30,7 @@ a{
     margin-top: 10px;
 }
 .div2 {
-    width: 80%;
+    width: 70%;
     height: auto;
     float: left;
 
@@ -39,7 +39,16 @@ a{
     line-height: 40px;
     font-size: 1em;
     color: #FFFFFF;
-    text-align: center;
+    margin-left: 46%;
+}
+.div2-1{
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+}
+.div2-1 img{
+    width: 20px;
 }
 .div3{
     width: 10%;

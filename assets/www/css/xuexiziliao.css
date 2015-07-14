@@ -41,6 +41,15 @@ a{
     color: #FFFFFF;
    text-align: center;
 }
+.div2-1{
+    width: 10%;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+}
+.div2-1 img{
+    width: 20px;
+}
 nav{
     width: 100%;
     height:auto;

@@ -6,15 +6,17 @@ a{
     text-decoration: none;
 }
 .div1{
-    width: 40%;
     height: auto;
     position: absolute;
-    left: 40%;
+    left: 10%;
+    top: -4px;
+
 }
 .div1 img{
-    width: 80px;
-    max-width:100%
+    width: 140px;
+    max-width:100%;
 }
+
 .div2{
     width: auto;
     height: auto;

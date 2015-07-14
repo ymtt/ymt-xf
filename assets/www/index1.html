@@ -16,12 +16,9 @@
     <link rel="stylesheet" type="text/css" href="css/ionicons.css">
     <script src="js/zixunclass.js"></script>
     <script type="text/javascript">
-
      $(document).ready(function(){
               document.addEventListener("deviceready", onDeviceReady, false);
      });
-
-
         function loaded(){
             try{
                 var HomeLogo=window.localStorage.getItem("HomeLogo");
@@ -32,13 +29,11 @@
                 alert("设备不支持！");
             }
         }
-
         function onDeviceReady() {
              //按钮事件
             document.addEventListener("backbutton", eventBackButton, false); //返回键
             document.addEventListener("menubutton", eventMenuButton, false); //菜单键
             }
-
            //返回键
             function eventBackButton(){
                 //confirm("再点击一次退出!");
@@ -80,13 +75,11 @@
     <ion-side-menu-content>
         <ion-header-bar class="bar-calm">
             <a menu-toggle="left" class="button icon ion-navicon-round"></a>
-            <div class="div1"><img src="image/logo_z2.png"></div>
+            <div class="div1"><img src="image/logo_z3.png"></div>
             <a href="sousuo.html"><div class="div2">
                 <img src="image/icon_search_1.png">
             </div></a>
         </ion-header-bar>
-
-
         <ion-content class="positive-bg">
             <ion-slide-box does-continue="true" auto-play="true"  >
                 <ion-slide>
