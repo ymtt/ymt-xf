@@ -5,7 +5,7 @@
 html,body{
     width: 100%;
     height:auto;
-    background-color: #EDEDED;
+
 }
 header{
     width: 100%;
@@ -125,7 +125,7 @@ section{
     font-size: 0.85em;
     color: #CCCCCC;
     margin-bottom: 10px;
-    line-height: 130%;
+    line-height:25px;
 }
 .section-1{
     width: 100%;

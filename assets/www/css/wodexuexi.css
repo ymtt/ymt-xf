@@ -133,7 +133,7 @@ nav{
     border-right: 1px solid #ECECEC;
     margin-left: 10%;
 }
-.div8-1{
+.div8-1 p{
     width: 80%;
     height: 20px;
     font-size: 0.85em;
@@ -157,22 +157,24 @@ section{
     overflow: hidden;
 }
 .KS-1{
-    width: 92%;
+    width: 100%;
     height: auto;
     float: left;
-    margin-left: 5%;
 }
 .KS-1 p{
+    width: 90%;
+    margin-left: 5%;
     font-size: 0.85em;
-   line-height: 20px;
+    line-height: 20px;
     color: #000000;
-
+    margin-top: 10px;
 }
 .KS-2{
     width: 100%;
     height: auto;
     float: left;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 .KS-2 p{
     font-size: 0.75em;
@@ -281,14 +283,15 @@ section{
     width: 15%;
     height: auto;
     float: left;
-    margin-top: 10px;
 }
 .sc-5 p{
+    width: 20px;
+    height: 20px;
     background-color: #05A0D7;
     color: #ffffff;
-    border-radius: 20px;
-    margin-top: 5px;
-    margin-left: 20%;
+    border-radius:20px;
+    margin-top: 20px;
+    margin-left: 30%;
     text-align: center;
     line-height: 20px;
 }
@@ -297,21 +300,15 @@ section{
     height: auto;
     float: left;
     margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .sc-6 p{
     font-size: 0.75em;
     line-height: 20px;
     color: #000000;
+    margin-top: 5px;
 }
-.sc-7{
-    width:80%;
-    height: auto;
-    margin-left: 20%;
-    float: left;
-
-}
-.sc-7 p{
-    font-size: 0.7em;
-    line-height: 20px;
+.sc-6 .p1{
     color: #737373;
 }

@@ -4,7 +4,7 @@
 }
 html,body{
     width: 100%;
-    height:700px;
+    height:auto;
     background-color: #EDEDED;
 }
 header{
@@ -63,7 +63,7 @@ header{
 }
 section{
     width: 100%;
-    height: 655px;
+    height: auto;
     background-color: #FFFFFF;
 }
 .div4{

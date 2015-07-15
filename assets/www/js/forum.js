@@ -61,8 +61,6 @@ function CreateForumDom(fid,fup,name,type,data){
         //alert(name+fup);
     }
 }
-
-
 function a()
 {
 

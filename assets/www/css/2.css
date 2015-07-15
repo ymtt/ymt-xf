@@ -38,7 +38,6 @@
     5% 0% 0% 3%;
     overflow:hidden;
 }
-
 .apps {
     margin:0px;
     list-style: none;
@@ -49,23 +48,17 @@
     width: 35%;
     margin-right: 3%;
     float:left;
-
     padding: 2% 0% 2% 0%;
     margin-bottom: 3%;
     font: 16px/1.231 "Lato", sans-serif;
     color:#fff;
-
     min-height: 90px;
-
     line-height: 90px !important;
-
-    background: rgba(22, 164, 254, 0.5);
-
+    background: rgba(22, 164, 254, 0.5)
 }
 .apps>li:active {
     background:rgba(58, 142, 190, 0.5);
 }
-
 .apps img {
     width:60%;
     margin-bottom:5px;
