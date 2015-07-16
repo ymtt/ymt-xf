@@ -8,20 +8,22 @@
     <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/fd.js"></script>
+    <script src="js/Novice_answer.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             h();
             d();
+            getThreadContent();
         });
     </script>
 </head>
 <body>
 <header>
-    <a href="forum.html"><div class="div1"><img src="image/icon_return.png"></div></a>
-    <div class="div2"><p>新手答疑</p></div>
+    <a href="javascript:window.history.back(-1);"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <div class="div2"><p></p></div>
     <div class="div3">
         <a href="wenziPL.html">
-        <p>324</p>
+        <p id="comment">324</p>
         <img src="image/icon_comments_1.png">
             </a>
     </div>

@@ -21,29 +21,39 @@
         $(document).ready(function(){
             //获得所有消息
             getallmsg();
+
             //普通轮询获得消息
             //setInterval('getunreadmsg()',500);
+
             //绑定点击发送事件
             $("#ss2").click(function(){
                 var s=$("#ss").val();
                 sendmsgs(s);
             });
+
             //随时检查文本框值有无改变，从而改变按钮
             setInterval('a()',100);
-           getunreadmsg({});
+
+
+
+            //getunreadmsg({});
+            setInterval('getunreadmsgbyall()',500);
             //alert(currentdatetotimestamp());
         });
+
+
         //读取未读消息
         //function getunreadmsg(){
         //      getmsg("getQQUnreadMsg");
         //}
+
+
         function a(){
             var s=$("#ss").val();
             if(s==""||s==null){
                 $("#ss1").css("display","block");
                 $("#ss2").css("display","none");
             }else if(s!=""||s!=null){
-
                 $("#ss1").css("display","none");
                 $("#ss2").css("display","block");
             }

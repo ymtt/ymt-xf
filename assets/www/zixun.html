@@ -14,15 +14,21 @@
         $(document).ready(function(){
             h();
             d();
+           /* var noticecache=window.localStorage.getItem("noticecache");
+            if(noticecache!=""||noticecache!=null||typeof (noticecache)!="undefined"){
+                $("#nav_tab2").html("");
+                $("#nav_tab2").html(noticecache);
+            }*/
         });
 
     </script>
    <!--<script src="cordova.js"></script>-->
     <script type="text/javascript">
-        var noticestart=0
+        var noticestart=0;
         var noticeend=10;
         var edustart=0;
         var eduend=10;
+
      $(document).ready(function(){
          var id=window.localStorage.getItem("change_navid");
          if(""==id||null==id){

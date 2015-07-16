@@ -19,6 +19,7 @@
             }
         }
         $(document).ready(function(){
+
             Getexpert();
             //获得所有消息
             getallmsg();
@@ -37,7 +38,8 @@
 
 
 
-            getunreadmsg({});
+            //getunreadmsg({});
+            setInterval('getunreadmsgbyall()',500);
            //alert(currentdatetotimestamp());
         });
         
