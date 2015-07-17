@@ -38,5 +38,5 @@ function getzhentiall(start){
 function CreateZhenTiAll(id,title,files,hitnum){
     var file=downpdf(files);
     /*$("#"+div).append("<li><a href=javascript:downloadfile(\'"+file+"\')><div class='div9'><img src='image/icon_l_1.png'></div><div class='div10'><p>"+title+"</p></div></a></li>");*/
-    $("section").append(" <div class='div4'><a href=javascript:downloadfile(\'"+file+"\')><div class='div4-1'><div class='div5'><img src='image/icon_l_1.png'></div><div class='div6'><p>"+title+"</p></div></div></a><img src='image/icon_collect_l.png' id='div8' class='div8' onclick='change_pic(this)'><div class='div9'><p>"+hitnum+"</p></div></div>");
+    $("section").append(" <div class='div4'><a href=javascript:downloadfile(\'"+file+"\')><div class='div4-1'><div class='div5'><img src='image/icon_l_1.png'></div><div class='div6'><p>"+title+"</p></div></div></a><div class='div9'><img src='image/icon_collect_l.png' id='div8' class='div8' onclick='change_pic(this)'><p>"+hitnum+"</p></div></div>");
 }

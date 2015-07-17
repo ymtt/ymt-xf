@@ -29,7 +29,7 @@ function getzixunlist(pagesize,start){
                 //将文章id和文章对象字符串对应保存
                 window.localStorage.setItem(id,objstr);
                 var com=list[key]['hitnum'];
-                $("section").append("<div class='div4'><a href='javascript:ToGaocengxq("+"\""+id+"\""+")'><div class='div5'><p>"+article_title+"</p></div><div class='div6'><p>"+describe+"</p></div></a><img src='image/icon_collect_l.png' id='div9' class='ky-4' onclick='change_pic(this)'><div class='ky-5'><p>"+com+"</p></div></div>");
+                $("section").append("<div class='div4'><a href='javascript:ToGaocengxq("+"\""+id+"\""+")'><div class='div5'><p>"+article_title+"</p></div><div class='div6'><p>"+describe+"</p></div></a><div class='ky-5'><img src='image/icon_collect_l.png' id='div9' class='ky-4' onclick='change_pic(this)'><p>"+com+"</p></div></div>");
             });
             $("section").append("<a href='javascript:;'onclick='addMoreZixun(this);'>加载更多</a>");
         },
