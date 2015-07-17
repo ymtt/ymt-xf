@@ -28,6 +28,7 @@ function getSubjectList(){
  };
 
  function threadTid(threadTid){
+    alert(threadTid);
     window.localStorage.setItem("tid",threadTid);
     window.location.href="forumcontent.html";
  }

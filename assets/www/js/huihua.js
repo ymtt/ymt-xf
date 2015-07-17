@@ -64,8 +64,11 @@ function getallmsg(){
                 $("section").html("");
                 $(".div2 p").html(obj.msg_title);
                 $.each(list,function(key){
+                    //消息的角色
                     var reply_role=list[key]['reply_role'];
+                    //消息内容
                     var content=list[key]['content'];
+
                     if(reply_role==role){
                         /*如果是本人的消息，放在右边*/
                         $("section").prepend("<div class='div4'><div class='div7'><img src='"+head_pic+"'></div><div class='div8'><p>"+content+"</p></div></div>");
@@ -77,6 +80,8 @@ function getallmsg(){
                         $("section").prepend("<div class='div4'><div class='div5'><img src='"+head_pic+"'></div><div class='div6'><p>"+content+"</p></div></div>");
                     }
                 });
+           //保存已经读到的消息的索引为数组
+            window.localStorage.setItem("readindex",list[0].id);
         }
     });
 }
@@ -101,7 +106,7 @@ function sendmsgs(content){
         success:function(data){
             //ajax成功
             alert("发送成功："+JSON.stringify(data)+""+session);
-            $("section").append("<div class='div4'><div class='div7'><img src='"+head_pic+"'></div><div class='div8'><p>"+content+"</p></div></div>");
+            //$("section").append("<div class='div4'><div class='div7'><img src='"+head_pic+"'></div><div class='div8'><p>"+content+"</p></div></div>");
         },error:function(error){
             //ajax失败
             alert("发送失败："+JSON.stringify(error)+session+"/"+qq_id+"/"+content);
@@ -166,6 +171,65 @@ function getunreadmsg(data){
             }
        });
 
+}
+
+//使用所有消息接口获取未读消息
+function getunreadmsgbyall(){
+    //取出保存的session
+    var session=window.sessionStorage.getItem("session");
+
+    //获取qq_id，会话标识
+    var qq_id=window.localStorage.getItem("qq_id");
+
+    //用户id
+    var userId=window.localStorage.getItem("userid");
+    //时间
+    var time=currentdatetotimestamp();
+    //得到某一条QQ消息的所有内容
+
+    //默认头像
+    var head_pic='http://120.24.172.105:8000/images/header.png';
+    var role=window.localStorage.getItem("userrole");
+
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        data:{"SESSIONID":session,"qq_id":qq_id,"m":"getQQAllMsg","userId":userId,"time":time},
+        success:function(data){
+            var list=data.datas['listData'];
+            //读取已保存的索引
+            var readindex=window.localStorage.getItem("readindex");
+
+            //设置新的消息索引
+            window.localStorage.setItem("readindex",list[0].id);
+
+            $.each(list,function(key){
+               var id=list[key]['id'];
+                //消息的角色
+                var reply_role=list[key]['reply_role'];
+                //消息内容
+                var content=list[key]['content'];
+
+                //如果最新的一条消息已经是之前阅读过的消息，则跳出each循环
+                if(readindex==id){
+                    return false;
+                }
+
+                if(reply_role==role){
+                    /*如果是本人的消息，放在右边*/
+                    $("section").append("<div class='div4'><div class='div7'><img src='"+head_pic+"'></div><div class='div8'><p>"+content+"</p></div></div>");
+                }else if(typeof (reply_role)=="undefined"){
+                    /*如果不知道是谁的消息*/
+
+                }else{
+                    /*其余人的消息，放在左边*/
+                    $("section").append("<div class='div4'><div class='div5'><img src='"+head_pic+"'></div><div class='div6'><p>"+content+"</p></div></div>");
+                }
+            });
+        }
+    });
 }
 
 

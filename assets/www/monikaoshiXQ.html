@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>SlidesJS Standard Code Example</title>
+<title>模拟考试详情</title>
 <meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
 <meta name="author" content="Nathan Searles">
 <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
@@ -116,6 +116,40 @@
     }
 </style>
 <!-- SlidesJS Required: -->
+    <script>
+//       function ks(id){
+//           var my = document.getElementById(id);
+//           my.src="image/icon_correct.png";
+//        }
+function  ks(heath_center) {
+    for (var i = 1; i <= 3; i++) {
+        if (i == heath_center) {
+            //保存点击的选项卡
+            window.localStorage.setItem("change_navid",i);
+            //修改选项卡属性
+            document.getElementById("ks" + i).src="image/icon_correct.png";
+            document.getElementById("l"+i).style.background="#EDEDED"
+        }
+        else {
+            if(i==1) {
+                document.getElementById("ks" + i).src = "image/icon_a.png";
+                document.getElementById("l"+i).style.background="#FFFFFF"
+            }
+            else if(i==2){
+                document.getElementById("ks" + i).src = "image/icon_b.png";
+                document.getElementById("l"+i).style.background="#FFFFFF"
+            }
+            else{
+                document.getElementById("ks" + i).src = "image/icon_c.png";
+                document.getElementById("l"+i).style.background="#FFFFFF"
+            }
+        }
+    }
+}
+        function kh(heath_center){
+            ks(heath_center);
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -137,17 +171,17 @@
             </div>
             <div class="div5">
                 <ul>
-                    <li>
-                        <div class="div8"><img src="image/49.png"></div>
-                        <div class="div9"><p>五千元以上五万元以下</p> </div>
+                    <li id="l1" onclick="kh(1)">
+                        <img src="image/icon_a.png" id="ks1" onclick="ks(1)">
+                        <p>五千元以上五万元以下</p>
                     </li>
-                    <li>
-                        <div class="div8"><img src="image/50.png"></div>
-                        <div class="div9"><p>五千元以下</p> </div>
+                    <li id="l2" onclick="kh(2)">
+                        <img src="image/icon_b.png" id="ks2" onclick="ks(2)">
+                        <p>五千元以下</p>
                     </li>
-                    <li>
-                        <div class="div8"><img src="image/51.png"></div>
-                        <div class="div9"><p>五千元以上三万元以下</p> </div>
+                    <li id="l3" onclick="kh(3)">
+                        <img src="image/icon_c.png" id="ks3" onclick="ks(3)">
+                        <p>五千元以上三万元以下</p>
                     </li>
                 </ul>
             </div>
@@ -165,17 +199,17 @@
             </div>
             <div class="div5">
                 <ul>
-                    <li>
-                        <div class="div8"><img src="image/49.png"></div>
-                        <div class="div9"><p>五千元以上五万元以下</p> </div>
+                    <li  onclick="kh(4)">
+                        <img src="image/icon_a.png" id="ks4" onclick="ks(4)">
+                        <p>五千元以上五万元以下</p>
                     </li>
-                    <li>
-                        <div class="div8"><img src="image/50.png"></div>
-                        <div class="div9"><p>五千元以下</p> </div>
+                    <li onclick="kh(5)">
+                        <img src="image/icon_b.png" id="ks5" onclick="ks(5)">
+                        <p>五千元以下</p>
                     </li>
-                    <li>
-                        <div class="div8"><img src="image/51.png"></div>
-                        <div class="div9"><p>五千元以上三万元以下</p> </div>
+                    <li onclick="kh(6)">
+                        <img src="image/icon_c.png" id="ks6" onclick="ks(6)">
+                        <p>五千元以上三万元以下</p>
                     </li>
                 </ul>
             </div>

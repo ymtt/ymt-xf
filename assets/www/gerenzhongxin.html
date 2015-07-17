@@ -6,6 +6,7 @@
     <link href="css/gerenzhongxin.css" type="text/css" rel="stylesheet" media="screen">
     <link href="css/fd.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/gerenzhongxin.js"></script>
     <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/fd.js"></script>
     <script type="text/javascript">
@@ -13,6 +14,8 @@
             h();
             d();
             checksession();
+            var id=window.localStorage.getItem("userid");
+            getUserInfo(id);
         });
         function checksession(){
             var session=window.sessionStorage.getItem("session");
@@ -48,16 +51,16 @@
  <p>我的信息</p>
 </div>
 <div class="div9">
-    <p>昵称 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张三</p>
+    <p id="nickname">昵称<span style="padding-left:15em"></span></p>
 </div>
 <div class="div9">
-    <p>性别 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;女</p>
+    <p id="sex">性别<span style="padding-left:15em"></span></p>
 </div>
 <div class="div9">
-    <p>年龄 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20岁</p>
+    <p id="age">年龄<span style="padding-left:15em"></span></p>
 </div>
 <div class="div10">
-    <p>居住地址 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成都</p>
+    <p id="home_addr">居住地址 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成都</p>
 </div>
     <a href="wodexuexi.html">
 <div class="div11">

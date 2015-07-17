@@ -21,4 +21,35 @@ function ShowCountDown(year,month,day,divname)
     "<p class='red'>"+minute+"</p><p class='s1'>分</p>"+
     "<p class='red'>"+second+"</p><p class='s1'>秒</p>";
     }
-window.setInterval(function(){ShowCountDown(2015,7,20,'divdown1');}, interval);
+window.setInterval(
+    function(){
+        var date=getNextExamTime();
+        ShowCountDown(date[0],date[1],date[2],'divdown1');
+    },
+    interval);
+
+/*获取下次考试时间*/
+var getNextExamTime=function(){
+    var result;
+    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.TypeAction&t=app&m=param&p=%E6%95%99%E8%82%B2%E5%B9%B3%E5%8F%B0%E6%9C%80%E6%96%B0%E8%80%83%E8%AF%95%E5%90%8D%E7%A7%B0,%E6%95%99%E8%82%B2%E5%B9%B3%E5%8F%B0%E6%9C%80%E6%96%B0%E8%80%83%E8%AF%95%E6%97%B6%E9%97%B4';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        async:false,
+        url:url,
+        success:function(data){
+            var time=data.data;
+            $(".div6 p").html(time[0].val);
+            //获得日期
+            var date=(time[1].val).replace(/\"/g,"");
+            //str=((JSON.stringify(time[1].val)).split("-")).replace(/\"/g,"");
+            result=date.split("-");
+        },error:function(error){
+            alert("error"+JSON.stringify(error));
+            result=null;
+        }
+    });
+    return result;
+}
+
+vy:kaixin

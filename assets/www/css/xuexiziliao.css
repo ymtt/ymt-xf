@@ -132,8 +132,8 @@ section{
     line-height: 20px;
 }
 .div5{
-    width: 10%;
-    height: 20px;
+    width:30px;
+    height: auto;
     float: left;
     margin-left: 5%;
 }
@@ -146,6 +146,7 @@ section{
     height: auto;
     float: left;
     margin-bottom: 10px;
+    margin-left: 3%;
 }
 .div6 p{
     font-size: 0.85em;

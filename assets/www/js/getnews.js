@@ -60,6 +60,14 @@ function getnews(type,func,start,end,wh){
 
 //保存点击的公告的id
 function Tonews(id){
+    /*var  notice=$("#nav_tab2").html();
+    //保存当页缓存
+    var noticecache=window.localStorage.setItem("noticecache",notice);
+    //保存当页加载到哪的索引
+    var noticestartindex=window.localStorage.setItem("noticestartindex",noticestart);
+    var noticeendindex=window.localStorage.setItem("noticeendindex",noticeend);
+    var edustartindex=window.localStorage.setItem("edustartindex",edustart);
+    var eduendindex=window.localStorage.setItem("eduendindex",eduend);*/
     window.localStorage.setItem("noticeid",id);
     window.location.href="gonggaoXQ.html";
 }
@@ -152,6 +160,7 @@ function CreateNoticeDom(title,content,id){
 
 function Towenzizixun(id,url,order){
     //存储点击之后的id，在详情页取出并使用他来在localstorage根据id取出对象字符串
+
     window.localStorage.setItem("wenziid",id);
     window.location.href=url;
     //alert(JSON.stringify(o));

@@ -82,6 +82,10 @@ function a(btn,demo)
         //oDemo.style.display = "none";
         oDemo.css("display","none");
     }
-
-
+}
+//精华热帖、最新回复等等的跳转
+function ToBarH(id,url){
+    var val=$("#"+id).html();
+    window.localStorage.setItem("forumbar",val);
+    window.location.href=url;
 }

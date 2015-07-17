@@ -242,6 +242,7 @@ section{
     height: 60px;
     float: left;
     overflow: hidden;
+    margin-left: 2%;
 }
 .ky-3 p{
     font-size: 0.85em;
@@ -250,14 +251,12 @@ section{
 }
 .ky-4{
     width:25px ;
-    margin-top: 10px;
     float: left;
-    margin-left: 70%;
 }
 .ky-5{
-    width: 15%;
+    width: 30%;
     height: 25px;
-    float: left;
+    float: right;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -265,6 +264,7 @@ section{
     font-size: 0.8em;
     line-height: 25px;
     text-align: center;
+    margin-left: 3%;
 }
 .sp{
     width: 100%;
