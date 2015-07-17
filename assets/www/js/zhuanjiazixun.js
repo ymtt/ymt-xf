@@ -1,6 +1,6 @@
 /*****专家咨询******/
 function expertlist(pagesize,start){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -17,7 +17,7 @@ function expertlist(pagesize,start){
                  //专家di
                  var expertid=list[key].fk_user_id;
                  //头像
-                var head_pic='http://120.24.172.105:8000/'+list[key].head_pic;
+                var head_pic='http://120.24.172.105/'+list[key].head_pic;
 
                 if(key=="0"){
                     CreateExpertzxleft(expertid,name,resume,head_pic);
@@ -46,7 +46,7 @@ function ToExpertXq(id){
 
 /********热点咨询和最近咨询**********/
 function gethhotandnew(m,pagesize,start){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction&t=app';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction&t=app';
     $.ajax({
         type:'get',
         dataType:'json',

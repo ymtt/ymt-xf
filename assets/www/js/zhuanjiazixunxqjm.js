@@ -3,7 +3,7 @@ function showexpert(){
     var strobj=window.localStorage.getItem(clickexpert);
     var obj=JSON.parse(strobj);
     //头像
-    $(".div4").html("<img src='http://120.24.172.105:8000/"+obj.head_pic+"'>");
+    $(".div4").html("<img src='http://120.24.172.105/"+obj.head_pic+"'>");
     $(".div2 p").html(obj.user_name);
     //政治面貌
     $("#politics").html(obj.politics);
@@ -52,7 +52,7 @@ function focusexpert(){
     var strobj=window.localStorage.getItem(clickexpert);
     var obj=JSON.parse(strobj);
 
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.PersonalAction&method=queryExpertList';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.PersonalAction&method=queryExpertList';
     //alert(obj.fk_user_id+userid);
 
     if(""==session||null==session){

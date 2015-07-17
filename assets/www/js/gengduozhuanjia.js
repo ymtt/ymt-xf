@@ -1,6 +1,6 @@
 /***********更多专家**********/
 function expertlist(pagesize,start){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -13,7 +13,7 @@ function expertlist(pagesize,start){
                 //姓名
                  var name=list[key]['user_name'];
                  //头像
-                var head_pic='http://120.24.172.105:8000/'+list[key]['head_pic'];
+                var head_pic='http://120.24.172.105/'+list[key]['head_pic'];
                 //级别
                  var level=list[key]['level'];
 
@@ -44,7 +44,7 @@ function CreateMoreExpert(id,head_pic,name,expertlevel,consultnum,waitnum){
 }
 /********专家搜索************/
 function serachexpertlist(pagesize,start,kw){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -57,7 +57,7 @@ function serachexpertlist(pagesize,start,kw){
                 //姓名
                  var name=list[key]['user_name'];
                  //头像
-                 var head_pic='http://120.24.172.105:8000/'+list[key]['head_pic'];
+                 var head_pic='http://120.24.172.105/'+list[key]['head_pic'];
                 //级别
                  var level=list[key]['level'];
                 //专家di

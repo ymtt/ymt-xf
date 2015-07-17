@@ -1,5 +1,5 @@
 function gethhotandnew(m,pagesize,start){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction&t=app';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction&t=app';
     $.ajax({
         type:'get',
         dataType:'json',

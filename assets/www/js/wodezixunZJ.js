@@ -1,6 +1,6 @@
 function GetMyConversation(){
     var session=window.sessionStorage.getItem("session");
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -12,7 +12,7 @@ function GetMyConversation(){
             var list=result.datas['listData'];
             $.each(list,function(key){
                 //头像
-                var head_pic="http://120.24.172.105:8000/images/header.png";
+                var head_pic="http://120.24.172.105/images/header.png";
                 var uname="流的滑";
                 var count=list[key]['count'];
 

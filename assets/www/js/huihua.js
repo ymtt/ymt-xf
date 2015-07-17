@@ -1,7 +1,7 @@
 //获取一次数据并保存
 function Getexpert(){
     var session=window.sessionStorage.getItem("session");
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -43,9 +43,9 @@ function getallmsg(){
 
 
     //默认头像
-    var head_pic='http://120.24.172.105:8000/images/header.png';
+    var head_pic='http://120.24.172.105/images/header.png';
 
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -97,7 +97,7 @@ function sendmsgs(content){
     //获取qq_id，会话标识
     var qq_id=window.localStorage.getItem("qq_id");
     //得到某一条QQ消息的所有内容
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction&t=app&m=sendMsg';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction&t=app&m=sendMsg';
     $.ajax({
         type:'post',
         dataType:'json',
@@ -138,10 +138,10 @@ function getunreadmsg(data){
        var userId=window.localStorage.getItem("user");
        //时间
         //默认头像
-        var head_pic='http://120.24.172.105:8000/images/header.png';
+        var head_pic='http://120.24.172.105/images/header.png';
 
 
-       var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction';
+       var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction';
 
        //alert(JSON.stringify(data));
        if(data.result=="Y"){
@@ -188,10 +188,10 @@ function getunreadmsgbyall(){
     //得到某一条QQ消息的所有内容
 
     //默认头像
-    var head_pic='http://120.24.172.105:8000/images/header.png';
+    var head_pic='http://120.24.172.105/images/header.png';
     var role=window.localStorage.getItem("userrole");
 
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction';
     $.ajax({
         type:'get',
         dataType:'json',

@@ -80,7 +80,7 @@ function  change_nav(heath_center) {
 /**********我咨询的专家列表*********/
 function expertslist(){
      var session=window.sessionStorage.getItem("session");
-     var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
+     var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
      $.ajax({
          type:'get',
          dataType:'json',
@@ -95,7 +95,7 @@ function expertslist(){
                 //var fk_pro_id=list[key]['fk_pro_id'];
                 //默认头像
 
-                 var head_pic='http://120.24.172.105:8000/images/header.png';
+                 var head_pic='http://120.24.172.105/images/header.png';
 
                 var msg_title=(list[key]['msg_title']).substring(0,16);
                 var count=list[key]['count'];
@@ -134,7 +134,7 @@ function tohuihua(id){
 //获得我的关注
 function getfocus(){
     var session=window.sessionStorage.getItem("session");
-    var url='http://120.24.172.105:8000/fw?t=app&controller=com.xfsm.action.ExpertAction&m=myFcous&start=1&pagesize=';
+    var url='http://120.24.172.105/fw?t=app&controller=com.xfsm.action.ExpertAction&m=myFcous&start=1&pagesize=';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -145,7 +145,7 @@ function getfocus(){
             $("#nav_tab2").html("");
             $.each(list,function(key){
                 //专家头像
-                var head_pic='http://120.24.172.105:8000/'+list[key]['expert_head_pic']
+                var head_pic='http://120.24.172.105/'+list[key]['expert_head_pic']
                 //专家名字
                 var expert_name=list[key]['expert_name'];
                 //专家id
@@ -167,7 +167,7 @@ function CreateFocusList(head_pic,name,expert_id){
 function CancelFocus(expert_id){
     var session=window.sessionStorage.getItem("session");
     var user_id=window.localStorage.getItem("userid");
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.PersonalAction&method=cancel';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.PersonalAction&method=cancel';
     $.ajax({
         type:'get',
         dataType:'json',

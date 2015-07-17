@@ -5,7 +5,7 @@ function CreateXfnewsDom(title,content,hitnum,id){
         }
 function getnews(type){
 var session=window.sessionStorage.getItem("session");
-var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
+var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
 var order=window.localStorage.getItem("order");
     $.ajax({
         type:'get',

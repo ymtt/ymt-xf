@@ -16,7 +16,7 @@ function downpdf(){
     if(typeof (kyobj.files)=="undefined"){
         return null;
     }else{
-        var downloadurl='http://120.24.172.105:8000/public/pub/upload/down.jsp?ai='+kyobj.id+'&id='+kyobj.files;
+        var downloadurl='http://120.24.172.105/public/pub/upload/down.jsp?ai='+kyobj.id+'&id='+kyobj.files;
         return downloadurl;
     }
 }
@@ -24,7 +24,7 @@ function downpdf(){
 function downloadfile(file){
     var fileTransfer = new FileTransfer();
     var uri = encodeURI(file);
-    var fileURL = fullPath + "下载文件.pdf";
+    var fileURL = fullPath + httpheaderinfo(file);
 
     fileTransfer.download(
         uri,
@@ -53,11 +53,16 @@ function downloadfile(file){
 
 //获取httpheader信息
 function httpheaderinfo(url){
+    var result;
     $.ajax({
         type: 'HEAD', // 获取头信息，type=HEAD即可
         url : url,
+        async:false,
         complete: function( xhr,data ){
-           alert(xhr.getResponseHeader('Content-Disposition'));
+           var lmname=xhr.getResponseHeader('Content-Disposition');
+           unds=lmname.substring(20,lmname.length);
+           result=unds;
         }
     });
+    return result;
 }

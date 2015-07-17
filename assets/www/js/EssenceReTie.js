@@ -1,5 +1,5 @@
 function getReTie(){
-    var url='http://120.24.172.105:8000/xxfintf/bbs/getHotPostList';
+    var url='http://120.24.172.105/xxfintf/bbs/getHotPostList';
     $.ajax({
         type:'get',
         dataType:'json',

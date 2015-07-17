@@ -1,6 +1,6 @@
 function clickconsultation(title,content,points,expert){
         var session=window.sessionStorage.getItem("session");
-        var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ChatAction&t=app&m=startChat';
+        var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction&t=app&m=startChat';
            if(session==null){
                 alert("session="+session);
            }else{
@@ -36,7 +36,7 @@ function hidediv() {
 }
 
 function getsubclass(pid){
-     var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.TypeAction&t=app&m=st&type=PUB_XXF_ZXFL&bt=tree';
+     var url='http://120.24.172.105/fw?controller=com.xfsm.action.TypeAction&t=app&m=st&type=PUB_XXF_ZXFL&bt=tree';
         $.ajax({
             type:'get',
             dataType:'json',
@@ -54,7 +54,7 @@ function getsubclass(pid){
 }
 
 function getfaclass(){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.TypeAction&t=app&m=st&type=PUB_XXF_ZXFL&bt=tree';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.TypeAction&t=app&m=st&type=PUB_XXF_ZXFL&bt=tree';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -73,7 +73,7 @@ function getfaclass(){
 
 //获取专家
 function expertlist(pagesize,start){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -85,7 +85,7 @@ function expertlist(pagesize,start){
                 //姓名
                  var name=list[key]['user_name'];
                  //头像
-                 var head_pic='http://120.24.172.105:8000/'+list[key]['head_pic'];
+                 var head_pic='http://120.24.172.105/'+list[key]['head_pic'];
                 //级别
                  var level=list[key]['level'];
 

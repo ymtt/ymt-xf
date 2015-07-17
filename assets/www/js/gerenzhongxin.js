@@ -1,6 +1,6 @@
 /*个人中心*/
 function getUserInfo(id){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.UserInfoAction';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.UserInfoAction';
     $.ajax({
         type:'get',
         dataType:'json',

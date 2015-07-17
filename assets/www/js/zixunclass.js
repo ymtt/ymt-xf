@@ -8,7 +8,7 @@ function TozixunClass(subclass){
 function getzixunlist(pagesize,start){
     var subclass=window.localStorage.getItem("zixunsubclass");
     var session=window.sessionStorage.getItem("session")
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction&t=app&m=chat';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction&t=app&m=chat';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -28,7 +28,8 @@ function getzixunlist(pagesize,start){
                 var objstr=JSON.stringify(list[key]);
                 //将文章id和文章对象字符串对应保存
                 window.localStorage.setItem(id,objstr);
-                $("section").append("<div class='div4'><a href='javascript:ToGaocengxq("+"\""+id+"\""+")'><div class='div5'><p>"+article_title+"</p></div><div class='div6'><p>"+describe+"</p></div></a></div>");
+                var com=list[key]['hitnum'];
+                $("section").append("<div class='div4'><a href='javascript:ToGaocengxq("+"\""+id+"\""+")'><div class='div5'><p>"+article_title+"</p></div><div class='div6'><p>"+describe+"</p></div></a><img src='image/icon_collect_l.png' id='div9' class='ky-4' onclick='change_pic(this)'><div class='ky-5'><p>"+com+"</p></div></div>");
             });
             $("section").append("<a href='javascript:;'onclick='addMoreZixun(this);'>加载更多</a>");
         },

@@ -31,7 +31,7 @@ window.setInterval(
 /*获取下次考试时间*/
 var getNextExamTime=function(){
     var result;
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.TypeAction&t=app&m=param&p=%E6%95%99%E8%82%B2%E5%B9%B3%E5%8F%B0%E6%9C%80%E6%96%B0%E8%80%83%E8%AF%95%E5%90%8D%E7%A7%B0,%E6%95%99%E8%82%B2%E5%B9%B3%E5%8F%B0%E6%9C%80%E6%96%B0%E8%80%83%E8%AF%95%E6%97%B6%E9%97%B4';
+    var url='http://120.24.172.105:/fw?controller=com.xfsm.action.TypeAction&t=app&m=param&p=%E6%95%99%E8%82%B2%E5%B9%B3%E5%8F%B0%E6%9C%80%E6%96%B0%E8%80%83%E8%AF%95%E5%90%8D%E7%A7%B0,%E6%95%99%E8%82%B2%E5%B9%B3%E5%8F%B0%E6%9C%80%E6%96%B0%E8%80%83%E8%AF%95%E6%97%B6%E9%97%B4';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -51,5 +51,3 @@ var getNextExamTime=function(){
     });
     return result;
 }
-
-vy:kaixin

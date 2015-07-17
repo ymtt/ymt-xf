@@ -25,7 +25,7 @@ function serachit(){
 }
 //科研搜索
 function serachky(m,pagesize,start,kw){
-        var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.KnowAction&t=app&jl=';
+        var url='http://120.24.172.105/fw?controller=com.xfsm.action.KnowAction&t=app&jl=';
         $.ajax({
             type:'get',
             dataType:'json',

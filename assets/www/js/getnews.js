@@ -1,7 +1,7 @@
 //公告详情，教育资讯的ajax
 function getnews(type,func,start,end,wh){
             var session=window.sessionStorage.getItem("session");
-            var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
+            var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
             $.ajax({
                type:'get',
                datatype:'json',
@@ -114,7 +114,7 @@ function CreateNoticeDom(title,content,id){
  //热点资讯,zixuntype:new表示最新资讯，read表示热点资讯
  function hotzixun(type,zixuntype){
          var session=window.sessionStorage.getItem("session");
-         var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
+         var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
         $.ajax({
             type:'get',
             dataType:'json',
@@ -170,7 +170,7 @@ function setorder(order){
 }
 /*图片新闻列表*/
 function getpicnews(){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
     var srcs='http://g.hiphotos.baidu.com/image/pic/item/63d0f703918fa0ec56c59e0f249759ee3d6ddbb6.jpg';
     $.ajax({
         type:'get',

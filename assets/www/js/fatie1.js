@@ -1,5 +1,5 @@
 function getfaclass(){
-    var url='http://120.24.172.105:8000/xxfintf/bbs/getForumList';
+    var url='http://120.24.172.105:/xxfintf/bbs/getForumList';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -18,7 +18,7 @@ function getfaclass(){
     });
 }
 function getsubclass(id){
-    var url='http://120.24.172.105:8000/xxfintf/bbs/getForumList';
+    var url='http://120.24.172.105/xxfintf/bbs/getForumList';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -45,7 +45,7 @@ function getsubclass(id){
      //content 帖子内容
      var fid=window.localStorage.getItem("fid");
      var user=window.localStorage.getItem("user");
-     var url='http://120.24.172.105:8000/xxfintf//bbs/wirteSubject?';
+     var url='http://120.24.172.105/xxfintf//bbs/wirteSubject?';
          $.ajax({
               type:'post',
               datatype:'json',

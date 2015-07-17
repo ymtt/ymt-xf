@@ -1,7 +1,7 @@
 /*根据板块id获取板块主题*/
 function getSubjectList(){
              var fid=window.localStorage.getItem("fid");
-             var url='http://120.24.172.105:8000/xxfintf/bbs/getSubjectListByFid?';
+             var url='http://120.24.172.105/xxfintf/bbs/getSubjectListByFid?';
              if(fid==null){
                  alert("未正常获取fid");
              }else{

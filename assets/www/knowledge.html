@@ -46,11 +46,11 @@
     </script>
     <script type="text/javascript">
         function change_pic(id){
-            var imgObj = document.getElementById(id);
-            if(imgObj.getAttribute("src",2)=="image/icon_collect_l.png"){
-                imgObj.src="image/icon_collect_click_l.png";
+            var imgObj=$(id);
+            if(imgObj.attr("src")=="image/icon_collect_l.png"){
+                imgObj.attr("src","image/icon_collect_click_l.png");
             }else{
-                imgObj.src="image/icon_collect_l.png";
+                imgObj.attr("src","image/icon_collect_l.png");
             }
         }
 
@@ -625,6 +625,7 @@
     </div>
 </div>
 </section>
+<!--知识平台科研-->
 <section  class="nav_tab" id="nav_tab4" style="display: none">
 
     <div class="ky">
@@ -639,12 +640,13 @@
                 <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队</p>
             </div>
         </a>
-        <img src="image/icon_collect_l.png" id="div9" class="ky-4" onclick="change_pic('div9')">
+        <img src="image/icon_collect_l.png" id="div9" class="ky-4" onclick="change_pic(this)">
         <div class="ky-5">
             <p>42354人</p>
         </div>
     </div>
 </section>
+<!--知识平台规范-->
 <section  class="nav_tab" id="nav_tab5" style="display: none">
 
    <div class="ky">
@@ -659,13 +661,14 @@
                 <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，河北省保定市公安消防支队</p>
             </div>
         </a>
-       <img src="image/icon_collect_l.png" id="div10" class="ky-4" onclick="change_pic('div10')">
+       <img src="image/icon_collect_l.png" id="div10" class="ky-4" onclick="change_pic(this)">
        <div class="ky-5">
            <p>42354人</p>
        </div>
     </div>
 
 </section>
+<!--知识平台视频-->
 <section  class="nav_tab" id="nav_tab6" style="display: none">
  <div class="sp">
      <div class="sp-1">

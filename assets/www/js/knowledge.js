@@ -45,7 +45,7 @@ var kystart=0;
 var kyend=10;
 function getnews(type,func,kystart,kyend,bo){
             var session=window.sessionStorage.getItem("session");
-            var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ArticleAction';
+            var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
             if(flag==bo){
                 $.ajax({
                    type:'get',
@@ -116,7 +116,7 @@ function ToSpzl(id){
 
 /***********规范************/
 function getguifan(m,pagesize,start,kw){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.KnowAction&t=app&jl=';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.KnowAction&t=app&jl=';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -147,7 +147,7 @@ function getguifan(m,pagesize,start,kw){
                 */
                 if(m=="spzl"){
                     //封面
-                    var cover="http://120.24.172.105:8000/public/pub/upload/down.jsp?id="+list[key]['cover'];
+                    var cover="http://120.24.172.105/public/pub/upload/down.jsp?id="+list[key]['cover'];
                     //附件
                     var attachment=list[key]['attachment'];
                     //分类
@@ -165,10 +165,10 @@ function getguifan(m,pagesize,start,kw){
 
                 if(m=="kywx"){
                     //科研文献
-                    CreateGuiFan(m,title,cons,id);
+                    CreateGuiFan(m,title,cons,id,hitnum);
                 }else if(m=="bzgf"){
                     //标准规范
-                    CreateGuiFan(m,title,cons,id);
+                    CreateGuiFan(m,title,cons,id,hitnum);
                     //alert(content);
                 }else if(m=="spzl"){
                     //视频资料
@@ -180,7 +180,7 @@ function getguifan(m,pagesize,start,kw){
     });
 }
 //规范和标准
-function CreateGuiFan(m,title,content,id){
+function CreateGuiFan(m,title,content,id,hitnum){
     var where;
     if(m=="kywx"){
         where="#nav_tab4";
@@ -191,7 +191,7 @@ function CreateGuiFan(m,title,content,id){
     }
     $(where).append("<div class='ky'><a href='javascript:ToKeyanXQ("+"\""+id+"\""+")'><div class='ky-1'><p>"+title+
     "</p></div><div class='ky-2'><img src='image/knowledge_01.png'></div><div class='ky-3'><p>"+content+
-    "</p></div></a></div>");
+    "</p></div></a><img src='image/icon_collect_l.png' id='div9' class='ky-4' onclick='change_pic(this)'><div class='ky-5'><p>"+hitnum+"</p></div></div>");
 }
 //视频资料
 function CreateVideo(classify,title,cover,id){

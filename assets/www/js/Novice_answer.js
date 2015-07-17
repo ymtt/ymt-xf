@@ -2,7 +2,7 @@
 function getThreadContent(){
     var tid=window.localStorage.getItem("newreplytid");
     var forumname=window.localStorage.getItem("forumbar");
-    var url='http://120.24.172.105:8000/xxfintf/bbs/getPostListByTid?';
+    var url='http://120.24.172.105/xxfintf/bbs/getPostListByTid?';
     if(tid==null){
         alert("未正常获取fid");
     }else{
@@ -76,7 +76,7 @@ function TimestampConversion(dateline){
 function ReplyPost(msg){
     var tid=window.localStorage.getItem("tid");
     var user=window.localStorage.getItem("user");
-    var url='http://120.24.172.105:8000/xxfintf/bbs/wirtePost?';
+    var url='http://120.24.172.105/xxfintf/bbs/wirtePost?';
     if(tid==null){
         alert("未正常获取fid");
     }else{
@@ -108,7 +108,7 @@ function ReplyThread(title,content){
     //content 帖子内容
     var fid=window.localStorage.getItem("fid");
     var user=window.localStorage.getItem("user");
-    var url='http://120.24.172.105:8000/xxfintf//bbs/wirteSubject?';
+    var url='http://120.24.172.105/xxfintf//bbs/wirteSubject?';
     $.ajax({
         type:'post',
         datatype:'json',
