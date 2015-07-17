@@ -67,7 +67,7 @@ section{
 }
 .div4{
     width: 100%;
-    height: 120px;
+    height: auto;
     border-bottom: 1px solid #CCCCCC;
     margin-top: 10px;
     float: left;
@@ -116,18 +116,18 @@ a{
 }
 .div8{
     width:25px ;
-    margin-top: 10px;
     float: left;
-    margin-left: 70%;
 }
 .div9{
-    width: 15%;
+    width: 30%;
     height: 25px;
-    float: left;
-    margin-top: 10px;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .div9 p{
     font-size: 0.8em;
     line-height: 25px;
-   text-align: center;
+    text-align: center;
+    margin-left: 3%;
 }

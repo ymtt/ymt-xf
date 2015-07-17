@@ -79,7 +79,7 @@ section{
 }
 .div8{
     width: 82%;
-    height: 30px;
+    height:auto;
     float: left;
     margin-left: 3%;
 }

@@ -6,7 +6,8 @@ html,body{
     width: 100%;
     height:auto;
     background-color: #CCCCCC;
-
+    position: fixed;
+    top: 0;
 }
 header{
     width: 100%;
@@ -14,6 +15,7 @@ header{
     background: #05A0D7;
    position: fixed;
     top: 0;
+    z-index: 99;
 }
 .div1 {
     width: 10%;
@@ -28,22 +30,21 @@ header{
     margin-top: 10px;
 }
 .div2 {
-    width: 80%;
+    width: 65%;
     height: auto;
     float: left;
-
 }
 .div2 p{
     line-height: 40px;
     font-size: 1em;
     color: #FFFFFF;
-    text-align: center;
+    margin-left: 50%;
 }
 .div3{
     width: 20%;
     height: auto;
     float: right;
-    margin-right: 15px;
+    margin-right: 2%;
     line-height: 40px;
 }
 .div3 p{
@@ -114,7 +115,7 @@ section{
 }
 .div8{
     width: 100%;
-    height: 120px;
+    height: auto;
     margin-top: 5px;
     float: left;
     background-color: #FFFFFF;
@@ -123,21 +124,24 @@ section{
 ul{
     list-style: none;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 li{
-    margin-left: 10%;
     height: 40px;
 }
-.div10{
-    width: 10%;
-    height: auto;
+ul li img{
+    width: 20px;
     float: left;
+    margin-left: 10%;
+    margin-top: 10px;
 }
-.div11 p{
-    font-size: 0.85em;
-    color: #737373;
-    line-height:18px;
-}.div12 {
+ul li p{
+     font-size: 0.8em;
+    line-height: 40px;
+    float: left;
+    margin-left: 3%;
+}
+.div12 {
     width: 100%;
     height: auto;
     float: left;
