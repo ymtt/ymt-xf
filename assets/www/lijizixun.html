@@ -7,8 +7,6 @@
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/lijizixun.js"></script>
     <script language="javascript" type="text/javascript">
-
-
         $(document).ready(function(){
                 //获得一级菜单
                 getfaclass();
@@ -53,7 +51,6 @@
             h();
             d();
         });
-
     </script>
     <script>
         function showdiv() {
@@ -85,16 +82,12 @@
 //            document.getElementById("bg").style.display ='none';
 //            document.getElementById("show").style.display ='none';
 //        }
-
         //一级问题分类
         function opt(id1,id2){
             //清空第二级显示面板
             $("#show1").html("");
             //清空第二级选中的值
             $("#two").html("<p style='color:#cccccc'>请选择分类<p>");
-
-
-
             $("#"+id1).html($(id2).html());
             //点击之后获得第二级菜单
             getsubclass($(id2).attr("id"));
@@ -102,13 +95,9 @@
         }
         //二级问题分类
          function opt1(id1,id2){
-
             //点击之后将内容填充到显示区(其中包括了id)
-
             $("#"+id1).html($(id2).html());
-
             //alert($(id2).attr("id"));
-
             hidediv('bg1','show1');
         }
         //专家选择
@@ -136,7 +125,6 @@
             <p value="0EBB3016148B4AE3BB5F9D55F8EFCE62">建筑消防</p>
         </div>
     </div>
-
     <div class="div3"onclick="showdiv1()">
         <div class="div4">
             <p>二级问题分类</p>
@@ -145,9 +133,7 @@
             <p style="color: #cccccc">请选择分类</p>
         </div>
     </div>
-
     <div class="div3"onclick="showdiv2()">
-
         <div class="div4">
             <p >值守专家</p>
         </div>

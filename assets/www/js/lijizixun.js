@@ -24,7 +24,7 @@ function clickconsultation(title,content,points,expert){
                 });
                 //alert("session不为空"+session);
          }
-};
+}
 
  function showdiv() {
             document.getElementById("bg").style.display ="block";
@@ -49,7 +49,7 @@ function getsubclass(pid){
                    $("#show1").append("<div class='div12' id="+"\""+list[key].id+"\""+"  onclick='opt1("+"\""+"two"+"\""+",this)'><p value='"+list[key].id+"'>"+list[key].code+"</p></div>");
                 }
             })
-            },
+            }
       });
 }
 
@@ -101,7 +101,7 @@ function expertlist(pagesize,start){
                  window.localStorage.setItem(expertid,objstr);
                  SelectedExpert(expertid,name,levelname,"0","0");
             });
-        },
+        }
     });
 }
 

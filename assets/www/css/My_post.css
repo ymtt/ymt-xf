@@ -212,4 +212,5 @@ button{
     background-color: #FFFFFF;
     font-size: 1em;
     margin-top: 100px;
+    float: left;
 }
