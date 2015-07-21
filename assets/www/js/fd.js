@@ -15,7 +15,6 @@ function d() {
     $('#fd').drag({
     });
 }
-
 function r(){
     document.getElementById("fd").style.display="block";
     document.getElementById("fd1").style.display="none";

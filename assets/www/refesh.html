@@ -65,21 +65,16 @@
 }
 document.addEventListener('touchmove', function (e) {  e.preventDefault(); }, false);
 document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
-
 准备就绪后
 就应该执行了
 function pullDownAction () { // 下拉刷新
     window.location.reload();
 }
 var i = 2; //初始化页码为2
-function pullUpAction () { 上拉加载更多
+function pullUpAction () {上拉加载更多
    alert("dddd");
     myScroll.refresh();
 }
-
-
-
-
 function Ajax(page){ // ajax后台交互
     $.ajax({
         type : "post",
@@ -93,7 +88,7 @@ function Ajax(page){ // ajax后台交互
             if(data.length){ // 如果后台传过来有数据执行如下操作 ， 没有就执行else 告诉用户没有更多内容呢
                         加载数据。。。
                 }
-            }else{
+        else{
                 $('.pullUpLabel').html('亲，没有更多内容了！');
             }
         },

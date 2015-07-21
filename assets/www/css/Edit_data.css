@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body html{
+    width: 100%;
+    height: auto;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #05A0D7;
+}
+.div1{
+    width: 10%;
+    height: 40px;
+    float: left;
+}
+.div1 img{
+    width: 20px;
+    margin-left: 40%;
+    margin-top: 10px;
+
+}
+.div2{
+    width: 80%;
+    height: 40px;
+    float: left;
+}
+.div2 p{
+    line-height: 40px;
+    font-size: 1em;
+    text-align: center;
+    color: #FFFFFF;
+}
+.div3{
+    width: 10%;
+    height: 40px;
+    float: right;
+}
+.div3 button{
+    background-color: #05A0D7;
+    border: 0;
+    margin-top: 12px;
+    color: #FFFFFF;
+}
+section{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-top: 40px;
+}
+.div4{
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-bottom: 1px solid #cccccc;
+}
+.div5{
+    width: 25%;
+    height: 40px;
+    float: left;
+}
+.div5 p{
+    font-size: 1em;
+    line-height: 40px;
+    margin-left: 20%;
+    color: #333333;
+}
+input{
+    width: 60%;
+    height: 40px;
+    float: left;
+    border: 0;
+    margin-left: 10%;
+    color: #333333;
+}
+
+
+

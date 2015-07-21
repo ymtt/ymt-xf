@@ -67,6 +67,7 @@ section{
     height:auto;
     float: left;
     margin-top: 40px;
+    padding-bottom: 60px;
 }
 .div5{
     width: 100%;
@@ -187,9 +188,9 @@ footer{
     margin-left: 6%;
 }
 .div12 ul li{
-    width: 40%;
+    width: 45%;
     height: 20px;
-    margin-left: 8%;
+    margin-left: 5%;
     float: left;
 }
 .div13 p{

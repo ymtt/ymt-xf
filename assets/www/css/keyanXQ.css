@@ -48,8 +48,6 @@ a{
     color: #FFFFFF;
     text-align: center;
 }
-
-
 .div3{
     width:10%;
     height:auto;
@@ -67,6 +65,7 @@ section{
     height:auto;
     float: left;
     margin-top: 40px;
+    padding-bottom: 60px;
 }
 .div5{
     width: 100%;

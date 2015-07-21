@@ -128,7 +128,7 @@ span p{
 .div8{
     width: 100%;
     height: 20px;
-    background: url("../image/forwarding_icon.png")no-repeat 10% 50%;
+
 }
 .div8 p{
     font-size: 0.8em;
@@ -140,7 +140,6 @@ span p{
 .div9{ width: 100%;
     height: 20px;
     border-right: 1px solid #CCCCCC;
-    background: url("../image/comment_collect_icon.png")no-repeat 10% 50%;
 }
 .div9 p{
 
@@ -153,7 +152,6 @@ span p{
 .div10{
     width: 100%;
     height: 20px;
-    background: url("../image/comment_comment_icon.png")no-repeat 10% 50%;
 }
 .div10 p{
     font-size: 0.8em;
