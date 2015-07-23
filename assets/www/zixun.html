@@ -33,7 +33,7 @@
          var id=window.localStorage.getItem("change_navid");
          if(""==id||null==id){
              //没有点击过默认第一个
-             change_nav(2);
+             change_nav(1);
          }else{
              //重新加载时默认到之前点击的选项卡
              change_nav(id);
@@ -88,7 +88,6 @@
         }
     </script>
     <style>
-        <!--禁止选中文字-->
         *{
         -webkit-touch-callout:none;
         -webkit-user-select:none;
