@@ -7,6 +7,8 @@
 <!--<meta name="author" content="Nathan Searles">-->
 <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
 <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/monikaoshiinfo.js"></script>
     <link href="css/monikaoshiXQ.css" rel="stylesheet">
     <script>
         function showdiv() {
@@ -39,9 +41,8 @@
     <div class="div2"><p>模拟考试</p></div>
     <div class="div3"><a href=""> <p>收藏本题</p></a></div>
 </header>
-
-        <section>
-            <div class="div4">
+        <section id="singles">
+            <!--<div class="div4">
                 <div class="div6">
                     <p>单选题</p>
                 </div>
@@ -68,9 +69,9 @@
                         <p>五千元以上三万元以下</p>
                     </li>
                 </ul>
-            </div>
+            </div>-->
         </section>
-        <section style="display: none">
+        <section  style="display: none" id="mutils">
             <div class="div4">
                 <div class="div6">
                     <p>多选题</p>
@@ -83,17 +84,17 @@
             <div class="div5">
                 <ul>
                     <li>
-                        <input type="checkbox" >
+                        <input type="checkbox" name="as" value="五千">
                         <img src="image/icon_a.png" >
                         <p>五千元以上五万元以下</p>
                     </li>
                     <li>
-                        <input type="checkbox" >
+                        <input type="checkbox" name="as" value="五千以下">
                         <img src="image/icon_b.png" >
                         <p>五千元以下</p>
                     </li>
                     <li>
-                        <input type="checkbox" >
+                        <input type="checkbox" name="as" value="五千到三万">
                         <img src="image/icon_c.png">
                         <p>五千元以上三万元以下</p>
                     </li>
@@ -101,6 +102,7 @@
             </div>
         </section>
         <section style="display: none">
+
             <div class="div4">
                 <div class="div6">
                     <p>判断题</p>
@@ -125,6 +127,7 @@
 
                 </ul>
             </div>
+
         </section>
 <section style="display: none">
     <div class="div4">
@@ -136,7 +139,7 @@
         </div>
         <div class="div8">
             <p>回答：</p>
-        <input type="text" placeholder="请填空">
+        <input type="text" placeholder="请填空" id="h4">
         </div>
     </div>
     <div class="div5">
@@ -165,7 +168,7 @@
         <div class="div12"><p>2/95</p></div>
         <div class="div13"><p>10:30</p></div>
         <div class="div14"><img src=image/icon_submit.png></div>
-        <div class="div15"><button>提交</button></div>
+        <div class="div15"><button id="sub">提交</button></div>
     </footer>
 
 <!-- End SlidesJS Required -->
@@ -305,10 +308,63 @@
 <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/fd.js"></script>
 <script type="text/javascript">
+
     $(document).ready(function(){
         h();
         d();
+        getExam();
+
+        //单选
+        var singles=findTest('singles');
+        //多选
+        var mutils=findTest('mutils');
+        //填空
+        var fills=findTest('fills');
+        //判断
+        var judgments=findTest('judgments');
+        //问答
+        var subjectives=findTest('subjectives');
+
+        $("#sub").click(function(){
+
+            //单选框获取值
+            //var question1 = $('input:radio[name="h1"]:checked').val();
+            if($(".div6 p").html()=="单选题"){
+
+                //alert($('input:radio[name="h1"]:checked').val());
+                doAnswer(singles[0]['fk_exam_id'],$(".div6 p").attr("value"),$('input:radio[name="h1"]:checked').val());
+            }else if($(".div6 p").html()=="多选题"){
+                //alert(ch());
+                doAnswer(mutils[0]['fk_exam_id'],$(".div6 p").attr("value"),ch());
+            }else if($(".div6 p").html()=="判断题"){
+                //alert($('input:radio[name="h3"]:checked').val());
+                doAnswer(judgments[0]['fk_exam_id'],$(".div6 p").attr("value"),$('input:radio[name="h3"]:checked').val());
+            }else if($(".div6 p").html()=="填空题"){
+                //alert($("#h4").val());
+                doAnswer(fills[0]['fk_exam_id'],$(".div6 p").attr("value"),$("#h4").val());
+            }else if($(".div6 p").html()=="问答题"){
+                //alert($("#h5").val());
+                doAnswer(subjectives[0]['fk_exam_id'],$(".div6 p").attr("value"),$("#h5").val());
+            }
+            NextQue();
+        });
+
+        //CreateSingles("ddddd","A","B","C","D");
+        CreateSingles(singles[0]['fk_que_id'],singles[0]['content'],singles[0]['ops'][0]['content'],singles[0]['ops'][1]['content'],singles[0]['ops'][2]['content'],singles[0]['ops'][3]['content']);
     });
+//多选框获取值
+function ch(){
+    var result=[];
+    var obj=$("input[name='h2']");
+    for(i=0;i<obj.length;i++){
+
+        if(obj[i].checked){
+            result.push(obj[i].value);
+            //result+=obj[i].value;
+        }
+    }
+    return result;
+}
 
 </script>
 </html>

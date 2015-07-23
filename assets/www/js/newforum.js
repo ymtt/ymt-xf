@@ -21,6 +21,36 @@ function getForumList(){
                 }
          })
 }
+/*新论坛接口-获取板块主题*/
+function getNForumList(){
+    var url='http://120.24.172.105/bbs/bbs/getForumList.do';
+    $.ajax({
+        type:'get',
+        datatype:'json',
+        url:url,
+        success:function(data){
+           /* var str=data.replace(/[\\]/g,"");
+            var strobj=str.substring(1,str.length-1);
+            var obj=JSON.parse(strobj);
+            var list=obj.data;*/
+            var obj=JSON.parse(data);
+            var list=obj.data;
+            //定义主板块图标
+            var img=["image/icon_x.png","image/icon_x_1.png","image/icon_x_2.png","image/icon_x_3.png","image/icon_x_4.png","image/icon_g.png","image/icon_e.png"];
+            $.each(list,function(key){
+                var fid=list[key]['fid'];
+                var fup=list[key]['fup'];
+                var name=list[key]['name'];
+                var type=list[key]['type'];
+                var time=subTimes(list[key]['lastpost'],2);
+                var imgx=img[key];
+                CreateForumDom(fid,fup,name,type,time,imgx,key);
+            });
+        }
+    });
+}
+
+
 function CreateForumDom(fid,fup,name,type,date,img,x){
     /*if(fup==0){
         $(".div6 ul").append("<li><a href='javascript:setfid("+"\""+fid+"\""+")'><div class='div7'><img src='"+img+"'></div><p>"+name+"</p></a></li>");
@@ -43,7 +73,7 @@ function CreateForumDom(fid,fup,name,type,date,img,x){
 //设置点击的板块的id,以及跳转
 function setfid(fid){
     window.localStorage.setItem("fid",fid);
-    window.location.href="forumlist.html";
+    window.location.href="Novice_area.html";
 }
 
 //分割字符串

@@ -6,7 +6,7 @@
 @expert  专家
 */
 function Autoreg(){
-    var regurl='http://120.24.172.105:8000/fw?controller=com.xfsm.action.AutoRegAction&t=app';
+    var regurl='http://120.24.172.105/fw?controller=com.xfsm.action.AutoRegAction&t=app';
     $.ajax({
         type:'post',
         dataType:'json',
@@ -26,7 +26,7 @@ function Autoreg(){
                 showdiv();
             }
         },error:function(error){
-                alert("提交问题出错，请确认已经登录！");
+                alert("自动分配账号出错，请检查网络连接！");
         }
     });
 }
@@ -35,7 +35,7 @@ function Autoreg(){
 
 //登录
 function Login(username,pwd){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.LoginAction&t=app';
+    var url='http://120.24.172.105/fw?controller=com.xfsm.action.LoginAction&t=app';
     $.ajax({
         type:'post',
         dataType:'json',

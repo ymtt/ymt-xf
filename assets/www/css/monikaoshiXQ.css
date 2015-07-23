@@ -126,7 +126,8 @@ ul{
     margin-bottom: 10px;
 }
 li{
-    width: 100%;
+    width:100% ;
+    height: auto;
     float: left;
 }
 ul li img{

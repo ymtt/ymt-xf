@@ -63,6 +63,7 @@ section{
     width: 80%;
     height: 50px;
     float: left;
+    margin-left: 5%;
 }
 .div6{
     width: 20%;
@@ -129,7 +130,7 @@ section{
 .div12 p{
     font-size: 0.85em;
     line-height: 20px;
-    margin-left: 20%;
+    margin-left: 5%;
     margin-bottom: 10px;
 }
 .div13{

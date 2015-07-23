@@ -33,7 +33,6 @@ function getThreadContent(){
                  })
            }
  };
-
 //时间戳转换
 function TimestampConversion(dateline){
     var t = new Date(parseInt(dateline)*1000);
