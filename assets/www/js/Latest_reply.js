@@ -1,5 +1,5 @@
 function getLatest_reply(){
-    var url='http://120.24.172.105/xxfintf/bbs/getLastSubject';
+    var url='http://120.24.172.105/bbs/bbs/getLastSubject.do';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -12,23 +12,23 @@ function getLatest_reply(){
                 //作者
                 var author=list[key]['author'];
                 //标题
-                var subject=list[key]['subject'];
-                //时间
-                var time=TimestampConversion(list[key]['dateline']);
-                //内容
-                var message=list[key]['message'];
-                //评论
-                var comment=list[key]['comment'];
+                var subject=list[key]['threadSubject'];
+                /*//时间
+                var time=TimestampConversion(list[key]['dateline']);*/
+                var dateline=list[key]['lastpost'];
 
-                Createlaest_Reply(tid,author,comment,time,message);
+                //评论
+                var comment=list[key]['replies'];
+
+                Createlaest_Reply(tid,author,comment,dateline,subject);
 
             })
         }
     });
 }
 
-function Createlaest_Reply(tid,author,comment,time,message){
-    $("section").append("<div class='div4'><a href=javascript:ToForumThread(\'"+tid+"\')><div class='div5'><p>"+author+"</p></div><div class='div6'><p>"+comment+"</p><img src='image/icon_comments.png'></div><div class='div7'><p>"+time+"</p></div><div class='div8'><p>"+message+"</p></div></a></div>");
+function Createlaest_Reply(tid,author,comment,time,subject){
+    $("section").append("<div class='div4'><a href='Novice_answer.html'><div class='div5'><p>"+author+"</p></div><div class='div6'><p>"+comment+"</p><img src='image/icon_comments.png'></div><div class='div7'><p>"+time+"</p></div><div class='div8'><p>"+subject+"</p></div></a></div>");
 }
 
 function ToForumThread(tid){

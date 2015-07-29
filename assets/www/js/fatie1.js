@@ -1,5 +1,5 @@
 function getfaclass(){
-    var url='http://120.24.172.105:/xxfintf/bbs/getForumList';
+    var url='http://120.24.172.105/bbs/bbs/getForumList.do';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -9,8 +9,10 @@ function getfaclass(){
             $.each(list,function(key){
                 if(list[key].fup=="0"){
                     //alert(list[key].code);
+
                     var name=list[key]['name'];
                     var fid=list[key]['fid'];
+
                     $("#show").append("<div class='div12' onclick='opt("+"\""+"div5"+"\""+",this)'><p value='"+fid+"'>"+name+"</p></div>");
                 }
             })
@@ -18,13 +20,14 @@ function getfaclass(){
     });
 }
 function getsubclass(id){
-    var url='http://120.24.172.105/xxfintf/bbs/getForumList';
+    var url='http://120.24.172.105/bbs/bbs/getForumList.do';
     $.ajax({
         type:'get',
         dataType:'json',
         url:url,
         success:function(result){
             var list=result.data;
+
             $.each(list,function(key){
                 //如果项目的上级栏目是所选栏目，则
                 var name=list[key]['name'];
@@ -45,17 +48,17 @@ function getsubclass(id){
      //content 帖子内容
      var fid=window.localStorage.getItem("fid");
      var user=window.localStorage.getItem("user");
-     var url='http://120.24.172.105/xxfintf//bbs/wirteSubject?';
+     var url='http://120.24.172.105/bbs/bbs/wirteSubject.do';
          $.ajax({
               type:'post',
               datatype:'json',
               url:url,
-              data:{"subject":title,"msg":content,"user":"admin","fid":fid},
+              data:{"subject":title,"msg":content,"user":user,"fid":fid,"reqType":"1"},
               success:function(data){
                   var json=eval("("+data+")");
                   var list=json.data;
                   alert("成功"+data);
-                  window.location.href="forumlist.html";
+                  window.location.href="Novice_area.html";
               },error:function(error){
                      //var error=eval("("+error+")");
                      var errors=error['responseText'];

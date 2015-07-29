@@ -190,7 +190,7 @@ function CreateGuiFan(m,title,content,id,hitnum){
         where="#nav_tab6"
     }
     $(where).append("<div class='ky'><a href='javascript:ToKeyanXQ("+"\""+id+"\""+")'><div class='ky-1'><p>"+title+
-    "</p></div><div class='ky-2'><img src='image/knowledge_01.png'></div><div class='ky-3'><p>"+content+
+    "</p></div><div class='ky-2'><img src='image/knowledge_02.png'></div><div class='ky-3'><p>"+content+
     "</p></div></a><div class='ky-5'><img src='image/icon_collect_l.png' id='div9' class='ky-4' onclick='change_pic(this)'><p>"+hitnum+"</p></div></div>");
 }
 //视频资料
