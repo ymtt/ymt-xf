@@ -32,7 +32,7 @@ a{
     margin-top: 10px;
 }
 .div2 {
-    width: 70%;
+    width: 60%;
     height: auto;
     float: left;
 
@@ -48,6 +48,7 @@ a{
     height: auto;
     float: left;
     margin-top: 10px;
+
 }
 .div2-1 img{
     width: 20px;
@@ -131,8 +132,7 @@ a{
     width:80px ;
     height: 30px;
     float:right;
-    margin-top: -35px;
-    margin-right: 5%;
+    margin-top: -30px;
     display: none;
 }
 
