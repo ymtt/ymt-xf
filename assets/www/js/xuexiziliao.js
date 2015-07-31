@@ -1,6 +1,6 @@
 /*学习资料*/
 function getxuexiziliao(){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExamAction&order=new&start=1&kw=';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ExamAction&order=new&start=1&kw=';
     $.ajax({
         type:'get',
         dataType:'json',

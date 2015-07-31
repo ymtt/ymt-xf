@@ -1,7 +1,7 @@
 /*提交建议*/
 function submitsuggest(title,content,phonenumber){
     var sid=window.sessionStorage.getItem("session");
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.AdviceAPIAction&m=advice';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.AdviceAPIAction&m=advice';
     $.ajax({
         type:'post',
         dataType:'json',

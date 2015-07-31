@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    //选项卡风格
+    $(".div3:eq(0)").click(function(){
+        window.localStorage.setItem("Index","index.html");
+        window.location.href="index.html";
+    });
+    //侧滑风格
+    $(".div3:eq(1)").click(function(){
+            window.localStorage.setItem("Index","index1.html");
+            window.location.href="index1.html";
+    });
+    //转盘风格
+    $(".div3:eq(2)").click(function(){
+        window.localStorage.setItem("Index","index2.html");
+        window.location.href="index2.html";
+    });
+});

@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    height: auto;
+    position: absolute;
+    left: 10%;
+    top: -4px;
+
+}
+.div1 img{
+    width: 140px;
+    max-width:100%;
+}
+
+.div2{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 90%;
+    top: 12px;
+}
+.div2 img{
+    width: 20px;
+    max-width: 100%;
+}
+
+
+.div3{
+    width: 10%;
+    height: 40px;
+    float: right;
+    margin-top: 10px;
+}
+.div4{
+    width: 94%;
+    height: 120px;
+    margin-left: 3%;
+    float: left;
+    overflow: hidden;
+}
+.div4 img{
+    width: 100%;
+    height:auto;
+    max-width: 100%;
+    margin-top:-40px;
+}
+.div5{
+    width: 94%;
+    height: 30px;
+    margin-left: 3%;
+    margin-top: -30px;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.7;opacity: 0.7;
+    background: #09A087;
+    float: left;
+}
+.div5 p{
+    width: 100%;
+    height: 30px;
+    font-size: 0.75em;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+.div6-2{
+    width: 94%;
+    height: 40px;
+    background-color: #FFFFFF;
+    float: left;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+.div7{
+    width: 50%;
+    height: 40px;
+    float: left;
+}
+.div7 p{
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+    line-height: 40px;
+    font-size: 1em;
+    color: #737373;
+}
+.div8{
+    width: 50%;
+    height: 40px;
+    float: right;
+}
+.div8 p{
+    width: auto;
+    height: auto;
+    margin-left:45% ;
+    line-height: 40px;
+    font-size: 0.85em;
+    color: #737373;
+}
+.div9{
+    width: 94%;
+    height: 155px;
+    float: left;
+    background-color: #FFFFFF;
+    margin-left: 3%;
+}
+.div9 ul{
+    width: 16%;
+    height: 130px;
+    list-style: none;
+    float: left;
+    margin-top: 2px;
+    background-color:#11c1f3;
+}
+.div9 ul li{
+    width: 100%;
+    height: 44px;
+    float: left;
+
+}
+.div10{
+    width: 100%;
+    height: 40px;
+}
+.div10 p{
+    font-size: 0.85em;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.div11{
+    width: 84%;
+    height: auto;
+    float: left;
+}
+.div11 table{
+    width: 100%;
+    height: auto;
+}
+.div11 table tr{
+    width: auto;
+    background-color: #05A0D7;
+}
+.div11 table tr td{
+    width: 25%;
+    height: auto;
+    border: 2px solid #FFFFFF;
+}
+.div11 table tr td p{
+    font-size: 0.85em;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 12px;
+}
+section{
+    width: 100%;
+    height: 270px;
+    float: left
+}
+section ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+
+}
+section ul li{
+    width: 100%;
+    height: 95px;
+    margin-top: 10px;
+    float: left;
+}
+.div12{
+    width: 22%;
+    height: 95px;
+    margin-left: 3%;
+    float: left;
+}
+.div12 img{
+    width: 100%;
+    height: 95px;
+    max-width: 100%;
+}
+.div13{
+    width: 22%;
+    height: 95px;
+    margin-left: 2%;
+    float: left;
+}
+.div13 img{
+    width: 100%;
+    height: 95px;
+    max-width: 100%;
+}
+.div14{
+    width: 46%;
+    height: 95px;
+    margin-right: 3%;
+    float: right;
+    overflow: hidden;
+}
+.div14 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.div15{
+    width: 46%;
+    height: 20px;
+    float:right;
+    margin-right: 3%;
+    margin-top: -20px;
+    background: #367AFC;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.7;opacity: 0.7;
+}
+.div15 p{
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #ffffff;
+    line-height: 20px;
+}
+.div16{
+    width: 46%;
+    height: 95px;
+    margin-left: 3%;
+    float: left;
+    overflow: hidden;
+}
+.div16 img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.div17{
+    width: 46%;
+    height: 20px;
+    float: left;
+    margin-left:-46%;
+    margin-top: 75px;
+    background: #09A087;
+    filter:alpha(Opacity=80);
+    -moz-opacity:0.7;opacity: 0.7;
+}
+.div17 p{
+    font-size: 0.75em;
+    font-family: "方正兰亭纤黑_GBK";
+    color: #ffffff;
+    line-height: 20px;
+}
+.red{
+    background-color: #FF4521;
+}
+.div18{
+    width: 22%;
+    height: 90px;
+    margin-left: 3%;
+    float: left;
+}
+.div18 img{
+    width: 100%;
+    height: 95px;
+    max-width: 100%;
+}
+.div19{
+    width: 22%;
+    height: 95px;
+    margin-left: 2%;
+    float: left;
+}
+.div19 img{
+    width: 100%;
+    height: 95px;
+    max-width: 100%;
+}
+.zc{
+    width: 58px;
+    height: 58px;
+    float: left;
+    border-radius: 58px;
+    background-color: #FFFFFF;
+    margin-left: 100px;
+    margin-top: 65px;
+}
+.zc img{
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    margin-left: 3px;
+    margin-top:3px;
+}
+.zc-1{
+    width: 60%;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20%;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.zc-1 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    line-height: 30px;
+    text-align: center;
+    color:  #FFFFFF;
+}
+.zc-2{
+    width: 75%;
+    height: auto;
+    float: left;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+.zc-2 ul{
+    width: 100%;
+    height: auto;
+    float:left;
+    list-style: none;
+}
+.zc-2 ul li{
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+.zc-3{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.zc-3 img{
+    width: 20px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+.zc-4{
+    width: 80%;
+    height: 40px;
+    float: left;
+}
+.zc-4 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.zc-5{
+    width: 80%;
+    height: 90px;
+    float: left;
+    margin-left: 20%;
+    left: 20%;
+    margin-top: 50px;
+}
+.zc-6{
+    width: 100%;
+    height: 30px;
+    float: left;
+}
+.zc-6 p{
+    font-family: "方正兰亭纤黑_GBK";
+    font-size: 1em;
+    color: #FFFFFF;
+    line-height: 30px;
+}

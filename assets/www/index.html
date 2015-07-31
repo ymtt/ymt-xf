@@ -10,18 +10,23 @@
     <link rel="stylesheet" type="text/css" href="css/style-3.css"  media="screen and (max-height:480px)" >
     <link rel="stylesheet" type="text/css" href="css/style-2.css"  media="screen and (min-height:568px) and (max-height:667px)" >
     <link rel="stylesheet" type="text/css" href="css/style-1.css"  media="screen and (min-height:480px) and (max-height:568px)" >
+    <link rel="stylesheet" type="text/css" href="css/style-5.css"  media="screen and (min-height:736px) and (max-height:1024px)" >
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/fd.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/zixunclass.js"></script>
     <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/fd.js"></script>
-    <script src="js/forum.js"></script>
+    <script src="js/newforum.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             h();
             d();
+                          setIndex();
         });
+        function setIndex(){
+            window.localStorage.setItem("Index","index.html");
+        }
     </script>
    <!--script <script src="cordova.js"></script>-->
     <script src="js/index.js"></script>
@@ -190,9 +195,9 @@
 </div>
 <div class="div9">
     <div class="div10">
-        <a href="javascript:setfid('49')"><!--问题咨询49，新手报道2-->
+        <a href="javascript:ToBarH('hot','Hot_topics.html')"><!--问题咨询49，新手报道2-->
             <div class="div12">
-                <p>热门主题</p>
+                <p id="hot">热门主题</p>
             </div>
             <div class="div13">
                 <p>新修订《消防法》的宣传</p>
@@ -206,9 +211,9 @@
         </a>
     </div>
     <div class="div11">
-        <a href="javascript:setfid('48')"><!--解决方案48，新手答疑36-->
+        <a href="javascript:ToBarH('jh','The_essence_of_love.html')"><!--解决方案48，新手答疑36-->
             <div class="div16">
-                <p>精华热帖</p>
+                <p id="jh">精华热帖</p>
             </div>
             <div class="div17">
                 <img src="image/08.png">

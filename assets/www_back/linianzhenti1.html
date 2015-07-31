@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>历年真题1</title>
+    <link href="css/linianzhenti1.css" rel="stylesheet" type="text/css" media="screen">
+   <!-- <script src="cordova.js"></script>-->
+    <script>
+function change_pic(id){
+    var imgObj=$(id);
+    if(imgObj.attr("src")=="image/icon_collect_l.png"){
+        imgObj.attr("src","image/icon_collect_click_l.png");
+    }else{
+        imgObj.attr("src","image/icon_collect_l.png");
+    }
+}
+    </script>
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script src="js/download.js"></script>
+    <script src="js/linianzhenti1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+            var type=window.localStorage.getItem("zhentiall");
+            switch (type){
+                case "level001":
+                        $(".divZ1 p").html("一级消防工程师真题");
+                    break;
+                case "level002":
+                    $(".divZ1 p").html("二级消防工程师真题");
+                    break;
+            }
+            getzhentiall(1);
+        });
+
+    </script>
+</head>
+<body>
+<header>
+    <a href="linianzhenti.html"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <div class="div2"><p>历年真题</p></div>
+    <div class="div3"><a href="sousuo.html"> <img src="image/icon_search_1.png"></a></div>
+</header>
+<div class="divZ1">
+    <p>一级消防工程师真题</p>
+</div>
+<section>
+ <!--   <div class="div4">
+        <a href="linianzhentiXQ.html">
+            <div class="div4-1">
+                <div class="div5"><img src="image/icon_l_1.png"></div>
+                <div class="div6"><p>2010年一级消防工程师《消防工程项目管理》考试真题</p></div>
+            </div>
+        </a>
+        <div class="div9">
+            <img src="image/icon_collect_l.png" id="div8" class="div8" onclick="change_pic(this)">
+            <p>42354人</p>
+        </div>
+    </div>
+    <div class="div4">
+        <a href="linianzhentiXQ.html">
+            <div class="div4-1">
+                <div class="div5"><img src="image/icon_l_1.png"></div>
+                <div class="div6"><p>2010年一级消防工程师《消防工程项目管理》考试真题</p></div>
+                <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
+            </div>
+        </a>
+        <img src="image/icon_collect_l.png" id="div9" class="div8" onclick="change_pic('div9')">
+        <div class="div9">
+            <p>42354人</p>
+        </div>
+    </div>
+    <div class="div4">
+        <a href="linianzhentiXQ.html">
+            <div class="div4-1">
+                <div class="div5"><img src="image/icon_l_1.png"></div>
+                <div class="div6"><p>2010年一级消防工程师《消防工程项目管理》考试真题</p></div>
+                <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
+            </div>
+        </a>
+        <img src="image/icon_collect_l.png" id="div10" class="div8" onclick="change_pic('div10')">
+        <div class="div9">
+            <p>42354人</p>
+        </div>
+    </div>
+    <div class="div4">
+        <a href="linianzhentiXQ.html">
+            <div class="div4-1">
+                <div class="div5"><img src="image/icon_l_1.png"></div>
+                <div class="div6"><p>2010年一级消防工程师《消防工程项目管理》考试真题</p></div>
+                <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
+            </div>
+        </a>
+        <img src="image/icon_collect_l.png" id="div11" class="div8" onclick="change_pic('div11')">
+        <div class="div9">
+            <p>42354人</p>
+        </div>
+    </div>
+    <div class="div4">
+        <a href="linianzhentiXQ.html">
+            <div class="div4-1">
+                <div class="div5"><img src="image/icon_l_1.png"></div>
+                <div class="div6"><p>2010年一级消防工程师《消防工程项目管理》考试真题</p></div>
+                <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
+            </div>
+        </a>
+        <div class="div9">
+        <img src="image/icon_collect_l.png" id="div12" class="div8" onclick="change_pic(this)">
+            <p>42354人</p>
+        </div>
+    </div>-->
+
+
+</section>
+<script type="text/javascript">
+    $(document).ready(function(){
+        document.addEventListener("deviceready",onDeviceReady,false);
+    });
+    function onDeviceReady() {
+        alert('onDeviceReady2222');
+        try {
+            /*
+             window.requestFileSystem = window.requestFileSystem || window.webkitRequestFileSystem;
+             window.resolveLocalFileSystemURL = window.resolveLocalFileSystemURL                || window.ebkitResolveLocalFileSystemURL; //根据URL取得文件的读取权限
+             */
+
+            //查找是否有download这个文件夹，没有则创建，然后找到这个文件夹的绝对路径
+            window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {
+                fileSystem.root.getDirectory("download", {
+                    create: true,
+                    exclusive: false
+                }, function (entry) {
+                    //网上流传的资料中都是使用fullPath，在这里我获取到的是相对目录，在下载时使用会报错，所以换做了toURL()
+                    //这是一个全局全局变量，用以保存路径
+                    fullPath = entry.toURL();
+                    alert(fullPath.toString() + '创建文件夹成功');
+                    //console.log(fullPath);
+                }, function () {
+                    console.log('创建文件夹失败');
+                    alert('创建文件夹失败');
+                });
+            }, function () {
+                console.log('创建文件夹失败');
+                alert('创建文件夹失败');
+            });
+        }
+        catch (e) {
+            alert(e.name + ":" + e.message);
+        }
+    }
+</script>
+</body>
+</html>

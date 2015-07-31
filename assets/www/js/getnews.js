@@ -1,7 +1,7 @@
 //公告详情，教育资讯的ajax
 function getnews(type,func,start,end,wh){
             var session=window.sessionStorage.getItem("session");
-            var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
+            var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction';
             $.ajax({
                type:'get',
                datatype:'json',
@@ -102,11 +102,11 @@ function CreateNoticeDom(title,content,id){
 
 //加载更多公告,loadmorenews
  function CreateNoticeMore(){
-    $("#nav_tab2").append("<div class='gg'><a href='javascript:addn()' class='nmore'>点击加载更多</a></div>");
+    $("#nav_tab2").append("<div class='gg nmore'><a href='javascript:addn()' class='gray'>点击加载更多</a></div>");
  }
  //加载更多教育新闻
   function CreateEduMore(){
-     $("#nav_tab3").append("<div class='gg'><a href='javascript:adde()' class='emore'>点击加载更多</a></div>");
+     $("#nav_tab3").append("<div class='gg emore'><a href='javascript:adde()' class='gray'>点击加载更多</a></div>");
   }
 
 
@@ -114,7 +114,7 @@ function CreateNoticeDom(title,content,id){
  //热点资讯,zixuntype:new表示最新资讯，read表示热点资讯
  function hotzixun(type,zixuntype){
          var session=window.sessionStorage.getItem("session");
-         var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
+         var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction';
         $.ajax({
             type:'get',
             dataType:'json',
@@ -170,7 +170,7 @@ function setorder(order){
 }
 /*图片新闻列表*/
 function getpicnews(){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction';
     var srcs='http://g.hiphotos.baidu.com/image/pic/item/63d0f703918fa0ec56c59e0f249759ee3d6ddbb6.jpg';
     $.ajax({
         type:'get',

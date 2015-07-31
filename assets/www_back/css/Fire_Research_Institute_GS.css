@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+    position: fixed;
+    top: 0;
+}
+a{
+    text-decoration: none;
+}
+.div1-1 {
+    width: 10%;
+    height: 40px;
+    float: left;
+}
+
+.div1-1 img {
+    width: 20px;
+    max-width: 100%;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.div2 {
+    width: 80%;
+    height: auto;
+    float: left;
+
+}
+.div2 p{
+    line-height: 40px;
+    font-size: 1em;
+    color: #FFFFFF;
+    text-align: center;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+}
+hr{
+    width: 2px;
+    height: 15px;
+    background: #000000;
+    margin-left: -5%;
+    border: 0;
+    margin-top: 300px;
+    float: left;
+}
+.s2{
+    width: 40px;
+    height:200px;
+    float: left;
+    background-color: #0c63ee;
+    margin-top: 150px;
+    margin-left: 2%;
+}
+.s2 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    padding:30%;
+    margin-top: 60px;
+}
+.h1{
+    width: 25px;
+    height: 2px;
+    background: #000000;
+    margin-left:0;
+    border: 0;
+    margin-top: 245px;
+    float: left;
+}
+.h2{
+    width: 2px;
+    height: 917px;
+    background: #000000;
+    margin-left:0;
+    border: 0;
+    margin-top: 20px;
+    float: left;
+}
+.h3{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:0;
+    border: 0;
+    margin-top: 20px;
+    float: left;
+}
+.h4{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 45px;
+    float: left;
+}
+.h5{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 70px;
+    float: left;
+}
+.h6{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 95px;
+    float: left;
+}
+.h7{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 120px;
+    float: left;
+}
+.h8{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 145px;
+    float: left;
+}
+.h9{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 170px;
+    float: left;
+}
+.h10{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 195px;
+    float: left;
+}
+.h11{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 220px;
+    float: left;
+}
+.h12{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 245px;
+    float: left;
+}
+.h13{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 270px;
+    float: left;
+}
+.h14{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 295px;
+    float: left;
+}
+.h15{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 320px;
+    float: left;
+}
+.h16{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 345px;
+    float: left;
+}
+.h17{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 370px;
+    float: left;
+}
+.h18{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 395px;
+    float: left;
+}
+.h19{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 420px;
+    float: left;
+}
+.h20{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 445px;
+    float: left;
+}
+.h21{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 470px;
+    float: left;
+}
+.h22{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 495px;
+    float: left;
+}
+.h23{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 520px;
+    float: left;
+}
+.h24{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 545px;
+    float: left;
+}
+.h25{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 570px;
+    float: left;
+}
+.h26{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 595px;
+    float: left;
+}
+.h27{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 620px;
+    float: left;
+}
+.h28{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 645px;
+    float: left;
+}
+.h29{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 670px;
+    float: left;
+}
+.h30{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 695px;
+    float: left;
+}
+.h31{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 720px;
+    float: left;
+}
+.h32{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 745px;
+    float: left;
+}
+.h33{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 800px;
+    float: left;
+}
+.h34{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 845px;
+    float: left;
+}
+.h35{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 890px;
+    float: left;
+}
+.h36{
+    width: 10px;
+    height: 2px;
+    background: #000000;
+    margin-left:-10px;
+    border: 0;
+    margin-top: 935px;
+    float: left;
+}
+
+
+.s3{
+    width: 50%;
+    height:20px;
+    float: left;
+    background-color: #0c63ee;
+    margin-top: 10px;
+
+}
+.s3 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-left: 10%;
+}
+.s4{
+    width: 50%;
+    height:20px;
+    float: left;
+    background-color: #0c63ee;
+    margin-top: 5px;
+
+}
+.s4 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin-top: 2px;
+    margin-left: 10%;
+}
+
+.s5{
+    width: 50%;
+    height:40px;
+    float: left;
+    background-color: #0c63ee;
+    margin-top: 25px;
+
+}
+.s5 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-left: 10%;
+    line-height: 40px;
+}
+.s6{
+    width: 50%;
+    height:40px;
+    float: left;
+    background-color: #0c63ee;
+    margin-top: 5px;
+
+}
+.s6 p{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-left: 10%;
+    line-height: 40px;
+}

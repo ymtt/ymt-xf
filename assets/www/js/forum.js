@@ -4,7 +4,7 @@
 
 
 function getForumList(){
-        var url='http://120.24.172.105/xxfintf/bbs/getForumList';
+        var url='http://101.204.236.5/xxfintf/bbs/getForumList';
          $.ajax({
                 type:'get',
                 datatype:'json',

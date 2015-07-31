@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>设置</title>
+    <link href="css/shezhi.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/shezhi.js"></script>
+    <script src="cordova.js"></script>
+    <script type="text/javascript">
+           $(document).ready(function(){
+
+                        //选择所有class=div3中第三个，序号从上到下从0开始
+                        /*$(".div3:eq(2)").click(function(){
+                                $(".hidebg").css({"display":"block"});
+                                $("#showskin").show();
+                        });
+                        $("span:eq(0)").click(function(){
+                                 $(".hidebg").css({"display":"none"});
+                                 $("#showskin").hide();
+                        });
+
+
+                        var isClick=false;
+                        var index="";
+
+                        $(".submit:eq(0)").click(function(){
+                                //移除以前的Index记录
+                                window.localStorage.removeItem("Index");
+                                //设置新的Index记录为选定值
+                                window.localStorage.setItem("Index",$('input[name="skin"]:checked').val());
+                                //获取新的Index
+                                index=window.localStorage.getItem("Index");
+                                //设置返回链接的href为新index
+                                $("#back").attr("href",index);
+                                //设置按钮被点击标记
+                                isClick=true;
+                                //隐藏透明层
+                                $(".hidebg").css({"display":"none"});
+                                //隐藏弹出框
+                                $("#showskin").hide();
+                        });
+
+                        //如果没有被点击
+                        if(isClick==false){
+                            //获取值，此值为旧值
+                            index=window.localStorage.getItem("Index");
+                            $("#back").attr("href",index);
+                        }
+                         document.addEventListener("deviceready", onDeviceReady, false);
+
+                         function onDeviceReady() {
+                             //按钮事件
+                            document.addEventListener("backbutton", eventBackButton, false); //返回键
+                            document.addEventListener("menubutton", eventMenuButton, false); //菜单键
+                          }
+                          function eventBackButton(){
+                                //手机返回键监听
+                                window.location.href=index;
+                          }*/
+
+                        index=window.localStorage.getItem("Index");
+                        $("#back").attr("href",index);
+                        //点击自定义皮肤，eq(2)表示第三个元素
+                        $(".div3:eq(2)").click(function(){
+                                window.location.href="pifu.html";
+                        });
+
+                        //账号登录
+                        $(".div3:eq(0)").click(function(){
+                               window.location.href="denglu.html";
+                         });
+                        //推荐好友
+                        $(".div3:eq(4)").click(function(){
+                                window.plugins.socialsharing.share('新消防真TM是太好用了','分享标题',['http://e.hiphotos.baidu.com/image/pic/item/f703738da9773912274dc116fb198618367ae25a.jpg','http://c.hiphotos.baidu.com/image/pic/item/5ab5c9ea15ce36d3ef1cabf738f33a87e850b1d8.jpg'],'http://www.baidu.com');
+                        });
+
+                        $("#exit").click(function(){
+                            alert("xxxxx");
+                            exituser();
+                        });
+                });
+    </script>
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script src="js/back.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+            back();
+        });
+
+    </script>
+    <style type="text/css">
+        #showskin{
+        padding-top:15px;
+        text-align:center;
+        width:30%;
+        height:15%;
+        border-radius:20px;
+        border:1px solid #000000;
+        background-color:#FFFFFF;
+        display: none;
+        z-index:999;
+        position:absolute;
+        left:35%;
+        top:20%;
+        }
+        .submit{
+        padding-top:15px;
+        position:absolute;
+        left:35%;
+        }
+        .hidebg {
+        position:absolute;
+        left:0px;
+        top:0px;
+        background-color:#000;
+        width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+        height:100%;
+        filter:alpha(opacity=60);  /*设置透明度为60%*/
+        opacity:0.6;  /*非IE浏览器下设置透明度为60%*/
+        display:none;
+        z-Index:888;}
+    </style>
+</head>
+<body>
+<!--透明遮罩层-->
+<div class="hidebg"></div>
+<header>
+    <a href="#" id="back"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <div class="div2"><p>设置</p></div>
+</header>
+<section>
+    <ul>
+        <li>
+            <div class="div3">
+                <p>账号登陆</p>
+            </div>
+        </li>
+        <li>
+               <a href="changePassword.html">
+                <div class="div3">
+                    <p>修改登录密码</p>
+                </div>
+                   </a>
+        </li>
+        <li>
+                <div class="div3">
+                    <p>自定义皮肤</p>
+                </div>
+        </li>
+        <li>
+                <div class="div3">
+                    <p>存储设置</p>
+                </div>
+        </li>
+        <li>
+                <div class="div3">
+                    <p>推荐给好友</p>
+                </div>
+        </li>
+        <li>
+               <a href="guanyuwomen.html">
+                <div class="div3">
+                    <p>关于我们</p>
+                </div>
+                   </a>
+        </li>
+        <li>
+                <div class="div3">
+                    <p>软件卸载</p>
+                </div>
+        </li>
+
+    </ul>
+</section>
+<div id="showskin">
+    <h5>请选择皮肤<span><a href="#">关闭</a></span></h5>
+    <p><input type="radio" name="skin" checked value="index.html" >默认</p>
+    <p><input type="radio" name="skin"  value="index1.html" >经典</p>
+    <span class="submit"><a href="#">确定</a></span>
+</div>
+<footer>
+    <a href="javascript:;" id="exit">
+    <div class="div4">
+    <p>退出当前账号</p>
+    </div>
+    </a>
+</footer>
+</body>
+</html>

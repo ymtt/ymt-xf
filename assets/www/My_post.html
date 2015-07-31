@@ -10,17 +10,18 @@
     <script src="js/fd.js"></script>
     <script src="js/My_post.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function () {
             h();
             d();
+            //CreateMyPost("1","2","3","4");
         });
     </script>
     <script type="text/javascript">
-        function  change_nav(heath_center) {
+        function change_nav(heath_center) {
             for (var i = 1; i <= 2; i++) {
                 if (i == heath_center) {
                     //保存点击的选项卡
-                    window.localStorage.setItem("change_navid",i);
+                    window.localStorage.setItem("change_navid", i);
                     //修改选项卡属性
                     document.getElementById("nav_item" + i).className = "nav_item";
                     document.getElementById("nav_tab" + i).style.display = "";
@@ -41,117 +42,133 @@
 </head>
 <body>
 <header>
-    <a href="forum.html"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <a href="forum.html">
+        <div class="div1"><img src="image/icon_return.png"></div>
+    </a>
+
     <div class="div2"><p>我的帖子</p></div>
 </header>
-    <div class="div4">
+<div class="div4">
     <img src="image/53.png">
 </div>
 <div class="div5">
     <div class="div5-1">
-    <img src="image/16.png">
+        <img src="image/16.png">
     </div>
 </div>
 <div class="div6">
     <p>王小二放牛</p>
 </div>
-    <div class="div7">
-        <p>回帖数 |</p>
-        <p>324</p>
-        <p>主题数 |</p>
-        <p>2132</p>
-    </div>
+<div class="div7">
+    <p>回帖数 |</p>
+
+    <p>324</p>
+
+    <p>主题数 |</p>
+
+    <p>2132</p>
+</div>
 <nav>
     <ul>
-        <li  class="nav_item1" id="nav_item1" onClick="change_nav(1)">
-            <div class="div8"><p id="p1" style="color: #ffffff ;background-color: #05A0D7;border-radius: 6px" >我的帖子</p></div>
-        </li >
+        <li class="nav_item1" id="nav_item1" onClick="change_nav(1)">
+            <div class="div8"><p id="p1" style="color: #ffffff ;background-color: #05A0D7;border-radius: 6px">我的帖子</p>
+            </div>
+        </li>
         <li class="nav_item1" id="nav_item2" onClick="change_nav(2)">
             <div class="div8"><p id="p2">我的资料</p></div>
         </li>
 
     </ul>
 </nav>
-<section class="nav_tab1" id="nav_tab1" >
+<section class="nav_tab1" id="nav_tab1">
+
     <a href="Novice_answer.html">
-    <div class="tiezhi">
-<div class="div9">
-    <p>新手报到</p>
-</div>
-    <div class="div10">
-        <p>324</p>
-        <img src="image/icon_comments.png">
-    </div>
-    <div class="div11">
-        <p>2015-05-14 14:08</p>
-    </div>
-    </div>
-        </a>
+        <div class="tiezhi">
+            <div class="div9">
+                <p>新手报到</p>
+            </div>
+            <div class="div10">
+                <p>324</p>
+                <img src="image/icon_comments.png">
+            </div>
+            <div class="div11">
+                <p>2015-05-14 14:08</p>
+            </div>
+        </div>
+    </a>
+
     <a href="Novice_answer.html">
-    <div class="tiezhi">
-        <div class="div9">
-            <p>新手报到</p>
+        <div class="tiezhi">
+            <div class="div9">
+                <p>新手报到</p>
+            </div>
+            <div class="div10">
+                <p>324</p>
+                <img src="image/icon_comments.png">
+            </div>
+            <div class="div11">
+                <p>2015-05-14 14:08</p>
+            </div>
         </div>
-        <div class="div10">
-            <p>324</p>
-            <img src="image/icon_comments.png">
-        </div>
-        <div class="div11">
-            <p>2015-05-14 14:08</p>
-        </div>
-    </div>
-        </a>
+    </a>
+
     <a href="Novice_answer.html">
-    <div class="tiezhi">
-        <div class="div9">
-            <p>新手报到</p>
+        <div class="tiezhi">
+            <div class="div9">
+                <p>新手报到</p>
+            </div>
+            <div class="div10">
+                <p>324</p>
+                <img src="image/icon_comments.png">
+            </div>
+            <div class="div11">
+                <p>2015-05-14 14:08</p>
+            </div>
         </div>
-        <div class="div10">
-            <p>324</p>
-            <img src="image/icon_comments.png">
-        </div>
-        <div class="div11">
-            <p>2015-05-14 14:08</p>
-        </div>
-    </div>
-        </a>
+    </a>
+
     <a href="Novice_answer.html">
-    <div class="tiezhi">
-        <div class="div9">
-            <p>新手报到</p>
+        <div class="tiezhi">
+            <div class="div9">
+                <p>新手报到</p>
+            </div>
+            <div class="div10">
+                <p>324</p>
+                <img src="image/icon_comments.png">
+            </div>
+            <div class="div11">
+                <p>2015-05-14 14:08</p>
+            </div>
         </div>
-        <div class="div10">
-            <p>324</p>
-            <img src="image/icon_comments.png">
-        </div>
-        <div class="div11">
-            <p>2015-05-14 14:08</p>
-        </div>
-    </div>
     </a>
 </section>
 <section class="nav_tab1" id="nav_tab2" style="display: none">
-<div class="div12">
-    <p class="p1">昵称</p>
-    <p class="p2">王小二放牛</p>
-</div>
+    <div class="div12">
+        <p class="p1">昵称</p>
+
+        <p class="p2">王小二放牛</p>
+    </div>
     <div class="div12">
         <p class="p1">性别</p>
+
         <p class="p2">女</p>
     </div>
     <div class="div12">
         <p class="p1">年龄</p>
+
         <p class="p2">20</p>
     </div>
     <div class="div12">
         <p class="p1">邮箱</p>
+
         <p class="p2">24545245@qq.com</p>
     </div>
     <div class="div12">
         <p class="p1">注册时间</p>
+
         <p class="p2">2015-3-20</p>
     </div>
-   <a href="Edit_data.html">编辑资料</a>
+    <a href="Edit_data.html">编辑资料</a>
 </section>
 </body>
 </html>

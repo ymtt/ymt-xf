@@ -4,7 +4,7 @@
 function getzhentiall(start){
     //试题的级别
     var level=window.localStorage.getItem("zhentiall");
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExamAction';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ExamAction';
     var jl='hisdate_,type_'+level+',subject_';
     $.ajax({
         type:'post',

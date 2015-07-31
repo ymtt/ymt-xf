@@ -1,6 +1,6 @@
 /*个人中心*/
 function getUserInfo(id){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.UserInfoAction';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.UserInfoAction';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -17,7 +17,7 @@ function getUserInfo(id){
             //工作性质
             var working_property=user.working_property;
             //头像
-            var head_pic="http://120.24.172.105:8000/"+user.headPic;
+            var head_pic="http://101.204.236.5/"+user.headPic;
             //用户类型
             var userType=user.userType;
             //用户类型描述

@@ -1,5 +1,5 @@
 function getForumList(){
-        var url='http://120.24.172.105/xxfintf/bbs/getForumList';
+        var url='http://101.204.236.5/xxfintf/bbs/getForumList';
          $.ajax({
                 type:'get',
                 datatype:'json',
@@ -23,7 +23,7 @@ function getForumList(){
 }
 /*新论坛接口-获取板块主题*/
 function getNForumList(){
-    var url='http://120.24.172.105/bbs/bbs/getForumList.do';
+    var url='http://101.204.236.5/bbs/bbs/getForumList.do';
     $.ajax({
         type:'get',
         datatype:'json',

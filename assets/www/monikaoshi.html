@@ -15,6 +15,7 @@
             h();
             d();
             getmonishiti("一级消防工程师","2015");
+            getmonishiti("二级消防工程师","2015");
         });
 
     </script>
@@ -29,10 +30,10 @@
     <div class="div5">
         <div class="div6">
             <div class="div7"><p>一级消防模拟试题</p></div>
-            <div class="div8"><a href="monikaoshi1.html"><p>显示全部</p></a></div>
+            <div class="div8"><a href="javascript:Tomoniall('一级消防工程师')"><p>显示全部</p></a></div>
         </div>
         <ul id="yiji">
-            <a href="monikaoshiXQ.html">
+            <!--<a href="monikaoshiXQ.html">
             <li>
                     <div class="div9">
                         <img src="image/icon_l_1.png">
@@ -86,16 +87,16 @@
                     </div>
                     <div class="div11"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
             </li>
-            </a>
+            </a>-->
         </ul>
     </div>
     <div class="div12">
         <div class="div6">
             <div class="div7"><p>二级消防模拟试题</p></div>
-            <div class="div8"><a href=""><p>显示全部</p></a></div>
+            <div class="div8"><a href="javascript:Tomoniall('二级消防工程师')"><p>显示全部</p></a></div>
         </div>
-        <ul>
-            <a href="monikaoshiXQ.html">
+        <ul id="erji">
+            <!--<a href="monikaoshiXQ.html">
             <li>
                     <div class="div9">
                         <img src="image/icon_l_1.png">
@@ -149,9 +150,15 @@
                     </div>
                     <div class="div11"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
             </li>
-            </a>
+            </a>-->
         </ul>
     </div>
 </section>
+<script type="text/javascript">
+    function Tomoniall(type){
+        window.localStorage.setItem("monikaoshiall",type);
+        window.location.href="monikaoshi1.html";
+    }
+</script>
 </body>
 </html>

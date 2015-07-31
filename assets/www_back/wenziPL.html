@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>文字评论</title>
+    <link rel="stylesheet" type="text/css" href="css/wenziPL.css">
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script src="js/wenziPL.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+            getNThreadContent(1);
+
+        });
+    </script>
+    <script type="text/javascript">
+        function gtouchstart(i){
+            timeOutEvent = setTimeout("longPress()",500);//这里设置定时器，定义长按500毫秒触发长按事件，时间可以自己改，个人感觉500毫秒非常合适
+            if(i!=0) {
+                document.getElementById("h"+i).style.backgroundColor = "#EDEDED";
+            }
+            return false;
+        }
+        //手释放，如果在500毫秒内就释放，则取消长按事件，此时可以执行onclick应该执行的事件
+        function gtouchend(i){
+            clearTimeout(timeOutEvent);//清除定时器
+            if(timeOutEvent!=0){
+                //这里写要执行的内容（尤如onclick事件）
+                if(i!=0) {
+                    document.getElementById("h"+i).style.backgroundColor = "#FFFFFF";
+                }
+            }
+            return false;
+        };
+        //如果手指有移动，则取消所有事件，此时说明用户只是要移动而不是长按
+        function gtouchmove(i){
+            clearTimeout(timeOutEvent);//清除定时器
+            timeOutEvent = 0;
+            if(i!=0) {
+                document.getElementById("h"+i).style.backgroundColor = "#FFFFFF";
+            }
+        };
+
+        //真正长按后应该执行的内容
+        function longPress(){
+            timeOutEvent = 0;
+            document.getElementById("bg1").style.display ="block";
+            document.getElementById("show1").style.display ="block";
+            document.getElementById("h1").style.backgroundColor = "#FFFFFF";
+            document.getElementById("h2").style.backgroundColor = "#FFFFFF";
+            document.getElementById("h3").style.backgroundColor = "#FFFFFF";
+        }
+        function a(){
+            document.getElementById("bg1").style.display="none";
+            document.getElementById("show1").style.display ="none";
+
+        }
+
+    </script>
+</head>
+<body>
+<header>
+    <a href="javascript:history.back()"><div class="div1"> <img src="image/icon_return.png"></div></a>
+</header>
+<section>
+
+    <!--<div class="div3">
+        <div class="div4">
+            <div class="div5">
+
+                <div class="div7">
+                    <p>dasdasfafasf</p>
+                </div>
+                <div class="div8">
+                    <p>2015-3-10</p>
+                </div>
+            </div>
+        </div>
+        <div class="div12">
+            <p>说了半天几点开始啊</p>
+        </div>
+    </div>-->
+
+    <!--<div class="div3" ontouchstart="gtouchstart(2)" ontouchmove="gtouchmove(2)" ontouchend="gtouchend(2)" id="h2">
+        <div class="div4">
+            <div class="div5">
+
+                <div class="div7">
+                    <p>我id卡刷的话</p>
+                </div>
+                <div class="div8">
+                    <p>2015-3-10</p>
+                </div>
+            </div>
+        </div>
+        <div class="div12">
+            <p>不让说话</p>
+        </div>
+    </div>
+    <div class="div3" ontouchstart="gtouchstart(3)" ontouchmove="gtouchmove(3)" ontouchend="gtouchend(3)" id="h3">
+        <div class="div4">
+            <div class="div5">
+                <div class="div6">
+                    <img src="image/16.png">
+                </div>
+                <div class="div7">
+                    <p>大哇塞</p>
+                </div>
+                <div class="div8">
+                    <p>2015-3-10   来自手机</p>
+                </div>
+            </div>
+        </div>
+        <div class="div12">
+            <p>说了半天几点开始啊</p>
+        </div>
+    </div>
+    <div class="div3" ontouchstart="gtouchstart(4)" ontouchmove="gtouchmove(4)" ontouchend="gtouchend(4)" id="h4">
+        <div class="div4">
+            <div class="div5">
+                <div class="div6">
+                    <img src="image/16.png">
+                </div>
+                <div class="div7">
+                    <p>走向乌江的项羽</p>
+                </div>
+                <div class="div8">
+                    <p>2015-3-10   来自手机</p>
+                </div>
+            </div>
+        </div>
+        <div class="div12">
+            <p>怎么看都是中国军人最帅</p>
+        </div>
+    </div>
+    <div class="div3" ontouchstart="gtouchstart(5)" ontouchmove="gtouchmove(5)" ontouchend="gtouchend(5)" id="h5">
+        <div class="div4">
+            <div class="div5">
+                <div class="div6">
+                    <img src="image/16.png">
+                </div>
+                <div class="div7">
+                    <p>走向乌江的项羽</p>
+                </div>
+                <div class="div8">
+                    <p>2015-3-10   来自手机</p>
+                </div>
+            </div>
+        </div>
+        <div class="div13">
+            <div class="div14">
+                <div class="div15">
+                    <p>吹拉弹唱</p>
+                </div>
+                <div class="div16">
+                    <p>2015-03-08 来自手机</p>
+                </div>
+            </div>
+            <div class="div17">
+                <p>我只是关心明天我们的中国重工会不会涨</p>
+            </div>
+        </div>
+        <div class="div13">
+            <div class="div14">
+                <div class="div15">
+                    <p>飘飘飘飘</p>
+                </div>
+                <div class="div16">
+                    <p>2015-03-08 来自手机</p>
+                </div>
+            </div>
+            <div class="div17">
+                <p>与其买股票担惊受怕还不如买个商铺收租</p>
+            </div>
+        </div>
+        <div class="div12">
+            <p>怎么看都是中国军人最帅</p>
+        </div>
+    </div>-->
+</section>
+<div class="zz-3" id="bg1"  onclick="a()" >
+</div>
+<div class="zz-4" id="show1">
+    <div class="div18">
+        <div class="div19">
+            <a href="">
+                <p>回复</p>
+            </a>
+        </div>
+        <div class="div19">
+            <a href="">
+                <p>复制</p>
+            </a>
+        </div>
+        <div class="div19">
+            <a href="">
+                <p>举报</p>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

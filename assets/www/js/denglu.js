@@ -6,7 +6,7 @@
 @expert  专家
 */
 function Autoreg(){
-    var regurl='http://120.24.172.105/fw?controller=com.xfsm.action.AutoRegAction&t=app';
+    var regurl='http://101.204.236.5/fw?controller=com.xfsm.action.AutoRegAction&t=app';
     $.ajax({
         type:'post',
         dataType:'json',
@@ -35,7 +35,7 @@ function Autoreg(){
 
 //登录
 function Login(username,pwd){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.LoginAction&t=app';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.LoginAction&t=app';
     $.ajax({
         type:'post',
         dataType:'json',
@@ -43,6 +43,8 @@ function Login(username,pwd){
         data:{"loginname":username,"pwd":pwd},
         success:function(data){
              window.sessionStorage.setItem("session",json.sId);
-        },
+        },error:function(error){
+            alert(JSON.stringify(error));
+        }
     });
 }

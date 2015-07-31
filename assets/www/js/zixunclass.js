@@ -8,7 +8,7 @@ function TozixunClass(subclass){
 function getzixunlist(pagesize,start){
     var subclass=window.localStorage.getItem("zixunsubclass");
     var session=window.sessionStorage.getItem("session")
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction&t=app&m=chat';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction&t=app&m=chat';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -29,12 +29,39 @@ function getzixunlist(pagesize,start){
                 //将文章id和文章对象字符串对应保存
                 window.localStorage.setItem(id,objstr);
                 var com=list[key]['hitnum'];
-                $("section").append("<div class='div4'><a href='javascript:ToGaocengxq("+"\""+id+"\""+")'><div class='div5'><p>"+article_title+"</p></div><div class='div6'><p>"+describe+"</p></div></a><div class='ky-5'><img src='image/icon_collect_l.png' id='div9' class='ky-4' onclick='change_pic(this)'><p>"+com+"</p></div></div>");
+                $("section").append("<div class='div4'><a href='javascript:ToGaocengxq("+"\""+id+"\""+")'><div class='div5'><p>"+article_title+"</p></div><div class='div6'><p>"+describe+"</p></div></a><div class='ky-5'><img src='image/icon_collect_l.png' id='div9' class='ky-4' onclick=setcollet(this,\'"+id+"\')><p>"+com+"</p></div></div>");
             });
             $("section").append("<a href='javascript:;'onclick='addMoreZixun(this);'>加载更多</a>");
-        },
+        }
     });
 }
+
+//收藏业务方法
+function setcollet(div,id){
+    var imgObj=$(div);
+    if(imgObj.attr("src")=="image/icon_collect_l.png"){
+        imgObj.attr("src","image/icon_collect_click_l.png");
+        ajaxcollet("xf_article_consult",id);
+    }else{
+        imgObj.attr("src","image/icon_collect_l.png");
+    }
+}
+//收藏执行方法
+function ajaxcollet(table,fk_article_id){
+    var url='http://101.204.236.5/fw?controller=com.mingsokj.action.XfCollectAction&method=collect';
+    $.ajax({
+        type:'post',
+        dataType:'json',
+        url:url,
+        data:{"table":table,"fk_article_id":fk_article_id},
+        success:function(data){
+            alert(JSON.stringify(data));
+        },error:function(error){
+            alert(JSON.stringify(error));
+        }
+    });
+}
+
 
 //将所点击的id保存，跳转到高层详情
 function ToGaocengxq(id){

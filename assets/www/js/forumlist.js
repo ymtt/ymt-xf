@@ -1,7 +1,7 @@
 /*根据板块id获取板块主题*/
 function getSubjectList(){
              var fid=window.localStorage.getItem("fid");
-             var url='http://120.24.172.105/xxfintf/bbs/getSubjectListByFid?';
+             var url='http://101.204.236.5/xxfintf/bbs/getSubjectListByFid?';
              if(fid==null){
                  alert("未正常获取fid");
              }else{
@@ -27,11 +27,17 @@ function getSubjectList(){
            }
  };
 
+var index=2;
+function addmore(){
+    getNSubjectList(index);
+    index++;
+    $(".morethread").remove();
+}
 
 /*新论坛接口-根据板块id获取板块主题*/
-function getNSubjectList(){
+function getNSubjectList(index){
     var fid=window.localStorage.getItem("fid");
-    var url='http://120.24.172.105/bbs/bbs/getSubjectListByFid.do';
+    var url='http://101.204.236.5/bbs/bbs/getSubjectListByFid.do';
     if(fid==null){
         alert("未正常获取到板块id")
     }else{
@@ -39,7 +45,7 @@ function getNSubjectList(){
             type:'get',
             datatype:'json',
             url:url,
-            data:{"fid":fid},
+            data:{"fid":fid,"index":index},
             success:function(data){
                 /*var str=data.replace(/[\\]/g,"");
                 var strobj=str.substring(1,str.length-1);
@@ -62,6 +68,9 @@ function getNSubjectList(){
                     //帖子简述
                     var jianjie="";
                     CreateForumList(threadTid,author,dateline,subject,jianjie,replies,forumname);
+                    if(key==list.length-1){
+                        $("section").append("<div class='morethread'><a href='javascript:addmore()'>加载更多</a></div>");
+                    }
                 });
             },error:function(error){
                 alert(JSON.stringify(error));
@@ -72,7 +81,6 @@ function getNSubjectList(){
 
 
  function threadTid(threadTid){
-    alert(threadTid);
     window.localStorage.setItem("tid",threadTid);
     window.location.href="Novice_answer.html";
  }

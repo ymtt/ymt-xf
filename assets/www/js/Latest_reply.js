@@ -1,5 +1,5 @@
 function getLatest_reply(){
-    var url='http://120.24.172.105/bbs/bbs/getLastSubject.do';
+    var url='http://101.204.236.5/bbs/bbs/getLastSubject.do';
     $.ajax({
         type:'get',
         dataType:'json',

@@ -11,7 +11,7 @@ function showxq(){
    $.ajax({
         type:'get',
         dataType:'json',
-        url:'http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction&m=show',
+        url:'http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction&m=show',
         data:{"id":id},
         success:function(data){
            $(".div10 p").html(data.centent);
@@ -24,7 +24,7 @@ function showxq(){
 
 //图片资讯列表
 function getpicinfo(){
-       var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
+       var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction';
        var srcs='http://g.hiphotos.baidu.com/image/pic/item/63d0f703918fa0ec56c59e0f249759ee3d6ddbb6.jpg';
        $.ajax({
            type:'get',

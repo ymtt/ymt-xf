@@ -9,7 +9,7 @@
 * 知识平台 数据库 xf_article_db
 * */
 function addCollet(type,articleid){
-    var url='120.24.172.105/fw?controller=com.mingsokj.action.XfCollectAction&method=collect';
+    var url='http://101.204.236.5/fw?controller=com.mingsokj.action.XfCollectAction&method=collect';
     $.ajax({
         type:'post',
         dataType:'json',
@@ -30,7 +30,7 @@ function addCollet(type,articleid){
 * 教育 edu
 * */
 function getColletList(start,pagesize,m){
-    var url='http://120.24.172.105/fw?t=app&controller=com.xfsm.action.CollectAction&m=consult';
+    var url='http://101.204.236.5/fw?t=app&controller=com.xfsm.action.CollectAction&m=consult';
     $.ajax({
         type:'post',
         dataType:'json',

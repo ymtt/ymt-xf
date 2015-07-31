@@ -10,54 +10,7 @@
     <script type="text/javascript">
            $(document).ready(function(){
 
-                        //选择所有class=div3中第三个，序号从上到下从0开始
-                        /*$(".div3:eq(2)").click(function(){
-                                $(".hidebg").css({"display":"block"});
-                                $("#showskin").show();
-                        });
-                        $("span:eq(0)").click(function(){
-                                 $(".hidebg").css({"display":"none"});
-                                 $("#showskin").hide();
-                        });
-
-
-                        var isClick=false;
-                        var index="";
-
-                        $(".submit:eq(0)").click(function(){
-                                //移除以前的Index记录
-                                window.localStorage.removeItem("Index");
-                                //设置新的Index记录为选定值
-                                window.localStorage.setItem("Index",$('input[name="skin"]:checked').val());
-                                //获取新的Index
-                                index=window.localStorage.getItem("Index");
-                                //设置返回链接的href为新index
-                                $("#back").attr("href",index);
-                                //设置按钮被点击标记
-                                isClick=true;
-                                //隐藏透明层
-                                $(".hidebg").css({"display":"none"});
-                                //隐藏弹出框
-                                $("#showskin").hide();
-                        });
-
-                        //如果没有被点击
-                        if(isClick==false){
-                            //获取值，此值为旧值
-                            index=window.localStorage.getItem("Index");
-                            $("#back").attr("href",index);
-                        }
-                         document.addEventListener("deviceready", onDeviceReady, false);
-
-                         function onDeviceReady() {
-                             //按钮事件
-                            document.addEventListener("backbutton", eventBackButton, false); //返回键
-                            document.addEventListener("menubutton", eventMenuButton, false); //菜单键
-                          }
-                          function eventBackButton(){
-                                //手机返回键监听
-                                window.location.href=index;
-                          }*/
+                        
 
                         index=window.localStorage.getItem("Index");
                         $("#back").attr("href",index);

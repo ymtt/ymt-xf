@@ -1,7 +1,7 @@
 /*邀请专家*/
 //获取专家列表
 function getExpertList(pagesize,start){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -45,7 +45,7 @@ function CreateExpertDom(expertid,name,levelname,concount,waitcount){
 //邀请专家
 function  Inviteexperts(userId){
     var qq_id=window.localStorage.getItem("qq_id");
-    var url='http://120.24.172.105/index/consult/chat_partial/addExportUser.jsp';
+    var url='http://101.204.236.5/index/consult/chat_partial/addExportUser.jsp';
     $.ajax({
         type:'post',
         dataType:'json',

@@ -1,7 +1,7 @@
 function getExam(){
     var id=window.localStorage.getItem("examid");
     var session=window.sessionStorage.getItem("session");
-    var url='http://120.24.172.105/fw?t=app&controller=com.xfsm.action.ExamAction&m=goExam';
+    var url='http://101.204.236.5/fw?t=app&controller=com.xfsm.action.ExamAction&m=goExam';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -68,7 +68,11 @@ function doAnswer(examId,answer_id,val){
         url:url,
         data:{"ignoreConn":"Y","method":"doAnswer","examId":examId,"answer_id":answer_id,"val":val},
         success:function(data){
-            alert(JSON.stringify(data));
+           if(data.result=="Y"){
+           alert("提交成功");
+           }else{
+           alert("提交出错，请确认已经登陆！");
+           }
         },error:function(error){
             alert(JSON.stringify(error));
         }
@@ -76,7 +80,7 @@ function doAnswer(examId,answer_id,val){
 }
 
 function submitExam(exam_id){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.UserExamAction';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.UserExamAction';
     $.ajax({
         type:'post',
         dataType:'json',
@@ -116,7 +120,7 @@ function NextQue(){
 }
 
 //多选下一题
-var j=97;
+var j=0;
 function NextQue2(){
     //多选
     var mutils=findTest('mutils');
@@ -133,7 +137,7 @@ function NextQue2(){
     j++;
 }
 //判断下一题
-var k=18;
+var k=0;
 function NextQue3(){
     //判断
     var judgments=findTest('judgments');
@@ -148,7 +152,7 @@ function NextQue3(){
 }
 
 //填空下一题
-var l=18;
+var l=0;
 function NextQue4(){
     //填空
     var fills=findTest('fills');
@@ -160,7 +164,7 @@ function NextQue4(){
     l++;
 }
 
-var o=98;
+var o=0;
 function NextQue5(){
     //问答
     var subjectives=findTest('subjectives');

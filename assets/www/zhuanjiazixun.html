@@ -22,6 +22,16 @@
             gethhotandnew("hot","1","1");
             back();
             getRoat();
+                  
+            var role=window.localStorage.getItem("userrole");
+               
+                          if(role=="003"||role=="004"){
+                          $(".div3").css("display","none");
+                          $(".div4").css("display","block");
+                          }else{
+                          $(".div3").css("display","block");
+                          }
+                          
         });
     </script>
     <script type="text/javascript">
@@ -33,33 +43,20 @@
     </script>
 
     <style>
-        .user{
-            display:none;
-        }
-        .experts{
-            display:none;
-        }
+        
     </style>
     <script type="text/javascript">
 
-        $(document).ready(function(){
-            //var role="002";
-
-        var role=window.localStorage.getItem("userrole");
-        if(role==""||role==null||typeof(role)==undefined){
-            role="002";
+        
+        
+    function sets(){
+        if($(".div3-2 ul").css("display")=="none"){
+            $(".div3-2 ul").css("display","block");
+        }else{
+            $(".div3-2 ul").css("display","none");
         }
-            switch(role){
-            case "002":
-                $(".user").css("display","block");
-            break;
-            case "003":
-            case "004":
-                $(".div3").css("display","none");
-                $(".div4").css("display","block");
-            break;
-            }
-        });
+        
+    }
 
     </script>
 
@@ -69,12 +66,14 @@
     <a href="#" id="back"><div class="div1"><img src="image/icon_return.png"></div></a>
     <div class="div2"><p>专家咨询</p></div>
     <div class="div2-1"><img src="image/icon_search_1.png"></div>
-    <div class="div3">
+    
+    <div class="div3" onclick="sets()">
         <div class="div3-1">
             <p>4</p>
         </div>
-    <div class="div3-2">
-         <img src="image/icon_more_1.png">
+       <div class="div3-2">
+        
+          <img src="image/icon_more_1.png">
         <ul>
             <li class="user"><a href="lijizixun.html"><div class="div3-3"><p>立即咨询</p></div></a></li>
             <li class="user"><a href="wodezixun.html">
@@ -86,8 +85,9 @@
                 </li>
             <li class="user"><a href="lishizixun.html"><div class="div3-3"><p>咨询历史</p></div></a></li>
         </ul>
+     </div>
     </div>
-    </div>
+    
     <div class="div4">
         <a href="wodezixunZJ.html">
             <div class="div5"><p>4</p></div>
@@ -99,70 +99,7 @@
 </header>
 <section>
     <nav>
-        <!--<div class="nav-1">-->
-            <!--<div class="nav-2"> <img src="image/icon_search_3.png"></div>-->
-            <!--<input type="text">-->
-        <!--</div>-->
-        <!--<div class="nav-3">-->
-            <!--<ul>-->
-                <!--<li>-->
-                    <!--<a href="" >-->
-                        <!--<div class="nav-4">-->
-                            <!--<p>消防部门</p>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="" >-->
-                        <!--<div class="nav-4">-->
-                            <!--<p>规范组</p>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="" >-->
-                        <!--<div class="nav-4">-->
-                            <!--<p>建委</p>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="" >-->
-                        <!--<div class="nav-4">-->
-                            <!--<p>科研院校</p>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="" >-->
-                        <!--<div class="nav-4">-->
-                            <!--<p>设计院</p>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="" >-->
-                        <!--<div class="nav-4">-->
-                            <!--<p>开发商</p>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="" >-->
-                        <!--<div class="nav-4">-->
-                            <!--<p>设备商</p>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="" >-->
-                        <!--<div class="nav-4">-->
-                            <!--<p>服务商</p>-->
-                        <!--</div>-->
-                    <!--</a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
+        
     </nav>
     <div class="div9">
         <div class="div9-1">
@@ -194,23 +131,7 @@
            <a href="gengduozhuanjia.html"><div class="div12-2"><p>更多专家</p></div></a>
         </div>
 
-        <!--<div class="div11-left">
-            <div class="div16">
-                <a href="zhuanjiazixunxqjm.html">
-             <div class="div13"><img src="image/25.png"></div>
-            <div class="div14"><p> 姓名 ： 李成儒</p></div>
-            <div class="div15"><p>生日：1986年9月  职业：消防队指导代......</p></div></a>
-            </div>
-        </div>
-
-        <div class="div11-right">
-            <div class="div16-1">
-                <a href="zhuanjiazixunxqjm.html">
-            <div class="div13"><img src="image/26.png"></div>
-            <div class="div14"><p> 姓名 ： 张三</p></div>
-            <div class="div15"><p>生日：1986年9月  职业：消防队指导代......</p></div></a>
-            </div>
-        </div>-->
+        
 
     </div>
     <div class="div17">
