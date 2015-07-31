@@ -48,6 +48,7 @@ a{
     height: auto;
     float: left;
     margin-top: 10px;
+
 }
 .div2-1 img{
     width: 20px;
@@ -132,7 +133,10 @@ a{
     height: 30px;
     float:right;
     margin-top: -30px;
+<<<<<<< HEAD
     
+=======
+>>>>>>> origin/v2
     display: none;
 }
 

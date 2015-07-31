@@ -11,12 +11,13 @@ a{
     height: auto;
     position: absolute;
     left: 10%;
-    top: -4px;
+    top: 0;
 
 }
 .div1 img{
     width: 140px;
     max-width:100%;
+    height: 52px;
 }
 
 .div2{
@@ -102,14 +103,14 @@ a{
 }
 .div9{
     width: 94%;
-    height: 105px;
+    height: 92px;
     float: left;
     background-color: #FFFFFF;
     margin-left: 3%;
 }
 .div9 ul{
     width: 16%;
-    height: 101px;
+    height: 88px;
     list-style: none;
     float: left;
     margin-top: 2px;
@@ -117,35 +118,35 @@ a{
 }
 .div9 ul li{
     width: 100%;
-    height: 33px;
+    height: 29px;
     float: left;
 }
 .div10{
     width: 100%;
-    height: 30px;
+    height: 29px;
 }
 .div10 p{
     font-size: 0.75em;
-    line-height: 30px;
+    line-height: 29px;
     text-align: center;
     color: #FFFFFF;
 }
 .div11{
     width: 84%;
-    height: 105px;
+    height:auto;
     float: left;
 }
 .div11 table{
     width: 100%;
-    height: 105px;
+    height:auto;
 }
 .div11 table tr{
     width: auto;
     background-color: #05A0D7;
-    height: 10px;
 }
 .div11 table tr td{
     width: 25%;
+    height: 30px;
     border: 2px solid #FFFFFF;
 }
 .div11 table tr td p{
@@ -153,7 +154,7 @@ a{
     font-size: 0.75em;
     text-align: center;
     color: #FFFFFF;
-    line-height: 10px;
+    line-height: 5px;
 }
 section{
     width: 100%;
@@ -318,7 +319,7 @@ section ul li{
 }
 .zc-2 ul li{
     width: 100%;
-    height: 40px;
+    height: 30px;
     float: left;
 }
 .zc-3{
@@ -329,16 +330,16 @@ section ul li{
 .zc-3 img{
     width: 20px;
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .zc-4{
     width: 80%;
-    height: 40px;
+    height: 30px;
     float: left;
 }
 .zc-4 p{
     font-size: 0.75em;
-    line-height: 40px;
+    line-height: 30px;
     color: #FFFFFF;
 }
 .zc-5{
