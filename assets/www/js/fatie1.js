@@ -57,7 +57,7 @@ function getsubclass(id){
               success:function(data){
                   var json=eval("("+data+")");
                   var list=json.data;
-                  alert("成功"+data);
+                  alert("发帖成功");
                   window.location.href="Novice_area.html";
               },error:function(error){
                      //var error=eval("("+error+")");

@@ -17,12 +17,16 @@
     <script src="js/zixunclass.js"></script>
     <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/fd.js"></script>
-    <script src="js/forum.js"></script>
+    <script src="js/newforum.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             h();
             d();
+                          setIndex();
         });
+        function setIndex(){
+            window.localStorage.setItem("Index","index.html");
+        }
     </script>
    <!--script <script src="cordova.js"></script>-->
     <script src="js/index.js"></script>
@@ -191,9 +195,9 @@
 </div>
 <div class="div9">
     <div class="div10">
-        <a href="javascript:setfid('49')"><!--问题咨询49，新手报道2-->
+        <a href="javascript:ToBarH('hot','Hot_topics.html')"><!--问题咨询49，新手报道2-->
             <div class="div12">
-                <p>热门主题</p>
+                <p id="hot">热门主题</p>
             </div>
             <div class="div13">
                 <p>新修订《消防法》的宣传</p>
@@ -207,9 +211,9 @@
         </a>
     </div>
     <div class="div11">
-        <a href="javascript:setfid('48')"><!--解决方案48，新手答疑36-->
+        <a href="javascript:ToBarH('jh','The_essence_of_love.html')"><!--解决方案48，新手答疑36-->
             <div class="div16">
-                <p>精华热帖</p>
+                <p id="jh">精华热帖</p>
             </div>
             <div class="div17">
                 <img src="image/08.png">

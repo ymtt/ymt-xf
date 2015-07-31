@@ -105,7 +105,12 @@ function sendmsgs(content){
         data:{"SESSIONID":session,"qq_id":qq_id,"content":content},
         success:function(data){
             //ajax成功
-            alert("发送成功："+JSON.stringify(data)+""+session);
+           if(data.result=="Y"){
+            alert("发送成功");
+           }else{
+           alert("发送失败");
+           }
+           
             //$("section").append("<div class='div4'><div class='div7'><img src='"+head_pic+"'></div><div class='div8'><p>"+content+"</p></div></div>");
         },error:function(error){
             //ajax失败

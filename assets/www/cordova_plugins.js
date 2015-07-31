@@ -1,6 +1,13 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js",
+        "id": "nl.x-services.plugins.socialsharing.SocialSharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
+    },
+    {
         "file": "plugins/nl.x-services.plugins.toast/www/Toast.js",
         "id": "nl.x-services.plugins.toast.Toast",
         "clobbers": [
@@ -12,22 +19,8 @@ module.exports = [
         "id": "nl.x-services.plugins.toast.tests"
     },
     {
-        "file": "plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js",
-        "id": "nl.x-services.plugins.socialsharing.SocialSharing",
-        "clobbers": [
-            "window.plugins.socialsharing"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
         "id": "org.apache.cordova.dialogs.notification",
-        "merges": [
-            "navigator.notification"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.dialogs/www/android/notification.js",
-        "id": "org.apache.cordova.dialogs.notification_android",
         "merges": [
             "navigator.notification"
         ]
@@ -173,8 +166,8 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.file/www/android/FileSystem.js",
-        "id": "org.apache.cordova.file.androidFileSystem",
+        "file": "plugins/org.apache.cordova.file/www/ios/FileSystem.js",
+        "id": "org.apache.cordova.file.iosFileSystem",
         "merges": [
             "FileSystem"
         ]
@@ -196,8 +189,9 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "nl.x-services.plugins.toast": "2.0.4",
+    "cordova-plugin-whitelist": "1.0.0",
     "nl.x-services.plugins.socialsharing": "4.3.18",
+    "nl.x-services.plugins.toast": "2.0.4",
     "org.apache.cordova.dialogs": "0.3.0",
     "org.apache.cordova.file-transfer": "0.5.0",
     "org.apache.cordova.file": "1.3.3"

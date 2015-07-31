@@ -48,7 +48,6 @@ a{
     height: auto;
     float: left;
     margin-top: 10px;
-
 }
 .div2-1 img{
     width: 20px;
@@ -133,6 +132,7 @@ a{
     height: 30px;
     float:right;
     margin-top: -30px;
+    
     display: none;
 }
 
@@ -160,9 +160,7 @@ a{
     text-align: center;
     line-height: 30px;
 }
-.div3-2:hover ul{
-    display: block;
-}
+
 section{
     width: 100%;
     height: auto;

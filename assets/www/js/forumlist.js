@@ -72,7 +72,6 @@ function getNSubjectList(){
 
 
  function threadTid(threadTid){
-    alert(threadTid);
     window.localStorage.setItem("tid",threadTid);
     window.location.href="Novice_answer.html";
  }
