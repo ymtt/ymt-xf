@@ -1,6 +1,6 @@
 /***********更多专家**********/
 function expertlist(pagesize,start){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -44,7 +44,7 @@ function CreateMoreExpert(id,head_pic,name,expertlevel,consultnum,waitnum){
 }
 /********专家搜索************/
 function serachexpertlist(pagesize,start,kw){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
     $.ajax({
         type:'get',
         dataType:'json',

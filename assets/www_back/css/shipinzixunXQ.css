@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body html{
+    width: 100%;
+    height:614px;
+    background-color: #000000;
+}
+header{
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: #05A0D7;
+}
+a{
+    text-decoration: none;
+}
+.div1 {
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 3%;
+}
+
+.div1 img {
+    max-width: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.div2{
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-left: 60%;
+}
+.div3{
+    width: 50%;
+    height: 40px;
+    float: left;
+}
+.div3 p{
+    font-size: 0.8em;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+.div4{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-top: 12px;
+}
+.div4 img{
+    max-width: 100%;
+}
+.div5{
+    width: 7%;
+    height: auto;
+    float: left;
+    margin-top: 12px;
+}
+.div5 img{
+    max-width: 60%;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+video{
+    width: 100%;
+    height:auto;
+    float: left;
+    margin-bottom: 200px;
+}
+.zz-1{
+    position: absolute;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7) ;
+    display: none;
+}
+.zz-2{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    top: 60%;  width: 100%; height: 40%;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+.div11{
+    width:100% ;
+    height:auto;
+}
+.div11 ul{
+    width: 100%;
+    height: 80%;
+    list-style: none;
+    border-bottom: 5px solid #ECECEC;
+}
+.div11 ul li {
+    width: 20%;
+    height: 50%;
+    float: left;
+}
+.div12{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.div12 img{
+    width: 70%;
+    height:auto;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.div13{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+.div13 p {
+    font-size: 0.75em;
+    line-height: 20px;
+    text-align: center;
+    color: #737373;
+}
+.div14{
+    width: 100%;
+    height: 20%;
+}
+.div14 input{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    color: #737373;
+    background-color: #ffffff;
+    font-size: 1em;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px;
+}

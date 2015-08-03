@@ -1,7 +1,7 @@
 function getExam(){
     var id=window.localStorage.getItem("examid");
     var session=window.sessionStorage.getItem("session");
-    var url='http://120.24.172.105/fw?t=app&controller=com.xfsm.action.ExamAction&m=goExam';
+    var url='http://101.204.236.5/fw?t=app&controller=com.xfsm.action.ExamAction&m=goExam';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -71,7 +71,7 @@ function doAnswer(examId,answer_id,val){
            if(data.result=="Y"){
            alert("提交成功");
            }else{
-           alert("未知错误");
+           alert("提交出错，请确认已经登陆！");
            }
         },error:function(error){
             alert(JSON.stringify(error));
@@ -80,7 +80,7 @@ function doAnswer(examId,answer_id,val){
 }
 
 function submitExam(exam_id){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.UserExamAction';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.UserExamAction';
     $.ajax({
         type:'post',
         dataType:'json',

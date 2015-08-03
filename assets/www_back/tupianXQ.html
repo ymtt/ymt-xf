@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>图片详情</title>
+    <link href="css/tupianXQ.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/picnewsXQ.js"></script>
+    <script language="javascript" type="text/javascript">
+        function showdiv() {
+            document.getElementById("bg").style.display ="block";
+            document.getElementById("show").style.display ="block";
+        }
+        function hidediv() {
+            document.getElementById("bg").style.display ='none';
+            document.getElementById("show").style.display ='none';
+        }
+        $(document).ready(function(){
+            showxq();
+        });
+    </script>
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+        });
+
+    </script>
+</head>
+<body>
+<header>
+    <a href="tupianzixun.html"><div class="div1"> <img src="image/icon_return.png"></div></a>
+    <!--<div class="div2">-->
+        <!--<a href="tupianPL.html">-->
+            <!--<div class="div3"><p>324</p></div>-->
+            <!--<div class="div4">-->
+                <!--<img src="image/icon_register_z3.png">-->
+            <!--</div>-->
+        <!--</a>-->
+    <!--</div>-->
+    <div class="div5">
+        <img src="image/icon_share_education.png" onclick="showdiv()">
+    </div>
+</header>
+<section>
+    <div class="div6">
+        <img src="image/22.png">
+    </div>
+    <div class="div7">
+        <div class="div8">
+            <p style="color:red;">消防演习校园现场演习</p>
+        </div>
+        <div class="div9">
+            <p>1/3</p>
+        </div>
+    </div>
+    <div class="div10">
+        <p>2015年5月7日上午，建三江农垦公安局前进分局与前进农场中学联合开展校园消防演练，此次消防演练包括
+        火灾事故逃生演练、受伤人员紧急救援演练及消防安全知识和灭火器使用方法讲座</p>
+    </div>
+</section>
+<div class="zz-1" id="bg"  >
+</div>
+<div class="zz-2" id="show">
+    <div class="div11">
+        <ul>
+            <li>
+                <div class="div12">
+                    <a href="">
+                        <img src="image/icon_direct_messages.png">
+                    </a>
+                </div>
+                <div class="div13">
+                    <p>私信和群</p>
+                </div>
+            </li>
+            <li>
+                <div class="div12">
+                    <a href="">
+                        <img src="image/icon_wechat.png">
+                    </a>
+                </div>
+                <div class="div13">
+                    <p>微信好友</p>
+                </div>
+            </li>
+            <li>
+                <div class="div12">
+                    <a href="">
+                        <img src="image/icon_friendster.png">
+                    </a>
+                </div>
+                <div class="div13">
+                    <p>朋友圈</p>
+                </div>
+            </li>
+            <li>
+                <div class="div12">
+                    <a href="">
+                        <img src="image/icon_qq.png">
+                    </a>
+                </div>
+                <div class="div13">
+                    <p>QQ</p>
+                </div>
+            </li>
+            <li>
+                <div class="div12">
+                    <a href="">
+                        <img src="image/icon_weibo.png">
+                    </a>
+                </div>
+                <div class="div13">
+                    <p>新浪微博</p>
+                </div>
+            </li>
+            <li>
+                <div class="div12">
+                    <a href="">
+                        <img src="image/icon_collect_f.png">
+                    </a>
+                </div>
+                <div class="div13">
+                    <p>收藏</p>
+                </div>
+            </li>
+            <li>
+                <div class="div12">
+                    <a href="">
+                        <img src="image/icon_link_f.png">
+                    </a>
+                </div>
+                <div class="div13">
+                    <p>复制链接</p>
+                </div>
+            </li>
+            <li>
+                <div class="div12">
+                    <a href="">
+                        <img src="image/icon_report_f.png">
+                    </a>
+                </div>
+                <div class="div13">
+                    <p>举报</p>
+                </div>
+            </li>
+        </ul>
+        <div class="div14">
+            <input type="button" value="取消" onclick="hidediv()">
+        </div>
+    </div>
+</div>
+</body>
+</html>

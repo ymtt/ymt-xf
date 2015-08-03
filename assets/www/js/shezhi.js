@@ -2,7 +2,7 @@
 //退出登录
 function exituser(){
     var sid=window.sessionStorage.getItem("session");
-    var url='http://120.24.172.105/app_exit.jsp?sId=xx';
+    var url='http://101.204.236.5/app_exit.jsp';
     $.ajax({
         type:'post',
         dataType:'json',

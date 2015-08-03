@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html,body{
+    width: 100%;
+    height:auto;
+
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+    position: fixed;
+    top:0;
+}
+a{
+    text-decoration: none;
+}
+.div1 {
+    width: 10%;
+    height:40px;
+    float: left;
+}
+
+.div1 img {
+    width: 20px;
+    max-width: 100%;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.div3{
+    width: 20%;
+    height: 40px;
+    float: right;
+    margin-right: 5%;
+}
+.div3 p{
+    font-size: 0.8em;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+}
+.div2{
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    position: fixed;
+    top: 40px;
+}
+.div2 p{
+    color: #05A0D7;
+    font-size: 0.9em;
+    line-height: 40px;
+    margin-left: 5%;
+}
+section{
+    width: 100%;
+    height:auto;
+    float: left;
+    background-color: #EDEDED;
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+.div4{
+    width: 100%;
+    height: auto;
+    float: left;
+
+}
+.div5{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.div5 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+.div6{
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+}
+.div6 p{
+    font-size: 0.85em;
+    line-height: 100%;
+    text-align: center;
+    color: #737373;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.div7{
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.div7 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+.div8{
+    width: auto;
+    height: auto;
+    background-color: #05A0D7;
+    border-radius: 10px;
+    float: right;
+    margin-top: 10px;
+}
+.div8 p{
+    font-size: 0.85em;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+footer{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffffff;
+}
+.div9{
+    width: 100%;
+    height: 40px;
+    float: left;
+
+}
+.div10{
+    width: 6%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+.div10 img{
+    max-width: 100%;
+    width: 30px;
+}
+.div11{
+    width:50%;
+    height: 30px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5%;
+}
+.div11 input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+.div12{
+    width: 6%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+.div12 img{
+    max-width: 100%;
+    margin-left: 30%;
+    width: 30px;
+}
+.div13{
+    width: 6%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5px;
+    display: block;
+}
+.div13 img{
+    max-width: 100%;
+    width: 30px;
+}
+.div14{
+    width: 10%;
+    height: auto;
+    float: right;
+    margin-right: 5%;
+    margin-top: 8px;
+    display: none;
+}
+.div14 button{
+    width: 100%;
+    height: auto;
+    line-height: 25px;
+    border: 0;
+    background-color: #05A0D7;
+    color: #ffffff;
+}
+li{list-style:none;}
+.m-slider{width:100%;margin:50px 0;overflow:hidden;}
+.m-slider .cnt{position:relative;left:0;width:100%;}
+.m-slider .cnt li{float:left;width:100%;}
+.m-slider .icons{text-align:center;color:#000;}
+.m-slider .icons span{margin:0 5px;}
+.m-slider .icons .curr{color:red;}
+.f-anim{-webkit-transition:left .2s linear;}
+
+.div15{
+    width: 16%;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5%;
+    text-align: center;
+}
+.div15 img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.div15-1{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.div15-1 p{
+    font-size: 0.6em;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+}
+.div16{
+    width: 16%;
+    height: auto;
+    float: left;
+    margin-top: 6px;
+    margin-left: 3%;
+    text-align: center;
+}
+.div16 img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.div17{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+}
+.div18{
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+.div18 img{
+    max-width: 100%;
+    margin-left: 80%;
+}
+.div19 {
+    width: 10%;
+    height: auto;
+    float: left;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.div19 img{
+    max-width: 100%;
+}
+.div20{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 80px;
+}

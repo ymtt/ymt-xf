@@ -2,7 +2,7 @@
 function getThreadContent(){
     var tid=window.localStorage.getItem("newreplytid");
     var forumname=window.localStorage.getItem("forumbar");
-    var url='http://120.24.172.105/xxfintf/bbs/getPostListByTid?';
+    var url='http://101.204.236.5/xxfintf/bbs/getPostListByTid?';
     if(tid==null){
         alert("未正常获取fid");
     }else{
@@ -51,7 +51,7 @@ function getThreadContent(){
 function getNThreadContent(index){
     var tid=window.localStorage.getItem("tid");
     var forumname=window.localStorage.getItem("forumbar");
-    var url='http://120.24.172.105/bbs/bbs/getPostListByTid.do';
+    var url='http://101.204.236.5/bbs/bbs/getPostListByTid.do';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -73,7 +73,7 @@ function getNThreadContent(index){
                 var author=list[key]['author'];
                 var dateline=list[key]['dateline'];
                 var message=list[key]['message'];
-                var newmessage=message.replace(/\images\//g,"http://120.24.172.105/bbs/images/");
+                var newmessage=message.replace(/\images\//g,"http://101.204.236.5/bbs/images/");
                 var count=data.count;
                 CreateContent(subject,author,dateline,newmessage,count);
             });
@@ -116,7 +116,7 @@ function TimestampConversion(dateline){
 function ReplyPost(msg){
     var tid=window.localStorage.getItem("tid");
     var user=window.localStorage.getItem("user");
-    var url='http://120.24.172.105/bbs/bbs/wirtePost.do';
+    var url='http://101.204.236.5/bbs/bbs/wirtePost.do';
     if(tid==null){
         alert("未正常获取fid");
     }else{
@@ -141,34 +141,6 @@ function ReplyPost(msg){
             }
         })
     }
-}
-/*发帖*/
-function ReplyThread(title,content){
-    //title:帖子标题
-    //content 帖子内容
-    var fid=window.localStorage.getItem("fid");
-    var user=window.localStorage.getItem("user");
-    var url='http://120.24.172.105/xxfintf//bbs/wirteSubject?';
-    $.ajax({
-        type:'post',
-        datatype:'json',
-        url:url,
-        data:{"subject":title,"msg":content,"user":"admin","fid":fid},
-        success:function(data){
-            var json=eval("("+data+")");
-            var list=json.data;
-            alert("成功"+data);
-            window.location.href="forumlist.html";
-        },error:function(error){
-            //var error=eval("("+error+")");
-            var errors=error['responseText'];
-            window.localStorage.setItem("errormsg",errors);
-            alert("发帖失败提示"+errors);
-            //进入错误页
-            window.location.href="error.html";
-        }
-    })
-
 }
 
 function HTMLDecode(text)

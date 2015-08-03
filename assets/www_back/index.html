@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-4.css"  media="screen and (min-height:667px) and (max-height:736px)" >
+    <link rel="stylesheet" type="text/css" href="css/style-3.css"  media="screen and (max-height:480px)" >
+    <link rel="stylesheet" type="text/css" href="css/style-2.css"  media="screen and (min-height:568px) and (max-height:667px)" >
+    <link rel="stylesheet" type="text/css" href="css/style-1.css"  media="screen and (min-height:480px) and (max-height:568px)" >
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/zixunclass.js"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script src="js/forum.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+        });
+    </script>
+   <!--script <script src="cordova.js"></script>-->
+    <script src="js/index.js"></script>
+    <script>
+         $(document).ready(function(){
+              document.addEventListener("deviceready", onDeviceReady, false);
+         });
+        function loaded(){
+            try{
+                var HomeLogo=window.localStorage.getItem("HomeLogo");
+                if(HomeLogo==null){
+                    window.location.href="welcome.html";
+                }
+            }catch(e){
+                alert("设备不支持！");
+            }
+        }
+        function onDeviceReady() {
+             //按钮事件
+            document.addEventListener("backbutton", eventBackButton, false); //返回键
+            document.addEventListener("menubutton", eventMenuButton, false); //菜单键
+            }
+
+           //返回键
+            function eventBackButton(){
+                //confirm("再点击一次退出!");
+                window.plugins.toast.showShortCenter('再点击一次退出!');
+                document.removeEventListener("backbutton", eventBackButton, false); //注销返回键
+                document.addEventListener("backbutton", exitApp, false);//绑定退出事件
+                //3秒后重新注册
+                var intervalID = window.setInterval(
+                    function() {
+                       window.clearInterval(intervalID);
+                       document.removeEventListener("backbutton", exitApp, false);//注销退出事件
+                       document.addEventListener("backbutton", eventBackButton, false); //返回键
+                    },
+                    3000
+                 );
+            }
+        function exitApp(){
+                navigator.app.exitApp();
+        }
+       //菜单键
+        function eventMenuButton(){
+            window.plugins.toast.showShortCenter('点击了 菜单 按钮!');
+        }
+    </script>
+    <!-- End SlidesJS Optional-->
+
+    <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+    <style>
+    </style>
+</head>
+<body onload="loaded()">
+
+<header>
+    <div class="header-1">
+        <img src="image/logo_z2_1.png">
+    </div>
+    <div class="header-2">
+        <a href="sousuo.html"> <img src="image/icon_search_1.png"></a>
+    </div>
+</header>
+<div class="container">
+    <div id="slides">
+        <section>
+            <div class="section-1">
+                <ul>
+                    <li>
+                        <a href="zixun.html">
+                            <div class="div1" ><img src="image/icon_information_platform-2.png"></div>
+                            <div class="div2"><p>资讯平台</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="zhuanjiazixun.html">
+                            <div class="div1"> <img src="image/icon_expert_consultation-2.png"></div>
+                            <div class="div2"><p>专家咨询</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="education.html">
+                            <div class="div1"> <img src="image/icon_education_platform-2.png"></div>
+                            <div class="div2"><p>教育平台</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="knowledge.html">
+                            <div class="div1"><img src="image/icon_knowledge_platform-2.png"></div>
+                            <div class="div2"><p>知识平台</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forum.html">
+                            <div class="div1"><img src="image/icon_forum-2.png"></div>
+                            <div class="div2"><p>论坛</p></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="more.html">
+                            <div class="div1"><img src="image/icon_more-2.png"></div>
+                            <div class="div2"><p>更多</p></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <img src="image/banner_z2.png">
+        <img src="image/banner2_z2.png">
+        <img src="image/banner3_z2.png">
+        <img src="image/banner4_z2.png">
+    </div>
+</div>
+<div class="div3">
+    <div class="div4"><p>咨询分类</p></div>
+    <div class="div5"><a href="zixunfenlei.html"><p>显示全部</p></a></div>
+    <div class="div6-2">
+        <div class="div6-1">
+            <ul>
+                <li>
+                    <a href="zixunfenlei.html">
+                        <div class="div7">
+                            <p>建筑</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="zixunfenlei.html">
+                        <div class="div7">
+                            <p>专业</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="zixunfenlei.html">
+                        <div class="div7">
+                            <p>关键词</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="div8">
+            <table>
+                <tr>
+                  <td> <a href="javascript:TozixunClass('j1')"><p>高层</p></a></td>
+                    <td><a href="javascript:TozixunClass('j2')"><p>超高层</p></a></td>
+                     <td><a href="javascript:TozixunClass('j3')"><p>商业综合</p></a></td>
+                    <td><a href="javascript:TozixunClass('j4')"><p>文体</p></a></td>                  
+                </tr>
+                <tr>
+                    <td><a href="javascript:TozixunClass('z1')"><p>建筑定性</p></a></td>
+                    <td><a href="javascript:TozixunClass('z2')"><p>防火区分</p></a></td>
+                    <td><a href="javascript:TozixunClass('z3')"><p>平面布置</p></a></td>
+                    <td><a href="javascript:TozixunClass('z4')"><p>疏散避难</p></a></td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:TozixunClass('g1')"><p>防火分隔</p></a></td>
+                    <td><a href="javascript:TozixunClass('g2')"><p>防烟分区</p></a></td>
+                    <td><a href="javascript:TozixunClass('g3')"><p>疏散距离</p></a></td>
+                    <td><a href="javascript:TozixunClass('g4')"><p>疏散宽度</p></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="div9">
+    <div class="div10">
+        <a href="javascript:setfid('49')"><!--问题咨询49，新手报道2-->
+            <div class="div12">
+                <p>热门主题</p>
+            </div>
+            <div class="div13">
+                <p>新修订《消防法》的宣传</p>
+            </div>
+            <div class="div14">
+                <img src="image/07.png">
+            </div>
+            <div class="div15">
+                <p>的宣传贯彻力度，在四川省保定市公安消防支队与中国</p>
+            </div>
+        </a>
+    </div>
+    <div class="div11">
+        <a href="javascript:setfid('48')"><!--解决方案48，新手答疑36-->
+            <div class="div16">
+                <p>精华热帖</p>
+            </div>
+            <div class="div17">
+                <img src="image/08.png">
+            </div>
+            <div class="div18">
+                <p>的宣传贯彻力度，在四川省保定市公安消防支队与中国</p>
+            </div>
+        </a>
+    </div>
+</div>
+<footer >
+    <ul>
+        <li>
+            <a href="zhuce.html">
+                <div class="div19" id="div19" onmousemove="a1()" onmouseout="a2()">
+                    <p>注册</p>
+                </div>
+               </a>
+            </li>
+        <li >
+            <a href="suggest.html">
+                <div class="div20" id="div20" onmousemove="h1()" onmouseout="h2()">
+                    <p>建议</p>
+                </div>
+            </a>
+        </li>
+        <li >
+            <a href="bangzhu.html">
+                <div class="div21" id="div21" onmousemove="s1()" onmouseout="s2()">
+                    <p>帮助</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="shezhi.html">
+                <div class="div22" id="div22" onmousemove="d1()" onmouseout="d2()">
+                    <p>设置</p>
+                </div>
+            </a>
+        </li>
+        <li >
+            <a href="collect.html">
+                <div class="div23" id="div23" onmousemove="f1()" onmouseout="f2()">
+                    <p>收藏</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script src="js/jquery.slides.min.js"></script>
+<script>
+    $(function() {
+        $('#slides').slidesjs({
+            width: 1000,
+            height: 500,
+            navigation: false,
+            play: {
+                active: false,
+                auto: true,
+                interval: 8000,
+                swap: true
+            }
+        });
+    });
+</script>
+</body>
+</html>

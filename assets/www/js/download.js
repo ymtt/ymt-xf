@@ -1,6 +1,6 @@
 /*拼接链接*/
 function downpdf(files){
-        var downloadurl='http://120.24.172.105/public/pub/upload/down.jsp?id='+files;
+        var downloadurl='http://101.204.236.5/public/pub/upload/down.jsp?id='+files;
         return downloadurl;
 }
 

@@ -45,7 +45,7 @@ var kystart=0;
 var kyend=10;
 function getnews(type,func,kystart,kyend,bo){
             var session=window.sessionStorage.getItem("session");
-            var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
+            var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction';
             if(flag==bo){
                 $.ajax({
                    type:'get',
@@ -114,9 +114,25 @@ function ToSpzl(id){
      window.location.href="shipinXQ.html";
 }
 
+
+var xstart=2;
+function addmoreky(){
+    getguifan("kywx","5",xstart,"");
+    xstart++;
+    $(".moreky").remove();
+}
+var ystart=2;
+function addmoregf(){
+    getguifan("bzgf","5",ystart,"");
+    ystart++;
+    $(".moregf").remove();
+}
+
+
+
 /***********规范************/
 function getguifan(m,pagesize,start,kw){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.KnowAction&t=app&jl=';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.KnowAction&t=app&jl=';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -147,7 +163,7 @@ function getguifan(m,pagesize,start,kw){
                 */
                 if(m=="spzl"){
                     //封面
-                    var cover="http://120.24.172.105/public/pub/upload/down.jsp?id="+list[key]['cover'];
+                    var cover="http://101.204.236.5/public/pub/upload/down.jsp?id="+list[key]['cover'];
                     //附件
                     var attachment=list[key]['attachment'];
                     //分类
@@ -166,19 +182,28 @@ function getguifan(m,pagesize,start,kw){
                 if(m=="kywx"){
                     //科研文献
                     CreateGuiFan(m,title,cons,id,hitnum);
+                    if(key==pagesize-1){
+                        $("#nav_tab4").append("<div class='ky'><a href=javascript:addmoreky() class='moreky'>加载更多</a></div>");
+                    }
                 }else if(m=="bzgf"){
                     //标准规范
                     CreateGuiFan(m,title,cons,id,hitnum);
-                    //alert(content);
+                    if(key==pagesize-1){
+                        $("#nav_tab5").append("<div class='ky'><a href=javascript:addmoregf() class='moregf'>加载更多</a></div>");
+                    }
                 }else if(m=="spzl"){
                     //视频资料
                     CreateVideo(classify,title,cover,id);
                 }
             });
 
+
+
         }
     });
 }
+
+
 //规范和标准
 function CreateGuiFan(m,title,content,id,hitnum){
     var where;

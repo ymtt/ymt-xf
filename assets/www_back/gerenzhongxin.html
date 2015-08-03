@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link href="css/gerenzhongxin.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/gerenzhongxin.js"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+            checksession();
+            var id=window.localStorage.getItem("userid");
+            getUserInfo(id);
+        });
+        function checksession(){
+            var session=window.sessionStorage.getItem("session");
+            if(""==session||null==session){
+               window.location.href="denglu.html";
+            }
+
+        }
+    </script>
+</head>
+<body>
+<header>
+<a href="index.html"><div class="div1"><img src="image/icon_return.png"></div></a>
+<div class="div2"><p>个人中心</p></div>
+<div class="div3"><a href="sousuo.html"> <img src="image/icon_search_1.png"></a></div>
+</header>
+<section>
+<div class="div4">
+    <img src="image/53.png">
+</div>
+<div class="div5">
+    <div class="div5-1">
+    <img src="image/16.png">
+        </div>
+</div>
+<div class="div6">
+    <p>张三</p>
+</div>
+<div class="div7">
+    <p>关注 | 234&nbsp;&nbsp;&nbsp;&nbsp; 粉丝  | 4556</p>
+</div>
+<div class="div8">
+ <p>我的信息</p>
+</div>
+<div class="div9">
+    <p id="nickname">昵称<span style="padding-left:12em"></span></p>
+</div>
+<div class="div9">
+    <p id="sex">性别<span style="padding-left:12em"></span></p>
+</div>
+<div class="div9">
+    <p id="age">年龄<span style="padding-left:12em"></span></p>
+</div>
+<div class="div10">
+    <p id="home_addr">居住地址 <span style="padding-left: 10em">成都</span></p>
+</div>
+    <a href="wodexuexi.html">
+<div class="div11">
+   <p>我的学习</p>
+    <img src="image/the-arrow_icon_right1.png">
+</div>
+    </a>
+    <a href="wodezixun.html">
+<div class="div11">
+    <p>我的咨询</p>
+    <img src="image/the-arrow_icon_right1.png">
+</div>
+    </a>
+    <a href="shezhi.html">
+<div class="div11">
+    <p>我的设置</p>
+    <img src="image/the-arrow_icon_right1.png">
+</div>
+    </a>
+    <a href="forum.html">
+<div class="div11">
+    <p>我的论坛</p>
+    <img src="image/the-arrow_icon_right1.png">
+
+</div>
+    </a>
+    </section>
+</body>
+</html>

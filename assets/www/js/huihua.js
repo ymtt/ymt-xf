@@ -1,7 +1,7 @@
 //获取一次数据并保存
 function Getexpert(){
     var session=window.sessionStorage.getItem("session");
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ChatAction&m=getMyQQs';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -43,9 +43,9 @@ function getallmsg(){
 
 
     //默认头像
-    var head_pic='http://120.24.172.105/images/header.png';
+    var head_pic='http://101.204.236.5/images/header.png';
 
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ChatAction';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -91,13 +91,13 @@ function getallmsg(){
 //发送消息
 function sendmsgs(content){
     //默认头像
-    var head_pic='http://120.24.172.105:8000/images/header.png';
+    var head_pic='http://101.204.236.5/images/header.png';
     //取出保存的session
     var session=window.sessionStorage.getItem("session");
     //获取qq_id，会话标识
     var qq_id=window.localStorage.getItem("qq_id");
     //得到某一条QQ消息的所有内容
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction&t=app&m=sendMsg';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ChatAction&t=app&m=sendMsg';
     $.ajax({
         type:'post',
         dataType:'json',

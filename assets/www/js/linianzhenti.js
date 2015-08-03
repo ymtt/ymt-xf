@@ -1,6 +1,6 @@
 /*历年真题*/
 function getlinianzhenti(year,level){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExamAction';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ExamAction';
     var jl='hisdate_'+year+',type_'+level+',subject_';
     $.ajax({
         type:'post',

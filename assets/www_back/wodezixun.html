@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的咨询</title>
+    <link href="css/wodezixun.css" type="text/css" rel="stylesheet" media="screen" >
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/wodezixun.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            expertslist();
+            //CreateExpertsList("222","隔壁老王","你好");
+        });
+    </script>
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+        });
+
+    </script>
+</head>
+<body>
+<header>
+    <a href="zhuanjiazixun.html"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <div class="div2"><p>我的咨询</p></div>
+    <div class="div3"><a href="sousuo.html"> <img src="image/icon_search_1.png"></a></div>
+</header>
+
+<section  class="nav_tab" id="nav_tab1">
+
+    <!--<div class="hh1">
+        <a href="huihuaXQ.html">
+        <div class="hh2">
+            <img src="image/25.png">
+        </div>
+        <div class="hh3"><p>李成荣</p></div>
+         <div class="hh4"><p>4</p></div>
+        <div class="hh5"><p>谢谢时代精神，同时加大修订</p></div>
+        </a>
+    </div>-->
+    <img src="image/loading.gif" style="position: absolute;top: 50%;left: 50%;margin-top: -45px;margin-left: -45px;">
+</section>
+
+<section  class="nav_tab" id="nav_tab2" style="display: none">
+<!--<div class="div4">
+
+    <div class="div5">
+        <img src="image/25.png">
+    </div>
+
+    <div class="div6"><p>李成荣</p></div>
+
+    <div class="div7"><button>取消关注</button></div>
+
+</div>-->
+
+</section>
+
+<!--<section  class="nav_tab" id="nav_tab3" style="display: none">-->
+    <!--<div class="btn">-->
+    <!--<input type="button" id="btn1"  style="background: url(image/the-triangle1_icon.png)no-repeat 10% 50%" class="btn1" onclick="a()">-->
+   <!--<div class="btn3"> <button onclick="a()">预约记录</button></div>-->
+        <!--</div>-->
+    <!--<div id="demo1" class="demo1">-->
+        <!--<ul>-->
+            <!--<li>-->
+                <!--<div class="dome_1">-->
+                    <!--<div class="dome_2">-->
+                        <!--<img src="image/25.png">-->
+                    <!--</div>-->
+                    <!--<div class="dome_3"><p>李成荣</p></div>-->
+                    <!--<div class="dome_4"><p>2015-03-15</p></div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>  <div class="dome_1">-->
+                <!--<div class="dome_2">-->
+                    <!--<img src="image/25.png">-->
+                <!--</div>-->
+                <!--<div class="dome_3"><p>李成荣</p></div>-->
+                <!--<div class="dome_4"><p>2015-03-15</p></div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>  <div class="dome_1">-->
+                <!--<div class="dome_2">-->
+                    <!--<img src="image/25.png">-->
+                <!--</div>-->
+                <!--<div class="dome_3"><p>李成荣</p></div>-->
+                <!--<div class="dome_4"><p>2015-03-15</p></div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>  <div class="dome_1">-->
+                <!--<div class="dome_2">-->
+                    <!--<img src="image/25.png">-->
+                <!--</div>-->
+                <!--<div class="dome_3"><p>李成荣</p></div>-->
+                <!--<div class="dome_4"><p>2015-03-15</p></div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>  <div class="dome_1">-->
+                <!--<div class="dome_2">-->
+                    <!--<img src="image/25.png">-->
+                <!--</div>-->
+                <!--<div class="dome_3"><p>李成荣</p></div>-->
+                <!--<div class="dome_4"><p>2015-03-15</p></div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>  <div class="dome_1">-->
+                <!--<div class="dome_2">-->
+                    <!--<img src="image/25.png">-->
+                <!--</div>-->
+                <!--<div class="dome_3"><p>李成荣</p></div>-->
+                <!--<div class="dome_4"><p>2015-03-15</p></div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>  <div class="dome_1">-->
+                <!--<div class="dome_2">-->
+                    <!--<img src="image/25.png">-->
+                <!--</div>-->
+                <!--<div class="dome_3"><p>李成荣</p></div>-->
+                <!--<div class="dome_4"><p>2015-03-15</p></div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>  <div class="dome_1">-->
+                <!--<div class="dome_2">-->
+                    <!--<img src="image/25.png">-->
+                <!--</div>-->
+                <!--<div class="dome_3"><p>李成荣</p></div>-->
+                <!--<div class="dome_4"><p>2015-03-15</p></div>-->
+            <!--</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="btn_1">-->
+    <!--<input type="button" id="btn2"  style="background: url(image/the-triangle1_icon.png)no-repeat 10% 50%" class="btn2" onclick="b()">-->
+    <!--<div class="btn3"><button onclick="b()">已预约</button></div>-->
+    <!--</div>-->
+    <!--<div id="demo2" class="demo1">-->
+        <!--<ul>-->
+            <!--<li>  <div class="dome_1">-->
+                <!--<div class="dome_2">-->
+                    <!--<img src="image/25.png">-->
+                <!--</div>-->
+                <!--<div class="dome_3"><p>李成荣</p></div>-->
+                <!--<div class="dome_5"><p>2015-03-15<br>下午14:00</p></div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="dome_1">-->
+                    <!--<div class="dome_2">-->
+                        <!--<img src="image/25.png">-->
+                    <!--</div>-->
+                    <!--<div class="dome_3"><p>李成荣</p></div>-->
+                    <!--<div class="dome_5"><p>2015-03-15<br>下午14:00</p></div>-->
+                    <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="dome_1">-->
+                    <!--<div class="dome_2">-->
+                        <!--<img src="image/25.png">-->
+                    <!--</div>-->
+                    <!--<div class="dome_3"><p>李成荣</p></div>-->
+                    <!--<div class="dome_5"><p>2015-03-15<br>下午14:00</p></div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="dome_1">-->
+                    <!--<div class="dome_2">-->
+                        <!--<img src="image/25.png">-->
+                    <!--</div>-->
+                    <!--<div class="dome_3"><p>李成荣</p></div>-->
+                    <!--<div class="dome_5"><p>2015-03-15<br>下午14:00</p></div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="dome_1">-->
+                    <!--<div class="dome_2">-->
+                        <!--<img src="image/25.png">-->
+                    <!--</div>-->
+                    <!--<div class="dome_3"><p>李成荣</p></div>-->
+                    <!--<div class="dome_5"><p>2015-03-15<br>下午14:00</p></div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="dome_1">-->
+                    <!--<div class="dome_2">-->
+                        <!--<img src="image/25.png">-->
+                    <!--</div>-->
+                    <!--<div class="dome_3"><p>李成荣</p></div>-->
+                    <!--<div class="dome_5"><p>2015-03-15<br>下午14:00</p></div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="dome_1">-->
+                    <!--<div class="dome_2">-->
+                        <!--<img src="image/25.png">-->
+                    <!--</div>-->
+                    <!--<div class="dome_3"><p>李成荣</p></div>-->
+                    <!--<div class="dome_5"><p>2015-03-15<br>下午14:00</p></div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="dome_1">-->
+                    <!--<div class="dome_2">-->
+                        <!--<img src="image/25.png">-->
+                    <!--</div>-->
+                    <!--<div class="dome_3"><p>李成荣</p></div>-->
+                    <!--<div class="dome_5"><p>2015-03-15<br>下午14:00</p></div>-->
+                <!--</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</section>-->
+<footer>
+   <ul>
+       <li class="nav_item1" id="nav_item1" onClick="change_nav(1)" >
+           <div class="img1" id="img1" ><p id="p1" style="color: #05A0D7">会话</p></div>
+       </li>
+       <li class="nav_item2" id="nav_item2" onClick="change_nav(2);getfocus()" >
+               <div class="img2" id="img2" ><p id="p2">我的关注</p></div>
+       </li>
+       <!--<li class="nav_item3" id="nav_item3" onClick="change_nav(3)">-->
+               <!--<div class="img3" id="img3" ><p id="p3">我的预约</p></div>-->
+       <!--</li>-->
+   </ul>
+</footer>
+</body>
+</html>

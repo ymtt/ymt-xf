@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>资讯平台</title>
+    <link href="css/zixun.css" type="text/css" rel="stylesheet" media="screen">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/getnews.js"></script>
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+           /* var noticecache=window.localStorage.getItem("noticecache");
+            if(noticecache!=""||noticecache!=null||typeof (noticecache)!="undefined"){
+                $("#nav_tab2").html("");
+                $("#nav_tab2").html(noticecache);
+            }*/
+        });
+
+    </script>
+   <!--<script src="cordova.js"></script>-->
+    <script type="text/javascript">
+        var noticestart=0;
+        var noticeend=10;
+        var edustart=0;
+        var eduend=10;
+
+     $(document).ready(function(){
+         var id=window.localStorage.getItem("change_navid");
+         if(""==id||null==id){
+             //没有点击过默认第一个
+             change_nav(1);
+         }else{
+             //重新加载时默认到之前点击的选项卡
+             change_nav(id);
+         }
+        var index=window.localStorage.getItem("Index");
+        $("#back").attr("href",index);
+        document.addEventListener("deviceready", onDeviceReady, false);
+            //图片新闻
+            getpicnews();
+            //热点新闻
+             hotzixun("xf_article_h_news","read");
+             setTimeout("hotzixun('xf_article_h_news','new')",30);
+            //最新资讯
+            //消防公告
+             //setInterval("dsad()",50);
+             //初始加载10条，加载更多在loadmorenews.js
+             getnews("xf_article_h_notice",CreateNoticeDom,noticestart,noticeend,"notice");
+             //教育新闻
+             getnews("xf_article_h_edu",CreateEduDom,edustart,eduend,"edu");
+             //var s={'sss':'cccc'};
+             //CreateNewZixun("国家主席习近平近日访问火星","就两星和平发展做出重要讲话","77",s);
+     });
+      function onDeviceReady() {
+         //按钮事件
+        document.addEventListener("backbutton", eventBackButton, false); //返回键
+        document.addEventListener("menubutton", eventMenuButton, false); //菜单键
+      }
+      function eventBackButton(){
+            history.back();
+      }
+    </script>
+    <script>
+        function  change_nav(heath_center) {
+            for (var i = 1; i <= 3; i++) {
+                if (i == heath_center) {
+                    //保存点击的选项卡
+                    window.localStorage.setItem("change_navid",i);
+                    document.getElementById("nav_item" + i).className = "nav_item";
+                    document.getElementById("nav_tab" + i).style.display = "";
+                    document.getElementById("p" + i).style.color = "#FFFFFF";
+                    document.getElementById("p" + i).style.background = "#05A0D7";
+                    document.getElementById("p" + i).style.borderRadius = "6px";
+                }
+                else {
+                    document.getElementById("nav_item" + i).className = "";
+                    document.getElementById("nav_tab" + i).style.display = "none";
+                    document.getElementById("p" + i).style.color = "";
+                    document.getElementById("p" + i).style.background = "";
+                    document.getElementById("p" + i).style.borderRadius = "";
+                }
+            }
+        }
+    </script>
+    <style>
+        *{
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        }
+        .loading{
+            margin-left:35%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#" id="back"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <div class="div2"><p>资讯平台</p></div>
+    <!--<div class="div3"><img src="image/icon_more_1.png">-->
+        <!--<ul>-->
+            <!--<li><a href="ZXzuijinliulan.html"><p>最近浏览</p></a></li>-->
+            <!--<li><a href="ZXlishijilu.html"><p class="p1">历史记录</p></a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+</header>
+<!--<nav>-->
+    <!--<div class="nav-1">-->
+        <!--<div class="nav-2"> <img src="image/z_search_gray_icon.png"></div>-->
+        <!--<input type="text">-->
+    <!--</div>-->
+    <!--<div class="nav-3">-->
+        <!--<ul>-->
+            <!--<li>-->
+                <!--<a href="" >-->
+                    <!--<div class="nav-4">-->
+                        <!--<p>消防部门</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="" >-->
+                    <!--<div class="nav-4">-->
+                        <!--<p>规范组</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="" >-->
+                    <!--<div class="nav-4">-->
+                        <!--<p>建委</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="" >-->
+                    <!--<div class="nav-4">-->
+                        <!--<p>科研院校</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="" >-->
+                    <!--<div class="nav-4">-->
+                        <!--<p>设计院</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="" >-->
+                    <!--<div class="nav-4">-->
+                        <!--<p>开发商</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="" >-->
+                    <!--<div class="nav-4">-->
+                        <!--<p>设备商</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="" >-->
+                    <!--<div class="nav-4">-->
+                        <!--<p>服务商</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</nav>-->
+<div class="div4">
+    <ul>
+        <li  class="nav_item1" id="nav_item1" onClick="change_nav(1)">
+            <div class="div5"><p id="p1" style="color: #ffffff ;background-color: #05A0D7;border-radius: 6px" >消防新闻</p></div>
+        </li >
+        <li class="nav_item1" id="nav_item2" onClick="change_nav(2)">
+            <div class="div5"><p id="p2">消防公告</p></div>
+        </li>
+        <li  class="nav_item1" id="nav_item3" onClick="change_nav(3)">
+            <div class="div5"><p id="p3">教育咨询</p></div>
+        </li>
+    </ul>
+</div>
+<section class="nav_tab" id="nav_tab1" >
+    <div class="div6">
+        <div class="div7"><p>图片资讯</p></div>
+        <span class="span-1"><a href="tupianzixun.html"> <p>更多</p></a></span>
+    </div>
+    <div class="div9">
+        <ul>
+            <!--<li>
+                <a href="tupianXQ.html"><img src="image/07.png"> </a>
+            </li>-->
+        </ul>
+    </div>
+    <!--热点资讯-->
+    <div class="loading">
+        <img src="image/loading.gif">
+    </div>
+    <!--<div class="div6">
+        <div class="div7"><p>热点资讯</p></div>
+        <span class="span-1"><a href="wenzizixun.html"> <p>更多</p></a></span>
+    </div>
+    <div class="div10">
+        <a href="wenzizixunXQ.html">
+            <div class="div11"><p>新修订《消防法》的宣传贯彻力度</p></div>
+            <div class="div12"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                河北省保定市公安消防支队与中国......
+            </p></div>
+            <div class="div13">
+                <img src="image/08.png">
+            </div>
+        </a>
+    </div>-->
+    <!--最新资讯-->
+    <!--<div class="div6">
+        <div class="div7"><p>最新咨询</p></div>
+        <span class="span-1"><a href="wenzizixun.html"> <p>更多</p></a></span>
+    </div>
+    <div class="div14">
+        <a href="wenzizixunXQ.html">
+            <div class="div15">
+                <p>新修订《消防法》的宣传贯彻力度</p>
+            </div>
+            <div class="div16">
+                <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                    河北省保定市公安消防支队与中国</p>
+            </div>
+            <div class="div17">
+                <div class="div18">
+                    <p>328</p>
+                </div>
+                <div class="div19">
+                    <img src="image/comment_comment_icon.png">
+                </div>
+            </div>
+        </a>
+    </div>-->
+</section>
+<!--消防公告-->
+<section class="nav_tab1" id="nav_tab2" style="display: none">
+
+    <!-- <div class="gg">
+         <a href="gonggaoXQ.html">
+             <div class="gg-1"><p>新修订《消防法》的宣传贯彻力度</p></div>
+             <div class="gg-2"><p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                 河北省保定市公安消防支队与中国......
+             </p>
+             </div>
+             <span class="notice">
+                 <img src="image/07.png">
+                 <img src="image/07.png">
+                 <img src="image/07.png">
+             </span>
+         </a>
+        <a href="javascript:adds()">点击加载更多</a>
+    </div>
+    -->
+</section>
+<!--教育资讯-->
+<section class="nav_tab2" id="nav_tab3" style="display: none">
+    <!--<div class="zx">
+        <a href="jiaoyuXQ.html">
+            <div class="zx-1">
+                <img src="image/08.png">
+            </div>
+            <div class="intro">
+                <span>加大新修订《消防法》的宣传</span>
+                <p>为进一步提高工作效率，同时加大新修订《消防法》的宣传贯彻力度，在全社会掀起学法、普法高潮，
+                    河北省保定市公安消防支队与中国....</p>
+            </div>
+        </a>
+    </div>-->
+</section>
+<script src="js/loadmorenews.js"></script>
+</body>
+</html>

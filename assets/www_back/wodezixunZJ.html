@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>专家界面 我的咨询</title>
+    <link href="css/wodezixunZJ.css" type="text/css" rel="stylesheet">
+    <script src="js/wodezixunZJ.js"></script>
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+            GetMyConversation();
+            //CreateMyconsulting("1","http://120.24.172.105:8000/images/header.png","刘德华",80,"哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈");
+        });
+        function a()
+        {
+
+            var oBtn = document.getElementById("btn1");
+            var oDemo1 = document.getElementById("demo1");
+
+            if (oDemo1.style.display == "block") {
+                oBtn.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+                oDemo1.style.display = "none";
+            }
+            else {
+                oBtn.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+                oDemo1.style.display = "block";
+            }
+
+
+        }
+        function b()
+        {
+
+            var oBtn1 = document.getElementById("btn2");
+            var oDemo2 = document.getElementById("demo2");
+
+            if (oDemo2.style.display == "none") {
+                oBtn1.style.background = "url(image/the-arrow_icon1.png)no-repeat 80% 50%"
+                oDemo2.style.display = "block";
+            }
+            else {
+                oBtn1.style.background = "url(image/the-arrow_icon_right2.png)no-repeat 80% 50%"
+                oDemo2.style.display = "none";
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+<header>
+    <a href="zhuanjiazixun.html"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <div class="div2"><p>我的咨询</p></div>
+    <div class="div3"><a href="sousuo.html"> <img src="image/icon_search_1.png"></a></div>
+</header>
+<section  class="nav_tab" id="nav_tab1">
+    <div class="btn_1">
+        <input type="button" id="btn1" value="最近联系"  style="background: url(image/the-arrow_icon_right2.png)no-repeat 80% 50%" class="btn2" onclick="a()">
+
+    </div>
+    <div id="demo1" class="demo1">
+       <p style="font-size:15px;color:#cccccc">无相关记录</p>
+    </div>
+    <div class="btn_1">
+        <input type="button" id="btn2"  value="会话" style="background: url(image/the-arrow_icon1.png)no-repeat 80% 50%" class="btn2" onclick="b()">
+    </div>
+
+    <div id="demo2" class="demo1">
+
+        <!--<div class="hh1">
+            <a href="huihuaZJ.html">
+                <div class="hh2">
+                    <img src="image/25.png">
+                </div>
+                <div class="hh3"><p>梁冰</p></div>
+                <div class="hh4"><p>4</p></div>
+                <div class="hh5"><p>加油站属于消防重点单位把？<br>
+                    那我想问非营业性的汽车加油站是消防重点......
+                </p></div>
+            </a>
+        </div>-->
+     </div>
+</section>
+</body>
+</html>

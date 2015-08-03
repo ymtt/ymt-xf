@@ -1,5 +1,5 @@
 function getReTie(){
-    var url='http://120.24.172.105/bbs/bbs/getHotPostList.do';
+    var url='http://101.204.236.5/bbs/bbs/getHotPostList.do';
 
     $.ajax({
         type:'get',

@@ -2,22 +2,44 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,user-scalable=no;" />
     <title>模拟考试</title>
     <link href="css/monikaoshi1.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript">
-        function change_pic(id) {
-            var imgObj = document.getElementById(id);
-            if (imgObj.getAttribute("src", 2) == "image/icon_collect_l.png") {
-                imgObj.src = "image/icon_collect_click_l.png";
-            } else {
-                imgObj.src = "image/icon_collect_l.png";
+        function change_pic(id){
+            var imgObj=$(id);
+           if(imgObj.attr("src")=="image/icon_collect_l.png"){
+                imgObj.attr("src","image/icon_collect_click_l.png");
+            }else{
+                imgObj.attr("src","image/icon_collect_l.png");
             }
         }
     </script>
+    <script src="js/monikaoshiall.js"></script>
+    <script type="text/javascript">
+        getallexam("2015",1,5);
+    </script>
+    <style type="text/css">
+        .moreexam{
+            float: left;
+            position: relative;
+            width: 100%;
+            height: 20px;
+
+            text-align: center;
+        }
+        .moreexam a{
+            color: #CCCCCC;
+        }
+    </style>
 </head>
 <body>
 <header>
-    <a href="monikaoshi.html"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <a href="monikaoshi.html">
+        <div class="div1"><img src="image/icon_return.png"></div>
+    </a>
+
     <div class="div2"><p>模拟考试</p></div>
     <div class="div3"><a href="sousuo.html"> <img src="image/icon_search_1.png"></a></div>
 </header>
@@ -25,71 +47,18 @@
     <p>一级消防模拟试题</p>
 </div>
 <section>
-    <div class="div4">
+
+  <!--  <div class="div4">
         <a href="monikaoshiXQ.html">
             <div class="div4-1">
-            <div class="div5"><img src="image/icon_l_1.png"></div>
-            <div class="div6"><p>2010年一级消防工程师《消防工程项目管理》考试真题</p></div>
-            <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
-                </div>
-            </a>
-           <div class="div9">
-            <img src="image/icon_collect_l.png" id="div8" class="div8" onclick="change_pic('div8')">
-            <p>42354人</p>
+                <div class="div5"><img src="image/icon_l_1.png"></div>
+                <div class="div6"><p>2010年一级消防工程师《消防工程项目管理》考试真题</p></div>
+                <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
             </div>
-    </div>
-    <div class="div4">
-        <a href="monikaoshiXQ.html">
-            <div class="div4-1">
-            <div class="div5"><img src="image/icon_l_1.png"></div>
-            <div class="div6"><p>2012年一级消防工程师《消防工程项目管理》考试真题</p></div>
-            <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
-                </div>
-            </a>
-            <div class="div9">
-            <img src="image/icon_collect_l.png" id="div9" class="div8" onclick="change_pic('div9')">
-            <p>42354人</p>
-            </div>
-    </div>
-    <div class="div4">
-        <a href="monikaoshiXQ.html">
-            <div class="div4-1">
-            <div class="div5"><img src="image/icon_l_1.png"></div>
-            <div class="div6"><p>2013年一级消防工程师《消防工程项目管理》考试真题</p></div>
-            <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
-                </div>
-            </a>
-           <div class="div9">
-            <img src="image/icon_collect_l.png" id="div10" class="div8" onclick="change_pic('div10')">
-            <p>42354人</p>
-            </div>
-    </div>
-    <div class="div4">
-        <a href="monikaoshiXQ.html">
-            <div class="div4-1">
-            <div class="div5"><img src="image/icon_l_1.png"></div>
-            <div class="div6"><p>2014一级消防工程师《消防工程项目管理》考试真题</p></div>
-            <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
-                </div>
-            </a>
-            <div class="div9">
-            <img src="image/icon_collect_l.png" id="div11" class="div8" onclick="change_pic('div11')">
-            <p>42354人</p>
-            </div>
-    </div>
-    <div class="div4">
-        <a href="monikaoshiXQ.html">
-            <div class="div4-1">
-            <div class="div5"><img src="image/icon_l_1.png"></div>
-            <div class="div6"><p>2000年一级消防工程师《消防工程项目管理》考试真题</p></div>
-            <div class="div7"><p>总题：100题 &nbsp;考试时长：180分钟 &nbsp; 总分：130分</p></div>
-                </div>
-            </a>
-            <div class="div9">
-            <img src="image/icon_collect_l.png" id="div12" class="div8" onclick="change_pic('div12')">
-            <p>42354人</p>
-        </div>
-    </div>
+        </a>
+    </div>-->
+
+
 </section>
 </body>
 </html>

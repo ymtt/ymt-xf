@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>历年真题</title>
+    <link href="css/linianzhenti.css" type="text/css" rel="stylesheet">
+    <script src="cordova.js"></script>
+    <script language="javascript" type="text/javascript">
+        function showdiv() {
+            document.getElementById("bg").style.display ="block";
+            document.getElementById("show").style.display ="block";
+        }
+        function hidediv() {
+            document.getElementById("bg").style.display ='none';
+            document.getElementById("show").style.display ='none';
+        }
+        function a(){
+            document.getElementById("bg").style.display="none"
+            document.getElementById("show").style.display ='none';
+        }
+    </script>
+    <link href="css/fd.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/download.js"></script>
+    <script src="js/linianzhenti.js"></script>
+    <script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fd.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            h();
+            d();
+            //2015年一级题
+            getlinianzhenti("2015","level001");
+            //2015年二级题
+            getlinianzhenti("2015","level002");
+            //getmoni()
+        });
+
+    </script>
+</head>
+<body>
+<header>
+    <a href="education.html"><div class="div1"><img src="image/icon_return.png"></div></a>
+    <div class="div2"><p>历年真题</p></div>
+    <div class="div3"><img src="image/icon_all.png" onclick="showdiv()"></div>
+    <div class="div4"><a href="sousuo.html"> <img src="image/icon_search_1.png"></a></div>
+</header>
+<section>
+    <div class="div5">
+    <div class="div6">
+        <div class="div7"><p>一级消防工程师</p></div>
+        <div class="div8"><a href="javascript:ToAll('level001','linianzhenti1.html')"><p>显示全部</p></a></div>
+    </div>
+        <ul id="xf_001">
+           <!-- <li>
+            <a href="linianzhentiXQ.html">
+            <li>
+                <div class="div9">
+                    <img src="image/icon_l_1.png">
+                </div>
+                <div class="div10">
+                    <p>2013年一级消防工程师《消防工程项目管理》考试真题</p>
+                </div>
+            </li>
+            </a>
+            <a href="linianzhentiXQ.html">
+            <li>
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年一级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+            </li>
+            </a>
+            <a href="linianzhentiXQ.html">
+            <li>
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年一级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+            </li>
+            </a>
+            <a href="linianzhentiXQ.html">
+            <li>
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年一级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+            </li>
+            </a>
+            <a href="linianzhentiXQ.html">
+            <li>
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年一级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+            </li>
+            </a>-->
+        </ul>
+    </div>
+    <div class="div11">
+        <div class="div6">
+            <div class="div7"><p>二级消防工程师</p></div>
+            <div class="div8"><a href="javascript:ToAll('level002','linianzhenti1.html')"><p>显示全部</p></a></div>
+        </div>
+        <ul id="xf_002">
+            <!--<li>
+                <a href="linianzhentiXQ1.html">
+                <li>
+                        <div class="div9">
+                            <img src="image/icon_l_1.png">
+                        </div>
+                        <div class="div10">
+                            <p>2013年二级消防工程师《消防工程项目管理》考试真题</p>
+                        </div>
+                </li>
+                </a>
+                <a href="linianzhentiXQ1.html">
+                <li>
+                        <div class="div9">
+                            <img src="image/icon_l_1.png">
+                        </div>
+                        <div class="div10">
+                            <p>2013年二级消防工程师《消防工程项目管理》考试真题</p>
+                        </div>
+                </li>
+                </a>
+            <a href="linianzhentiXQ1.html">
+            <li>
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年二级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+            </li>
+                </a>
+            <a href="linianzhentiXQ1.html">
+            <li>
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年二级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+            </li>
+            </a>
+            <a href="linianzhentiXQ1.html">
+            <li>
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年二级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+            </li>
+            </a>-->
+        </ul>
+    </div>
+    <div class="div11">
+        <div class="div6">
+            <div class="div7"><p>初级消防构建筑员</p></div>
+            <div class="div8"><a href=""><p>显示全部</p></a></div>
+        </div>
+        <ul>
+            <!--<li>
+                <a href="">
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年高级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年高级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年高级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年高级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="div9">
+                        <img src="image/icon_l_1.png">
+                    </div>
+                    <div class="div10">
+                        <p>2013年高级消防工程师《消防工程项目管理》考试真题</p>
+                    </div>
+                </a>
+            </li>-->
+        </ul>
+    </div>
+</section>
+<div class="zz-1" id="bg"  onclick="a()" >
+</div>
+<div class="zz-2" id="show" style="display: none">
+    <table>
+        <tr>
+            <td style="background: #05A0D7"><p>全部</p></td>
+            <td><a href="javascript:getExamByYear('2015')"><p>2015</p></a></td>
+            <td><a href="javascript:getExamByYear('2014')"><p>2014</p></a></td>
+            <td><a href=""><p>2013</p></a></td>
+            <td><a href=""><p>2012</p></a></td>
+            <td><a href=""><p>2011</p></a></td>
+            <td><a href=""><p>2010</p></a></td>
+        </tr>
+        <tr>
+            <td><a href=""><p>2009</p></a></td>
+            <td><a href=""><p>2008</p></a></td>
+            <td><a href=""><p>2007</p></a></td>
+            <td><a href=""><p>2006</p></a></td>
+            <td><a href=""><p>2005</p></a></td>
+            <td><a href=""><p>2004</p></a></td>
+            <td><a href=""><p>2003</p></a></td>
+        </tr>
+        <tr>
+            <td><a href=""><p>2002</p></a></td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript">
+    function getExamByYear(year){
+        $("#xf_001").html("");
+        $("#xf_002").html("");
+        getlinianzhenti(year,'level001');
+        getlinianzhenti(year,'level002');
+        a();
+    }
+    $(document).ready(function(){
+        document.addEventListener("deviceready",onDeviceReady,false);
+    });
+    function onDeviceReady() {
+        alert('onDeviceReady2222');
+        try {
+            /*
+             window.requestFileSystem = window.requestFileSystem || window.webkitRequestFileSystem;
+             window.resolveLocalFileSystemURL = window.resolveLocalFileSystemURL                || window.ebkitResolveLocalFileSystemURL; //根据URL取得文件的读取权限
+             */
+
+            //查找是否有download这个文件夹，没有则创建，然后找到这个文件夹的绝对路径
+            window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {
+                fileSystem.root.getDirectory("download", {
+                    create: true,
+                    exclusive: false
+                }, function (entry) {
+                    //网上流传的资料中都是使用fullPath，在这里我获取到的是相对目录，在下载时使用会报错，所以换做了toURL()
+                    //这是一个全局全局变量，用以保存路径
+                    fullPath = entry.toURL();
+                    alert(fullPath.toString() + '创建文件夹成功');
+                    //console.log(fullPath);
+                }, function () {
+                    console.log('创建文件夹失败');
+                    alert('创建文件夹失败');
+                });
+            }, function () {
+                console.log('创建文件夹失败');
+                alert('创建文件夹失败');
+            });
+        }
+        catch (e) {
+            alert(e.name + ":" + e.message);
+        }
+    }
+</script>
+</body>
+</html>

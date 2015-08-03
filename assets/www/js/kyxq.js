@@ -9,7 +9,7 @@ function getkyobj(){
         $(".div2 p").append("......");
     }
     var content=kyobj.content;
-    var newcontent=content.replace(/\/attached/g, "http://120.24.172.105/attached");
+    var newcontent=content.replace(/\/attached/g, "http://101.204.236.5/attached");
     $(".div5 p").html(newcontent);
 }
 
@@ -20,7 +20,7 @@ function downpdf(){
     if(typeof (kyobj.files)=="undefined"){
         return null;
     }else{
-        var downloadurl='http://120.24.172.105/public/pub/upload/down.jsp?ai='+kyobj.id+'&id='+kyobj.files;
+        var downloadurl='http://101.204.236.5/public/pub/upload/down.jsp?ai='+kyobj.id+'&id='+kyobj.files;
         return downloadurl;
     }
 }

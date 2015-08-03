@@ -1,6 +1,6 @@
 function getNotice(){
              var noticeid=window.localStorage.getItem("noticeid");
-             var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction';
+             var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction';
              if(noticeid==null){
                  alert("未正常获取id");
              }else{

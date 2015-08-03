@@ -1,6 +1,6 @@
 /*****专家咨询******/
 function expertlist(pagesize,start){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ExpertAction&t=app&m=list';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -46,7 +46,7 @@ function ToExpertXq(id){
 
 /********热点咨询和最近咨询**********/
 function gethhotandnew(m,pagesize,start){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ArticleAction&t=app';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction&t=app';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -80,7 +80,7 @@ function CreateHot(article_title,content){
 
 /*********值班表***********/
 function getRoat(){
-    var url='http://120.24.172.105:8000/fw?controller=com.xfsm.action.ExpertAction&m=duty';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ExpertAction&m=duty';
     $.ajax({
         type:'get',
         dataType:'json',

@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html,body{
+    width: 100%;
+    height:auto;
+    background-color: #ffffff;
+
+}
+#container {
+    width: 225px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+.div1{
+    width:320px;
+    height:550px;
+    background: url("../image/b.png")no-repeat;
+    overflow: hidden;
+    background-size: 100%;
+}
+.div2{
+    width: 320px;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    overflow: hidden;
+}
+.img1{
+
+    width: 320px;
+}
+.img2{
+    position: absolute;
+    width: 80px;
+    top: 125px;
+    left: 0;
+    z-index: 20;
+}
+.div3{
+    position: absolute;
+    top: 68px;
+    left: 90px;
+    z-index: 2;
+    overflow: hidden;
+}
+.img3{
+    width: 230px;
+}
+.img4{
+    width: 70px;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+}
+.div4{
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+.div4 p{
+    font-size: 0.7em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.img5{
+    width: 20px;
+    margin-left: 15px;
+}
+.div5{
+    width: 50px;
+    position: absolute;
+    top: 70px;
+    left: 55px;
+}
+.div5 p{
+    font-size: 0.7em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.img6{
+    width: 20px;
+    margin-left: 15px;
+}
+.div6{
+    width: 50px;
+    position: absolute;
+    top: 135px;
+    left: 30px;
+}
+.div6 p{
+    font-size: 0.7em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.img7{
+    width: 20px;
+    margin-left: 15px;
+}
+.div7{
+    width: 50px;
+    position: absolute;
+    top: 195px;
+    left:55px;
+}
+.div7 p{
+    font-size: 0.7em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.img8{
+    width: 20px;
+    margin-left: 15px;
+}
+.div8{
+    width: 50px;
+    position: absolute;
+    top: 230px;
+    left:120px;
+}
+.div8 p{
+    font-size: 0.7em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.img9{
+    width: 20px;
+    margin-left: 15px;
+}
+.div9{
+    width: 50px;
+    position: absolute;
+    top: 195px;
+    left:185px;
+}
+.div9 p{
+    font-size: 0.7em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.img10{
+    width: 20px;
+    margin-left: 15px;
+}
+.div10{
+    width: 50px;
+    position: absolute;
+    top: 135px;
+    left:220px;
+}
+.div10 p{
+    font-size: 0.7em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.img11{
+    width: 20px;
+    margin-left: 15px;
+}
+.div11{
+    width: 50px;
+    position: absolute;
+    top: 70px;
+    left:185px;
+}
+.div11 p{
+    font-size: 0.7em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.img12{
+    width: 20px;
+    margin-left: 15px;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+}
+footer ul{
+    width: 100%;
+    height: 50px;
+    list-style: none;
+}
+footer ul li{
+    width: 20%;
+    height: 50px;
+    float: left;
+}
+footer ul li a:hover p{
+    color: #05A0D7;
+}
+.div19{
+    width: 100%;
+    height: 50px;
+    background: url("../image/icon_register.png") no-repeat 50% 20%;
+    float: left;
+    background-size:20px;
+}
+.div19 p{
+    font-size: 0.75em;
+    margin-top: 32px;
+    text-align: center;
+    color: #737373;
+}
+.div20 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/icon_suggest.png") no-repeat 50% 20%;
+    float: left;
+    background-size: 20px;
+}
+.div20 p{
+    font-size: 0.75em;
+    margin-top: 32px;
+    text-align: center;
+    color: #737373;
+}
+.div21 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/icon_help.png") no-repeat 50% 20%;
+    float: left;
+    background-size: 20px;
+}
+.div21 p {
+    font-size: 0.75em;
+    margin-top: 32px;
+    text-align: center;
+    color: #737373;
+}
+.div22 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/icon_icon_setup.png") no-repeat 50% 20%;
+    float: left;
+    background-size: 20px;
+}
+.div22 p {
+    font-size: 0.75em;
+    margin-top: 32px;;
+    text-align: center;
+    color: #737373;
+}
+.div23 {
+    width: 100%;
+    height: 50px;
+    background: url("../image/icon_collect.png") no-repeat 50% 20%;
+    float: left;
+    background-size: 20px;
+}
+.div23 p {
+    font-size: 0.75em;
+    margin-top: 32px;;
+    text-align: center;
+    color: #737373;
+}

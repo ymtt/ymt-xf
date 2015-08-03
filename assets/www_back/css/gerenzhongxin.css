@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html,body{
+    width: 100%;
+    height:auto;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #05A0D7;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+a{
+    text-decoration: none;
+}
+.div1 {
+    width: 10%;
+    height:40px;
+    float: left;
+}
+
+.div1 img {
+    width: 20px;
+    max-width: 100%;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.div2{
+    width: 80%;
+    height: auto;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1em;
+    color: #FFFFFF;
+}
+.div3{
+    width: 10%;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+}
+.div3 img{
+    width: 20px;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+}
+.div4{
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+.div4 img{
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+}
+.div5 {
+    width: 100%;
+    height: auto;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+}
+.div5-1{
+    width: 62px;
+    height: 62px;
+    border-radius: 62px;
+    margin: -80px auto;
+    background-color: rgba(255,255,255,0.5);
+}
+.div5 img{
+    width: 54px;
+    height: 54px;
+    border-radius: 54px;
+    margin-top: 4px;
+}
+.div6{
+   width: 100%;
+    height: 30px;
+    float: left;
+}
+.div6 p{
+    font-size: 0.85em;
+    line-height: 30px;
+    text-align: center;
+    color: #05A0D7;
+}
+.div7{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+}
+.div7 p{
+    font-size: 0.85em;
+    line-height: 30px;
+    text-align: center;
+}
+.div8{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #cccccc;
+
+}
+.div8 p{
+    line-height: 30px;
+    font-size: 1em;
+    margin-left: 5%;
+}
+.div9{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #cccccc;
+}
+.div9 p{
+    font-size: 0.85em;
+    line-height: 30px;
+    margin-left: 5%;
+    color: #737373;
+}
+.div10{
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-bottom: 5px solid #cccccc;
+}
+.div10 p{
+    font-size: 0.85em;
+    line-height: 30px;
+    margin-left: 5%;
+    color: #737373;
+}
+.div11{
+    width: 100%;
+    height: 40px;
+    float: left;
+    border-bottom: 1px solid #cccccc;
+    background-color: #EDEDED;
+}
+.div11 p{
+    line-height: 40px;
+    float: left;
+    font-size: 1em;
+    margin-left: 5%;
+    color: #000000;
+}
+.div11 img{
+  float: left;
+    margin-left: 60%;
+    margin-top: 10px;
+}
