@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="My_post.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="My_post.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/My_post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6935484" vertical-offset="63" max-vertical-offset="1995">
+            <state vertical-scroll-proportion="-21.5" vertical-offset="63" max-vertical-offset="1995">
               <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
               <folding />
             </state>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="The-new-fire.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="The-new-fire.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/The-new-fire.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="108.10714" vertical-offset="3027" max-vertical-offset="3895">
+            <state vertical-scroll-proportion="-3.487327" vertical-offset="3027" max-vertical-offset="3895">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -176,7 +176,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -258,14 +258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/The-new-fire.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="108.10714" vertical-offset="3027" max-vertical-offset="3895">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/My_post.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="793" max-vertical-offset="3496">
@@ -284,8 +276,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/My_post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6935484" vertical-offset="63" max-vertical-offset="1995">
+        <state vertical-scroll-proportion="-21.5" vertical-offset="63" max-vertical-offset="1995">
           <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/The-new-fire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.487327" vertical-offset="3027" max-vertical-offset="3895">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
