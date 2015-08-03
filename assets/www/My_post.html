@@ -16,29 +16,6 @@
             //CreateMyPost("1","2","3","4");
         });
     </script>
-    <script type="text/javascript">
-        function change_nav(heath_center) {
-            for (var i = 1; i <= 2; i++) {
-                if (i == heath_center) {
-                    //保存点击的选项卡
-                    window.localStorage.setItem("change_navid", i);
-                    //修改选项卡属性
-                    document.getElementById("nav_item" + i).className = "nav_item";
-                    document.getElementById("nav_tab" + i).style.display = "";
-                    document.getElementById("p" + i).style.color = "#FFFFFF";
-                    document.getElementById("p" + i).style.background = "#05A0D7";
-                    document.getElementById("p" + i).style.borderRadius = "6px";
-                }
-                else {
-                    document.getElementById("nav_item" + i).className = "";
-                    document.getElementById("nav_tab" + i).style.display = "none";
-                    document.getElementById("p" + i).style.color = "";
-                    document.getElementById("p" + i).style.background = "";
-                    document.getElementById("p" + i).style.borderRadius = "";
-                }
-            }
-        }
-    </script>
 </head>
 <body>
 <header>
@@ -48,17 +25,6 @@
 
     <div class="div2"><p>我的帖子</p></div>
 </header>
-<div class="div4">
-    <img src="image/53.png">
-</div>
-<div class="div5">
-    <div class="div5-1">
-        <img src="image/16.png">
-    </div>
-</div>
-<div class="div6">
-    <p>王小二放牛</p>
-</div>
 <div class="div7">
     <p>回帖数 |</p>
 
@@ -68,18 +34,6 @@
 
     <p>2132</p>
 </div>
-<nav>
-    <ul>
-        <li class="nav_item1" id="nav_item1" onClick="change_nav(1)">
-            <div class="div8"><p id="p1" style="color: #ffffff ;background-color: #05A0D7;border-radius: 6px">我的帖子</p>
-            </div>
-        </li>
-        <li class="nav_item1" id="nav_item2" onClick="change_nav(2)">
-            <div class="div8"><p id="p2">我的资料</p></div>
-        </li>
-
-    </ul>
-</nav>
 <section class="nav_tab1" id="nav_tab1">
 
     <a href="Novice_answer.html">
@@ -141,34 +95,6 @@
             </div>
         </div>
     </a>
-</section>
-<section class="nav_tab1" id="nav_tab2" style="display: none">
-    <div class="div12">
-        <p class="p1">昵称</p>
-
-        <p class="p2">王小二放牛</p>
-    </div>
-    <div class="div12">
-        <p class="p1">性别</p>
-
-        <p class="p2">女</p>
-    </div>
-    <div class="div12">
-        <p class="p1">年龄</p>
-
-        <p class="p2">20</p>
-    </div>
-    <div class="div12">
-        <p class="p1">邮箱</p>
-
-        <p class="p2">24545245@qq.com</p>
-    </div>
-    <div class="div12">
-        <p class="p1">注册时间</p>
-
-        <p class="p2">2015-3-20</p>
-    </div>
-    <a href="Edit_data.html">编辑资料</a>
 </section>
 </body>
 </html>

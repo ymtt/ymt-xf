@@ -54,6 +54,7 @@ section{
     height: auto;
     float: left;
     margin-top: 40px;
+    margin-bottom: 60px;
 }
 .div4{
     width: 100%;
@@ -161,4 +162,25 @@ section{
   float: left;
     margin-left: 60%;
     margin-top: 10px;
+}
+footer{
+    width: 100%;
+    height:auto;
+    position: fixed;
+    bottom:0;
+    background-color: #FFFFFF;
+}
+footer a{
+    width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    line-height: 40px;
+    color:#05A0D7;
+    border: 1px solid #05A0D7;
+    background-color: #FFFFFF;
+    font-size: 1em;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
