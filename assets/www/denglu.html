@@ -22,6 +22,7 @@
        function hidediv() {
            document.getElementById("bg").style.display ='none';
            document.getElementById("show").style.display ='none';
+           window.location.href="gerenzhongxin.html";
        }
 
        $(document).ready(function(){
@@ -35,7 +36,7 @@
              $('#button').click(function () {
                      var username = $('#username').val();
                      var pwd = $('#password').val();
-                     var url='http://120.24.172.105/fw?controller=com.xfsm.action.LoginAction';
+                     var url='http://101.204.236.5/fw?controller=com.xfsm.action.LoginAction';
                      $.ajax({
                          type: 'get',
                          datatype: 'json',
@@ -47,10 +48,8 @@
                            window.localStorage.setItem("user",username);
                            window.localStorage.setItem("userrole",json.role);
                            window.localStorage.setItem("userid",json.id);
-                           //alert(json.sId);
                            if(json.result=="Y"){
                                  alert("登录成功");
-                               alert(json.sId);
                                  window.location.href="index.html";
                            }else{
                                  alert("登录失败"+json.result);
@@ -157,10 +156,9 @@
         <p class="p1">密码：<label id="autopwd">123456</label>
     </div>
     <div class="div17">
-        <p>建议你<a href="changePassword.html">修改</a>账号密码</p>
+        <p>建议你<a href="javascript:tochangepwd()">修改</a>账号密码</p>
     </div>
     <input type="button" value="确定"  onclick="hidediv()">
 </div>
 </body>
-
 </html>

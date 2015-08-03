@@ -19,9 +19,9 @@
             }
         }
         $(document).ready(function(){
+
             //获得所有消息
             getallmsg();
-
             //普通轮询获得消息
             //setInterval('getunreadmsg()',500);
 
@@ -34,11 +34,10 @@
             //随时检查文本框值有无改变，从而改变按钮
             setInterval('a()',100);
 
-
-
             //getunreadmsg({});
             setInterval('getunreadmsgbyall()',500);
             //alert(currentdatetotimestamp());
+
         });
 
 
@@ -49,15 +48,16 @@
 
 
         function a(){
-            var s=$("#ss").val();
-            if(s==""||s==null){
+          var s=$("#ss").val();
+          if(s==""||s==null||typeof(s)=="undefined"){
                 $("#ss1").css("display","block");
                 $("#ss2").css("display","none");
-            }else if(s!=""||s!=null){cheng
+          }else if(s!=""||s!=null){
                 $("#ss1").css("display","none");
                 $("#ss2").css("display","block");
-            }
+           }
         }
+
     </script>
 </head>
 <body>
@@ -94,7 +94,7 @@
             <img src="image/icon_keyboard.png">
         </div>
         <div class="div11">
-            <input type="text"onblur="a()"  id="ss">
+            <input type="text" onblur="a()"  id="ss" value="111">
         </div>
         <div class="div12">
             <img src="image/icon_voice.png">
