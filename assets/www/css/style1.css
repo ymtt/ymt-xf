@@ -15,11 +15,12 @@ a{
     height: auto;
     position: absolute;
     left: 10%;
-   top: -4px;
+   top:0;
 
 }
 .div1 img{
     width: 140px;
+    height: 52px;
     max-width:100%;
 }
 .div2{
@@ -106,14 +107,14 @@ a{
 }
 .div9{
     width: 94%;
-    height: 135px;
+    height:auto;
     float: left;
     background-color: #FFFFFF;
     margin-left: 3%;
 }
 .div9 ul{
     width: 16%;
-    height: 112px;
+    height: auto;
     list-style: none;
     float: left;
     margin-top: 2px;
