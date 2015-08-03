@@ -20,9 +20,9 @@ function Autoreg(){
                 var username=list[0].user_name;
                 var pwd=list[0].pwd;
                 $("#autousername").html(username);
-                $("#autopwd").html(pwd);
 
-                Login(username,pwd);
+                Login(username,'123456');
+
                 showdiv();
             }
         },error:function(error){
@@ -42,9 +42,17 @@ function Login(username,pwd){
         url:url,
         data:{"loginname":username,"pwd":pwd},
         success:function(data){
-             window.sessionStorage.setItem("session",json.sId);
+            window.sessionStorage.setItem("session",data.sId);
+            window.localStorage.setItem("user",username);
+            window.localStorage.setItem("userrole",data.role);
+            window.localStorage.setItem("userid",data.id);
+            alert(JSON.stringify(data));
         },error:function(error){
             alert(JSON.stringify(error));
         }
     });
+}
+
+function tochangepwd(){
+    window.location.href="changePassword.html";
 }

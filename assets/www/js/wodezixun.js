@@ -102,7 +102,6 @@ function expertslist(){
                 var id=list[key]['id'];
 
                 var obj=JSON.stringify(list[key]);
-
                 window.localStorage.setItem(id,obj);
 
                 /*if(null!=list||list!=""||typeof (fk_pro_id)!=undefined){
@@ -118,6 +117,7 @@ function expertslist(){
          },error:function(error){
              var json=JSON.stringify(error);
              alert("获取失败"+json);
+             alert(JSON.stringify(error));
          }
      })
  }

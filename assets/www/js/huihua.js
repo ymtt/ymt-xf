@@ -143,10 +143,10 @@ function getunreadmsg(data){
        var userId=window.localStorage.getItem("user");
        //时间
         //默认头像
-        var head_pic='http://120.24.172.105/images/header.png';
+        var head_pic='http://101.204.236.5/images/header.png';
 
 
-       var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction';
+       var url='http://101.204.236.5/fw?controller=com.xfsm.action.ChatAction';
 
        //alert(JSON.stringify(data));
        if(data.result=="Y"){
@@ -193,10 +193,10 @@ function getunreadmsgbyall(){
     //得到某一条QQ消息的所有内容
 
     //默认头像
-    var head_pic='http://120.24.172.105/images/header.png';
+    var head_pic='http://101.204.236.5/images/header.png';
     var role=window.localStorage.getItem("userrole");
 
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.ChatAction';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.ChatAction';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -209,7 +209,6 @@ function getunreadmsgbyall(){
 
             //设置新的消息索引
             window.localStorage.setItem("readindex",list[0].id);
-
             $.each(list,function(key){
                var id=list[key]['id'];
                 //消息的角色
