@@ -14,6 +14,9 @@
             h();
             d();
             //CreateMyPost("1","2","3","4");
+            var user=window.localStorage.getItem("user");
+            getMy_post(user);
+            getMyResponse();
         });
     </script>
 </head>
@@ -28,15 +31,15 @@
 <div class="div7">
     <p>回帖数 |</p>
 
-    <p>324</p>
+    <p id="repnum">324</p>
 
     <p>主题数 |</p>
 
-    <p>2132</p>
+    <p id="threadnum"></p>
 </div>
 <section class="nav_tab1" id="nav_tab1">
 
-    <a href="Novice_answer.html">
+<!--    <a href="Novice_answer.html">
         <div class="tiezhi">
             <div class="div9">
                 <p>新手报到</p>
@@ -94,7 +97,7 @@
                 <p>2015-05-14 14:08</p>
             </div>
         </div>
-    </a>
+    </a>-->
 </section>
 </body>
 </html>

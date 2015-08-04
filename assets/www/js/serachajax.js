@@ -21,6 +21,8 @@ function serachit(){
     }else if(serachtype=="zssp"){
         //alert("视频");
         serachky("spzl","","1",keywords);
+    }else if(serachtype=="all"){
+        QueryAll("0","10",keywords);
     }
 }
 //科研搜索
@@ -91,5 +93,55 @@ function ToInfo(m,id){
        }else if(m=="spzl"){
             window.localStorage.setItem("shipid",id);
             window.location.href="shipinXQ.html";
+       }else if(m==""){
+           alert("提示");
        }
+}
+
+/*
+*
+* 全文检索
+*
+* */
+
+
+
+ function QueryAll(start,limit,queryInfo){
+    var user=window.localStorage.getItem("user");
+    var url='http://101.204.236.5/webintf/search/getFullQueryForKN';
+    $.ajax({
+        type:'get',
+        dataType:'json',
+        url:url,
+        data:{"userId":user,"queryWay":"app","queryType":"","queryInfo":queryInfo,"start":start,"limit":limit},
+        success:function(data){
+            var list=data.response['docs'];
+            $.each(list,function(key){
+                //id
+                var id=list[key]['id'];
+                //标题
+                var doc_title=list[key]['doc_title'];
+                //文件类型
+                var doc_type=list[key]['doc_type'];
+
+                var doc_content=list[key]['doc_content'];
+                if (typeof(doc_tencent) == "undefined")
+                {
+                    cons="";
+                }else{
+                    cons=doc_content.replace(/<[^>]*>/gi,'');
+                }
+                CreateGuiFan(id,doc_title,doc_content,"时间","");
+                if(key==list.length-1){
+                    $("section").append("<div class='more'><a href=javascript:addmore('10',\'"+queryInfo+"\') class='gray'>加载更多</a></div>");
+                }
+            });
+        }
+    });
+}
+var xstart=1;
+function addmore(limit,queryinfo){
+    QueryAll(xstart,limit,queryinfo);
+    xstart++;
+    $(".gray").remove();
 }

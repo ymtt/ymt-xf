@@ -73,7 +73,7 @@ function getnews(type,func,kystart,kyend,bo){
                                   window.localStorage.setItem(id,obj);
                                }else if(key>kyend){
                                   //每次ajax数据加载完，添加一个加载更多按钮
-                                  $("#nav_tab4").append("<a href='javascript:void(0)' onclick='addkmore(this)'>加载更多</a>");
+                                  $("#nav_tab4").append("<div class='emore'><a href='javascript:void(0)' onclick='addkmore(this)' class='gray'>加载更多</a></div>");
                                   return false;
                                }
 
@@ -183,13 +183,13 @@ function getguifan(m,pagesize,start,kw){
                     //科研文献
                     CreateGuiFan(m,title,cons,id,hitnum);
                     if(key==pagesize-1){
-                        $("#nav_tab4").append("<div class='ky'><a href=javascript:addmoreky() class='moreky'>加载更多</a></div>");
+                        $("#nav_tab4").append("<div class='ky more'><a href=javascript:addmoreky() class='moreky'>加载更多</a></div>");
                     }
                 }else if(m=="bzgf"){
                     //标准规范
                     CreateGuiFan(m,title,cons,id,hitnum);
                     if(key==pagesize-1){
-                        $("#nav_tab5").append("<div class='ky'><a href=javascript:addmoregf() class='moregf'>加载更多</a></div>");
+                        $("#nav_tab5").append("<div class='ky more'><a href=javascript:addmoregf() class='moregf'>加载更多</a></div>");
                     }
                 }else if(m=="spzl"){
                     //视频资料

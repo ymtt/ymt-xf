@@ -42,6 +42,7 @@
         var eduend=10;
 
      $(document).ready(function(){
+
          var id=window.localStorage.getItem("change_navid");
          if(""==id||null==id){
              //没有点击过默认第一个
@@ -50,6 +51,7 @@
              //重新加载时默认到之前点击的选项卡
              change_nav(id);
          }
+
         var index=window.localStorage.getItem("Index");
         $("#back").attr("href",index);
         document.addEventListener("deviceready", onDeviceReady, false);
