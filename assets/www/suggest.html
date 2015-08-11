@@ -15,7 +15,6 @@
             h();
             d();
             back();
-
         });
 
     </script>
@@ -25,6 +24,7 @@
     <a href="#" id="back"><div class="div1"> <img src="image/icon_return.png"></div></a>
     <div class="div2"><p>建议</p></div>
 </header>
+
 <section>
     <div class="div3">
         <img src="image/icon_help-center (2).png">
@@ -32,13 +32,19 @@
     <div class="div4">
         <p>亲，我们珍视每一个建议，你们的意见或批评是对我们最大的支持，是我们对产品优化改进最大的动力和方向</p>
     </div>
+    <label style="margin-left: 5%">标题:</label><input type="text" id="title" style="margin-left: 5%"><br><br>
+    <label style="margin-left: 5%">手机:</label><input type="text" id="phone" style="margin-left: 5%"><br><br>
     <textarea placeholder="请在这里输入" id="con"></textarea>
     <button id="sub">提交</button>
 </section>
+
+
 <script type="text/javascript">
     $("#sub").bind("click",function(){
+        var title=document.getElementById('title').value;
+        var phone=document.getElementById('phone').value;
         var content=document.getElementById('con').value;
-        submitsuggest("建议",content,"");
+        submitsuggest(title,phone,content);
     });
 </script>
 </body>

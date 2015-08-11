@@ -11,7 +11,9 @@ function submitsuggest(title,content,phonenumber){
             if(data.result!="Y"){
                 alert(data.result);
             }else{
-                alert(JSON.stringify(data));
+                $("#title").val("");
+                $("#phone").val("");
+                $("#con").val("");
             }
 
         },error:function(error){

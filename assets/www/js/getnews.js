@@ -171,7 +171,7 @@ function setorder(order){
 /*图片新闻列表*/
 function getpicnews(){
     var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction';
-    var srcs='http://g.hiphotos.baidu.com/image/pic/item/63d0f703918fa0ec56c59e0f249759ee3d6ddbb6.jpg';
+    //var srcs='http://g.hiphotos.baidu.com/image/pic/item/63d0f703918fa0ec56c59e0f249759ee3d6ddbb6.jpg';
     $.ajax({
         type:'get',
         dataType:'json',
@@ -183,6 +183,7 @@ function getpicnews(){
             $.each(list,function(key){
                 //新闻id
                 var id=list[key]['id'];
+                var srcs='http://101.204.236.5'+list[key]['pic'];
                 //新闻id对应的对象字符串
                 var obj=JSON.stringify(list[key]);
                 window.localStorage.setItem(id,obj);

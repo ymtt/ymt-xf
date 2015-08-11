@@ -43,7 +43,7 @@
 
      $(document).ready(function(){
 
-         var id=window.localStorage.getItem("change_navid");
+         var id=window.localStorage.getItem("change_navzixunid");
          if(""==id||null==id){
              //没有点击过默认第一个
              change_nav(1);
@@ -83,8 +83,8 @@
         function  change_nav(heath_center) {
             for (var i = 1; i <= 3; i++) {
                 if (i == heath_center) {
-                    //保存点击的选项卡
-                    window.localStorage.setItem("change_navid",i);
+                    //保存点击的选项卡,保存的信息不能与其他地方重复
+                    window.localStorage.setItem("change_navzixunid",i);
                     document.getElementById("nav_item" + i).className = "nav_item";
                     document.getElementById("nav_tab" + i).style.display = "";
                     document.getElementById("p" + i).style.color = "#FFFFFF";

@@ -7,14 +7,15 @@ function showxq(){
    var obj=JSON.parse(str);
 
    $(".div8 p").html(obj.article_title);
-   $(".div6").html("<img src='http://g.hiphotos.baidu.com/image/pic/item/63d0f703918fa0ec56c59e0f249759ee3d6ddbb6.jpg'>");
+   $(".div6").html("<img src='http://101.204.236.5"+obj.pic+"'>");
    $.ajax({
         type:'get',
         dataType:'json',
         url:'http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction&m=show',
         data:{"id":id},
         success:function(data){
-           $(".div10 p").html(data.centent);
+            var con=(data.centent).replace(/\/attached/g,"http://101.204.236.5/attached");
+           $(".div10 p").html(con);
           // alert(data);
         },error:function(error){
             alert(JSON.stringify(error));
@@ -25,7 +26,7 @@ function showxq(){
 //图片资讯列表
 function getpicinfo(){
        var url='http://101.204.236.5/fw?controller=com.xfsm.action.ArticleAction';
-       var srcs='http://g.hiphotos.baidu.com/image/pic/item/63d0f703918fa0ec56c59e0f249759ee3d6ddbb6.jpg';
+       //var srcs='http://g.hiphotos.baidu.com/image/pic/item/63d0f703918fa0ec56c59e0f249759ee3d6ddbb6.jpg';
        $.ajax({
            type:'get',
            dataType:'json',

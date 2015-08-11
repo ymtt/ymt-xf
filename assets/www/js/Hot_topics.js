@@ -30,7 +30,7 @@ function getHot_topics(){
     });
 }
 function CreateHot_topics(tid,author,comment,time,subject){
-    $("section").append("<a href='Novice_answer.html'><div class='div4'><div class='div6'><p>"+author+"</p></div><div class='div7'><p>"+time+"</p></div><div class='div4-1'><p>"+subject+"</p></div><div class='div8'><p>"+comment+"</p><img src='image/icon_comments.png'></div></div></a>");
+    $("section").append("<a href=javascript:ToForumThread(\'"+tid+"\')><div class='div4'><div class='div6'><p>"+author+"</p></div><div class='div7'><p>"+time+"</p></div><div class='div4-1'><p>"+subject+"</p></div><div class='div8'><p>"+comment+"</p><img src='image/icon_comments.png'></div></div></a>");
 }
 
 function ToForumThread(tid){

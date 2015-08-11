@@ -61,7 +61,7 @@ function Createsubjectives(id,title){
 
 //提交答案
 function doAnswer(examId,answer_id,val){
-    var url='http://120.24.172.105/fw?controller=com.xfsm.action.UserExamAction';
+    var url='http://101.204.236.5/fw?controller=com.xfsm.action.UserExamAction';
     $.ajax({
         type:'post',
         dataType:'json',

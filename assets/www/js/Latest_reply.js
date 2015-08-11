@@ -28,11 +28,11 @@ function getLatest_reply(){
 }
 
 function Createlaest_Reply(tid,author,comment,time,subject){
-    $("section").append("<div class='div4'><a href='Novice_answer.html'><div class='div5'><p>"+author+"</p></div><div class='div6'><p>"+comment+"</p><img src='image/icon_comments.png'></div><div class='div7'><p>"+time+"</p></div><div class='div8'><p>"+subject+"</p></div></a></div>");
+    $("section").append("<div class='div4'><a href=javascript:ToForumThread(\'"+tid+"\')><div class='div5'><p>"+author+"</p></div><div class='div6'><p>"+comment+"</p><img src='image/icon_comments.png'></div><div class='div7'><p>"+time+"</p></div><div class='div8'><p>"+subject+"</p></div></a></div>");
 }
 
 function ToForumThread(tid){
-    window.localStorage.setItem("newreplytid",tid);
+    window.localStorage.setItem("tid",tid);
     window.location.href="Novice_answer.html";
 }
 
