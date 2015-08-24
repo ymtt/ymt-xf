@@ -133,10 +133,6 @@ a{
     height: 30px;
     float:right;
     margin-top: -30px;
-<<<<<<< HEAD
-    
-=======
->>>>>>> origin/v2
     display: none;
 }
 
@@ -261,7 +257,7 @@ input{
     border-right: 1px solid #cccccc;
 }
 .div10 p {
-  line-height: 20px;
+    margin-top: 10px;
     font-size: 0.8em;
     text-align: center;
 }
@@ -294,6 +290,7 @@ span{
     height:60px;
     float: left;
     border-right: 1px solid #cccccc;
+    padding-top: 10px;
 }
 .div10-2 p {
     line-height: 20px;
